@@ -33,7 +33,6 @@ public sealed class MuDocument : IDisposable
 			_document = new DocumentHandle(Context, _sourceStream);
 			FilePath = fileName;
 			InitPdf(password);
-			return;
 		}
 		catch (AccessViolationException) {
 			_sourceStream.DisposeHandle();

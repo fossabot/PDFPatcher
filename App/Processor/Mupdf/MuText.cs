@@ -35,7 +35,7 @@ public sealed class MuTextPage : IMuBoundedElement, IDisposable
 {
 	private readonly TextPageHandle _handle;
 	private IEnumerable<MuTextBlock> _Blocks;
-	private NativeTextPage _TextPage;
+	private readonly NativeTextPage _TextPage;
 
 	internal MuTextPage(TextPageHandle nativePage) {
 		_handle = nativePage;
@@ -202,7 +202,7 @@ public sealed class MuTextLine : IMuBoundedElement
 {
 	private IEnumerable<MuTextChar> _Characters;
 	private string _Text;
-	private NativeTextLine _textLine;
+	private readonly NativeTextLine _textLine;
 
 	private MuTextLine(IntPtr textLine) {
 		_textLine = textLine.MarshalAs<NativeTextLine>();

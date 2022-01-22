@@ -1086,7 +1086,6 @@ internal sealed class PdfViewerControl : ImageBoxEx
 		}
 		catch (Exception ex) {
 			FormHelper.ErrorBox(ex.Message);
-			return;
 		}
 
 		//if (PageChanged != null) {

@@ -254,7 +254,6 @@ public class ModiOcr
 	private static void Call(object instance, string method, params object[] parameters) {
 		try {
 			instance.GetType().InvokeMember(method, BindingFlags.InvokeMethod, null, instance, parameters);
-			return;
 		}
 		catch (Exception ex) {
 			if (ex.InnerException != null) {

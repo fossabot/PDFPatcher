@@ -46,9 +46,7 @@ public class GlassButton : Button
 	private Pen outerBorderPen;
 	private Pen BorderPen;
 
-	private Color specialSymbolColor;
-
-	private Brush specialSymbolBrush;
+	private readonly Brush specialSymbolBrush;
 	private Brush ContentBrush;
 
 	private Rectangle rect;
@@ -97,7 +95,7 @@ public class GlassButton : Button
 		animateGlow = false;
 		showSpecialSymbol = false;
 		specialSymbol = SpecialSymbols.Play;
-		specialSymbolColor = Color.White;
+		Color specialSymbolColor = Color.White;
 		toolTipText = "";
 		specialSymbolBrush = new SolidBrush(Color.FromArgb(transparencyFactor, specialSymbolColor));
 		alternativeFocusBorderColor = Color.Black;
@@ -249,7 +247,7 @@ public class GlassButton : Button
 
 	private string toolTipText;
 
-	private bool alternativeForm;
+	private readonly bool alternativeForm;
 
 	private bool animateGlow;
 
@@ -274,7 +272,7 @@ public class GlassButton : Button
 		}
 	}
 
-	private bool showSpecialSymbol;
+	private readonly bool showSpecialSymbol;
 
 	/// <summary>
 	///     List of all aviable special symbols.
@@ -299,7 +297,7 @@ public class GlassButton : Button
 		Shuffle
 	}
 
-	private SpecialSymbols specialSymbol;
+	private readonly SpecialSymbols specialSymbol;
 
 	public enum Direction
 	{
@@ -307,7 +305,7 @@ public class GlassButton : Button
 		Right
 	}
 
-	private Direction alternativeFormDirection;
+	private readonly Direction alternativeFormDirection;
 
 	private bool showFocusBorder;
 

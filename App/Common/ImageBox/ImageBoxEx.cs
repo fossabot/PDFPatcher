@@ -44,7 +44,7 @@ internal class ImageBoxEx : ImageBox
 
 	#region Fields
 
-	private int _dragHandleSize;
+	private readonly int _dragHandleSize;
 
 	private Point _dragOrigin;
 
