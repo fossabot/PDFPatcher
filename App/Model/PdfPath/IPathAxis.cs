@@ -2,5 +2,5 @@
 
 public interface IPathAxis
 {
-	PathAxisType Type { get; }
+    PathAxisType Type { get; }
 }

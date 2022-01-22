@@ -9,53 +9,56 @@ namespace PDFPatcher.Processor;
 [DebuggerDisplay("FontName = {FontName}; MatchFullName = {MatchFullName}")]
 public class FontNameFilter : AutoBookmarkFilter
 {
-	private readonly Dictionary<int, bool> _matchResultCache;
+    private readonly Dictionary<int, bool> _matchResultCache;
 
-	public FontNameFilter() {
-		_matchResultCache = new Dictionary<int, bool>();
-	}
+    public FontNameFilter() => _matchResultCache = new Dictionary<int, bool>();
 
-	public FontNameFilter(string fontName, bool matchFullName) : this() {
-		FontName = fontName;
-		MatchFullName = matchFullName;
-	}
+    public FontNameFilter(string fontName, bool matchFullName) : this()
+    {
+        FontName = fontName;
+        MatchFullName = matchFullName;
+    }
 
-	public string FontName { get; set; }
-	public bool MatchFullName { get; set; }
+    public string FontName { get; set; }
+    public bool MatchFullName { get; set; }
 
-	internal override bool Matches(AutoBookmarkContext context) {
-		if (context.TextLine != null) {
-			return context.TextLine.Texts.Any(item => MatchFont(item.Font));
-		}
+    internal override bool Matches(AutoBookmarkContext context)
+    {
+        if (context.TextLine != null)
+        {
+            return context.TextLine.Texts.Any(item => MatchFont(item.Font));
+        }
 
-		FontInfo font = context.TextInfo.Font;
-		return MatchFont(font);
+        FontInfo font = context.TextInfo.Font;
+        return MatchFont(font);
+    }
 
-	}
+    private bool MatchFont(FontInfo font)
+    {
+        if (font == null)
+        {
+            return true;
+        }
 
-	private bool MatchFont(FontInfo font) {
-		if (font == null) {
-			return true;
-		}
+        if (_matchResultCache.TryGetValue(font.FontID, out bool result))
+        {
+            return result;
+        }
 
-		if (_matchResultCache.TryGetValue(font.FontID, out bool result)) {
-			return result;
-		}
+        if (MatchFullName)
+        {
+            //_matchResultCache[font.FontID] = String.Compare (this.FontName, font.PostscriptFontName, StringComparison.OrdinalIgnoreCase) == 0;
+            _matchResultCache[font.FontID] =
+                string.Compare(FontName, font.FontName, StringComparison.OrdinalIgnoreCase) == 0;
+        }
+        else
+        {
+            _matchResultCache[font.FontID] =
+                font.PostscriptFontName.IndexOf(FontName, StringComparison.OrdinalIgnoreCase) > -1;
+        }
 
-		if (MatchFullName) {
-			//_matchResultCache[font.FontID] = String.Compare (this.FontName, font.PostscriptFontName, StringComparison.OrdinalIgnoreCase) == 0;
-			_matchResultCache[font.FontID] =
-				string.Compare(FontName, font.FontName, StringComparison.OrdinalIgnoreCase) == 0;
-		}
-		else {
-			_matchResultCache[font.FontID] =
-				font.PostscriptFontName.IndexOf(FontName, StringComparison.OrdinalIgnoreCase) > -1;
-		}
+        return _matchResultCache[font.FontID];
+    }
 
-		return _matchResultCache[font.FontID];
-	}
-
-	internal override void Reset() {
-		_matchResultCache.Clear();
-	}
+    internal override void Reset() => _matchResultCache.Clear();
 }

@@ -7,82 +7,91 @@ namespace PDFPatcher.Processor;
 
 internal sealed class RemoveTextBlockProcessor : IPageProcessor
 {
-	private int _processedPageCount;
+    private int _processedPageCount;
 
-	private static bool ProcessCommands(IList<PdfPageCommand> parent) {
-		bool r = false;
-		for (int i = parent.Count - 1; i >= 0; i--) {
-			EnclosingCommand ec = parent[i] as EnclosingCommand;
-			if (ec == null) {
-				continue;
-			}
+    private static bool ProcessCommands(IList<PdfPageCommand> parent)
+    {
+        bool r = false;
+        for (int i = parent.Count - 1; i >= 0; i--)
+        {
+            EnclosingCommand ec = parent[i] as EnclosingCommand;
+            if (ec == null)
+            {
+                continue;
+            }
 
-			if (ec.Name.ToString() == "BT") {
-				parent.RemoveAt(i);
-				r = true;
-			}
-			else {
-				r |= ProcessCommands(ec.Commands);
-			}
-		}
+            if (ec.Name.ToString() == "BT")
+            {
+                parent.RemoveAt(i);
+                r = true;
+            }
+            else
+            {
+                r |= ProcessCommands(ec.Commands);
+            }
+        }
 
-		return r;
-	}
+        return r;
+    }
 
-	#region IPageProcessor 成员
+    #region IPageProcessor 成员
 
-	public string Name => "删除文本区";
+    public string Name => "删除文本区";
 
-	public void BeginProcess(DocProcessorContext context) {
-		_processedPageCount = 0;
-	}
+    public void BeginProcess(DocProcessorContext context) => _processedPageCount = 0;
 
-	public bool EndProcess(PdfReader pdf) {
-		Tracker.TraceMessage(Tracker.Category.Notice, Name + "功能：");
-		Tracker.TraceMessage("　　删除了 " + _processedPageCount + " 页的文本。");
-		return false;
-	}
+    public bool EndProcess(PdfReader pdf)
+    {
+        Tracker.TraceMessage(Tracker.Category.Notice, Name + "功能：");
+        Tracker.TraceMessage("　　删除了 " + _processedPageCount + " 页的文本。");
+        return false;
+    }
 
-	public int EstimateWorkload(PdfReader pdf) {
-		return pdf.NumberOfPages * 3;
-	}
+    public int EstimateWorkload(PdfReader pdf) => pdf.NumberOfPages * 3;
 
-	public bool Process(PageProcessorContext context) {
-		Tracker.IncrementProgress(3);
-		IPdfPageCommandContainer p = context.PageCommands;
-		bool r = ProcessCommands(p.Commands);
-		if (r) {
-			context.IsPageContentModified = true;
-			_processedPageCount++;
-		}
+    public bool Process(PageProcessorContext context)
+    {
+        Tracker.IncrementProgress(3);
+        IPdfPageCommandContainer p = context.PageCommands;
+        bool r = ProcessCommands(p.Commands);
+        if (r)
+        {
+            context.IsPageContentModified = true;
+            _processedPageCount++;
+        }
 
-		ProcessFormContent(context);
-		return r;
-	}
+        ProcessFormContent(context);
+        return r;
+    }
 
-	private static void ProcessFormContent(PageProcessorContext context) {
-		PdfDictionary fl = context.Page.Locate<PdfDictionary>(PdfName.RESOURCES, PdfName.XOBJECT);
-		if (fl == null) {
-			return;
-		}
+    private static void ProcessFormContent(PageProcessorContext context)
+    {
+        PdfDictionary fl = context.Page.Locate<PdfDictionary>(PdfName.RESOURCES, PdfName.XOBJECT);
+        if (fl == null)
+        {
+            return;
+        }
 
-		foreach (KeyValuePair<PdfName, PdfObject> item in fl) {
-			if (PdfReader.GetPdfObject(item.Value) is not PRStream f
-				|| PdfName.FORM.Equals(f.GetAsName(PdfName.SUBTYPE)) == false) {
-				continue;
-			}
+        foreach (KeyValuePair<PdfName, PdfObject> item in fl)
+        {
+            if (PdfReader.GetPdfObject(item.Value) is not PRStream f
+                || PdfName.FORM.Equals(f.GetAsName(PdfName.SUBTYPE)) == false)
+            {
+                continue;
+            }
 
-			PdfPageCommandProcessor p = new(f);
-			if (!ProcessCommands(p.Commands)) {
-				continue;
-			}
+            PdfPageCommandProcessor p = new(f);
+            if (!ProcessCommands(p.Commands))
+            {
+                continue;
+            }
 
-			using MemoryStream ms = new();
-			p.WritePdfCommands(ms);
-			ms.Flush();
-			f.SetData(ms.ToArray(), ms.Length > 32);
-		}
-	}
+            using MemoryStream ms = new();
+            p.WritePdfCommands(ms);
+            ms.Flush();
+            f.SetData(ms.ToArray(), ms.Length > 32);
+        }
+    }
 
-	#endregion
+    #endregion
 }

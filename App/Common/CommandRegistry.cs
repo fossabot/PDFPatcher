@@ -9,7 +9,7 @@ namespace PDFPatcher.Common;
 /// <typeparam name="TP">处理命令时的上下文类型。</typeparam>
 internal interface ICommand<in TP>
 {
-	void Process(TP context, params string[] parameters);
+    void Process(TP context, params string[] parameters);
 }
 
 /// <summary>
@@ -18,33 +18,36 @@ internal interface ICommand<in TP>
 /// <typeparam name="P">命令模式的处理参数类型。</typeparam>
 internal sealed class CommandRegistry<P>
 {
-	private readonly Dictionary<string, ICommand<P>> _container = new(StringComparer.OrdinalIgnoreCase);
+    private readonly Dictionary<string, ICommand<P>> _container = new(StringComparer.OrdinalIgnoreCase);
 
-	/// <summary>
-	///     注册执行处理的命令处理器。
-	/// </summary>
-	/// <param name="command">执行命令的处理器。</param>
-	/// <param name="commandIDs">触发该命令的命令标识符。</param>
-	public void Register(ICommand<P> command, params string[] commandIDs) {
-		foreach (string cmd in commandIDs) {
-			_container.Add(cmd, command);
-		}
-	}
+    /// <summary>
+    ///     注册执行处理的命令处理器。
+    /// </summary>
+    /// <param name="command">执行命令的处理器。</param>
+    /// <param name="commandIDs">触发该命令的命令标识符。</param>
+    public void Register(ICommand<P> command, params string[] commandIDs)
+    {
+        foreach (string cmd in commandIDs)
+        {
+            _container.Add(cmd, command);
+        }
+    }
 
-	/// <summary>
-	///     执行指定的命令。
-	/// </summary>
-	/// <param name="commandID">命令标识符。</param>
-	/// <param name="context">处理命令时的上下文变量。</param>
-	/// <param name="parameters">参数。</param>
-	/// <returns>如找到对应的命令处理，则返回 true，否则返回 false。</returns>
-	public bool Process(string commandID, P context, params string[] parameters) {
-		if (!_container.TryGetValue(commandID, out ICommand<P> cmd)) {
-			return false;
-		}
+    /// <summary>
+    ///     执行指定的命令。
+    /// </summary>
+    /// <param name="commandID">命令标识符。</param>
+    /// <param name="context">处理命令时的上下文变量。</param>
+    /// <param name="parameters">参数。</param>
+    /// <returns>如找到对应的命令处理，则返回 true，否则返回 false。</returns>
+    public bool Process(string commandID, P context, params string[] parameters)
+    {
+        if (!_container.TryGetValue(commandID, out ICommand<P> cmd))
+        {
+            return false;
+        }
 
-		cmd.Process(context, parameters);
-		return true;
-
-	}
+        cmd.Process(context, parameters);
+        return true;
+    }
 }

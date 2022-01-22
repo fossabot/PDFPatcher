@@ -6,23 +6,24 @@ namespace PDFPatcher.Functions.Editor;
 
 internal sealed class BookmarkStyleCommand : IEditorCommand
 {
-	private readonly SetTextStyleProcessor.Style _style;
+    private readonly SetTextStyleProcessor.Style _style;
 
-	public BookmarkStyleCommand(SetTextStyleProcessor.Style style) {
-		_style = style;
-	}
+    public BookmarkStyleCommand(SetTextStyleProcessor.Style style) => _style = style;
 
-	public void Process(Controller controller, params string[] parameters) {
-		BookmarkEditorView b = controller.View.Bookmark;
-		if (b.FocusedItem == null) {
-			return;
-		}
+    public void Process(Controller controller, params string[] parameters)
+    {
+        BookmarkEditorView b = controller.View.Bookmark;
+        if (b.FocusedItem == null)
+        {
+            return;
+        }
 
-		BookmarkElement i = b.GetFirstSelectedModel<BookmarkElement>();
-		if (i == null) {
-			return;
-		}
+        BookmarkElement i = b.GetFirstSelectedModel<BookmarkElement>();
+        if (i == null)
+        {
+            return;
+        }
 
-		controller.ProcessBookmarks(new SetTextStyleProcessor(i, _style));
-	}
+        controller.ProcessBookmarks(new SetTextStyleProcessor(i, _style));
+    }
 }

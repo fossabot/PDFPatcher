@@ -2,15 +2,15 @@
 
 internal enum PdfObjectType
 {
-	Normal,
-	Trailer,
-	Root,
-	Pages,
-	Page,
-	Image,
-	Outline,
-	PageCommand,
-	PageCommands,
-	GoToPage,
-	Hidden
+    Normal,
+    Trailer,
+    Root,
+    Pages,
+    Page,
+    Image,
+    Outline,
+    PageCommand,
+    PageCommands,
+    GoToPage,
+    Hidden
 }

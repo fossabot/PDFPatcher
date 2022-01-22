@@ -4,5 +4,5 @@ namespace PDFPatcher.Model;
 
 internal interface IHierarchicalObject<T>
 {
-	ICollection<T> Children { get; }
+    ICollection<T> Children { get; }
 }

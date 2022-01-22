@@ -2,7 +2,7 @@
 
 public interface IPathValue
 {
-	PathValueType ValueType { get; }
+    PathValueType ValueType { get; }
 }
 
 public interface IConstantPathValue : IPathValue

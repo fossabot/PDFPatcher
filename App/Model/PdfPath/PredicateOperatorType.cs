@@ -2,6 +2,6 @@
 
 public enum PredicateOperatorType
 {
-	Contains,
-	Equal
+    Contains,
+    Equal
 }

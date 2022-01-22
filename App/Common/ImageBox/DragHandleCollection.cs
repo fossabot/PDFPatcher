@@ -15,66 +15,62 @@ namespace Cyotek.Windows.Forms.Demo;
 
 internal sealed class DragHandleCollection : IEnumerable<DragHandle>
 {
-	#region Instance Fields
+    #region Instance Fields
 
-	private readonly IDictionary<DragHandleAnchor, DragHandle> _items;
+    private readonly IDictionary<DragHandleAnchor, DragHandle> _items;
 
-	#endregion
+    #endregion
 
-	#region Public Constructors
+    #region Public Constructors
 
-	public DragHandleCollection() {
-		_items = new Dictionary<DragHandleAnchor, DragHandle> {
-			{DragHandleAnchor.TopLeft, new DragHandle(DragHandleAnchor.TopLeft)},
-			{DragHandleAnchor.TopCenter, new DragHandle(DragHandleAnchor.TopCenter)},
-			{DragHandleAnchor.TopRight, new DragHandle(DragHandleAnchor.TopRight)},
-			{DragHandleAnchor.MiddleLeft, new DragHandle(DragHandleAnchor.MiddleLeft)},
-			{DragHandleAnchor.MiddleRight, new DragHandle(DragHandleAnchor.MiddleRight)},
-			{DragHandleAnchor.BottomLeft, new DragHandle(DragHandleAnchor.BottomLeft)},
-			{DragHandleAnchor.BottomCenter, new DragHandle(DragHandleAnchor.BottomCenter)},
-			{DragHandleAnchor.BottomRight, new DragHandle(DragHandleAnchor.BottomRight)}
-		};
-	}
+    public DragHandleCollection() =>
+        _items = new Dictionary<DragHandleAnchor, DragHandle>
+        {
+            {DragHandleAnchor.TopLeft, new DragHandle(DragHandleAnchor.TopLeft)},
+            {DragHandleAnchor.TopCenter, new DragHandle(DragHandleAnchor.TopCenter)},
+            {DragHandleAnchor.TopRight, new DragHandle(DragHandleAnchor.TopRight)},
+            {DragHandleAnchor.MiddleLeft, new DragHandle(DragHandleAnchor.MiddleLeft)},
+            {DragHandleAnchor.MiddleRight, new DragHandle(DragHandleAnchor.MiddleRight)},
+            {DragHandleAnchor.BottomLeft, new DragHandle(DragHandleAnchor.BottomLeft)},
+            {DragHandleAnchor.BottomCenter, new DragHandle(DragHandleAnchor.BottomCenter)},
+            {DragHandleAnchor.BottomRight, new DragHandle(DragHandleAnchor.BottomRight)}
+        };
 
-	#endregion
+    #endregion
 
-	#region IEnumerable<DragHandle> Members
+    #region IEnumerable<DragHandle> Members
 
-	/// <summary>
-	///     Returns an enumerator that iterates through a collection.
-	/// </summary>
-	/// <returns>
-	///     An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.
-	/// </returns>
-	IEnumerator IEnumerable.GetEnumerator() {
-		return GetEnumerator();
-	}
+    /// <summary>
+    ///     Returns an enumerator that iterates through a collection.
+    /// </summary>
+    /// <returns>
+    ///     An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.
+    /// </returns>
+    IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
-	#endregion
+    #endregion
 
-	#region Public Properties
+    #region Public Properties
 
-	public int Count => _items.Count;
+    public int Count => _items.Count;
 
-	public DragHandle this[DragHandleAnchor index] => _items[index];
+    public DragHandle this[DragHandleAnchor index] => _items[index];
 
-	#endregion
+    #endregion
 
-	#region Public Members
+    #region Public Members
 
-	/// <summary>
-	///     Returns an enumerator that iterates through the collection.
-	/// </summary>
-	/// <returns>
-	///     A <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.
-	/// </returns>
-	public IEnumerator<DragHandle> GetEnumerator() {
-		return _items.Values.GetEnumerator();
-	}
+    /// <summary>
+    ///     Returns an enumerator that iterates through the collection.
+    /// </summary>
+    /// <returns>
+    ///     A <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.
+    /// </returns>
+    public IEnumerator<DragHandle> GetEnumerator() => _items.Values.GetEnumerator();
 
-	public DragHandleAnchor HitTest(Point point) {
-		return (from handle in this where handle.Visible && handle.Bounds.Contains(point) select handle.Anchor).FirstOrDefault();
-	}
+    public DragHandleAnchor HitTest(Point point) =>
+        (from handle in this where handle.Visible && handle.Bounds.Contains(point) select handle.Anchor)
+        .FirstOrDefault();
 
-	#endregion
+    #endregion
 }
