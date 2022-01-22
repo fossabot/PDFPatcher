@@ -223,13 +223,12 @@ public partial class RenameControl : FunctionControl
 		foreach (SourceItem.Pdf item in items) {
 			try {
 				FilePath s = item.FilePath;
-				string t;
 				if (s.ExistsFile == false) {
 					string.Concat("(找不到 PDF 文件：", s, ")");
 					continue;
 				}
 
-				t = Worker.RenameFile(template, item);
+				string t = Worker.RenameFile(template, item);
 				if (t.Length == 0) {
 					t = "<输出文件名无效>";
 				}

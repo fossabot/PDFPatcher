@@ -98,7 +98,7 @@ public class RichTextBoxEx : RichTextBox
 		private readonly byte bPitchAndFamily;
 
 		[MarshalAs(UnmanagedType.ByValArray, SizeConst = 32)]
-		public readonly char[] szFaceName;
+		private readonly char[] szFaceName;
 
 		private readonly ushort wWeight;
 		private readonly ushort sSpacing;

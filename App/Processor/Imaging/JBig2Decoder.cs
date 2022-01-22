@@ -11,7 +11,6 @@ internal static class JBig2Decoder
 
 	internal static byte[] Decode(byte[] data, byte[] globals) {
 		IntPtr ctxptr = IntPtr.Zero, globalptr = IntPtr.Zero;
-		byte[] decodedData;
 
 		try {
 			ctxptr = NativeMethods.New(IntPtr.Zero);
@@ -29,7 +28,7 @@ internal static class JBig2Decoder
 			}
 
 			JBig2Image image = imageptr.Unwrap<JBig2Image>();
-			decodedData = image.GetData();
+			byte[] decodedData = image.GetData();
 			NativeMethods.ReleasePage(ctxptr, imageptr);
 
 			return decodedData;

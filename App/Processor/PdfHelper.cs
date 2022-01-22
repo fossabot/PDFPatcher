@@ -54,8 +54,7 @@ internal static class PdfHelper
 					throw new FileNotFoundException(string.Concat("找不到文件：", sourceFile));
 				}
 
-				PdfReader r;
-				r = partial ? new PdfReader(new RandomAccessFileOrArray(sourceFile), password) : new PdfReader(sourceFile, password);
+				PdfReader r = partial ? new PdfReader(new RandomAccessFileOrArray(sourceFile), password) : new PdfReader(sourceFile, password);
 
 				if (password is { Length: > 0 }) {
 					__PdfPasswordBox[sourceFile] = password;

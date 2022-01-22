@@ -96,7 +96,6 @@ public class GlassButton : Button
 		showSpecialSymbol = false;
 		specialSymbol = SpecialSymbols.Play;
 		Color specialSymbolColor = Color.White;
-		toolTipText = "";
 		specialSymbolBrush = new SolidBrush(Color.FromArgb(transparencyFactor, specialSymbolColor));
 		alternativeFocusBorderColor = Color.Black;
 		alternativeFormDirection = Direction.Left;
@@ -244,8 +243,6 @@ public class GlassButton : Button
 			}
 		}
 	}
-
-	private string toolTipText;
 
 	private readonly bool alternativeForm;
 

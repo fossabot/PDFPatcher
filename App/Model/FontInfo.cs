@@ -25,7 +25,6 @@ internal sealed class FontInfo : CMapAwareDocumentFont
 
 	private CjkFontType _CjkFontType = CjkFontType.Unknown;
 
-	private int _DefaultWidth = -1;
 	private PdfDictionary _FontDescriptor;
 	private string _FontName;
 

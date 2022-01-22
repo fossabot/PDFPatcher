@@ -859,12 +859,11 @@ internal class PdfContentStreamProcessor
 			//}
 
 			foreach (PdfObject entryObj in array.ArrayList) {
-				float tj;
 				if (entryObj is PdfString) {
 					processor.DisplayPdfString((PdfString)entryObj);
 				}
 				else {
-					tj = ((PdfNumber)entryObj).FloatValue;
+					float tj = ((PdfNumber)entryObj).FloatValue;
 					processor.ApplyTextAdjust(tj);
 				}
 			}

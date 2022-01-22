@@ -572,8 +572,6 @@ internal sealed class ImageExtractor
 									ext = Constants.FileExtensions.Png;
 									bmpPal = null;
 									goto Paste;
-
-									throw new OverflowException("调色板溢出，无法合并图片。");
 								}
 
 								if (palEntryCount >= bmpPal.Length && palEntryCount < 129) {

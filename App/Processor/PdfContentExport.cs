@@ -606,7 +606,7 @@ internal sealed class PdfContentExport
 			RegisterContentOperator("TJ", new AccumulatedShowTextArray());
 		}
 
-		internal List<TextInfo> TextInfoList { get; }
+		private List<TextInfo> TextInfoList { get; }
 
 		public void End() {
 			if (_writeOperators == false) {
