@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 using BrightIdeasSoftware;
 using PDFPatcher.Common;
@@ -70,12 +71,7 @@ public partial class PageLabelEditor : UserControl
 	}
 
 	private void _AddPageLabelButton_Click(object sender, EventArgs e) {
-		int i = 0;
-		foreach (PageLabel item in _Labels) {
-			if (item.PageNumber > i) {
-				i = item.PageNumber;
-			}
-		}
+		int i = _Labels.Select(item => item.PageNumber).Concat(new[] { 0 }).Max();
 
 		++i;
 		_Labels.Add(new PageLabel { PageNumber = i, StartPage = 1 });

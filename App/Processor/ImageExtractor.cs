@@ -564,12 +564,14 @@ internal sealed class ImageExtractor
 									}
 
 									// 调色板不足以存放合并后的图片颜色
-									if (bmp.ConvertColorDepth(FREE_IMAGE_COLOR_DEPTH.FICD_24_BPP)
-										&& bmp2.ConvertColorDepth(FREE_IMAGE_COLOR_DEPTH.FICD_24_BPP)) {
-										ext = Constants.FileExtensions.Png;
-										bmpPal = null;
-										goto Paste;
+									if (!bmp.ConvertColorDepth(FREE_IMAGE_COLOR_DEPTH.FICD_24_BPP) ||
+										!bmp2.ConvertColorDepth(FREE_IMAGE_COLOR_DEPTH.FICD_24_BPP)) {
+										throw new OverflowException("调色板溢出，无法合并图片。");
 									}
+
+									ext = Constants.FileExtensions.Png;
+									bmpPal = null;
+									goto Paste;
 
 									throw new OverflowException("调色板溢出，无法合并图片。");
 								}

@@ -147,7 +147,7 @@ internal sealed class OcrProcessor
 		Rectangle pr = _reader.GetPageNRelease(i).GetPageVisibleRectangle();
 		List<TextLine> tl = _options.WritingDirection != WritingDirection.Unknown
 			? AutoBookmarkCreator.MergeTextInfoList(pr,
-				result.Texts.ConvertAll(l => GetMergedTextInfo(l)), __MergeOptions) // 按照书写方向重组识别文本
+				result.Texts.ConvertAll(GetMergedTextInfo), __MergeOptions) // 按照书写方向重组识别文本
 			: result.Texts;
 		foreach (TextLine item in tl) {
 			string t = item.Text;
@@ -200,8 +200,7 @@ internal sealed class OcrProcessor
 #endif
 		List<Result> or = new();
 		try {
-			foreach (ImageDisposition item in _ocrImageExp.PosList) {
-				Result r = new(item);
+			foreach (var r in _ocrImageExp.PosList.Select(item => new Result(item))) {
 				OcrPage(r);
 				or.Add(r);
 			}

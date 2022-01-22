@@ -80,13 +80,12 @@ internal sealed class PageRangeCollection : List<PageRange>
 					continue;
 				}
 
-				int endNum;
 				int startNum;
 				int rangeIndicator = range.Length > 1 ? range.IndexOf('-', 1) /*排除首位可能是负数页码的可能*/ : -1;
 				if (rangeIndicator > 0) {
 					string startRange = range.Substring(0, rangeIndicator);
 					string endRange = range.Substring(rangeIndicator + 1, range.Length - rangeIndicator - 1);
-					if (!startRange.TryParse(out startNum) || !endRange.TryParse(out endNum) || startNum == 0 ||
+					if (!startRange.TryParse(out startNum) || !endRange.TryParse(out int endNum) || startNum == 0 ||
 						endNum == 0) {
 						continue;
 					}

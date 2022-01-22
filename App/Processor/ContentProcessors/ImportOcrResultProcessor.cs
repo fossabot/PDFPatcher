@@ -183,14 +183,14 @@ internal sealed class ImportOcrResultProcessor : IDocProcessor
 	}
 
 	private static int ImportImageOcrResult(IPdfPageCommandContainer container, XmlElement result) {
-		int w, h = 0;
+		int h = 0;
 		IList<PdfPageCommand> sc = container.Commands;
 		XmlNodeList chars = result.SelectNodes(Constants.Ocr.Content);
 		if (chars.Count == 0) {
 			return 0;
 		}
 
-		if (result.GetAttribute(Constants.Coordinates.Width).TryParse(out w) == false
+		if (result.GetAttribute(Constants.Coordinates.Width).TryParse(out int w) == false
 			|| result.GetAttribute(Constants.Coordinates.Height).TryParse(out h) == false
 			|| w <= 0
 			|| h <= 0

@@ -715,7 +715,7 @@ internal sealed class Controller
 			ts[i] = es[i].GetAttribute(Constants.BookmarkAttributes.Title);
 			if (ts[i].Length > 0) {
 				char c = ts[i][0];
-				if (c is >= 'a' and <= 'z' || c is >= 'A' and <= 'Z') {
+				if (c is >= 'a' and <= 'z' or >= 'A' and <= 'Z') {
 					ts[i] = " " + ts[i];
 				}
 			}

@@ -15,13 +15,7 @@ internal static class BitmapHelper
 	public static ImageCodecInfo GetCodec(string codecName) {
 		ImageCodecInfo[] ie = ImageCodecInfo.GetImageEncoders();
 
-		foreach (ImageCodecInfo t in ie) {
-			if (t.MimeType == codecName) {
-				return t;
-			}
-		}
-
-		return null;
+		return ie.FirstOrDefault(t => t.MimeType == codecName);
 	}
 
 	/// <summary>
