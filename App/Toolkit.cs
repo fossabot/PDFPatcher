@@ -9,11 +9,11 @@ internal sealed class Toolkit
 {
     internal static readonly Toolkit[] Toolkits =
     {
-        new("Editor", "BookmarkEditor", "Editor",
+        new("Edit", "BookmarkEditor", "Editor",
             "Create or modify bookmarks for PDF documents, modify settings for PDF documents", true),
-        new("Batch-modify files", "Patcher", "DocumentProcessor",
+        new("Batch", "Patcher", "DocumentProcessor",
             "Batch-process PDF documents according to the configuration and generate new documents", true),
-        new("Merge files", "Merger", "Merger", "Merge multiple images and PDF documents into a new PDF document",
+        new("Merge", "Merger", "Merger", "Merge multiple images and PDF documents into a new PDF document",
             true),
         new("Recognize text", "Ocr", "Ocr",
             "Recognize text in scanned PDF documents (requires Microsoft Office 2003 or 2007 Optical Character Recognition (OCR) engine support)"),
@@ -23,7 +23,7 @@ internal sealed class Toolkit
             false),
         new("Extract pages or split documents", "ExtractPages", "ExtractPages",
             "Extract pages or reflow pages of PDF documents"),
-        new("Extract images", "ExtractImages", "ExtractImage", "Extract images from PDF documents without loss",
+        new("Extract", "ExtractImages", "ExtractImage", "Extract images from PDF documents without loss",
             true),
         new("Convert pages to pictures", "RenderPages", "RenderDocument",
             "Convert pages of PDF documents to pictures"),
