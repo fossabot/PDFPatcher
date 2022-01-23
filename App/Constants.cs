@@ -32,7 +32,7 @@ internal static class Constants
     internal const string AppName = "PDFPatcher";
     internal const string AppEngName = "PDFPatcher";
     internal const string AppHomePage = "http://pdfpatcher.cnblogs.com";
-    internal const string AppHubPage = "https://gitee.com/wmjordan/pdfpatcher";
+    internal const string AppHubPage = "https://github.com/wmjordan/PDFPatcher\nhttps://gitee.com/wmjordan/pdfpatcher";
     internal const string AppUpdateFile = "http://files.cnblogs.com/pdfpatcher/pdfpatcher.update.xml";
 
     /// <summary>
