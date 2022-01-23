@@ -30,7 +30,7 @@ public partial class MergerControl : FunctionControl
         _bookmarkStyleButtonNames = new[] { "_BoldStyleButton", "_BookmarkColorButton", "_ItalicStyleButton" };
     }
 
-    public override string FunctionName => "Merge document";
+    public override string FunctionName => "Merge Document";
 
     public override Bitmap IconImage => Resources.Merger;
 

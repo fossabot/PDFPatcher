@@ -36,7 +36,7 @@ public partial class ExtractImageControl : FunctionControl, IResettableControl
         };
     }
 
-    public override string FunctionName => "Extraction image";
+    public override string FunctionName => "Extract Image";
 
     public override Bitmap IconImage => Resources.ExtractImage;
 
