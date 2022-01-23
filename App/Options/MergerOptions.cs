@@ -68,8 +68,8 @@ public class MergerOptions : DocumentOptions
     //[DefaultValue (-1)]
     //public int CompressionLevel { get; set; }
 
-    /// <summary>Get or specify whether it is automatically set to a black and white picture (not available in the reader).</summary>
-    [XmlAttribute("Black and white pictures are automatically transparent")]
+    /// <summary>Get or specify whether it is automatically set to a black and white image (not available in the reader).</summary>
+    [XmlAttribute("Black and white images are automatically transparent")]
     public bool AutoMaskBWImages { get; set; }
 
     #region file list options

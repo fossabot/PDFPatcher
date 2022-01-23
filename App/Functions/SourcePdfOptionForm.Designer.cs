@@ -330,7 +330,7 @@ this._MergeImagesBox.Text = "Attempt to merge images on the same page";
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size (65, 12);
 			this.label5.TabIndex = 8;
-			this.label5.Text = "Cropped picture:";
+			this.label5.Text = "Cropped image:";
 			//
 			// _RightMarginBox
 			//

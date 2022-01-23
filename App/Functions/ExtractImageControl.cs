@@ -36,7 +36,7 @@ public partial class ExtractImageControl : FunctionControl, IResettableControl
         };
     }
 
-    public override string FunctionName => "Extraction picture";
+    public override string FunctionName => "Extraction image";
 
     public override Bitmap IconImage => Resources.ExtractImage;
 
@@ -78,11 +78,11 @@ public partial class ExtractImageControl : FunctionControl, IResettableControl
         AppContext.MainForm.SetTooltip(_SourceFileControl.FileList, "Path to PDF file containing images");
         AppContext.MainForm.SetTooltip(_TargetBox, "The path to the folder where the output image is placed");
         AppContext.MainForm.SetTooltip(_ExtractPageRangeBox,
-            "Specify the page number range to extract the picture here, if the page number range is not specified, extract the pictures of all pages");
+            "Specify the page number range to extract the image here, if the page number range is not specified, extract the images of all pages");
         AppContext.MainForm.SetTooltip(_FileNameMaskBox,
             "The name of the extracted image file is named according to the number of the page where it is located, and the naming rules can be modified here\n\"0000\": If there are less than four digits, use 0 to make up the four digits\n\"0\": The file name is based on the actual page number, without 0 to make up the digits\n n You can enclose the text in English double quotation marks (such as \"\\\" is about 2000\"0\", the preceding \"2000\" will not be interpreted as a placeholder)");
         AppContext.MainForm.SetTooltip(_MergeImageBox,
-            "Attempt to merge pictures under the same page into the same file\n①The format of the merged pictures must be the same\n②The width must be the same\n③Only in PNG and TIFF format");
+            "Attempt to merge images under the same page into the same file\n①The format of the merged images must be the same\n②The width must be the same\n③Only in PNG and TIFF format");
         AppContext.MainForm.SetTooltip(_VerticalFlipImageBox,
             "The image exported from some PDF files is upside down, you can use this option to restore it");
         AppContext.MainForm.SetTooltip(_InvertBlackAndWhiteBox,

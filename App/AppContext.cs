@@ -105,7 +105,7 @@ internal static class AppContext
     /// <summary>Get the settings of the exported image.</summary>
     public static ImageExtracterOptions ImageExtracter { get; internal set; }
 
-    /// <summary>Get the setting converted to a picture.</summary>
+    /// <summary>Get the setting converted to a image.</summary>
     public static ImageRendererOptions ImageRenderer { get; internal set; }
 
     /// <summary>Get the settings for extracting the page.</summary>

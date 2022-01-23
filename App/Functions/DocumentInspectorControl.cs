@@ -493,7 +493,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
                 _ExportButton.Enabled = _AddObjectMenu.Enabled = true;
                 if (PdfName.IMAGE.Equals(s.GetAsName(PdfName.SUBTYPE)))
                 {
-                    ShowDescription("Picture", null, PdfHelper.GetTypeName(PdfObject.STREAM));
+                    ShowDescription("Image", null, PdfHelper.GetTypeName(PdfObject.STREAM));
                     return;
                 }
             }

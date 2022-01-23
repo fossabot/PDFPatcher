@@ -118,7 +118,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(112, 15);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Output picture location:";
+            this.label4.Text = "Output image location:";
             //
             // label2
             //
@@ -157,7 +157,7 @@
             "0000",
             "000",
             "0",
-            "Picture 0000"});
+            "Image 0000"});
             this._FileNameMaskBox.Location = new System.Drawing.Point(124, 8);
             this._FileNameMaskBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._FileNameMaskBox.Name = "_FileNameMaskBox";
@@ -173,7 +173,7 @@
             this._MergeImageBox.Name = "_MergeImageBox";
             this._MergeImageBox.Size = new System.Drawing.Size(194, 19);
             this._MergeImageBox.TabIndex = 3;
-            this._MergeImageBox.Text = "Try merged pictures of the same page";
+            this._MergeImageBox.Text = "Try merged images of the same page";
             this._MergeImageBox.UseVisualStyleBackColor = true;
             //
             // _VerticalFlipImageBox
@@ -184,7 +184,7 @@
             this._VerticalFlipImageBox.Name = "_VerticalFlipImageBox";
             this._VerticalFlipImageBox.Size = new System.Drawing.Size(119, 19);
             this._VerticalFlipImageBox.TabIndex = 6;
-            this._VerticalFlipImageBox.Text = "Vertical flip picture";
+            this._VerticalFlipImageBox.Text = "Vertical flip image";
             this._VerticalFlipImageBox.UseVisualStyleBackColor = true;
             //
             // _InvertBlackAndWhiteBox
@@ -195,7 +195,7 @@
             this._InvertBlackAndWhiteBox.Name = "_InvertBlackAndWhiteBox";
             this._InvertBlackAndWhiteBox.Size = new System.Drawing.Size(164, 19);
             this._InvertBlackAndWhiteBox.TabIndex = 7;
-            this._InvertBlackAndWhiteBox.Text = "Reverse black and white picture color";
+            this._InvertBlackAndWhiteBox.Text = "Reverse black and white image color";
             this._InvertBlackAndWhiteBox.UseVisualStyleBackColor = true;
             //
             // label7
@@ -262,7 +262,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 15);
             this.label9.TabIndex = 17;
-            this.label9.Text = "Picture of pixel";
+            this.label9.Text = "Image of pixel";
             //
             // tabControl1
             //
@@ -340,7 +340,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 15);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Save black and white pictures as:";
+            this.label1.Text = "Save black and white images as:";
             //
             // _InvertSoftMaskBox
             //
@@ -372,7 +372,7 @@
             this._ExportAnnotImagesBox.Name = "_ExportAnnotImagesBox";
             this._ExportAnnotImagesBox.Size = new System.Drawing.Size(149, 19);
             this._ExportAnnotImagesBox.TabIndex = 5;
-            this._ExportAnnotImagesBox.Text = "Export pictures in the annotation";
+            this._ExportAnnotImagesBox.Text = "Export images in the annotation";
             this._ExportAnnotImagesBox.UseVisualStyleBackColor = true;
             //
             // _MergeJpgToPngBox
@@ -383,7 +383,7 @@
             this._MergeJpgToPngBox.Name = "_MergeJpgToPngBox";
             this._MergeJpgToPngBox.Size = new System.Drawing.Size(244, 19);
             this._MergeJpgToPngBox.TabIndex = 4;
-            this._MergeJpgToPngBox.Text = "JPEG picture is non-destructive merged into PNG picture";
+            this._MergeJpgToPngBox.Text = "JPEG image is non-destructive merged into PNG image";
             this._MergeJpgToPngBox.UseVisualStyleBackColor = true;
             //
             // tabPage2
@@ -447,7 +447,7 @@
             this._AutoOutputDirBox.Name = "_AutoOutputDirBox";
             this._AutoOutputDirBox.Size = new System.Drawing.Size(194, 19);
             this._AutoOutputDirBox.TabIndex = 5;
-            this._AutoOutputDirBox.Text = "Automatically specify the location of the output picture";
+            this._AutoOutputDirBox.Text = "Automatically specify the location of the output image";
             this._AutoOutputDirBox.UseVisualStyleBackColor = true;
             //
             // _TargetBox

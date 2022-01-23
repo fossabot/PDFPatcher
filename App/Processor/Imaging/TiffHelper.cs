@@ -22,7 +22,7 @@ internal static class TiffHelper
         {
             if (bmp.ColorType ==
                 FREE_IMAGE_COLOR_TYPE
-                    .FIC_MINISWHITE) // HACK: TIFF encoding black is 1, solve the .NET TIFF encoder does not properly save two-color picture problem
+                    .FIC_MINISWHITE) // HACK: TIFF encoding black is 1, solve the .NET TIFF encoder does not properly save two-color image problem
             {
                 bmp.Invert();
             }
@@ -37,10 +37,10 @@ internal static class TiffHelper
     }
 
     /// <summary>
-    ///     Save the picture as a black and white two-color picture.If <see cref="PixelFormat" /> is not
+    ///     Save the image as a black and white two-color image.If <see cref="PixelFormat" /> is not
     ///     <see cref="PixelFormat.Format1bppIndexed" />, saved by default format.
     /// </summary>
-    /// <param name="bmp">The picture to be saved.</param>
+    /// <param name="bmp">The image to be saved.</param>
     /// <param name="fileName">Save the path.</param>
     internal static void SaveBinaryImage(this Image bmp, string fileName)
     {

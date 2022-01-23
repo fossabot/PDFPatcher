@@ -3,7 +3,7 @@
 <PDF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PDFStructInfo.xsd">
   <Global>
     <Info Token="ColorSpace" Name="Color Space"
-          Description="Color gamut for rendering pictures or text. &#13;&#10; Common color gamuts are: DeviceRGB (red, green, and blue), DeviceGray (grayscale, black and white), DeviceCMYK (cyan, purple, yellow, and black) color printing) and Indexed (colors indexed from the specified color table, no more than 256 colors)" />
+          Description="Color gamut for rendering images or text. &#13;&#10; Common color gamuts are: DeviceRGB (red, green, and blue), DeviceGray (grayscale, black and white), DeviceCMYK (cyan, purple, yellow, and black) color printing) and Indexed (colors indexed from the specified color table, no more than 256 colors)" />
     <Info Token="DecodeParms" Name="Decode Parameters" />
     <Info Token="PieceInfo" Name="Private Information" />
     <Info Token="Filter" Name="Compression method" Description="The method of compressing stream data">
@@ -13,14 +13,14 @@
     <Info Token="ProcSet" Name="Procedure Set"
           Description="Procedure Set used in the page or annotation, common procedures are: PDF, Text (text), ImageB (black and white image) and ImageC (color image)" />
     <Info Token="Resources" Name="Resource Object"
-          Description="Pictures, fonts and other binary resources used in pages, annotations, etc.">
+          Description="Images, fonts and other binary resources used in pages, annotations, etc.">
       <Info Token="XObject" Name="External Object"
             Description="Represents objects used in rendering page directives.&#13;&#10;Because these objects are defined outside of page directives, they are called "
             External Objects".&#13;& #10;In page directives, use the " Do" operator to display external objects.">
         <Info Token="Image" Name="Image">
-          <Info Token="Subtype" Name="External object type" Description="Image means picture" />
+          <Info Token="Subtype" Name="External object type" Description="Image means image" />
           <Info Token="Height" Name="Original height of the image" Description="Unit: Pixel" Required="true" />
-          <Info Token="Width" Name="Original width of the picture" Description="Unit: Pixel" Required="true" />
+          <Info Token="Width" Name="Original width of the image" Description="Unit: Pixel" Required="true" />
           <Info Token="BitsPerComponent" Name="Pixel Component Bits"
                 Description="The number of bits of the color component. The number of colors represented by its value is: &#xD;&#xA;1: two-color;&#xD;&#xA;2: 4-color;&#xD;&#xA ;4: 16 colors;&#xD;&#xA;8 or 16: 256 or more colors." />
           <Info Token="ImageMask" Name="Mask"
@@ -206,7 +206,7 @@
         <Info Token="Matrix"
               Description="Transpose matrix ([a1,a2,0; b1,b2,0; c1,c2,1]) used to stretch, rotate and translate content.&#xD;&#xA;Set before transpose The coordinates are (x,y), then the transposed coordinates are: &#xD;&#xA;x' = a1 × x + b1 × y + c1;&#xD;&#xA;y' = a2 × x + b2 × y + c2.&#xD;&#xA;The effect of the transposed matrix is ​​cumulative, and the latter transposed matrix must first be multiplied by the matrix that appears before it is the final matrix value.&#xD; &#xA;The transposed matrix will affect subsequent drawing and text rendering results." />
         <Info Token="Drawing Object"
-              Description="Draw the specified resource object (see the XObject item of Resources).&#xD;&#xA;Common resource objects include pictures (Image) and forms (Form).&#xD;&#xA;Regardless of the original object The size of the object, its width and height are compressed to 1 unit before processing.&#xD;&#xA;The actual rendering size of the object is determined by the previous transpose matrix (for example: the current transpose matrix is ​​[ 500 0 0 700 0 0], the width and height of the rendered object will be 500×700)." />
+              Description="Draw the specified resource object (see the XObject item of Resources).&#xD;&#xA;Common resource objects include images (Image) and forms (Form).&#xD;&#xA;Regardless of the original object The size of the object, its width and height are compressed to 1 unit before processing.&#xD;&#xA;The actual rendering size of the object is determined by the previous transpose matrix (for example: the current transpose matrix is ​​[ 500 0 0 700 0 0], the width and height of the rendered object will be 500×700)." />
         <Info Token="Drawing Status"
               Description="Specifies the drawing state area, which is actually a pair of instructions (q and Q).&#xD;&#xA;The drawing state includes states such as transposed matrix, color, color gamut, text, mask, etc.&# xD;&#xA;When entering the drawing state (q), push the previous drawing state onto the stack, and then create a new drawing state.&#xD;&#xA;When leaving the drawing state (Q), put the previous drawing state on the stack.&#xD;&#xA; The drawing state is popped off the stack, that is, the original drawing state is restored." />
         <Info Token="Drawing parameters"

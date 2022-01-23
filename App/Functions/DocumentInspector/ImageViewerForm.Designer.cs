@@ -57,7 +57,7 @@
 			_Save.Name = "_Save";
 			_Save.Size = new System.Drawing.Size (90, 22);
 			_Save.Text = "&Save Image";
-			_Save.ToolTipText = "Save the displayed picture as a file";
+			_Save.ToolTipText = "Save the displayed image as a file";
 			//
 			// _ZoomReset
 			//

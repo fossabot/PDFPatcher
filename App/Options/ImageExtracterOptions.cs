@@ -19,7 +19,7 @@ public class ImageExtracterOptions
     public bool SkipRedundantImages { get; set; }
 
     /// <summary>Gets or specifies whether to merge images of the same page and the same width. </summary>
-    [XmlAttribute("Merge pictures")]
+    [XmlAttribute("Merge images")]
     public bool MergeImages { get; set; }
 
     /// <summary>Gets or specifies whether to save the merged JPEG image as a lossless PNG image. </summary>
@@ -27,11 +27,11 @@ public class ImageExtracterOptions
     public bool MergeJpgToPng { get; set; }
 
     /// <summary>Gets or specifies whether to flip the exported PNG or TIFF image vertically. </summary>
-    [XmlAttribute("Vertical flip picture")]
+    [XmlAttribute("Vertical flip image")]
     public bool VerticalFlipImages { get; set; }
 
     /// <summary>Gets or specifies whether to invert the color of the black and white image. </summary>
-    [XmlAttribute("Invert black and white picture color")]
+    [XmlAttribute("Invert black and white image color")]
     public bool InvertBlackAndWhiteImages { get; set; }
 
     [XmlAttribute("Export black and white images as PNG")]

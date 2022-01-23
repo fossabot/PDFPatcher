@@ -31,8 +31,8 @@ public class ImageRendererOptions
             _ => ".png"
         };
 
-    /// <summary>Gets or specifies whether to flip the exported picture.</summary>
-    [XmlAttribute("Vertical flip picture")]
+    /// <summary>Gets or specifies whether to flip the exported image.</summary>
+    [XmlAttribute("Vertical flip image")]
     public bool VerticalFlipImages { get; set; }
 
     /// <summary>Gets or specifies the image that is horizontally flipped.</summary>
@@ -43,7 +43,7 @@ public class ImageRendererOptions
     [XmlAttribute("Image Color")]
     public ColorSpace ColorSpace { get; set; }
 
-    /// <summary>Gets or specifies whether to reverse the color of the picture.</summary>
+    /// <summary>Gets or specifies whether to reverse the color of the image.</summary>
     [XmlAttribute("Invert image color")]
     public bool InvertColor { get; set; }
 

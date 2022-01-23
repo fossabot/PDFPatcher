@@ -161,7 +161,7 @@ this._CancelButton.Text = "&Cancel";
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size (149, 12);
 			this.label5.TabIndex = 8;
-			this.label5.Text = "Cropped pictures (unit: pixels):";
+			this.label5.Text = "Cropped images (unit: pixels):";
 			//
 			// _RightMarginBox
 			//

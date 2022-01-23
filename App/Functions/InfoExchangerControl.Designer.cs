@@ -223,7 +223,7 @@
 			//
 			_RemoveImageAction.Name = "_RemoveImageAction";
 			_RemoveImageAction.Size = new System.Drawing.Size(194, 22);
-			_RemoveImageAction.Text = "Delete pictures";
+			_RemoveImageAction.Text = "Delete images";
 			//
 			// _RemoveActions
 			//

@@ -30,7 +30,7 @@ public sealed partial class ImageViewerForm : Form
             }
             catch (Exception ex)
             {
-                this.ErrorBox("Unable to load pictures", ex);
+                this.ErrorBox("Unable to load images", ex);
             }
         }
     }

@@ -63,7 +63,7 @@ internal static class Constants
         internal const string AllFilter = "All files|*.*";
 
         internal const string ImageFilter =
-            "Picture file (*.jpg, *.jpeg, *.tiff, *.tif, *.png, *.gif)|*.jpg;*.jpeg;*.tiff;*.tif;*.png;*.gif";
+            "Image file (*.jpg, *.jpeg, *.tiff, *.tif, *.png, *.gif)|*.jpg;*.jpeg;*.tiff;*.tif;*.png;*.gif";
 
         internal const string Tif = ".tif";
         internal const string Tiff = ".tiff";
@@ -289,7 +289,7 @@ internal static class Constants
 
     #endregion
 
-    #region Export to picture
+    #region Export to image
 
     internal static class ColorSpaces
     {

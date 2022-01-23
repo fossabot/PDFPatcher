@@ -1588,8 +1588,8 @@ internal sealed class PdfViewerControl : ImageBoxEx
     ///     Convert the location of the virtual page to the PDF page location.
     /// </summary>
     /// <param name="pageNumber">page.</param>
-    /// <param name="imageX">The abscissions of the virtual picture.</param>
-    /// <param name="imageY">The ordinate of the virtual picture.</param>
+    /// <param name="imageX">The abscissions of the virtual image.</param>
+    /// <param name="imageY">The ordinate of the virtual image.</param>
     /// <returns>PDF page location.</returns>
     internal PagePosition TransposeVirtualImageToPagePosition(int pageNumber, int imageX, int imageY)
     {

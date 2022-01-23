@@ -129,7 +129,7 @@
 			this._ConvertToMonoColorBox.Name = "_ConvertToMonoColorBox";
 			this._ConvertToMonoColorBox.Size = new System.Drawing.Size(144, 16);
 			this._ConvertToMonoColorBox.TabIndex = 12;
-			this._ConvertToMonoColorBox.Text = "Convert to black and white picture and then recognize";
+			this._ConvertToMonoColorBox.Text = "Convert to black and white image and then recognize";
 			this._ConvertToMonoColorBox.UseVisualStyleBackColor = true;
 			//
 			// _RemoveSpaceBetweenChineseBox
@@ -149,7 +149,7 @@
 			this._SaveOcredImageBox.Name = "_SaveOcredImageBox";
 			this._SaveOcredImageBox.Size = new System.Drawing.Size(156, 16);
 			this._SaveOcredImageBox.TabIndex = 13;
-			this._SaveOcredImageBox.Text = "Save pictures of the identification engine";
+			this._SaveOcredImageBox.Text = "Save images of the identification engine";
 			this._SaveOcredImageBox.UseVisualStyleBackColor = true;
 			this._SaveOcredImageBox.Visible = false;
 			//

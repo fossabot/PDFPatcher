@@ -219,11 +219,11 @@ internal sealed class OcrProcessor
     private IList<Result> OcrPage(int i, ICollection<int> errorList)
     {
 #if DEBUGOCR
-        Tracker.TraceMessage("Export the picture on page " + i + ".");
+        Tracker.TraceMessage("Export the image on page " + i + ".");
 #endif
         _ocrImageExp.ExtractPageImages(_reader, i);
 #if DEBUGOCR
-        Tracker.TraceMessage("Finished exporting the picture on page " + i + ".");
+        Tracker.TraceMessage("Finished exporting the image on page " + i + ".");
 #endif
         List<Result> or = new();
         try
@@ -293,7 +293,7 @@ internal sealed class OcrProcessor
             return;
         }
 #if DEBUGOCR
-        Tracker.TraceMessage("Identify picture: " + p);
+        Tracker.TraceMessage("Identify image: " + p);
 #endif
 #if DEBUG
         Tracker.TraceMessage(p);
@@ -483,15 +483,15 @@ internal sealed class OcrProcessor
             _Ocr.Ocr(p, sp, result);
         }
 #if DEBUGOCR
-        Tracker.TraceMessage("Complete identification picture:" + p);
+        Tracker.TraceMessage("Complete identification image:" + p);
 #endif
     }
 
     /// <summary>
-    ///     Call the image processing engine identification bitmap. If the amount of text in the picture is too small, it will
+    ///     Call the image processing engine identification bitmap. If the amount of text in the image is too small, it will
     ///     not be recognized and an exception will be thrown.
     /// </summary>
-    /// <param name="bmp">a picture that needs to be identified.</param>
+    /// <param name="bmp">a image that needs to be identified.</param>
     /// <param name="options">Identification option.</param>
     /// <exception cref="System.Runtime.InteropServices.COMException"> An error occurred during identification.</exception>
     /// <returns>Identified text.</returns>

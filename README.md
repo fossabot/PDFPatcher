@@ -8,13 +8,13 @@ PDFPatcher is a PDF processing tool. It has the following functions:
 
 - Modify PDF documents: modify document properties, page numbers, page links; unify page size; delete actions such as automatically opening web pages; remove copying and printing restrictions; set the initial mode of the reader; page.
 - Intimate PDF bookmark editor: with a reading interface (with a right-to-left reading method that is easy to read vertical documents), you can batch modify PDF bookmark properties (color, style, target page number, zoom ratio, etc.), and bookmarks can be accurately positioned Go to the middle of the page; perform search and replace in bookmarks (regular expression and XPath matching are supported, and chapter, chapter, and section bookmarks can be quickly selected), [Automatically and quickly generate document bookmarks](https://www.cnblogs.com/pdfpatcher/p/8452025.html).
-- Make PDF files: Merge existing PDF files or pictures to generate new PDF files; the merged PDF document has bookmarks of the original document, and new bookmarks (or generated according to the file name), new bookmark text and styles can also be attached customizable; merged PDF documents can be assigned a uniform page size for easy printing and reading.
+- Make PDF files: Merge existing PDF files or images to generate new PDF files; the merged PDF document has bookmarks of the original document, and new bookmarks (or generated according to the file name), new bookmark text and styles can also be attached customizable; merged PDF documents can be assigned a uniform page size for easy printing and reading.
 - Split or merge PDF files and keep the original bookmarks or add new ones.
-- High-speed lossless export of pictures from PDF documents.
-- Convert PDF pages to pictures.
+- High-speed lossless export of images from PDF documents.
+- Convert PDF pages to images.
 - Extract or delete specified pages in PDF documents adjust the page order of PDF documents.
 - Rename PDF file names based on PDF document metadata.
-- Invoke the image recognition engine of Microsoft Office to analyze the text in the picture of the PDF document; convert the content page of the picture PDF into a PDF bookmark. The recognition results can be written to PDF files.
+- Invoke the image recognition engine of Microsoft Office to analyze the text in the image of the PDF document; convert the content page of the image PDF into a PDF bookmark. The recognition results can be written to PDF files.
 - Replace fonts: replace fonts used in documents; embed fonts into PDF documents to eliminate garbled characters when copying text, making it readable on devices without fonts (e.g., e-book readers such as Kindle).
 - Analyze the document structure: Display the PDF document structure in a tree view, edit and modify the PDF document nodes, or export the PDF document into an XML file for PDF lovers to analyze and debug.
 - Free forever, never expires, no ads, no pop-up nonsense dialogs, no privacy snooping.

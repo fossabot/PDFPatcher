@@ -64,7 +64,7 @@ internal sealed class ImageExtractor
             ExtractImageInstances(pp, false);
         }
 
-        // Collect pictures in annotations
+        // Collect images in annotations
         if (_options.ExtractAnnotationImages)
         {
             PdfArray an = o.Locate<PdfArray>(PdfName.ANNOTS);
@@ -119,7 +119,7 @@ internal sealed class ImageExtractor
 
         if (_options.MergeImages && PosList.Count > 1)
         {
-            // Missing the same width, the same type of picture
+            // Missing the same width, the same type of image
             MergeImages();
         }
     }
@@ -391,7 +391,7 @@ internal sealed class ImageExtractor
                 type = RotateFlipType.Rotate90FlipNone;
                 break;
             default:
-                Tracker.TraceMessage(Tracker.Category.Error, "Non-destructive flipping JPG picture failed:" + fileName);
+                Tracker.TraceMessage(Tracker.Category.Error, "Non-destructive flipping JPG image failed:" + fileName);
                 return;
         }
 
@@ -483,7 +483,7 @@ internal sealed class ImageExtractor
                 catch (SEHException)
                 {
                     Tracker.TraceMessage(Tracker.Category.Error,
-                        "If you have an error while saving the picture, please contact developers:" + n);
+                        "If you have an error while saving the image, please contact developers:" + n);
                 }
             }
         }
@@ -581,7 +581,7 @@ internal sealed class ImageExtractor
             // Since only the PNG and TIF specify only the PixelFormat of the imageinfo, only these two types of files are handled during the merge process.
             if (imageI.Image.ReferenceCount < 1 // Image has been processed
                 || imageI.Image.PixelFormat == PixelFormat.Undefined // Types that do not belong to merge
-                || l - i < 2 // Is the last picture
+                || l - i < 2 // Is the last image
                )
             {
                 continue;
@@ -614,7 +614,7 @@ internal sealed class ImageExtractor
             switch (i2)
             {
                 case 0:
-                    // Picture without consolidation conditions
+                    // Image without consolidation conditions
                     continue;
                 case 1:
                     PosList[i].Image.ReferenceCount++;
@@ -628,7 +628,7 @@ internal sealed class ImageExtractor
 
             if (PrintImageLocation)
             {
-                Tracker.TraceMessage("Merge picture:" + string.Join("、",
+                Tracker.TraceMessage("Merge image:" + string.Join("、",
                     Array.ConvertAll(imageParts, p => Path.GetFileName(p.FileName))));
             }
 
@@ -669,12 +669,12 @@ internal sealed class ImageExtractor
                                         bmp.Palette.AsArray = bmpPal;
                                     }
 
-                                    // The palette is not enough to store the merged picture color
+                                    // The palette is not enough to store the merged image color
                                     if (!bmp.ConvertColorDepth(FREE_IMAGE_COLOR_DEPTH.FICD_24_BPP) ||
                                         !bmp2.ConvertColorDepth(FREE_IMAGE_COLOR_DEPTH.FICD_24_BPP))
                                     {
                                         throw new OverflowException(
-                                            "The palette overflows and cannot merge the picture.");
+                                            "The palette overflows and cannot merge the image.");
                                     }
 
                                     ext = Constants.FileExtensions.Png;
@@ -743,7 +743,7 @@ internal sealed class ImageExtractor
                         bmp.ConvertColorDepth(FREE_IMAGE_COLOR_DEPTH.FICD_24_BPP);
                         if (bmp.Paste(bmp2, 0, h, int.MaxValue) == false)
                         {
-                            Tracker.TraceMessage("Merge picture failed");
+                            Tracker.TraceMessage("Merge image failed");
                         }
 
                         bmpPal = null;
@@ -771,7 +771,7 @@ internal sealed class ImageExtractor
             if (PrintImageLocation)
             {
                 Tracker.TraceMessage(Tracker.Category.OutputFile, f);
-                Tracker.TraceMessage("Save the merged picture:" + f);
+                Tracker.TraceMessage("Save the merged image:" + f);
             }
 
             if (ext == Constants.FileExtensions.Tif)

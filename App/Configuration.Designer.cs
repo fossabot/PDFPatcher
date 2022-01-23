@@ -125,7 +125,7 @@ namespace PDFPatcher
         }
 
         /// <summary>
-        ///   Find a localized string similar to exporting the picture directory.
+        ///   Find a localized string similar to exporting the image directory.
         /// </summary>
         internal static string Folders
         {

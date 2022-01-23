@@ -75,7 +75,7 @@ internal static class Worker
         string om = options.FileMask;
         try
         {
-            Tracker.TraceMessage("Export the picture.");
+            Tracker.TraceMessage("Export the image.");
             Tracker.TrackProgress(loadDocProgressWeight);
             if (FileHelper.HasFileNameMacro(targetPath))
             {
@@ -111,7 +111,7 @@ internal static class Worker
         catch (Exception ex)
         {
             Tracker.TraceMessage(ex);
-            FormHelper.ErrorBox("When exporting pictures, you encounter an error: \n" + ex.Message);
+            FormHelper.ErrorBox("When exporting images, you encounter an error: \n" + ex.Message);
         }
         finally
         {
@@ -138,7 +138,7 @@ internal static class Worker
             PageRangeCollection ranges = PageRangeCollection.Parse(options.ExtractPageRange, 1, mupdf.PageCount, true);
             int loadCount = loadDocProgressWeight + ranges.TotalPages;
             Tracker.SetProgressGoal(loadCount);
-            Tracker.TraceMessage("Convert the picture.");
+            Tracker.TraceMessage("Convert the image.");
             Tracker.TrackProgress(loadDocProgressWeight);
             foreach (PageRange range in ranges)
                 foreach (int i in range)
@@ -237,7 +237,7 @@ internal static class Worker
         if (AppContext.Exporter.ExtractImages)
         {
             AppContext.Exporter.Images.OutputPath = FileHelper.CombinePath(Path.GetDirectoryName(targetFile),
-                Path.GetFileNameWithoutExtension(targetFile) + "Picture file\\");
+                Path.GetFileNameWithoutExtension(targetFile) + "Image file\\");
         }
 
         try
@@ -735,7 +735,7 @@ internal static class Worker
         if (sink.Workload == 0)
         {
             Tracker.TraceMessage(Tracker.Category.ImportantMessage,
-                "The merged file list does not include a picture or PDF file.");
+                "The merged file list does not include a image or PDF file.");
             return;
         }
 

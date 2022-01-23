@@ -810,7 +810,7 @@ this._MarginUnitBox.TabIndex = 12;
 			this._RecompressWithJbig2Box.Name = "_RecompressWithJbig2Box";
 			this._RecompressWithJbig2Box.Size = new System.Drawing.Size(164, 19);
 			this._RecompressWithJbig2Box.TabIndex = 1;
-			this._RecompressWithJbig2Box.Text = "Optimize black and white picture compression ratio";
+			this._RecompressWithJbig2Box.Text = "Optimize black and white image compression ratio";
 			this._RecompressWithJbig2Box.UseVisualStyleBackColor = true;
 			//
 			// _FullCompressionBox

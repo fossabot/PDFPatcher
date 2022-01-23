@@ -221,7 +221,7 @@ this.groupBox2.Name = "groupBox2";
 this.groupBox2.Size = new System.Drawing.Size(195, 70);
 this.groupBox2.TabIndex = 9;
 this.groupBox2.TabStop = false;
-this.groupBox2.Text = "Picture";
+this.groupBox2.Text = "Image";
 //
 // _RecompressImageBox
 //

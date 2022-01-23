@@ -61,7 +61,7 @@ internal sealed class ImageRecompressor : IPageProcessor
 
             _processedImageCount++;
             PdfNumber l = im.GetAsNumber(PdfName.LENGTH);
-            if (l == null || l.IntValue < 400 /* Ignore small pictures */)
+            if (l == null || l.IntValue < 400 /* Ignore small images */)
             {
                 continue;
             }

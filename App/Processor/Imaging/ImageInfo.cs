@@ -55,7 +55,7 @@ internal sealed class ImageInfo
         {
             if (info.InlineImage.PdfRef != null)
             {
-                Tracker.TraceMessage(string.Concat("Ignored a picture numbered ", info.InlineImage.ToString(),
+                Tracker.TraceMessage(string.Concat("Ignored a image numbered ", info.InlineImage.ToString(),
                     ", size is ", info.Width, "*",
                     info.Height, "The image."));
             }
@@ -130,7 +130,7 @@ internal sealed class ImageInfo
                     outBuf = JBig2Decoder.Decode(decodedBytes, globals);
                     if (outBuf == null)
                     {
-                        info.LastDecodeError = "Export JBIG2 coded picture failed.";
+                        info.LastDecodeError = "Export JBIG2 coded image failed.";
                         return null;
                     }
 
@@ -294,7 +294,7 @@ internal sealed class ImageInfo
     private void CreatePalette(FreeImageBitmap bmp)
     {
         //if (PaletteColorSpace == null) {
-        //	//todo++ The picture of the missing color gamut information is not necessarily a grayscale image
+        //	//todo++ The image of the missing color gamut information is not necessarily a grayscale image
         //	if (bmp.HasPalette) {
         //		PaletteColorSpace = PdfName.DEVICEGRAY;
         //	}
@@ -568,7 +568,7 @@ internal sealed class ImageInfo
                     else
                     {
                         info.ColorSpace = arr.GetAsName(0);
-                        //Tracker.TraceMessage (String.Concat ("The color gamut of this picture is not supported: ", info.ColorSpace));
+                        //Tracker.TraceMessage (String.Concat ("The color gamut of this image is not supported: ", info.ColorSpace));
                     }
                 }
             }

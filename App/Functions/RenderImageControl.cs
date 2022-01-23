@@ -104,14 +104,14 @@ public partial class RenderImageControl : FunctionControl, IResettableControl
         AppContext.MainForm.SetTooltip(_SourceFileControl.FileList, "Path to PDF file containing images");
         AppContext.MainForm.SetTooltip(_TargetBox, "The path to the folder where the output image is placed");
         AppContext.MainForm.SetTooltip(_ExtractPageRangeBox,
-            "The page number range of the picture needs to be extracted, and the pictures of all pages are extracted when the page number range is not specified");
+            "The page number range of the image needs to be extracted, and the images of all pages are extracted when the page number range is not specified");
         AppContext.MainForm.SetTooltip(_FileNameMaskBox,
             "The name of the extracted image file is named according to the number of the page where it is located, and the naming rules can be modified here\n\"0000\": If there are less than four digits, use 0 to make up the four digits\n\"0\": The file name is based on the actual page number, without 0 to make up the digits\n n You can enclose the text in English double quotation marks (such as \"\\\" is about 2000\"0\", the preceding \"2000\" will not be interpreted as a placeholder)");
         AppContext.MainForm.SetTooltip(_VerticalFlipImageBox,
             "The image exported from some PDF files is upside down, you can use this option to restore it");
         AppContext.MainForm.SetTooltip(_InvertColorBox, "Invert the color of PNG and TIFF black and white images");
         AppContext.MainForm.SetTooltip(_QuantizeBox,
-            "Minimize the colors used for exporting pictures, thereby reducing the disk space occupied by pictures");
+            "Minimize the colors used for exporting images, thereby reducing the disk space occupied by images");
         AppContext.MainForm.SetTooltip(_SpecificWidthBox,
             "Specify the width of the output image (in pixels, the height of the image will be scaled proportionally)");
         AppContext.MainForm.SetTooltip(_SpecificRatioBox, "Specify the magnification of the output image");

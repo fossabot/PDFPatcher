@@ -622,12 +622,12 @@ internal sealed class PdfDocumentCreator
             default:
                 {
                     if (_autoRotate
-                        && ( // Page is not enough to put down the picture of the current size
+                        && ( // Page is not enough to put down the image of the current size
                             (image.ScaledHeight > _content.Height || image.ScaledWidth > _content.Width)
                             && (image.ScaledWidth > image.ScaledHeight && _portrait
                                 || image.ScaledHeight > image.ScaledWidth && _portrait == false)
                             ||
-                            // The picture is small, you can restore the original page direction
+                            // The image is small, you can restore the original page direction
                             _portrait != _option.ContentHeight > _option.ContentWidth
                             && image.ScaledHeight <= _content.Height && image.ScaledWidth <= _content.Width
                             && image.ScaledHeight <= _content.Width && image.ScaledWidth <= _content.Height

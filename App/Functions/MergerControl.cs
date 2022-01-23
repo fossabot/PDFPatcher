@@ -356,7 +356,7 @@ public partial class MergerControl : FunctionControl
         int l = _ItemList.GetItemCount();
         if (l == 0)
         {
-            FormHelper.InfoBox("Add a picture or PDF source file used to generate a PDF file.");
+            FormHelper.InfoBox("Add a image or PDF source file used to generate a PDF file.");
             return;
         }
         //var si = new List<SourceItem> (l);
@@ -448,7 +448,7 @@ public partial class MergerControl : FunctionControl
                 FileName = "[Select the directory]",
                 Filter = _OpenImageBox.Filter,
                 CheckFileExists = false,
-                Title = "Select a folder with a picture or PDF, click the \"Open\" button"
+                Title = "Select a folder with a image or PDF, click the \"Open\" button"
             };
             if (f.ShowDialog() != DialogResult.OK)
             {
@@ -838,7 +838,7 @@ public partial class MergerControl : FunctionControl
                 continue;
             }
 
-            if (FormHelper.YesNoBox("The selected picture has different settings, is it reset to a unified value?") ==
+            if (FormHelper.YesNoBox("The selected image has different settings, is it reset to a unified value?") ==
                 DialogResult.No)
             {
                 return;

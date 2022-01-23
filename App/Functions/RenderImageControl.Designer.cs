@@ -107,7 +107,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size (89, 12);
 			this.label4.TabIndex = 2;
-			this.label4.Text = "Output picture location:";
+			this.label4.Text = "Output image location:";
 			//
 			// label2
 			//
@@ -145,7 +145,7 @@
             "0000",
             "000",
             "0",
-            "Picture 0000"});
+            "Image 0000"});
 			this._FileNameMaskBox.Location = new System.Drawing.Point (93, 6);
 			this._FileNameMaskBox.Name = "_FileNameMaskBox";
 			this._FileNameMaskBox.Size = new System.Drawing.Size (244, 20);
@@ -287,7 +287,7 @@ this._InvertColorBox.Text = "Invert the color of the image";
 			this.groupBox2.Size = new System.Drawing.Size (179, 100);
 			this.groupBox2.TabIndex = 9;
 			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Output picture size";
+			this.groupBox2.Text = "Output image size";
 			//
 			// _ResolutionBox
 			//
@@ -452,7 +452,7 @@ this._InvertColorBox.Text = "Invert the color of the image";
 			this._QuantizeBox.Name = "_QuantizeBox";
 			this._QuantizeBox.Size = new System.Drawing.Size (108, 16);
 			this._QuantizeBox.TabIndex = 4;
-			this._QuantizeBox.Text = "Reduce the color of the picture";
+			this._QuantizeBox.Text = "Reduce the color of the image";
 			this._QuantizeBox.UseVisualStyleBackColor = true;
 			//
 			// _ColorSpaceGrayBox
@@ -473,7 +473,7 @@ this._InvertColorBox.Text = "Invert the color of the image";
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size (89, 12);
 			this.label11.TabIndex = 5;
-			this.label11.Text = "JPEG picture quality:";
+			this.label11.Text = "JPEG image quality:";
 			//
 			// label7
 			//
@@ -482,7 +482,7 @@ this._InvertColorBox.Text = "Invert the color of the image";
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size (89, 12);
 			this.label7.TabIndex = 3;
-			this.label7.Text = "Output picture format:";
+			this.label7.Text = "Output image format:";
 			//
 			// _JpegQualityBox
 			//
@@ -532,7 +532,7 @@ this._InvertColorBox.Text = "Invert the color of the image";
 			this._AutoOutputDirBox.Name = "_AutoOutputDirBox";
 			this._AutoOutputDirBox.Size = new System.Drawing.Size (156, 16);
 			this._AutoOutputDirBox.TabIndex = 5;
-			this._AutoOutputDirBox.Text = "Automatically specify the location of the output picture";
+			this._AutoOutputDirBox.Text = "Automatically specify the location of the output image";
 			this._AutoOutputDirBox.UseVisualStyleBackColor = true;
 			//
 			// _BrowseTargetPdfButton
