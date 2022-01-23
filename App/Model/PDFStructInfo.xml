@@ -1,237 +1,237 @@
-<?xml version="1.0" encoding="GB2312"?>
+ï»¿<?xml version="1.0" encoding="GB2312"?>
 
 <PDF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PDFStructInfo.xsd">
   <Global>
-    <Info Token="ColorSpace" Name="É«Óò"
-          Description="ÓÃÓÚäÖÈ¾Í¼Æ¬»òÎÄ±¾µÄÉ«Óò¡£&#13;&#10;³£¼ûµÄÉ«ÓòÓÐ£ºDeviceRGB£¨ºìÂÌÀ¶ÈýÉ«£©¡¢DeviceGray£¨»Ò¶È¡¢ºÚ°×£©¡¢DeviceCMYK£¨Çà×Ï»ÆºÚËÄÉ«Ó¡Ë¢£©ºÍ Indexed£¨´ÓÖ¸¶¨ÑÕÉ«±íË÷ÒýµÄÑÕÉ«£¬²»³¬¹ý256É«£©" />
-    <Info Token="DecodeParms" Name="½âÑ¹Ëõ²ÎÊý" />
-    <Info Token="PieceInfo" Name="Ë½ÓÐÐÅÏ¢" />
-    <Info Token="Filter" Name="Ñ¹Ëõ·½Ê½" Description="Ñ¹ËõÁ÷Êý¾ÝµÄ·½Ê½">
+    <Info Token="ColorSpace" Name="è‰²åŸŸ"
+          Description="ç”¨äºŽæ¸²æŸ“å›¾ç‰‡æˆ–æ–‡æœ¬çš„è‰²åŸŸã€‚&#13;&#10;å¸¸è§çš„è‰²åŸŸæœ‰ï¼šDeviceRGBï¼ˆçº¢ç»¿è“ä¸‰è‰²ï¼‰ã€DeviceGrayï¼ˆç°åº¦ã€é»‘ç™½ï¼‰ã€DeviceCMYKï¼ˆé’ç´«é»„é»‘å››è‰²å°åˆ·ï¼‰å’Œ Indexedï¼ˆä»ŽæŒ‡å®šé¢œè‰²è¡¨ç´¢å¼•çš„é¢œè‰²ï¼Œä¸è¶…è¿‡256è‰²ï¼‰" />
+    <Info Token="DecodeParms" Name="è§£åŽ‹ç¼©å‚æ•°" />
+    <Info Token="PieceInfo" Name="ç§æœ‰ä¿¡æ¯" />
+    <Info Token="Filter" Name="åŽ‹ç¼©æ–¹å¼" Description="åŽ‹ç¼©æµæ•°æ®çš„æ–¹å¼">
       <RefInfo Token="DecodeParms" />
     </Info>
-    <Info Token="Length" Name="Êý¾ÝÁ÷³¤¶È" />
-    <Info Token="ProcSet" Name="¹ý³Ì¼¯ºÏ"
-          Description="ÔÚÒ³Ãæ»òÅú×¢ÖÐÊ¹ÓÃµÄ¹ý³Ì¼¯ºÏ£¨Procedure Set£©£¬³£¼û¹ý³ÌÓÐ£ºPDF¡¢Text£¨ÎÄ±¾£©¡¢ImageB£¨ºÚ°×Í¼Ïñ£©ºÍ ImageC£¨²ÊÉ«Í¼Ïñ£©" />
-    <Info Token="Resources" Name="×ÊÔ´¶ÔÏó" Description="Ò³Ãæ¡¢Åú×¢µÈÊ¹ÓÃµÄÍ¼Æ¬¡¢×ÖÌåµÈ¶þ½øÖÆ×ÊÔ´">
-      <Info Token="XObject" Name="Íâ²¿¶ÔÏó"
-            Description="±íÊ¾ÔÚäÖÈ¾Ò³ÃæÖ¸ÁîÖÐÊ¹ÓÃµÄ¶ÔÏó¡£&#13;&#10;ÓÉÓÚÕâÐ©¶ÔÏóÊÇÔÚÒ³ÃæÖ¸ÁîÖ®Íâ¶¨ÒåµÄ£¬¹Ê³ÆÎª¡°Íâ²¿¶ÔÏó¡±£¨External Object£©¡£&#13;&#10;ÔÚÒ³ÃæÖ¸ÁîÖÐ£¬Ê¹ÓÃ¡°Do¡±²Ù×÷·ûÏÔÊ¾Íâ²¿¶ÔÏó¡£">
-        <Info Token="Image" Name="Í¼Æ¬">
-          <Info Token="Subtype" Name="Íâ²¿¶ÔÏóÀàÐÍ" Description="Image ±íÊ¾Í¼Æ¬" />
-          <Info Token="Height" Name="Í¼Æ¬µÄÔ­Ê¼¸ß¶È" Description="µ¥Î»£ºÏñËØ" Required="true" />
-          <Info Token="Width" Name="Í¼Æ¬µÄÔ­Ê¼¿í¶È" Description="µ¥Î»£ºÏñËØ" Required="true" />
-          <Info Token="BitsPerComponent" Name="ÏñËØ¹¹¼þÎ»Êý"
-                Description="ÑÕÉ«×é¼þµÄÎ»Êý¡£ÆäÈ¡Öµ´ú±íµÄÑÕÉ«ÊýÎª£º&#xD;&#xA;1£ºË«É«£»&#xD;&#xA;2£º4 É«£»&#xD;&#xA;4£º16 É«£»&#xD;&#xA;8»ò16£º256 É«ÒÔÉÏ¡£" />
-          <Info Token="ImageMask" Name="ÃÉ°æ" Description="ÃÉ°æÍ¼Ïñ±ØÐëÊÇË«É«Í¼Ïñ¡£Ò»°ãÇé¿öÏÂ£¬ÃÉ°æÍ¼ÏñÔÚÔÄ¶ÁÆ÷ÖÐÊÇ²»ÄÜ±»Ñ¡ÖÐµÄ¡£" />
-          <Info Token="Decode" Name="½âÂë²ÎÊý" />
-          <Info Token="Mask" Name="ÃÉ°æÍ¼Ïñ»òÃÉ°æÑÕÉ«" />
-          <Info Token="SMask" Name="ÃÉ°æÍ¼Ïñ" />
-          <Info Token="Interpolate" Name="²åÖµ" Description="ÊÇ·ñ²ÉÓÃ²åÖµËã·¨ÏÔÊ¾Í¼Ïñ" />
-          <Info Token="Filter" Name="Ñ¹Ëõ·½Ê½"
-                Description="ÓÃÓÚÑ¹ËõÍ¼ÏñµÄËã·¨£¬³£¼ûËã·¨ÓÐ£ºDCTDecode£¨JPEG Ñ¹Ëõ£©¡¢FlateDecode£¨Ïàµ±ÓÚ PNG Ñ¹Ëõ£©¡¢CCITTFaxDecode »ò JBIG2Decode£¨¸ßÐ§µÄË«É«Í¼ÏñÑ¹ËõËã·¨£©¡¢JPXDecode£¨JPEG2000 Ñ¹Ëõ£©">
+    <Info Token="Length" Name="æ•°æ®æµé•¿åº¦" />
+    <Info Token="ProcSet" Name="è¿‡ç¨‹é›†åˆ"
+          Description="åœ¨é¡µé¢æˆ–æ‰¹æ³¨ä¸­ä½¿ç”¨çš„è¿‡ç¨‹é›†åˆï¼ˆProcedure Setï¼‰ï¼Œå¸¸è§è¿‡ç¨‹æœ‰ï¼šPDFã€Textï¼ˆæ–‡æœ¬ï¼‰ã€ImageBï¼ˆé»‘ç™½å›¾åƒï¼‰å’Œ ImageCï¼ˆå½©è‰²å›¾åƒï¼‰" />
+    <Info Token="Resources" Name="èµ„æºå¯¹è±¡" Description="é¡µé¢ã€æ‰¹æ³¨ç­‰ä½¿ç”¨çš„å›¾ç‰‡ã€å­—ä½“ç­‰äºŒè¿›åˆ¶èµ„æº">
+      <Info Token="XObject" Name="å¤–éƒ¨å¯¹è±¡"
+            Description="è¡¨ç¤ºåœ¨æ¸²æŸ“é¡µé¢æŒ‡ä»¤ä¸­ä½¿ç”¨çš„å¯¹è±¡ã€‚&#13;&#10;ç”±äºŽè¿™äº›å¯¹è±¡æ˜¯åœ¨é¡µé¢æŒ‡ä»¤ä¹‹å¤–å®šä¹‰çš„ï¼Œæ•…ç§°ä¸ºâ€œå¤–éƒ¨å¯¹è±¡â€ï¼ˆExternal Objectï¼‰ã€‚&#13;&#10;åœ¨é¡µé¢æŒ‡ä»¤ä¸­ï¼Œä½¿ç”¨â€œDoâ€æ“ä½œç¬¦æ˜¾ç¤ºå¤–éƒ¨å¯¹è±¡ã€‚">
+        <Info Token="Image" Name="å›¾ç‰‡">
+          <Info Token="Subtype" Name="å¤–éƒ¨å¯¹è±¡ç±»åž‹" Description="Image è¡¨ç¤ºå›¾ç‰‡" />
+          <Info Token="Height" Name="å›¾ç‰‡çš„åŽŸå§‹é«˜åº¦" Description="å•ä½ï¼šåƒç´ " Required="true" />
+          <Info Token="Width" Name="å›¾ç‰‡çš„åŽŸå§‹å®½åº¦" Description="å•ä½ï¼šåƒç´ " Required="true" />
+          <Info Token="BitsPerComponent" Name="åƒç´ æž„ä»¶ä½æ•°"
+                Description="é¢œè‰²ç»„ä»¶çš„ä½æ•°ã€‚å…¶å–å€¼ä»£è¡¨çš„é¢œè‰²æ•°ä¸ºï¼š&#xD;&#xA;1ï¼šåŒè‰²ï¼›&#xD;&#xA;2ï¼š4 è‰²ï¼›&#xD;&#xA;4ï¼š16 è‰²ï¼›&#xD;&#xA;8æˆ–16ï¼š256 è‰²ä»¥ä¸Šã€‚" />
+          <Info Token="ImageMask" Name="è’™ç‰ˆ" Description="è’™ç‰ˆå›¾åƒå¿…é¡»æ˜¯åŒè‰²å›¾åƒã€‚ä¸€èˆ¬æƒ…å†µä¸‹ï¼Œè’™ç‰ˆå›¾åƒåœ¨é˜…è¯»å™¨ä¸­æ˜¯ä¸èƒ½è¢«é€‰ä¸­çš„ã€‚" />
+          <Info Token="Decode" Name="è§£ç å‚æ•°" />
+          <Info Token="Mask" Name="è’™ç‰ˆå›¾åƒæˆ–è’™ç‰ˆé¢œè‰²" />
+          <Info Token="SMask" Name="è’™ç‰ˆå›¾åƒ" />
+          <Info Token="Interpolate" Name="æ’å€¼" Description="æ˜¯å¦é‡‡ç”¨æ’å€¼ç®—æ³•æ˜¾ç¤ºå›¾åƒ" />
+          <Info Token="Filter" Name="åŽ‹ç¼©æ–¹å¼"
+                Description="ç”¨äºŽåŽ‹ç¼©å›¾åƒçš„ç®—æ³•ï¼Œå¸¸è§ç®—æ³•æœ‰ï¼šDCTDecodeï¼ˆJPEG åŽ‹ç¼©ï¼‰ã€FlateDecodeï¼ˆç›¸å½“äºŽ PNG åŽ‹ç¼©ï¼‰ã€CCITTFaxDecode æˆ– JBIG2Decodeï¼ˆé«˜æ•ˆçš„åŒè‰²å›¾åƒåŽ‹ç¼©ç®—æ³•ï¼‰ã€JPXDecodeï¼ˆJPEG2000 åŽ‹ç¼©ï¼‰">
           </Info>
         </Info>
-        <Info Token="Form" Name="±íµ¥" Description="±íµ¥³ýÁËÓÃÓÚÌîÐ´Êý¾ÝÖ®Íâ£¬»¹¿ÉÒÔÊÓÎªÒ»·ùÄÚÇ¶µÄ PDF Ò³Ãæ">
-          <Info Token="Subtype" Name="Íâ²¿¶ÔÏóÀàÐÍ" Description="Form ±íÊ¾±íµ¥" />
-          <Info Token="BBox" Name="±íµ¥±ß¿òµÄ×ø±ê" />
+        <Info Token="Form" Name="è¡¨å•" Description="è¡¨å•é™¤äº†ç”¨äºŽå¡«å†™æ•°æ®ä¹‹å¤–ï¼Œè¿˜å¯ä»¥è§†ä¸ºä¸€å¹…å†…åµŒçš„ PDF é¡µé¢">
+          <Info Token="Subtype" Name="å¤–éƒ¨å¯¹è±¡ç±»åž‹" Description="Form è¡¨ç¤ºè¡¨å•" />
+          <Info Token="BBox" Name="è¡¨å•è¾¹æ¡†çš„åæ ‡" />
         </Info>
       </Info>
-      <Info Token="Font" Name="×ÖÌå">
-        <Info Token="BaseFont" Name="»ù´¡×ÖÌå" />
-        <Info Token="Subtype" Name="×ÖÌåÀàÐÍ"
-              Description="È¡ÖµËù±íÊ¾µÄÀàÐÍÈçÏÂ£º&#xD;&#xA;Type0£º¿ÉÓÉ¶à¸ö×Ó×ÖÌå×éºÏ¶ø³ÉµÄ¸´ºÏ×ÖÌå£»&#xD;&#xA;Type1£ºÊ¹ÓÃ PostScript Type 1 ¼¼ÊõÖÆ×÷µÄ×ÖÌå£»&#xD;&#xA;MMType1£º¶àÊôÖ÷£¨Multiple Master£©µÄ Type1 ×ÖÌå£»&#xD;&#xA;Type3£º°üº¬ PDF Í¼ÐÎ²Ù×÷·ûµÄ×ÖÌå£»&#xD;&#xA;TrueType£ºÊ¹ÓÃ True Type ¼¼ÊõÖÆ×÷µÄ×ÖÌå£»&#xD;&#xA;CIDFontType0£ºÊ¹ÓÃ Type 1 ¼¼ÊõÖÆ×÷µÄ×Ö·û±êÊ¶×ÖÌå£¨CID Font£©£»&#xD;&#xA;CIDFontType2£ºÊ¹ÓÃ True Type ¼¼ÊõÖÆ×÷µÄ×Ö·û±êÊ¶×ÖÌå¡£&#xD;&#xA;×Ö·û±êÊ¶×ÖÌåÍ¨³£ÊÇÓÉ´óÁ¿×Ö·û×é³ÉµÄ×Ö¿â£¬Èçºº×Ö¡£ÔÚÊä³ö PDF ÎÄµµÄÚÈÝÊ±£¬TJ µÈÊä³öÖ¸ÁîÒÔ×Ö·û±êÊ¶ÖµÖ¸¶¨Êä³öµÄ×Ö·û¡£×Ö·û±êÊ¶Í¨³£²¢²»ÊÇÍ³Ò»ÂëÊýÖµ£¬Èç¹ûÐèÒªÌáÈ¡ÎÄ±¾Êä³öÖ¸ÁîÊä³öµÄÎÄ±¾£¬¾ÍÐèÒª½èÖú ToUnicode ÏîµÄ×ª»»±í£¬½«×Ö·û±êÊ¶×ª»»ÎªÍ³Ò»Âë±íÊ¾µÄ×Ö·û¡£" />
-        <Info Token="Encoding" Name="±àÂë" Description="×ÖÌåËùÓÃµÄ±àÂë·½Ê½" />
-        <Info Token="BaseEncoding" Name="»ù´¡±àÂë" Description="×ÖÌåËùÓÃµÄ»ù´¡±àÂë·½Ê½" />
-        <Info Token="Differences" Name="±àÂë²îÒì" Description="×ÖÌåËùÓÃµÄ±àÂëÓë»ù´¡±àÂëµÄ²î±ð£¨²»Ó¦ÓÃÓÚ True Type ×ÖÌå£©" />
-        <Info Token="DescendantFonts" Name="×ÖÌå×Ó¼¯" />
-        <Info Token="FirstChar" Name="×ÖÌå¿í¶È±íÊ××Ö·û±àºÅ" />
-        <Info Token="LastChar" Name="×ÖÌå¿í¶È±íÎ²×Ö·û±àºÅ" />
-        <Info Token="Widths" Name="×ÖÌå¿í¶È±í" Description="±íÊ¾´Ó FirstChar µ½ LastChar ·¶Î§ÄÚ¸÷×Ö·û¿í¶ÈµÄÊý×é£¬Ã¿¸ö×Ö·ûÊýÖµ³ýÒÔ 1000 ²ÅÊÇµ¥Î»¿í¶È" />
-        <Info Token="FontDescriptor" Name="×ÖÌåÃèÊöÐÅÏ¢">
-          <Info Token="FontName" Name="×ÖÌåÃû³Æ" />
-          <Info Token="FontBBox" Name="×ÖÌå±ß¿ò" />
-          <Info Token="Ascent" Name="×î´ó»ùÏß¸ß¶È" Description="¸÷×Ö·û¶¥²¿¾àÀë×ÖÌå»ùÏßÉÏ·½µÄ×î´ó¾àÀë" />
-          <Info Token="Descent" Name="×î´ó»ùÏßÉî¶È" Description="¸÷×Ö·ûµ×²¿¾àÀë×ÖÌå»ùÏßÏÂ·½µÄ×î´ó¾àÀë£¬´ËÊýÖµÓ¦Îª¸ºÊý" />
-          <Info Token="AvgWidth" Name="Æ½¾ù¿í¶È" />
-          <Info Token="MaxWidth" Name="×î´ó¿í¶È" />
-          <Info Token="CharSet" Name="×Ö·û¼¯" />
-          <Info Token="FontFamily" Name="×ÖÌå×å" Description="²»°üº¬ÑùÊ½Ãû³ÆµÄ×ÖÌåÃû³Æ£¬ÀýÈç Times Bold Italic£¨Times ´ÖÐ±Ìå£©µÄ×ÖÌå×åÃû³ÆÎª Times" />
-          <Info Token="FontWeight" Name="×ÖÖØ" Description="×ÖÌå´ÖÏ¸³Ì¶È" />
-          <Info Token="Lang" Name="ÓïÖÖ" />
-          <Info Token="ItalicAngle" Name="Ð±Ìå½Ç¶È" Description="×ÖÌåµÄ·´Ê±ÕëÇãÐ±½Ç¶È" />
-          <Info Token="FontFile" Name="ÄÚÇ¶×ÖÌå" Description="ÄÚÇ¶µÄ Type 0 ×ÖÌå" ImageKey="Font" />
-          <Info Token="FontFile2" Name="ÄÚÇ¶×ÖÌå" Description="ÄÚÇ¶µÄ True Type ×ÖÌå" ImageKey="Font" />
-          <Info Token="FontFile3" Name="ÄÚÇ¶×ÖÌå" Description="ÓÉ×ÓÀàÖ¸¶¨ÀàÐÍµÄÄÚÇ¶×ÖÌå" ImageKey="Font" />
-          <Info Token="Length1" Name="½âÑ¹ËõÁ÷µÄ³¤¶È" Description="½«ÄÚÇ¶×ÖÌå½âÑ¹ËõºóµÄ×Ö½ÚÊý" />
+      <Info Token="Font" Name="å­—ä½“">
+        <Info Token="BaseFont" Name="åŸºç¡€å­—ä½“" />
+        <Info Token="Subtype" Name="å­—ä½“ç±»åž‹"
+              Description="å–å€¼æ‰€è¡¨ç¤ºçš„ç±»åž‹å¦‚ä¸‹ï¼š&#xD;&#xA;Type0ï¼šå¯ç”±å¤šä¸ªå­å­—ä½“ç»„åˆè€Œæˆçš„å¤åˆå­—ä½“ï¼›&#xD;&#xA;Type1ï¼šä½¿ç”¨ PostScript Type 1 æŠ€æœ¯åˆ¶ä½œçš„å­—ä½“ï¼›&#xD;&#xA;MMType1ï¼šå¤šå±žä¸»ï¼ˆMultiple Masterï¼‰çš„ Type1 å­—ä½“ï¼›&#xD;&#xA;Type3ï¼šåŒ…å« PDF å›¾å½¢æ“ä½œç¬¦çš„å­—ä½“ï¼›&#xD;&#xA;TrueTypeï¼šä½¿ç”¨ True Type æŠ€æœ¯åˆ¶ä½œçš„å­—ä½“ï¼›&#xD;&#xA;CIDFontType0ï¼šä½¿ç”¨ Type 1 æŠ€æœ¯åˆ¶ä½œçš„å­—ç¬¦æ ‡è¯†å­—ä½“ï¼ˆCID Fontï¼‰ï¼›&#xD;&#xA;CIDFontType2ï¼šä½¿ç”¨ True Type æŠ€æœ¯åˆ¶ä½œçš„å­—ç¬¦æ ‡è¯†å­—ä½“ã€‚&#xD;&#xA;å­—ç¬¦æ ‡è¯†å­—ä½“é€šå¸¸æ˜¯ç”±å¤§é‡å­—ç¬¦ç»„æˆçš„å­—åº“ï¼Œå¦‚æ±‰å­—ã€‚åœ¨è¾“å‡º PDF æ–‡æ¡£å†…å®¹æ—¶ï¼ŒTJ ç­‰è¾“å‡ºæŒ‡ä»¤ä»¥å­—ç¬¦æ ‡è¯†å€¼æŒ‡å®šè¾“å‡ºçš„å­—ç¬¦ã€‚å­—ç¬¦æ ‡è¯†é€šå¸¸å¹¶ä¸æ˜¯ç»Ÿä¸€ç æ•°å€¼ï¼Œå¦‚æžœéœ€è¦æå–æ–‡æœ¬è¾“å‡ºæŒ‡ä»¤è¾“å‡ºçš„æ–‡æœ¬ï¼Œå°±éœ€è¦å€ŸåŠ© ToUnicode é¡¹çš„è½¬æ¢è¡¨ï¼Œå°†å­—ç¬¦æ ‡è¯†è½¬æ¢ä¸ºç»Ÿä¸€ç è¡¨ç¤ºçš„å­—ç¬¦ã€‚" />
+        <Info Token="Encoding" Name="ç¼–ç " Description="å­—ä½“æ‰€ç”¨çš„ç¼–ç æ–¹å¼" />
+        <Info Token="BaseEncoding" Name="åŸºç¡€ç¼–ç " Description="å­—ä½“æ‰€ç”¨çš„åŸºç¡€ç¼–ç æ–¹å¼" />
+        <Info Token="Differences" Name="ç¼–ç å·®å¼‚" Description="å­—ä½“æ‰€ç”¨çš„ç¼–ç ä¸ŽåŸºç¡€ç¼–ç çš„å·®åˆ«ï¼ˆä¸åº”ç”¨äºŽ True Type å­—ä½“ï¼‰" />
+        <Info Token="DescendantFonts" Name="å­—ä½“å­é›†" />
+        <Info Token="FirstChar" Name="å­—ä½“å®½åº¦è¡¨é¦–å­—ç¬¦ç¼–å·" />
+        <Info Token="LastChar" Name="å­—ä½“å®½åº¦è¡¨å°¾å­—ç¬¦ç¼–å·" />
+        <Info Token="Widths" Name="å­—ä½“å®½åº¦è¡¨" Description="è¡¨ç¤ºä»Ž FirstChar åˆ° LastChar èŒƒå›´å†…å„å­—ç¬¦å®½åº¦çš„æ•°ç»„ï¼Œæ¯ä¸ªå­—ç¬¦æ•°å€¼é™¤ä»¥ 1000 æ‰æ˜¯å•ä½å®½åº¦" />
+        <Info Token="FontDescriptor" Name="å­—ä½“æè¿°ä¿¡æ¯">
+          <Info Token="FontName" Name="å­—ä½“åç§°" />
+          <Info Token="FontBBox" Name="å­—ä½“è¾¹æ¡†" />
+          <Info Token="Ascent" Name="æœ€å¤§åŸºçº¿é«˜åº¦" Description="å„å­—ç¬¦é¡¶éƒ¨è·ç¦»å­—ä½“åŸºçº¿ä¸Šæ–¹çš„æœ€å¤§è·ç¦»" />
+          <Info Token="Descent" Name="æœ€å¤§åŸºçº¿æ·±åº¦" Description="å„å­—ç¬¦åº•éƒ¨è·ç¦»å­—ä½“åŸºçº¿ä¸‹æ–¹çš„æœ€å¤§è·ç¦»ï¼Œæ­¤æ•°å€¼åº”ä¸ºè´Ÿæ•°" />
+          <Info Token="AvgWidth" Name="å¹³å‡å®½åº¦" />
+          <Info Token="MaxWidth" Name="æœ€å¤§å®½åº¦" />
+          <Info Token="CharSet" Name="å­—ç¬¦é›†" />
+          <Info Token="FontFamily" Name="å­—ä½“æ—" Description="ä¸åŒ…å«æ ·å¼åç§°çš„å­—ä½“åç§°ï¼Œä¾‹å¦‚ Times Bold Italicï¼ˆTimes ç²—æ–œä½“ï¼‰çš„å­—ä½“æ—åç§°ä¸º Times" />
+          <Info Token="FontWeight" Name="å­—é‡" Description="å­—ä½“ç²—ç»†ç¨‹åº¦" />
+          <Info Token="Lang" Name="è¯­ç§" />
+          <Info Token="ItalicAngle" Name="æ–œä½“è§’åº¦" Description="å­—ä½“çš„åæ—¶é’ˆå€¾æ–œè§’åº¦" />
+          <Info Token="FontFile" Name="å†…åµŒå­—ä½“" Description="å†…åµŒçš„ Type 0 å­—ä½“" ImageKey="Font" />
+          <Info Token="FontFile2" Name="å†…åµŒå­—ä½“" Description="å†…åµŒçš„ True Type å­—ä½“" ImageKey="Font" />
+          <Info Token="FontFile3" Name="å†…åµŒå­—ä½“" Description="ç”±å­ç±»æŒ‡å®šç±»åž‹çš„å†…åµŒå­—ä½“" ImageKey="Font" />
+          <Info Token="Length1" Name="è§£åŽ‹ç¼©æµçš„é•¿åº¦" Description="å°†å†…åµŒå­—ä½“è§£åŽ‹ç¼©åŽçš„å­—èŠ‚æ•°" />
         </Info>
-        <Info Token="ToUnicode" Name="Í³Ò»ÂëÓ³Éä±í" Description="ÄÚÇ¶×ÖÌåµÄ×Ö·û±êÊ¶ÊýÖµµ½Í³Ò»ÂëÊýÖµµÄ×ª»»Ó³Éä±í" />
-        <Info Token="FontBBox" Name="×ÖÌå±ß¿ò" />
-        <Info Token="CharProcs" Name="×Ö·û»æÖÆ¹ý³Ì" Description="°üº¬×ÖÌå·ûºÅºÍÓÃÓÚ»æÖÆ×ÖÌåÖ¸Áî¼¯µÄÄÚÈÝÁ÷µÄ×Öµä" />
-        <Info Token="FontMatrix" Name="×ÖÌå¾ØÕó" Description="½«×ÖÌå·ûºÅ×ø±êÏµ×ª»»ÎªÎÄ±¾×ø±êÏµµÄ×ª»»¾ØÕó" />
-        <Info Token="Resources" Name="×ÊÔ´" Description="ÓÉ Type 3 ×ÖÌåÊ¹ÓÃµÄ×ÖÌå»òÍ¼Ïñ×ÊÔ´" />
-        <Info Token="CIDSystemInfo" Name="×Ö·û±êÊ¶ÏµÍ³ÐÅÏ¢" />
-        <Info Token="DW" Name="Ä¬ÈÏ×Ö·û¿í¶È" Description="Ä¬ÈÏÎª 1000" />
-        <Info Token="W" Name="×ÖÐÎ¿í¶ÈÁÐ±í"
-              Description="±íÊ¾CID×ÖÌå×Ö·û¿í¶ÈµÄÊý×é£¨Ã¿¸ö×Ö·ûÊýÖµ³ýÒÔ 1000 ²ÅÊÇµ¥Î»¿í¶È£©&#xD;&#xA;Ä¬ÈÏ¿í¶ÈÖµÓÉ DW ÖµÖ¸¶¨&#xD;&#xA;Êý×é×Ö·û¿í¶ÈÓÐÁ½ÖÖ¸ñÊ½£º&#xD;&#xA;¢Ùµ¥¶À×Ö·û¿í¶È£»&#xD;&#xA;¢ÚÆðÖ¹×Ö·û¿í¶È&#xD;&#xA;µ¥¶À×Ö·û¿í¶ÈµÄ¸ñÊ½Îª£º×Ö·ûË÷Òýºó¸úÒ»¸öÊý×é£¬Èç¡°120 [400 325 500]¡±£¬±íÊ¾×Ö·û±àºÅ 120 µ½ 122 µÄ¿í¶È·Ö±ðÎª 400¡¢325 ºÍ 500 µ¥Î»£»&#xD;&#xA;ÆðÖ¹×Ö·û¿í¶ÈµÄ¸ñÊ½Îª£º¿ªÊ¼×Ö·ûË÷Òý¡¢½áÊø×Ö·ûË÷Òý¡¢¿í¶È£¬Èç¡°7080 8080 1000¡±£¬±íÊ¾×Ö·û±àºÅ 7080 µ½ 8080 µÄ¿í¶ÈÎª 1000 µ¥Î»" />
-        <Info Token="DW2" Name="Ä¬ÈÏ×Ö·û¿í¶ÈºÍ¸ß¶È" Description="Ä¬ÈÏÎª[880 -1000]" />
-        <Info Token="W2" Name="×Ö·û¿í¶ÈºÍ¸ß¶È" />
-        <Info Token="CIDToGIDMap" Name="×Ö·û±êÊ¶µ½×ÖÌå×Ö·û±êÊ¶µÄÓ³Éä±í" Description="Ä¬ÈÏÇé¿öÏÂ£¬×Ö·û±êÊ¶¾ÍÊÇ×Ö·ûÔÚ×ÖÌåÄÚµÄÎ»ÖÃ" />
+        <Info Token="ToUnicode" Name="ç»Ÿä¸€ç æ˜ å°„è¡¨" Description="å†…åµŒå­—ä½“çš„å­—ç¬¦æ ‡è¯†æ•°å€¼åˆ°ç»Ÿä¸€ç æ•°å€¼çš„è½¬æ¢æ˜ å°„è¡¨" />
+        <Info Token="FontBBox" Name="å­—ä½“è¾¹æ¡†" />
+        <Info Token="CharProcs" Name="å­—ç¬¦ç»˜åˆ¶è¿‡ç¨‹" Description="åŒ…å«å­—ä½“ç¬¦å·å’Œç”¨äºŽç»˜åˆ¶å­—ä½“æŒ‡ä»¤é›†çš„å†…å®¹æµçš„å­—å…¸" />
+        <Info Token="FontMatrix" Name="å­—ä½“çŸ©é˜µ" Description="å°†å­—ä½“ç¬¦å·åæ ‡ç³»è½¬æ¢ä¸ºæ–‡æœ¬åæ ‡ç³»çš„è½¬æ¢çŸ©é˜µ" />
+        <Info Token="Resources" Name="èµ„æº" Description="ç”± Type 3 å­—ä½“ä½¿ç”¨çš„å­—ä½“æˆ–å›¾åƒèµ„æº" />
+        <Info Token="CIDSystemInfo" Name="å­—ç¬¦æ ‡è¯†ç³»ç»Ÿä¿¡æ¯" />
+        <Info Token="DW" Name="é»˜è®¤å­—ç¬¦å®½åº¦" Description="é»˜è®¤ä¸º 1000" />
+        <Info Token="W" Name="å­—å½¢å®½åº¦åˆ—è¡¨"
+              Description="è¡¨ç¤ºCIDå­—ä½“å­—ç¬¦å®½åº¦çš„æ•°ç»„ï¼ˆæ¯ä¸ªå­—ç¬¦æ•°å€¼é™¤ä»¥ 1000 æ‰æ˜¯å•ä½å®½åº¦ï¼‰&#xD;&#xA;é»˜è®¤å®½åº¦å€¼ç”± DW å€¼æŒ‡å®š&#xD;&#xA;æ•°ç»„å­—ç¬¦å®½åº¦æœ‰ä¸¤ç§æ ¼å¼ï¼š&#xD;&#xA;â‘ å•ç‹¬å­—ç¬¦å®½åº¦ï¼›&#xD;&#xA;â‘¡èµ·æ­¢å­—ç¬¦å®½åº¦&#xD;&#xA;å•ç‹¬å­—ç¬¦å®½åº¦çš„æ ¼å¼ä¸ºï¼šå­—ç¬¦ç´¢å¼•åŽè·Ÿä¸€ä¸ªæ•°ç»„ï¼Œå¦‚â€œ120 [400 325 500]â€ï¼Œè¡¨ç¤ºå­—ç¬¦ç¼–å· 120 åˆ° 122 çš„å®½åº¦åˆ†åˆ«ä¸º 400ã€325 å’Œ 500 å•ä½ï¼›&#xD;&#xA;èµ·æ­¢å­—ç¬¦å®½åº¦çš„æ ¼å¼ä¸ºï¼šå¼€å§‹å­—ç¬¦ç´¢å¼•ã€ç»“æŸå­—ç¬¦ç´¢å¼•ã€å®½åº¦ï¼Œå¦‚â€œ7080 8080 1000â€ï¼Œè¡¨ç¤ºå­—ç¬¦ç¼–å· 7080 åˆ° 8080 çš„å®½åº¦ä¸º 1000 å•ä½" />
+        <Info Token="DW2" Name="é»˜è®¤å­—ç¬¦å®½åº¦å’Œé«˜åº¦" Description="é»˜è®¤ä¸º[880 -1000]" />
+        <Info Token="W2" Name="å­—ç¬¦å®½åº¦å’Œé«˜åº¦" />
+        <Info Token="CIDToGIDMap" Name="å­—ç¬¦æ ‡è¯†åˆ°å­—ä½“å­—ç¬¦æ ‡è¯†çš„æ˜ å°„è¡¨" Description="é»˜è®¤æƒ…å†µä¸‹ï¼Œå­—ç¬¦æ ‡è¯†å°±æ˜¯å­—ç¬¦åœ¨å­—ä½“å†…çš„ä½ç½®" />
       </Info>
       <RefInfo Token="ProcSet" />
       <RefInfo Token="ColorSpace" />
     </Info>
-    <Info Token="AP" Name="Íâ¹ÛÑùÊ½" />
-    <Info Token="BS" Name="±ß¿òÑùÊ½" />
-    <Info Token="C" Name="ÑÕÉ«" />
-    <Info Token="D" Name="×ªµ½ÌØ¶¨Î»ÖÃµÄ¶¯×÷" />
-    <Info Token="Dests" Name="Ìø×ªÄ¿±ê" />
-    <Info Token="Dest" Name="Ìø×ªÄ¿±ê" />
-    <Info Token="A" Name="¶¯×÷" />
-    <Info Token="Matrix" Name="ÓÃÓÚ»æÍ¼µÄ×ªÖÃ¾ØÕó" />
-    <Info Token="Rect" Name="¾ØÐÎÇøÓò" />
-    <Info Token="Type" Name="×ÖµäÀàÐÍ" />
-    <Info Token="SubType" Name="×ÓÀàÐÍ" />
-    <Info Token="StructParent" Name="ÎÄµµ½á¹¹µÄÉÏ¼¶½Úµã" />
+    <Info Token="AP" Name="å¤–è§‚æ ·å¼" />
+    <Info Token="BS" Name="è¾¹æ¡†æ ·å¼" />
+    <Info Token="C" Name="é¢œè‰²" />
+    <Info Token="D" Name="è½¬åˆ°ç‰¹å®šä½ç½®çš„åŠ¨ä½œ" />
+    <Info Token="Dests" Name="è·³è½¬ç›®æ ‡" />
+    <Info Token="Dest" Name="è·³è½¬ç›®æ ‡" />
+    <Info Token="A" Name="åŠ¨ä½œ" />
+    <Info Token="Matrix" Name="ç”¨äºŽç»˜å›¾çš„è½¬ç½®çŸ©é˜µ" />
+    <Info Token="Rect" Name="çŸ©å½¢åŒºåŸŸ" />
+    <Info Token="Type" Name="å­—å…¸ç±»åž‹" />
+    <Info Token="SubType" Name="å­ç±»åž‹" />
+    <Info Token="StructParent" Name="æ–‡æ¡£ç»“æž„çš„ä¸Šçº§èŠ‚ç‚¹" />
   </Global>
-  <Info Token="Trailer" Name="ÎÄµµ¸ù½Úµã">
-    <Info Token="Root" Name="ÎÄµµ±àÂ¼" ImageKey="Trailer" Required="true">
-      <Info Token="Pages" Name="ÎÄµµÒ³Ãæ¼¯ºÏ" Description="ÎÄµµµÄËùÓÐÒ³Ãæ" ImageKey="Pages" Required="true">
-        <Info Token="Kids" Name="ÎÄµµÒ³Ãæ×Ó¼¯">
-          <Info Token="Count" Name="Ò³ÃæÊýÁ¿" />
-          <Info Token="Kids" Name="ÎÄµµÒ³Ãæ×Ó¼¯" />
+  <Info Token="Trailer" Name="æ–‡æ¡£æ ¹èŠ‚ç‚¹">
+    <Info Token="Root" Name="æ–‡æ¡£ç¼–å½•" ImageKey="Trailer" Required="true">
+      <Info Token="Pages" Name="æ–‡æ¡£é¡µé¢é›†åˆ" Description="æ–‡æ¡£çš„æ‰€æœ‰é¡µé¢" ImageKey="Pages" Required="true">
+        <Info Token="Kids" Name="æ–‡æ¡£é¡µé¢å­é›†">
+          <Info Token="Count" Name="é¡µé¢æ•°é‡" />
+          <Info Token="Kids" Name="æ–‡æ¡£é¡µé¢å­é›†" />
         </Info>
-        <Info Token="Parent" Name="ÉÏ¼¶Ò³Ãæ¼¯ºÏ" />
-        <Info Token="Count" Name="Ò³Ãæ×ÜÊý" />
+        <Info Token="Parent" Name="ä¸Šçº§é¡µé¢é›†åˆ" />
+        <Info Token="Count" Name="é¡µé¢æ€»æ•°" />
       </Info>
-      <Info Token="Outlines" Name="ÎÄµµÊéÇ©" ImageKey="Outlines">
-        <Info Token="First" Name="µÚÒ»¸ö×ÓÊéÇ©" />
-        <Info Token="Last" Name="×îºóÒ»¸ö×ÓÊéÇ©" />
-        <Info Token="Parent" Name="ÉÏ¼¶×ÓÊéÇ©" />
-        <Info Token="Prev" Name="Ç°Ò»¸ö×ÓÊéÇ©" />
-        <Info Token="Next" Name="ÏÂÒ»¸ö×ÓÊéÇ©" />
-        <Info Token="Title" Name="ÊéÇ©ÎÄ±¾" />
-        <Info Token="C" Name="ÑÕÉ«" />
-        <Info Token="F" Name="ÑùÊ½" Description="1£ºÐ±Ìå£»2£º´ÖÌå£»3£º´ÖÐ±Ìå" />
-        <Info Token="Count" Name="×ÓÊéÇ©ÊýÁ¿" Description="µ±Ç°²ã¼¶×ÓÊéÇ©µÄÊýÁ¿¡£ÕýÊý£ºÊéÇ©Ä¬ÈÏ´ò¿ª£¬¸ºÊý£ºÊéÇ©Ä¬ÈÏÕÛµþ" />
+      <Info Token="Outlines" Name="æ–‡æ¡£ä¹¦ç­¾" ImageKey="Outlines">
+        <Info Token="First" Name="ç¬¬ä¸€ä¸ªå­ä¹¦ç­¾" />
+        <Info Token="Last" Name="æœ€åŽä¸€ä¸ªå­ä¹¦ç­¾" />
+        <Info Token="Parent" Name="ä¸Šçº§å­ä¹¦ç­¾" />
+        <Info Token="Prev" Name="å‰ä¸€ä¸ªå­ä¹¦ç­¾" />
+        <Info Token="Next" Name="ä¸‹ä¸€ä¸ªå­ä¹¦ç­¾" />
+        <Info Token="Title" Name="ä¹¦ç­¾æ–‡æœ¬" />
+        <Info Token="C" Name="é¢œè‰²" />
+        <Info Token="F" Name="æ ·å¼" Description="1ï¼šæ–œä½“ï¼›2ï¼šç²—ä½“ï¼›3ï¼šç²—æ–œä½“" />
+        <Info Token="Count" Name="å­ä¹¦ç­¾æ•°é‡" Description="å½“å‰å±‚çº§å­ä¹¦ç­¾çš„æ•°é‡ã€‚æ­£æ•°ï¼šä¹¦ç­¾é»˜è®¤æ‰“å¼€ï¼Œè´Ÿæ•°ï¼šä¹¦ç­¾é»˜è®¤æŠ˜å " />
         <RefInfo Token="Dest" />
         <RefInfo Token="A" />
       </Info>
-      <Info Token="StructTreeRoot" Name="ÎÄµµ½á¹¹Ê÷" />
-      <Info Token="Metadata" Name="ÔªÊý¾ÝÐÅÏ¢" Description="Ò»°ãÎªXML" />
-      <Info Token="PageLabels" Name="Ò³Âë±êÇ©">
-        <Info Token="Nums" Name="Ò³Âë±êÇ©ÊýÖµ±àºÅ·½Ê½" />
+      <Info Token="StructTreeRoot" Name="æ–‡æ¡£ç»“æž„æ ‘" />
+      <Info Token="Metadata" Name="å…ƒæ•°æ®ä¿¡æ¯" Description="ä¸€èˆ¬ä¸ºXML" />
+      <Info Token="PageLabels" Name="é¡µç æ ‡ç­¾">
+        <Info Token="Nums" Name="é¡µç æ ‡ç­¾æ•°å€¼ç¼–å·æ–¹å¼" />
       </Info>
-      <Info Token="Names" Name="ÃüÃûÎ»ÖÃ" Description="ÎÄµµÒÔÌØ¶¨Ãû³ÆÃüÃûµÄÎ»ÖÃ£¨¿É×÷ÎªÊéÇ©¡¢Ò³ÃæÁ´½ÓµÄÌø×ªÄ¿±ê£©" />
-      <Info Token="AcroForm" Name="½»»¥±íµ¥" />
-      <Info Token="ViewerPreferences" Name="ÔÄ¶ÁÆ÷Éè¶¨" />
-      <Info Token="PageMode" Name="³õÊ¼Ä£Ê½" />
-      <Info Token="PageLayout" Name="Ò³Ãæ²¼¾Ö" />
-      <Info Token="OpenAction" Name="´ò¿ª¶¯×÷" Description="´ò¿ªÎÄµµÊ±×Ô¶¯Ö´ÐÐµÄ¶¯×÷" />
-      <Info Token="AA" Name="¶îÍâ¶¯×÷" Description="ÓÉÊÂ¼þ´¥·¢µÄ¶¯×÷" />
-      <Info Token="Perms" Name="È¨ÏÞÐí¿É" />
+      <Info Token="Names" Name="å‘½åä½ç½®" Description="æ–‡æ¡£ä»¥ç‰¹å®šåç§°å‘½åçš„ä½ç½®ï¼ˆå¯ä½œä¸ºä¹¦ç­¾ã€é¡µé¢é“¾æŽ¥çš„è·³è½¬ç›®æ ‡ï¼‰" />
+      <Info Token="AcroForm" Name="äº¤äº’è¡¨å•" />
+      <Info Token="ViewerPreferences" Name="é˜…è¯»å™¨è®¾å®š" />
+      <Info Token="PageMode" Name="åˆå§‹æ¨¡å¼" />
+      <Info Token="PageLayout" Name="é¡µé¢å¸ƒå±€" />
+      <Info Token="OpenAction" Name="æ‰“å¼€åŠ¨ä½œ" Description="æ‰“å¼€æ–‡æ¡£æ—¶è‡ªåŠ¨æ‰§è¡Œçš„åŠ¨ä½œ" />
+      <Info Token="AA" Name="é¢å¤–åŠ¨ä½œ" Description="ç”±äº‹ä»¶è§¦å‘çš„åŠ¨ä½œ" />
+      <Info Token="Perms" Name="æƒé™è®¸å¯" />
     </Info>
-    <Info Token="ID" Name="ÎÄµµ±ê¼Ç" Description="ÓÃÓÚÊ¶±ðÎÄµµµÄÁ½¸ö¶þ½øÖÆÊý¾Ý±ê¼Ç£¬¼ÓÃÜÎÄµµ±ØÐë¾ßÓÐ´Ë±ê¼Ç" />
-    <Info Token="Info" Name="ÎÄµµÐÅÏ¢" ImageKey="Info">
-      <Info Token="Title" Name="ÎÄµµ±êÌâ" />
-      <Info Token="Producer" Name="´¦Àí³ÌÐò" />
-      <Info Token="Creator" Name="´´½¨³ÌÐò" />
-      <Info Token="CreationDate" Name="´´½¨ÈÕÆÚ" />
-      <Info Token="ModDate" Name="ÐÞ¸ÄÈÕÆÚ" />
-      <Info Token="Subject" Name="Ö÷Ìâ" />
-      <Info Token="Keywords" Name="¹Ø¼ü´Ê" />
+    <Info Token="ID" Name="æ–‡æ¡£æ ‡è®°" Description="ç”¨äºŽè¯†åˆ«æ–‡æ¡£çš„ä¸¤ä¸ªäºŒè¿›åˆ¶æ•°æ®æ ‡è®°ï¼ŒåŠ å¯†æ–‡æ¡£å¿…é¡»å…·æœ‰æ­¤æ ‡è®°" />
+    <Info Token="Info" Name="æ–‡æ¡£ä¿¡æ¯" ImageKey="Info">
+      <Info Token="Title" Name="æ–‡æ¡£æ ‡é¢˜" />
+      <Info Token="Producer" Name="å¤„ç†ç¨‹åº" />
+      <Info Token="Creator" Name="åˆ›å»ºç¨‹åº" />
+      <Info Token="CreationDate" Name="åˆ›å»ºæ—¥æœŸ" />
+      <Info Token="ModDate" Name="ä¿®æ”¹æ—¥æœŸ" />
+      <Info Token="Subject" Name="ä¸»é¢˜" />
+      <Info Token="Keywords" Name="å…³é”®è¯" />
     </Info>
-    <Info Token="Size" Name="ÏîÄ¿ÊýÁ¿" Description="PDF ÎÄµµÏîÄ¿Ë÷Òý±íÖÐÏîÄ¿µÄÊýÁ¿" />
-    <Info Token="Encrypt" Name="¼ÓÃÜÐÅÏ¢" />
+    <Info Token="Size" Name="é¡¹ç›®æ•°é‡" Description="PDF æ–‡æ¡£é¡¹ç›®ç´¢å¼•è¡¨ä¸­é¡¹ç›®çš„æ•°é‡" />
+    <Info Token="Encrypt" Name="åŠ å¯†ä¿¡æ¯" />
   </Info>
-  <Info Token="Pages" Name="ÎÄµµÒ³Ãæ¼¯ºÏ" Description="ÎÄµµµÄËùÓÐÒ³Ãæ">
-    <Info Token="Page" Name="ÎÄµµÒ³Ãæ" Required="true">
-      <Info Token="Contents" Name="Ò³ÃæÄÚÈÝ" Description="»æÖÆÒ³ÃæµÄÖ¸Áî¡£¾ßÌåÄÚÈÝÇë¼û¡°ÃüÁî¡±½Úµã¡£" Required="true" />
-      <Info Token="ArtBox" Name="ÄÚÈÝ±ß¿ò" Description="ÓÉ×ó¡¢ÏÂ¡¢ÓÒ¡¢ÉÏËÄ¸ö×ø±êÖµ¹¹³É" />
-      <Info Token="BleedBox" Name="³öÑª±ß¿ò" Description="ÓÉ×ó¡¢ÏÂ¡¢ÓÒ¡¢ÉÏËÄ¸ö×ø±êÖµ¹¹³É" />
-      <Info Token="CropBox" Name="½ØÈ¡±ß¿ò"
-            Description="±íÊ¾½ØÈ¡Ò³Ãæ±ß¿òºóµÄ¿É¼ûÇøÓò£¬ÓÉ×ó¡¢ÏÂ¡¢ÓÒ¡¢ÉÏËÄ¸ö×ø±êÖµ¹¹³É£¬½ØÈ¡±ß¿òÇøÓò²»Ó¦³¬³öÒ³Ãæ±ß¿òÏÞ¶¨µÄÇøÓò¡£ÒªËõÐ¡ÎÄµµµÄÏÔÊ¾»ò´òÓ¡ÇøÓò£¬¿Éµ÷Õû´Ë±ß¿òÖµ¡£ÒªÀ©ÕÅÏÔÊ¾»ò´òÓ¡ÇøÓò£¬Ôò¿ÉÄÜÐèÒªÍ¬Ê±µ÷Õû´Ë±ß¿òºÍÒ³Ãæ±ß¿ò¡£" />
-      <Info Token="MediaBox" Name="Ò³Ãæ±ß¿ò"
-            Description="±íÊ¾»æÖÆÎÄµµµÄÇøÓò£¬ÓÉ×ó¡¢ÏÂ¡¢ÓÒ¡¢ÉÏËÄ¸ö×ø±êÖµ¹¹³É£¨PDF Ê¹ÓÃµÑ¿¨¶û×ø±êÏµ£¬¼´Ò³Ãæ×óÏÂ½ÇµÄ×ø±êÎª (0,0)£©¡£Ò³Ãæ±ØÐëÓÐ MediaBox ÏîÖ¸¶¨Ò³Ãæ±ß¿ò¡£"
+  <Info Token="Pages" Name="æ–‡æ¡£é¡µé¢é›†åˆ" Description="æ–‡æ¡£çš„æ‰€æœ‰é¡µé¢">
+    <Info Token="Page" Name="æ–‡æ¡£é¡µé¢" Required="true">
+      <Info Token="Contents" Name="é¡µé¢å†…å®¹" Description="ç»˜åˆ¶é¡µé¢çš„æŒ‡ä»¤ã€‚å…·ä½“å†…å®¹è¯·è§â€œå‘½ä»¤â€èŠ‚ç‚¹ã€‚" Required="true" />
+      <Info Token="ArtBox" Name="å†…å®¹è¾¹æ¡†" Description="ç”±å·¦ã€ä¸‹ã€å³ã€ä¸Šå››ä¸ªåæ ‡å€¼æž„æˆ" />
+      <Info Token="BleedBox" Name="å‡ºè¡€è¾¹æ¡†" Description="ç”±å·¦ã€ä¸‹ã€å³ã€ä¸Šå››ä¸ªåæ ‡å€¼æž„æˆ" />
+      <Info Token="CropBox" Name="æˆªå–è¾¹æ¡†"
+            Description="è¡¨ç¤ºæˆªå–é¡µé¢è¾¹æ¡†åŽçš„å¯è§åŒºåŸŸï¼Œç”±å·¦ã€ä¸‹ã€å³ã€ä¸Šå››ä¸ªåæ ‡å€¼æž„æˆï¼Œæˆªå–è¾¹æ¡†åŒºåŸŸä¸åº”è¶…å‡ºé¡µé¢è¾¹æ¡†é™å®šçš„åŒºåŸŸã€‚è¦ç¼©å°æ–‡æ¡£çš„æ˜¾ç¤ºæˆ–æ‰“å°åŒºåŸŸï¼Œå¯è°ƒæ•´æ­¤è¾¹æ¡†å€¼ã€‚è¦æ‰©å¼ æ˜¾ç¤ºæˆ–æ‰“å°åŒºåŸŸï¼Œåˆ™å¯èƒ½éœ€è¦åŒæ—¶è°ƒæ•´æ­¤è¾¹æ¡†å’Œé¡µé¢è¾¹æ¡†ã€‚" />
+      <Info Token="MediaBox" Name="é¡µé¢è¾¹æ¡†"
+            Description="è¡¨ç¤ºç»˜åˆ¶æ–‡æ¡£çš„åŒºåŸŸï¼Œç”±å·¦ã€ä¸‹ã€å³ã€ä¸Šå››ä¸ªåæ ‡å€¼æž„æˆï¼ˆPDF ä½¿ç”¨ç¬›å¡å°”åæ ‡ç³»ï¼Œå³é¡µé¢å·¦ä¸‹è§’çš„åæ ‡ä¸º (0,0)ï¼‰ã€‚é¡µé¢å¿…é¡»æœ‰ MediaBox é¡¹æŒ‡å®šé¡µé¢è¾¹æ¡†ã€‚"
             Required="true" />
-      <Info Token="TrimBox" Name="²Ã¼ô±ß¿ò" Description="ÓÉ×ó¡¢ÏÂ¡¢ÓÒ¡¢ÉÏËÄ¸ö×ø±êÖµ¹¹³É" />
-      <Info Token="Thumb" Name="Ò³ÃæËõÂÔÍ¼" />
-      <Info Token="Annots" Name="Ò³ÃæÅú×¢">
-        <Info Token="Rect" Name="Åú×¢ÇøÓò" />
-        <Info Token="Contents" Name="Åú×¢µÄÎÄ±¾ÄÚÈÝ" />
-        <Info Token="P" Name="Åú×¢ËùÊôÒ³Ãæ" />
-        <Info Token="NM" Name="Åú×¢Ãû³Æ" Description="ÏàÍ¬Ò³ÃæÄÚÎ¨Ò»Ê¶±ð´ËÅú×¢µÄ±êÊ¶·û" />
-        <Info Token="M" Name="×î½üÐÞ¸ÄÊ±¼ä" />
-        <Info Token="F" Name="±êÖ¾Î»" />
-        <Info Token="AP" Name="Åú×¢Íâ¹Û" />
-        <Info Token="Border" Name="Åú×¢±ß¿ò" Description="²ÎÊý£ºË®Æ½Ô²½Ç°ë¾¶¡¢´¹Ö±Ô²½Ç°ë¾¶¡¢Ïß¿í£¬ÒÔ¼°¿ÉÑ¡µÄÏßÐÍÑùÊ½Êý×é" />
-        <Info Token="C" Name="Åú×¢ÑÕÉ«" />
+      <Info Token="TrimBox" Name="è£å‰ªè¾¹æ¡†" Description="ç”±å·¦ã€ä¸‹ã€å³ã€ä¸Šå››ä¸ªåæ ‡å€¼æž„æˆ" />
+      <Info Token="Thumb" Name="é¡µé¢ç¼©ç•¥å›¾" />
+      <Info Token="Annots" Name="é¡µé¢æ‰¹æ³¨">
+        <Info Token="Rect" Name="æ‰¹æ³¨åŒºåŸŸ" />
+        <Info Token="Contents" Name="æ‰¹æ³¨çš„æ–‡æœ¬å†…å®¹" />
+        <Info Token="P" Name="æ‰¹æ³¨æ‰€å±žé¡µé¢" />
+        <Info Token="NM" Name="æ‰¹æ³¨åç§°" Description="ç›¸åŒé¡µé¢å†…å”¯ä¸€è¯†åˆ«æ­¤æ‰¹æ³¨çš„æ ‡è¯†ç¬¦" />
+        <Info Token="M" Name="æœ€è¿‘ä¿®æ”¹æ—¶é—´" />
+        <Info Token="F" Name="æ ‡å¿—ä½" />
+        <Info Token="AP" Name="æ‰¹æ³¨å¤–è§‚" />
+        <Info Token="Border" Name="æ‰¹æ³¨è¾¹æ¡†" Description="å‚æ•°ï¼šæ°´å¹³åœ†è§’åŠå¾„ã€åž‚ç›´åœ†è§’åŠå¾„ã€çº¿å®½ï¼Œä»¥åŠå¯é€‰çš„çº¿åž‹æ ·å¼æ•°ç»„" />
+        <Info Token="C" Name="æ‰¹æ³¨é¢œè‰²" />
         <RefInfo Token="Dest" />
         <RefInfo Token="A" />
       </Info>
-      <Info Token="Parent" Name="ËùÊôÒ³Ãæ¼¯ºÏ" />
-      <Info Token="UserUnit" Name="ÓÃ»§¿Õ¼äµ¥Î»" Description="1/72 Ó¢´çÕûÊý±¶µÄÖµ£¨Ä¬ÈÏÎª 1£©" />
-      <Info Token="Rotate" Name="Ðý×ª½Ç¶È" Description="Ò³ÃæÔÚä¯ÀÀ»ò´òÓ¡Ê±Ë³Ê±ÕëÐý×ªµÄ½Ç¶È£¬±ØÐëÎª 90 µÄÕûÊý±¶»òÎª 0" />
-      <Info Token="AA" Name="¶îÍâ¶¯×÷" Description="´ò¿ª»ò¹Ø±ÕÒ³ÃæÊ±´¥·¢µÄ¶¯×÷" />
+      <Info Token="Parent" Name="æ‰€å±žé¡µé¢é›†åˆ" />
+      <Info Token="UserUnit" Name="ç”¨æˆ·ç©ºé—´å•ä½" Description="1/72 è‹±å¯¸æ•´æ•°å€çš„å€¼ï¼ˆé»˜è®¤ä¸º 1ï¼‰" />
+      <Info Token="Rotate" Name="æ—‹è½¬è§’åº¦" Description="é¡µé¢åœ¨æµè§ˆæˆ–æ‰“å°æ—¶é¡ºæ—¶é’ˆæ—‹è½¬çš„è§’åº¦ï¼Œå¿…é¡»ä¸º 90 çš„æ•´æ•°å€æˆ–ä¸º 0" />
+      <Info Token="AA" Name="é¢å¤–åŠ¨ä½œ" Description="æ‰“å¼€æˆ–å…³é—­é¡µé¢æ—¶è§¦å‘çš„åŠ¨ä½œ" />
       <RefInfo Token="Resources" />
       <RefInfo Token="PieceInfo" />
-      <Info Token="ÃüÁî" Name="Ò³Ãæ»æÖÆÖ¸Áî" Description="´Ë½ÚµãµÄÄÚÈÝÊÇ»æÖÆÒ³ÃæµÄÖ¸Áî¼¯ºÏ¡£´Ë½ÚµãÊÇÐéÄâ½Úµã£¬ÊÇÍ¨¹ý½âÊÍ Contents ½ÚµãµÄÄÚÈÝÉú³ÉµÄ¡£">
-        <Info Token="¾ØÕó"
-              Description="ÓÃÓÚÀ­Éì¡¢Ðý×ªºÍÆ½ÒÆÄÚÈÝµÄ×ªÖÃ¾ØÕó([a1,a2,0; b1,b2,0; c1,c2,1])¡£&#xD;&#xA;Éè×ªÖÃÇ°×ø±êÎª (x,y)£¬Ôò×ªÖÃºó×ø±êÎª£º&#xD;&#xA;x' = a1 ¡Á x + b1 ¡Á y + c1;&#xD;&#xA;y' = a2 ¡Á x + b2 ¡Á y + c2¡£&#xD;&#xA;×ªÖÃ¾ØÕóµÄ×÷ÓÃÊÇÀÛ»ýµÄ£¬ºóÃæµÄ×ªÖÃ¾ØÕóÒªÊ×ÏÈÓëÇ°Ãæ³öÏÖµÄ¾ØÕóÏà³Ë£¬²ÅÊÇ×îÖÕµÄ¾ØÕóÖµ¡£&#xD;&#xA;×ªÖÃ¾ØÕó½«Ó°ÏìºóÐøµÄ»æÍ¼ºÍÎÄ±¾äÖÈ¾½á¹û¡£" />
-        <Info Token="»æÖÆ¶ÔÏó"
-              Description="»æÖÆÖ¸¶¨µÄ×ÊÔ´¶ÔÏó£¨¼ûResourcesµÄXObjectÏîÄ¿£©¡£&#xD;&#xA;³£¼ûµÄ×ÊÔ´¶ÔÏóÓÐÍ¼Æ¬£¨Image£©ºÍ±íµ¥£¨Form£©¡£&#xD;&#xA;ÎÞÂÛÔ­Ê¼¶ÔÏóµÄ³ß´çÈçºÎ£¬Æä¿í¡¢¸ßÔÚ´¦ÀíÇ°¾ù±»Ñ¹Ëõµ½ 1 ¸öµ¥Î»¡£&#xD;&#xA;¶ÔÏóµÄÊµ¼ÊäÖÈ¾³ß´çÊÇÓÉÇ°ÃæµÄ×ªÖÃ¾ØÕó¾ö¶¨µÄ£¨ÀýÈç£ºµ±Ç°×ªÖÃ¾ØÕóÎª[500 0 0 700 0 0]£¬ÔòäÖÈ¾ºó¶ÔÏó¿í¸ßÎª 500¡Á700£©¡£" />
-        <Info Token="»æÍ¼×´Ì¬"
-              Description="Ö¸¶¨»æÍ¼×´Ì¬ÇøÓò£¬Êµ¼ÊÊÇ³É¶Ô³öÏÖµÄÖ¸Áî£¨qºÍQ£©¡£&#xD;&#xA;»æÍ¼×´Ì¬°üº¬×ªÖÃ¾ØÕó¡¢ÑÕÉ«¡¢É«Óò¡¢ÎÄ±¾¡¢ÃÉ°æµÈ×´Ì¬¡£&#xD;&#xA;½øÈë»æÍ¼×´Ì¬£¨q£©Ê±£¬ÏÈ½«Ç°ÃæµÄ»æÍ¼×´Ì¬Ñ¹Èë¶ÑÕ»£¬È»ºó´´½¨È«ÐÂµÄ»æÍ¼×´Ì¬¡£&#xD;&#xA;Àë¿ª»æÍ¼×´Ì¬Ê±£¨Q£©£¬½«Ç°ÃæµÄ»æÍ¼×´Ì¬µ¯³ö¶ÑÕ»£¬¼´»Ö¸´Ô­À´µÄ»æÍ¼×´Ì¬¡£" />
-        <Info Token="»æÍ¼²ÎÊý" Description="Ê¹ÓÃ Resources ÖÐ¶ÔÓ¦µÄ ExtGState ²ÎÊýÉèÖÃ»æÍ¼×´Ì¬" />
-        <Info Token="·ÇÏßÉ«Óò" Description="Ê¹ÓÃ Resources ÖÐ¶ÔÓ¦µÄ ColorSpace ²ÎÊýÉèÖÃ·ÇÏß£¨Nonstroking£©É«Óò" />
-        <Info Token="»­ÏßÉ«Óò" Description="Ê¹ÓÃ Resources ÖÐ¶ÔÓ¦µÄ ColorSpace ²ÎÊýÉèÖÃ»­Ïß£¨Stroking£©É«Óò" />
-        <Info Token="·ÇÏßÑÕÉ«" Description="ÉèÖÃ·ÇÏß£¨Nonstroking£©ÑÕÉ«¡£&#xD;&#xA;¿ÉÓÃ²ÎÊýÓÉÖ®Ç°µÄ·ÇÏßÉ«Óò£¨cs£©²Ù×÷·û¾ö¶¨¡£" />
-        <Info Token="»­ÏßÑÕÉ«" Description="ÉèÖÃ»­Ïß£¨Stroking£©ÑÕÉ«¡£&#xD;&#xA;¿ÉÓÃ²ÎÊýÓÉÖ®Ç°µÄ»­ÏßÉ«Óò£¨CS£©²Ù×÷·û¾ö¶¨¡£" />
-        <Info Token="·ÇÏßÈýÉ«" Description="ÉèÖÃ·ÇÏß£¨Nonstroking£©µÄºì¡¢ÂÌ¡¢À¶Èý·ÖÁ¿ÑÕÉ«" />
-        <Info Token="»­ÏßÈýÉ«" Description="ÉèÖÃ»­Ïß£¨Stroking£©µÄºì¡¢ÂÌ¡¢À¶Èý·ÖÁ¿ÑÕÉ«" />
-        <Info Token="·ÇÏßËÄÉ«" Description="ÉèÖÃ·ÇÏß£¨Nonstroking£©µÄÇà¡¢ºì¡¢»Æ¡¢ºÚËÄ·ÖÁ¿ÑÕÉ«" />
-        <Info Token="»­ÏßËÄÉ«" Description="ÉèÖÃ»­Ïß£¨Stroking£©µÄÇà¡¢ºì¡¢»Æ¡¢ºÚËÄ·ÖÁ¿ÑÕÉ«" />
-        <Info Token="·ÇÏß»ÒÉ«" Description="ÉèÖÃ·ÇÏß£¨Nonstroking£©µÄ»Ò¶ÈÑÕÉ«" />
-        <Info Token="»­Ïß»ÒÉ«" Description="ÉèÖÃ»­Ïß£¨Stroking£©µÄ»Ò¶ÈÑÕÉ«" />
-        <Info Token="ÎÄ±¾Çø"
-              Description="Ö¸¶¨ÎÄ±¾ÇøÓò£¬Êµ¼ÊÊÇ³É¶Ô³öÏÖµÄÖ¸Áî£¨BT ºÍ ET£©¡£&#xD;&#xA;½øÈëÎÄ±¾ÇøÓò£¨BT£©Ê±£¬ÎÄ±¾×ªÖÃ¾ØÕó½«±»ÖØÖÃ¡£Àë¿ªÎÄ±¾ÇøÓò£¨ET£©Ê±£¬ÎÄ±¾×ªÖÃ¾ØÕó½«±»¶ªÆú¡£" />
-        <Info Token="»»ÐÐ×Ö·û´®" Description="Êä³ö»»ÐÐºÍ×Ö·û´®¡£&#xD;&#xA;µ¥ÒýºÅ²Ù×÷·û£¨'£©Êä³ö»»ÐÐºÍÎÄ±¾£»Ë«ÒýºÅ²Ù×÷·û£¨&quot;£©Ö¸¶¨´Ê¾à¡¢×Ö¾à£¬ÔÙÊä³ö»»ÐÐºÍÎÄ±¾¡£" />
-        <Info Token="×Ö·û´®"
-              Description="Êä³ö×Ö·û´®¡£&#xD;&#xA;Tj²Ù×÷·ûÊä³öÎÄ±¾£»&#xD;&#xA;TJ²Ù×÷·ûÊä³ö¾ßÓÐ¶îÍâ×Ö·û¼ä¾àµÄÎÄ±¾¡£&#xD;&#xA;TJ²Ù×÷·ûµÄ²ÎÊýÎªÊý×é£¬×Ö·û´®ÀàÐÍµÄÖµÖ¸¶¨ÎÄ±¾£¬ÊýÖµÀàÐÍµÄÖµ³ýÒÔ -1000 Ö¸¶¨ºóÐøÎÄ±¾µ¥Î»Æ«ÒÆÁ¿¡£" />
-        <Info Token="ÎÄ±¾¾ØÕó"
-              Description="ÓÃÓÚÀ­Éì¡¢Ðý×ªºÍÆ½ÒÆÎÄ±¾ÄÚÈÝµÄ×ªÖÃ¾ØÕó([a1,a2,0; b1,b2,0; c1,c2,1])¡£&#xD;&#xA;Éè×ªÖÃÇ°×ø±êÎª (x,y)£¬Ôò×ªÖÃºó×ø±êÎª£º&#xD;&#xA;x' = a1 ¡Á x + b1 ¡Á y + c1;&#xD;&#xA;y' = a2 ¡Á x + b2 ¡Á y + c2¡£&#xD;&#xA;ÎÄ±¾×ªÖÃ¾ØÕóµÄ×÷ÓÃ²»ÊÇÀÛ»ýµÄ£¬ºóÃæµÄÎÄ±¾×ªÖÃ¾ØÕóÌæ»»Ç°ÃæµÄ¾ØÕó¡£ÔÚ¶¨Î»ÎÄ±¾Ê±£¬»¹ÐèÒª¿¼ÂÇÓÉ»»ÐÐ²Ù×÷·ûËùÉèÖÃµÄºáÏòÆðÊ¼Î»ÖÃ¡£" />
-        <Info Token="»»ÐÐ"
-              Description="ÉèÖÃÆðÊ¼Î»ÖÃ²¢Æ«ÒÆ»»ÐÐ¡£&#xD;&#xA;Td²Ù×÷·ûÓÃÆäºá¡¢×ÝÁ½·½ÏòµÄÆ«ÒÆ²ÎÊý»»ÐÐ£»&#xD;&#xA;TD²Ù×÷·ûÓÃÆäºá¡¢×ÝÁ½·½ÏòµÄÆ«ÒÆ²ÎÊý»»ÐÐ£¬ÔÚ»»ÐÐµÄÍ¬Ê±»¹»á½«×ÝÏòÆ«ÒÆ²ÎÊýÉèÖÃÎªÐÐ¾à£¨TL£©£»&#xD;&#xA;T*²Ù×÷·û½«Ê¹ÓÃµ±Ç°µÄÐÐ¾à»»ÐÐ£¬²»¸Ä±äºáÏòÆ«ÒÆÁ¿" />
-        <Info Token="×ÖÌå" Description="Ö¸¶¨Resources¶ÔÓ¦µÄ×ÖÌå£¬²¢ÉèÖÃ×ÖÌåµ¥Î»³ß´ç¡£&#xD;&#xA;½«×ÖÌåµ¥Î»³ß´çÓëÎÄ±¾×ªÖÃ¾ØÕóÏà³Ë£¬²ÅÄÜÈ·¶¨×ÖÌåäÖÈ¾³öÀ´µÄ³ß´ç¡£" />
-        <Info Token="ÎÄ±¾Ë®Æ½À­Éì" Description="ÉèÖÃÎÄ±¾Ë®Æ½À­ÉìµÄ°Ù·Ö±È£¨Ä¬ÈÏÖµÎª100£©¡£´Ë²ÎÊý»¹½«Ó°Ïìµ½´Ê¾àºÍ×Ö¾à¼ä¸ô¡£" />
-        <Info Token="´Ê¾à"
-              Description="ÉèÖÃ´ÊµÄ¼ä¾à£¨ÒÔÎ´±»ÎÄ±¾×ªÖÃ¾ØÕóÀ­ÉìµÄÎÄ±¾µ¥Î»³ß´ç¼ÆËã£¬³õÊ¼ÖµÎª 0£©¡£´Ê¾àÊµ¼ÊÉÏ¾ÍÊÇ°ë½Ç¿Õ¸ñ£¨Í³Ò»ÂëÎª 32£©×Ö·ûµÄ¿í¶È¡£ÈçÉèÖÃÁËË®Æ½À­Éì£¬´Ê¾àÓëË®Æ½À­Éì°Ù·Ö±ÈÏà³Ë²ÅÊÇÊµ¼Ê¾àÀë¡£" />
-        <Info Token="×Ö¾à" Description="ÉèÖÃ×ÖµÄ¼ä¾à£¨ÒÔÎ´±»ÎÄ±¾×ªÖÃ¾ØÕóÀ­ÉìµÄÎÄ±¾µ¥Î»³ß´ç¼ÆËã£¬³õÊ¼ÖµÎª 0£©¡£ÈçÉèÖÃÁËË®Æ½À­Éì£¬×Ö¾àÓëË®Æ½À­ÉìÏà³Ë²ÅÊÇÊµ¼Ê¾àÀë¡£" />
-        <Info Token="ÐÐ¾à" Description="Îª»»ÐÐ²Ù×÷·ûÉèÖÃÆäÊ¹ÓÃµÄÐÐ¼ä¾àÀë£¨ÒÔÎ´±»ÎÄ±¾×ªÖÃ¾ØÕóÀ­ÉìµÄÎÄ±¾µ¥Î»³ß´ç¼ÆËã£¬³õÊ¼ÖµÎª 0£©" />
-        <Info Token="ÎÄ±¾äÖÈ¾"
-              Description="ÉèÖÃÎÄ±¾äÖÈ¾·½Ê½£¨³õÊ¼ÖµÎª 0£©¡£¿ÉÓÃÄ£Ê½ÓÐ£º&#xD;&#xA;0£ºÌî³ä£»1£ºÃè±ß¿ÕÐÄ×Ö£»2£ºÃè±ßÊµÐÄ×Ö£»3£º²»ÏÔÊ¾£¨ÒþÐÎ£©£»&#xD;&#xA;4£ºÌî³ä²¢¼ÓÎÆÑù£»5£ºÃè±ß²¢¼ÓÎÆÑù£»6£ºÃè±ßÊµÐÄ×Ö¼ÓÎÆÑù£»7£ºÒþÐÎ×ÖÉÏ¼ÓÎÆÑù" />
-        <Info Token="ÎÄ±¾´¹Ö±Æ«ÒÆ" Description="ÉèÖÃÎÄ±¾´¹Ö±Æ«ÒÆ»ùÏßµÄ¾àÀë¡£Ò»°ãÇé¿öÏÂ£¬ÕýÊýÉÏÒÆ£¬¸ºÊýÏÂÒÆ£¨ÒÔÎ´±»ÎÄ±¾×ªÖÃ¾ØÕóÀ­ÉìµÄÎÄ±¾µ¥Î»³ß´ç¼ÆËã£¬³õÊ¼ÖµÎª0£©¡£" />
-        <Info Token="Ïß¶ËÑùÊ½" Description="ÉèÖÃÊ¸Á¿Ïß¶ËÑùÊ½¡£¿ÉÓÃÑùÊ½ÓÐ£º&#xD;&#xA;0£ºÎÞÏßÍ·£»1£ºÔ²½ÇÏßÍ·£»2£º·½ÐÎÏßÍ·¡£" />
-        <Info Token="Á¬½ÓÏßÑùÊ½" Description="ÉèÖÃÊ¸Á¿ÏßÁ¬½ÓÎ»ÖÃµÄÑùÊ½¡£¿ÉÓÃÑùÊ½ÓÐ£º&#xD;&#xA;0£º¼â½ÇÁ¬½Ó£»1£ºÔ²½ÇÁ¬½Ó£»2£º·½½ÇÁ¬½Ó¡£" />
-        <Info Token="ÐéÏßÍ¼°¸" Description="ÉèÖÃÊ¸Á¿ÏßµÄÐéÏßÍ¼°¸" />
-        <Info Token="Ê¼µã" Description="ÉèÖÃÊ¸Á¿Ïß´ÓÖ¸¶¨µã¿ªÊ¼" />
-        <Info Token="ÖÕµã" Description="ÉèÖÃÊ¸Á¿Ïßµ½µ±Ç°µã½áÊø£¬½«Ê¼µãºÍÖÕµãÁ¬½ÓÆðÀ´" />
-        <Info Token="Ö±Ïß" Description="´ÓÇ°Ò»¸öÊ¸Á¿µã»­Ö±Ïßµ½Ö¸¶¨µã" />
-        <Info Token="ÇúÏß"
-              Description="´ÓÇ°Ò»¸öÊ¸Á¿µã»­ Cubic B¨¦zier ÇúÏßµ½Ö¸¶¨µã (x3,y3)¡£¹²ÓÐ 6 ¸ö²ÎÊý£¬·Ö±ðÎªÍ·Î²¿ØÖÆµã (x1,y1)¡¢(x2,y2) ºÍÖÕµã (x3,y3)" />
-        <Info Token="¿ØÎ²ÇúÏß" Description="´ÓÇ°Ò»¸öÊ¸Á¿µã»­ Cubic B¨¦zier ÇúÏßµ½Ö¸¶¨µã (x3,y3)¡£¹²ÓÐ 4 ¸ö²ÎÊý£¬·Ö±ðÎªÏßÎ²¿ØÖÆµã (x2,y2) ºÍÖÕµã (x3,y3)" />
-        <Info Token="¿ØÊ×ÇúÏß" Description="´ÓÇ°Ò»¸öÊ¸Á¿µã»­ Cubic B¨¦zier ÇúÏßµ½Ö¸¶¨µã (x3,y3)¡£¹²ÓÐ 4 ¸ö²ÎÊý£¬·Ö±ðÎªÏßÍ·¿ØÖÆµã (x1,y1) ºÍÖÕµã (x3,y3)" />
-        <Info Token="¾ØÐÎ" Description="ÔÚ¸ø¶¨µÄ (x,y) µãÒÔÖ¸¶¨µÄ¿íºÍ¸ß»­¾ØÐÎ" />
-        <Info Token="»­Ïß" Description="ÓÃÖ®Ç°Ö¸¶¨µÄ»­Ïß£¨Stroking£©ÑÕÉ«¡¢ÏßÍ·¡¢ÏßÎ²¡¢Á¬½ÓÏßÑùÊ½¡¢ÐéÏßµÈÑùÊ½»­Ïß" />
-        <Info Token="»­·â±ÕÏß" Description="ÉèÖÃµ±Ç°µãÎªÖÕµã£¬²¢ÓÃ»­Ïß£¨Stroking£©ÑÕÉ«»­Ïß" />
-        <Info Token="·ÇÁãÌî³ä" Description="Ê¹ÓÃ·ÇÁã£¨Nonzero winding number£©¹æÔòÌî³äÒÑ±ÕºÏµÄÇúÏß" />
-        <Info Token="ÆæÅ¼Ìî³ä" Description="Ê¹ÓÃÆæÅ¼£¨Even-odd£©¹æÔòÌî³äÒÑ±ÕºÏµÄÇúÏß" />
-        <Info Token="·ÇÁã»­ÏßÌî³ä" Description="»­Ïß£¬²¢ÓÃ·ÇÁã£¨Nonzero winding number£©¹æÔòÌî³äÒÑ±ÕºÏµÄÇúÏß" />
-        <Info Token="ÆæÅ¼»­ÏßÌî³ä" Description="»­Ïß£¬²¢ÓÃÆæÅ¼£¨Even-odd£©¹æÔòÌî³äÒÑ±ÕºÏµÄÇúÏß" />
-        <Info Token="±ÕºÏ·ÇÁã»­ÏßÌî³ä" Description="±ÕºÏÇúÏß£¬»­Ïß£¬²¢ÓÃ·ÇÁã£¨Nonzero winding number£©¹æÔòÌî³äÒÑ±ÕºÏµÄÇúÏß" />
-        <Info Token="±ÕºÏÆæÅ¼»­ÏßÌî³ä" Description="±ÕºÏÇúÏß£¬»­Ïß£¬²¢ÓÃÆæÅ¼£¨Even-odd£©¹æÔòÌî³äÒÑ±ÕºÏµÄÇúÏß" />
-        <Info Token="±ÕºÏÂ·¾¶²»Ìî³ä" Description="±ÕºÏÊ¸Á¿Â·¾¶£¬²»Ìî³ä£¬²»»­Ïß£¬Ò»°ãÓÃÓÚÍê³É²Ã¼ôÂ·¾¶" />
-        <Info Token="·ÇÁã²Ã¼ô" Description="Ê¹ÓÃ·ÇÁã£¨Nonzero winding number£©¹æÔò£¬ÒÔ±ÕºÏÇúÏß¹¹³ÉµÄÊ¸Á¿Í¼ÐÎ²Ã¼ôÄÚÈÝ" />
-        <Info Token="ÆæÅ¼²Ã¼ô" Description="Ê¹ÓÃÆæÅ¼£¨Even-odd£©¹æÔò£¬ÒÔ±ÕºÏÇúÏß¹¹³ÉµÄÊ¸Á¿Í¼ÐÎ²Ã¼ôÄÚÈÝ" />
-        <Info Token="ÄÚÇ¶Í¼Ïñ" Description="ÔÚÄÚÈÝÁ÷ÖÐÄÚÇ¶µÄÍ¼Ïñ&#xD;&#xA;Êµ¼ÊÉÏÊÇÈý¸öÖ¸Áî£ºBI£¨Í¼ÏñÆðÊ¼£©¡¢ID£¨Í¼Ïñ¶þ½øÖÆÊý¾Ý£©ºÍEI£¨Í¼Ïñ½áÊø£©" />
+      <Info Token="å‘½ä»¤" Name="é¡µé¢ç»˜åˆ¶æŒ‡ä»¤" Description="æ­¤èŠ‚ç‚¹çš„å†…å®¹æ˜¯ç»˜åˆ¶é¡µé¢çš„æŒ‡ä»¤é›†åˆã€‚æ­¤èŠ‚ç‚¹æ˜¯è™šæ‹ŸèŠ‚ç‚¹ï¼Œæ˜¯é€šè¿‡è§£é‡Š Contents èŠ‚ç‚¹çš„å†…å®¹ç”Ÿæˆçš„ã€‚">
+        <Info Token="çŸ©é˜µ"
+              Description="ç”¨äºŽæ‹‰ä¼¸ã€æ—‹è½¬å’Œå¹³ç§»å†…å®¹çš„è½¬ç½®çŸ©é˜µ([a1,a2,0; b1,b2,0; c1,c2,1])ã€‚&#xD;&#xA;è®¾è½¬ç½®å‰åæ ‡ä¸º (x,y)ï¼Œåˆ™è½¬ç½®åŽåæ ‡ä¸ºï¼š&#xD;&#xA;x' = a1 Ã— x + b1 Ã— y + c1;&#xD;&#xA;y' = a2 Ã— x + b2 Ã— y + c2ã€‚&#xD;&#xA;è½¬ç½®çŸ©é˜µçš„ä½œç”¨æ˜¯ç´¯ç§¯çš„ï¼ŒåŽé¢çš„è½¬ç½®çŸ©é˜µè¦é¦–å…ˆä¸Žå‰é¢å‡ºçŽ°çš„çŸ©é˜µç›¸ä¹˜ï¼Œæ‰æ˜¯æœ€ç»ˆçš„çŸ©é˜µå€¼ã€‚&#xD;&#xA;è½¬ç½®çŸ©é˜µå°†å½±å“åŽç»­çš„ç»˜å›¾å’Œæ–‡æœ¬æ¸²æŸ“ç»“æžœã€‚" />
+        <Info Token="ç»˜åˆ¶å¯¹è±¡"
+              Description="ç»˜åˆ¶æŒ‡å®šçš„èµ„æºå¯¹è±¡ï¼ˆè§Resourcesçš„XObjecté¡¹ç›®ï¼‰ã€‚&#xD;&#xA;å¸¸è§çš„èµ„æºå¯¹è±¡æœ‰å›¾ç‰‡ï¼ˆImageï¼‰å’Œè¡¨å•ï¼ˆFormï¼‰ã€‚&#xD;&#xA;æ— è®ºåŽŸå§‹å¯¹è±¡çš„å°ºå¯¸å¦‚ä½•ï¼Œå…¶å®½ã€é«˜åœ¨å¤„ç†å‰å‡è¢«åŽ‹ç¼©åˆ° 1 ä¸ªå•ä½ã€‚&#xD;&#xA;å¯¹è±¡çš„å®žé™…æ¸²æŸ“å°ºå¯¸æ˜¯ç”±å‰é¢çš„è½¬ç½®çŸ©é˜µå†³å®šçš„ï¼ˆä¾‹å¦‚ï¼šå½“å‰è½¬ç½®çŸ©é˜µä¸º[500 0 0 700 0 0]ï¼Œåˆ™æ¸²æŸ“åŽå¯¹è±¡å®½é«˜ä¸º 500Ã—700ï¼‰ã€‚" />
+        <Info Token="ç»˜å›¾çŠ¶æ€"
+              Description="æŒ‡å®šç»˜å›¾çŠ¶æ€åŒºåŸŸï¼Œå®žé™…æ˜¯æˆå¯¹å‡ºçŽ°çš„æŒ‡ä»¤ï¼ˆqå’ŒQï¼‰ã€‚&#xD;&#xA;ç»˜å›¾çŠ¶æ€åŒ…å«è½¬ç½®çŸ©é˜µã€é¢œè‰²ã€è‰²åŸŸã€æ–‡æœ¬ã€è’™ç‰ˆç­‰çŠ¶æ€ã€‚&#xD;&#xA;è¿›å…¥ç»˜å›¾çŠ¶æ€ï¼ˆqï¼‰æ—¶ï¼Œå…ˆå°†å‰é¢çš„ç»˜å›¾çŠ¶æ€åŽ‹å…¥å †æ ˆï¼Œç„¶åŽåˆ›å»ºå…¨æ–°çš„ç»˜å›¾çŠ¶æ€ã€‚&#xD;&#xA;ç¦»å¼€ç»˜å›¾çŠ¶æ€æ—¶ï¼ˆQï¼‰ï¼Œå°†å‰é¢çš„ç»˜å›¾çŠ¶æ€å¼¹å‡ºå †æ ˆï¼Œå³æ¢å¤åŽŸæ¥çš„ç»˜å›¾çŠ¶æ€ã€‚" />
+        <Info Token="ç»˜å›¾å‚æ•°" Description="ä½¿ç”¨ Resources ä¸­å¯¹åº”çš„ ExtGState å‚æ•°è®¾ç½®ç»˜å›¾çŠ¶æ€" />
+        <Info Token="éžçº¿è‰²åŸŸ" Description="ä½¿ç”¨ Resources ä¸­å¯¹åº”çš„ ColorSpace å‚æ•°è®¾ç½®éžçº¿ï¼ˆNonstrokingï¼‰è‰²åŸŸ" />
+        <Info Token="ç”»çº¿è‰²åŸŸ" Description="ä½¿ç”¨ Resources ä¸­å¯¹åº”çš„ ColorSpace å‚æ•°è®¾ç½®ç”»çº¿ï¼ˆStrokingï¼‰è‰²åŸŸ" />
+        <Info Token="éžçº¿é¢œè‰²" Description="è®¾ç½®éžçº¿ï¼ˆNonstrokingï¼‰é¢œè‰²ã€‚&#xD;&#xA;å¯ç”¨å‚æ•°ç”±ä¹‹å‰çš„éžçº¿è‰²åŸŸï¼ˆcsï¼‰æ“ä½œç¬¦å†³å®šã€‚" />
+        <Info Token="ç”»çº¿é¢œè‰²" Description="è®¾ç½®ç”»çº¿ï¼ˆStrokingï¼‰é¢œè‰²ã€‚&#xD;&#xA;å¯ç”¨å‚æ•°ç”±ä¹‹å‰çš„ç”»çº¿è‰²åŸŸï¼ˆCSï¼‰æ“ä½œç¬¦å†³å®šã€‚" />
+        <Info Token="éžçº¿ä¸‰è‰²" Description="è®¾ç½®éžçº¿ï¼ˆNonstrokingï¼‰çš„çº¢ã€ç»¿ã€è“ä¸‰åˆ†é‡é¢œè‰²" />
+        <Info Token="ç”»çº¿ä¸‰è‰²" Description="è®¾ç½®ç”»çº¿ï¼ˆStrokingï¼‰çš„çº¢ã€ç»¿ã€è“ä¸‰åˆ†é‡é¢œè‰²" />
+        <Info Token="éžçº¿å››è‰²" Description="è®¾ç½®éžçº¿ï¼ˆNonstrokingï¼‰çš„é’ã€çº¢ã€é»„ã€é»‘å››åˆ†é‡é¢œè‰²" />
+        <Info Token="ç”»çº¿å››è‰²" Description="è®¾ç½®ç”»çº¿ï¼ˆStrokingï¼‰çš„é’ã€çº¢ã€é»„ã€é»‘å››åˆ†é‡é¢œè‰²" />
+        <Info Token="éžçº¿ç°è‰²" Description="è®¾ç½®éžçº¿ï¼ˆNonstrokingï¼‰çš„ç°åº¦é¢œè‰²" />
+        <Info Token="ç”»çº¿ç°è‰²" Description="è®¾ç½®ç”»çº¿ï¼ˆStrokingï¼‰çš„ç°åº¦é¢œè‰²" />
+        <Info Token="æ–‡æœ¬åŒº"
+              Description="æŒ‡å®šæ–‡æœ¬åŒºåŸŸï¼Œå®žé™…æ˜¯æˆå¯¹å‡ºçŽ°çš„æŒ‡ä»¤ï¼ˆBT å’Œ ETï¼‰ã€‚&#xD;&#xA;è¿›å…¥æ–‡æœ¬åŒºåŸŸï¼ˆBTï¼‰æ—¶ï¼Œæ–‡æœ¬è½¬ç½®çŸ©é˜µå°†è¢«é‡ç½®ã€‚ç¦»å¼€æ–‡æœ¬åŒºåŸŸï¼ˆETï¼‰æ—¶ï¼Œæ–‡æœ¬è½¬ç½®çŸ©é˜µå°†è¢«ä¸¢å¼ƒã€‚" />
+        <Info Token="æ¢è¡Œå­—ç¬¦ä¸²" Description="è¾“å‡ºæ¢è¡Œå’Œå­—ç¬¦ä¸²ã€‚&#xD;&#xA;å•å¼•å·æ“ä½œç¬¦ï¼ˆ'ï¼‰è¾“å‡ºæ¢è¡Œå’Œæ–‡æœ¬ï¼›åŒå¼•å·æ“ä½œç¬¦ï¼ˆ&quot;ï¼‰æŒ‡å®šè¯è·ã€å­—è·ï¼Œå†è¾“å‡ºæ¢è¡Œå’Œæ–‡æœ¬ã€‚" />
+        <Info Token="å­—ç¬¦ä¸²"
+              Description="è¾“å‡ºå­—ç¬¦ä¸²ã€‚&#xD;&#xA;Tjæ“ä½œç¬¦è¾“å‡ºæ–‡æœ¬ï¼›&#xD;&#xA;TJæ“ä½œç¬¦è¾“å‡ºå…·æœ‰é¢å¤–å­—ç¬¦é—´è·çš„æ–‡æœ¬ã€‚&#xD;&#xA;TJæ“ä½œç¬¦çš„å‚æ•°ä¸ºæ•°ç»„ï¼Œå­—ç¬¦ä¸²ç±»åž‹çš„å€¼æŒ‡å®šæ–‡æœ¬ï¼Œæ•°å€¼ç±»åž‹çš„å€¼é™¤ä»¥ -1000 æŒ‡å®šåŽç»­æ–‡æœ¬å•ä½åç§»é‡ã€‚" />
+        <Info Token="æ–‡æœ¬çŸ©é˜µ"
+              Description="ç”¨äºŽæ‹‰ä¼¸ã€æ—‹è½¬å’Œå¹³ç§»æ–‡æœ¬å†…å®¹çš„è½¬ç½®çŸ©é˜µ([a1,a2,0; b1,b2,0; c1,c2,1])ã€‚&#xD;&#xA;è®¾è½¬ç½®å‰åæ ‡ä¸º (x,y)ï¼Œåˆ™è½¬ç½®åŽåæ ‡ä¸ºï¼š&#xD;&#xA;x' = a1 Ã— x + b1 Ã— y + c1;&#xD;&#xA;y' = a2 Ã— x + b2 Ã— y + c2ã€‚&#xD;&#xA;æ–‡æœ¬è½¬ç½®çŸ©é˜µçš„ä½œç”¨ä¸æ˜¯ç´¯ç§¯çš„ï¼ŒåŽé¢çš„æ–‡æœ¬è½¬ç½®çŸ©é˜µæ›¿æ¢å‰é¢çš„çŸ©é˜µã€‚åœ¨å®šä½æ–‡æœ¬æ—¶ï¼Œè¿˜éœ€è¦è€ƒè™‘ç”±æ¢è¡Œæ“ä½œç¬¦æ‰€è®¾ç½®çš„æ¨ªå‘èµ·å§‹ä½ç½®ã€‚" />
+        <Info Token="æ¢è¡Œ"
+              Description="è®¾ç½®èµ·å§‹ä½ç½®å¹¶åç§»æ¢è¡Œã€‚&#xD;&#xA;Tdæ“ä½œç¬¦ç”¨å…¶æ¨ªã€çºµä¸¤æ–¹å‘çš„åç§»å‚æ•°æ¢è¡Œï¼›&#xD;&#xA;TDæ“ä½œç¬¦ç”¨å…¶æ¨ªã€çºµä¸¤æ–¹å‘çš„åç§»å‚æ•°æ¢è¡Œï¼Œåœ¨æ¢è¡Œçš„åŒæ—¶è¿˜ä¼šå°†çºµå‘åç§»å‚æ•°è®¾ç½®ä¸ºè¡Œè·ï¼ˆTLï¼‰ï¼›&#xD;&#xA;T*æ“ä½œç¬¦å°†ä½¿ç”¨å½“å‰çš„è¡Œè·æ¢è¡Œï¼Œä¸æ”¹å˜æ¨ªå‘åç§»é‡" />
+        <Info Token="å­—ä½“" Description="æŒ‡å®šResourceså¯¹åº”çš„å­—ä½“ï¼Œå¹¶è®¾ç½®å­—ä½“å•ä½å°ºå¯¸ã€‚&#xD;&#xA;å°†å­—ä½“å•ä½å°ºå¯¸ä¸Žæ–‡æœ¬è½¬ç½®çŸ©é˜µç›¸ä¹˜ï¼Œæ‰èƒ½ç¡®å®šå­—ä½“æ¸²æŸ“å‡ºæ¥çš„å°ºå¯¸ã€‚" />
+        <Info Token="æ–‡æœ¬æ°´å¹³æ‹‰ä¼¸" Description="è®¾ç½®æ–‡æœ¬æ°´å¹³æ‹‰ä¼¸çš„ç™¾åˆ†æ¯”ï¼ˆé»˜è®¤å€¼ä¸º100ï¼‰ã€‚æ­¤å‚æ•°è¿˜å°†å½±å“åˆ°è¯è·å’Œå­—è·é—´éš”ã€‚" />
+        <Info Token="è¯è·"
+              Description="è®¾ç½®è¯çš„é—´è·ï¼ˆä»¥æœªè¢«æ–‡æœ¬è½¬ç½®çŸ©é˜µæ‹‰ä¼¸çš„æ–‡æœ¬å•ä½å°ºå¯¸è®¡ç®—ï¼Œåˆå§‹å€¼ä¸º 0ï¼‰ã€‚è¯è·å®žé™…ä¸Šå°±æ˜¯åŠè§’ç©ºæ ¼ï¼ˆç»Ÿä¸€ç ä¸º 32ï¼‰å­—ç¬¦çš„å®½åº¦ã€‚å¦‚è®¾ç½®äº†æ°´å¹³æ‹‰ä¼¸ï¼Œè¯è·ä¸Žæ°´å¹³æ‹‰ä¼¸ç™¾åˆ†æ¯”ç›¸ä¹˜æ‰æ˜¯å®žé™…è·ç¦»ã€‚" />
+        <Info Token="å­—è·" Description="è®¾ç½®å­—çš„é—´è·ï¼ˆä»¥æœªè¢«æ–‡æœ¬è½¬ç½®çŸ©é˜µæ‹‰ä¼¸çš„æ–‡æœ¬å•ä½å°ºå¯¸è®¡ç®—ï¼Œåˆå§‹å€¼ä¸º 0ï¼‰ã€‚å¦‚è®¾ç½®äº†æ°´å¹³æ‹‰ä¼¸ï¼Œå­—è·ä¸Žæ°´å¹³æ‹‰ä¼¸ç›¸ä¹˜æ‰æ˜¯å®žé™…è·ç¦»ã€‚" />
+        <Info Token="è¡Œè·" Description="ä¸ºæ¢è¡Œæ“ä½œç¬¦è®¾ç½®å…¶ä½¿ç”¨çš„è¡Œé—´è·ç¦»ï¼ˆä»¥æœªè¢«æ–‡æœ¬è½¬ç½®çŸ©é˜µæ‹‰ä¼¸çš„æ–‡æœ¬å•ä½å°ºå¯¸è®¡ç®—ï¼Œåˆå§‹å€¼ä¸º 0ï¼‰" />
+        <Info Token="æ–‡æœ¬æ¸²æŸ“"
+              Description="è®¾ç½®æ–‡æœ¬æ¸²æŸ“æ–¹å¼ï¼ˆåˆå§‹å€¼ä¸º 0ï¼‰ã€‚å¯ç”¨æ¨¡å¼æœ‰ï¼š&#xD;&#xA;0ï¼šå¡«å……ï¼›1ï¼šæè¾¹ç©ºå¿ƒå­—ï¼›2ï¼šæè¾¹å®žå¿ƒå­—ï¼›3ï¼šä¸æ˜¾ç¤ºï¼ˆéšå½¢ï¼‰ï¼›&#xD;&#xA;4ï¼šå¡«å……å¹¶åŠ çº¹æ ·ï¼›5ï¼šæè¾¹å¹¶åŠ çº¹æ ·ï¼›6ï¼šæè¾¹å®žå¿ƒå­—åŠ çº¹æ ·ï¼›7ï¼šéšå½¢å­—ä¸ŠåŠ çº¹æ ·" />
+        <Info Token="æ–‡æœ¬åž‚ç›´åç§»" Description="è®¾ç½®æ–‡æœ¬åž‚ç›´åç§»åŸºçº¿çš„è·ç¦»ã€‚ä¸€èˆ¬æƒ…å†µä¸‹ï¼Œæ­£æ•°ä¸Šç§»ï¼Œè´Ÿæ•°ä¸‹ç§»ï¼ˆä»¥æœªè¢«æ–‡æœ¬è½¬ç½®çŸ©é˜µæ‹‰ä¼¸çš„æ–‡æœ¬å•ä½å°ºå¯¸è®¡ç®—ï¼Œåˆå§‹å€¼ä¸º0ï¼‰ã€‚" />
+        <Info Token="çº¿ç«¯æ ·å¼" Description="è®¾ç½®çŸ¢é‡çº¿ç«¯æ ·å¼ã€‚å¯ç”¨æ ·å¼æœ‰ï¼š&#xD;&#xA;0ï¼šæ— çº¿å¤´ï¼›1ï¼šåœ†è§’çº¿å¤´ï¼›2ï¼šæ–¹å½¢çº¿å¤´ã€‚" />
+        <Info Token="è¿žæŽ¥çº¿æ ·å¼" Description="è®¾ç½®çŸ¢é‡çº¿è¿žæŽ¥ä½ç½®çš„æ ·å¼ã€‚å¯ç”¨æ ·å¼æœ‰ï¼š&#xD;&#xA;0ï¼šå°–è§’è¿žæŽ¥ï¼›1ï¼šåœ†è§’è¿žæŽ¥ï¼›2ï¼šæ–¹è§’è¿žæŽ¥ã€‚" />
+        <Info Token="è™šçº¿å›¾æ¡ˆ" Description="è®¾ç½®çŸ¢é‡çº¿çš„è™šçº¿å›¾æ¡ˆ" />
+        <Info Token="å§‹ç‚¹" Description="è®¾ç½®çŸ¢é‡çº¿ä»ŽæŒ‡å®šç‚¹å¼€å§‹" />
+        <Info Token="ç»ˆç‚¹" Description="è®¾ç½®çŸ¢é‡çº¿åˆ°å½“å‰ç‚¹ç»“æŸï¼Œå°†å§‹ç‚¹å’Œç»ˆç‚¹è¿žæŽ¥èµ·æ¥" />
+        <Info Token="ç›´çº¿" Description="ä»Žå‰ä¸€ä¸ªçŸ¢é‡ç‚¹ç”»ç›´çº¿åˆ°æŒ‡å®šç‚¹" />
+        <Info Token="æ›²çº¿"
+              Description="ä»Žå‰ä¸€ä¸ªçŸ¢é‡ç‚¹ç”» Cubic BÃ©zier æ›²çº¿åˆ°æŒ‡å®šç‚¹ (x3,y3)ã€‚å…±æœ‰ 6 ä¸ªå‚æ•°ï¼Œåˆ†åˆ«ä¸ºå¤´å°¾æŽ§åˆ¶ç‚¹ (x1,y1)ã€(x2,y2) å’Œç»ˆç‚¹ (x3,y3)" />
+        <Info Token="æŽ§å°¾æ›²çº¿" Description="ä»Žå‰ä¸€ä¸ªçŸ¢é‡ç‚¹ç”» Cubic BÃ©zier æ›²çº¿åˆ°æŒ‡å®šç‚¹ (x3,y3)ã€‚å…±æœ‰ 4 ä¸ªå‚æ•°ï¼Œåˆ†åˆ«ä¸ºçº¿å°¾æŽ§åˆ¶ç‚¹ (x2,y2) å’Œç»ˆç‚¹ (x3,y3)" />
+        <Info Token="æŽ§é¦–æ›²çº¿" Description="ä»Žå‰ä¸€ä¸ªçŸ¢é‡ç‚¹ç”» Cubic BÃ©zier æ›²çº¿åˆ°æŒ‡å®šç‚¹ (x3,y3)ã€‚å…±æœ‰ 4 ä¸ªå‚æ•°ï¼Œåˆ†åˆ«ä¸ºçº¿å¤´æŽ§åˆ¶ç‚¹ (x1,y1) å’Œç»ˆç‚¹ (x3,y3)" />
+        <Info Token="çŸ©å½¢" Description="åœ¨ç»™å®šçš„ (x,y) ç‚¹ä»¥æŒ‡å®šçš„å®½å’Œé«˜ç”»çŸ©å½¢" />
+        <Info Token="ç”»çº¿" Description="ç”¨ä¹‹å‰æŒ‡å®šçš„ç”»çº¿ï¼ˆStrokingï¼‰é¢œè‰²ã€çº¿å¤´ã€çº¿å°¾ã€è¿žæŽ¥çº¿æ ·å¼ã€è™šçº¿ç­‰æ ·å¼ç”»çº¿" />
+        <Info Token="ç”»å°é—­çº¿" Description="è®¾ç½®å½“å‰ç‚¹ä¸ºç»ˆç‚¹ï¼Œå¹¶ç”¨ç”»çº¿ï¼ˆStrokingï¼‰é¢œè‰²ç”»çº¿" />
+        <Info Token="éžé›¶å¡«å……" Description="ä½¿ç”¨éžé›¶ï¼ˆNonzero winding numberï¼‰è§„åˆ™å¡«å……å·²é—­åˆçš„æ›²çº¿" />
+        <Info Token="å¥‡å¶å¡«å……" Description="ä½¿ç”¨å¥‡å¶ï¼ˆEven-oddï¼‰è§„åˆ™å¡«å……å·²é—­åˆçš„æ›²çº¿" />
+        <Info Token="éžé›¶ç”»çº¿å¡«å……" Description="ç”»çº¿ï¼Œå¹¶ç”¨éžé›¶ï¼ˆNonzero winding numberï¼‰è§„åˆ™å¡«å……å·²é—­åˆçš„æ›²çº¿" />
+        <Info Token="å¥‡å¶ç”»çº¿å¡«å……" Description="ç”»çº¿ï¼Œå¹¶ç”¨å¥‡å¶ï¼ˆEven-oddï¼‰è§„åˆ™å¡«å……å·²é—­åˆçš„æ›²çº¿" />
+        <Info Token="é—­åˆéžé›¶ç”»çº¿å¡«å……" Description="é—­åˆæ›²çº¿ï¼Œç”»çº¿ï¼Œå¹¶ç”¨éžé›¶ï¼ˆNonzero winding numberï¼‰è§„åˆ™å¡«å……å·²é—­åˆçš„æ›²çº¿" />
+        <Info Token="é—­åˆå¥‡å¶ç”»çº¿å¡«å……" Description="é—­åˆæ›²çº¿ï¼Œç”»çº¿ï¼Œå¹¶ç”¨å¥‡å¶ï¼ˆEven-oddï¼‰è§„åˆ™å¡«å……å·²é—­åˆçš„æ›²çº¿" />
+        <Info Token="é—­åˆè·¯å¾„ä¸å¡«å……" Description="é—­åˆçŸ¢é‡è·¯å¾„ï¼Œä¸å¡«å……ï¼Œä¸ç”»çº¿ï¼Œä¸€èˆ¬ç”¨äºŽå®Œæˆè£å‰ªè·¯å¾„" />
+        <Info Token="éžé›¶è£å‰ª" Description="ä½¿ç”¨éžé›¶ï¼ˆNonzero winding numberï¼‰è§„åˆ™ï¼Œä»¥é—­åˆæ›²çº¿æž„æˆçš„çŸ¢é‡å›¾å½¢è£å‰ªå†…å®¹" />
+        <Info Token="å¥‡å¶è£å‰ª" Description="ä½¿ç”¨å¥‡å¶ï¼ˆEven-oddï¼‰è§„åˆ™ï¼Œä»¥é—­åˆæ›²çº¿æž„æˆçš„çŸ¢é‡å›¾å½¢è£å‰ªå†…å®¹" />
+        <Info Token="å†…åµŒå›¾åƒ" Description="åœ¨å†…å®¹æµä¸­å†…åµŒçš„å›¾åƒ&#xD;&#xA;å®žé™…ä¸Šæ˜¯ä¸‰ä¸ªæŒ‡ä»¤ï¼šBIï¼ˆå›¾åƒèµ·å§‹ï¼‰ã€IDï¼ˆå›¾åƒäºŒè¿›åˆ¶æ•°æ®ï¼‰å’ŒEIï¼ˆå›¾åƒç»“æŸï¼‰" />
       </Info>
     </Info>
   </Info>
