@@ -75,7 +75,7 @@ internal class PdfPageCommand
 
     internal string GetOperandsText() => Operands != null ? PdfHelper.GetArrayString(Operands) : null;
 
-    #region 操作符中文名称
+    #region Operator Chinese name
 
     private static readonly Dictionary<string, string> __OperatorNames = Init();
 

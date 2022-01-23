@@ -34,7 +34,7 @@ public partial class MergerControl : FunctionControl
 
     public override Bitmap IconImage => Resources.Merger;
 
-    #region IDefaultButtonControl 成员
+    #region IDefaultButtonControl member
 
     public override Button DefaultButton => _ImportButton;
 

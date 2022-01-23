@@ -10,7 +10,7 @@ namespace BrightIdeasSoftware;
 
 internal static class ObjectListViewHelper
 {
-    /// <summary>修复编辑控件太窄小的问题。</summary>
+    /// <summary>Fix the problem of too narrow editing controls.</summary>
     public static void FixEditControlWidth(this ObjectListView view)
     {
         view.CellEditStarting += View_CellEditStarting;
@@ -107,7 +107,10 @@ internal static class ObjectListViewHelper
     public static T GetFirstSelectedModel<T>(this ObjectListView view) where T : class =>
         view.GetModelObject(view.GetFirstSelectedIndex()) as T;
 
-    /// <remarks>树视图存在子节点且多选节点时，在 SelectedIndexChanged 事件中，SelectedIndices属性可能返回无内容的集合。</remarks>
+    /// <remarks>
+    ///     The tree view is present in the child node and the node is selected. In the SelectedIndexChanged event, The
+    ///     SelectedIndices property may return a collection with no content.
+    /// </remarks>
     public static int GetFirstSelectedIndex(this ObjectListView view)
     {
         int c = view.GetItemCount();

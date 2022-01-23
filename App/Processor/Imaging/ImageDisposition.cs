@@ -27,7 +27,7 @@ internal sealed class ImageDisposition : IComparable<ImageDisposition>
     public float XScale => Ctm[Matrix.I11] / Image.Width;
     public float YScale => Ctm[Matrix.I22] / Image.Height;
 
-    #region IComparable<ImageDisposition> 成员
+    #region IComparable<ImageDisposition> member
 
     public int CompareTo(ImageDisposition other) =>
         Y < other.Y ? 1 :

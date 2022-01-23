@@ -26,8 +26,8 @@ public partial class MainForm : Form
     protected override void OnLoad(EventArgs e)
     {
         base.OnLoad(e);
-        PdfHelper.ToggleReaderDebugMode(true); // 打开容错模式
-        PdfHelper.ToggleUnethicalMode(true); // 打开强制读取加密文档模式
+        PdfHelper.ToggleReaderDebugMode(true); // Open fault tolerance mode
+        PdfHelper.ToggleUnethicalMode(true); // Open forced read encrypted document mode
 
         try
         {
@@ -101,7 +101,7 @@ public partial class MainForm : Form
         _FunctionContainer.Selected += SelectedFunctionChanged;
         _FunctionContainer.Deselected += FunctionDeselected;
 
-        // 关闭启动屏幕窗口
+        // Close the start screen window
         using (EventWaitHandle closeSplashEvent = new(false,
                    EventResetMode.ManualReset, "CloseSplashScreenEvent" + Constants.AppEngName))
         {
@@ -481,13 +481,13 @@ public partial class MainForm : Form
         }
     }
 
-    #region 公共功能
+    #region Public function
 
     private BackgroundWorker _Worker;
     private readonly FormState _formState = new();
     private bool _FullScreen;
 
-    ///<summary>获取或指定全屏显示的值。</summary>
+    /// <summary>Gets or specifies the value of the full screen display.</summary>
     public bool FullScreen
     {
         get => _FullScreen;
@@ -514,12 +514,12 @@ public partial class MainForm : Form
     }
 
     /// <summary>
-    ///     设置控件的提示信息。
+    ///     Set the prompt information for the control.
     /// </summary>
     internal void SetTooltip(Control control, string text) => _ToolTip.SetToolTip(control, text);
 
     /// <summary>
-    ///     获取或设置状态栏文本。
+    ///     Get or set the status bar text.
     /// </summary>
     internal string StatusText
     {
@@ -529,7 +529,7 @@ public partial class MainForm : Form
 
     #region Worker
 
-    ///<summary>获取或指定后台进程。</summary>
+    /// <summary>Get or specify the background process.</summary>
     internal BackgroundWorker GetWorker()
     {
         if (_Worker != null)

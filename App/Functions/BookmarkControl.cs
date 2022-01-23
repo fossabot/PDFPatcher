@@ -11,12 +11,12 @@ public partial class BookmarkControl : UserControl
     public BookmarkControl() => InitializeComponent();
 
     //supportedBookmarkTypes = defaultBookmarkTypes;
-    ///<summary>获取或指定书签文件路径的下拉列表框。</summary>
+    /// <summary>Get or specify the drop-down list box for the bookmark file path.</summary>
     internal HistoryComboBox FileList { get; private set; }
 
     internal FileDialog FileDialog => UseForBookmarkExport ? _SaveBookmarkBox : _OpenBookmarkBox;
 
-    [Description("标签文本上显示的文本")]
+    [Description("Text displayed on the label text")]
     public string LabelText
     {
         get => label1.Text;
@@ -24,16 +24,16 @@ public partial class BookmarkControl : UserControl
     }
 
     [DefaultValue(null)]
-    ///<summary>获取或指定书签文件路径的值。</summary>
+    /// <summary>Gets or specifies the value of the bookmark file path.</summary>
     public override string Text
     {
         get => FileList.Text;
         set => FileList.Text = value;
     }
 
-    ///<summary>获取或指定是否用于导出书签。</summary>
+    /// <summary>Get or specify whether it is used to export bookmarks.</summary>
     [DefaultValue(false)]
-    [Description("点击浏览按钮时是否打开保存对话框")]
+    [Description("Whether to open the save dialog when you click the Browse button")]
     public bool UseForBookmarkExport { get; set; }
 
     //readonly string[] xmlBookmarkType = new string[] { ".xml" };

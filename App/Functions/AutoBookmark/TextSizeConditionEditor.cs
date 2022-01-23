@@ -37,7 +37,7 @@ public partial class TextSizeConditionEditor : UserControl, IFilterConditionEdit
         _SpecificSizeBox.Enabled = _SizeBox.Checked;
     }
 
-    #region ITextInfoFilterEditor 成员
+    #region ITextInfoFilterEditor member
 
     public AutoBookmarkCondition Filter
     {

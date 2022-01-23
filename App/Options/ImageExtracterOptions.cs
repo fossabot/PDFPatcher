@@ -16,15 +16,15 @@ public class ImageExtracterOptions
 
     [XmlAttribute("避免重复导出图片")] public bool SkipRedundantImages { get; set; }
 
-    ///<summary>获取或指定是否合并相同页面、相同宽度的图片。</summary>
+    /// <summary>获取或指定是否合并相同页面、相同宽度的图片。</summary>
     [XmlAttribute("合并图片")]
     public bool MergeImages { get; set; }
 
-    ///<summary>获取或指定是否将合并的 JPEG 图片存为无损的 PNG 图片。</summary>
+    /// <summary>获取或指定是否将合并的 JPEG 图片存为无损的 PNG 图片。</summary>
     [XmlAttribute("合并JPG图片为PNG")]
     public bool MergeJpgToPng { get; set; }
 
-    ///<summary>获取或指定是否垂直翻转导出的 PNG 或 TIFF 图片。</summary>
+    /// <summary>获取或指定是否垂直翻转导出的 PNG 或 TIFF 图片。</summary>
     [XmlAttribute("垂直翻转图片")]
     public bool VerticalFlipImages { get; set; }
 
@@ -34,7 +34,7 @@ public class ImageExtracterOptions
 
     [XmlAttribute("黑白图片导出为PNG")] public bool MonoPng { get; set; }
 
-    ///<summary>获取或指定是否导出批注内的图片。</summary>
+    /// <summary>获取或指定是否导出批注内的图片。</summary>
     [XmlAttribute("导出批注图片")]
     public bool ExtractAnnotationImages { get; set; }
 
@@ -42,11 +42,11 @@ public class ImageExtracterOptions
 
     [XmlAttribute("最小宽度")] public int MinWidth { get; set; }
 
-    ///<summary>获取或指定导出页面图像所保存的目录路径。</summary>
+    /// <summary>Get or specify the directory path saved by the export page image.</summary>
     [XmlAttribute("导出路径")]
     public string OutputPath { get; set; }
 
-    ///<summary>获取或指定导出文件的名称掩码。</summary>
+    /// <summary>Gets or specifies the name mask of the export file.</summary>
     [XmlAttribute("文件名称掩码")]
     public string FileMask { get; set; }
 

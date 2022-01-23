@@ -8,7 +8,7 @@ using PDFPatcher.Common;
 namespace PDFPatcher.Model;
 
 /// <summary>
-///     在合并文件功能中使用的书签设置。
+///     Bookmark settings used in the merged file function.
 /// </summary>
 public class BookmarkSettings : ICloneable, IXmlSerializable
 {
@@ -31,7 +31,7 @@ public class BookmarkSettings : ICloneable, IXmlSerializable
     public bool IsOpened { get; set; }
     public Color ForeColor { get; set; }
 
-    #region ICloneable 成员
+    #region ICloneable member
 
     object ICloneable.Clone() => Clone();
 
@@ -39,7 +39,7 @@ public class BookmarkSettings : ICloneable, IXmlSerializable
 
     public BookmarkSettings Clone() => (BookmarkSettings)MemberwiseClone();
 
-    #region IXmlSerializable 成员
+    #region IXmlSerializable member
 
     public XmlSchema GetSchema() => null;
 

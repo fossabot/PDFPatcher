@@ -33,7 +33,7 @@ internal sealed class ImportOcrResultProcessor : IDocProcessor
         XmlDocument xd = new();
         while (x.EOF == false)
         {
-            // 读取一页识别结果
+            // Read one page recognition result
             if (x.MoveToContent() != XmlNodeType.Element
                 || x.Name != Constants.Ocr.Result
                 || x.GetAttribute(Constants.Content.PageNumber).TryParse(out int p) == false
@@ -53,7 +53,7 @@ internal sealed class ImportOcrResultProcessor : IDocProcessor
             cp.ProcessContent(pdf.GetPageContent(p), page.GetAsDict(PdfName.RESOURCES));
             IList<PdfPageCommand> commands = cp.Commands;
             ClearPreviousOcrResult(commands);
-            // 用“q”操作符括起旧的命令
+            // Use "q" to operate an old command
             if (commands.Count > 1)
             {
                 EnclosingCommand q = EnclosingCommand.Create("q", null);
@@ -66,7 +66,7 @@ internal sealed class ImportOcrResultProcessor : IDocProcessor
                 commands.Add(q);
             }
 
-            // 写入各图像的识别结果
+            // Identification result written in each image
             XmlNodeList ir = xd.SelectNodes(Constants.Ocr.Result + "/" + Constants.Ocr.Image);
             int fontUse = 0;
             foreach (XmlElement image in ir)
@@ -245,7 +245,7 @@ internal sealed class ImportOcrResultProcessor : IDocProcessor
             new PdfNumber(matrix[OcrContentInfo.A1] / w), new PdfNumber(matrix[OcrContentInfo.A2] / w),
             new PdfNumber(matrix[OcrContentInfo.B1] / h), new PdfNumber(matrix[OcrContentInfo.B2] / h),
             new PdfNumber(matrix[OcrContentInfo.DX]), new PdfNumber(matrix[OcrContentInfo.DY])
-        )); // 设置初始偏移
+        )); // Set initial offset
         float fSize = -1f;
         bool isV = false, hasHFont = false, hasVFont = false;
         foreach (object item in chars)
@@ -359,7 +359,7 @@ internal sealed class ImportOcrResultProcessor : IDocProcessor
         }
     }
 
-    #region IDocProcessor 成员
+    #region IDocProcessor member
 
     public string Name => "导入光学字符识别结果";
 

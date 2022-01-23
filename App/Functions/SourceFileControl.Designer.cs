@@ -2,15 +2,15 @@
 {
 	partial class SourceFileControl
 	{
-		/// <summary> 
-		/// 必需的设计器变量。
+		/// <summary>
+		/// Required designer variables.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 
-		/// <summary> 
-		/// 清理所有正在使用的资源。
+		/// <summary>
+		/// Clean up all resources in use.
 		/// </summary>
-		/// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+		/// <param name="disposing">true if the managed resource should be released; otherwise, false.</param>
 		protected override void Dispose (bool disposing) {
 			if (disposing && (components != null)) {
 				components.Dispose ();
@@ -18,11 +18,11 @@
 			base.Dispose (disposing);
 		}
 
-		#region 组件设计器生成的代码
+		#region Component Designer Generated Code
 
-		/// <summary> 
-		/// 设计器支持所需的方法 - 不要
-		/// 使用代码编辑器修改此方法的内容。
+		/// <summary>
+		/// Designer supports required methods - Don't
+		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
             this.label1 = new System.Windows.Forms.Label();
@@ -32,9 +32,9 @@
             this.FileList = new PDFPatcher.HistoryComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // label1
-            // 
+            //
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 6);
             this.label1.Name = "label1";
@@ -42,9 +42,9 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "原始 &PDF 文件：";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
+            //
             // _BrowseSourcePdfButton
-            // 
+            //
             this._BrowseSourcePdfButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._BrowseSourcePdfButton.Image = global::PDFPatcher.Properties.Resources.OriginalPdfFile;
             this._BrowseSourcePdfButton.Location = new System.Drawing.Point(391, 1);
@@ -55,16 +55,16 @@
             this._BrowseSourcePdfButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this._BrowseSourcePdfButton.UseVisualStyleBackColor = true;
             this._BrowseSourcePdfButton.Click += new System.EventHandler(this._BrowseSourcePdfButton_Click);
-            // 
+            //
             // _OpenPdfBox
-            // 
+            //
             this._OpenPdfBox.DefaultExt = "pdf";
             this._OpenPdfBox.Filter = "PDF 文件(*.pdf)|*.pdf";
             this._OpenPdfBox.Multiselect = true;
             this._OpenPdfBox.Title = "打开 PDF 源文件";
-            // 
+            //
             // panel1
-            // 
+            //
             this.panel1.Controls.Add(this.FileList);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this._BrowseSourcePdfButton);
@@ -73,9 +73,9 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(469, 26);
             this.panel1.TabIndex = 4;
-            // 
+            //
             // _SourcePdfBox
-            // 
+            //
             this.FileList.AllowDrop = true;
             this.FileList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
@@ -90,9 +90,9 @@
             this.FileList.DragDrop += new System.Windows.Forms.DragEventHandler(this._SourcePdfBox_DragDrop);
             this.FileList.DragEnter += new System.Windows.Forms.DragEventHandler(this._SourcePdfBox_DragEnter);
             this.FileList.TextChanged += new System.EventHandler(this._SourcePdfBox_TextChanged);
-            // 
+            //
             // SourceFileControl
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.panel1);

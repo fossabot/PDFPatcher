@@ -14,7 +14,7 @@ public class OcrOptions
     //[XmlAttribute ("页码范围")]
     [XmlIgnore] public string PageRanges { get; set; }
 
-    #region 光学字符识别选项
+    #region Optical character recognition option
 
     [XmlAttribute("识别语言")] public int OcrLangID { get; set; }
 

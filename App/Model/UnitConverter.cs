@@ -21,12 +21,12 @@ public class UnitConverter
     }
 
     /// <summary>
-    ///     获取单位转换因数。
+    ///     Get the unit conversion factor.
     /// </summary>
     [XmlIgnore]
     public float UnitFactor { get; private set; }
 
-    ///<summary>获取或指定转换精度的值。</summary>
+    /// <summary>Gets or specifies the value of the conversion accuracy.</summary>
     [XmlIgnore]
     public int Precision
     {
@@ -43,7 +43,7 @@ public class UnitConverter
         }
     }
 
-    ///<summary>获取或指定转换使用的单位。</summary>
+    /// <summary>Get or specify the unit of conversion.</summary>
     [XmlAttribute("单位")]
     public string Unit
     {

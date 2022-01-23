@@ -4,7 +4,7 @@ namespace PDFPatcher.Processor;
 
 internal sealed class RemoveZoomRateProcessor : IInfoDocProcessor
 {
-    #region IInfoDocProcessor 成员
+    #region IInfoDocProcessor member
 
     public bool Process(XmlElement item)
     {

@@ -28,7 +28,7 @@ internal sealed class TextLine : IDirectionalBoundObject
         }
     }
 
-    /// <summary>获取此行内包含的文本。</summary>
+    /// <summary>Get the text included in this line.</summary>
     internal IEnumerable<TextInfo> Texts => _Texts;
 
     /// <summary>获取 <see cref="Texts" /> 内的第一个 <see cref="TextInfo" />。</summary>
@@ -37,7 +37,7 @@ internal sealed class TextLine : IDirectionalBoundObject
     internal bool SuppressTextInfoArrangement { get; set; }
 
     /// <summary>
-    ///     默认的书写方向。
+    ///     The default writing direction.
     /// </summary>
     internal static WritingDirection DefaultDirection { get; set; }
 
@@ -45,7 +45,7 @@ internal sealed class TextLine : IDirectionalBoundObject
     public Bound Region { get; private set; }
 
     /// <summary>
-    ///     获取将 <see cref="Texts" /> 内所有文本串联起来的字符串。
+    ///     Get strings that are connected in series in all texts in <see cref="Texts" />.
     /// </summary>
     public string Text => _Text ??= GetConcatenatedText();
 
@@ -80,14 +80,14 @@ internal sealed class TextLine : IDirectionalBoundObject
     }
 
     /// <summary>
-    ///     获取区域 <paramref name="other" /> 到当前文本行之间的距离。
+    ///     Get zone <paramref name="other" /> Distance between the current line lines.
     /// </summary>
     /// <param name="other">另一个区域。</param>
     /// <returns><paramref name="other" /> 相对于此区域的距离关系。</returns>
     internal DistanceInfo GetDistance(Bound other) => Region.GetDistance(other, Direction);
 
     /// <summary>
-    ///     获取将 <see cref="Texts" /> 内所有文本串联起来的字符串。
+    ///     Get strings that are connected in series in all texts in <see cref="Texts" />.
     /// </summary>
     private string GetConcatenatedText()
     {
@@ -125,7 +125,7 @@ internal sealed class TextLine : IDirectionalBoundObject
                 if (dx > cs)
                 {
                     string t = _Texts[i - 1].Text;
-                    // 调整标点留下的空白
+                    // Adjustment punctuation
                     char c;
                     if (t.Length > 0)
                     {
@@ -159,8 +159,8 @@ internal sealed class TextLine : IDirectionalBoundObject
         return sb.ToString();
     }
 
-    /// <summary>获取 <see cref="Texts" /> 内文字或数字的平均尺寸。</summary>
-    /// <returns>返回平均字符尺寸。</returns>
+    /// <summary>Gets the average size of <see cref="Texts" />.</summary>
+    /// <returns>Returns average character size.</returns>
     internal float GetAverageCharSize()
     {
         float ts = 0, cc = 0;
@@ -181,6 +181,6 @@ internal sealed class TextLine : IDirectionalBoundObject
             }
         }
 
-        return ts / cc; // 平均字符宽度
+        return ts / cc; // Average character width
     }
 }

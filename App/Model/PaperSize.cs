@@ -57,7 +57,7 @@ public class PaperSize
 
     [XmlIgnore] public SpecialPaperSize SpecialSize { get; private set; }
 
-    ///<summary>获取或指定页面高度的值。</summary>
+    /// <summary>Gets or specifies the value of the page height.</summary>
     [XmlAttribute("高度")]
     public float Height
     {
@@ -73,7 +73,7 @@ public class PaperSize
         }
     }
 
-    ///<summary>获取或指定页面宽度的值。</summary>
+    /// <summary>Gets or specifies the value of the page width.</summary>
     [XmlAttribute("宽度")]
     public float Width
     {
@@ -89,10 +89,9 @@ public class PaperSize
         }
     }
 
-    internal PaperSize Scale(float xFactor, float yFactor) =>
-        new PaperSize(PaperName, Width * xFactor, Height * yFactor);
+    internal PaperSize Scale(float xFactor, float yFactor) => new(PaperName, Width * xFactor, Height * yFactor);
 
-    internal PaperSize Scale(float factor) => new PaperSize(PaperName, Width * factor, Height * factor);
+    internal PaperSize Scale(float factor) => new(PaperName, Width * factor, Height * factor);
 
     internal PaperSize Clone() => (PaperSize)MemberwiseClone();
 

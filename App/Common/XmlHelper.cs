@@ -22,13 +22,14 @@ internal static class XmlHelper
     }
 
     /// <summary>
-    ///     获取 <paramref name="element" /> 元素名称为 <paramref name="name" /> 的属性值，如不存在该属性，或属性不能解析为整数值，则返回
-    ///     <paramref name="defaultValue" />。
+    ///     Get <paramref name="element" /> element name is the attribute value of <paramref name="name" />, if there is no
+    ///     this property, or attributes cannot be resolved into an integer value, then return
+    ///     <paramref name="defaultValue" />.
     /// </summary>
-    /// <param name="element">需要获取属性值的元素。</param>
-    /// <param name="name">属性的名称。</param>
-    /// <param name="defaultValue">属性的默认值。</param>
-    /// <returns>属性的值；如不存在该属性，返回默认值。</returns>
+    /// <param name="element">The element of the attribute value is required.</param>
+    /// <param name="name">The name of the attribute.</param>
+    /// <param name="defaultValue">The default value of the attribute.</param>
+    /// <returns>The value of the attribute; if this property does not exist, return the default value.</returns>
     [DebuggerStepThrough]
     public static int GetValue(this XmlElement element, string name, int defaultValue)
     {

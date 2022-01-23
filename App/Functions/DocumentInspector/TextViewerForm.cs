@@ -12,7 +12,7 @@ public partial class TextViewerForm : Form
         IsTextReadOnly = isTextReadonly;
     }
 
-    ///<summary>获取或指定文本内容是否只读。</summary>
+    /// <summary>Get or specify whether the text content is read.</summary>
     public bool IsTextReadOnly
     {
         get => _TextBox.ReadOnly;
@@ -23,7 +23,7 @@ public partial class TextViewerForm : Form
         }
     }
 
-    ///<summary>获取或指定文本内容。</summary>
+    /// <summary>Get or specify text content.</summary>
     public string TextContent
     {
         get => _TextBox.Text;

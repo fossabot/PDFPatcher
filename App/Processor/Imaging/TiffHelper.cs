@@ -17,7 +17,7 @@ internal static class TiffHelper
 
     internal static void Save(FreeImageBitmap bmp, string fileName)
     {
-        // 使用 .NET 的 TIFF 保存方式，文件尺寸较小
+        // Use the .NET TIFF Save mode, the file size is smaller
         if (_tiffCodec != null)
         {
             if (bmp.ColorType == FREE_IMAGE_COLOR_TYPE.FIC_MINISWHITE) // HACK: TIFF编码黑色为1，解决 .NET TIFF 编码器无法正常保存双色图片的问题
@@ -35,10 +35,11 @@ internal static class TiffHelper
     }
 
     /// <summary>
-    ///     将图片保存为黑白双色图片。如图片的 <see cref="PixelFormat" /> 不为 <see cref="PixelFormat.Format1bppIndexed" />，则按默认格式保存。
+    ///     Save the picture as a black and white two-color picture.If <see cref="PixelFormat" /> is not
+    ///     <see cref="PixelFormat.Format1bppIndexed" />, saved by default format.
     /// </summary>
-    /// <param name="bmp">要保存的图片。</param>
-    /// <param name="fileName">保存路径。</param>
+    /// <param name="bmp">The picture to be saved.</param>
+    /// <param name="fileName">Save the path.</param>
     internal static void SaveBinaryImage(this Image bmp, string fileName)
     {
         if (bmp.PixelFormat == PixelFormat.Format1bppIndexed)

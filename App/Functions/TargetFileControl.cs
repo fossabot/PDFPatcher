@@ -16,14 +16,14 @@ public partial class TargetFileControl : UserControl
         _FileMacroMenu.ItemClicked += _FileMacroMenu.ProcessInsertMacroCommand;
     }
 
-    ///<summary>获取或指定书签文件路径的值。</summary>
+    /// <summary>Gets or specifies the value of the bookmark file path.</summary>
     internal HistoryComboBox FileList { get; private set; }
 
     internal FileDialog FileDialog => _SavePdfBox;
     internal MacroMenu FileMacroMenu => _FileMacroMenu;
 
     /// <summary>
-    ///     获取或设置文件下拉框的文本。
+    ///     Gets or sets the text of the file dropped box.
     /// </summary>
     public override string Text
     {
@@ -32,7 +32,7 @@ public partial class TargetFileControl : UserControl
     }
 
     /// <summary>
-    ///     获取或设置文件下拉框前的标签文本。
+    ///     Gets or sets the label text before the file drop-down box.
     /// </summary>
     [DefaultValue("输出 PD&F 文件：")]
     public string Label

@@ -102,7 +102,7 @@ internal sealed class UndoActionGroup : IUndoAction
     public void RemoveAttribute(XmlElement target, string name) =>
         Add(UndoAttributeAction.GetUndoAction(target, name, null));
 
-    #region IUndoAction 成员
+    #region IUndoAction member
 
     public IEnumerable<XmlNode> AffectedElements
     {
@@ -142,7 +142,7 @@ internal abstract class UndoElementAction : IUndoAction
     public XmlNode Parent { get; }
     public XmlElement TargetElement { get; }
 
-    #region IUndoAction 成员
+    #region IUndoAction member
 
     public IEnumerable<XmlNode> AffectedElements => new[] { Parent };
     public abstract bool Undo();
@@ -228,12 +228,12 @@ internal abstract class UndoAttributeAction : IUndoAction
     //}
 
     /// <summary>
-    ///     设置目标元素的属性值，并返回撤销动作。
+    ///     Set the attribute value of the target element and return the revocation action.
     /// </summary>
-    /// <param name="targetNode">需要修改的元素节点。</param>
-    /// <param name="name">属性名称。</param>
-    /// <param name="newValue">新属性值。</param>
-    /// <returns>撤销设置属性的动作。</returns>
+    /// <param name="targetNode">The element node that needs to be modified.</param>
+    /// <param name="name">attribute name.</param>
+    /// <param name="newValue">New attribute value.</param>
+    /// <returns>Undo the action of the setting attribute.</returns>
     internal static UndoAttributeAction GetUndoAction(XmlElement targetNode, string name, string newValue)
     {
         if (targetNode.HasAttribute(name))
@@ -264,7 +264,7 @@ internal abstract class UndoAttributeAction : IUndoAction
         return new RemoveAttributeAction(targetNode, name);
     }
 
-    #region IUndoAction 成员
+    #region IUndoAction member
 
     public IEnumerable<XmlNode> AffectedElements => new XmlNode[] { TargetElement };
     public abstract bool Undo();

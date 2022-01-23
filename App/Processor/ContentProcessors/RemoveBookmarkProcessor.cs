@@ -4,7 +4,7 @@ namespace PDFPatcher.Processor;
 
 internal sealed class RemoveBookmarkProcessor : IDocProcessor
 {
-    #region IDocProcessor 成员
+    #region IDocProcessor member
 
     public string Name => "删除导航书签";
 

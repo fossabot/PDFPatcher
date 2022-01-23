@@ -86,7 +86,7 @@ internal sealed class FontInfo : CMapAwareDocumentFont
                 _FontName = fn;
             }
 
-            // 删除子集的名称
+            // Delete the name of the subset
             _FontName = PdfDocumentFont.RemoveSubsetPrefix(_FontName);
 
             return _FontName;

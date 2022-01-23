@@ -6,7 +6,7 @@ internal sealed class RemoveThumbnailProcessor : IPageProcessor
 {
     private int _processedItemCount;
 
-    #region IPageProcessor 成员
+    #region IPageProcessor member
 
     public string Name => "删除缩略图";
 

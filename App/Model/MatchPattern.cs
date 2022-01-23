@@ -29,7 +29,7 @@ public sealed class MatchPattern : ICloneable
 
     [XmlAttribute("使用正则表达式")] public bool UseRegularExpression { get; set; }
 
-    #region ICloneable 成员
+    #region ICloneable member
 
     public object Clone() => new MatchPattern(Text, MatchCase, FullMatch, UseRegularExpression);
 

@@ -508,7 +508,7 @@ public sealed partial class EditorControl : FunctionControl, IDocumentEditor, IE
     {
         switch (cmd)
         {
-            #region 书签命令
+            #region Bookmand command
 
             case "_InsertBookmark":
                 _controller.InsertBookmark();
@@ -532,7 +532,7 @@ public sealed partial class EditorControl : FunctionControl, IDocumentEditor, IE
 
             #endregion
 
-            #region 阅读器工具栏命令
+            #region Reader toolbar command
 
             case "_AutoBookmark":
                 _controller.ShowAutoBookmarkForm();

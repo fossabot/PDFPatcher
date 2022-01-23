@@ -22,11 +22,11 @@ public unsafe class MuPdfObject
         }
     }
 
-    /// <summary>返回对象的类型。</summary>
+    /// <summary>Returns the type of object.</summary>
     public MuPdfObjectKind Kind =>
         Pointer == IntPtr.Zero ? MuPdfObjectKind.PDF_NULL : (MuPdfObjectKind)NativePointer->_kind;
 
-    /// <summary>返回对象的引用数量。</summary>
+    /// <summary>Returns the number of references to the object.</summary>
     internal int ReferenceCount => Pointer == IntPtr.Zero ? 0 : NativePointer->_referenceCount;
 
     public int IntegerValue => NativeMethods.ToInteger(Context, Pointer);
@@ -48,7 +48,7 @@ public unsafe class MuPdfObject
 #pragma warning restore 649, 169
     }
 
-    #region 非托管资源成员
+    #region Non-managed resource member
 
     private NativeObject* NativePointer => (NativeObject*)Pointer;
     internal IntPtr Pointer { get; }
@@ -86,7 +86,7 @@ public sealed unsafe class MuPdfDictionary : MuPdfObject
     private NativeDict* NativePointer => (NativeDict*)Pointer;
 
     /// <summary>
-    ///     获取字典中的项目数量。
+    ///     Get the number of items in the dictionary.
     /// </summary>
     public int Count => Pointer == IntPtr.Zero ? 0 : NativePointer->_length;
 
@@ -133,7 +133,7 @@ public sealed unsafe class MuPdfArray : MuPdfObject
     private NativeArray* NativePointer => (NativeArray*)Pointer;
 
     /// <summary>
-    ///     获取数组中的项目数量。
+    ///     Get the number of items in the array.
     /// </summary>
     public int Count => Pointer == IntPtr.Zero ? 0 : NativePointer->_length;
 

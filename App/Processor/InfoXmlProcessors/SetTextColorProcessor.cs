@@ -22,7 +22,7 @@ internal sealed class SetTextColorProcessor : IPdfInfoXmlProcessor
 
     public Color Color { get; private set; }
 
-    #region IInfoDocProcessor 成员
+    #region IInfoDocProcessor member
 
     public string Name => "设置书签文本颜色";
 

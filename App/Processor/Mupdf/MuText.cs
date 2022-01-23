@@ -50,10 +50,10 @@ public sealed class MuTextPage : IMuBoundedElement, IDisposable
     public Rectangle BBox => _TextPage.MediaBox;
 
     ///// <summary>
-    ///// 获取指针指向的所有文本集合。
+    ///// Get all text collection points to the pointer.
     ///// </summary>
-    ///// <param name="firstPage">第一个 fz_text_page 指针。</param>
-    ///// <returns>包含所有文本页的集合。</returns>
+    ///// <param name="firstPage">The first fz_text_page pointer.</param>
+    ///// <returns>Contains a collection of all text pages.</returns>
     //internal static List<MuTextPage> GetTextPages (TextPageHandle firstPage) {
     //	var l = new List<MuTextPage> ();
     //	foreach (var p in firstPage.EnumerateLinkedList<NativeTextPage> ()) {
@@ -75,7 +75,7 @@ public sealed class MuTextPage : IMuBoundedElement, IDisposable
 
     #region IDisposable Support
 
-    private bool disposedValue; // 要检测冗余调用
+    private bool disposedValue; // To detect redundancy calls
 
     private void Dispose(bool disposing)
     {
@@ -95,7 +95,7 @@ public sealed class MuTextPage : IMuBoundedElement, IDisposable
 
     ~MuTextPage() => Dispose(false);
 
-    // 添加此代码以正确实现可处置模式。
+    // Add this code to properly implement the available mode.
     public void Dispose()
     {
         Dispose(true);

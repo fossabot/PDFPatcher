@@ -274,7 +274,7 @@ internal sealed class ReplaceFontProcessor : IPageProcessor
 
                 string n = PdfDocumentFont.RemoveSubsetPrefix(PdfHelper.GetPdfNameString(fn)); // 字体名称
                 int p = -1;
-                string sn; // 替换字体名称
+                string sn; // Replace the font name
                 if (_fontSubstitutions.TryGetValue(n, out FontSubstitution fs))
                 {
                     sn = fs.Substitution;
@@ -637,12 +637,12 @@ internal sealed class ReplaceFontProcessor : IPageProcessor
         public PdfIndirectReference DescendantFontRef { get; set; }
 
         /// <summary>
-        ///     字体 Unicode 到宽度的映射表。
+        ///     Fonts Unicode to the width mapping table.
         /// </summary>
         public Dictionary<int, int> GlyphWidths { get; }
 
         /// <summary>
-        ///     字体 Unicode 和 CID 的映射表。
+        ///     Fonts Unicode and CID mapping tables.
         /// </summary>
         public Dictionary<int, int> UsedCidMap { get; }
 
@@ -662,7 +662,7 @@ internal sealed class ReplaceFontProcessor : IPageProcessor
         }
     }
 
-    #region IPageProcessor 成员
+    #region IPageProcessor member
 
     public string Name => "嵌入汉字库";
 
@@ -695,7 +695,7 @@ internal sealed class ReplaceFontProcessor : IPageProcessor
 
     public bool EndProcess(PdfReader pdf)
     {
-        // 用新的字体引用替代字体资源表的字体
+        // Quote the font of the font resource table with new fonts
         foreach (KeyValuePair<PdfDictionary, Dictionary<PdfName, PRIndirectReference>> map in _fontDictMap)
         {
             PdfDictionary d = map.Key;

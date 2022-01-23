@@ -23,17 +23,17 @@ internal sealed class PixmapData : IDisposable
     public int Height { get; }
     public int Components { get; }
 
-    /// <summary>获取指向 Pixmap 数据内容的指针。</summary>
+    /// <summary>Get pointers that point to Pixmap data content.</summary>
     public IntPtr Samples { get; }
 
-    /// <summary>获取 Pixmap 的边框。</summary>
+    /// <summary>Get the border of the Pixmap.</summary>
     public BBox BBox => NativeMethods.GetBBox(_context, _pixmap);
 
-    /// <summary>获取 Pixmap 一行像素的字节数。</summary>
+    /// <summary>Get the number of bytes of Pixmap a line pixel.</summary>
     public int Stride => NativeMethods.GetStride(_context, _pixmap);
 
     /// <summary>
-    ///     将 Pixmap 的数据转换为 <see cref="Bitmap" />。
+    ///     Convert Pixmap data to <see cref="Bitmap" />。
     /// </summary>
     public unsafe Bitmap ToBitmap(ImageRendererOptions options)
     {
@@ -79,7 +79,7 @@ internal sealed class PixmapData : IDisposable
                 {
                     for (int x = 0; x < Width; x++)
                     {
-                        // 在这里进行 RGB 到 DIB BGR 的转换（省去 Mupdf 内部的转换工作）
+                        // Here, RGB to DIB BGR conversion (province's conversion work inside MuPDF)
                         pl[2] = (byte)(*sl ^ 0xFF);
                         sl++; // R
                         pl[1] = (byte)(*sl ^ 0xFF);
@@ -93,7 +93,7 @@ internal sealed class PixmapData : IDisposable
                 {
                     for (int x = 0; x < Width; x++)
                     {
-                        // 在这里进行 RGB 到 DIB BGR 的转换（省去 Mupdf 内部的转换工作）
+                        // Here, RGB to DIB BGR conversion (province's conversion work inside MuPDF)
                         pl[2] = *sl;
                         sl++; // R
                         pl[1] = *sl;
@@ -119,20 +119,20 @@ internal sealed class PixmapData : IDisposable
     }
 
     /// <summary>
-    ///     反转 Pixmap 的颜色。
+    ///     Reverse Pixmap color.
     /// </summary>
     public void Invert() => NativeMethods.InvertPixmap(_context, _pixmap);
 
     /// <summary>
-    ///     为 Pixmap 蒙上色层。
+    ///     For the Pixmap, the color layer.
     /// </summary>
-    /// <param name="color">需要蒙上的颜色。</param>
+    /// <param name="color">Need a lot of colors.</param>
     public void Tint(Color color) => NativeMethods.TintPixmap(_context, _pixmap, 0, color.ToArgb());
 
     /// <summary>
-    ///     对 Pixmap 执行 Gamma 校正。
+    ///     Perform a Gamma correction for Pixmap.
     /// </summary>
-    /// <param name="gamma">需要应用的 Gamma 值。1.0 表示不更改。</param>
+    /// <param name="gamma">A Gamma value is required.1.0 means no change.</param>
     public void Gamma(float gamma)
     {
         if (gamma == 1)
@@ -143,34 +143,34 @@ internal sealed class PixmapData : IDisposable
         NativeMethods.GammaPixmap(_context, _pixmap, gamma);
     }
 
-    #region 实现 IDisposable 接口的属性和方法
+    #region Implement the properties and methods of iDisposable interface
 
     private bool disposed;
 
     public void Dispose()
     {
         Dispose(true);
-        GC.SuppressFinalize(this); // 抑制析构函数
+        GC.SuppressFinalize(this); // Inhibitory destructive function
     }
 
-    /// <summary>释放由 MuPdfPage 占用的资源。</summary>
-    /// <param name="disposing">是否手动释放托管资源。</param>
+    /// <summary>Release the resources occupied by MuPdfPage.</summary>
+    /// <param name="disposing">Whether to manually release the hosted resource.</param>
     private void Dispose(bool disposing)
     {
         if (!disposed)
         {
             if (disposing)
             {
-                #region 释放托管资源
+                #region Release managed resources
 
                 //_components.Dispose ();
 
                 #endregion
             }
 
-            #region 释放非托管资源
+            #region Release non-managed resources
 
-            // 注意这里不是线程安全的
+            // Note that this is not a thread safe
             _pixmap.DisposeHandle();
 
             #endregion
@@ -179,8 +179,8 @@ internal sealed class PixmapData : IDisposable
         disposed = true;
     }
 
-    // 析构函数只在未调用 Dispose 方法时调用
-    // 派生类中不必再提供析构函数
+    // The destructor is only called when the Dispose method is not called.
+    // Don't provide a destructor in the derived class
     ~PixmapData() => Dispose(false);
 
     #endregion

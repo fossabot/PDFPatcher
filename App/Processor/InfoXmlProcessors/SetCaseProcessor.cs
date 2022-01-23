@@ -212,7 +212,7 @@ internal sealed class SetCaseProcessor : IPdfInfoXmlProcessor
         public char Map(char value) => _Mapper.TryGetValue(value, out char r) ? r : value;
     }
 
-    #region IInfoDocProcessor 成员
+    #region IInfoDocProcessor member
 
     public string Name => "设置书签文本为" + CaseNames[(int)Case];
 

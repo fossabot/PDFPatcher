@@ -44,8 +44,8 @@ internal class HtmlPageControl : FunctionControl
         e.Handled = true;
     }
 
-    /// <summary>返回字符串中包含指定字符串之后的子字符串。</summary>
-    /// <remarks>如果找不到指定字符串，则返回空字符串。</remarks>
+    /// <summary>Returns the sub-string containing the specified string in the string.</summary>
+    /// <remarks>Returns an empty string if specified strings cannot be found.</remarks>
     protected static string SubstringAfter(string source, char value)
     {
         int index = source.LastIndexOf(value);

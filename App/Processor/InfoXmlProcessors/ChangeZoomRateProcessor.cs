@@ -22,7 +22,7 @@ internal sealed class ChangeZoomRateProcessor : IPdfInfoXmlProcessor
     public string ZoomMethod { get; }
     public float ZoomRate { get; }
 
-    #region IInfoDocProcessor 成员
+    #region IInfoDocProcessor member
 
     public string Name => "更改缩放比例";
 

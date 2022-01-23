@@ -34,7 +34,7 @@ internal sealed class RemoveTextBlockProcessor : IPageProcessor
         return r;
     }
 
-    #region IPageProcessor 成员
+    #region IPageProcessor member
 
     public string Name => "删除文本区";
 

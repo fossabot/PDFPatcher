@@ -10,31 +10,31 @@ namespace PDFPatcher.Model;
 
 public sealed class PdfInfoXmlDocument : XmlDocument
 {
-    /// <summary>返回已经初始化的 <see cref="PdfInfoXmlDocument" /> 实例。</summary>
+    /// <summary>Returns already initialized <see cref="PdfInfoXmlDocument" /> instance.</summary>
     public PdfInfoXmlDocument() => Init();
 
-    /// <summary>获取或设置配置文件关联的 PDF 文件路径。</summary>
+    /// <summary>Gets or sets the PDF file path associated with the configuration file.</summary>
     public string PdfDocumentPath
     {
         get => DocumentElement.GetAttribute(Constants.Info.DocumentPath);
         set => DocumentElement.SetAttribute(Constants.Info.DocumentPath, value);
     }
 
-    /// <summary>返回文档信息节点。</summary>
+    /// <summary>Returns the document information node.</summary>
     public DocumentInfoElement InfoNode =>
         DocumentElement.GetOrCreateElement(Constants.Info.ThisName) as DocumentInfoElement;
 
-    /// <summary>返回页码标签节点。</summary>
+    /// <summary>Returns the page number tag node.</summary>
     public XmlElement PageLabelRoot => DocumentElement.GetOrCreateElement(Constants.PageLabels);
 
     public XmlNodeList PageLabels =>
         DocumentElement.SelectNodes(Constants.PageLabels + "[1]/" + Constants.PageLabelsAttributes.Style);
 
-    /// <summary>返回书签根节点。</summary>
+    /// <summary>Return to the bookmark root node.</summary>
     public BookmarkRootElement BookmarkRoot =>
         DocumentElement.GetOrCreateElement(Constants.DocumentBookmark) as BookmarkRootElement;
 
-    /// <summary>获取根书签。</summary>
+    /// <summary>Get root bookmarks.</summary>
     public XmlNodeList Bookmarks =>
         DocumentElement.SelectNodes(Constants.DocumentBookmark + "[1]/" + Constants.Bookmark);
 
@@ -96,7 +96,7 @@ public sealed class PdfInfoXmlDocument : XmlDocument
     }
 }
 
-/// <summary>文档元数据属性元素。</summary>
+/// <summary>Document metadata attribute elements.</summary>
 public sealed class DocumentInfoElement : XmlElement
 {
     internal DocumentInfoElement(XmlDocument doc)
@@ -148,21 +148,21 @@ public abstract class BookmarkContainer : XmlElement
     {
     }
 
-    /// <summary>获取当前书签容器是否有子书签。</summary>
+    /// <summary>Get the current bookmark container has a sub-bookmark.</summary>
     public bool HasSubBookmarks => HasChildNodes && SelectSingleNode(Constants.Bookmark) != null;
 
-    /// <summary>获取当前书签容器的子书签。</summary>
+    /// <summary>Get the child book signature of the current bookmark container.</summary>
     public XmlNodeList SubBookmarks => SelectNodes(Constants.Bookmark);
 
     public BookmarkElement ParentBookmark => ParentNode as BookmarkElement;
     public BookmarkContainer Parent => ParentNode as BookmarkContainer;
 
-    /// <summary>创建新的下级书签并返回该书签。</summary>
+    /// <summary>Create a new sub-bookmark and return to the bookmark.</summary>
     public BookmarkElement AppendBookmark() =>
         AppendChild((OwnerDocument as PdfInfoXmlDocument).CreateBookmark()) as BookmarkElement;
 }
 
-/// <summary>书签的根元素。</summary>
+/// <summary>Bookmark root element.</summary>
 public sealed class BookmarkRootElement : BookmarkContainer
 {
     internal BookmarkRootElement(XmlDocument doc)
@@ -171,7 +171,7 @@ public sealed class BookmarkRootElement : BookmarkContainer
     }
 }
 
-/// <summary>书签元素。</summary>
+/// <summary>Bookmark elements.</summary>
 [DebuggerDisplay(Constants.Bookmark + "：{Title}")]
 public sealed class BookmarkElement : BookmarkContainer
 {
@@ -180,14 +180,14 @@ public sealed class BookmarkElement : BookmarkContainer
     {
     }
 
-    /// <summary>获取或设置书签的文本。</summary>
+    /// <summary>Get or set the text of the bookmark.</summary>
     public string Title
     {
         get => GetAttribute(Constants.BookmarkAttributes.Title);
         set => SetAttribute(Constants.BookmarkAttributes.Title, value);
     }
 
-    /// <summary>获取或设置书签的颜色。</summary>
+    /// <summary>Gets or sets the color of the bookmark.</summary>
     public Color ForeColor
     {
         get
@@ -222,7 +222,7 @@ public sealed class BookmarkElement : BookmarkContainer
         }
     }
 
-    /// <summary>获取或设置书签的文本样式。</summary>
+    /// <summary>Get or set the text style of bookmarks.</summary>
     public FontStyle TextStyle
     {
         get
@@ -267,7 +267,7 @@ public sealed class BookmarkElement : BookmarkContainer
         }
     }
 
-    /// <summary>获取或设置书签的默认打开状态。</summary>
+    /// <summary>Gets or sets the default open status of the bookmark.</summary>
     public bool IsOpen
     {
         get
@@ -295,14 +295,14 @@ public sealed class BookmarkElement : BookmarkContainer
         }
     }
 
-    /// <summary>获取或设置目标动作。</summary>
+    /// <summary>Get or set the target action.</summary>
     public string Action
     {
         get => this.GetValue(Constants.DestinationAttributes.Action, Constants.ActionType.Goto);
         set => this.SetValue(Constants.DestinationAttributes.Action, value);
     }
 
-    /// <summary>获取或设置书签的目标页面。</summary>
+    /// <summary>Get or set the target page for bookmarks.</summary>
     public int Page
     {
         get => this.GetValue(Constants.DestinationAttributes.Page, 0);
@@ -316,35 +316,35 @@ public sealed class BookmarkElement : BookmarkContainer
         }
     }
 
-    /// <summary>返回或设置目标视图。</summary>
+    /// <summary>Return or set the target view.</summary>
     public string DestinationView
     {
         get => GetAttribute(Constants.DestinationAttributes.View);
         set => this.SetValue(Constants.DestinationAttributes.View, value);
     }
 
-    /// <summary>获取或设置跳转目标的上坐标。</summary>
+    /// <summary>Gets or sets the upper coordinates of the jump target.</summary>
     public float Top
     {
         get => this.GetValue(Constants.Coordinates.Top, 0f);
         set => this.SetValue(Constants.Coordinates.Top, value, 0);
     }
 
-    /// <summary>获取或设置跳转目标的左坐标。</summary>
+    /// <summary>Get or set the left coordinates of the jump target.</summary>
     public float Left
     {
         get => this.GetValue(Constants.Coordinates.Left, 0f);
         set => this.SetValue(Constants.Coordinates.Left, value, 0);
     }
 
-    /// <summary>获取或设置跳转目标的下坐标。</summary>
+    /// <summary>Get or set the down coordinates of the jump target.</summary>
     public float Bottom
     {
         get => this.GetValue(Constants.Coordinates.Bottom, 0f);
         set => this.SetValue(Constants.Coordinates.Bottom, value, 0);
     }
 
-    /// <summary>获取或设置跳转目标的右坐标。</summary>
+    /// <summary>Get or set the right coordinate of the jump target.</summary>
     public float Right
     {
         get => this.GetValue(Constants.Coordinates.Right, 0f);
@@ -357,10 +357,10 @@ public sealed class BookmarkElement : BookmarkContainer
         set => this.SetValue("标记颜色", value, 0);
     }
 
-    /// <summary>设置跳转到页面的书签动作。</summary>
-    /// <param name="title">书签的标题。</param>
-    /// <param name="pageNumber">跳转页面。</param>
-    /// <param name="position">跳转位置。</param>
+    /// <summary>Set the bookmark action jump to the page.</summary>
+    /// <param name="title">The title of bookmark.</param>
+    /// <param name="Pagenumber">Jump page.</param>
+    /// <param name="position">Jump position.</param>
     public void SetTitleAndGotoPagePosition(string title, int pageNumber, float position)
     {
         SetAttribute(Constants.BookmarkAttributes.Title, title);
@@ -376,7 +376,7 @@ public sealed class BookmarkElement : BookmarkContainer
     }
 }
 
-/// <summary>页码标签设置元素。</summary>
+/// <summary>Page size label set element.</summary>
 public sealed class PageLabelElement : XmlElement
 {
     internal PageLabelElement(XmlDocument doc)
@@ -384,7 +384,7 @@ public sealed class PageLabelElement : XmlElement
     {
     }
 
-    /// <summary>获取或指定开始使用页码标签的绝对页码。</summary>
+    /// <summary>Get or specify the absolute page number that starts using the page number tag.</summary>
     public int PageNumber
     {
         get => GetAttribute(Constants.PageLabelsAttributes.PageNumber).ToInt32();
@@ -397,14 +397,14 @@ public sealed class PageLabelElement : XmlElement
         set => this.SetValue(Constants.PageLabelsAttributes.Prefix, value);
     }
 
-    /// <summary>获取或指定页码标签样式。</summary>
+    /// <summary>Get or specify the page number tag style.</summary>
     public string Style
     {
         get => GetAttribute(Constants.PageLabelsAttributes.Style);
         set => this.SetValue(Constants.PageLabelsAttributes.Style, value, Constants.PageLabelStyles.Names[0]);
     }
 
-    /// <summary>获取或指定页码标签的起始编号。</summary>
+    /// <summary>Gets or specifies the start number of the page tab.</summary>
     public int StartNumber
     {
         get => GetAttribute(Constants.PageLabelsAttributes.StartPage).ToInt32();

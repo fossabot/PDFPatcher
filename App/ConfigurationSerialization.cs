@@ -18,15 +18,15 @@ public class ConfigurationSerialization
 
     [XmlElement("编码设置")] public EncodingOptions Encodings { get; set; }
 
-    ///<summary>获取导出设置。</summary>
+    /// <summary>获取导出设置。</summary>
     [XmlElement("信息文件导出设置")]
     public ExporterOptions ExporterOptions { get; set; }
 
-    ///<summary>获取导入设置。</summary>
+    /// <summary>获取导入设置。</summary>
     [XmlElement("信息文件导入设置")]
     public ImporterOptions ImporterOptions { get; set; }
 
-    ///<summary>获取生成文档的设置。</summary>
+    /// <summary>获取生成文档的设置。</summary>
     [XmlElement("PDF文件处理设置")]
     public MergerOptions MergerOptions { get; set; }
 

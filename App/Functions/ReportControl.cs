@@ -145,7 +145,7 @@ public partial class ReportControl : UserControl
     }
 
 
-    #region IDefaultButtonControl 成员
+    #region IDefaultButtonControl member
 
     //public override Button DefaultButton {
     //	get { return _CancelButton; }

@@ -49,7 +49,7 @@ internal sealed partial class AboutControl : HtmlPageControl
         e.Handled = true;
     }
 
-    #region 程序集属性访问器
+    #region Assembly property accessor
 
     public string AssemblyTitle
     {

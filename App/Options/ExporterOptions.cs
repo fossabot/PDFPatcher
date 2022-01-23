@@ -10,69 +10,73 @@ public class ExporterOptions
     private E _Encoding = E.Default;
     private string _EncodingName;
 
-    ///<summary>获取或指定是否导出文档属性。</summary>
+    /// <summary>Get or specify whether to export document properties.</summary>
     [XmlAttribute("导出文档属性")]
     public bool ExportDocProperties { get; set; } = true;
 
-    ///<summary>获取或指定是否导出书签。</summary>
+    /// <summary>Get or specify whether to export bookmarks.</summary>
     [XmlAttribute("导出文档书签")]
     public bool ExportBookmarks { get; set; } = true;
 
-    ///<summary>获取或指定是否导出页面内的连接。</summary>
+    /// <summary>Gets or specifies whether the connection within the page is exported.</summary>
     [XmlAttribute("导出页面链接")]
     public bool ExtractPageLinks { get; set; } = true;
 
-    ///<summary>获取或指定是否导出阅读器设置。</summary>
+    /// <summary>Get or specify whether to export reader settings.</summary>
     [XmlAttribute("导出阅读器设置")]
     public bool ExportViewerPreferences { get; set; } = true;
 
-    ///<summary>获取或指定是否导出页面的阅读设置。</summary>
+    /// <summary>Get or specify whether to export the reading settings for the page.</summary>
     [XmlAttribute("导出页面设置")]
     public bool ExtractPageSettings { get; set; } = true;
 
-    ///<summary>获取或指定是否导出文档编录信息。</summary>
+    /// <summary>Get or specify whether to export document catalog information.</summary>
     [XmlAttribute("导出编录信息")]
     public bool ExportCatalog { get; set; }
 
-    ///<summary>获取或指定是否导出页面内容信息。</summary>
+    /// <summary>Get or specify whether to export page content information.</summary>
     [XmlAttribute("导出页面内容")]
     public bool ExtractPageContent { get; set; }
 
-    ///<summary>获取或指定需要导出的页码范围。页码范围可用“-”表示起止页码，如有多个页码，可用“;”、“,”或“ ”（空格）隔开，如“1;4-15;2 56”，表示依次导出第1页、第4至15页、第2页和第56页的内容。</summary>
+    /// <summary>
+    ///     Get or specify the range range that needs to be exported.The page range can be used "-" to indicate the start
+    ///     page code, if there are multiple page numbers, available ";", "," or "" (space), such as "1; 4-15; 2 56",
+    ///     indicating that the first timePages, 4 to 15, page 2 and page 56.
+    /// </summary>
     [XmlAttribute("导出页码范围")]
     public string ExtractPageRange { get; set; }
 
-    ///<summary>获取或指定页面字典的值。</summary>
+    /// <summary>Gets or specifies the value of the page dictionary.</summary>
     [XmlAttribute("导出页面字典")]
     public bool ExtractPageDictionary { get; set; }
 
-    ///<summary>获取或指定是否导出页面中的图片为独立的文件。</summary>
+    /// <summary>Get or specify whether the image in the export page is a separate file.</summary>
     [XmlAttribute("导出图片")]
     public bool ExtractImages { get; set; }
 
-    ///<summary>获取或指定是否解码导出页面中的文本。</summary>
+    /// <summary>Get or specify whether the text in the export page is decoded.</summary>
     [XmlAttribute("导出解码文本")]
     public bool ExportDecodedText { get; set; }
 
-    ///<summary>获取或指定是否解码导出页面指令。</summary>
+    /// <summary>Get or specify whether to decode the export page instruction.</summary>
     [XmlAttribute("导出命令操作符")]
     public bool ExportContentOperators { get; set; }
 
-    ///<summary>获取或指定导出二进制流的字节数。</summary>
+    /// <summary>Get or specify the number of bytes that export binary streams.</summary>
     [XmlAttribute("导出二进制流")]
     public int ExportBinaryStream { get; set; } = 200;
 
-    ///<summary>获取或指定导出前是否解析命名位置。</summary>
+    /// <summary>Get or specify whether you pars the named location before the export.</summary>
     [XmlAttribute("解析命名位置")]
     public bool ConsolidateNamedDestinations { get; set; }
 
-    ///<summary>获取导出图像的选项。</summary>
+    /// <summary>Get options for exporting images.</summary>
     [XmlIgnore]
     public ImageExtracterOptions Images { get; } = new();
 
     [XmlElement("导出尺寸单位")] public UnitConverter UnitConverter { get; set; } = new();
 
-    ///<summary>获取或指定导出文件时所用的编码。</summary>
+    /// <summary>Gets or specifies the encoding used when exporting files.</summary>
     [XmlAttribute("文本编码")]
     public string Encoding
     {

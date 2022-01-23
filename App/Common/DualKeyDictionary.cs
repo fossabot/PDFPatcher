@@ -8,14 +8,14 @@ public class DualKeyDictionary<K, V> : IDictionary<K, V>
     private readonly Dictionary<K, V> _keyDictionary = new();
     private readonly Dictionary<V, K> _reverseDictionary = new();
 
-    #region IEnumerable<KeyValuePair<K,V>> 成员
+    #region IEnumerable<KeyValuePair<K,V>> member
 
     public IEnumerator<KeyValuePair<K, V>> GetEnumerator() =>
         ((IEnumerable<KeyValuePair<K, V>>)_keyDictionary).GetEnumerator();
 
     #endregion
 
-    #region IEnumerable 成员
+    #region IEnumerable member
 
     IEnumerator IEnumerable.GetEnumerator() => ((IEnumerable)_keyDictionary).GetEnumerator();
 
@@ -23,7 +23,7 @@ public class DualKeyDictionary<K, V> : IDictionary<K, V>
 
     public K GetKeyByValue(V value) => _reverseDictionary[value];
 
-    #region IDictionary<K,V> 成员
+    #region IDictionary<K,V> member
 
     public void Add(K key, V value)
     {
@@ -66,7 +66,7 @@ public class DualKeyDictionary<K, V> : IDictionary<K, V>
 
     #endregion
 
-    #region ICollection<KeyValuePair<K,V>> 成员
+    #region ICollection<KeyValuePair<K,V>> member
 
     public void Add(KeyValuePair<K, V> item) => Add(item.Key, item.Value);
 

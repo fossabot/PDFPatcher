@@ -188,11 +188,11 @@ internal sealed class OcrProcessor
     }
 
     /// <summary>
-    ///     根据识别选项优化输出结果。
+    ///     Optimize the output based on the identification option.
     /// </summary>
-    /// <param name="text">文本内容。</param>
-    /// <param name="options">识别选项。</param>
-    /// <returns>优化后的文本。</returns>
+    /// <param name="text">text content.</param>
+    /// <param name="options">Identification option.</param>
+    /// <returns>Optimized text.</returns>
     internal static string CleanUpText(string text, OcrOptions options)
     {
         if (options.DetectContentPunctuations)
@@ -300,15 +300,15 @@ internal sealed class OcrProcessor
         #region Legacy code
 
         //            var ll = new List<TextLine> ();
-        //            // 同行合并宽度最小值
+        //            // Width width minimum
         //            var cw = image.Image.Width / 4;
 
-        //            // 遍历识别所得的各 TextInfo，使用最小距离聚类方法将其聚类为行
+        //            // Traverse the TextInfo that identifies the resulting, clustering it into a line using the minimum distance clustering method
         //            foreach (var item in or) {
         //                var ir = item.Region;
-        //                DistanceInfo cd = null; // TextInfo 到 TextLine 的距离
-        //                DistanceInfo md = new DistanceInfo (DistanceInfo.Placement.Unknown, float.MaxValue); // 最小距离
-        //                TextLine ml = null; // 最小距离的 TextLine
+        //                DistanceInfo cd = null; // Distance from TextInfo to TextLine
+        //                DistanceInfo md = new DistanceInfo (DistanceInfo.Placement.Unknown, float.MaxValue); // shortest distance
+        //                TextLine ml = null; // Minimum distance TextLine
 
         //if (item.Text == "哉") {
         //    var lxx = 1;
@@ -316,20 +316,20 @@ internal sealed class OcrProcessor
         //                // 求最小距离的 TextLine
         //                foreach (var li in ll) {
         //                    cd = li.GetDistance (ir);
-        //                    if ((cd.Location == DistanceInfo.Placement.Overlapping // 当前项与文本行交叠
-        //                            && (md.Location != DistanceInfo.Placement.Overlapping // 最小距离不是交叠
-        //                                || cd.Distance < md.Distance) // 当前项与文本行的交叠中心距离小于最小距离
+        //                    if ((cd.Location == DistanceInfo.Placement.Overlapping // Current items overlap
+        //                            && (md.Location != DistanceInfo.Placement.Overlapping // Minimum distance is not overlapping
+        //                                || cd.Distance < md.Distance) // The overlap center of the current item and the text line is less than the minimum distance.
         //                            )
-        //                        || ((md.Location == DistanceInfo.Placement.Unknown // 未知最小距离
+        //                        || ((md.Location == DistanceInfo.Placement.Unknown // Minimum distance without knowing
         //                            || (cd.Location != DistanceInfo.Placement.Overlapping
         //                                && md.Location != DistanceInfo.Placement.Overlapping
-        //                                && cd.Distance < md.Distance) // 当前项与文本行的距离小于最小距离
+        //                                && cd.Distance < md.Distance) // The distance between the current item and the text line is less than the minimum distance.
         //                            )
-        //                            && (((cd.Location == DistanceInfo.Placement.Left || cd.Location == DistanceInfo.Placement.Right) // 相对位置为水平
-        //                                    && li.Direction != TextLine.WritingDirection.Vertical // 文本行方向不为纵向
+        //                            && (((cd.Location == DistanceInfo.Placement.Left || cd.Location == DistanceInfo.Placement.Right) // The relative position is horizontal
+        //                                    && li.Direction != TextLine.WritingDirection.Vertical // Text line direction is not a portrait
         //                                    )
-        //                                || ((cd.Location == DistanceInfo.Placement.Up || cd.Location == DistanceInfo.Placement.Down) // 相对位置为垂直
-        //                                    && li.Direction != TextLine.WritingDirection.Horizontal // 文本行方向不为横向
+        //                                || ((cd.Location == DistanceInfo.Placement.Up || cd.Location == DistanceInfo.Placement.Down) // The relative position is vertical
+        //                                    && li.Direction != TextLine.WritingDirection.Horizontal // Text line is not horizontal
         //                                    )
         //                                )
         //                            && cd.Distance < cw
@@ -341,22 +341,22 @@ internal sealed class OcrProcessor
         //                }
 
         //                if (ml != null) {
-        //                    // 若存在最小距离的 TextLine 且可合并，则将 item 归入 TextLine
+        //                    // If there is a minimum distance of TextLine and can be merged, you will be classified into TextLine.
         //                    if (md.Location == DistanceInfo.Placement.Overlapping) {
-        //                        // 检查是否存在交叠重复的文本
+        //                        // Check if there is an overlapping duplicate text
         //                        foreach (var t in ml.Texts) {
-        //                            if (t.Region.IntersectWith (item.Region) // item 与 TextLine 中某项交叠
-        //                                && (t.Text.Contains (item.Text) || item.Text.Contains (t.Text) // 交叠的项文本和 item 的文本相同
+        //                            if (t.Region.IntersectWith (item.Region) // Item is overlapped in TextLine
+        //                                && (t.Text.Contains (item.Text) || item.Text.Contains (t.Text) // Overlapping text and item text
         //                                )
         //                                ) {
-        //                                goto Next; // 忽略此项目
+        //                                goto Next; // Ignore this item
         //                            }
         //                        }
         //                    }
         //                    ml.AddText (item);
         //                }
         //                else {
-        //                    // 否则，用 item 创建新的 TextLine
+        //                    // Otherwise, create new TextLine with item
         //                    ll.Add (new TextLine (item));
         //                }
         //            Next:
@@ -484,12 +484,13 @@ internal sealed class OcrProcessor
     }
 
     /// <summary>
-    ///     调用图像处理引擎识别位图。如图片中的文本量太少，将无法识别，并会抛出异常。
+    ///     Call the image processing engine identification bitmap. If the amount of text in the picture is too small, it will
+    ///     not be recognized and an exception will be thrown.
     /// </summary>
-    /// <param name="bmp">需要识别的图片。</param>
-    /// <param name="options">识别选项。</param>
-    /// <exception cref="System.Runtime.InteropServices.COMException">在识别时发生的错误。</exception>
-    /// <returns>识别后的文本。</returns>
+    /// <param name="bmp">a picture that needs to be identified.</param>
+    /// <param name="options">Identification option.</param>
+    /// <exception cref="System.Runtime.InteropServices.COMException"> An error occurred during identification.</exception>
+    /// <returns>Identified text.</returns>
     internal static List<TextLine> OcrBitmap(Bitmap bmp, OcrOptions options)
     {
         const int minSize = 500;
@@ -617,7 +618,7 @@ internal sealed class OcrProcessor
 
         public XmlResultWriter(XmlWriter writer) => _writer = writer;
 
-        #region IResultWriter 成员
+        #region IResultWriter member
 
         public void BeginWritePage(int i)
         {
@@ -682,7 +683,7 @@ internal sealed class OcrProcessor
 
         public TextResultWriter(TextWriter writer) => _writer = writer;
 
-        #region IResultWriter 成员
+        #region IResultWriter member
 
         public void BeginWritePage(int i) => _writer.WriteLine("#识别页码=" + i);
 

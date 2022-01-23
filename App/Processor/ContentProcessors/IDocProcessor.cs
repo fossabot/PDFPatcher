@@ -5,28 +5,37 @@ namespace PDFPatcher.Processor;
 internal interface IDocProcessor : IProcessor
 {
     /// <summary>
-    ///     估算工作量。
+    ///     Estimate the workload.
     /// </summary>
-    /// <param name="pdf">需要处理的文档。</param>
-    /// <returns>整数工作量（用于显示进度条）。</returns>
+    /// <param name="pdf">The document that needs to be processed.</param>
+    /// <returns>Integer workload (for displaying progress bar).</returns>
     int EstimateWorkload(PdfReader pdf);
 
     /// <summary>
-    ///     在处理页面前调用，初始化处理器。
+    ///     Call the processor in front of the processing page.
     /// </summary>
-    /// <param name="context">包含传入文档的 <see cref="DocProcessorContext" /></param>
+    /// <param name="context">
+    ///     <see cref="docprocessorContext" />
+    /// </param>
+    /// of incoming document
     void BeginProcess(DocProcessorContext context);
 
     /// <summary>
-    ///     处理传入的文档。
+    ///     Process the incoming document.
     /// </summary>
-    /// <param name="context">包含传入文档的 <see cref="DocProcessorContext" /></param>
-    /// <returns>更改文档内容后返回 true。</returns>
+    /// <param name="context">
+    ///     <see cref="docprocessorContext" />
+    /// </param>
+    /// of incoming document
+    /// <returns>Returns true after changing the document.</returns>
     bool Process(DocProcessorContext context);
 
     /// <summary>
-    ///     在处理页面后调用。
+    ///     Call after processing the page.
     /// </summary>
-    /// <param name="context">包含传入文档的 <see cref="DocProcessorContext" /></param>
+    /// <param name="context">
+    ///     <see cref="docprocessorContext" />
+    /// </param>
+    /// of incoming document
     void EndProcess(DocProcessorContext context);
 }

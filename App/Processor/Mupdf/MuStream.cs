@@ -34,17 +34,17 @@ internal sealed class MuStream : IDisposable
     }
 
     /// <summary>
-    ///     读取 <paramref name="length" /> 字节到缓冲数组 <see cref="buffer" />。（可能抛出异常）
+    ///     Read <paramref name="length" /> bytes into buffer array <see cref="buffer" />. (may throw exception)
     /// </summary>
-    /// <param name="buffer">放置读取数据的数组。</param>
-    /// <param name="length">要读取的数据长度。</param>
-    /// <returns>实际读取的长度。</returns>
+    /// <param name="buffer">The array where the read data is placed. </param>
+    /// <param name="length">Length of data to read. </param>
+    /// <returns> The actual read length. </returns>
     public int Read(byte[] buffer, int length) => NativeMethods.Read(_context, _stream, buffer, length);
 
     /// <summary>
-    ///     读取流的所有内容到字节数组。（可能抛出异常）
+    ///     Read all content to the byte array. (May throw an exception)
     /// </summary>
-    /// <returns>包含流中所有内容的数组。</returns>
+    /// <returns>Contains an array of all content in the stream.</returns>
     public byte[] ReadAll(int initialSize)
     {
         if (_knownDataLength > 0)
@@ -74,10 +74,10 @@ internal sealed class MuStream : IDisposable
     }
 
     /// <summary>
-    ///     跳转到流的指定位置。
+    ///     Jump to the specified location of the stream.
     /// </summary>
-    /// <param name="offset">偏移位置。</param>
-    /// <param name="origin">跳转方式。</param>
+    /// <param name="offset">Offset position.</param>
+    /// <param name="origin">Jump mode.</param>
     public void Seek(int offset, SeekOrigin origin) =>
         NativeMethods.Seek(_context, _stream, offset,
             origin switch
@@ -88,16 +88,16 @@ internal sealed class MuStream : IDisposable
             });
 
     /// <summary>
-    ///     将当前流视为以 CCITT Fax 压缩的图像来解压缩。
+    ///     The current flow is decompressed as an image compressed by CCITT Fax.
     /// </summary>
-    /// <param name="width">图像宽度。</param>
-    /// <param name="height">图像高度。</param>
+    /// <param name="width">Image width.</param>
+    /// <param name="height">Image height.</param>
     /// <param name="k"></param>
     /// <param name="endOfLine"></param>
     /// <param name="encodedByteAlign"></param>
     /// <param name="endOfBlock"></param>
     /// <param name="blackIs1"></param>
-    /// <returns>解压缩后的图像数据。</returns>
+    /// <returns>Unzip the image data.</returns>
     public MuStream DecodeTiffFax(int width, int height, int k, bool endOfLine, bool encodedByteAlign, bool endOfBlock,
         bool blackIs1) =>
         new(
@@ -107,7 +107,7 @@ internal sealed class MuStream : IDisposable
                     height, endOfBlock ? 1 : 0, blackIs1 ? 1 : 0))
         );
 
-    #region 非托管资源成员
+    #region Non-managed resource member
 
     private readonly StreamHandle _stream;
     private readonly ContextHandle _context;
@@ -115,12 +115,12 @@ internal sealed class MuStream : IDisposable
 
     #endregion
 
-    #region 托管资源成员
+    #region Managed resource
 
     private readonly int _knownDataLength;
     private readonly bool _sharedContext;
 
-    /// <summary>获取或设置游标位置。</summary>
+    /// <summary>Get or set the cursor position.</summary>
     public int Position
     {
         get => NativeMethods.GetPosition(_context, _stream);
@@ -129,34 +129,34 @@ internal sealed class MuStream : IDisposable
 
     #endregion
 
-    #region 实现 IDisposable 接口的属性和方法
+    #region Implement the properties and methods of iDisposable interface
 
     private bool disposed;
 
     public void Dispose()
     {
         Dispose(true);
-        GC.SuppressFinalize(this); // 抑制析构函数
+        GC.SuppressFinalize(this); // Inhibitory destructive function
     }
 
-    /// <summary>释放由 MuPdfPage 占用的资源。</summary>
-    /// <param name="disposing">是否手动释放托管资源。</param>
+    /// <summary>Release the resources occupied by MuPdfPAGE.</summary>
+    /// <param name="disposing">Whether to manually release the managed resource.</param>
     private void Dispose(bool disposing)
     {
         if (!disposed)
         {
             if (disposing)
             {
-                #region 释放托管资源
+                #region Release managed resources
 
                 //_components.Dispose ();
 
                 #endregion
             }
 
-            #region 释放非托管资源
+            #region Release non-managed resources
 
-            // 注意这里不是线程安全的
+            // Note that this is not a thread safe
             if (_stream.IsValid())
             {
                 _stream.Dispose();
@@ -178,8 +178,8 @@ internal sealed class MuStream : IDisposable
         disposed = true;
     }
 
-    // 析构函数只在未调用 Dispose 方法时调用
-    // 派生类中不必再提供析构函数
+    // The destructor is only called when the Dispose method is not called.
+    // Don't provide a destructor in the derived class
     ~MuStream() => Dispose(false);
 
     #endregion

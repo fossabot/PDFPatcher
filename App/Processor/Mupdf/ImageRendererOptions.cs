@@ -18,7 +18,7 @@ public class ImageRendererOptions
 
     [XmlAttribute("自动指定输出位置")] public bool AutoOutputFolder { get; set; }
 
-    ///<summary>获取或指定导出图片的格式。</summary>
+    /// <summary>Get or specify the format of the exported image.</summary>
     [XmlAttribute("图片格式")]
     public ImageFormat FileFormat { get; set; }
 
@@ -30,25 +30,25 @@ public class ImageRendererOptions
             _ => ".png"
         };
 
-    ///<summary>获取或指定是否垂直翻转导出的图片。</summary>
+    /// <summary>Gets or specifies whether to flip the exported picture.</summary>
     [XmlAttribute("垂直翻转图片")]
     public bool VerticalFlipImages { get; set; }
 
-    ///<summary>获取或指定是否水平翻转导出的图片。</summary>
+    /// <summary>Gets or specifies the image that is horizontally flipped.</summary>
     [XmlAttribute("水平翻转图片")]
     public bool HorizontalFlipImages { get; set; }
 
-    /// <summary>获取或指定导出图片的颜色。</summary>
+    /// <summary>Get or specify the color of the exported image.</summary>
     [XmlAttribute("图片颜色")]
     public ColorSpace ColorSpace { get; set; }
 
-    /// <summary>获取或指定是否反转图片的颜色。</summary>
+    /// <summary>Gets or specifies whether to reverse the color of the picture.</summary>
     [XmlAttribute("反转图片颜色")]
     public bool InvertColor { get; set; }
 
     [XmlAttribute("JPEG质量")] public int JpegQuality { get; set; }
 
-    /// <summary>获取或指定旋转图片的角度。</summary>
+    /// <summary>Gets or specifies the angle of rotating images.</summary>
     [XmlAttribute("旋转角度")]
     public int Rotation { get; set; }
 
@@ -65,11 +65,11 @@ public class ImageRendererOptions
 
     [XmlAttribute("尺寸模式")] public bool UseSpecificWidth { get; set; }
 
-    ///<summary>获取或指定导出页面图像所保存的目录路径。</summary>
+    /// <summary>Get or specify the directory path saved by the export page image.</summary>
     [XmlAttribute("导出路径")]
     public string ExtractImagePath { get; set; }
 
-    ///<summary>获取或指定导出文件的名称掩码。</summary>
+    /// <summary>Gets or specifies the name mask of the export file.</summary>
     [XmlAttribute("文件名称掩码")]
     public string FileMask { get; set; }
 

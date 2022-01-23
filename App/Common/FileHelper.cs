@@ -45,7 +45,7 @@ internal static class FileHelper
             char y = path2[i2];
             if (x is < '0' or > '9')
             {
-                // 不区分大小写的文字比较
+                // Do not distinguish between text comparisons
                 if (x == y)
                 {
                     continue;
@@ -64,7 +64,7 @@ internal static class FileHelper
                         ? 1
                         : y is < '0' or > '9'
                             ? LocaleInfo.StringComparer(x.ToString(), y.ToString(), CompareOptions.StringSort)
-                            // path2 为数字，path1 不为数字，path2 排在前面
+                            // path2 is a number, path1 is not a number, path2 comes first
                             : 1;
             }
 
@@ -83,10 +83,10 @@ internal static class FileHelper
                 return 1;
             }
 
-            // 数字比较
+            // Digital comparison
             if (y is >= '0' and <= '9')
             {
-                // 两组均为数字
+                // Both groups are numbers
                 do
                 {
                     if (x > '0' || n1 > 0)
@@ -103,13 +103,13 @@ internal static class FileHelper
                     }
                 } while (++i2 < l2 && (y = path2[i2]) >= '0' && y <= '9');
 
-                // 数字位数少的在前面
+                // Less number in front
                 if (n1 != n2)
                 {
                     return n1 - n2;
                 }
 
-                // 全是 0，继续后面的比较
+                // All are 0, continue the following comparison
                 if (n1 == 0 || n2 == 0)
                 {
                     --i1;
@@ -129,14 +129,14 @@ internal static class FileHelper
                     }
                 }
 
-                // 数值相等，比较下一组
+                // Value equal, compare the next group
                 n1 = n2 = 0;
                 --i1;
                 --i2;
             }
             else
             {
-                // 仅 x 为数字，y 不为数字
+                // only x is a number, y is not a number
                 return y == PathDot ? 1 : x - y;
             }
         }

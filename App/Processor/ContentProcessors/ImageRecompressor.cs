@@ -22,7 +22,7 @@ internal sealed class ImageRecompressor : IPageProcessor
 
     private int _processedImageCount;
 
-    #region IPageProcessor 成员
+    #region IPageProcessor member
 
     public string Name => "优化压缩黑白图片";
 

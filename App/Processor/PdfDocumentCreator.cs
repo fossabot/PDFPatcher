@@ -87,7 +87,8 @@ internal sealed class PdfDocumentCreator
     }
 
     /// <summary>
-    ///     在传入构造函数选项中保留链接时，获取最近处理的 PDF 文档的书签。
+    ///     When the link is retained in the Incoming Construction Function option, get the bookmark for the recently processed
+    ///     PDF document.
     /// </summary>
     public PdfInfoXmlDocument PdfBookmarks { get; }
 

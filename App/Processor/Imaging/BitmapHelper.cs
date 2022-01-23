@@ -20,10 +20,10 @@ internal static class BitmapHelper
     }
 
     /// <summary>
-    ///     获取指定图片的不重复颜色集合。
+    ///     Get the collection of not repeated color colors for the specified image.
     /// </summary>
-    /// <param name="bmp">需要获取颜色集合的 <see cref="Bitmap" />。</param>
-    /// <returns>包含不重复颜色集合的列表。</returns>
+    /// <param name="bmp">The <see cref="Bitmap" /> of the color collection is required.</param>
+    /// <returns>contains a list that does not repeat color collections.</returns>
     public static unsafe Color[] GetPalette(this Bitmap bmp)
     {
         HashSet<int> hs = new();
@@ -89,27 +89,27 @@ internal static class BitmapHelper
     }
 
     /// <summary>
-    ///     检查 <see cref="Image" /> 是否为索引调色板图像。
+    ///     Check if <see cref="Image" /> is an index palette image.
     /// </summary>
-    /// <param name="image">需要检查的图像。</param>
-    /// <returns>如为索引调色板图像，则返回 true，否则返回 false。</returns>
+    /// <param name="image">The image you need to check.</param>
+    /// <returns>Returns true if it is an index palette image, otherwise returns false.</returns>
     public static bool IsIndexed(this Image image) => (image.PixelFormat & PixelFormat.Indexed) == PixelFormat.Indexed;
 
     /// <summary>
-    ///     锁定 <see cref="Bitmap" /> 的内容，用于读写。
+    ///     Lock the contents of <see cref="bitmap" /> for reading and writing.
     /// </summary>
-    /// <param name="bmp">需要锁定的内容。</param>
-    /// <param name="writable">是否可写入。</param>
-    /// <returns>锁定后的 <see cref="BitmapData" />。</returns>
+    /// <param name="bmp">The content that needs to be locked.</param>
+    /// <param name="writable">Whether it is written.</param>
+    /// <returns>Lock <see cref="bitmapdata" />.</returns>
     public static BitmapData LockBits(this Bitmap bmp, bool writable) =>
         bmp.LockBits(new Rectangle(Point.Empty, bmp.Size),
             writable ? ImageLockMode.ReadWrite : ImageLockMode.ReadOnly, bmp.PixelFormat);
 
     /// <summary>
-    ///     按文件名的扩展名保存图像文件为对应的格式。
+    ///     Save the image file as the corresponding format according to the extension of the file name.
     /// </summary>
-    /// <param name="image">需要保存的 <see cref="Image" />。</param>
-    /// <param name="fileName">保存的文件路径。</param>
+    /// <param name="image">The <see cref="Image" /> required to be saved.</param>
+    /// <param name="fileName">Saved file path.</param>
     public static void SaveAs(this Image image, string fileName)
     {
         string ext = Path.GetExtension(fileName);
@@ -138,11 +138,11 @@ internal static class BitmapHelper
     }
 
     /// <summary>
-    ///     将 <paramref name="tint" /> 颜色染色到 <paramref name="color" /> 上。
+    ///     Stain <paramref name="tint" /> color to <paramref name="color" />.
     /// </summary>
-    /// <param name="color">基色。</param>
-    /// <param name="tint">染色颜色。</param>
-    /// <returns>染色后的新颜色。</returns>
+    /// <param name="color">base color.</param>
+    /// <param name="tint">Dye color.</param>
+    /// <returns>The new color after dyeing.</returns>
     public static Color Tint(this Color color, Color tint) => Color.FromArgb(color.A, mul255(color.R, tint.R),
         mul255(color.G, tint.G), mul255(color.B, tint.B));
 
@@ -217,9 +217,9 @@ internal static class BitmapHelper
         return result;
     }
 
-    /// <summary>将图像转换为黑白图像。</summary>
-    /// <param name="original">需要转换的图像。</param>
-    /// <returns>转换后的图像。</returns>
+    /// <summary>converts the image into black and white images.</summary>
+    /// <param name="original">The image that needs to be converted.</param>
+    /// <returns>The image after converting.</returns>
     /// <remarks>http://www.wischik.com/lu/programmer/1bpp.html</remarks>
     public static Bitmap ToBitonal(this Bitmap original)
     {

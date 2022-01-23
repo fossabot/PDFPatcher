@@ -17,7 +17,7 @@ internal sealed class PageDimensionProcessor : IPageProcessor
     private bool _resizePages, _adjustMargins;
     public PageBoxSettings Settings { get; set; }
 
-    #region IProcessor 成员
+    #region IProcessor member
 
     public string Name => "修改页面尺寸";
 
@@ -196,11 +196,11 @@ internal sealed class PageDimensionProcessor : IPageProcessor
     }
 
     /// <summary>
-    ///     无损拉伸平移页面。
+    ///     Non-destructive tensile flippage.
     /// </summary>
-    /// <param name="pdf">PDF 文档。</param>
-    /// <param name="pageNumber">页码。</param>
-    /// <param name="ct">拉伸及平移参数。</param>
+    /// <param name="pdf">PDF document.</param>
+    /// <param name="panumber">page.</param>
+    /// <param name="ct">stretching and translation parameters.</param>
     internal static byte[] ScaleContent(PdfReader pdf, int pageNumber, CoordinateTranslationSettings ct)
     {
         byte[] newContent = Encoding.ASCII.GetBytes(string.Join(" ", ct.XScale.ToText(), "0", "0", ct.YScale.ToText(),
@@ -296,7 +296,7 @@ internal sealed class PageDimensionProcessor : IPageProcessor
             }));
     }
 
-    #region IPageProcessor 成员
+    #region IPageProcessor member
 
     public int EstimateWorkload(PdfReader pdf) => pdf.NumberOfPages;
 
@@ -314,7 +314,7 @@ internal sealed class PageDimensionProcessor : IPageProcessor
         _pageRanges = string.IsNullOrEmpty(Settings.PageRanges)
             ? null
             : PageRangeCollection.Parse(Settings.PageRanges, 1, context.Pdf.NumberOfPages, true);
-        //todo 为新增加的适应拉伸模式设置参考尺寸
+        //todo Set the reference size for the newly added adaptation stretch mode
         switch (Settings.PaperSize.SpecialSize)
         {
             case SpecialPaperSize.AsSpecificPage:

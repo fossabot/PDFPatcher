@@ -22,16 +22,16 @@ internal sealed class ListViewItemComparer : IComparer
         SortOrder = sortOrder;
     }
 
-    ///<summary>获取或指定排序列的值。</summary>
+    /// <summary>Gets or specifies the value of the sequence of sequences.</summary>
     public int Col { get; }
 
-    ///<summary>获取或指定是否使用智能排序。</summary>
+    /// <summary>Get or specifies whether to use intelligent sort.</summary>
     public bool UseSmartSort { get; }
 
-    ///<summary>获取或指定列表排序的方式。</summary>
+    /// <summary>Get or specify how lists are sorted.</summary>
     public SortOrder SortOrder { get; }
 
-    #region IComparer 成员
+    #region IComparer member
 
     int IComparer.Compare(object x, object y)
     {

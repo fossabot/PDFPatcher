@@ -3,7 +3,7 @@
 internal interface IProcessor
 {
     /// <summary>
-    ///     返回处理器的名称。
+    ///     Returns the name of the processor。
     /// </summary>
     string Name { get; }
 }

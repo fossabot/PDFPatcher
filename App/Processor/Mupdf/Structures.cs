@@ -31,7 +31,7 @@ public struct MuCookie
 }
 
 /// <summary>
-///     MuPDF 引擎的工作方式。
+///     MuPDF engine work mode.
 /// </summary>
 [Flags]
 public enum DeviceHints
@@ -43,7 +43,7 @@ public enum DeviceHints
 }
 
 /// <summary>
-///     渲染页面的颜色空间。
+///     Rendering the color space of the page.
 /// </summary>
 public enum ColorSpace
 {
@@ -54,7 +54,7 @@ public enum ColorSpace
 }
 
 /// <summary>
-///     保存渲染页面的文件格式。
+///     Save the file format of the rendered page.
 /// </summary>
 public enum ImageFormat
 {
@@ -116,7 +116,7 @@ public enum PageLabelStyle : byte
 }
 
 /// <summary>
-///     表示点。
+///     Representation point.
 /// </summary>
 [DebuggerDisplay("({X},{Y})")]
 public readonly struct Point : IEquatable<Point>
@@ -132,10 +132,10 @@ public readonly struct Point : IEquatable<Point>
     }
 
     /// <summary>
-    ///     将 PDF 页面坐标点转换为渲染页面坐标点。
+    ///     Convert PDF page coordinate points to rendering page coordinate points.
     /// </summary>
-    /// <param name="pageVisualBound">页面的可视区域。</param>
-    /// <returns>转换为页面坐标的点。</returns>
+    /// <param name="pageVisualBound">The page view area.</param>
+    /// <returns>Convert to the point of the page coordinate.</returns>
     public Point ToPageCoordinate(Rectangle pageVisualBound) => new(X - pageVisualBound.Left,
         pageVisualBound.Height - (Y - pageVisualBound.Top));
 
@@ -160,8 +160,8 @@ public readonly struct Point : IEquatable<Point>
 }
 
 /// <summary>
-///     表示边框（坐标值为整数的矩形）。
-///     在 MuPDF 中，BBox 的 <see cref="Bottom" /> 值应大于 <see cref="Top" /> 值。
+///     Indicates the border (the rectangle of the coordinate value is an integer).
+///     In MuPDF, the <see cref="Bottom" /> value of the BBox should be greater than the <see cref="Top" /> value.
 /// </summary>
 [DebuggerDisplay("({Left},{Top})-({Right},{Bottom})")]
 public readonly struct BBox : IEquatable<BBox>
@@ -214,7 +214,7 @@ public readonly struct BBox : IEquatable<BBox>
 }
 
 /// <summary>
-///     表示使用浮点数为坐标的矩形。
+///     Indicates the rectangle using the floating point number as the coordinate.
 /// </summary>
 [DebuggerDisplay("({Left},{Top})-({Right},{Bottom})")]
 public readonly struct Rectangle : IEquatable<Rectangle>
@@ -250,18 +250,18 @@ public readonly struct Rectangle : IEquatable<Rectangle>
     public override string ToString() => string.Concat("(", Left, ",", Top, ")-(", Right, ",", Bottom, ")");
 
     /// <summary>
-    ///     返回当前矩形区域是否包含另一个点。
+    ///     Returns whether there is another point in the current rectangular area.
     /// </summary>
-    /// <param name="point">另一个点。</param>
-    /// <returns>包含点时返回 true。</returns>
+    /// <param name="point">Another point.</param>
+    /// <returns>Returns true when the content is included.</returns>
     public bool Contains(Point point) => Right >= point.X && Left <= point.X && Top <= point.Y && Bottom >= point.Y;
 
     public bool Contains(float pointX, float pointY) =>
         Right >= pointX && Left <= pointX && Top <= pointY && Bottom >= pointY;
 
-    /// <summary>返回当前矩形区域是否与另一个矩形区域存在交集。</summary>
-    /// <param name="other">另一个矩形区域。</param>
-    /// <returns>包含矩形区域时返回 true。</returns>
+    /// <summary>Returns whether there is an intersection with another rectangular area.</summary>
+    /// <param name="other">Another rectangular area.</param>
+    /// <returns>Returns True when a rectangular area is included.</returns>
     public bool Contains(Rectangle other)
     {
         if (IsEmpty || other.IsInfinite)
@@ -277,9 +277,9 @@ public readonly struct Rectangle : IEquatable<Rectangle>
         return Contains(other.Left, other.Top) && Contains(other.Right, other.Bottom);
     }
 
-    /// <summary>返回当前矩形区域与另一个矩形区域的交集。</summary>
-    /// <param name="other">另一个矩形区域。</param>
-    /// <returns>返回两个矩形区域的交集。</returns>
+    /// <summary>Returns the intersection of the current rectangular area and another rectangular area. </summary>
+    /// <param name="other">Another rectangular area. </param>
+    /// <returns>Returns the intersection of two rectangular regions. </returns>
     public Rectangle Intersect(Rectangle other)
     {
         if (IsEmpty || other.IsEmpty)
@@ -309,9 +309,9 @@ public readonly struct Rectangle : IEquatable<Rectangle>
         return new Rectangle(x0, y0, x1, y1);
     }
 
-    /// <summary>返回包含两个矩形区域的新矩形区域。</summary>
-    /// <param name="other">另一个矩形区域。</param>
-    /// <returns>包含两个矩形区域的新矩形区域。</returns>
+    /// <summary>Returns a new rectangular area containing the two rectangular areas. </summary>
+    /// <param name="other">Another rectangular area. </param>
+    /// <returns>A new rectangular area containing the two rectangular areas. </returns>
     public Rectangle Union(Rectangle other)
     {
         if (IsEmpty || other.IsInfinite)
@@ -360,7 +360,7 @@ public readonly struct Rectangle : IEquatable<Rectangle>
 
     public static Rectangle operator |(Rectangle r1, Rectangle r2) => r1.Union(r2);
 
-    /// <summary>返回两个矩形重叠区域与两矩形最小包容区域的占比。</summary>
+    /// <summary>Returns the proportion of two rectangular overlap regions and two rectangular tolerance.</summary>
     public static float operator /(Rectangle r1, Rectangle r2)
     {
         Rectangle i = r1.Intersect(r2);
@@ -398,7 +398,7 @@ public readonly struct Rectangle : IEquatable<Rectangle>
 }
 
 /// <summary>
-///     表示四个坐标构成的矩形。
+///     Represents a rectangle of four coordinates.
 /// </summary>
 public readonly struct Quad : IEquatable<Quad>
 {
@@ -454,7 +454,7 @@ public readonly struct Quad : IEquatable<Quad>
 }
 
 /// <summary>
-///     表示转置矩阵。
+///     Indicates the transposition matrix.
 /// </summary>
 [DebuggerDisplay("({A},{B},{C},{D},{E},{F})")]
 public readonly struct Matrix : IEquatable<Matrix>
@@ -466,17 +466,17 @@ public readonly struct Matrix : IEquatable<Matrix>
     private static float Max4(float a, float b, float c, float d) => Math.Max(Math.Max(a, b), Math.Max(c, d));
 
     /// <summary>
-    ///     单元矩阵。
+    ///     Unit matrix.
     /// </summary>
     public static readonly Matrix Identity = new(1, 0, 0, 1, 0, 0);
 
     /// <summary>
-    ///     垂直翻转矩阵。
+    ///     Vertical flip matrix.
     /// </summary>
     public static readonly Matrix VerticalFlip = new(1, 0, 0, -1, 0, 0);
 
     /// <summary>
-    ///     水平翻转矩阵。
+    ///     Horizontal flip matrix.
     /// </summary>
     public static readonly Matrix HorizontalFlip = new(-1, 0, 0, 1, 0, 0);
 
@@ -491,7 +491,7 @@ public readonly struct Matrix : IEquatable<Matrix>
     }
 
     /// <summary>
-    ///     将两个矩阵相乘。
+    ///     Multiply two matrices.
     /// </summary>
     /// <param name="one">被乘的矩阵。</param>
     /// <param name="two">乘数矩阵。</param>

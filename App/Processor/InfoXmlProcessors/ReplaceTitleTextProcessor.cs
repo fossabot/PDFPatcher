@@ -22,7 +22,7 @@ internal sealed class ReplaceTitleTextProcessor : IPdfInfoXmlProcessor
         _replacement = replacement;
     }
 
-    #region IInfoDocProcessor 成员
+    #region IInfoDocProcessor member
 
     public string Name => string.Concat("替换文本为“", _replacement, "”");
 

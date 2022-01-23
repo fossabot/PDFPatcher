@@ -15,7 +15,7 @@ namespace PDFPatcher.Processor
 		int _processedImageCount;
 		int _deskewedImageCount;
 
-		#region IPageProcessor 成员
+		#region IPageProcessor member
 		public string Name { get { return "校正倾斜图片"; } }
 
 		public void BeginProcess (PdfReader pdf) {
@@ -65,7 +65,7 @@ namespace PDFPatcher.Processor
 					//        fi.Rescale ((int)((float)fi.Width / zy), 500, FreeImageAPI.FREE_IMAGE_FILTER.FILTER_BILINEAR);
 					//    }
 					//}
-					angles.Add (item.Key, new ImageDeskew ().GetSkewAngle (fi)); // 获取图片倾斜角度
+					angles.Add (item.Key, new ImageDeskew ().GetSkewAngle (fi)); // Get picture tilt angle
 				}
 			}
 			if (angles.Count == 0) {

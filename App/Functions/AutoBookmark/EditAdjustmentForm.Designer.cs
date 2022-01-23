@@ -3,14 +3,14 @@
 	partial class EditAdjustmentForm
 	{
 		/// <summary>
-		/// 必需的设计器变量。
+		/// Required designer variable.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 
 		/// <summary>
-		/// 清理所有正在使用的资源。
+		/// Clean all the resources being used.
 		/// </summary>
-		/// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+		/// <param name="disposing">If you should release the managed resource, for true; otherwise, false.</param>
 		protected override void Dispose (bool disposing) {
 			if (disposing && (components != null)) {
 				components.Dispose ();
@@ -18,11 +18,11 @@
 			base.Dispose (disposing);
 		}
 
-		#region Windows 窗体设计器生成的代码
+		#region WINDOWS Form Designer Generated Code
 
 		/// <summary>
-		/// 设计器支持所需的方法 - 不要
-		/// 使用代码编辑器修改此方法的内容。
+		/// Designer supports the required method - do not
+		/// Use the code editor to modify the contents of this method.
 		/// </summary>
 		private void InitializeComponent () {
 			this._AddFilterMenuItem = new System.Windows.Forms.ToolStripDropDownButton ();
@@ -40,18 +40,18 @@
 			this.toolStrip1.SuspendLayout ();
 			this._EditFilterBox.SuspendLayout ();
 			this.SuspendLayout ();
-			// 
+			//
 			// _AddFilterMenuItem
-			// 
+			//
 			this._AddFilterMenuItem.Image = global::PDFPatcher.Properties.Resources.Add;
 			this._AddFilterMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._AddFilterMenuItem.Name = "_AddFilterMenuItem";
 			this._AddFilterMenuItem.Size = new System.Drawing.Size (108, 22);
 			this._AddFilterMenuItem.Text = "添加匹配条件";
 			this._AddFilterMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler (this._AddFilterMenuItem_DropDownItemClicked);
-			// 
+			//
 			// _OkButton
-			// 
+			//
 			this._OkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this._OkButton.Location = new System.Drawing.Point (267, 285);
 			this._OkButton.Name = "_OkButton";
@@ -60,9 +60,9 @@
 			this._OkButton.Text = "确定(&Q)";
 			this._OkButton.UseVisualStyleBackColor = true;
 			this._OkButton.Click += new System.EventHandler (this._OkButton_Click);
-			// 
+			//
 			// _CancelButton
-			// 
+			//
 			this._CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this._CancelButton.Location = new System.Drawing.Point (348, 285);
@@ -72,9 +72,9 @@
 			this._CancelButton.Text = "取消(&X)";
 			this._CancelButton.UseVisualStyleBackColor = true;
 			this._CancelButton.Click += new System.EventHandler (this._CancelButton_Click);
-			// 
+			//
 			// _FilterBox
-			// 
+			//
 			this._FilterBox.AllColumns.Add (this._TypeColumn);
 			this._FilterBox.AllColumns.Add (this._ConditionColumn);
 			this._FilterBox.AllColumns.Add (this._IsInclusiveColumn);
@@ -99,27 +99,27 @@
 			this._FilterBox.UseCompatibleStateImageBehavior = false;
 			this._FilterBox.View = System.Windows.Forms.View.Details;
 			this._FilterBox.SelectedIndexChanged += new System.EventHandler (this._FilterBox_SelectedIndexChanged);
-			// 
+			//
 			// _TypeColumn
-			// 
+			//
 			this._TypeColumn.IsEditable = false;
 			this._TypeColumn.Text = "筛选条件";
 			this._TypeColumn.Width = 69;
-			// 
+			//
 			// _ConditionColumn
-			// 
+			//
 			this._ConditionColumn.FillsFreeSpace = true;
 			this._ConditionColumn.Text = "匹配条件";
 			this._ConditionColumn.Width = 241;
-			// 
+			//
 			// _IsInclusiveColumn
-			// 
+			//
 			this._IsInclusiveColumn.IsEditable = false;
 			this._IsInclusiveColumn.Text = "包含筛选";
 			this._IsInclusiveColumn.Width = 78;
-			// 
+			//
 			// toolStrip1
-			// 
+			//
 			this.toolStrip1.Items.AddRange (new System.Windows.Forms.ToolStripItem[] {
             this._AddFilterMenuItem,
             this._RemoveButton});
@@ -128,18 +128,18 @@
 			this.toolStrip1.Size = new System.Drawing.Size (435, 25);
 			this.toolStrip1.TabIndex = 4;
 			this.toolStrip1.Text = "toolStrip1";
-			// 
+			//
 			// _RemoveButton
-			// 
+			//
 			this._RemoveButton.Image = global::PDFPatcher.Properties.Resources.Delete;
 			this._RemoveButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._RemoveButton.Name = "_RemoveButton";
 			this._RemoveButton.Size = new System.Drawing.Size (51, 22);
 			this._RemoveButton.Text = "删除";
 			this._RemoveButton.Click += new System.EventHandler (this._RemoveButton_Click);
-			// 
+			//
 			// _EditFilterBox
-			// 
+			//
 			this._EditFilterBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
 			this._EditFilterBox.Controls.Add (this._EditFilterPanel);
@@ -149,16 +149,16 @@
 			this._EditFilterBox.TabIndex = 5;
 			this._EditFilterBox.TabStop = false;
 			this._EditFilterBox.Text = "更改匹配条件";
-			// 
+			//
 			// _EditFilterPanel
-			// 
+			//
 			this._EditFilterPanel.Location = new System.Drawing.Point (6, 20);
 			this._EditFilterPanel.Name = "_EditFilterPanel";
 			this._EditFilterPanel.Size = new System.Drawing.Size (399, 78);
 			this._EditFilterPanel.TabIndex = 0;
-			// 
+			//
 			// EditAdjustmentForm
-			// 
+			//
 			this.AcceptButton = this._OkButton;
 			this.AutoScaleDimensions = new System.Drawing.SizeF (6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

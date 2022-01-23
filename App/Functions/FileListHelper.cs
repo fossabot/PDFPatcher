@@ -19,9 +19,9 @@ internal sealed class FileListHelper
     public FileListHelper(ObjectListView fileList) => _fileList = fileList;
 
     /// <summary>
-    ///     设置 PDF 文件列表的拖放操作。
+    ///     Set the drag and drop operation of the PDF file list.
     /// </summary>
-    /// <param name="addFilesCallback">添加文件的回调函数。</param>
+    /// <param name="addFilesCallback">Add a file's callback function.</param>
     public void SetupDragAndDrop(AddFilesCallback addFilesCallback)
     {
         _fileList.DragSource = new SimpleDragSource(true);
@@ -58,7 +58,7 @@ internal sealed class FileListHelper
     }
 
     /// <summary>
-    ///     打开 PDF 文件的 <see cref="ToolStripSplitButton" /> 显示下拉文件列表的事件处理函数。
+    ///     Open the PDF file <see cref="ToolStripSplitButton" /> displays the event handler of the drop-down file list.
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -79,9 +79,9 @@ internal sealed class FileListHelper
     }
 
     /// <summary>
-    ///     以指定编码刷新文件列表的选定项目。
+    ///     Selected items for the specified encoding refresh file list.
     /// </summary>
-    /// <param name="encoding">用于读取文档元数据的 <see cref="Enocding" />。</param>
+    /// <param name="encoding">Used to read document metadata <see cref="Enocding" />.</param>
     public void RefreshInfo(Encoding encoding)
     {
         IList ol = _fileList.SelectedObjects;
@@ -100,9 +100,10 @@ internal sealed class FileListHelper
     }
 
     /// <summary>
-    ///     为 <see cref="OLVColumn" /> 设置读写处理函数。
+    ///     Setting write processing functions for <see cref="olvcolumn />).
+    /// 
     /// </summary>
-    /// <param name="columns">需要设置的列。</param>
+    /// <param name="columns">A column that needs to be set.</param>
     public static void SetupCommonPdfColumns(params OLVColumn[] columns)
     {
         foreach (OLVColumn item in columns)

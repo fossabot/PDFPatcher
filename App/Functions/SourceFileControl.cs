@@ -18,16 +18,16 @@ public partial class SourceFileControl : UserControl
         Files = new string[] { };
     }
 
-    ///<summary>获取文件下拉列表框。</summary>
+    /// <summary>Get the file drop-down list box.</summary>
     internal HistoryComboBox FileList { get; private set; }
 
     /// <summary>
-    ///     获取选定的 PDF 文件列表。
+    ///     Get a list of selected PDF files.
     /// </summary>
     internal string[] Files { get; private set; }
 
     /// <summary>
-    ///     获取选定的 PDF 文件列表的第一项。
+    ///     Get the first item of the selected PDF file list.
     /// </summary>
     internal string FirstFile => Files is { Length: > 0 } ? Files[0] : string.Empty;
 
@@ -38,18 +38,18 @@ public partial class SourceFileControl : UserControl
         set => FileList.Text = value;
     }
 
-    ///<summary>点击浏览按钮更改选中文件后触发的事件。</summary>
+    /// <summary>Click the Browse button to change the event triggered after the file.</summary>
     public event EventHandler BrowseSelectedFiles;
 
-    /////<summary>获取或指定文本标签的值。</summary>
-    //[Description ("文本标签的值")]
+    ///// <summary>Gets or specifies the value of the text tag.</summary>
+    //[Description ("Text tag value")]
     //public string Label {
     //    get { return this.label1.Text; }
     //    set { this.label1.Text = value; }
     //}
 
-    /////<summary>获取或指定是否可多选文件。</summary>
-    //[Description ("是否可多选文件")]
+    ///// <summary>Get or specify whether it can be multi-selection file.</summary>
+    //[Description ("Is there a multi-selection file?")]
     //public bool MultiSelect {
     //    get { return this._OpenPdfBox.Multiselect; }
     //    set { this._OpenPdfBox.Multiselect = value; }

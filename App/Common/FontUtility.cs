@@ -31,12 +31,12 @@ internal static class FontUtility
 
     private static void ListInstalledFonts()
     {
-        List<FriendlyFontName> uf = new(); // 可能包含中文的字体
-        List<FriendlyFontName> of = new(); // 其他字体
+        List<FriendlyFontName> uf = new(); // May contain Chinese fonts
+        List<FriendlyFontName> of = new(); // Other font
         Dictionary<string, string> fs = FontHelper.GetInstalledFonts(false);
         foreach (string item in fs.Keys)
         {
-            string dn = _boldItalic.Replace(item, "(粗斜体)") /*字体名称*/;
+            string dn = _boldItalic.Replace(item, "(粗斜体)") /* Font name */;
             dn = _italic.Replace(dn, "(斜体)");
             dn = _bold.Replace(dn, "(粗体)");
             if (dn[0] > 0xFF)
@@ -69,7 +69,7 @@ internal static class FontUtility
 
         public override string ToString() => DisplayName ?? OriginalName;
 
-        #region IComparable<FriendlyFontName> 成员
+        #region IComparable<FriendlyFontName> member
 
         int IComparable<FriendlyFontName>.CompareTo(FriendlyFontName other) =>
             string.Compare(OriginalName, other.OriginalName, StringComparison.Ordinal);

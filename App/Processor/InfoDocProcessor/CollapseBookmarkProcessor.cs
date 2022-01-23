@@ -7,7 +7,7 @@ internal sealed class CollapseBookmarkProcessor : IInfoDocProcessor
 {
     public BookmarkStatus BookmarkStatus { get; set; }
 
-    #region IBookmarkProcessor 成员
+    #region IBookmarkProcessor member
 
     public bool Process(XmlElement bookmark)
     {

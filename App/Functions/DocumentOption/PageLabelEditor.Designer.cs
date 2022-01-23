@@ -2,15 +2,15 @@
 {
 	partial class PageLabelEditor
 	{
-		/// <summary> 
-		/// 必需的设计器变量。
+		/// <summary>
+		/// Required designer variables.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 
-		/// <summary> 
-		/// 清理所有正在使用的资源。
+		/// <summary>
+		/// Clean up all resources in use.
 		/// </summary>
-		/// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+		/// <param name="disposing">true if the managed resource should be released; otherwise, false.</param>
 		protected override void Dispose (bool disposing) {
 			if (disposing && (components != null)) {
 				components.Dispose ();
@@ -18,11 +18,11 @@
 			base.Dispose (disposing);
 		}
 
-		#region 组件设计器生成的代码
+		#region Component Designer Generated Code
 
-		/// <summary> 
-		/// 设计器支持所需的方法 - 不要
-		/// 使用代码编辑器修改此方法的内容。
+		/// <summary>
+		/// Designer supports required methods - Don't
+		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
 			this.components = new System.ComponentModel.Container();
@@ -39,16 +39,16 @@
 			((System.ComponentModel.ISupportInitialize)(this._PageLabelBox)).BeginInit();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
-			// 
+			//
 			// _PageLabelBox
-			// 
+			//
 			this._PageLabelBox.AllColumns.Add(this._SequenceColumn);
 			this._PageLabelBox.AllColumns.Add(this._PageNumColumn);
 			this._PageLabelBox.AllColumns.Add(this._LabelStyleColumn);
 			this._PageLabelBox.AllColumns.Add(this._LabelPrefixColumn);
 			this._PageLabelBox.AllColumns.Add(this._StartNumColumn);
-			this._PageLabelBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+			this._PageLabelBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this._PageLabelBox.CellEditActivation = BrightIdeasSoftware.ObjectListView.CellEditActivateMode.SingleClick;
 			this._PageLabelBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -69,36 +69,36 @@
 			this._PageLabelBox.TabIndex = 0;
 			this._PageLabelBox.UseCompatibleStateImageBehavior = false;
 			this._PageLabelBox.View = System.Windows.Forms.View.Details;
-			// 
+			//
 			// _SequenceColumn
-			// 
+			//
 			this._SequenceColumn.IsEditable = false;
 			this._SequenceColumn.Text = "序号";
 			this._SequenceColumn.Width = 40;
-			// 
+			//
 			// _PageNumColumn
-			// 
+			//
 			this._PageNumColumn.Text = "文档页码";
 			this._PageNumColumn.Width = 65;
-			// 
+			//
 			// _LabelStyleColumn
-			// 
+			//
 			this._LabelStyleColumn.IsEditable = false;
 			this._LabelStyleColumn.Text = "页码样式";
 			this._LabelStyleColumn.Width = 103;
-			// 
+			//
 			// _LabelPrefixColumn
-			// 
+			//
 			this._LabelPrefixColumn.Text = "前缀文本";
 			this._LabelPrefixColumn.Width = 70;
-			// 
+			//
 			// _StartNumColumn
-			// 
+			//
 			this._StartNumColumn.Text = "起始号码";
 			this._StartNumColumn.Width = 70;
-			// 
+			//
 			// _RemovePageLabelButton
-			// 
+			//
 			this._RemovePageLabelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this._RemovePageLabelButton.Image = global::PDFPatcher.Properties.Resources.Delete;
 			this._RemovePageLabelButton.Location = new System.Drawing.Point(382, 3);
@@ -109,9 +109,9 @@
 			this._RemovePageLabelButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._RemovePageLabelButton.UseVisualStyleBackColor = true;
 			this._RemovePageLabelButton.Click += new System.EventHandler(this._RemovePageLabelButton_Click);
-			// 
+			//
 			// _AddPageLabelButton
-			// 
+			//
 			this._AddPageLabelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this._AddPageLabelButton.Image = global::PDFPatcher.Properties.Resources.Add;
 			this._AddPageLabelButton.Location = new System.Drawing.Point(323, 3);
@@ -122,14 +122,14 @@
 			this._AddPageLabelButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._AddPageLabelButton.UseVisualStyleBackColor = true;
 			this._AddPageLabelButton.Click += new System.EventHandler(this._AddPageLabelButton_Click);
-			// 
+			//
 			// _LabelStyleMenu
-			// 
+			//
 			this._LabelStyleMenu.Name = "_LabelStyleMenu";
 			this._LabelStyleMenu.Size = new System.Drawing.Size(61, 4);
-			// 
+			//
 			// panel1
-			// 
+			//
 			this.panel1.Controls.Add(this._PageLabelBox);
 			this.panel1.Controls.Add(this._RemovePageLabelButton);
 			this.panel1.Controls.Add(this._AddPageLabelButton);
@@ -138,9 +138,9 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(438, 279);
 			this.panel1.TabIndex = 3;
-			// 
+			//
 			// PageLabelEditor
-			// 
+			//
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Controls.Add(this.panel1);

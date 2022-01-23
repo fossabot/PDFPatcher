@@ -29,7 +29,7 @@ internal static class PathAxes
 
     private sealed class SelfAxis : IPathAxis
     {
-        #region IPathAxis 成员
+        #region IPathAxis member
 
         public PathAxisType Type => PathAxisType.None;
 
@@ -38,7 +38,7 @@ internal static class PathAxes
 
     private sealed class ParentAxis : IPathAxis
     {
-        #region IPathAxis 成员
+        #region IPathAxis member
 
         public PathAxisType Type => PathAxisType.Parent;
 
@@ -47,7 +47,7 @@ internal static class PathAxes
 
     private sealed class ChildrenAxis : IPathAxis
     {
-        #region IPathAxis 成员
+        #region IPathAxis member
 
         public PathAxisType Type => PathAxisType.Children;
 
@@ -56,7 +56,7 @@ internal static class PathAxes
 
     private sealed class RootAxis : IPathAxis
     {
-        #region IPathAxis 成员
+        #region IPathAxis member
 
         public PathAxisType Type => PathAxisType.Root;
 
@@ -65,7 +65,7 @@ internal static class PathAxes
 
     private sealed class AncestorsAxis : IPathAxis
     {
-        #region IPathAxis 成员
+        #region IPathAxis member
 
         public PathAxisType Type => PathAxisType.Ancestors;
 
@@ -74,7 +74,7 @@ internal static class PathAxes
 
     private sealed class DescendantsAxis : IPathAxis
     {
-        #region IPathAxis 成员
+        #region IPathAxis member
 
         public PathAxisType Type => PathAxisType.Descendants;
 

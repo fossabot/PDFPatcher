@@ -141,7 +141,7 @@ internal sealed class DocInfoImporter
     }
 
     /// <summary>
-    ///     偏移页码位置并转换书签目标的尺寸单位。
+    ///     Offset the page number position and convert the sized unit of the bookmark target.
     /// </summary>
     /// <param name="source"></param>
     /// <param name="bookmarkPageShift"></param>
@@ -797,7 +797,7 @@ internal sealed class DocInfoImporter
 
                 if (true)
                 {
-                    // TODO: 检测页面旋转方向并设置正确的目标
+                    // TODO: Detect page rotation direction and set the correct goal
                 }
 
                 ar.Add(PdfNull.PDFNULL);

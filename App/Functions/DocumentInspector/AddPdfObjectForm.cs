@@ -19,7 +19,7 @@ public partial class AddPdfObjectForm : Form
 
     public string ObjectName => _ObjectNameBox.Text;
 
-    ///<summary>获取或指定Description的值。</summary>
+    /// <summary>Gets or specifies the value of Description.</summary>
     public int PdfObjectType
     {
         get => _PdfObjectType;

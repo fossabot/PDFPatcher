@@ -33,7 +33,7 @@ public partial class ExtractPageControl : FunctionControl, IResettableControl
 
     public override Bitmap IconImage => Resources.ExtractPages;
 
-    #region IDefaultButtonControl 成员
+    #region IDefaultButtonControl member
 
     public override Button DefaultButton => _ExtractButton;
 
@@ -121,7 +121,7 @@ public partial class ExtractPageControl : FunctionControl, IResettableControl
         AppContext.Exporter.ExtractPageRange = _ExtractPageRangeBox.Text;
 
 
-    #region IResettableControl 成员
+    #region IResettableControl member
 
     void IResettableControl.Reset()
     {

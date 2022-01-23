@@ -4,27 +4,27 @@ using System.Collections.Generic;
 namespace PDFPatcher.Common;
 
 /// <summary>
-///     表示在指定上下文下执行的处理命令。
+///     Indicates the processing command executed under the specified context.
 /// </summary>
-/// <typeparam name="TP">处理命令时的上下文类型。</typeparam>
+/// <typeparam name="TP">The context type when processing commands.</typeparam>
 internal interface ICommand<in TP>
 {
     void Process(TP context, params string[] parameters);
 }
 
 /// <summary>
-///     不区分字符串大小写匹配的容器集合。用于编辑器命令模式。
+///     Do not distinguish string case matches matching container collection. Used to edit command mode.
 /// </summary>
-/// <typeparam name="P">命令模式的处理参数类型。</typeparam>
+/// <typeparam name="P">The processing parameter type of command mode.</typeparam>
 internal sealed class CommandRegistry<P>
 {
     private readonly Dictionary<string, ICommand<P>> _container = new(StringComparer.OrdinalIgnoreCase);
 
     /// <summary>
-    ///     注册执行处理的命令处理器。
+    ///     Register the command processor.
     /// </summary>
-    /// <param name="command">执行命令的处理器。</param>
-    /// <param name="commandIDs">触发该命令的命令标识符。</param>
+    /// <param name="command">Perform the processor of the command.</param>
+    /// <param name="commandIDs">Trigger the command identifier of the command.</param>
     public void Register(ICommand<P> command, params string[] commandIDs)
     {
         foreach (string cmd in commandIDs)
@@ -34,12 +34,12 @@ internal sealed class CommandRegistry<P>
     }
 
     /// <summary>
-    ///     执行指定的命令。
+    ///     Execute the specified command.
     /// </summary>
-    /// <param name="commandID">命令标识符。</param>
-    /// <param name="context">处理命令时的上下文变量。</param>
-    /// <param name="parameters">参数。</param>
-    /// <returns>如找到对应的命令处理，则返回 true，否则返回 false。</returns>
+    /// <param name="commandID">Command identifier.</param>
+    /// <param name="context">The context variable when processing the command.</param>
+    /// <param name="parameters">parameter.</param>
+    /// <returns>Returns true if the corresponding command processing is found, otherwise returns false.</returns>
     public bool Process(string commandID, P context, params string[] parameters)
     {
         if (!_container.TryGetValue(commandID, out ICommand<P> cmd))

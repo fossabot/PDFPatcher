@@ -18,7 +18,7 @@ internal sealed class ChangeCoordinateProcessor : IPdfInfoXmlProcessor
     public bool IsAbsolute { get; }
     public bool IsProportional { get; }
 
-    #region IInfoDocProcessor 成员
+    #region IInfoDocProcessor member
 
     public string Name => string.Concat(IsAbsolute ? "更改" : IsProportional ? "缩放" : "调整", CoordinateName, "坐标定位");
 

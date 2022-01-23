@@ -9,30 +9,36 @@ using SysDirectory = System.IO.Directory;
 
 namespace PDFPatcher.Common;
 
-/// <summary>表示文件路径的结构。此结构可隐式转换为字符串、<see cref="FileInfo" />、<see cref="DirectoryInfo" /> 和 <see cref="Uri" />。</summary>
+/// <summary>
+///     Represents the structure of the file path. This structure can be implicitly converted to a string,
+///     <see cref="FileInfo" />、<see cref="DirectoryInfo" /> and <see cref="Uri" />.
+/// </summary>
 public readonly struct FilePath : IEquatable<FilePath>
 {
     internal static readonly char[] InvalidFileNameChars = Path.GetInvalidFileNameChars();
     internal static readonly char[] InvalidPathChars = Path.GetInvalidPathChars();
     internal static readonly Func<string, string, bool> __PathComparer = StringComparer.OrdinalIgnoreCase.Equals;
 
-    /// <summary>表示匹配任何文件的通配符。</summary>
+    /// <summary>A wildcard that matches any file.</summary>
     public const string Wildcard = "*";
 
-    /// <summary>表示匹配当前目录、递归子目录和任何文件的通配符。</summary>
+    /// <summary>A wildcard that matches the current directory, the recipient library, and any file.</summary>
     public const string RecursiveWildcard = "**";
 
-    /// <summary>表示没有任何内容的路径。</summary>
+    /// <summary>Indicates that there is no path to any content.</summary>
     public static readonly FilePath Empty = new(string.Empty, false);
 
-    /// <summary>获取应用程序所在的目录路径。</summary>
+    /// <summary>Get the directory path where the application is located.</summary>
     public static readonly FilePath AppRoot = ((FilePath)AppDomain.CurrentDomain.BaseDirectory).AppendPathSeparator();
 
     private static readonly char[] __PathSeparators = { Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar };
     private readonly string _value;
 
-    /// <summary>传入文件路径的字符串形式，创建新的 <see cref="FilePath" /> 实例。在创建实例时，删除传入字符串内所有的前导和尾随空白。</summary>
-    /// <param name="path">文件路径的字符串形式。</param>
+    /// <summary>
+    ///     Introducing a string of file path, creating a new <see cref="FilePath" /> instance.When you create an
+    ///     instance, delete all the preambles and trailing gaps in the incoming string.
+    /// </summary>
+    /// <param name="path">The string of the file path.</param>
     public FilePath(string path) : this(path, true)
     {
     }
@@ -44,8 +50,11 @@ public readonly struct FilePath : IEquatable<FilePath>
                 ? path.Trim()
                 : path;
 
-    /// <summary>返回当前路径的目录部分。如目录为相对路径，则先转换为以当前程序所在目录路径为基准的绝对路径。</summary>
-    /// <returns>当前路径的目录部分。</returns>
+    /// <summary>
+    ///     Returns the directory section of the current path. If the directory is a relative path, first convert to an
+    ///     absolute path based on the directory path where the current program is located.
+    /// </summary>
+    /// <returns>The directory section of the current path.</returns>
     public FilePath Directory
     {
         get
@@ -101,7 +110,7 @@ public readonly struct FilePath : IEquatable<FilePath>
         }
     }
 
-    /// <summary>返回当前路径是否以目录分隔符结束。</summary>
+    /// <summary>Returns whether the current path ends with a directory separator.</summary>
     public bool EndsWithPathSeparator
     {
         get
@@ -126,13 +135,13 @@ public readonly struct FilePath : IEquatable<FilePath>
         }
     }
 
-    /// <summary>检查当前路径对应的文件是否存在。</summary>
+    /// <summary>Checks if the file corresponding to the current path exists.</summary>
     public bool ExistsFile => File.Exists(ToFullPath()._value);
 
-    /// <summary>检查当前路径对应的目录是否存在。</summary>
+    /// <summary>Checks if the directory corresponding to the current path exists.</summary>
     public bool ExistsDirectory => SysDirectory.Exists(ToFullPath()._value);
 
-    /// <summary>获取文件路径的文件名部分。</summary>
+    /// <summary>Gets the file name section of the file path.</summary>
     public string FileName
     {
         get
@@ -155,7 +164,7 @@ public readonly struct FilePath : IEquatable<FilePath>
         }
     }
 
-    /// <summary>获取文件路径的文件名（不包含扩展名）部分。</summary>
+    /// <summary>Gets the file name (not including the extension) section of the file path.</summary>
     public string FileNameWithoutExtension
     {
         get
@@ -187,7 +196,7 @@ public readonly struct FilePath : IEquatable<FilePath>
         }
     }
 
-    /// <summary>获取文件路径的文件扩展名部分。</summary>
+    /// <summary>Gets the file extension section of the file path.</summary>
     public string FileExtension
     {
         get
@@ -217,22 +226,22 @@ public readonly struct FilePath : IEquatable<FilePath>
         }
     }
 
-    /// <summary>返回当前路径是否为空。</summary>
+    /// <summary>Returns whether the current path is empty.</summary>
     public bool IsEmpty => string.IsNullOrEmpty(_value);
 
-    /// <summary>返回当前文件路径是否有效。</summary>
+    /// <summary>Returns whether the current file path is valid.</summary>
     public bool IsValidPath => _value?.Trim().Length > 0 && _value.IndexOfAny(InvalidPathChars) == -1;
 
-    /// <summary>在路径后附加 <see cref="Path.DirectorySeparatorChar" /> 字符。</summary>
-    /// <returns>附加了“\”字符的路径。</returns>
+    /// <summary>Additional <see cref="path.directoryseparatorcha" /> character after the path.</summary>
+    /// <returns>The path to "\" characters is attached.</returns>
     public FilePath AppendPathSeparator() =>
         IsEmpty == false && _value[_value.Length - 1] == Path.DirectorySeparatorChar
             ? this
             : (FilePath)(_value + Path.DirectorySeparatorChar);
 
-    /// <summary>替换文件路径的扩展名为新的扩展名。</summary>
-    /// <param name="extension">新的扩展名。</param>
-    /// <returns>替换扩展名后的路径。</returns>
+    /// <summary>Replaces the extension of the file path as a new extension.</summary>
+    /// <param name="extension">New extension.</param>
+    /// <returns>Replace the path after the extension.</returns>
     public FilePath ChangeExtension(string extension)
     {
         if (IsEmpty)
@@ -275,13 +284,15 @@ public readonly struct FilePath : IEquatable<FilePath>
     /// <inheritdoc cref="Combine(FilePath, bool)" />
     public FilePath Combine(FilePath path) => Combine(path, false);
 
-    /// <summary>合并两个文件路径。如 <paramref name="path" /> 为绝对路径，则返回该路径。</summary>
-    /// <param name="path">子路径。</param>
+    /// <summary>combines two file paths.If <paramref name="path" /> is an absolute path, the path is returned.</summary>
+    /// <param name="path">subpath.</param>
     /// <param name="rootAsRelative">
-    ///     对于 <paramref name="path" /> 以 <see cref="Path.DirectorySeparatorChar" /> 开头的情况，取值为
-    ///     <see langword="true" /> 时，视为以当前目录为基础目录；否则将 <paramref name="path" /> 视为从根目录开始，返回 <paramref name="path" />。
+    ///     For the case of <see cref="Path.DirectorySeparatorChar" /> in <see cref="Path.DirectorySeparatorChar" />
+    ///     <see language="true" /> is considered to be based on the current directory; otherwise <paramref name="path" /> will
+    ///     be deemed from the root directory, return <paramref name="path" /".
+    /// 
     /// </param>
-    /// <returns>合并后的路径。</returns>
+    /// <returns>After the merged path.</returns>
     public FilePath Combine(FilePath path, bool rootAsRelative)
     {
         if (path.IsEmpty)
@@ -297,16 +308,17 @@ public readonly struct FilePath : IEquatable<FilePath>
         string p2 = path._value;
         char ps = p2[0];
         bool p2r;
-        if ((p2r = IsDirectorySeparator(ps)) && rootAsRelative == false // note 不能调转 && 参数的顺序，p2r 在后面有用
+        if ((p2r = IsDirectorySeparator(ps)) &&
+            rootAsRelative == false // Note cannot be modified in the order of && parameters, and p2r is useful later.
             || p2.Length > 1 && p2[1] == Path.VolumeSeparatorChar)
         {
             return path;
         }
 
-        string p1 = _value /*.TrimEnd()*/; // _value 已在创建时 Trim 过，不需再 Trim
+        string p1 = _value /*.TrimEnd()*/; // _value has been created when Trim is over, no need to Trim
         if (ps == '.')
         {
-            // 合并扩展名到当前路径
+            // Merge expansion name to the current path
             return p1 + p2;
         }
 
@@ -315,8 +327,8 @@ public readonly struct FilePath : IEquatable<FilePath>
             : new FilePath(p1 + p2, false);
     }
 
-    /// <summary>为当前文件路径创建目录。如文件路径为空，则不创建路径。</summary>
-    /// <returns>所创建目录的路径。</returns>
+    /// <summary>Create a directory for the current file path. If the file path is empty, the path is not created.</summary>
+    /// <returns>The path to the creation of the directory.</returns>
     public FilePath CreateDirectory()
     {
         if (IsEmpty)
@@ -333,8 +345,8 @@ public readonly struct FilePath : IEquatable<FilePath>
         return p;
     }
 
-    /// <summary>为当前文件路径创建其所属的目录。如文件路径为空，则不创建路径。</summary>
-    /// <returns>所创建目录的路径。</returns>
+    /// <summary>Creates the directory you belong to the current file path. If the file path is empty, the path is not created.</summary>
+    /// <returns>The path to the creation of the directory.</returns>
     public FilePath CreateContainingDirectory()
     {
         if (IsEmpty)
@@ -351,29 +363,49 @@ public readonly struct FilePath : IEquatable<FilePath>
         return f;
     }
 
-    /// <summary>删除当前文件路径对应的目录。如路径指向的目录不存在，不执行任何操作。</summary>
-    /// <param name="recursive">是否递归删除子目录的文件</param>
+    /// <summary>
+    ///     Deletes the directory corresponding to the current file path. If the directory pointed to by the path does not
+    ///     exist, no operation is performed.
+    /// </summary>
+    /// <param name="recursive">Whether it is recursively deleted subdirectory file </param>
     public void DeleteDirectory(bool recursive)
     {
         string p = ToFullPath()._value;
         SysDirectory.Delete(p, recursive);
     }
 
-    /// <summary>返回附加指定扩展名的实例。如当前路径已包含指定的扩展名，则返回当前路径，否则返回附加扩展名的实例。</summary>
-    /// <param name="extension">需要附加的文件扩展名。</param>
-    /// <returns>附加指定扩展名的实例。</returns>
+    /// <summary>
+    ///     Returns an instance of the additional specified extension. If the current path already contains the specified
+    ///     extension, return the current path, otherwise returns an instance of the attached extension.
+    /// </summary>
+    /// <param name="extension">An additional file extension is required.</param>
+    /// <returns>An instance of the specified extension is added.</returns>
     public FilePath EnsureExtension(string extension) =>
         HasExtension(extension) ? this : new FilePath(_value + extension);
 
-    /// <summary>获取当前 <see cref="FilePath" /> 下符合匹配模式的文件。在执行匹配前，先将当前实例转换为完整路径。当前用户无权访问的目录将被忽略。</summary>
-    /// <param name="pattern">匹配文件用的模式。模式中的“\”用于分隔目录，“**”表示当前目录及其包含的所有目录，“*”匹配 0 到多个字符，“?”匹配 1 个字符。模式为空时，返回所有文件。</param>
-    /// <returns>返回匹配模式的所有文件。</returns>
+    /// <summary>
+    ///     Gets the current <see cref="FilePath" /> that meets the matching mode.Convert the current instance to the full
+    ///     path before performing the match.The directory where the current user has no right to access will be ignored.
+    /// </summary>
+    /// <param name="patter">
+    ///     Match the mode of the file."\" In the mode is used to split the directory, "**" means the current
+    ///     directory and all directories therebet, "*" matches 0 to multiple characters, "?" Matches 1 character.When the mode
+    ///     is empty, return all files.
+    /// </param>
+    /// <returns>Returns all files in matching mode.</returns>
     public FilePath[] GetFiles(string pattern) => GetFiles(pattern, null);
 
-    /// <summary>获取当前 <see cref="FilePath" /> 下符合匹配模式和筛选条件的文件。在执行匹配前，先将当前实例转换为完整路径。当前用户无权访问的目录将被忽略。</summary>
-    /// <param name="pattern">匹配文件用的模式。模式中的“\”用于分隔目录，“**”表示当前目录及其包含的所有目录，“*”匹配 0 到多个字符，“?”匹配 1 个字符。</param>
-    /// <param name="filter">用于筛选文件名的委托。</param>
-    /// <returns>返回匹配模式的所有文件。</returns>
+    /// <summary>
+    ///     Gets files that meet the matching mode and filter conditions under <see cref="FilePath" />.Convert the current
+    ///     instance to the full path before performing the match.The directory where the current user has no right to access
+    ///     will be ignored.
+    /// </summary>
+    /// <param name="patter">
+    ///     Match the mode of the file."\" In the mode is used to split the directory, "**" means the current
+    ///     directory and all directories therebet, "*" matches 0 to multiple characters, "?" Matches 1 character.
+    /// </param>
+    /// <param name="filter">For the purpose of filtering the file name.</param>
+    /// <returns>Returns all files in matching mode.</returns>
     public FilePath[] GetFiles(string pattern, Predicate<string> filter)
     {
         FilePath f = ToFullPath();
@@ -503,13 +535,13 @@ public readonly struct FilePath : IEquatable<FilePath>
         }
     }
 
-    /// <summary>将路径按目录拆分为多个部分，并删除其中的无效部分。</summary>
-    /// <returns>目录的各个部分。</returns>
+    /// <summary>Spread the path into multiple parts by directory, and delete the invalid part.</summary>
+    /// <returns>Directory of the directory.</returns>
     public string[] GetParts() => GetParts(true);
 
-    /// <summary>将路径按目录拆分为多个部分。</summary>
-    /// <param name="removeInvalidParts">是否删除无效的部分。</param>
-    /// <returns>目录的各个部分。</returns>
+    /// <summary>Spread the path into multiple parts by directory.</summary>
+    /// <param name="removeinvalidparts">Whether to delete an invalid part.</param>
+    /// <returns>Directory of the directory.</returns>
     public string[] GetParts(bool removeInvalidParts)
     {
         if (IsEmpty)
@@ -527,7 +559,7 @@ public readonly struct FilePath : IEquatable<FilePath>
             {
                 case 0:
                     {
-                        // 保留第一个根目录引用
+                        // Retain the first root directory reference
                         if (i == 0)
                         {
                             r = true;
@@ -542,10 +574,10 @@ public readonly struct FilePath : IEquatable<FilePath>
 
             if (s == ".." || s.StartsWith("..", StringComparison.Ordinal) && s.TrimEnd('.').Length == 0)
             {
-                // 前一级为根目录
+                // The previous level is rooted
                 if (r && v == 1)
                 {
-                    // 删除根目录级的目录部分
+                    // Delete the root-based directory part
                     if (p[0].Length > 2)
                     {
                         p[0] = p[0].Substring(0, 2);
@@ -554,7 +586,7 @@ public readonly struct FilePath : IEquatable<FilePath>
                     continue;
                 }
 
-                // 保留0级或上一级为“..”的目录符
+                // Keep 0 or last level ".." catalog
                 if (v == 0 || p[v - 1] == "..")
                 {
                     s = "..";
@@ -563,7 +595,7 @@ public readonly struct FilePath : IEquatable<FilePath>
                     continue;
                 }
 
-                // 删除前一级
+                // Delete the previous level
                 --v;
                 continue;
             }
@@ -575,7 +607,7 @@ public readonly struct FilePath : IEquatable<FilePath>
                 {
                     if (s.Length > 1)
                     {
-                        // 根目录
+                        // Root directory
                         if (s[1] == Path.VolumeSeparatorChar)
                         {
                             if (Array.IndexOf(InvalidFileNameChars, s[0]) != -1
@@ -616,16 +648,16 @@ public readonly struct FilePath : IEquatable<FilePath>
     }
 
 
-    /// <summary>检查当前路径是否以指定的扩展名结束（不区分大小写）。</summary>
-    /// <param name="extension">文件扩展名。</param>
+    /// <summary>Checks if the current path ends with the specified extension (not case sensitive).</summary>
+    /// <param name="extension">file extension.</param>
     public bool HasExtension(string extension) =>
         string.IsNullOrEmpty(extension)
         || IsEmpty == false && _value.EndsWith(extension, StringComparison.OrdinalIgnoreCase)
                             && (extension[0] == '.' || _value.Length > extension.Length &&
                                 _value[_value.Length - extension.Length - 1] == '.');
 
-    /// <summary>返回文件名是否以指定的任意一个扩展名结尾（不区分大小写）。</summary>
-    /// <param name="extensions">扩展名列表。</param>
+    /// <summary>Returns whether the file name is tail with any of the specified extension (not case sensitive).</summary>
+    /// <param name="extensions">extension list.</param>
     public bool HasExtension(params string[] extensions)
     {
         string ext = FileExtension;
@@ -640,9 +672,12 @@ public readonly struct FilePath : IEquatable<FilePath>
                                                                        ext[ext.Length - item.Length - 1] == '.'));
     }
 
-    /// <summary>检查当前路径是否属于指定的路径（子目录或其下文件）。</summary>
-    /// <param name="containingPath">上级目录。</param>
-    /// <param name="rootAsRelative">是否将当前目录以 <see cref="Path.DirectorySeparatorChar" /> 开头的情况视为相对路径。</param>
+    /// <summary>Checks if the current path belongs to the specified path (subdirectory, or next file).</summary>
+    /// <param name="containingPath">The upper directory.</param>
+    /// <param name="rootAsRelative">
+    ///     Whether the current directory will be regarded as the relative path in the case of
+    ///     <see cref="Path.DirectorySeparatorChar" />.
+    /// </param>
     public bool IsInDirectory(FilePath containingPath, bool rootAsRelative)
     {
         string p = containingPath.ToFullPath()._value;
@@ -653,13 +688,19 @@ public readonly struct FilePath : IEquatable<FilePath>
                        rootAsRelative));
     }
 
-    /// <summary>返回指定的字符是否 <see cref="Path.DirectorySeparatorChar" /> 或 <see cref="Path.AltDirectorySeparatorChar" />。</summary>
-    /// <param name="ch">要检查的字符。</param>
+    /// <summary>
+    ///     Returns whether the specified character is <see cref="path.directoryseparetor" /> or
+    ///     <see cref="path.altdirectoryseparatorchar" />.
+    /// </summary>
+    /// <param name="ch">The characters to check.</param>
     private static bool IsDirectorySeparator(char ch) =>
         ch == Path.DirectorySeparatorChar || ch == Path.AltDirectorySeparatorChar;
 
-    /// <summary>返回当前路径是否为子路径（不会指向当前目录的上级目录）。</summary>
-    /// <param name="rootAsRelative">是否将目录以 <see cref="Path.DirectorySeparatorChar" /> 开头的情况视为子路径。</param>
+    /// <summary>Returns whether the current path is a sub-path (not pointing to the current directory).</summary>
+    /// <param name="rootAsRelative">
+    ///     Whether the directory is treated as a sub-path in the case where
+    ///     <see cref="Path.DirectorySeparatorChar" />.
+    /// </param>
     public bool IsSubPath(bool rootAsRelative)
     {
         if (string.IsNullOrEmpty(_value))
@@ -720,10 +761,11 @@ public readonly struct FilePath : IEquatable<FilePath>
     private static readonly string __DirectorySeparator = Path.DirectorySeparatorChar.ToString();
 
     /// <summary>
-    ///     将文件路径转换为绝对定位路径，并删除目录名称中的空白。同时将 <see cref="Path.AltDirectorySeparatorChar" /> 转换为
-    ///     <see cref="Path.DirectorySeparatorChar" />。
+    ///     Translate the file path to the absolute positioning path and delete the blank in the directory name.At the same
+    ///     time, <see cref="path.altdirectoryseparatorchar" /> is converted to
+    ///     <see cref="Path.DirectorySeparatorChar" />.
     /// </summary>
-    /// <returns>标准的绝对定位路径。</returns>
+    /// <returns>The absolute positioning path of the standard.</returns>
     public FilePath Normalize()
     {
         if (_value.IsNullOrWhiteSpace())
@@ -748,32 +790,43 @@ public readonly struct FilePath : IEquatable<FilePath>
             : new FilePath(Path.GetFullPath(AppRoot.Combine(string.Join(__DirectorySeparator, p))._value));
     }
 
-    /// <summary>返回读写文件的 <see cref="Stream" />。</summary>
+    /// <summary>Returns <see cref="Stream" /> of the read and write file.</summary>
     /// <inheritdoc cref="OpenFile(FileMode, FileAccess, FileShare, int)" />
     public Stream OpenFile(FileMode mode, FileAccess access, FileShare share) =>
         new FileStream(ToFullPath()._value, mode, access, share);
 
-    /// <summary>返回读写文件的 <see cref="Stream" />。</summary>
-    /// <param name="mode">指定文件访问方式。</param>
-    /// <param name="access">指定文件读写方式。</param>
-    /// <param name="share">指定文件访问共享方式。</param>
-    /// <param name="bufferSize">读写缓冲区的尺寸。</param>
+    /// <summary>Returns <see cref="Stream" /> of the read and write file.</summary>
+    /// <param name="mode">Specify file access method.</param>
+    /// <param name="access">Specifies the file read and write mode.</param>
+    /// <param name="share">Specifies the file access sharing method.</param>
+    /// <param name="buffersize">The size of the read and write buffer.</param>
     public Stream OpenFile(FileMode mode, FileAccess access, FileShare share, int bufferSize) =>
         new FileStream(ToFullPath()._value, mode, access, share, bufferSize);
 
-    /// <summary>创建以指定编码读取文件的 <see cref="StreamReader" /> 实例。</summary>
-    /// <param name="encoding">用于读取文件的编码。编码为 null 时采用 UTF-8 编码。</param>
-    /// <returns>读取文件的 <see cref="StreamReader" /> 实例。</returns>
+    /// <summary>Create to read files with specified encoding <see cref="StreamReader" /> instance.</summary>
+    /// <param name="encoding">Used to read the encoding of the file.UTF-8 encoding is encoded as NULL.</param>
+    /// <returns>Read file <see cref="StreamReader" /> instance.</returns>
     public StreamReader OpenTextReader(Encoding encoding) =>
         new(ToFullPath()._value, encoding ?? Encoding.UTF8, true);
 
-    /// <summary>打开当前路径对应的文件并读取所有内容为字节数组。如文件不存在，返回 0 长度的字节数组。此方法使用 FileStream 读取文件，打开或读取文件过程中可能返回异常。</summary>
-    /// <returns>文件的字节数组。</returns>
+    /// <summary>
+    ///     Opens the file corresponding to the current path and read all content as byte arrays. If the file does not
+    ///     exist, return a zyte array of 0 lengths.This method uses FileStream to read files, open or read files may return an
+    ///     exception.
+    /// </summary>
+    /// <returns>The byte array of files.</returns>
     public byte[] ReadAllBytes() => ReadAllBytes(-1);
 
-    /// <summary>打开当前路径对应的文件并读取所有内容为字节数组。如文件不存在，返回 0 长度的字节数组。此方法使用 FileStream 读取文件，打开或读取文件过程中可能返回异常。</summary>
-    /// <param name="maxBytes">允许读取的最大字节数。如此值非正整数，则按读取文件的大小读取最多 <see cref="int.MaxValue" /> 个字节。</param>
-    /// <returns>文件的字节数组。</returns>
+    /// <summary>
+    ///     Opens the file corresponding to the current path and read all content as byte arrays. If the file does not
+    ///     exist, return a zyte array of 0 lengths.This method uses FileStream to read files, open or read files may return an
+    ///     exception.
+    /// </summary>
+    /// <param name="maxBytes">
+    ///     Allows the maximum number of bytes to be read.Such a value is not positively integer, then read
+    ///     the most <see cref="int.maxvalue" /> by the size of the read file.
+    /// </param>
+    /// <returns>The byte array of files.</returns>
     public byte[] ReadAllBytes(int maxBytes)
     {
         if (ExistsFile == false)
@@ -793,9 +846,9 @@ public readonly struct FilePath : IEquatable<FilePath>
         return r;
     }
 
-    /// <summary>将路径中的无效字符替换为 <paramref name="substitution" />。</summary>
-    /// <param name="substitution">用于替换无效字符的字符。</param>
-    /// <returns>替换了无效字符的路径。</returns>
+    /// <summary>replaces the invalid character in the path to <paramref name="substitution" />.</summary>
+    /// <param name="substitution">The characters used to replace invalid characters.</param>
+    /// <returns>Replace the path of invalid characters.</returns>
     public FilePath SubstituteInvalidChars(char substitution)
     {
         if (IsEmpty)
@@ -820,110 +873,128 @@ public readonly struct FilePath : IEquatable<FilePath>
         return r ? new FilePath(new string(a)) : this;
     }
 
-    /// <summary>将路径转换为绝对定位的路径。路径的基准位置为 <see cref="AppRoot" />。执行此方法前，必须确保路径中不包含无效字符，否则将抛出异常。</summary>
-    /// <returns>采用绝对定位路径的实例。</returns>
-    /// <exception cref="ArgumentException">路径无效。</exception>
+    /// <summary>
+    ///     converts the path to an absolute positioning path.The reference position of the path is <see cref="AppRoot" />
+    ///     .Before performing this method, you must ensure that you do not include invalid characters in the path, otherwise
+    ///     you will throw an exception.
+    /// </summary>
+    /// <returns>An example of an absolute positioning path.</returns>
+    /// <exception cref="ArgumentException">The path is invalid.</exception>
     public FilePath ToFullPath() => Path.GetFullPath(Path.Combine(AppRoot._value, _value));
 
     /// <summary>
-    ///     <para>将 <see cref="FilePath" /> 实例转换为完全路径，再隐式转换为 <see cref="FileInfo" /> 实例。路径的基准位置为 <see cref="AppRoot" />。</para>
-    ///     <note type="note">事实上，<see cref="FilePath" /> 实例可隐式转换为 <see cref="FileInfo" /> 实例。</note>
+    ///     <para>
+    ///         converts the <see cref="FilePath" /> instance into a full path, and then implicitly converted to the
+    ///         <see cref="FileInfo" /> instance.The reference position of the path is <see cref="AppRoot" />.
+    ///     </para>
+    ///     <note type="note">
+    ///         In fact, <see cref="FilePath" /> instance can be implicitly converted to <see cref="FileInfo" />
+    ///         instance.
+    ///     </note>
     /// </summary>
-    /// <returns>将当前路径转换为完全路径后对应的 <see cref="FileInfo" /> 实例。</returns>
+    /// <returns>Convert the current path to the <see cref="FileInfo" /> instance after the full path.</returns>
     [DebuggerStepThrough]
     public FileInfo ToFileInfo() => this;
 
-    #region 类型映射
+    #region Type mapping
 
-    /// <summary>将字符串隐式转换为 <see cref="FilePath" /> 实例，删除传入字符串内所有的前导和尾随空白。</summary>
-    /// <param name="path">需要转换的路径字符串。</param>
-    /// <returns><see cref="FilePath" /> 实例。</returns>
+    /// <summary>
+    ///     Assume the string to <see cref="FilePath" /> instance, deleting all the preambles and trailing blank in
+    ///     incoming strings.
+    /// </summary>
+    /// <param name="path">The path string that needs to be converted.</param>
+    /// <returns><see cref="FilePath" /> instance.</returns>
     [DebuggerStepThrough]
     public static implicit operator FilePath(string path) => new(path);
 
-    /// <summary>将 <see cref="FilePath" /> 实例隐式转换为字符串。</summary>
-    /// <param name="path">需要转换的路径。</param>
-    /// <returns>以字符串形式表示的实例。</returns>
+    /// <summary>implicitly converted <see cref="FilePath" /> instance to strings.</summary>
+    /// <param name="path">The path to the conversion is required.</param>
+    /// <returns>The instance represented by a string.</returns>
     [DebuggerStepThrough]
     public static implicit operator string(FilePath path) => path._value;
 
-    /// <summary>将 <see cref="FileInfo" /> 显式转换为 <see cref="FilePath" /> 实例。</summary>
-    /// <param name="file">需要转换的路径。</param>
+    /// <summary>Explicitly converts <see cref="FileInfo" /> to <see cref="FilePath" /> instance.</summary>
+    /// <param name="file">The path to the conversion is required.</param>
     [DebuggerStepThrough]
     public static explicit operator FilePath(FileInfo file) =>
         file == null ? Empty : new FilePath(file.FullName, false);
 
     /// <summary>
-    ///     将 <see cref="FilePath" /> 实例转换为完全路径，再隐式转换为 <see cref="FileInfo" /> 实例。路径的基准位置为 <see cref="AppRoot" />。
+    ///     convert the <see cref="FilePath" /> instance to a full path, and then implicitly converted to
+    ///     <see cref="FileInfo" /> instance.The reference position of the path is <see cref="AppRoot" />.
     /// </summary>
-    /// <param name="path">需要转换的路径。</param>
-    /// <returns>将当前路径转换为完全路径后对应的 <see cref="FileInfo" /> 实例。</returns>
+    /// <param name="path">The path to the conversion is required.</param>
+    /// <returns>Convert the current path to the <see cref="FileInfo" /> instance after the full path.</returns>
     /// <seealso cref="ToFullPath" />
     [DebuggerStepThrough]
     public static implicit operator FileInfo(FilePath path) => new(path.ToFullPath()._value);
 
-    /// <summary>将 <see cref="DirectoryInfo" /> 显式转换为 <see cref="FilePath" /> 实例。</summary>
-    /// <param name="directory">需要转换的路径。</param>
+    /// <summary>Explicitly converts <see cref="DirectoryInfo" /> to the <see cref="FilePath" /> instance.</summary>
+    /// <param name="Directory">The path to the conversion is required.</param>
     [DebuggerStepThrough]
     public static explicit operator FilePath(DirectoryInfo directory) =>
         directory == null ? Empty : new FilePath(directory.FullName, false);
 
     /// <summary>
-    ///     将 <see cref="FilePath" /> 实例转换为完全路径，再隐式转换为 <see cref="DirectoryInfo" /> 实例。路径的基准位置为 <see cref="AppRoot" />。
+    ///     convert the <see cref="FilePath" /> instance to a full path, and then implicitly converted to
+    ///     <see cref="DirectoryInfo" /> instance.The reference position of the path is <see cref="AppRoot" />.
     /// </summary>
-    /// <param name="path">需要转换的路径。</param>
-    /// <returns>将当前路径转换为完全路径后对应的 <see cref="DirectoryInfo" /> 实例。</returns>
+    /// <param name="path">The path to the conversion is required.</param>
+    /// <returns>converts the current path to the <see cref="DirectoryInfo" /> instance after the full path.</returns>
     /// <seealso cref="ToFullPath" />
     [DebuggerStepThrough]
     public static implicit operator DirectoryInfo(FilePath path) => new(path.ToFullPath()._value);
 
-    /// <summary>将 <see cref="FilePath" /> 实例隐式转换为 <see cref="Uri" /> 实例。</summary>
-    /// <param name="path">需要转换的路径。</param>
+    /// <summary>implicitly converted <see cref="FilePath" /> instance Implicit to <see cref="Uri" /> instance.</summary>
+    /// <param name="path">The path to the conversion is required.</param>
     [DebuggerStepThrough]
     public static implicit operator Uri(FilePath path) => new(path._value);
 
     #endregion
 
-    #region IEquatable<FilePath> 实现
+    #region IEquatable<FilePath> Implement
 
-    /// <summary>比较两个文件路径是否相同。</summary>
-    /// <param name="path1">需要比较的第一个路径。</param>
-    /// <param name="path2">需要比较的第二个路径。</param>
-    /// <returns>相同时，返回 true。</returns>
+    /// <summary>Compares whether the two file paths are the same.</summary>
+    /// <param name="path1">The first path that needs to be compared.</param>
+    /// <param name="path2">The second path that needs to be compared.</param>
+    /// <returns>Returns True.</returns>
     [DebuggerStepThrough]
     public static bool operator ==(FilePath path1, FilePath path2) => path1.Equals(path2);
 
-    /// <summary>比较两个文件路径是否不相同。</summary>
-    /// <param name="path1">需要比较的第一个路径。</param>
-    /// <param name="path2">需要比较的第二个路径。</param>
-    /// <returns>不相同时，返回 true。</returns>
+    /// <summary>Compares whether the two file paths are different.</summary>
+    /// <param name="path1">The first path that needs to be compared.</param>
+    /// <param name="path2">The second path that needs to be compared.</param>
+    /// <returns>Non-identical time, return true.</returns>
     [DebuggerStepThrough]
     public static bool operator !=(FilePath path1, FilePath path2) => !path1.Equals(path2);
 
-    /// <summary>指示当前文件路径是否等于同一类型的另一个文件路径。</summary>
-    /// <param name="other">与此对象进行比较的对象。</param>
-    /// <returns>如果当前对象等于 <paramref name="other" /> 参数，则为 <see langword="true" />；否则为 <see langword="false" />。</returns>
+    /// <summary>Indicates if the current file path is equal to another file path of the same type.</summary>
+    /// <param name="other">Objects compared to this object.</param>
+    /// <returns>
+    ///     If the current object is equal to <paramref name="other" /> parameter, it is <see langword="true" />;
+    ///     otherwise, for <see langword="false" />.
+    /// </returns>
     public bool Equals(FilePath other) =>
         __PathComparer(_value, other._value)
         || __PathComparer(
             Path.Combine(AppRoot._value, _value ?? string.Empty),
             Path.Combine(AppRoot._value, other._value ?? string.Empty));
 
-    /// <summary>确定当前文件路径是否与另一个实例相等。</summary>
-    /// <param name="obj">需要与当前实例比较的对象。</param>
-    /// <returns>在两个文件路径相等时，返回 true。</returns>
+    /// <summary>Determines if the current file path is equal to another instance.</summary>
+    /// <param name="obj">An object that needs to be compared with the current instance.</param>
+    /// <returns>Returns True when two file paths are equal.</returns>
     [DebuggerStepThrough]
     public override bool Equals(object obj) => obj is FilePath && Equals((FilePath)obj);
 
-    /// <summary>返回路径字符串的散列值。</summary>
-    /// <returns>路径字符串的散列值。</returns>
+    /// <summary>Returns the hash value of the path string.</summary>
+    /// <returns>The hash value of the path string.</returns>
     [DebuggerStepThrough]
     public override int GetHashCode() => _value == null ? 0 : _value.GetHashCode();
 
     #endregion
 
-    /// <summary>返回表示当前文件路径的 <see cref="string" /> 实例。</summary>
-    /// <returns>表示当前文件路径的 <see cref="string" /> 实例。</returns>
+    /// <summary>Returns the <see cref="string" /> instance representing the current file path.</summary>
+    /// <returns>represents the <see cref="string" /> instance of the current file path.</returns>
     [DebuggerStepThrough]
     public override string ToString() => _value ?? string.Empty;
 }

@@ -36,7 +36,7 @@ internal static class Constants
     internal const string AppUpdateFile = "http://files.cnblogs.com/pdfpatcher/pdfpatcher.update.xml";
 
     /// <summary>
-    ///     信息文件根元素。
+    ///     Information file root elements.
     /// </summary>
     internal const string PdfInfo = "PDF信息";
 
@@ -82,7 +82,7 @@ internal static class Constants
         internal static readonly string[] AllSupportedImageExtension = { Tif, Jpg, Png, Gif, Tiff, Jpeg, Bmp, Jp2 };
     }
 
-    #region PDF 对象类型
+    #region PDF object type
 
     internal static class ObjectTypes
     {
@@ -97,7 +97,7 @@ internal static class Constants
 
     #endregion
 
-    #region 文件名替代符
+    #region File name alternative
 
     internal static class FileNameMacros
     {
@@ -112,7 +112,7 @@ internal static class Constants
 
     #endregion
 
-    #region 度量单位
+    #region Unit of measure
 
     internal static class Units
     {
@@ -131,7 +131,7 @@ internal static class Constants
 
     #endregion
 
-    #region 对齐方式
+    #region Alignment
 
     internal static class Alignments
     {
@@ -139,7 +139,7 @@ internal static class Constants
 
     #endregion
 
-    #region 方位
+    #region Coordinates
 
     internal static class Coordinates
     {
@@ -158,7 +158,7 @@ internal static class Constants
 
     #endregion
 
-    #region 编码
+    #region Encoding
 
     internal static class Encoding
     {
@@ -178,7 +178,7 @@ internal static class Constants
 
     #endregion
 
-    #region 页面内容
+    #region Page content
 
     internal static class Content
     {
@@ -229,7 +229,7 @@ internal static class Constants
 
     #endregion
 
-    #region 光学字符识别
+    #region Optical character identification
 
     internal static class Ocr
     {
@@ -284,7 +284,7 @@ internal static class Constants
 
     #endregion
 
-    #region 导出为图片
+    #region Export to picture
 
     internal static class ColorSpaces
     {
@@ -295,7 +295,7 @@ internal static class Constants
 
     #endregion
 
-    #region 超星命名规则
+    #region Caj naming rules
 
     internal static class CajNaming
     {
@@ -316,11 +316,11 @@ internal static class Constants
         internal const string IsInclusive = "正向过滤";
     }
 
-    #region 功能名称
+    #region function name
 
     #endregion
 
-    #region 文档信息
+    #region Documentation
 
     internal static class Info
     {
@@ -349,7 +349,7 @@ internal static class Constants
 
     #endregion
 
-    #region 阅读器设定
+    #region Reader setting
 
     internal const string PageLayout = "页面布局";
 
@@ -400,7 +400,7 @@ internal static class Constants
 
     #endregion
 
-    #region 页码样式
+    #region Page code style
 
     internal const string PageLabels = "页码样式";
 
@@ -427,7 +427,7 @@ internal static class Constants
 
     #endregion
 
-    #region 页码范围
+    #region Page size range
 
     internal const string PageRange = "页码范围";
 
@@ -441,7 +441,7 @@ internal static class Constants
 
     #endregion
 
-    #region 目标
+    #region Destination
 
     internal const string NamedDestination = "命名位置";
 
@@ -490,7 +490,7 @@ internal static class Constants
 
     #endregion
 
-    #region 书签
+    #region Bookmark
 
     internal const string Bookmark = "书签";
 
@@ -533,7 +533,7 @@ internal static class Constants
 
     #endregion
 
-    #region 页面链接
+    #region Page link
 
     internal const string PageLink = "页面链接";
 
@@ -550,7 +550,7 @@ internal static class Constants
 
     #endregion
 
-    #region 字体属性
+    #region Font properties
 
     internal static class Font
     {

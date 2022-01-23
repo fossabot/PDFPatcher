@@ -40,12 +40,12 @@ internal sealed class Controller
         ProcessBookmarks(View.AffectsDescendantBookmarks, true, processor);
 
     /// <summary>
-    ///     逐个处理选中的书签。
+    ///     Process the selected bookmarks one by one.
     /// </summary>
-    /// <param name="includeDescendant">处理操作是否包含选中书签的内层书签。</param>
-    /// <param name="selectChildren">处理时是否遍历选中的内层书签。</param>
-    /// <param name="processor">用于处理书签的 <see cref="IPdfInfoXmlProcessor" />。</param>
-    /// <returns>处理后的书签。</returns>
+    /// <param name="includeDescendant">The processing operation includes the inner bookmark of the selected bookmark. </param>
+    /// <param name="selectChildren">Whether to traverse the selected inner bookmark during processing. </param>
+    /// <param name="processor"> <see cref="IPdfInfoXmlProcessor" /> for processing bookmarks. </param>
+    /// <returns>The processed bookmark. </returns>
     internal IEnumerable<XmlNode> ProcessBookmarks(bool includeDescendant, bool selectChildren,
         IPdfInfoXmlProcessor processor)
     {
@@ -240,7 +240,7 @@ internal sealed class Controller
         }
 
         RecentFileMenuHelper.AddRecentHistoryFile(path);
-        //// 书签编辑器窗口需要重画表头
+        //// Bookmark Editor window requires a heavy blow watchor window requires a heavy blow watch
         //this._BookmarkBox.HeaderControl.Invalidate ();
     }
 
@@ -281,7 +281,7 @@ internal sealed class Controller
         View.MainPanel.Enabled = View.BookmarkToolbar.Enabled = true;
         if (e.Result is not object[] r)
         {
-            // 异常终止
+            // Abnormal termination
             ClearBookmarks();
             InitBookmarkEditor();
             return;
@@ -337,7 +337,7 @@ internal sealed class Controller
             return;
         }
 
-        // 文档不包含书签
+        // Document does not include bookmarks
         if (m.Count == 0)
         {
             ClearBookmarks();
@@ -752,7 +752,7 @@ internal sealed class Controller
 
         Model.LockDownViewer = true;
         IList sl = View.Bookmark.SelectedObjects;
-        bool r = false; // 是否需要刷新根节点
+        bool r = false; // Do we need to refresh the root node?
         HashSet<XmlNode> rl = new();
         while (step-- > 0)
         {
@@ -977,7 +977,7 @@ internal sealed class Controller
                             }
                             else if (bl == style.Level)
                             {
-                                // todo+ 删除重复的文本
+                                // todo+ Delete duplicate text
                                 BookmarkElement cb = bm as BookmarkElement;
                                 float bb = h - cb.Bottom + dh;
                                 float bt = h - cb.Top;
@@ -1005,7 +1005,7 @@ internal sealed class Controller
                                     //}
                                     if ( /*m == false &&*/ t.Length > 0)
                                     {
-                                        // 保留英文和数字文本之间的空格
+                                        // Keep space between English and digital text
                                         string ct = cb.Title;
                                         if (ct.Length > 0)
                                         {
@@ -1067,7 +1067,7 @@ internal sealed class Controller
                             }
 
                             be.ForeColor = s.ForeColor;
-                            //todo+ 删除尾随的空格
+                            //todo+ Delete the endless space
                             ug.Add(new RemoveElementAction(bm));
                             spans.Add(span);
                             break;

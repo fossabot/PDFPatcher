@@ -43,7 +43,7 @@ public sealed class MuDocument : IDisposable
     }
 
     /// <summary>
-    ///     释放文档对应的句柄，不再占用 PDF 文件。
+    ///     Release the handle corresponding to the document, no longer occupying the PDF file.
     /// </summary>
     public void ReleaseFile()
     {
@@ -55,7 +55,7 @@ public sealed class MuDocument : IDisposable
     }
 
     /// <summary>
-    ///     重新打开文件。
+    ///     Re-open the file.
     /// </summary>
     public void Reopen()
     {
@@ -90,25 +90,25 @@ public sealed class MuDocument : IDisposable
         PageCount = NativeMethods.CountPages(Context, _document);
     }
 
-    #region 非托管资源成员
+    #region Non-hosting resource member
 
     private StreamHandle _sourceStream;
     private DocumentHandle _document;
 
     #endregion
 
-    #region 托管资源成员
+    #region Managed resource
 
-    /// <summary>获取所加载文档的路径。</summary>
+    /// <summary>Get the path to the loaded document.</summary>
     public string FilePath { get; private set; }
 
-    /// <summary>获取文档的页数。</summary>
+    /// <summary>Get the number of pages of the document.</summary>
     public int PageCount { get; private set; }
 
-    /// <summary>获取文件句柄是否打开。</summary>
+    /// <summary>Get the file handle to open.</summary>
     public bool IsDocumentOpened => _document.IsValid() && _sourceStream.IsValid();
 
-    /// <summary>获取文档是否设置了打开密码。</summary>
+    /// <summary>Gets whether the document is set to open your password.</summary>
     public bool NeedsPassword => NativeMethods.NeedsPdfPassword(Context, _document);
 
     public object SyncObj { get; private set; } = new();
@@ -125,7 +125,7 @@ public sealed class MuDocument : IDisposable
     private PageLabelCollection _PageLabels;
 
     /// <summary>
-    ///     返回文档的页码标签。
+    ///     Returns the page number tab of the document.
     /// </summary>
     public PageLabelCollection PageLabels => _PageLabels ??= new PageLabelCollection(this);
 
@@ -133,26 +133,26 @@ public sealed class MuDocument : IDisposable
 
     #endregion
 
-    #region 实现 IDisposable 接口的属性和方法
+    #region Implement the properties and methods of iDisposable interface
 
     public bool IsDisposed { get; private set; }
 
-    /// <summary>释放由 MuDocument 占用的资源。</summary>
+    /// <summary>Release the resources occupied by MuDocument.</summary>
     public void Dispose()
     {
         Dispose(true);
         GC.SuppressFinalize(this);
     }
 
-    /// <summary>释放由 MuDocument 占用的资源。</summary>
-    /// <param name="disposing">是否手动释放托管资源。</param>
+    /// <summary>Release the resources occupied by MuDocument.</summary>
+    /// <param name="disposing">Whether to manually release the hosted resource.</param>
     private void Dispose(bool disposing)
     {
         if (!IsDisposed)
         {
             if (disposing)
             {
-                #region 释放托管资源
+                #region Release managed resources
 
                 _trailer = null;
                 SyncObj = null;
@@ -165,9 +165,9 @@ public sealed class MuDocument : IDisposable
                 #endregion
             }
 
-            #region 释放非托管资源
+            #region Release non-managed resources
 
-            // 注意这里不是线程安全的
+            // Note that this is not a thread safe
             _document.DisposeHandle();
             _sourceStream.DisposeHandle();
             Context.DisposeHandle();
@@ -178,13 +178,13 @@ public sealed class MuDocument : IDisposable
         IsDisposed = true;
     }
 
-    // 析构函数只在未调用 Dispose 方法时调用
-    // 派生类中不必再提供析构函数
+    // The descent function is only called when the Dispose method is not called.
+    // Don't provide a destructor in the derived class
     ~MuDocument() => Dispose(false);
 
     #endregion
 
-    #region 生成对象
+    #region Generate objects
 
     public MuPdfObject Create(bool value) => new(Context, NativeMethods.NewBoolean(Context, _document, value ? 1 : 0));
 

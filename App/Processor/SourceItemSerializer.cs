@@ -11,10 +11,10 @@ internal static class SourceItemSerializer
     private static readonly BookmarkSettings __EmptyBookmark = new();
 
     /// <summary>
-    ///     保存合并文件功能的列表。
+    ///     Save a list of merge file functions.
     /// </summary>
-    /// <param name="list">文件列表项目。</param>
-    /// <param name="path">文件列表的保存路径。</param>
+    /// <param name="list">file list item.</param>
+    /// <param name="path">The save path of the list of files.</param>
     internal static void Serialize(IList<SourceItem> list, string path)
     {
         PdfInfoXmlDocument d = new();

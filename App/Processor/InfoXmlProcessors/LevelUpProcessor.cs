@@ -4,7 +4,7 @@ namespace PDFPatcher.Processor;
 
 internal sealed class LevelUpProcessor : IPdfInfoXmlProcessor
 {
-    #region IInfoDocProcessor 成员
+    #region IInfoDocProcessor member
 
     public string Name => "设置书签为父书签";
 

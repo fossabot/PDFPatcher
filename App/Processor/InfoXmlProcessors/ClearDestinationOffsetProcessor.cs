@@ -31,7 +31,7 @@ internal sealed class
         }
     }
 
-    #region IInfoDocProcessor 成员
+    #region IInfoDocProcessor member
 
     public string Name => "清除" + _name + "坐标定位偏移值";
 

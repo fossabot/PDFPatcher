@@ -25,9 +25,9 @@ internal sealed class ContextHandle : MuHandle
     }
 
     /// <summary>
-    ///     创建 MuPDF 的 Context 实例。
+    ///     Create a Context instance of MuPDF.
     /// </summary>
-    /// <returns>指向 Context 的指针。</returns>
+    /// <returns>Pointer to Context.</returns>
     internal static ContextHandle Create() => NativeMethods.NewContext();
 
     [ReliabilityContract(Consistency.WillNotCorruptState, Cer.None)]

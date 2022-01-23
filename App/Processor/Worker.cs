@@ -355,7 +355,7 @@ internal static class Worker
             GeneralInfo info = pdfSettings.MetaData.SpecifyMetaData
                 ? pdfSettings.MetaData
                 //: sourceFile.DocInfo;
-                // 不再使用书签文件的文件属性
+                // File properties of the bookmark file no longer use
                 : import.ImportDocumentInformation()
                   ?? sourceFile.DocInfo;
             DocInfoImporter.ImportDocumentInformation(info, pdf, sourcePath);
@@ -481,7 +481,7 @@ internal static class Worker
 
             if (bookmarks != null)
             {
-                // 预处理书签
+                // Pretreatment bookmark
                 processors.Add(new CollapseBookmarkProcessor
                 {
                     BookmarkStatus = pdfSettings.ViewerPreferences.CollapseBookmark
@@ -584,12 +584,12 @@ internal static class Worker
     }
 
     /// <summary>
-    ///     替换目标文件名的替代符。
+    ///     Replace the alternative of the target file name.
     /// </summary>
-    /// <param name="sourceFile">用于替换的源文件名。</param>
-    /// <param name="targetFile">包含替代符的目标文件名。</param>
-    /// <param name="info">源文件的元数据属性。</param>
-    /// <returns>替换目标文件名后的文件名。</returns>
+    /// <param name="sourceFile">The source file used for replacement.</param>
+    /// <param name="targetFile">contains the target file name of the alternative.</param>
+    /// <param name="info">The metadata properties of the source file.</param>
+    /// <returns>replaces the file name after the target file name.</returns>
     internal static string ReplaceTargetFileNameMacros(string sourceFile, string targetFile, PdfDictionary info)
     {
         string p = null; // 文档属性
@@ -646,7 +646,7 @@ internal static class Worker
         switch (root.Name)
         {
             case Constants.PdfInfo:
-                // 使用中文的书签
+                // Use Chinese bookmarks
                 string v = root.GetAttribute(Constants.Info.ProductVersion);
                 if (v != Constants.InfoDocVersion
                     && FormHelper.YesNoBox(string.Concat("信息文件不是用这个版本的程序生成的，可能会导入不成功，是否继续？\n当前程序的版本是：",
@@ -1154,7 +1154,7 @@ internal static class Worker
             using (XmlReader infoReader = XmlReader.Create(infoFile,
                        new XmlReaderSettings { IgnoreComments = true, IgnoreProcessingInstructions = true }))
             {
-                infoReader.MoveToContent(); // 移到根元素
+                infoReader.MoveToContent(); // Move to root elements
                 using (Stream s = new FileStream(targetFile, FileMode.Create))
                 {
                     PdfStamper st = new(pdf, s);

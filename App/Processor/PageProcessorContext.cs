@@ -15,19 +15,19 @@ internal sealed class PageProcessorContext
         PageNumber = pageNumber;
     }
 
-    /// <summary>正在处理的 PDF 文档。</summary>
+    /// <summary>PDF document being processed.</summary>
     public PdfReader Pdf { get; }
 
-    /// <summary>正在处理的页码。</summary>
+    /// <summary>Page number being processed.</summary>
     public int PageNumber { get; }
 
-    /// <summary>标记页面内容是否已被更改。</summary>
+    /// <summary>The tag page content has been changed.</summary>
     public bool IsPageContentModified { get; set; }
 
-    /// <summary>获取正在处理的页面。</summary>
+    /// <summary>Get the page being processed.</summary>
     public PdfDictionary Page => _Page ??= Pdf.GetPageN(PageNumber);
 
-    /// <summary>获取正在处理的页面指令集合。</summary>
+    /// <summary>Get the page instruction collection being processed.</summary>
     public IPdfPageCommandContainer PageCommands
     {
         get
@@ -45,7 +45,7 @@ internal sealed class PageProcessorContext
         }
     }
 
-    /// <summary>写入页面指令到当前处理的页面。</summary>
+    /// <summary>Write the page instruction to the currently processed page.</summary>
     internal void WritePageCommands() => _processor.WritePdfCommands(Pdf, PageNumber);
 
     //internal void UpdateContentBytes () {

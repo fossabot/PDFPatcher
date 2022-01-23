@@ -79,19 +79,19 @@ public abstract class SourceItem
     public override string ToString() => FilePath.ToString();
 
     /// <summary>
-    ///     创建新的空白页。
+    ///     Create a new blank page.
     /// </summary>
-    /// <returns>空白页实例。</returns>
+    /// <returns>blank page instance.</returns>
     internal static Empty Create() => new();
 
     internal static SourceItem Create(string path) => Create(path, true);
 
     /// <summary>
-    ///     根据传入的文件路径创建 <see cref="SourceItem" /> 实例。
+    ///     Create <see cref="SourceItem" /> instance based on the incoming file path.
     /// </summary>
-    /// <param name="path">文件或文件夹路径。</param>
-    /// <param name="refresh">是否强制更新。</param>
-    /// <returns><see cref="SourceItem" /> 实例。</returns>
+    /// <param name="path">File or folder path.</param>
+    /// <param name="refresh">Whether it is forced to update.</param>
+    /// <returns><see cref="SourceItem" /> instance.</returns>
     internal static SourceItem Create(FilePath path, bool refresh)
     {
         if (((string)path).IsNullOrWhiteSpace())
@@ -128,7 +128,7 @@ public abstract class SourceItem
             catch (Exception)
             {
                 FormHelper.ErrorBox(string.Concat("打开 PDF 文件时“", path, "”出错。"));
-                // ignore corrupted 
+                // ignore corrupted
             }
 
             return null;
@@ -155,7 +155,7 @@ public abstract class SourceItem
 
     internal string GetInfoFileName()
     {
-        // 优先采用与输入文件同名的 XML 信息文件
+        // Take the XML information file with the same name as the input file
         FilePath f =
             new(FileHelper.CombinePath(FolderName, Path.ChangeExtension(FileName, Constants.FileExtensions.Xml)));
         if (f.ExistsFile)
@@ -163,14 +163,14 @@ public abstract class SourceItem
             return f.ToString();
         }
 
-        // 次之采用与输入文件同名的 TXT 信息文件
+        // TXT information file with the same name as the input file
         f = f.ChangeExtension(Constants.FileExtensions.Txt);
         if (f.ExistsFile)
         {
             return f.ToString();
         }
 
-        // 次之采用同一个信息文件
+        // The same information file
         f = FilePath.ChangeExtension(Constants.FileExtensions.Xml);
         if (f.ExistsFile == false)
         {
@@ -183,7 +183,7 @@ public abstract class SourceItem
     internal string GetTargetPdfFileName(string targetPath)
     {
         string targetFolder = null;
-        bool m = FileHelper.HasFileNameMacro(targetPath); // 包含替换符
+        bool m = FileHelper.HasFileNameMacro(targetPath); // Contains alternative
         if (m == false)
         {
             targetFolder = Path.GetDirectoryName(targetPath);
@@ -230,7 +230,7 @@ public abstract class SourceItem
             {
                 return t.EndsWith("001") ? new BookmarkSettings("封面")
                     : t.EndsWith("002") ? new BookmarkSettings("封底")
-                    : null; // 超过2页的，只为第一页和第二页生成书签
+                    : null; // More than 2 pages, only to generate a bookmark for the first page and the second page
             }
 
             if (MatchCajPattern(t, Constants.CajNaming.TitlePage))
@@ -527,7 +527,7 @@ public abstract class SourceItem
             catch (Exception)
             {
                 FormHelper.ErrorBox(string.Concat("打开 PDF 文件时“", path, "”出错。"));
-                // ignore corrupted 
+                // ignore corrupted
             }
         }
     }

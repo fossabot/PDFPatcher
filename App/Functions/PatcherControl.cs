@@ -200,7 +200,7 @@ public partial class PatcherControl : FunctionControl
             if (files.Count > 1)
             {
                 string targetFolder = null;
-                bool m = FileHelper.HasFileNameMacro(t); // 包含替换符
+                bool m = FileHelper.HasFileNameMacro(t); // Contains alternative
                 if (m == false)
                 {
                     targetFolder = Path.GetDirectoryName(t);
@@ -211,17 +211,17 @@ public partial class PatcherControl : FunctionControl
                 {
                     if (file.Type == SourceItem.ItemType.Pdf)
                     {
-                        // 确定信息文件名
-                        // 优先采用与输入文件同名的 XML 信息文件
+                        // Determine the information file name
+                        // Take the XML information file with the same name as the input file
                         FilePath f = new(FileHelper.CombinePath(file.FolderName,
                             Path.ChangeExtension(file.FileName, Constants.FileExtensions.Xml)));
                         if (f.ExistsFile == false)
                         {
-                            // 次之采用与输入文件同名的 TXT 信息文件
+                            // TXT information file with the same name as the input file
                             f = f.ChangeExtension(Constants.FileExtensions.Txt);
                             if (f.ExistsFile == false)
                             {
-                                // 次之采用同一个信息文件
+                                // The same information file
                                 f = file.FilePath.ChangeExtension(Constants.FileExtensions.Xml);
                                 if (f.ExistsFile == false)
                                 {

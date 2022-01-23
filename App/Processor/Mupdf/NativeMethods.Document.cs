@@ -74,7 +74,10 @@ internal static partial class NativeMethods
     internal delegate IntPtr FzLoadSystemFallbackFont(IntPtr ctx, int script, int language, int serif, int bold,
         int italic);
 
-    /// <summary>打开系统内置汉字库功能，支持老的未正确嵌入汉字库的 PDF。</summary>
+    /// <summary>
+    ///     Open the system's built-in Chinese word library function, support the old PDF that is not properly embedded in
+    ///     the Chinese character library.
+    /// </summary>
     [DllImport(DLL, CallingConvention = CC.Cdecl, EntryPoint = "fz_install_load_system_font_funcs")]
     internal static extern void LoadSystemFontFuncs(ContextHandle ctx,
         FzLoadSystemFont fz_load_system_font_fn,
@@ -156,10 +159,10 @@ internal static partial class NativeMethods
     [DllImport(DLL, CallingConvention = CC.Cdecl, EntryPoint = "fz_keep_stream")]
     internal static extern IntPtr Keep(ContextHandle ctx, StreamHandle stm);
 
-    /// <summary>打开文本流。</summary>
-    /// <param name="ctx">MuPDF 上下文指针。</param>
-    /// <param name="fileName">要打开的文件名。</param>
-    /// <returns>指向 fz_stream 的指针</returns>
+    /// <summary>Open the text stream. </summary>
+    /// <param name="ctx">MuPDF context pointer. </param>
+    /// <param name="fileName">The name of the file to open. </param>
+    /// <returns>Pointer to fz_stream</returns>
     [DllImport(DLL, CallingConvention = CC.Cdecl, EntryPoint = "fz_open_file_w", CharSet = CharSet.Unicode)]
     internal static extern IntPtr OpenFile(ContextHandle ctx, string fileName);
 

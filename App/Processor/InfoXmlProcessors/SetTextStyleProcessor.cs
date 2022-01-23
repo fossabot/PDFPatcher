@@ -30,7 +30,7 @@ internal sealed class SetTextStyleProcessor : IPdfInfoXmlProcessor
         };
     }
 
-    #region IInfoDocProcessor 成员
+    #region IInfoDocProcessor member
 
     public string Name =>
         _style switch

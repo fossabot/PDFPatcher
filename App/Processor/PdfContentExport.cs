@@ -829,7 +829,7 @@ internal sealed class PdfContentExport
 
             if (hasDescriptiveOperands == false)
             {
-                if (operands.Count > 0) // 删除操作符
+                if (operands.Count > 0) // Delete operator
                 {
                     operands.RemoveAt(operands.Count - 1);
                 }

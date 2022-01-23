@@ -135,9 +135,9 @@ public class GlassButton : Button
         components = new Container();
         timer = new Timer(components);
         SuspendLayout();
-        // 
+        //
         // timer
-        // 
+        //
         timer.Tick += timer_Tick;
         ResumeLayout(false);
     }

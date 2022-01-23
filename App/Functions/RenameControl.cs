@@ -26,7 +26,7 @@ public partial class RenameControl : FunctionControl
 
     public override Bitmap IconImage => Resources.Rename;
 
-    #region IDefaultButtonControl 成员
+    #region IDefaultButtonControl member
 
     public override Button DefaultButton => _RenameButton;
 

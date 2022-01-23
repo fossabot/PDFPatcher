@@ -8,7 +8,7 @@ internal static class Tracker
 {
     private static BackgroundWorker __Worker;
 
-    ///<summary>指定后台工作进程。</summary>
+    /// <summary>Specifies the working process in the background.</summary>
     internal static void SetWorker(BackgroundWorker value) => __Worker = value;
 
     internal static void TrackProgress(int progress) => ReportProgress(progress, null);

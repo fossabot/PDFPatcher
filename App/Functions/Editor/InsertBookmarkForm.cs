@@ -41,7 +41,7 @@ public partial class InsertBookmarkForm : DraggableForm
     }
 
     /// <summary>
-    ///     获取或设置书签标题。
+    ///     Get or set the bookmark title.
     /// </summary>
     public string Title
     {
@@ -56,7 +56,7 @@ public partial class InsertBookmarkForm : DraggableForm
     }
 
     /// <summary>
-    ///     获取或设置书签的位置。
+    ///     Get or set the location of the bookmark.
     /// </summary>
     public float TargetPosition
     {
@@ -75,7 +75,8 @@ public partial class InsertBookmarkForm : DraggableForm
     }
 
     /// <summary>
-    ///     获取新书签的插入位置（当前书签后：1；子书签：2；父书签后：3；当前书签前：4）
+    ///     Get the insertion position of the new bookmark (after the current bookmark: 1; child bookmark: 2; post-parent
+    ///     bookmark: 3; the current bookmark: 4)
     /// </summary>
     public int InsertMode => _AfterCurrentBox.Checked ? 1
         : _AsChildBox.Checked ? 2

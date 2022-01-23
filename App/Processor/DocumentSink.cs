@@ -6,7 +6,7 @@ using PDFPatcher.Model;
 namespace PDFPatcher.Processor;
 
 /// <summary>
-///     用于合并 PDF 文档的文档池。
+///     A document pool used to merge the PDF document.
 /// </summary>
 internal sealed class DocumentSink
 {

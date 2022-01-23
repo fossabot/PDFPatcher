@@ -2,15 +2,15 @@
 {
 	partial class InfoFileOptionControl
 	{
-		/// <summary> 
-		/// 必需的设计器变量。
+		/// <summary>
+		/// Required designer variables.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 
-		/// <summary> 
-		/// 清理所有正在使用的资源。
+		/// <summary>
+		/// Clean up all resources in use.
 		/// </summary>
-		/// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+		/// <param name="disposing">true if the managed resource should be released; otherwise, false.</param>
 		protected override void Dispose (bool disposing) {
 			if (disposing && (components != null)) {
 				components.Dispose ();
@@ -18,11 +18,11 @@
 			base.Dispose (disposing);
 		}
 
-		#region 组件设计器生成的代码
+		#region Component Designer Generated Code
 
-		/// <summary> 
-		/// 设计器支持所需的方法 - 不要
-		/// 使用代码编辑器修改此方法的内容。
+		/// <summary>
+		/// Designer supports required methods - Don't
+		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
 			this._EncodingBox = new System.Windows.Forms.ComboBox ();
@@ -74,9 +74,9 @@
 			this.groupBox2.SuspendLayout ();
 			this.panel1.SuspendLayout ();
 			this.SuspendLayout ();
-			// 
+			//
 			// _EncodingBox
-			// 
+			//
 			this._EncodingBox.FormattingEnabled = true;
 			this._EncodingBox.Items.AddRange (new object[] {
             "系统默认",
@@ -88,18 +88,18 @@
 			this._EncodingBox.Name = "_EncodingBox";
 			this._EncodingBox.Size = new System.Drawing.Size (121, 20);
 			this._EncodingBox.TabIndex = 1;
-			// 
+			//
 			// label1
-			// 
+			//
 			this.label1.AutoSize = true;
 			this.label1.Location = new System.Drawing.Point (6, 9);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size (65, 12);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "字符编码：";
-			// 
+			//
 			// _ExtractPageLinksBox
-			// 
+			//
 			this._ExtractPageLinksBox.AutoSize = true;
 			this._ExtractPageLinksBox.Location = new System.Drawing.Point (114, 42);
 			this._ExtractPageLinksBox.Name = "_ExtractPageLinksBox";
@@ -107,9 +107,9 @@
 			this._ExtractPageLinksBox.TabIndex = 4;
 			this._ExtractPageLinksBox.Text = "页面内的链接";
 			this._ExtractPageLinksBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _ExportViewerPreferencesBox
-			// 
+			//
 			this._ExportViewerPreferencesBox.AutoSize = true;
 			this._ExportViewerPreferencesBox.Location = new System.Drawing.Point (6, 86);
 			this._ExportViewerPreferencesBox.Name = "_ExportViewerPreferencesBox";
@@ -117,9 +117,9 @@
 			this._ExportViewerPreferencesBox.TabIndex = 6;
 			this._ExportViewerPreferencesBox.Text = "阅读器设置（如排版布局、页码样式等）";
 			this._ExportViewerPreferencesBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _ExportBookmarksBox
-			// 
+			//
 			this._ExportBookmarksBox.AutoSize = true;
 			this._ExportBookmarksBox.Location = new System.Drawing.Point (6, 42);
 			this._ExportBookmarksBox.Name = "_ExportBookmarksBox";
@@ -127,9 +127,9 @@
 			this._ExportBookmarksBox.TabIndex = 3;
 			this._ExportBookmarksBox.Text = "文档书签";
 			this._ExportBookmarksBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _ExportOptionsTab
-			// 
+			//
 			this._ExportOptionsTab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
 						| System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
@@ -141,9 +141,9 @@
 			this._ExportOptionsTab.SelectedIndex = 0;
 			this._ExportOptionsTab.Size = new System.Drawing.Size (424, 245);
 			this._ExportOptionsTab.TabIndex = 1;
-			// 
+			//
 			// tabPage1
-			// 
+			//
 			this.tabPage1.Controls.Add (this._UnitBox);
 			this.tabPage1.Controls.Add (this.label7);
 			this.tabPage1.Controls.Add (this.label1);
@@ -156,27 +156,27 @@
 			this.tabPage1.TabIndex = 0;
 			this.tabPage1.Text = "常规导出选项";
 			this.tabPage1.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _UnitBox
-			// 
+			//
 			this._UnitBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this._UnitBox.FormattingEnabled = true;
 			this._UnitBox.Location = new System.Drawing.Point (299, 6);
 			this._UnitBox.Name = "_UnitBox";
 			this._UnitBox.Size = new System.Drawing.Size (54, 20);
 			this._UnitBox.TabIndex = 9;
-			// 
+			//
 			// label7
-			// 
+			//
 			this.label7.AutoSize = true;
 			this.label7.Location = new System.Drawing.Point (204, 9);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size (89, 12);
 			this.label7.TabIndex = 8;
 			this.label7.Text = "尺寸度量单位：";
-			// 
+			//
 			// groupBox1
-			// 
+			//
 			this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
 			this.groupBox1.Controls.Add (this._ExportDocPropertiesBox);
@@ -191,9 +191,9 @@
 			this.groupBox1.TabIndex = 10;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "导出如下内容到信息文件";
-			// 
+			//
 			// _ExportDocPropertiesBox
-			// 
+			//
 			this._ExportDocPropertiesBox.AutoSize = true;
 			this._ExportDocPropertiesBox.Location = new System.Drawing.Point (6, 20);
 			this._ExportDocPropertiesBox.Name = "_ExportDocPropertiesBox";
@@ -201,9 +201,9 @@
 			this._ExportDocPropertiesBox.TabIndex = 2;
 			this._ExportDocPropertiesBox.Text = "文档属性（如标题、作者、关键字等）";
 			this._ExportDocPropertiesBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _ExtractPageSettingsBox
-			// 
+			//
 			this._ExtractPageSettingsBox.AutoSize = true;
 			this._ExtractPageSettingsBox.Location = new System.Drawing.Point (6, 108);
 			this._ExtractPageSettingsBox.Name = "_ExtractPageSettingsBox";
@@ -211,9 +211,9 @@
 			this._ExtractPageSettingsBox.TabIndex = 7;
 			this._ExtractPageSettingsBox.Text = "页面设置（如页面尺寸、裁剪、旋转角度等）";
 			this._ExtractPageSettingsBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _ConsolidateNamedDestBox
-			// 
+			//
 			this._ConsolidateNamedDestBox.AutoSize = true;
 			this._ConsolidateNamedDestBox.Location = new System.Drawing.Point (18, 64);
 			this._ConsolidateNamedDestBox.Name = "_ConsolidateNamedDestBox";
@@ -221,9 +221,9 @@
 			this._ConsolidateNamedDestBox.TabIndex = 5;
 			this._ConsolidateNamedDestBox.Text = "解析书签和页面链接的命名位置";
 			this._ConsolidateNamedDestBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// tabPage2
-			// 
+			//
 			this.tabPage2.Controls.Add (this._ExportCatalogBox);
 			this.tabPage2.Controls.Add (this.label2);
 			this.tabPage2.Controls.Add (this.label5);
@@ -236,9 +236,9 @@
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "高级导出选项";
 			this.tabPage2.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _ExportCatalogBox
-			// 
+			//
 			this._ExportCatalogBox.AutoSize = true;
 			this._ExportCatalogBox.Location = new System.Drawing.Point (6, 38);
 			this._ExportCatalogBox.Name = "_ExportCatalogBox";
@@ -246,9 +246,9 @@
 			this._ExportCatalogBox.TabIndex = 1;
 			this._ExportCatalogBox.Text = "导出编录信息";
 			this._ExportCatalogBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// label2
-			// 
+			//
 			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
 			this.label2.Location = new System.Drawing.Point (4, 3);
@@ -256,9 +256,9 @@
 			this.label2.Size = new System.Drawing.Size (432, 31);
 			this.label2.TabIndex = 0;
 			this.label2.Text = "说明：高级导出选项导出的内容仅供研究 PDF 文件结构之用，导入信息文件时不会导入这些内容。";
-			// 
+			//
 			// label5
-			// 
+			//
 			this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
 			this.label5.Location = new System.Drawing.Point (107, 61);
@@ -266,9 +266,9 @@
 			this.label5.Size = new System.Drawing.Size (307, 28);
 			this.label5.TabIndex = 3;
 			this.label5.Text = "此选项将生成很大的信息文件，包含页面大部分内容（如字体、图片信息等）。";
-			// 
+			//
 			// _ExtractPageContentBox
-			// 
+			//
 			this._ExtractPageContentBox.AutoSize = true;
 			this._ExtractPageContentBox.Location = new System.Drawing.Point (6, 60);
 			this._ExtractPageContentBox.Name = "_ExtractPageContentBox";
@@ -276,9 +276,9 @@
 			this._ExtractPageContentBox.TabIndex = 2;
 			this._ExtractPageContentBox.Text = "导出页面内容";
 			this._ExtractPageContentBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _PageContentBox
-			// 
+			//
 			this._PageContentBox.Controls.Add (this._ExportContentOperatorsBox);
 			this._PageContentBox.Controls.Add (this._ExtractPageDictionaryBox);
 			this._PageContentBox.Controls.Add (this._ExtractPageRangeBox);
@@ -293,9 +293,9 @@
 			this._PageContentBox.Name = "_PageContentBox";
 			this._PageContentBox.Size = new System.Drawing.Size (419, 125);
 			this._PageContentBox.TabIndex = 4;
-			// 
+			//
 			// _ExportContentOperatorsBox
-			// 
+			//
 			this._ExportContentOperatorsBox.AutoSize = true;
 			this._ExportContentOperatorsBox.Location = new System.Drawing.Point (224, 36);
 			this._ExportContentOperatorsBox.Name = "_ExportContentOperatorsBox";
@@ -303,9 +303,9 @@
 			this._ExportContentOperatorsBox.TabIndex = 9;
 			this._ExportContentOperatorsBox.Text = "导出绘制页面命令";
 			this._ExportContentOperatorsBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _ExtractPageDictionaryBox
-			// 
+			//
 			this._ExtractPageDictionaryBox.AutoSize = true;
 			this._ExtractPageDictionaryBox.Location = new System.Drawing.Point (10, 36);
 			this._ExtractPageDictionaryBox.Name = "_ExtractPageDictionaryBox";
@@ -313,44 +313,44 @@
 			this._ExtractPageDictionaryBox.TabIndex = 8;
 			this._ExtractPageDictionaryBox.Text = "导出页面字典信息";
 			this._ExtractPageDictionaryBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _ExtractPageRangeBox
-			// 
+			//
 			this._ExtractPageRangeBox.Location = new System.Drawing.Point (98, 3);
 			this._ExtractPageRangeBox.Name = "_ExtractPageRangeBox";
 			this._ExtractPageRangeBox.Size = new System.Drawing.Size (231, 21);
 			this._ExtractPageRangeBox.TabIndex = 1;
 			this._ExtractPageRangeBox.Leave += new System.EventHandler (this._ExtractPageRangeBox_Leave);
-			// 
+			//
 			// label9
-			// 
+			//
 			this.label9.AutoSize = true;
 			this.label9.Location = new System.Drawing.Point (226, 77);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size (83, 12);
 			this.label9.TabIndex = 7;
 			this.label9.Text = "（0：不限制）";
-			// 
+			//
 			// label3
-			// 
+			//
 			this.label3.AutoSize = true;
 			this.label3.Location = new System.Drawing.Point (3, 6);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size (89, 12);
 			this.label3.TabIndex = 0;
 			this.label3.Text = "导出页码范围：";
-			// 
+			//
 			// label8
-			// 
+			//
 			this.label8.AutoSize = true;
 			this.label8.Location = new System.Drawing.Point (5, 77);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size (149, 12);
 			this.label8.TabIndex = 5;
 			this.label8.Text = "限制导出二进制流字节数：";
-			// 
+			//
 			// _ExportBinaryStreamBox
-			// 
+			//
 			this._ExportBinaryStreamBox.Increment = new decimal (new int[] {
             100,
             0,
@@ -366,9 +366,9 @@
 			this._ExportBinaryStreamBox.Size = new System.Drawing.Size (63, 21);
 			this._ExportBinaryStreamBox.TabIndex = 6;
 			this._ExportBinaryStreamBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			// 
+			//
 			// _ExtractImagesBox
-			// 
+			//
 			this._ExtractImagesBox.AutoSize = true;
 			this._ExtractImagesBox.Location = new System.Drawing.Point (10, 58);
 			this._ExtractImagesBox.Name = "_ExtractImagesBox";
@@ -376,9 +376,9 @@
 			this._ExtractImagesBox.TabIndex = 3;
 			this._ExtractImagesBox.Text = "将图片导出为独立文件";
 			this._ExtractImagesBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _ExtractPageTextContentBox
-			// 
+			//
 			this._ExtractPageTextContentBox.AutoSize = true;
 			this._ExtractPageTextContentBox.Location = new System.Drawing.Point (224, 58);
 			this._ExtractPageTextContentBox.Name = "_ExtractPageTextContentBox";
@@ -386,9 +386,9 @@
 			this._ExtractPageTextContentBox.TabIndex = 4;
 			this._ExtractPageTextContentBox.Text = "解码导出页面内的文本";
 			this._ExtractPageTextContentBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// tabPage3
-			// 
+			//
 			this.tabPage3.Controls.Add (this.groupBox2);
 			this.tabPage3.Location = new System.Drawing.Point (4, 21);
 			this.tabPage3.Name = "tabPage3";
@@ -397,9 +397,9 @@
 			this.tabPage3.TabIndex = 2;
 			this.tabPage3.Text = "导入选项";
 			this.tabPage3.UseVisualStyleBackColor = true;
-			// 
+			//
 			// groupBox2
-			// 
+			//
 			this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
 			this.groupBox2.Controls.Add (this._ImportPageSettingsBox);
@@ -414,9 +414,9 @@
 			this.groupBox2.TabIndex = 12;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "导入信息文件如下项目";
-			// 
+			//
 			// _ImportPageSettingsBox
-			// 
+			//
 			this._ImportPageSettingsBox.AutoSize = true;
 			this._ImportPageSettingsBox.Location = new System.Drawing.Point (6, 108);
 			this._ImportPageSettingsBox.Name = "_ImportPageSettingsBox";
@@ -424,9 +424,9 @@
 			this._ImportPageSettingsBox.TabIndex = 12;
 			this._ImportPageSettingsBox.Text = "页面设置（如页面尺寸、裁剪、旋转角度等）";
 			this._ImportPageSettingsBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _ImportDocumentInfoBox
-			// 
+			//
 			this._ImportDocumentInfoBox.AutoSize = true;
 			this._ImportDocumentInfoBox.Checked = true;
 			this._ImportDocumentInfoBox.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -436,9 +436,9 @@
 			this._ImportDocumentInfoBox.TabIndex = 7;
 			this._ImportDocumentInfoBox.Text = "文档属性信息（如作者、主题、关键字等）";
 			this._ImportDocumentInfoBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// panel1
-			// 
+			//
 			this.panel1.Controls.Add (this.label10);
 			this.panel1.Controls.Add (this._RemoveOriginalPageLinksBox);
 			this.panel1.Controls.Add (this._KeepOriginalPageLinksBox);
@@ -447,18 +447,18 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size (191, 16);
 			this.panel1.TabIndex = 10;
-			// 
+			//
 			// label10
-			// 
+			//
 			this.label10.AutoSize = true;
 			this.label10.Location = new System.Drawing.Point (3, 1);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size (77, 12);
 			this.label10.TabIndex = 0;
 			this.label10.Text = "原页面链接：";
-			// 
+			//
 			// _RemoveOriginalPageLinksBox
-			// 
+			//
 			this._RemoveOriginalPageLinksBox.AutoSize = true;
 			this._RemoveOriginalPageLinksBox.Checked = true;
 			this._RemoveOriginalPageLinksBox.Location = new System.Drawing.Point (86, -1);
@@ -468,9 +468,9 @@
 			this._RemoveOriginalPageLinksBox.TabStop = true;
 			this._RemoveOriginalPageLinksBox.Text = "替换";
 			this._RemoveOriginalPageLinksBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _KeepOriginalPageLinksBox
-			// 
+			//
 			this._KeepOriginalPageLinksBox.AutoSize = true;
 			this._KeepOriginalPageLinksBox.Location = new System.Drawing.Point (139, -1);
 			this._KeepOriginalPageLinksBox.Name = "_KeepOriginalPageLinksBox";
@@ -478,9 +478,9 @@
 			this._KeepOriginalPageLinksBox.TabIndex = 2;
 			this._KeepOriginalPageLinksBox.Text = "保留";
 			this._KeepOriginalPageLinksBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _ImportBookmarksBox
-			// 
+			//
 			this._ImportBookmarksBox.AutoSize = true;
 			this._ImportBookmarksBox.Checked = true;
 			this._ImportBookmarksBox.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -490,9 +490,9 @@
 			this._ImportBookmarksBox.TabIndex = 8;
 			this._ImportBookmarksBox.Text = "文档书签";
 			this._ImportBookmarksBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _ImportPageLinksBox
-			// 
+			//
 			this._ImportPageLinksBox.AutoSize = true;
 			this._ImportPageLinksBox.Checked = true;
 			this._ImportPageLinksBox.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -502,9 +502,9 @@
 			this._ImportPageLinksBox.TabIndex = 9;
 			this._ImportPageLinksBox.Text = "页面内的链接（合并模式下无效）";
 			this._ImportPageLinksBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _ImportViewerPreferencesBox
-			// 
+			//
 			this._ImportViewerPreferencesBox.AutoSize = true;
 			this._ImportViewerPreferencesBox.Checked = true;
 			this._ImportViewerPreferencesBox.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -514,9 +514,9 @@
 			this._ImportViewerPreferencesBox.TabIndex = 11;
 			this._ImportViewerPreferencesBox.Text = "阅读器设置（如排版布局、页码样式等）";
 			this._ImportViewerPreferencesBox.UseVisualStyleBackColor = true;
-			// 
+			//
 			// ExportOptionControl
-			// 
+			//
 			this.AutoScaleDimensions = new System.Drawing.SizeF (6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size (448, 269);

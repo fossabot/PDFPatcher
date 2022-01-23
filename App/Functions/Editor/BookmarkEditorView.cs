@@ -52,7 +52,7 @@ public partial class BookmarkEditorView : TreeListView
 
         UseOverlays = false;
 
-        #region 修复树视图无法正确选择节点的问题
+        #region Repair tree view does not choose the problem of nodes correctly
 
         SmallImageList = new ImageList();
 
@@ -160,7 +160,7 @@ public partial class BookmarkEditorView : TreeListView
 
     protected override void OnBeforeSorting(BeforeSortingEventArgs e)
     {
-        e.Canceled = true; // 禁止排序
+        e.Canceled = true; // No sort
         base.OnBeforeSorting(e);
     }
 
@@ -200,14 +200,16 @@ public partial class BookmarkEditorView : TreeListView
     }
 
     /// <summary>
-    ///     复制或移动书签。
+    ///     Copy or move the bookmark.
     /// </summary>
-    /// <param name="source">需要复制或移动的源书签。</param>
-    /// <param name="target">目标书签。</param>
-    /// <param name="child">是否复制为子节点。</param>
-    /// <param name="after">是否复制到后面。</param>
-    /// <param name="copy">是否复制书签。</param>
-    /// <param name="deepCopy">是否深度复制书签。</param>
+    /// <param name="Source">The source bookmark you need to copy or move.</param>
+    /// <param name="target">Target bookmark.</param>
+    /// <param name="child">is copied to the child node.</param>
+    /// <param name="after">is copied to the back.</param>
+    /// <param name="copy">Whether the bookmark is copied.</param>
+    /// <param name="deepCopy">Whether the bookmark is depressed deeply.</param>
+    /// okmark is depressed deeply.
+    /// </param>
     internal void CopyOrMoveElement(List<BookmarkElement> source, XmlElement target, bool child, bool after, bool copy,
         bool deepCopy)
     {
@@ -336,7 +338,7 @@ public partial class BookmarkEditorView : TreeListView
     }
 
     /// <summary>
-    ///     检查 <paramref name="source" /> 是否为 <paramref name="target" /> 的先代元素。
+    ///     Checks if <paramref name="source" /> is a predecessor element of <paramref name="target" /> .
     /// </summary>
     private static bool IsAncestorOrSelf(XmlElement source, XmlElement target)
     {
@@ -721,7 +723,7 @@ public partial class BookmarkEditorView : TreeListView
         MakeItemVisible(item);
     }
 
-    #region 拖放操作
+    #region Drag and drop operation and drop operation
 
     protected override void OnCanDrop(OlvDropEventArgs args)
     {

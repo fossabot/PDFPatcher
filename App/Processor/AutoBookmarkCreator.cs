@@ -123,7 +123,7 @@ internal sealed class AutoBookmarkCreator
                 //var tr = p.TextList;
                 c.IsTextMerged = false;
                 c.TextLine = null;
-                // TODO: 自动根据已知排版方向比例修正排版方向
+                // TODO: Automatically correct the typographic direction according to the known typesetting direction
                 // 合并前筛选文本
                 List<TextInfo> ptl = p.TextList;
                 for (int li = ptl.Count - 1; li >= 0; li--)
@@ -136,7 +136,7 @@ internal sealed class AutoBookmarkCreator
                 }
 
                 List<TextLine> tl = MergeTextInfoList(box, ptl, _options);
-                // TODO: 筛选文本
+                // TODO: Filter text
                 c.IsTextMerged = true;
                 for (int li = tl.Count - 1; li >= 0; li--)
                 {
@@ -449,33 +449,34 @@ internal sealed class AutoBookmarkCreator
     }
 
     /// <summary>
-    ///     使用最小距离法将 <paramref name="textInfos" /> 的文本聚类为 <see cref="TextLine" /> 列表。
+    ///     Use the minimum distance method to cluster the text of the <paramref name="textinfos" /> to the list of "see cref
+    ///     =" textline "/>.
     /// </summary>
-    /// <param name="textInfos">包含文本位置及尺寸信息的 <see cref="TextInfo" /> 集合。</param>
-    /// <returns>聚类后所得的 <see cref="TextLine" /> 列表。</returns>
+    /// <param name="textInfos"><see cref="textInfo" /> collection containing text locations and dimension information.</param>
+    /// <returns>The <see cref="TextLine" /> list obtained after cluster.</returns>
     internal static List<TextLine> MergeTextInfoList(Rectangle pageBox, IList<TextInfo> textInfos,
         AutoBookmarkOptions options)
     {
         List<TextLine> ll = new();
-        // 同行合并宽度最小值
+        // Width width minimum
         float cw = pageBox.Width / 6;
 
         int[] dirCount = new int[4];
-        // 遍历识别所得的各 TextInfo，使用最小距离聚类方法将其聚类为行
+        // Traverse the TextInfo that identifies the resulting, clustering it into a line using the minimum distance clustering method
         foreach (TextInfo item in textInfos)
         {
             Bound ir = item.Region;
             DistanceInfo md = new(DistanceInfo.Placement.Unknown, float.MaxValue, float.MaxValue); // 最小距离
-            TextLine ml = null; // 最小距离的 TextLine
+            TextLine ml = null; // Minimum distance TextLine
 
-            // 求最小距离的 TextLine
+            // Ask minimum distances of TextLine
             float ds = item.Size / 10;
-            // 循环只包含了 TextLine，未包含文本 TextInfo 的其余文本
+            // The loop contains only TextLine, and the rest of the text of text textinfo is not included.
             int end = ll.Count > 5 ? ll.Count - 5 : 0;
             for (int i = ll.Count - 1; i >= end; i--)
             {
                 TextLine li = ll[i];
-                // 文本尺寸应在误差范围之内
+                // Text size should be within the range of errors
                 if (Math.Abs(item.Size - li.FirstText.Size) > ds && options.MergeDifferentSizeTitles == false)
                 {
                     continue;
@@ -521,7 +522,7 @@ internal sealed class AutoBookmarkCreator
                 }
             }
 
-            // 否则，用 item 创建新的 TextLine
+            // Otherwise, create new TextLine with item
             if (item.Text.Length == 0)
             {
                 item.Text = " ";
@@ -529,18 +530,19 @@ internal sealed class AutoBookmarkCreator
 
             if (ml != null)
             {
-                // 若存在最小距离的 TextLine 且可合并，则将 item 归入 TextLine
+                // If there is a minimum distance of TextLine and can be merged, you will be classified into TextLine.
                 if (md.IsOverlapping && options.IgnoreOverlappedText)
                 {
-                    // 检查是否存在交叠重复的文本
+                    // Check if there is an overlapping duplicate text
                     foreach (TextInfo t in ml.Texts)
                     {
-                        if (t.Region.IntersectWith(item.Region) // item 与 TextLine 中某项交叠
-                            && (t.Text.Contains(item.Text) || item.Text.Contains(t.Text) // 交叠的项文本和 item 的文本相同
+                        if (t.Region.IntersectWith(item.Region) // Item is overlapped in TextLine
+                            && (t.Text.Contains(item.Text) ||
+                                item.Text.Contains(t.Text) // Overlapping text and item text
                             )
                            )
                         {
-                            goto Next; // 忽略此项目
+                            goto Next; // Ignore this item
                         }
                     }
                 }
@@ -561,23 +563,23 @@ internal sealed class AutoBookmarkCreator
     internal List<TextRegion> MergeTextLines(Rectangle pageBox, IList<TextLine> textLines)
     {
         List<TextRegion> ll = new();
-        // 同行合并宽度最小值
+        // Width width minimum
         float cw = pageBox.Width / 6;
 
-        // 遍历识别所得的各 TextInfo，使用最小距离聚类方法将其聚类为行
+        // Traverse the TextInfo that identifies the resulting, clustering it into a line using the minimum distance clustering method
         foreach (TextLine item in textLines)
         {
             Bound ir = item.Region;
-            DistanceInfo md = new(DistanceInfo.Placement.Unknown, float.MaxValue, float.MaxValue); // 最小距离
-            TextRegion mr = null; // 最小距离的 TextRegion
+            DistanceInfo md = new(DistanceInfo.Placement.Unknown, float.MaxValue, float.MaxValue); // shortest distance
+            TextRegion mr = null; // Minimum distance TEXTREGION
 
-            // 求最小距离的 TextLine
+            // Ask minimum distances of TextLine
             float ds = item.FirstText.Size / 10;
-            // 循环只包含了 TextLine，未包含文本 TextInfo 的其余文本
+            // The loop contains only TextLine, and the rest of the text of text textinfo is not included.
             for (int i = ll.Count - 1; i >= 0; i--)
             {
                 TextRegion li = ll[i];
-                // 文本尺寸应在误差范围之内
+                // Text size should be within the range of errors
                 if (Math.Abs(item.FirstText.Size - li.Lines[0].FirstText.Size) > ds && _options.MergeAdjacentTitles)
                 {
                     continue;
@@ -613,10 +615,10 @@ internal sealed class AutoBookmarkCreator
                 mr = li;
             }
 
-            // 否则，用 item 创建新的 TextLine
+            // Otherwise, create new TextLine with item
             if (mr != null)
             {
-                // 若存在最小距离的 TextLine 且可合并，则将 item 归入 TextLine
+                // If there is a minimum distance of TextLine and can be merged, you will be classified into TextLine.
                 mr.AddLine(item);
             }
             else
@@ -697,12 +699,12 @@ internal sealed class AutoBookmarkCreator
         }
 
         /// <summary>
-        ///     获取页面内容的文本。
+        ///     Get the text for page content.
         /// </summary>
         internal List<TextInfo> TextList { get; }
 
         /// <summary>
-        ///     获取字体列表。
+        ///     Get a list of fonts.
         /// </summary>
         internal IDictionary<int, string> FontList => Fonts;
 
@@ -771,15 +773,15 @@ internal sealed class AutoBookmarkCreator
                     text = CurrentGraphicState.Font.DecodeText(operands[0] as PdfString);
                     break;
                 default:
-                    // 执行默认的操作指令
+                    // Execute the default operation instruction
                     base.InvokeOperator(oper, operands);
                     return;
             }
 
-            // 处理文本
+            // Processing text
             base.InvokeOperator(oper, operands);
             //if (tm[Matrix.I12] != 0 || tm[Matrix.I21] != 0) {
-            //    // 忽略非横向文本
+            //    // Ignore non-lateral text
             //    goto Exit;
             //}
             if (size < 0.0001)
@@ -806,10 +808,10 @@ internal sealed class AutoBookmarkCreator
 
             if (IsBoundOutOfRectangle(_context.PageBox, ti.Region))
             {
-                // 文本落在页面之外
+                // Text falls outside the page
                 goto Exit;
             }
-            //TODO: 筛选文本
+            //TODO: Filter text
             //this._context.TextInfo = ti;
             //ti.Size = _levelProcessor.ChangeSizeLevel (this._context);
             //if (ti.Size < _fontSizeThreshold) {
@@ -820,7 +822,7 @@ internal sealed class AutoBookmarkCreator
             //    || ti.Region.Top < this._positionRectangle.Top - this._positionRectangle.Height
             //    || ti.Region.Bottom > this._positionRectangle.Top
             //    || ti.Region.Left > this._positionRectangle.Right) {
-            //    // 文本落在范围框之外
+            //    // Text outside the range box
             //    goto Exit;
             //}
             TextList.Add(ti);
@@ -901,11 +903,11 @@ internal sealed class AutoBookmarkCreator
         }
 
         /// <summary>
-        ///     检查 <paramref name="b" /> 是否处于 <paramref name="a" /> 之内。
+        ///     Check if <paramref name="b" /> is within <paramref name="a".
         /// </summary>
-        /// <param name="a">大边框。</param>
-        /// <param name="b">小边框。</param>
-        /// <returns>小边框完全处于大边框内，则返回 true。</returns>
+        /// <param name="a">Big border.</param>
+        /// <param name="b">Small border.</param>
+        /// <returns>Small borders are completely in the bigide frame, then returns true.</returns>
         private static bool IsBoundOutOfRectangle(Rectangle a, Bound b) =>
             b.Right < a.Left
             || b.Top < a.Bottom

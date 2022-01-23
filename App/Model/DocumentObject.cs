@@ -68,12 +68,12 @@ public sealed class DocumentObject : IHierarchicalObject<DocumentObject>
     internal object ImageKey { get; set; }
 
     /// <summary>
-    ///     获取友好形式的名称。
+    ///     Get the name of the friendly form.
     /// </summary>
     internal string FriendlyName { get; set; }
 
     /// <summary>
-    ///     获取友好形式的值。
+    ///     Get the value of friendly form.
     /// </summary>
     internal string FriendlyValue { get; set; }
 
@@ -499,7 +499,7 @@ public sealed class DocumentObject : IHierarchicalObject<DocumentObject>
                 }
             case PdfObjectType.PageCommands:
                 {
-                    // 解释页面指令
+                    // Interpretation page instruction
                     int pn = (int)Parent.ExtensiveObject;
                     PdfPageCommandProcessor cp = new();
                     cp.ProcessContent(pdf.GetPageContent(pn), pdf.GetPageN(pn).GetAsDict(PdfName.RESOURCES));

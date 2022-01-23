@@ -25,13 +25,13 @@ public abstract class DocumentOptions
     [XmlAttribute("统一页面方向")] public bool UnifyPageOrientation { get; set; }
 
     /// <summary>
-    ///     设置统一页面方向要旋转的页面。默认旋转横向的页面。
+    ///     Set the page to rotate in the unified page.The default rotates the horizontal page.
     /// </summary>
     [XmlAttribute("旋转源页面方向")]
     public bool RotateVerticalPages { get; set; }
 
     /// <summary>
-    ///     设置统一页面旋转页面的方向。默认为顺时针旋转。
+    ///     Set the direction of the unified page to rotate the page.The default is rotated clockwise.
     /// </summary>
     [XmlAttribute("旋转方向")]
     public bool RotateAntiClockwise { get; set; }

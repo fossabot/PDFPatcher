@@ -3,7 +3,7 @@ using System.Drawing;
 using FreeImageAPI;
 public class ImageDeskew
 {
-	// Representation of a line in the image.  
+	// Representation of a line in the image.
 	private class HougLine
 	{
 		// Count of points in the line.
@@ -140,7 +140,7 @@ public class ImageDeskew
 			_cosA[i] = Math.Cos (angle);
 		}
 
-		// Range of d:            
+		// Range of d:
 		_min = -image.Width;
 		_count = (int)(2 * (image.Width + image.Height) / STEP);
 		_hMatrix = new int[_count * STEPS];
@@ -176,20 +176,20 @@ public class ImageDeskew
 //    /// <summary>
 //    /// Hough line.
 //    /// </summary>
-//    /// 
+//    ///
 //    /// <remarks><para>Represents line of Hough Line transformation using
 //    /// <a href="http://en.wikipedia.org/wiki/Polar_coordinate_system">polar coordinates</a>.
 //    /// See <a href="http://en.wikipedia.org/wiki/Polar_coordinate_system#Converting_between_polar_and_Cartesian_coordinates">Wikipedia</a>
 //    /// for information on how to convert polar coordinates to Cartesian coordinates.
 //    /// </para>
-//    /// 
+//    ///
 //    /// <para><note><see cref="HoughLineTransformation">Hough Line transformation</see> does not provide
 //    /// information about lines start and end points, only slope and distance from image's center. Using
 //    /// only provided information it is not possible to draw the detected line as it exactly appears on
 //    /// the source image. But it is possible to draw a line through the entire image, which contains the
 //    /// source line (see sample code below).
 //    /// </note></para>
-//    /// 
+//    ///
 //    /// <para>Sample code to draw detected Hough lines:</para>
 //    /// <code>
 //    /// HoughLineTransformation lineTransform = new HoughLineTransformation( );
@@ -198,65 +198,65 @@ public class ImageDeskew
 //    /// Bitmap houghLineImage = lineTransform.ToBitmap( );
 //    /// // get lines using relative intensity
 //    /// HoughLine[] lines = lineTransform.GetLinesByRelativeIntensity( 0.5 );
-//    /// 
+//    ///
 //    /// foreach ( HoughLine line in lines )
 //    /// {
-//    ///     // get line's radius and theta values
-//    ///     int    r = line.Radius;
-//    ///     double t = line.Theta;
-//    ///     
-//    ///     // check if line is in lower part of the image
-//    ///     if ( r &lt; 0 )
-//    ///     {
-//    ///         t += 180;
-//    ///         r = -r;
-//    ///     }
-//    ///     
-//    ///     // convert degrees to radians
-//    ///     t = ( t / 180 ) * Math.PI;
-//    ///     
-//    ///     // get image centers (all coordinate are measured relative
-//    ///     // to center)
-//    ///     int w2 = image.Width /2;
-//    ///     int h2 = image.Height / 2;
-//    ///     
-//    ///     double x0 = 0, x1 = 0, y0 = 0, y1 = 0;
-//    ///     
-//    ///     if ( line.Theta != 0 )
-//    ///     {
-//    ///         // none-vertical line
-//    ///         x0 = -w2; // most left point
-//    ///         x1 = w2;  // most right point
-//    ///     
-//    ///         // calculate corresponding y values
-//    ///         y0 = ( -Math.Cos( t ) * x0 + r ) / Math.Sin( t );
-//    ///         y1 = ( -Math.Cos( t ) * x1 + r ) / Math.Sin( t );
-//    ///     }
-//    ///     else
-//    ///     {
-//    ///         // vertical line
-//    ///         x0 = line.Radius;
-//    ///         x1 = line.Radius;
-//    ///     
-//    ///         y0 = h2;
-//    ///         y1 = -h2;
-//    ///     }
-//    ///     
-//    ///     // draw line on the image
-//    ///     Drawing.Line( sourceData,
-//    ///         new IntPoint( (int) x0 + w2, h2 - (int) y0 ),
-//    ///         new IntPoint( (int) x1 + w2, h2 - (int) y1 ),
-//    ///         Color.Red );
+//    ///    // get line's radius and theta values
+//    ///    int    r = line.Radius;
+//    ///    double t = line.Theta;
+//    ///
+//    ///    // check if line is in lower part of the image
+//    ///    if ( r &lt; 0 )
+//    ///    {
+//    ///        t += 180;
+//    ///        r = -r;
+//    ///    }
+//    ///
+//    ///    // convert degrees to radians
+//    ///    t = ( t / 180 ) * Math.PI;
+//    ///
+//    ///    // get image centers (all coordinate are measured relative
+//    ///    // to center)
+//    ///    int w2 = image.Width /2;
+//    ///    int h2 = image.Height / 2;
+//    ///
+//    ///    double x0 = 0, x1 = 0, y0 = 0, y1 = 0;
+//    ///
+//    ///    if ( line.Theta != 0 )
+//    ///    {
+//    ///        // none-vertical line
+//    ///        x0 = -w2; // most left point
+//    ///        x1 = w2;  // most right point
+//    ///
+//    ///        // calculate corresponding y values
+//    ///        y0 = ( -Math.Cos( t ) * x0 + r ) / Math.Sin( t );
+//    ///        y1 = ( -Math.Cos( t ) * x1 + r ) / Math.Sin( t );
+//    ///    }
+//    ///    else
+//    ///    {
+//    ///        // vertical line
+//    ///        x0 = line.Radius;
+//    ///        x1 = line.Radius;
+//    ///
+//    ///        y0 = h2;
+//    ///        y1 = -h2;
+//    ///    }
+//    ///
+//    ///    // draw line on the image
+//    ///    Drawing.Line( sourceData,
+//    ///        new IntPoint( (int) x0 + w2, h2 - (int) y0 ),
+//    ///        new IntPoint( (int) x1 + w2, h2 - (int) y1 ),
+//    ///        Color.Red );
 //    /// }
 //    /// </code>
-//    /// 
+//    ///
 //    /// <para>To clarify meaning of <see cref="Radius"/> and <see cref="Theta"/> values
 //    /// of detected Hough lines, let's take a look at the below sample image and
 //    /// corresponding values of radius and theta for the lines on the image:
 //    /// </para>
-//    /// 
+//    ///
 //    /// <img src="img/imaging/sample15.png" width="400" height="300" />
-//    /// 
+//    ///
 //    /// <para>Detected radius and theta values (color in corresponding colors):
 //    /// <list type="bullet">
 //    /// <item><font color="#FF0000">Theta = 90, R = 125, I = 249</font>;</item>
@@ -267,11 +267,11 @@ public class ImageDeskew
 //    /// <item><font color="#FF80FF">Theta = 45, R = 127, I = 82</font>.</item>
 //    /// </list>
 //    /// </para>
-//    /// 
+//    ///
 //    /// </remarks>
-//    /// 
+//    ///
 //    /// <seealso cref="HoughLineTransformation"/>
-//    /// 
+//    ///
 //    public class HoughLine : IComparable
 //    {
 //        /// <summary>
@@ -283,50 +283,50 @@ public class ImageDeskew
 //        /// <summary>
 //        /// Line's distance from image center, (−∞, +∞).
 //        /// </summary>
-//        /// 
+//        ///
 //        /// <remarks><note>Negative line's radius means, that the line resides in lower
 //        /// part of the polar coordinates system. This means that <see cref="Theta"/> value
 //        /// should be increased by 180 degrees and radius should be made positive.
 //        /// </note></remarks>
-//        /// 
+//        ///
 //        public readonly short Radius;
 
 //        /// <summary>
 //        /// Line's absolute intensity, (0, +∞).
 //        /// </summary>
-//        /// 
+//        ///
 //        /// <remarks><para>Line's absolute intensity is a measure, which equals
 //        /// to number of pixels detected on the line. This value is bigger for longer
 //        /// lines.</para>
-//        /// 
+//        ///
 //        /// <para><note>The value may not be 100% reliable to measure exact number of pixels
 //        /// on the line. Although these value correlate a lot (which means they are very close
 //        /// in most cases), the intensity value may slightly vary.</note></para>
 //        /// </remarks>
-//        /// 
+//        ///
 //        public readonly short Intensity;
 
 //        /// <summary>
 //        /// Line's relative intensity, (0, 1].
 //        /// </summary>
-//        /// 
+//        ///
 //        /// <remarks><para>Line's relative intensity is relation of line's <see cref="Intensity"/>
 //        /// value to maximum found intensity. For the longest line (line with highest intesity) the
 //        /// relative intensity is set to 1. If line's relative is set 0.5, for example, this means
 //        /// its intensity is half of maximum found intensity.</para>
 //        /// </remarks>
-//        /// 
+//        ///
 //        public readonly double RelativeIntensity;
 
 //        /// <summary>
 //        /// Initializes a new instance of the <see cref="HoughLine"/> class.
 //        /// </summary>
-//        /// 
+//        ///
 //        /// <param name="theta">Line's slope.</param>
 //        /// <param name="radius">Line's distance from image center.</param>
 //        /// <param name="intensity">Line's absolute intensity.</param>
 //        /// <param name="relativeIntensity">Line's relative intensity.</param>
-//        /// 
+//        ///
 //        public HoughLine (double theta, short radius, short intensity, double relativeIntensity) {
 //            Theta = theta;
 //            Radius = radius;
@@ -337,19 +337,19 @@ public class ImageDeskew
 //        /// <summary>
 //        /// Compare the object with another instance of this class.
 //        /// </summary>
-//        /// 
+//        ///
 //        /// <param name="value">Object to compare with.</param>
-//        /// 
-//        /// <returns><para>A signed number indicating the relative values of this instance and <b>value</b>: 1) greater than zero - 
+//        ///
+//        /// <returns><para>A signed number indicating the relative values of this instance and <b>value</b>: 1) greater than zero -
 //        /// this instance is greater than <b>value</b>; 2) zero - this instance is equal to <b>value</b>;
 //        /// 3) greater than zero - this instance is less than <b>value</b>.</para>
-//        /// 
+//        ///
 //        /// <para><note>The sort order is descending.</note></para></returns>
-//        /// 
+//        ///
 //        /// <remarks>
 //        /// <para><note>Object are compared using their <see cref="Intensity">intensity</see> value.</note></para>
 //        /// </remarks>
-//        /// 
+//        ///
 //        public int CompareTo (object value) {
 //            return (-Intensity.CompareTo (((HoughLine)value).Intensity));
 //        }
@@ -363,15 +363,15 @@ public class ImageDeskew
 //    /// on <see cref="HoughLineTransformation">Hough line transformation</see>. The algorithm
 //    /// is based on searching for text base lines - black line of text bottoms' followed
 //    /// by white line below.</para>
-//    /// 
+//    ///
 //    /// <para><note>The routine supposes that a white-background document is provided
 //    /// with black letters. The algorithm is not supposed for any type of objects, but for
 //    /// document images with text.</note></para>
-//    /// 
+//    ///
 //    /// <para>The range of angles to detect is controlled by <see cref="MaxSkewToDetect"/> property.</para>
-//    /// 
+//    ///
 //    /// <para>The filter accepts 8 bpp grayscale images for processing.</para>
-//    /// 
+//    ///
 //    /// <para>Sample usage:</para>
 //    /// <code>
 //    /// // create instance of skew checker
@@ -384,13 +384,13 @@ public class ImageDeskew
 //    /// // rotate image applying the filter
 //    /// Bitmap rotatedImage = rotationFilter.Apply( documentImage );
 //    /// </code>
-//    /// 
+//    ///
 //    /// <para><b>Initial image:</b></para>
 //    /// <img src="img/imaging/sample10.png" width="300" height="184" />
 //    /// <para><b>Deskewed image:</b></para>
-//    /// <img src="img/imaging/deskew.png" width="335" height="250" /> 
+//    /// <img src="img/imaging/deskew.png" width="335" height="250" />
 //    /// </remarks>
-//    /// 
+//    ///
 //    /// <seealso cref="HoughLineTransformation"/>
 //    ///
 //    public class ImageDeskew
@@ -416,13 +416,13 @@ public class ImageDeskew
 //        /// <summary>
 //        /// Steps per degree, [1, 10].
 //        /// </summary>
-//        /// 
+//        ///
 //        /// <remarks><para>The value defines quality of Hough transform and its ability to detect
 //        /// line slope precisely.</para>
-//        /// 
+//        ///
 //        /// <para>Default value is set to <b>1</b>.</para>
 //        /// </remarks>
-//        /// 
+//        ///
 //        public int StepsPerDegree {
 //            get { return stepsPerDegree; }
 //            set {
@@ -434,17 +434,17 @@ public class ImageDeskew
 //        /// <summary>
 //        /// Maximum skew angle to detect, [0, 45] degrees.
 //        /// </summary>
-//        /// 
+//        ///
 //        /// <remarks><para>The value sets maximum document's skew angle to detect.
 //        /// Document's skew angle can be as positive (rotated counter clockwise), as negative
 //        /// (rotated clockwise). So setting this value to 25, for example, will lead to
 //        /// [-25, 25] degrees detection range.</para>
 //        ///
 //        /// <para>Scanned documents usually have skew in the [-20, 20] degrees range.</para>
-//        /// 
+//        ///
 //        /// <para>Default value is set to <b>30</b>.</para>
 //        /// </remarks>
-//        /// 
+//        ///
 //        public double MaxSkewToDetect {
 //            get { return maxSkewToDetect; }
 //            set {
@@ -482,12 +482,12 @@ public class ImageDeskew
 //        /// <summary>
 //        /// Radius for searching local peak value, [1, 10].
 //        /// </summary>
-//        /// 
+//        ///
 //        /// <remarks><para>The value determines radius around a map's value, which is analyzed to determine
 //        /// if the map's value is a local maximum in specified area.</para>
-//        /// 
+//        ///
 //        /// <para>Default value is set to <b>4</b>.</para></remarks>
-//        /// 
+//        ///
 //        public int LocalPeakRadius {
 //            get { return localPeakRadius; }
 //            set { localPeakRadius = Math.Max (1, Math.Min (10, value)); }
@@ -504,14 +504,14 @@ public class ImageDeskew
 //        /// <summary>
 //        /// Get skew angle of the provided document image.
 //        /// </summary>
-//        /// 
+//        ///
 //        /// <param name="image">Document's image to get skew angle of.</param>
-//        /// 
+//        ///
 //        /// <returns>Returns document's skew angle. If the returned angle equals to -90,
 //        /// then document skew detection has failed.</returns>
-//        /// 
+//        ///
 //        /// <exception cref="UnsupportedImageFormatException">Unsupported pixel format of the source image.</exception>
-//        /// 
+//        ///
 //        public double GetSkewAngle (FreeImageBitmap image) {
 //            return GetSkewAngle (image, new Rectangle (0, 0, image.Width, image.Height));
 //        }
@@ -519,16 +519,16 @@ public class ImageDeskew
 //        /// <summary>
 //        /// Get skew angle of the provided document image.
 //        /// </summary>
-//        /// 
+//        ///
 //        /// <param name="image">Document's image to get skew angle of.</param>
 //        /// <param name="rect">Image's rectangle to process (used to exclude processing of
 //        /// regions, which are not relevant to skew detection).</param>
-//        /// 
+//        ///
 //        /// <returns>Returns document's skew angle. If the returned angle equals to -90,
 //        /// then document skew detection has failed.</returns>
-//        /// 
+//        ///
 //        /// <exception cref="UnsupportedImageFormatException">Unsupported pixel format of the source image.</exception>
-//        /// 
+//        ///
 //        public double GetSkewAngle (FreeImageBitmap image, Rectangle rect) {
 //            //image = image.GetColorConvertedInstance (FREE_IMAGE_COLOR_DEPTH.FICD_FORCE_GREYSCALE | FREE_IMAGE_COLOR_DEPTH.FICD_08_BPP);
 

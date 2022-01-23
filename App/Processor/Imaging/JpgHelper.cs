@@ -49,7 +49,7 @@ internal static class JpgHelper
             }
         };
 
-    // JPEG 编码器不支持 8 位图像输出
+    // JPEG Encoder does not support 8-bit image output
 
     internal static void Save(this Image bmp, string fileName, int quality)
     {
@@ -164,7 +164,7 @@ internal static class JpgHelper
             // rest of the document.
             _isLittleEndian = false;
 
-            // Open the file in a stream            
+            // Open the file in a stream
             _reader = new BinaryReader(_stream, Encoding.UTF8);
 
             // Make sure the file's a JPEG.
@@ -543,7 +543,7 @@ internal static class JpgHelper
 
         private bool GetTagValue<T>(ushort tagId, out T result)
         {
-            // All useful EXIF tags are stored in the ifd0 catalogue. The ifd1 catalogue is only for thumbnail retrieval.            
+            // All useful EXIF tags are stored in the ifd0 catalogue. The ifd1 catalogue is only for thumbnail retrieval.
             Initialize();
             return GetTagValue(_ifd0Catalogue, tagId, out result);
         }
@@ -746,9 +746,9 @@ internal static class JpgHelper
 
         private static bool ToDateTime(string str, out DateTime result)
         {
-            // From page 28 of the Exif 2.2 spec (http://www.exif.org/Exif2-2.PDF): 
+            // From page 28 of the Exif 2.2 spec (http://www.exif.org/Exif2-2.PDF):
 
-            // "When the field is left blank, it is treated as unknown ... When the date and time are unknown, 
+            // "When the field is left blank, it is treated as unknown ... When the date and time are unknown,
             // all the character spaces except colons (":") may be filled with blank characters"
             if (string.IsNullOrEmpty(str) || _nullDateTimeMatcher.IsMatch(str))
             {

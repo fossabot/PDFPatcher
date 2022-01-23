@@ -5,30 +5,34 @@ namespace PDFPatcher.Processor;
 internal interface IPageProcessor : IProcessor
 {
     /// <summary>
-    ///     估算工作量。
+    ///     Estimate the workload.
     /// </summary>
-    /// <param name="pdf">需要处理的文档。</param>
-    /// <returns>整数工作量（用于显示进度条）。</returns>
+    /// <param name="pdf">The document that needs to be processed.</param>
+    /// <returns>Integer workload (for displaying progress bar).</returns>
     int EstimateWorkload(PdfReader pdf);
 
     /// <summary>
-    ///     在处理页面前调用，初始化处理器。
+    ///     Call the processor in front of the processing page.
     /// </summary>
-    /// <param name="context">包含传入文档的 <see cref="DocProcessorContext" /></param>
-    /// <returns>更改文档内容后返回 true。</returns>
+    /// <param name="context">
+    ///     <see cref="docprocessorContext" />
+    /// </param>
+    /// of incoming document
+    /// <returns>Returns true after changing the document.</returns>
     void BeginProcess(DocProcessorContext context);
 
     /// <summary>
-    ///     处理传入的页面。
+    ///     Process the incoming page.
     /// </summary>
-    /// <param name="context">包含传入页面的 <see cref="PageProcessorContext" /></param>
-    /// <returns>更改页面内容后返回 true。</returns>
+    /// <param name="context">Contains <see cref="pageProcessorContext" /></param>
+    /// of the incoming page
+    /// <returns>Returns True after changing the page.</returns>
     bool Process(PageProcessorContext context);
 
     /// <summary>
-    ///     完成处理文档的操作，在完成处理所有页面后被调用。
+    ///     Complete the operation of the processing document, is called after completing all the pages.
     /// </summary>
-    /// <param name="pdf">需要处理的文档。</param>
-    /// <returns>更改文档内容后返回 true。</returns>
+    /// <param name="pdf">The document that needs to be processed.</param>
+    /// <returns>Returns true after changing the document.</returns>
     bool EndProcess(PdfReader pdf);
 }

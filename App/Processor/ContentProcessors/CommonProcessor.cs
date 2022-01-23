@@ -8,7 +8,7 @@ internal sealed class CommonProcessor : IPageProcessor
 
     public CommonProcessor(PatcherOptions options) => _options = options;
 
-    #region IPageProcessor 成员
+    #region IPageProcessor member
 
     public string Name => "PDF 常规处理";
 

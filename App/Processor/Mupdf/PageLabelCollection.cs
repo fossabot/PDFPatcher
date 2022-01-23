@@ -32,9 +32,10 @@ public sealed class PageLabelCollection : ICollection<PageLabel>
     public PageLabel this[int index] => _labels[index];
 
     /// <summary>
-    ///     添加页码标签。如集合中存在相同页码的页码标签，则先将旧的标签删除，再添加新的页码标签。
+    ///     Add a page number tab.If there is a page tab of the same page number in the collection, the old tag is deleted
+    ///     first, then add a new page number tab.
     /// </summary>
-    /// <param name="label">需要添加的页码标签。</param>
+    /// <param name="label">You need to add the page number tab.</param>
     public void Add(PageLabel label)
     {
         Remove(label);
@@ -45,10 +46,11 @@ public sealed class PageLabelCollection : ICollection<PageLabel>
     public void Clear() => _labels.Clear();
 
     /// <summary>
-    ///     返回集合中是否包含具有与 <paramref name="item" /> 相同起始页码的页码标签。
+    ///     Returns whether the collection contains page number tags with the same starting page number as
+    ///     <paramref name="item" />.
     /// </summary>
-    /// <param name="item">需要检查起始页码的页码标签。</param>
-    /// <returns>如包含相同页码的页码标签，返回 true，否则返回 false。</returns>
+    /// <param name="item">The page number label that needs to check the starting page number. </param>
+    /// <returns>If the page number label contains the same page number, return true, otherwise return false. </returns>
     public bool Contains(PageLabel item)
     {
         for (int i = _labels.Count - 1; i >= 0; i--)
@@ -69,10 +71,10 @@ public sealed class PageLabelCollection : ICollection<PageLabel>
     public bool IsReadOnly => false;
 
     /// <summary>
-    ///     删除集合中具有与 <paramref name="item" /> 相同起始页码的页码标签。
+    ///     Removes page number tags in the collection that have the same starting page number as <paramref name="item" />.
     /// </summary>
-    /// <param name="item">需要删除的页码标签。</param>
-    /// <returns>如包含相同页码的页码标签，返回 true，否则返回 false。</returns>
+    /// <param name="item">The page number label that needs to be deleted. </param>
+    /// <returns>If the page number label contains the same page number, return true, otherwise return false. </returns>
     public bool Remove(PageLabel item)
     {
         for (int i = _labels.Count - 1; i >= 0; i--)
@@ -94,10 +96,11 @@ public sealed class PageLabelCollection : ICollection<PageLabel>
     IEnumerator IEnumerable.GetEnumerator() => _labels.GetEnumerator();
 
     /// <summary>
-    ///     根据传入的页码，返回当前页码标签集合格式化后生成的页码。
+    ///     According to the incoming page number, return the page number generated after formatting the current page number
+    ///     label set.
     /// </summary>
-    /// <param name="pageNumber">绝对页码。</param>
-    /// <returns>格式化后的页码文本。</returns>
+    /// <param name="pageNumber">Absolute page number. </param>
+    /// <returns>Formatted page number text. </returns>
     public string Format(int pageNumber)
     {
         int l = _labels.Count;

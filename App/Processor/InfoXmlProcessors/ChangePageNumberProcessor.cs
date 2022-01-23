@@ -16,7 +16,7 @@ internal sealed class ChangePageNumberProcessor : IPdfInfoXmlProcessor
     public int Amount { get; }
     public bool SkipZero { get; }
 
-    #region IInfoDocProcessor 成员
+    #region IInfoDocProcessor member
 
     public string Name => "更改目标页码";
 

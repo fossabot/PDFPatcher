@@ -43,7 +43,7 @@ public class FunctionControl : UserControl
             return;
         }
 
-        // 将第一个文本框设置为文件路径
+        // Set the first text box as a file path
         if (parameters.Length <= 0 || string.IsNullOrEmpty(parameters[0]) ||
             !FileHelper.HasExtension(parameters[0], Constants.FileExtensions.Pdf))
         {
@@ -78,7 +78,7 @@ public class FunctionControl : UserControl
 
     internal void SetupMenu(ToolStripItemCollection items)
     {
-        bool pvs = false; // 前一个可见项目是否为分隔符
+        bool pvs = false; // The previous visible item is a separator
         foreach (ToolStripItem item in items)
         {
             switch (item.Name)

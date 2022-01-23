@@ -40,7 +40,7 @@ public partial class ExtractImageControl : FunctionControl, IResettableControl
 
     public override Bitmap IconImage => Resources.ExtractImage;
 
-    #region IDefaultButtonControl 成员
+    #region IDefaultButtonControl member
 
     public override Button DefaultButton => _ExtractButton;
 

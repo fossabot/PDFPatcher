@@ -13,9 +13,9 @@ internal static class FontHelper
         Path.GetFullPath(Environment.GetFolderPath(Environment.SpecialFolder.System) + "\\..\\fonts\\");
 
     /// <summary>
-    ///     列出已安装的字体及其路径。
+    ///     list the installed font and its path.
     /// </summary>
-    /// <param name="includeFamilyName">是否包含字体组名称</param>
+    /// <param name="includeFamilyName">Does it include the font group name </param>
     public static Dictionary<string, string> GetInstalledFonts(bool includeFamilyName)
     {
         Dictionary<string, string> d = new(50);

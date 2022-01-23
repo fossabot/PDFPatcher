@@ -11,35 +11,35 @@ namespace PDFPatcher.Model;
 [XmlRoot(Constants.Content.Page)]
 public class PageSettings
 {
-    ///<summary>获取或指定页面范围的值。</summary>
+    /// <summary>Gets or specifies the value of the page range.</summary>
     [XmlAttribute(Constants.PageRange)]
     public string PageRange { get; set; }
 
-    ///<summary>获取或指定页面筛选的值。</summary>
+    /// <summary>Get or specify the value of the page filtering.</summary>
     [XmlAttribute(Constants.PageFilterTypes.ThisName)]
     public string Filter { get; set; }
 
-    ///<summary>获取或指定页面尺寸的值。</summary>
+    /// <summary>Gets or specifies the value of the page size.</summary>
     [XmlAttribute(Constants.Content.PageSettings.MediaBox)]
     public string PageSize { get; set; }
 
-    ///<summary>获取或指定裁剪框的值。</summary>
+    /// <summary>Gets or specifies the value of the crop frame.</summary>
     [XmlAttribute(Constants.Content.PageSettings.CropBox)]
     public string CropBox { get; set; }
 
-    ///<summary>获取或指定修剪框的值。</summary>
+    /// <summary>Gets or specifies the value of the trim frame.</summary>
     [XmlAttribute(Constants.Content.PageSettings.TrimBox)]
     public string TrimBox { get; set; }
 
-    ///<summary>获取或指定艺术框的值。</summary>
+    /// <summary>Gets or specifies the value of the art box.</summary>
     [XmlAttribute(Constants.Content.PageSettings.ArtBox)]
     public string ArtBox { get; set; }
 
-    ///<summary>获取或指定出血框的值。</summary>
+    /// <summary>Gets or specifies the value of the bleid box.</summary>
     [XmlAttribute(Constants.Content.PageSettings.BleedBox)]
     public string BleedBox { get; set; }
 
-    ///<summary>获取或指定旋转角度的值。</summary>
+    /// <summary>Gets or specifies the value of the angle of rotation.</summary>
     [XmlAttribute(Constants.Content.PageSettings.Rotation)]
     [DefaultValue(0)]
     public int Rotation { get; set; }

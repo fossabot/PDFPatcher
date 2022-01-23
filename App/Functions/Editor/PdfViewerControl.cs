@@ -38,7 +38,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
     private readonly BackgroundWorker _renderWorker;
 
     /// <summary>
-    ///     缓存页面渲染结果的缓冲区。
+    ///     Cache the buffer of the page rendering result.
     /// </summary>
     private RenderResultCache _cache;
 
@@ -54,12 +54,12 @@ internal sealed class PdfViewerControl : ImageBoxEx
     private Dictionary<int, List<TextLine>> _ocrResults;
 
     /// <summary>
-    ///     页面的尺寸信息。
+    ///     The size information of the page.
     /// </summary>
     private MuRectangle[] _pageBounds;
 
     /// <summary>
-    ///     页面的滚动位置。
+    ///     The scrolling position of the page.
     /// </summary>
     private int[] _pageOffsets;
 
@@ -150,7 +150,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     /// <summary>
-    ///     获取或设置显示的焦点页面。
+    ///     Gets or sets the displayed focus page.
     /// </summary>
     [DefaultValue(0)]
     public int CurrentPageNumber
@@ -168,19 +168,19 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     /// <summary>
-    ///     获取当前可见的第一个页面。
+    ///     Get the currently visible first page.
     /// </summary>
     [Browsable(false)]
     public int FirstPage => _DisplayRange.StartValue;
 
     /// <summary>
-    ///     获取文本识别选项。
+    ///     Get text identification options.
     /// </summary>
     [Browsable(false)]
     public OcrOptions OcrOptions { get; } = new();
 
     /// <summary>
-    ///     获取或设置显示放大比率。
+    ///     Get or set the display amplification ratio.
     /// </summary>
     [Browsable(false)]
     public string LiteralZoom
@@ -201,7 +201,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
     public new float ZoomFactor => _zoomFactor * 72f / _renderOptions.Dpi;
 
     /// <summary>
-    ///     获取或设置阅读器是否使用右到左的水平滚动模式。
+    ///     Get or set up the reader to use the horizontal scroll mode of right to left.
     /// </summary>
     [DefaultValue(ContentDirection.TopToDown)]
     public ContentDirection ContentDirection
@@ -250,7 +250,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
     public bool HorizontalFlow => _contentFlow != ContentDirection.TopToDown;
 
     /// <summary>
-    ///     获取或设置阅读器是否将页面渲染为灰度图像。
+    ///     Get or set up whether the reader renders the page as a grayscale image.
     /// </summary>
     [DefaultValue(false)]
     public bool GrayScale
@@ -270,7 +270,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     /// <summary>
-    ///     获取或设置阅读器是否将页面渲染为反转颜色的效果。
+    ///     Gets or sets whether the reader renders the page as the effect of reversing the color.
     /// </summary>
     [DefaultValue(false)]
     public bool InvertColor
@@ -320,7 +320,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     /// <summary>
-    ///     获取或设置阅读器的鼠标操作模式。
+    ///     Gets or sets the mouse mode of the reader.
     /// </summary>
     [DefaultValue(MouseMode.Move)]
     public MouseMode MouseMode
@@ -346,7 +346,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
 
     [DefaultValue(false)] public bool FullPageScroll { get; set; }
 
-    [Description("指定鼠标定位点")]
+    [Description("Specify mouse positioning point")]
     public DrawingPoint PinPoint
     {
         get => _PinPoint;
@@ -366,7 +366,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     [DefaultValue(false)]
-    [Description("指定是否显示鼠标定位点")]
+    [Description("Specifies whether to display mouse positioning points")]
     public bool ShowPinPoint
     {
         get => _ShowPinPoint;
@@ -403,7 +403,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     [DefaultValue(false)]
-    [Description("显示文本层的边框")]
+    [Description("Display the border of the text layer")]
     public bool ShowTextBorders
     {
         get => _ShowTextBorders;
@@ -423,7 +423,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     [DefaultValue(0)]
-    [Description("指定用于识别文本的语言")]
+    [Description("Specifies the language used to identify the text")]
     public int OcrLanguage
     {
         get => OcrOptions.OcrLangID;
@@ -439,7 +439,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
         }
     }
 
-    [Description("指定需要显示的 PDF 文档")]
+    [Description("Specify the PDF document you want to display")]
     [Browsable(false)]
     [DefaultValue(null)]
     public MuDocument Document
@@ -704,7 +704,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
         int p = _DisplayRange.StartValue;
         PageChanged?.Invoke(this, new PageChangedEventArgs(p));
         Graphics g = e.Graphics;
-        DrawingPoint op = GetOffsetPoint(0, 0); // 偏移位置点
+        DrawingPoint op = GetOffsetPoint(0, 0); // Offset location point
         DrawingRectangle vp = GetImageViewPort();
         if (TintColor == Color.Transparent)
         {
@@ -821,9 +821,9 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     /// <summary>
-    ///     返回选定区域。
+    ///     Returns the selected area.
     /// </summary>
-    /// <returns>选定的矩形区域。</returns>
+    /// <returns>The selected rectangular area.</returns>
     internal Selection GetSelection()
     {
         PageRegion s = GetSelectionPageRegion();
@@ -859,10 +859,10 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     /// <summary>
-    ///     返回指定位置的文本行以及与该文本行具有相同样式的后续文本行。
+    ///     Returns the text row of the specified location and the subsequent text line with the same style as the text.
     /// </summary>
-    /// <param name="position">查找文本行的位置。</param>
-    /// <returns>返回指定位置的文本行以及与该文本行具有相同样式的后续文本行。</returns>
+    /// <param name="position">Find the location of the text line.</param>
+    /// <returns>Returns the text row of the specified location and the subsequent text line with the same style as the text.</returns>
     internal TextInfo FindTextLines(PagePosition position)
     {
         MuRectangle rect = new();
@@ -901,7 +901,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
                             continue;
                         }
 
-                        s = new HashSet<IntPtr>(); // 获取选中文本行的文本样式集合
+                        s = new HashSet<IntPtr>(); // Get text style collection of selected text rows
                         r = new List<MuTextLine>();
                         foreach (MuTextChar ch in line.Characters)
                         {
@@ -919,7 +919,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
                             break;
                         }
 
-                        // 获取具有相同样式的邻接文本行
+                        // Get adjacency texts with the same style
                         foreach (MuTextChar ch in line.Characters)
                         {
                             if (!s.Contains(ch.FontID))
@@ -955,10 +955,10 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     /// <summary>
-    ///     返回指定区域内的文本行。
+    ///     Returns the text line in the specified area.
     /// </summary>
-    /// <param name="region">选择的区域。</param>
-    /// <returns>区域内的文本行。</returns>
+    /// <param name="region">Selected area.</param>
+    /// <returns>Text line in the area.</returns>
     internal List<MuTextLine> FindTextLines(PageRegion region)
     {
         if (_mupdf.IsDocumentOpened == false)
@@ -1129,7 +1129,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
         }
 
         UpdateDisplay(true);
-        // 保持选区尺寸比例
+        // Keep the size ratio of the selection
         if (z > 0)
         {
             RectangleF r = s.ImageRegion;
@@ -1489,7 +1489,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
         public Selection Selection { get; }
     }
 
-    #region 坐标转换
+    #region Coordinate conversion
 
     internal bool IsClientPointInSelection(DrawingPoint point) => SelectionRegion.Contains(PointToImage(point));
 
@@ -1509,11 +1509,11 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     /// <summary>
-    ///     将屏幕客户区域的位置转换为页面坐标。
+    ///     Convert the position of the screen customer area to page coordinates.
     /// </summary>
-    /// <param name="clientX">横坐标。</param>
-    /// <param name="clientY">纵坐标。</param>
-    /// <returns>页面坐标。</returns>
+    /// <param name="clientX">X-axis.</param>
+    /// <param name="clientY">Y-axis.</param>
+    /// <returns>Page coordinates.</returns>
     internal PagePosition TransposeClientToPagePosition(int clientX, int clientY)
     {
         if (_DisplayRange.StartValue <= 0 || _pageBounds == null)
@@ -1526,11 +1526,11 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     /// <summary>
-    ///     将虚拟画布的坐标点转换为屏幕客户区域的位置。
+    ///     Convert the coordinate points of the virtual canvas to the location of the screen customer area.
     /// </summary>
-    /// <param name="imageX">虚拟画布位置的横坐标。</param>
-    /// <param name="imageY">虚拟画布位置的横坐标。</param>
-    /// <returns>屏幕客户区域的位置。</returns>
+    /// <param name="imageX">Virtual canvas level horizontal somewhere.</param>
+    /// <param name="imageY">Virtual canvas level horizontal somewhere.</param>
+    /// <returns>The location of the screen customer area.</returns>
     internal DrawingPoint TransposeVirtualImageToClient(float imageX, float imageY)
     {
         DrawingRectangle vp = GetImageViewPort();
@@ -1539,10 +1539,10 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     /// <summary>
-    ///     获取指定页面在虚拟画布上的绘制坐标点。
+    ///     Get the drawing coordinate point on the specified page on the virtual canvas.
     /// </summary>
-    /// <param name="pageNumber">页面编号。</param>
-    /// <returns>页面左上角在虚拟画布上的坐标点。</returns>
+    /// <param name="pageNumber">Page number.</param>
+    /// <returns>The coordinate point on the virtual canvas on the upper left corner of the page.</returns>
     internal DrawingPoint GetVirtualImageOffset(int pageNumber)
     {
         bool rtl = HorizontalFlow;
@@ -1552,10 +1552,10 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     /// <summary>
-    ///     将虚拟画布的位置转换为页面坐标。
+    ///     Convert the location of the virtual canvas to page coordinates.
     /// </summary>
-    /// <param name="imageX">虚拟画布位置的横坐标。</param>
-    /// <param name="imageY">虚拟画布位置的纵坐标。</param>
+    /// <param name="imageX">Virtual canvas level horizontal somewhere.</param>
+    /// <param name="imageY">Merry coordinate of virtual canvas position.</param>
     /// <returns>页面坐标。</returns>
     internal PagePosition TransposeVirtualImageToPagePosition(int imageX, int imageY)
     {
@@ -1564,11 +1564,11 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     /// <summary>
-    ///     将屏幕客户区域的位置转换为渲染页面位置。
+    ///     Convert the position of the screen customer area to the rendering page location.
     /// </summary>
-    /// <param name="clientX">屏幕区域的横坐标。</param>
-    /// <param name="clientY">屏幕区域的纵坐标。</param>
-    /// <returns>渲染页面的位置。</returns>
+    /// <param name="clientX">The abscissa of the screen area.</param>
+    /// <param name="clientY">The ordinate of the screen area.</param>
+    /// <returns>Rendering the location of the page.</returns>
     internal PagePoint TransposeClientToPageImage(int clientX, int clientY)
     {
         if (_DisplayRange.StartValue <= 0 || _pageBounds == null || IsPointInImage(clientX, clientY) == false)
@@ -1583,12 +1583,12 @@ internal sealed class PdfViewerControl : ImageBoxEx
     }
 
     /// <summary>
-    ///     将虚拟页面的位置转换为PDF页面位置。
+    ///     Convert the location of the virtual page to the PDF page location.
     /// </summary>
-    /// <param name="pageNumber">页码。</param>
-    /// <param name="imageX">虚拟图片的横坐标。</param>
-    /// <param name="imageY">虚拟图片的纵坐标。</param>
-    /// <returns>PDF 页面的位置。</returns>
+    /// <param name="pageNumber">page.</param>
+    /// <param name="imageX">The abscissions of the virtual picture.</param>
+    /// <param name="imageY">The ordinate of the virtual picture.</param>
+    /// <returns>PDF page location.</returns>
     internal PagePosition TransposeVirtualImageToPagePosition(int pageNumber, int imageX, int imageY)
     {
         DrawingPoint o = GetVirtualImageOffset(pageNumber);

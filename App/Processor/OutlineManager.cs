@@ -73,7 +73,7 @@ internal static class OutlineManager
     }
 
     /// <summary>
-    ///     从 PDF 导出书签为 XML 元素。
+    ///     Export bookmarks from PDFs as XML elements.
     /// </summary>
     public static XmlElement GetBookmark(PdfReader reader, UnitConverter unitConverter)
     {
@@ -441,12 +441,12 @@ internal static class OutlineManager
     }
 
     /// <summary>
-    ///     将 XML 书签输出为简易书签。
+    ///     The XML bookmark is output as a simple bookmark.
     /// </summary>
-    /// <param name="writer">输出目标。</param>
-    /// <param name="container">书签节点。</param>
-    /// <param name="indent">缩进量。</param>
-    /// <param name="indentChar">缩进字符串。</param>
+    /// <param name="writer">Output target.</param>
+    /// <param name="container">Bookmark node.</param>
+    /// <param name="indent">Regeneration.</param>
+    /// <param name="indentChar">indent the string.</param>
     public static void WriteSimpleBookmark(TextWriter writer, BookmarkContainer container, int indent,
         string indentChar)
     {

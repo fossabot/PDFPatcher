@@ -43,7 +43,7 @@ internal sealed class RemoveWrappedCommandProcessor : IPageProcessor
         return true;
     }
 
-    #region IPageProcessor 成员
+    #region IPageProcessor member
 
     public string Name => "删除页面起始或结束指令";
 

@@ -2,15 +2,15 @@
 {
 	partial class DocumentInspectorControl
 	{
-		/// <summary> 
-		/// 必需的设计器变量。
+		/// <summary>
+		/// Required designer variables.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 
-		/// <summary> 
-		/// 清理所有正在使用的资源。
+		/// <summary>
+		/// Clean up all resources in use.
 		/// </summary>
-		/// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+		/// <param name="disposing">true if the managed resource should be released; otherwise, false.</param>
 		protected override void Dispose (bool disposing) {
 			if (disposing && (components != null)) {
 				components.Dispose ();
@@ -18,11 +18,11 @@
 			base.Dispose (disposing);
 		}
 
-		#region 组件设计器生成的代码
+		#region Component Designer Generated Code
 
-		/// <summary> 
-		/// 设计器支持所需的方法 - 不要
-		/// 使用代码编辑器修改此方法的内容。
+		/// <summary>
+		/// Designer supports required methods - Don't
+		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
 			this.components = new System.ComponentModel.Container ();
@@ -70,45 +70,45 @@
 			((System.ComponentModel.ISupportInitialize)(this._ObjectDetailBox)).BeginInit ();
 			this._MainMenu.SuspendLayout ();
 			this.SuspendLayout ();
-			// 
+			//
 			// _ExportBinary
-			// 
+			//
 			_ExportBinary.Name = "_ExportBinary";
 			_ExportBinary.Size = new System.Drawing.Size (242, 22);
 			_ExportBinary.Text = "二进制文件(&E)...";
-			// 
+			//
 			// _ExportHexText
-			// 
+			//
 			_ExportHexText.Name = "_ExportHexText";
 			_ExportHexText.Size = new System.Drawing.Size (242, 22);
 			_ExportHexText.Text = "二进制文本文件(&W)...";
-			// 
+			//
 			// _ExportXml
-			// 
+			//
 			_ExportXml.Name = "_ExportXml";
 			_ExportXml.Size = new System.Drawing.Size (242, 22);
 			_ExportXml.Text = "&XML信息文件...";
-			// 
+			//
 			// _ExportUncompressedBinary
-			// 
+			//
 			_ExportUncompressedBinary.Name = "_ExportUncompressedBinary";
 			_ExportUncompressedBinary.Size = new System.Drawing.Size (242, 22);
 			_ExportUncompressedBinary.Text = "原始流对象二进制文件(&Y)...";
-			// 
+			//
 			// _ExportUncompressedHexText
-			// 
+			//
 			_ExportUncompressedHexText.Name = "_ExportUncompressedHexText";
 			_ExportUncompressedHexText.Size = new System.Drawing.Size (242, 22);
 			_ExportUncompressedHexText.Text = "原始流对象二进制文本文件(&Y)...";
-			// 
+			//
 			// _ExportToUnicode
-			// 
+			//
 			_ExportToUnicode.Name = "_ExportToUnicode";
 			_ExportToUnicode.Size = new System.Drawing.Size (242, 22);
 			_ExportToUnicode.Text = "&ToUnicode 映射表";
-			// 
+			//
 			// _Container
-			// 
+			//
 			this._Container.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
 						| System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
@@ -116,20 +116,20 @@
 			this._Container.Location = new System.Drawing.Point (3, 28);
 			this._Container.Name = "_Container";
 			this._Container.Orientation = System.Windows.Forms.Orientation.Horizontal;
-			// 
+			//
 			// _Container.Panel1
-			// 
+			//
 			this._Container.Panel1.Controls.Add (this._ObjectDetailBox);
-			// 
+			//
 			// _Container.Panel2
-			// 
+			//
 			this._Container.Panel2.Controls.Add (this._DescriptionBox);
 			this._Container.Size = new System.Drawing.Size (487, 310);
 			this._Container.SplitterDistance = 229;
 			this._Container.TabIndex = 1;
-			// 
+			//
 			// _ObjectDetailBox
-			// 
+			//
 			this._ObjectDetailBox.AllColumns.Add (this._NameColumn);
 			this._ObjectDetailBox.AllColumns.Add (this._ValueColumn);
 			this._ObjectDetailBox.AllColumns.Add (this._DescriptionColumn);
@@ -156,29 +156,29 @@
 			this._ObjectDetailBox.View = System.Windows.Forms.View.Details;
 			this._ObjectDetailBox.VirtualMode = true;
 			this._ObjectDetailBox.ItemActivate += new System.EventHandler (this.ControlEvent);
-			// 
+			//
 			// _NameColumn
-			// 
+			//
 			this._NameColumn.CellPadding = null;
 			this._NameColumn.IsEditable = false;
 			this._NameColumn.Text = "名称";
 			this._NameColumn.Width = 184;
-			// 
+			//
 			// _ValueColumn
-			// 
+			//
 			this._ValueColumn.CellPadding = null;
 			this._ValueColumn.Text = "值";
 			this._ValueColumn.Width = 187;
-			// 
+			//
 			// _DescriptionColumn
-			// 
+			//
 			this._DescriptionColumn.CellPadding = null;
 			this._DescriptionColumn.IsEditable = false;
 			this._DescriptionColumn.Text = "说明";
 			this._DescriptionColumn.Width = 93;
-			// 
+			//
 			// _ObjectTypeIcons
-			// 
+			//
 			this._ObjectTypeIcons.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject ("_ObjectTypeIcons.ImageStream")));
 			this._ObjectTypeIcons.TransparentColor = System.Drawing.Color.Transparent;
 			this._ObjectTypeIcons.Images.SetKeyName (0, "Current");
@@ -233,9 +233,9 @@
 			this._ObjectTypeIcons.Images.SetKeyName (49, "op_b");
 			this._ObjectTypeIcons.Images.SetKeyName (50, "op_m");
 			this._ObjectTypeIcons.Images.SetKeyName (51, "op_h");
-			// 
+			//
 			// _DescriptionBox
-			// 
+			//
 			this._DescriptionBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
 						| System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
@@ -246,15 +246,15 @@
 			this._DescriptionBox.Size = new System.Drawing.Size (481, 71);
 			this._DescriptionBox.TabIndex = 1;
 			this._DescriptionBox.Text = "";
-			// 
+			//
 			// _RecentFileMenu
-			// 
+			//
 			this._RecentFileMenu.Name = "_RecentFileMenu";
 			this._RecentFileMenu.OwnerItem = this._OpenButton;
 			this._RecentFileMenu.Size = new System.Drawing.Size (61, 4);
-			// 
+			//
 			// _OpenButton
-			// 
+			//
 			this._OpenButton.DropDown = this._RecentFileMenu;
 			this._OpenButton.Image = global::PDFPatcher.Properties.Resources.OpenFile;
 			this._OpenButton.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -263,14 +263,14 @@
 			this._OpenButton.Text = "打开(&D)";
 			this._OpenButton.ToolTipText = "打开 PDF 文档";
 			this._OpenButton.ButtonClick += new System.EventHandler (this.ControlEvent);
-			// 
+			//
 			// _LoadDocumentWorker
-			// 
+			//
 			this._LoadDocumentWorker.DoWork += new System.ComponentModel.DoWorkEventHandler (this._LoadDocumentWorker_DoWork);
 			this._LoadDocumentWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler (this._LoadDocumentWorker_RunWorkerCompleted);
-			// 
+			//
 			// _MainMenu
-			// 
+			//
 			this._MainMenu.Items.AddRange (new System.Windows.Forms.ToolStripItem[] {
             this._OpenButton,
             this._SaveButton,
@@ -286,9 +286,9 @@
 			this._MainMenu.Size = new System.Drawing.Size (495, 25);
 			this._MainMenu.TabIndex = 0;
 			this._MainMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler (this.ToolbarItemClicked);
-			// 
+			//
 			// _SaveButton
-			// 
+			//
 			this._SaveButton.Enabled = false;
 			this._SaveButton.Image = global::PDFPatcher.Properties.Resources.Save;
 			this._SaveButton.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -296,14 +296,14 @@
 			this._SaveButton.Size = new System.Drawing.Size (66, 22);
 			this._SaveButton.Text = "保存(&B)";
 			this._SaveButton.ToolTipText = "保存修改后的 PDF 文档";
-			// 
+			//
 			// toolStripSeparator1
-			// 
+			//
 			this.toolStripSeparator1.Name = "toolStripSeparator1";
 			this.toolStripSeparator1.Size = new System.Drawing.Size (6, 25);
-			// 
+			//
 			// _ExportButton
-			// 
+			//
 			this._ExportButton.DropDownItems.AddRange (new System.Windows.Forms.ToolStripItem[] {
             _ExportBinary,
             _ExportHexText,
@@ -320,9 +320,9 @@
 			this._ExportButton.ToolTipText = "导出流对象的内容";
 			this._ExportButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler (this.ToolbarItemClicked);
 			this._ExportButton.DropDownOpening += new System.EventHandler (this._ExportButton_DropDownOpening);
-			// 
+			//
 			// _ViewButton
-			// 
+			//
 			this._ViewButton.Enabled = false;
 			this._ViewButton.Image = global::PDFPatcher.Properties.Resources.ViewContent;
 			this._ViewButton.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -330,9 +330,9 @@
 			this._ViewButton.Size = new System.Drawing.Size (51, 22);
 			this._ViewButton.Text = "查看";
 			this._ViewButton.ToolTipText = "查看流对象";
-			// 
+			//
 			// _AddObjectMenu
-			// 
+			//
 			this._AddObjectMenu.DropDownItems.AddRange (new System.Windows.Forms.ToolStripItem[] {
             this._AddArrayNode,
             this._AddDictNode,
@@ -348,45 +348,45 @@
 			this._AddObjectMenu.Text = "插入子节点";
 			this._AddObjectMenu.ToolTipText = "添加子节点对象";
 			this._AddObjectMenu.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler (this._AddObjectMenu_DropDownItemClicked);
-			// 
+			//
 			// _AddArrayNode
-			// 
+			//
 			this._AddArrayNode.Name = "_AddArrayNode";
 			this._AddArrayNode.Size = new System.Drawing.Size (134, 22);
 			this._AddArrayNode.Text = "列表节点";
-			// 
+			//
 			// _AddDictNode
-			// 
+			//
 			this._AddDictNode.Name = "_AddDictNode";
 			this._AddDictNode.Size = new System.Drawing.Size (134, 22);
 			this._AddDictNode.Text = "字典节点";
-			// 
+			//
 			// _AddBooleanNode
-			// 
+			//
 			this._AddBooleanNode.Name = "_AddBooleanNode";
 			this._AddBooleanNode.Size = new System.Drawing.Size (134, 22);
 			this._AddBooleanNode.Text = "真假值节点";
-			// 
+			//
 			// _AddStringNode
-			// 
+			//
 			this._AddStringNode.Name = "_AddStringNode";
 			this._AddStringNode.Size = new System.Drawing.Size (134, 22);
 			this._AddStringNode.Text = "字符串节点";
-			// 
+			//
 			// _AddNumberNode
-			// 
+			//
 			this._AddNumberNode.Name = "_AddNumberNode";
 			this._AddNumberNode.Size = new System.Drawing.Size (134, 22);
 			this._AddNumberNode.Text = "数值节点";
-			// 
+			//
 			// _AddNameNode
-			// 
+			//
 			this._AddNameNode.Name = "_AddNameNode";
 			this._AddNameNode.Size = new System.Drawing.Size (134, 22);
 			this._AddNameNode.Text = "名称节点";
-			// 
+			//
 			// _DeleteButton
-			// 
+			//
 			this._DeleteButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this._DeleteButton.Enabled = false;
 			this._DeleteButton.Image = global::PDFPatcher.Properties.Resources.Delete;
@@ -395,9 +395,9 @@
 			this._DeleteButton.Size = new System.Drawing.Size (23, 22);
 			this._DeleteButton.Text = "删除";
 			this._DeleteButton.ToolTipText = "删除选中的对象";
-			// 
+			//
 			// _ExpandButton
-			// 
+			//
 			this._ExpandButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this._ExpandButton.Enabled = false;
 			this._ExpandButton.Image = global::PDFPatcher.Properties.Resources.Expand;
@@ -406,9 +406,9 @@
 			this._ExpandButton.Size = new System.Drawing.Size (23, 22);
 			this._ExpandButton.Text = "展开";
 			this._ExpandButton.ToolTipText = "展开选中的项目";
-			// 
+			//
 			// _CollapseButton
-			// 
+			//
 			this._CollapseButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this._CollapseButton.Enabled = false;
 			this._CollapseButton.Image = global::PDFPatcher.Properties.Resources.Collapse;
@@ -417,9 +417,9 @@
 			this._CollapseButton.Size = new System.Drawing.Size (23, 22);
 			this._CollapseButton.Text = "收拢";
 			this._CollapseButton.ToolTipText = "收拢选中的项目";
-			// 
+			//
 			// DocumentInspectorControl
-			// 
+			//
 			this.AutoScaleDimensions = new System.Drawing.SizeF (6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Controls.Add (this._MainMenu);

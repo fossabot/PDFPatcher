@@ -5,25 +5,25 @@ namespace PDFPatcher;
 
 public class ViewerOptions
 {
-    ///<summary>获取或指定初始查看状态的值。</summary>
+    /// <summary>Gets or specifies the value of the initial view status.</summary>
     [XmlAttribute("初始状态")]
     public string InitialView { get; set; }
 
-    ///<summary>获取或指定双页阅读方向的值。</summary>
+    /// <summary>Gets or specifies the value of the double page reading direction.</summary>
     [XmlAttribute("阅读方向")]
     public string Direction { get; set; }
 
-    ///<summary>获取或指定阅读器初始模式的值。</summary>
+    /// <summary>Gets or specifies the value of the reader initial mode.</summary>
     [XmlAttribute("初始模式")]
     public string InitialMode { get; set; }
 
-    ///<summary>获取或指定是否删除 XYZ 目标的缩放比例，或将 Fit、FitH、FitV 转换为 XYZ。</summary>
+    /// <summary>Get or specifies whether to delete the zoom ratio of the XYZ target, or convert Fit, Fit, into XYZ.</summary>
     [XmlAttribute("删除缩放比例")]
     public bool RemoveZoomRate { get; set; }
 
     [XmlAttribute("强制内部链接")] public bool ForceInternalLink { get; set; }
 
-    ///<summary>获取或指定是否将书签状态设置为关闭。</summary>
+    /// <summary>Get or specifies whether to set the bookmark status to shut down.</summary>
     [XmlAttribute("书签状态")]
     public BookmarkStatus CollapseBookmark { get; set; }
 

@@ -22,7 +22,7 @@ public partial class PageRangeConditionEditor : UserControl, IFilterConditionEdi
         EditAdjustmentForm.UpdateFilter(this);
     }
 
-    #region ITextInfoFilterEditor 成员
+    #region ITextInfoFilterEditor member
 
     public AutoBookmarkCondition Filter
     {

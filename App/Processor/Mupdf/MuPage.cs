@@ -25,31 +25,31 @@ public sealed class MuPage : IDisposable
     }
 
     ///// <summary>
-    ///// 获取指定区域的文本。
+    ///// Get the text of the specified area.
     ///// </summary>
-    ///// <param name="selection">区域。</param>
-    ///// <returns>区域内的文本。</returns>
+    ///// <param name="selection"> area.</param>
+    ///// <returns>Text in the area.</returns>
     //public string GetSelection (Rectangle selection) {
     //    return Interop.DecodeUtf8String (NativeMethods.CopySelection (_context, GetTextPage (), selection));
     //}
 
     ///// <summary>
-    ///// 获取指定区域的文本。
+    ///// Get the text of the specified area.
     ///// </summary>
-    ///// <param name="selection">区域。</param>
-    ///// <returns>区域内的文本。</returns>
+    ///// <param name="selection">area.</param>
+    ///// <returns>Text in the area.</returns>
     //public List<Rectangle> HighlightSelection (Rectangle selection) {
-    //	var l = 
+    //	var l =
     //	return Interop.DecodeUtf8String (NativeMethods.HighlightSelection (_context, _page, selection));
     //}
 
     /// <summary>
-    ///     使用指定的配置渲染页面。
+    ///     Use the specified configuration rendering page.
     /// </summary>
-    /// <param name="width">页面的宽度。</param>
-    /// <param name="height">页面的高度。</param>
-    /// <param name="options">渲染选项。</param>
-    /// <returns>渲染后生成的 <see cref="Bitmap" />。</returns>
+    /// <param name="width">Page width。</param>
+    /// <param name="height">The height of the page.</param>
+    /// <param name="options">Rendering options.</param>
+    /// <returns>Generated after rendering <see cref="Bitmap" />.</returns>
     public Bitmap RenderBitmapPage(int width, int height, ImageRendererOptions options)
     {
         using PixmapData pix = InternalRenderPage(width, height, options);
@@ -242,7 +242,7 @@ public sealed class MuPage : IDisposable
         return ctm;
     }
 
-    #region 非托管资源成员
+    #region Non-Managed resource member
 
     private readonly ContextHandle _context;
     private DocumentHandle _document;
@@ -251,19 +251,22 @@ public sealed class MuPage : IDisposable
 
     #endregion
 
-    #region 托管资源成员
+    #region Managed resource
 
     private MuCookie _cookie;
     private MuTextPage _TextPage;
     private bool _flattened;
 
-    /// <summary>获取当前页面的页码。</summary>
+    /// <summary>Get the page number of the current page。</summary>
     public int PageNumber { get; }
 
-    /// <summary>获取当前页面的尺寸（左下角坐标置为“0,0”）。如需获取页面字典中的原始可视区域，请使用 <see cref="VisualBound" /> 属性。</summary>
+    /// <summary>
+    ///     Get the size of the current page (the lower left corner is scheduled to "0,0").To get the original visual area
+    ///     in the page dictionary, use the <see cref="VisualBound" /> property.
+    /// </summary>
     public Rectangle Bound => NativeMethods.BoundPage(_context, _page);
 
-    /// <summary>获取当前页面可视区域的坐标及尺寸。</summary>
+    /// <summary>Get the coordinates and sizes of the current page visual area.</summary>
     public Rectangle VisualBound => Matrix.Identity.RotateTo(Rotation).Transform(VisualBox);
 
     public Rectangle ArtBox => LookupPageBox("ArtBox");
@@ -314,18 +317,18 @@ public sealed class MuPage : IDisposable
 
     #endregion
 
-    #region 实现 IDisposable 接口的属性和方法
+    #region Implement the properties and methods of iDisposable interface
 
     private bool disposed;
 
     public void Dispose()
     {
         Dispose(true);
-        GC.SuppressFinalize(this); // 抑制析构函数
+        GC.SuppressFinalize(this); // Inhibitory destructive function
     }
 
-    /// <summary>释放由 MuPdfPage 占用的资源。</summary>
-    /// <param name="disposing">是否手动释放托管资源。</param>
+    /// <summary>Release the resources occupied by MpPDFPAGE。</summary>
+    /// <param name="disposing">Whether to manually release the hosted resource.</param>
     [SuppressMessage("Microsoft.Usage", "CA2213:DisposableFieldsShouldBeDisposed", MessageId = "_page")]
     private void Dispose(bool disposing)
     {
@@ -333,7 +336,7 @@ public sealed class MuPage : IDisposable
         {
             if (disposing)
             {
-                #region 释放托管资源
+                #region Release managed resources
 
                 _TextPage?.Dispose();
                 _TextPage = null;
@@ -341,9 +344,9 @@ public sealed class MuPage : IDisposable
                 #endregion
             }
 
-            #region 释放非托管资源
+            #region Release non-managed resources
 
-            // 注意这里不是线程安全的
+            // Note that this is not a thread safe
             //int retry = 0;
             //_cookie.CancelAsync ();
             //while (_cookie.IsRunning && ++retry < 10) {
@@ -359,8 +362,8 @@ public sealed class MuPage : IDisposable
         disposed = true;
     }
 
-    // 析构函数只在未调用 Dispose 方法时调用
-    // 派生类中不必再提供析构函数
+    // The destructor is only called when the Dispose method is not called.
+    // Don't provide a destructor in the derived class
     ~MuPage() => Dispose(false);
 
     #endregion

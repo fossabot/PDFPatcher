@@ -56,65 +56,65 @@ internal static class AppContext
     internal static MainForm MainForm { get; set; }
     public static bool SaveAppSettings { get; set; }
 
-    ///<summary>获取或指定是否在加载 PDF 文档时仅加载部分文档。</summary>
+    /// <summary>Gets or specifies whether only partial documents are loaded when the PDF document is loaded.</summary>
     public static bool LoadPartialPdfFile { get; set; }
 
-    ///<summary>获取或指定要处理的源文件路径列表。</summary>
+    /// <summary>Get or specify a list of source files to be processed.</summary>
     public static string[] SourceFiles
     {
         get => _SourceFiles;
         set => _SourceFiles = value ?? new string[0];
     }
 
-    ///<summary>获取或指定检查更新的日期。</summary>
+    /// <summary>Get or specify the date of checking the update.</summary>
     public static DateTime CheckUpdateDate { get; set; }
 
-    ///<summary>获取或指定检查更新的日期间隔。</summary>
+    /// <summary>Get or specify the date interval of checking the update.</summary>
     public static int CheckUpdateInterval { get; set; }
 
-    ///<summary>获取或指定是否应取消批处理操作。</summary>
+    /// <summary>Get or specify whether to cancel the batch operation.</summary>
     public static bool Abort { get; set; }
 
-    ///<summary>获取或指定书签文件的路径。</summary>
+    /// <summary>Gets or specifies the path to the bookmark file.</summary>
     public static string BookmarkFile { get; set; }
 
-    ///<summary>获取或指定目标文件的路径。</summary>
+    /// <summary>Gets or specifies the path to the target file.</summary>
     public static string TargetFile { get; set; }
 
-    ///<summary>获取导出设置。</summary>
+    /// <summary>Get export settings.</summary>
     public static ExporterOptions Exporter { get; internal set; }
 
-    ///<summary>获取导入设置。</summary>
+    /// <summary>Get import settings.</summary>
     public static ImporterOptions Importer { get; internal set; }
 
-    ///<summary>获取生成文档的设置。</summary>
+    /// <summary>Get the settings for generating a document.</summary>
     public static MergerOptions Merger { get; internal set; }
 
-    ///<summary>获取生成文档的设置。</summary>
+    /// <summary>Get the settings for generating a document.</summary>
     public static PatcherOptions Patcher { get; internal set; }
 
-    ///<summary>获取文档编辑器的设置。</summary>
+    /// <summary>Get the settings for the document editor.</summary>
     public static PatcherOptions Editor { get; internal set; }
 
-    ///<summary>获取自动生成书签的设置。</summary>
+    /// <summary>Get the settings that automatically generate bookmarks.</summary>
     public static AutoBookmarkOptions AutoBookmarker { get; internal set; }
 
-    ///<summary>获取应用程序设置。</summary>
+    /// <summary>Get the application settings.</summary>
     public static EncodingOptions Encodings { get; internal set; }
 
-    ///<summary>获取导出图像的设置。</summary>
+    /// <summary>Get the settings of the exported image.</summary>
     public static ImageExtracterOptions ImageExtracter { get; internal set; }
 
-    ///<summary>获取转换为图片的设置。</summary>
+    /// <summary>Get the setting converted to a picture.</summary>
     public static ImageRendererOptions ImageRenderer { get; internal set; }
 
-    ///<summary>获取提取页面的设置。</summary>
+    /// <summary>Get the settings for extracting the page.</summary>
     public static ExtractPageOptions ExtractPage { get; internal set; }
 
-    ///<summary>获取光学字符识别功能的设置。</summary>
+    /// <summary>Get the setting of the optical character identification function.</summary>
     public static OcrOptions Ocr { get; internal set; }
 
-    ///<summary>获取或指定自定义工具栏的项目。</summary>
+    /// <summary>Get or specify the project of the custom toolbar.</summary>
     public static ToolbarOptions Toolbar { get; internal set; }
 
     public static RecentItems Recent { get; internal set; }
@@ -238,10 +238,10 @@ internal static class AppContext
     }
 
     /// <summary>
-    ///     保存应用程序配置。
+    ///     Save the application configuration.
     /// </summary>
-    /// <param name="path">保存路径。路径为空时，保存到默认位置。</param>
-    /// <param name="saveHistoryFileList">是否保存历史文件列表。</param>
+    /// <param name="path">save route.When the path is empty, save it to the default location.</param>
+    /// <param name="saveHistoryFileList">Whether to save a list of historical files.</param>
     internal static void Save(string path, bool saveHistoryFileList)
     {
         try
@@ -284,31 +284,31 @@ internal static class AppContext
     [JsonSerializable]
     public sealed class RecentItems
     {
-        ///<summary>获取最近使用的 PDF 文件列表。</summary>
+        /// <summary>Get a list of recently used PDF files.</summary>
         [JsonField("源文件")]
         public List<string> SourcePdfFiles { get; } = new();
 
-        ///<summary>获取最近使用的 PDF 输出文件列表。</summary>
+        /// <summary>Get a list of recently used PDF output files.</summary>
         [JsonField("输出文件")]
         public List<string> TargetPdfFiles { get; } = new();
 
-        ///<summary>获取最近使用的信息文件列表。</summary>
+        /// <summary>Get the list of recently used information files.</summary>
         [JsonField("信息文件")]
         public List<string> InfoDocuments { get; } = new();
 
-        ///<summary>获取最近使用的文件名模板列表。</summary>
+        /// <summary>Get the most recently used file name template list.</summary>
         [JsonField("文件名模板")]
         public List<string> FileNameTemplates { get; } = new();
 
-        ///<summary>获取最近使用的文件夹列表。</summary>
+        /// <summary>Get the most recently used folder list.</summary>
         [JsonField("文件夹")]
         public List<string> Folders { get; } = new();
 
-        ///<summary>获取最近使用的查找字符串列表。</summary>
+        /// <summary>Get the most recently used lookup string list.</summary>
         [JsonField("查找项")]
         public List<string> SearchPatterns { get; } = new();
 
-        ///<summary>获取最近使用的替换字符串列表。</summary>
+        /// <summary>Get the list of recently used replacement strings.</summary>
         [JsonField("替换项")]
         public List<string> ReplacePatterns { get; } = new();
 

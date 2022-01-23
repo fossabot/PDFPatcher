@@ -5,14 +5,17 @@ namespace PDFPatcher.Processor;
 public abstract class AutoBookmarkFilter
 {
     /// <summary>
-    ///     检查传入的 <see cref="Model.AutoBookmarkContext" /> 是否符合指定的过滤条件。
+    ///     Check if the incoming <see cref="model.autobookmarkcontext" /> complies with the specified filtering criteria.
     /// </summary>
-    /// <param name="text">包含需要过滤的文本信息及其它上下文的 <see cref="Model.AutoBookmarkContext" />。</param>
-    /// <returns>过滤结果。</returns>
+    /// <param name="text">
+    ///     Contains text information that needs to be filtered and other context
+    ///     <see cref="Model.AutoBookmarkContext" />.
+    /// </param>
+    /// <returns>Filter results.</returns>
     internal abstract bool Matches(AutoBookmarkContext context);
 
     /// <summary>
-    ///     重置过滤器的内部状态。
+    ///     Reset the internal state of the filter.
     /// </summary>
     internal abstract void Reset();
 }

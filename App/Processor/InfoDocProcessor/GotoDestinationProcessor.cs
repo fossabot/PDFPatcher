@@ -34,7 +34,7 @@ internal sealed class GotoDestinationProcessor : IInfoDocProcessor
         }
     }
 
-    #region IBookmarkProcessor 成员
+    #region IBookmarkProcessor member
 
     public bool Process(XmlElement item)
     {

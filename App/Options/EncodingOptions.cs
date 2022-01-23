@@ -29,7 +29,7 @@ public class EncodingOptions
         }
     }
 
-    ///<summary>获取或指定读取书签时所用的编码。</summary>
+    /// <summary>Gets or specifies the encoding used when reading a bookmark.</summary>
     [XmlAttribute("书签文本编码")]
     public string BookmarkEncodingName
     {
@@ -46,7 +46,7 @@ public class EncodingOptions
         }
     }
 
-    ///<summary>获取或指定读取文档元数据时所用的编码。</summary>
+    /// <summary>Gets or specifies the encoding used when reading the document metadata.</summary>
     [XmlAttribute("文档元数据编码")]
     public string DocInfoEncodingName
     {
@@ -63,7 +63,7 @@ public class EncodingOptions
         }
     }
 
-    ///<summary>获取或指定读取文本时所用的编码。</summary>
+    /// <summary>Gets or specifies the encoding used when reading text.</summary>
     [XmlAttribute("内容文本编码")]
     public string TextEncodingName
     {
@@ -80,7 +80,7 @@ public class EncodingOptions
         }
     }
 
-    ///<summary>获取或指定读取文本时所用的编码。</summary>
+    /// <summary>Gets or specifies the encoding used when reading text.</summary>
     [XmlAttribute("字体名称编码")]
     public string FontNameEncodingName
     {

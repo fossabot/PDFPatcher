@@ -46,7 +46,7 @@ public partial class TextPositionConditionEditor : UserControl, IFilterCondition
         _SpecificValueBox.Enabled = _SpecificBox.Checked;
     }
 
-    #region ITextInfoFilterEditor 成员
+    #region ITextInfoFilterEditor member
 
     public AutoBookmarkCondition Filter
     {

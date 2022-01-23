@@ -38,22 +38,22 @@ public readonly struct PagePosition
     public static readonly PagePosition Empty;
 
     /// <summary>
-    ///     所在页码。
+    ///     The page number is located.
     /// </summary>
     public readonly int Page;
 
     /// <summary>
-    ///     在 PDF 页面空间上的位置。
+    ///     The location on the PDF page space.
     /// </summary>
     public readonly float PageX, PageY;
 
     /// <summary>
-    ///     在渲染页面上的位置。
+    ///     The location on the rendering page.
     /// </summary>
     public readonly int ImageX, ImageY;
 
     /// <summary>
-    ///     当前点是否在页面上。
+    ///     Whether the current point is on the page.
     /// </summary>
     public readonly bool IsInPage;
 
@@ -96,10 +96,10 @@ public readonly struct TextInfo
 {
     public readonly MuPage Page;
 
-    /// <summary>获取文本字符的位置边框。</summary>
+    /// <summary>Get the location border of the text character.</summary>
     public readonly Rectangle CharBBox;
 
-    /// <summary>获取文本位置以下的文本行。</summary>
+    /// <summary>Get the text of the text below the text.</summary>
     public readonly List<MuTextLine> TextLines;
 
     public readonly List<MuTextSpan> Spans;
@@ -119,17 +119,17 @@ public readonly struct Selection
     public static readonly Selection Empty;
 
     /// <summary>
-    ///     获取选中区域的页码。
+    ///     Get the page number of the selected area.
     /// </summary>
     public readonly int Page;
 
     /// <summary>
-    ///     获取选中区域在页面上的矩形区域（屏幕左下角点坐标为0，0）。
+    ///     Get the rectangular area selected on the page (the left corner coordinate of the screen is 0, 0).
     /// </summary>
     public readonly Rectangle PageRegion;
 
     /// <summary>
-    ///     获取选中区域在显示图片上的矩形区域。
+    ///     Get the rectangular area selected on the display image.
     /// </summary>
     public readonly RectangleF ImageRegion;
 

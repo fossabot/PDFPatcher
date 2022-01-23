@@ -23,23 +23,23 @@ internal static class PdfHelper
     static PdfHelper() => __PdfNameMap = InitPdfNameMap();
 
     /// <summary>
-    ///     切换强制读取加密文档模式。
+    ///     Switch to enforce the encrypted document mode.
     /// </summary>
-    /// <param name="unethicalreading">是否打开强制读取模式。</param>
+    /// <param name="unethicalreading">Whether to open forced read mode.</param>
     internal static void ToggleUnethicalMode(bool unethicalreading) => PdfReader.unethicalreading = unethicalreading;
 
     /// <summary>
-    ///     切换容错模式（忽略 PDF 文档的错误）。
+    ///     Switch fault tolerance mode (ignore the error of the PDF document)。
     /// </summary>
-    /// <param name="debugMode">是否打开容错模式。</param>
+    /// <param name="debugMode">Whether to open a fault-tolerant mode.</param>
     internal static void ToggleReaderDebugMode(bool debugMode) => PdfReader.debugmode = debugMode;
 
     /// <summary>
-    ///     打开 PDF 文件，在有需要时提示输入密码。
+    ///     Open the PDF file, prompt to enter a password when there is a need.
     /// </summary>
-    /// <param name="sourceFile">需要打开的 PDF 文件。</param>
-    /// <param name="partial">是否仅打开文件的部分内容。</param>
-    /// <returns><see cref="PdfReader" /> 实例。</returns>
+    /// <param name="sourceFile">The PDF file that needs to be opened.</param>
+    /// <param name="partial">Whether only the part of the file is opened.</param>
+    /// <returns><see cref="PdfReader" /> example.</returns>
     internal static PdfReader OpenPdfFile(string sourceFile, bool partial, bool removeUnusedObjects)
     {
         __PdfPasswordBox.TryGetValue(sourceFile, out byte[] password);
@@ -167,10 +167,10 @@ internal static class PdfHelper
         __PdfNameMap.ContainsKey(name) ? __PdfNameMap[name] : GetPdfNameString(name);
 
     /// <summary>
-    ///     解析 PdfName。
+    ///     Analysis pdfname.
     /// </summary>
-    /// <param name="friendlyName">从 <seealso cref="GetPdfFriendlyName" /> 转换所得的 PdfName 说明文本。</param>
-    /// <returns>与文本说明对应的 PdfName。</returns>
+    /// <param name="friendlyName">Convert the resulting pdfname description text from <seealso cref="GetPdfFriendlyName" />.</param>
+    /// <returns>PDFNAME corresponding to text description.</returns>
     internal static PdfName ResolvePdfName(string friendlyName) =>
         __PdfNameMap.ContainsValue(friendlyName)
             ? __PdfNameMap.GetKeyByValue(friendlyName)
@@ -180,10 +180,10 @@ internal static class PdfHelper
         name is PdfName ? PdfName.DecodeName(name.ToString()) : name.ToString();
 
     /// <summary>
-    ///     获取 PDF 页面引用与页数的映射关系表。
+    ///     Get the mapping relationship table of the PDF page reference to the number of pages.
     /// </summary>
-    /// <param name="reader">源 PDF 文档。</param>
-    /// <returns>键为 <see cref="PdfIndirectReference" /> 的数值，值为页数的字典。</returns>
+    /// <param name="reader">Source PDF document.</param>
+    /// <returns>The key for the <see cref="PdfIndirectReference" />, the value of the value is a dictionary.</returns>
     internal static Dictionary<int, int> GetPageRefMapper(this PdfReader reader)
     {
         int numPages = reader.NumberOfPages;
@@ -198,9 +198,9 @@ internal static class PdfHelper
     }
 
     /// <summary>
-    ///     解析形如“D:20111021090818+08'00'”的日期格式。
+    ///     Analytical shapes such as "D:20111021090818+08'00'" date format.
     /// </summary>
-    /// <param name="date">日期格式。</param>
+    /// <param name="date">Date format.</param>
     /// <returns></returns>
     internal static DateTimeOffset ParseDateTime(string date)
     {
@@ -235,18 +235,18 @@ internal static class PdfHelper
     //}
 
     /// <summary>
-    ///     获取解码后的 PDF 名称字符串。
+    ///     Get the decoded PDF name string.
     /// </summary>
-    /// <param name="name">需要解码的 PDF 名称。</param>
-    /// <returns>解码后的 PDF 名称字符串</returns>
+    /// <param name="name">The PDF name that needs to decode.</param>
+    /// <returns>Decoded PDF name string </returns>
     internal static string GetPdfNameString(PdfName name) => GetPdfNameString(name, PdfName.DefaultEncoding);
 
     /// <summary>
-    ///     获取解码后的 PDF 名称字符串。
+    ///     Get the decoded PDF name string.
     /// </summary>
-    /// <param name="name">需要解码的 PDF 名称。</param>
-    /// <param name="encoding">用于解码的文本编码。</param>
-    /// <returns>解码后的 PDF 名称字符串</returns>
+    /// <param name="name">The PDF name that needs to decode.</param>
+    /// <param name="encoding">Text coding for decoding.</param>
+    /// <returns>Decoded PDF name string </returns>
     internal static string GetPdfNameString(PdfName name, Encoding encoding)
     {
         string s = name.ToString();
@@ -272,10 +272,10 @@ internal static class PdfHelper
     }
 
     /// <summary>
-    ///     获取页面可见的边框。
+    ///     Get the border visible to the page.
     /// </summary>
-    /// <param name="page">页面字典。</param>
-    /// <returns>页面的可见边框。</returns>
+    /// <param name="page">page dictionary.</param>
+    /// <returns>The visible border of the page.</returns>
     internal static Rectangle GetPageVisibleRectangle(this PdfDictionary page)
     {
         if (page == null)
@@ -568,11 +568,11 @@ internal static class PdfHelper
             ctm[7].ToText());
 
     /// <summary>
-    ///     获取未使用对象的列表。
+    ///     Get a list of unused objects.
     /// </summary>
-    /// <param name="pdf">需要检查的 PDF 文档。</param>
-    /// <param name="partial">待检查 PDF 文档是否为部分加载。</param>
-    /// <returns>包含未使用对象索引值的列表。</returns>
+    /// <param name="pdf">The PDF document you need to check.</param>
+    /// <param name="partial">Whether the PDF document is to be checked.</param>
+    /// <returns>contains a list of unused object index values.</returns>
     internal static List<int> ListUnusedObjects(PdfReader pdf, bool partial)
     {
         bool[] hits = new bool[pdf.XrefSize];

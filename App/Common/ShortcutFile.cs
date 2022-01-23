@@ -5,15 +5,15 @@ using System.Text;
 
 namespace PDFPatcher.Common;
 
-/// <summary>用于创建或管理快捷方式文件的类。</summary>
+/// <summary>Classs used to create or manage shortcut files.</summary>
 public sealed class ShortcutFile
 {
     private readonly IShellLink _link;
 
     private ShortcutFile() => _link = (IShellLink)new ShellLink();
 
-    /// <summary>创建快捷方式。</summary>
-    /// <param name="destination">快捷方式指向的目标文件路径。</param>
+    /// <summary>Create Shortcut.</summary>
+    /// <param name="destination">Shortcuts pointing to the target file path.</param>
     public ShortcutFile(string destination)
     {
         _link = (IShellLink)new ShellLink();
@@ -21,26 +21,26 @@ public sealed class ShortcutFile
         _link.SetPath(destination);
     }
 
-    /// <summary>获取或设置快捷方式的目标路径。</summary>
+    /// <summary>Gets or sets a shortcut target path.</summary>
     public string Destination { get; private set; }
 
-    /// <summary>获取或设置快捷方式的工作目录。</summary>
+    /// <summary>Get or set up a shortcut working directory.</summary>
     public string WorkingDirectory { get; set; }
 
-    /// <summary>获取或设置快捷方式的描述文本。</summary>
+    /// <summary>Get or set a shortcut description text.</summary>
     public string Description { get; set; }
 
-    /// <summary>获取或设置快捷方式的启动参数。</summary>
+    /// <summary>Get or set up a shortcut startup parameter.</summary>
     public string Arguments { get; set; }
 
-    /// <summary>获取或设置快捷方式的图标文件位置。</summary>
+    /// <summary>Get or set a shortcut icon file location.</summary>
     public string IconLocation { get; set; }
 
-    /// <summary>获取或设置快捷方式的图标文件索引。</summary>
+    /// <summary>Get or set up a shortcut icon file index.</summary>
     public int IconIndex { get; set; }
 
-    /// <summary>加载快捷方式。</summary>
-    /// <param name="shortcutFilePath">快捷方式文件的位置。</param>
+    /// <summary>Load shortcut.</summary>
+    /// <param name="shortcutFilePath">The location of the shortcut file.</param>
     /// <returns><see cref="ShortcutFile" /> 实例。</returns>
     public static ShortcutFile Load(string shortcutFilePath)
     {
@@ -64,8 +64,8 @@ public sealed class ShortcutFile
         return s;
     }
 
-    /// <summary>将快捷方式保存到目标位置。</summary>
-    /// <param name="position">快捷方式文件的位置。</param>
+    /// <summary>Save the shortcut to the target location.</summary>
+    /// <param name="position">The location of the shortcut file.</param>
     public void Save(string position)
     {
         if (string.IsNullOrEmpty(WorkingDirectory) == false)

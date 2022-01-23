@@ -21,7 +21,7 @@ internal sealed class ImageExtractor
     private readonly ImageExtracterOptions _options;
     private readonly PdfPageImageProcessor _parser;
     private readonly HashSet<PdfObject> _Refs = new();
-    private int _activePage; // 在导出文件图片时，使用此属性命名文件
+    private int _activePage; // Use this property named file when exporting a file image
     private int _imageCount;
     private int _pageRotation;
     private int _totalImageCount;
@@ -57,14 +57,14 @@ internal sealed class ImageExtractor
             return;
         }
 
-        // 收集页面上的图片
+        // Collect the image on the page
         PdfDictionary pp = o.Locate<PdfDictionary>(PdfName.RESOURCES, PdfName.XOBJECT);
         if (pp != null)
         {
             ExtractImageInstances(pp, false);
         }
 
-        // 收集批注中的图片
+        // Collect pictures in annotations
         if (_options.ExtractAnnotationImages)
         {
             PdfArray an = o.Locate<PdfArray>(PdfName.ANNOTS);
@@ -118,7 +118,7 @@ internal sealed class ImageExtractor
 
         if (_options.MergeImages && PosList.Count > 1)
         {
-            // 合并相同宽度、相同类型的图片
+            // Missing the same width, the same type of picture
             MergeImages();
         }
     }
@@ -576,7 +576,7 @@ internal sealed class ImageExtractor
         for (int i = 0; i < l; i++)
         {
             ImageDisposition imageI = PosList[i];
-            // 由于在导出图像时仅为 PNG 和 TIF 指定 ImageInfo 的 PixelFormat，因此合并过程中仅处理这两类文件
+            // Since only the PNG and TIF specify only the PixelFormat of the imageinfo, only these two types of files are handled during the merge process.
             if (imageI.Image.ReferenceCount < 1 // 图像已处理
                 || imageI.Image.PixelFormat == PixelFormat.Undefined // 不属于可合并的类型
                 || l - i < 2 // 是最后一张图片
@@ -612,7 +612,7 @@ internal sealed class ImageExtractor
             switch (i2)
             {
                 case 0:
-                    // 没有符合合并条件的图片
+                    // Picture without consolidation conditions
                     continue;
                 case 1:
                     PosList[i].Image.ReferenceCount++;
@@ -667,7 +667,7 @@ internal sealed class ImageExtractor
                                         bmp.Palette.AsArray = bmpPal;
                                     }
 
-                                    // 调色板不足以存放合并后的图片颜色
+                                    // The palette is not enough to store the merged picture color
                                     if (!bmp.ConvertColorDepth(FREE_IMAGE_COLOR_DEPTH.FICD_24_BPP) ||
                                         !bmp2.ConvertColorDepth(FREE_IMAGE_COLOR_DEPTH.FICD_24_BPP))
                                     {
@@ -727,7 +727,7 @@ internal sealed class ImageExtractor
                         dp[di] = (byte)p;
                         ++di;
                     }
-                    //todo: 两幅图像调色板不一致时需调换颜色再复制数据
+                    //todo: The two image palettes are inconsistent, they need to change color replication data.
                     //if (di > 0) {
                     //	bmp2.ApplyPaletteIndexMapping(sp, dp, (uint)di, true);
                     //}

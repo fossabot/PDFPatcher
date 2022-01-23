@@ -31,7 +31,7 @@ internal static partial class NativeMethods
     [DllImport(DLL, CallingConvention = CC.Cdecl, EntryPoint = "fz_drop_context")]
     internal static extern void DropContext(IntPtr ctx);
 
-    #region 文本函数
+    #region Text function
 
     //[DllImport(DLL, CallingConvention = CC.Cdecl, EntryPoint = "fz_highlight_selection")]
     //public static extern int HighlightSelection (ContextHandle ctx, IntPtr page, Rectangle rect, Rectangle hitBBox, fz_quad* quads, int maxHit);
@@ -159,7 +159,7 @@ internal static partial class NativeMethods
 
     #endregion
 
-    #region 图像渲染函数
+    #region Image rendering function
 
     [DllImport(DLL, CallingConvention = CC.Cdecl, EntryPoint = "fz_clear_pixmap_with_value")]
     public static extern void ClearPixmap(ContextHandle ctx, PixmapHandle pix, int byteValue);

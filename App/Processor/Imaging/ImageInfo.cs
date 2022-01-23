@@ -292,7 +292,7 @@ internal sealed class ImageInfo
     private void CreatePalette(FreeImageBitmap bmp)
     {
         //if (PaletteColorSpace == null) {
-        //	//todo++ 缺少色域信息的图片不一定是灰度图像
+        //	//todo++ The picture of the missing color gamut information is not necessarily a grayscale image
         //	if (bmp.HasPalette) {
         //		PaletteColorSpace = PdfName.DEVICEGRAY;
         //	}
@@ -536,7 +536,7 @@ internal sealed class ImageInfo
         }
 
         PdfArray colorspace = cs as PdfArray;
-        // todo: 是否需要将所有 ColorSpace 换成 PaletteColorSpace
+        // todo: Do we need to change all ColorSpace to PaletteColorSpace
         if (PdfName.ICCBASED.Equals(colorspace.GetAsName(0)))
         {
             PRStream iccs = colorspace.GetDirectObject(1) as PRStream;
@@ -601,7 +601,7 @@ internal sealed class ImageInfo
                 }
             case PixelFormat.Format1bppIndexed when BitsPerComponent == 2:
                 {
-                    // 支持四级灰度的图像
+                    // Support 4 grayscale images
                     int l = bytes.Length;
                     byte[] newBytes = new byte[l << 1];
                     int i = 0;

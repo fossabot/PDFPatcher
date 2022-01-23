@@ -20,7 +20,7 @@ public class PageBoxSettings
 
     [XmlAttribute("页面筛选")] public PageFilterFlag Filter { get; set; }
 
-    ///<summary>获取或指定是否自动旋转页面适合图片纵横比。</summary>
+    /// <summary>获取或指定是否自动旋转页面适合图片纵横比。</summary>
     [XmlAttribute("自动旋转")]
     [DefaultValue(true)]
     public bool AutoRotation { get; set; }

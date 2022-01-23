@@ -8,7 +8,7 @@ namespace PDFPatcher.Processor;
 
 internal sealed class ForceInternalLinkProcessor : IPdfInfoXmlProcessor
 {
-    #region IInfoDocProcessor 成员
+    #region IInfoDocProcessor member
 
     public string Name => "设置点击目标到页首";
 

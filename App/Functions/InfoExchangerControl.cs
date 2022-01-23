@@ -25,7 +25,7 @@ public partial class InfoExchangerControl : FunctionControl
 
     public override Bitmap IconImage => Resources.CreateDocument;
 
-    #region IDefaultButtonControl 成员
+    #region IDefaultButtonControl member
 
     public override Button DefaultButton => _ImportButton;
 

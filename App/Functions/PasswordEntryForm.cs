@@ -16,7 +16,7 @@ public partial class PasswordEntryForm : Form
     }
 
     /// <summary>
-    ///     获取密码框的文本。
+    ///     Get the text of the password box.
     /// </summary>
     public string Password => _PasswordBox.Text;
 

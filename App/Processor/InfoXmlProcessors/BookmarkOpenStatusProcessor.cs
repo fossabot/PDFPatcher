@@ -11,11 +11,11 @@ internal sealed class BookmarkOpenStatusProcessor : IPdfInfoXmlProcessor<bool>
     public BookmarkOpenStatusProcessor(bool open) => Parameter = open;
 
     /// <summary>
-    ///     表示处理器是否应打开书签。
+    ///     Indicates whether the processor should open a bookmark.
     /// </summary>
     public bool Parameter { get; set; }
 
-    #region IInfoDocProcessor 成员
+    #region IInfoDocProcessor member
 
     public string Name => "设置书签状态为" + (Parameter ? "打开" : "关闭");
 

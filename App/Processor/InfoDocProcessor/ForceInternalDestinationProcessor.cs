@@ -5,7 +5,7 @@ namespace PDFPatcher.Processor;
 
 internal sealed class ForceInternalDestinationProcessor : IInfoDocProcessor
 {
-    #region IBookmarkProcessor 成员
+    #region IBookmarkProcessor member
 
     public bool Process(XmlElement item)
     {

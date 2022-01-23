@@ -53,7 +53,7 @@ public partial class RenderImageControl : FunctionControl, IResettableControl
 
     public override Bitmap IconImage => Resources.RenderDocument;
 
-    #region IDefaultButtonControl 成员
+    #region IDefaultButtonControl member
 
     public override Button DefaultButton => _ExtractButton;
 

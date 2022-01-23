@@ -34,11 +34,11 @@ internal static class Interop
     }
 
     /// <summary>
-    ///     将链表指针转换为 <see cref="IEnumerable{T}" />
+    ///     Convert the list pointer to <see cref="IEnumerable{T}" />
     /// </summary>
-    /// <typeparam name="T">链表的类型。</typeparam>
-    /// <param name="ptr">需要转换的指针。</param>
-    /// <returns><see cref="IEnumerable{T}" /> 实例。</returns>
+    /// <typeparam name="T">The type of linked list.</typeparam>
+    /// <param name="ptr">The pointer that needs to be converted.</param>
+    /// <returns><see cref="IEnumerable{T}" /> instance.</returns>
     internal static IEnumerable<NativeObject<T>> EnumerateLinkedList<T>(this IntPtr ptr)
         where T : struct, ILinkedList => NativeLinkedList<T>.EnumerateLinkedList(ptr);
 

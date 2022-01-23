@@ -24,17 +24,17 @@ internal struct PageRange : IEnumerable<int>
             : StartValue.ToText();
 
     /// <summary>
-    ///     返回范围中包含的数量。
+    ///     The number included in the return range.
     /// </summary>
     public int Count => (EndValue > StartValue ? EndValue - StartValue : StartValue - EndValue) + 1;
 
-    #region IEnumerable<int> 成员
+    #region IEnumerable<int> member
 
     IEnumerator<int> IEnumerable<int>.GetEnumerator() => new PageRangeEnumerator(StartValue, EndValue);
 
     #endregion
 
-    #region IEnumerable 成员
+    #region IEnumerable member
 
     IEnumerator IEnumerable.GetEnumerator() => new PageRangeEnumerator(StartValue, EndValue);
 
@@ -53,13 +53,13 @@ internal struct PageRange : IEnumerable<int>
             Current = _isIncremental ? start - 1 : start + 1;
         }
 
-        #region IEnumerator<int> 成员
+        #region IEnumerator<int> member
 
         public int Current { get; private set; }
 
         #endregion
 
-        #region IDisposable 成员
+        #region IDisposable member
 
         public void Dispose()
         {
@@ -67,7 +67,7 @@ internal struct PageRange : IEnumerable<int>
 
         #endregion
 
-        #region IEnumerator 成员
+        #region IEnumerator member
 
         object IEnumerator.Current => Current;
 

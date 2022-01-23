@@ -24,7 +24,7 @@ internal sealed class FixContentProcessor : IPageProcessor
         return r;
     }
 
-    #region IPageProcessor 成员
+    #region IPageProcessor member
 
     public string Name => "修复并删除冗余内容";
 

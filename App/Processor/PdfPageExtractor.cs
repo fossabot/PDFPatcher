@@ -24,10 +24,10 @@ internal class PdfPageExtractor
         switch (options.SeparatingMode)
         {
             case 0: goto default;
-            case 1: // 按顶层书签拆分
+            case 1: // Press top bookmark split
                 SeparateByBookmarks(options, sourceFile, targetFile, ref pdf);
                 break;
-            case 2: // 按页数拆分
+            case 2: // Split by pages
                 SeparateByPageNumber(options, sourceFile, targetFile, ref pdf);
                 break;
             default:

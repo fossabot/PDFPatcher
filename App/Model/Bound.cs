@@ -25,18 +25,18 @@ public class Bound
     }
 
     /// <summary>
-    ///     创建宽度和高度均为 0 的区域（点）实例。
+    ///     Create a region (point) instance of the width and height of 0.
     /// </summary>
-    /// <param name="x">横坐标。</param>
-    /// <param name="y">纵坐标。</param>
+    /// <param name="x">X-axis.</param>
+    /// <param name="y">Y-axis.</param>
     public Bound(float x, float y) : this(x, y, x, y)
     {
     }
 
     /// <summary>
-    ///     从指定区域复制副本。
+    ///     Copy a copy from the specified area.
     /// </summary>
-    /// <param name="source">需要复制副本的区域。</param>
+    /// <param name="Source">The area that needs to be replicated.</param>
     public Bound(Bound source) : this(source.Left, source.Bottom, source.Right, source.Top)
     {
     }
@@ -47,12 +47,12 @@ public class Bound
     internal float Right { get; private set; }
 
     /// <summary>
-    ///     获取此区域坐标是否属于笛卡尔坐标系。
+    ///     Get this area coordinate belongs to the Cartesian coordinate system.
     /// </summary>
     internal bool IsTopUp { get; private set; }
 
     /// <summary>
-    ///     获取此坐标区域是否属于绘图坐标系。
+    ///     Gets whether this coordinate area belongs to the drawing coordinate system.
     /// </summary>
     internal bool IsTopDown { get; private set; }
 
@@ -74,7 +74,7 @@ public class Bound
 
     internal Bound Merge(Bound source)
     {
-        // 笛卡尔坐标
+        // Cartesian coordinates
         if (IsTopUp)
         {
             if (Top < source.Top)
@@ -115,11 +115,11 @@ public class Bound
     }
 
     /// <summary>
-    ///     获取区域 <paramref name="other" /> 到当前区域之间的距离。
+    ///     Get the distance between the area <paramref name="other" /> to the current area.
     /// </summary>
-    /// <param name="other">另一个区域。</param>
-    /// <param name="writingDirection">假设书写方向。</param>
-    /// <returns><paramref name="other" /> 相对于此区域的距离关系。</returns>
+    /// <param name="other">Another area.</param>
+    /// <param name="writingDirection">Assume the writing direction.</param>
+    /// <returns><paramref name="other" /> The distance relationship relative to this area.</returns>
     internal DistanceInfo GetDistance(Bound other, WritingDirection writingDirection)
     {
         if (IsTopDown != other.IsTopDown && IsTopUp != other.IsTopUp)
@@ -218,11 +218,12 @@ public class Bound
     }
 
     /// <summary>
-    ///     返回当前区域是否和指定区域在同一行上（中心点是否落在 <paramref name="other" /> 的两个边缘之间）。
+    ///     Returns whether the current area is in the same row in the specified area (whether the center point is falling in
+    ///     the two edges of <paramref name="other" />).
     /// </summary>
-    /// <param name="other">需要比较的区域。</param>
-    /// <param name="direction">比较方向。</param>
-    /// <returns>在同一行上时返回 true。</returns>
+    /// <param name="other">The area that needs to be compared.</param>
+    /// <param name="direction">The comparison direction.</param>
+    /// <returns>Returns True at the same line.</returns>
     internal bool IsAlignedWith(Bound other, WritingDirection direction) =>
         direction switch
         {

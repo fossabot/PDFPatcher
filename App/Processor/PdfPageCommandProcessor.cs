@@ -30,7 +30,7 @@ internal sealed class PdfPageCommandProcessor : PdfContentStreamProcessor, IPdfP
     }
 
     /// <summary>
-    ///     分析内容后得到的 PDF 命令操作符及操作数列表。
+    ///     Analyze the PDF command operator and operand list after the content.
     /// </summary>
     public IList<PdfPageCommand> Commands { get; }
 
@@ -109,9 +109,9 @@ internal sealed class PdfPageCommandProcessor : PdfContentStreamProcessor, IPdfP
     }
 
     /// <summary>
-    ///     将 <see cref="Operands" /> 的内容写入到目标 <see cref="System.IO.Stream" />。
+    ///     Write the contents of <see cref="Operands" /> to the target<see cref="System.IO.Stream" />.
     /// </summary>
-    /// <param name="target">目标流对象。</param>
+    /// <param name="target">Target flow object.</param>
     internal void WritePdfCommands(Stream target)
     {
         foreach (PdfPageCommand item in Commands)
@@ -121,10 +121,10 @@ internal sealed class PdfPageCommandProcessor : PdfContentStreamProcessor, IPdfP
     }
 
     /// <summary>
-    ///     将 <see cref="Operands" /> 的内容写入到目标 <paramref name="pdf" /> 的第 <paramref name="pageNumber" /> 页。
+    ///     Write the contents of <see cref="Operands" /> to the target <paramref name="PDF" /> page.
     /// </summary>
-    /// <param name="pdf">目标 <see cref="PdfReader" />。</param>
-    /// <param name="pageNumber">要写入的页码。</param>
+    /// <param name="pdf">Target <see cref="PdfReader" />.</param>
+    /// <param name="panumber">The page number to be written.</param>
     internal void WritePdfCommands(PdfReader pdf, int pageNumber)
     {
         using MemoryStream ms = new();

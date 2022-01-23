@@ -63,7 +63,7 @@ internal sealed class PdfPathDocument : IHierarchicalObject<DocumentObject>
 
     public int PageCount => Document.NumberOfPages;
 
-    #region IHierarchicalObject<DocumentObject> 成员
+    #region IHierarchicalObject<DocumentObject> member
 
     ICollection<DocumentObject> IHierarchicalObject<DocumentObject>.Children
     {

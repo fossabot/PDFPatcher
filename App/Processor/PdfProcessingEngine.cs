@@ -17,10 +17,10 @@ internal sealed class PdfProcessingEngine
         ExtraData = new Dictionary<int, object>();
     }
 
-    ///<summary>获取文档处理器列表。</summary>
+    /// <summary>Get a list of document processor.</summary>
     internal List<IDocProcessor> DocumentProcessors { get; }
 
-    ///<summary>获取页面处理器列表。</summary>
+    /// <summary>Get the page processor list.</summary>
     internal List<IPageProcessor> PageProcessors { get; }
 
     public PdfReader Pdf { get; }

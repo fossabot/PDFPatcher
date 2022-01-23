@@ -6,9 +6,9 @@ namespace PDFPatcher.Model;
 internal class PdfDocumentFont
 {
     /// <summary>
-    ///     删除字体名称的子集前缀。
+    ///     Delete the subset prefix of the font name.
     /// </summary>
-    /// <param name="name">字体名称。</param>
+    /// <param name="name">The font name.</param>
     internal static string RemoveSubsetPrefix(string name) =>
         name.Length > 7 && name[6] == '+' ? name.Substring(7) : name;
 

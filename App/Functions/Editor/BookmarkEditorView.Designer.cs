@@ -2,15 +2,15 @@
 {
 	partial class BookmarkEditorView
 	{
-		/// <summary> 
-		/// 必需的设计器变量。
+		/// <summary>
+		/// Required designer variables.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 
-		/// <summary> 
-		/// 清理所有正在使用的资源。
+		/// <summary>
+		/// Clean up all resources in use.
 		/// </summary>
-		/// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+		/// <param name="disposing">true if the managed resource should be released; otherwise, false.</param>
 		protected override void Dispose (bool disposing) {
 			if (disposing && (components != null)) {
 				components.Dispose ();
@@ -18,11 +18,11 @@
 			base.Dispose (disposing);
 		}
 
-		#region 组件设计器生成的代码
+		#region Component Designer Generated Code
 
-		/// <summary> 
-		/// 设计器支持所需的方法 - 不要
-		/// 使用代码编辑器修改此方法的内容。
+		/// <summary>
+		/// Designer supports required methods - Don't
+		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
 			this.components = new System.ComponentModel.Container ();
@@ -32,9 +32,9 @@
 			this._ActionColumn = new BrightIdeasSoftware.OLVColumn ();
 			((System.ComponentModel.ISupportInitialize)(this)).BeginInit ();
 			this.SuspendLayout ();
-			// 
+			//
 			// _BookmarkBox
-			// 
+			//
 			this.AllColumns.Add (this.BookmarkNameColumn);
 			this.AllColumns.Add (this.BookmarkOpenColumn);
 			this.AllColumns.Add (this.BookmarkPageColumn);
@@ -74,15 +74,15 @@
 			this.FormatRow += new System.EventHandler<BrightIdeasSoftware.FormatRowEventArgs> (this._BookmarkBox_FormatRow);
 			this.HyperlinkClicked += new System.EventHandler<BrightIdeasSoftware.HyperlinkClickedEventArgs>(BookmarkEditor_CellClick);
 			this.HotItemChanged += new System.EventHandler<BrightIdeasSoftware.HotItemChangedEventArgs> (BookmarkEditor_HotItemChanged);
-			// 
+			//
 			// _BookmarkNameColumn
-			// 
+			//
 			this.BookmarkNameColumn.AspectName = "";
 			this.BookmarkNameColumn.Text = "书签文本";
 			this.BookmarkNameColumn.Width = 241;
-			// 
+			//
 			// _BookmarkOpenColumn
-			// 
+			//
 			this.BookmarkOpenColumn.AspectName = "";
 			this.BookmarkOpenColumn.CheckBoxes = true;
 			this.BookmarkOpenColumn.DisplayIndex = 2;
@@ -90,25 +90,25 @@
 			this.BookmarkOpenColumn.Text = "打开";
 			this.BookmarkOpenColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.BookmarkOpenColumn.Width = 40;
-			// 
+			//
 			// _BookmarkPageColumn
-			// 
+			//
 			this.BookmarkPageColumn.AspectName = "";
 			this.BookmarkPageColumn.DisplayIndex = 1;
 			this.BookmarkPageColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this.BookmarkPageColumn.Text = "页码";
 			this.BookmarkPageColumn.Width = 42;
-			// 
+			//
 			// _ActionColumn
-			// 
+			//
 			this._ActionColumn.AspectName = "";
 			this._ActionColumn.Hyperlink = true;
 			this._ActionColumn.IsEditable = false;
 			this._ActionColumn.Text = "书签动作";
 			this._ActionColumn.Width = 100;
-			// 
+			//
 			// BookmarkEditor
-			// 
+			//
 			this.Name = "BookmarkEditor";
 			this.Size = new System.Drawing.Size (408, 208);
 			((System.ComponentModel.ISupportInitialize)(this)).EndInit ();

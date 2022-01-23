@@ -34,7 +34,7 @@ internal sealed class DocInfoExporter
     private Dictionary<int, int> PageReferenceMapper => _pageReferenceMapper ??= _reader.GetPageRefMapper();
 
     internal static XmlWriterSettings GetWriterSettings() =>
-        new XmlWriterSettings
+        new()
         {
             Encoding = AppContext.Exporter.GetEncoding(),
             Indent = true,
@@ -82,7 +82,7 @@ internal sealed class DocInfoExporter
         }
         catch (IOException)
         {
-            // 忽略错误的元数据
+            // Ignore the wrong metadata
             return new GeneralInfo();
         }
     }
@@ -564,7 +564,7 @@ internal sealed class DocInfoExporter
     }
 
     /// <summary>
-    ///     导出 PDF 书签。
+    ///     Export PDF bookmarks.
     /// </summary>
     /// <param name="bookmarks"></param>
     /// <param name="w"></param>
@@ -625,7 +625,7 @@ internal sealed class DocInfoExporter
     }
 
     /// <summary>
-    ///     导出 PDF 文档页内连接。
+    ///     Export the PDF document page link.
     /// </summary>
     /// <param name="r"></param>
     /// <param name="w"></param>
@@ -783,7 +783,7 @@ internal sealed class DocInfoExporter
     }
 
     /// <summary>
-    ///     导出 PDF 文档的单个连接信息。
+    ///     Export a single link information of the PDF document.
     /// </summary>
     /// <param name="link"></param>
     /// <param name="w"></param>
