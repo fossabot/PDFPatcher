@@ -76,7 +76,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(98, 18);
 			this.label3.TabIndex = 2;
-			this.label3.Text = "页码范围：";
+			this.label3.Text = "Page size range:";
 			//
 			// _KeepBookmarkBox
 			//
@@ -86,7 +86,7 @@
 			this._KeepBookmarkBox.Name = "_KeepBookmarkBox";
 			this._KeepBookmarkBox.Size = new System.Drawing.Size(178, 22);
 			this._KeepBookmarkBox.TabIndex = 1;
-			this._KeepBookmarkBox.Text = "保留原文档的书签";
+			this._KeepBookmarkBox.Text = "Keep the bookmark for the original document";
 			this._KeepBookmarkBox.UseVisualStyleBackColor = true;
 			//
 			// _RemoveOrphanBoomarksBox
@@ -97,7 +97,7 @@
 			this._RemoveOrphanBoomarksBox.Name = "_RemoveOrphanBoomarksBox";
 			this._RemoveOrphanBoomarksBox.Size = new System.Drawing.Size(250, 22);
 			this._RemoveOrphanBoomarksBox.TabIndex = 3;
-			this._RemoveOrphanBoomarksBox.Text = "删除连接到无效页面的书签";
+			this._RemoveOrphanBoomarksBox.Text = "Delete bookmarks connected to invalid page";
 			this._RemoveOrphanBoomarksBox.UseVisualStyleBackColor = true;
 			//
 			// _KeepDocInfoPropertyBox
@@ -108,7 +108,7 @@
 			this._KeepDocInfoPropertyBox.Name = "_KeepDocInfoPropertyBox";
 			this._KeepDocInfoPropertyBox.Size = new System.Drawing.Size(178, 22);
 			this._KeepDocInfoPropertyBox.TabIndex = 0;
-			this._KeepDocInfoPropertyBox.Text = "保留原文档的属性";
+			this._KeepDocInfoPropertyBox.Text = "Keep the properties of the original document";
 			this._KeepDocInfoPropertyBox.UseVisualStyleBackColor = true;
 			//
 			// _SourceFileControl
@@ -139,7 +139,7 @@
 			this._RemoveRestrictionBox.Name = "_RemoveRestrictionBox";
 			this._RemoveRestrictionBox.Size = new System.Drawing.Size(178, 22);
 			this._RemoveRestrictionBox.TabIndex = 2;
-			this._RemoveRestrictionBox.Text = "解除原文档的限制";
+			this._RemoveRestrictionBox.Text = "Limit the restriction of the original document";
 			this._RemoveRestrictionBox.UseVisualStyleBackColor = true;
 			//
 			// label2
@@ -150,7 +150,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(134, 18);
 			this.label2.TabIndex = 5;
-			this.label2.Text = "排除页码范围：";
+			this.label2.Text = "Exclude the page range:";
 			//
 			// _ExcludePageRangeBox
 			//
@@ -170,16 +170,16 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(98, 18);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "拆分方式：";
+			this.label1.Text = "Split mode:";
 			//
 			// _SeparatingModeBox
 			//
 			this._SeparatingModeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this._SeparatingModeBox.FormattingEnabled = true;
 			this._SeparatingModeBox.Items.AddRange(new object[] {
-            "按页码范围的分号标记拆分",
-            "按顶层书签拆分",
-            "按页数拆分"});
+ "Split by semicolon mark of page range",
+             "Split by top bookmark",
+             "split by page"});
 			this._SeparatingModeBox.Location = new System.Drawing.Point(134, 30);
 			this._SeparatingModeBox.Margin = new System.Windows.Forms.Padding(4);
 			this._SeparatingModeBox.Name = "_SeparatingModeBox";
@@ -210,7 +210,7 @@
 			this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
 			this.tabPage1.Size = new System.Drawing.Size(830, 264);
 			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "选项";
+			this.tabPage1.Text = "Option";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			//
 			// groupBox2
@@ -226,7 +226,7 @@
 			this.groupBox2.Size = new System.Drawing.Size(300, 166);
 			this.groupBox2.TabIndex = 0;
 			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "文档";
+			this.groupBox2.Text = "Documentation";
 			//
 			// groupBox1
 			//
@@ -243,7 +243,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(476, 166);
 			this.groupBox1.TabIndex = 1;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "拆分文档";
+			this.groupBox1.Text = "Split document";
 			//
 			// _NumberFileNamesBox
 			//
@@ -253,7 +253,7 @@
 			this._NumberFileNamesBox.Name = "_NumberFileNamesBox";
 			this._NumberFileNamesBox.Size = new System.Drawing.Size(214, 22);
 			this._NumberFileNamesBox.TabIndex = 6;
-			this._NumberFileNamesBox.Text = "在文件名前面添加编号";
+			this._NumberFileNamesBox.Text = "Add a number in front of the file name";
 			this._NumberFileNamesBox.UseVisualStyleBackColor = true;
 			//
 			// label5
@@ -264,7 +264,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(26, 18);
 			this.label5.TabIndex = 4;
-			this.label5.Text = "页";
+			this.label5.Text = "Page";
 			//
 			// _SeperateByPageNumberBox
 			//
@@ -297,7 +297,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(188, 18);
 			this.label4.TabIndex = 2;
-			this.label4.Text = "按页数拆分：每个文档";
+			this.label4.Text = "Split by page: Each document";
 			//
 			// tabPage2
 			//
@@ -308,7 +308,7 @@
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
 			this.tabPage2.Size = new System.Drawing.Size(830, 264);
 			this.tabPage2.TabIndex = 1;
-			this.tabPage2.Text = "关于页码范围的说明";
+			this.tabPage2.Text = "Description of the page range";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			//
 			// textBox1
@@ -344,7 +344,7 @@
 			this._ExtractButton.ShowFocusBorder = true;
 			this._ExtractButton.Size = new System.Drawing.Size(184, 44);
 			this._ExtractButton.TabIndex = 14;
-			this._ExtractButton.Text = " 提取页面(&T)";
+			this._ExtractButton.Text = "&Extract Page";
 			this._ExtractButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._ExtractButton.Click += new System.EventHandler(this._ExtractButton_Click);
 			//

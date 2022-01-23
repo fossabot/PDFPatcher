@@ -26,14 +26,14 @@ internal sealed class FixContentProcessor : IPageProcessor
 
     #region IPageProcessor member
 
-    public string Name => "修复并删除冗余内容";
+    public string Name => "Fix and remove redundant content";
 
     public void BeginProcess(DocProcessorContext context) => _processedPageCount = 0;
 
     public bool EndProcess(PdfReader pdf)
     {
-        Tracker.TraceMessage(Tracker.Category.Notice, Name + "功能：");
-        Tracker.TraceMessage("　　删除了 " + _processedPageCount + " 页的冗余内容。");
+        Tracker.TraceMessage(Tracker.Category.Notice, Name + "Function:");
+        Tracker.TraceMessage(" Deleted the redundant content of " + _processedPageCount + " page.");
         return false;
     }
 

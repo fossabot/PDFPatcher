@@ -73,7 +73,7 @@ public sealed partial class SearchBookmarkForm : Form
     {
         if (string.IsNullOrEmpty(_SearchTextBox.Text))
         {
-            FormHelper.InfoBox("请先输入查询关键字。");
+            FormHelper.InfoBox("Please enter the query keyword first.");
             return;
         }
 
@@ -84,7 +84,7 @@ public sealed partial class SearchBookmarkForm : Form
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("搜索表达式有误：" + ex.Message);
+            FormHelper.ErrorBox("The search expression is wrong: " + ex.Message);
             return;
         }
 
@@ -94,18 +94,18 @@ public sealed partial class SearchBookmarkForm : Form
             List<BookmarkElement> matches = _controller.View.Bookmark.SearchBookmarks(matcher);
             if (matches.Count > 0)
             {
-                _ResultLabel.Text = "找到 " + matches.Count + " 个匹配的书签。";
+                _ResultLabel.Text = "Found " + matches.Count + " matching bookmarks.";
                 _controller.View.Bookmark.FindForm().Activate();
             }
             else
             {
-                _ResultLabel.Text = "没有找到任何匹配的书签。";
+                _ResultLabel.Text = "No matching bookmarks were found.";
             }
         }
         else
         {
             BookmarkElement m = _controller.View.Bookmark.SearchBookmark(matcher);
-            _ResultLabel.Text = m == null ? "没有找到对应的书签。" : string.Empty;
+            _ResultLabel.Text = m == null ? "The corresponding bookmark was not found." : string.Empty;
         }
     }
 
@@ -119,12 +119,12 @@ public sealed partial class SearchBookmarkForm : Form
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("搜索表达式有误：" + ex.Message);
+            FormHelper.ErrorBox("The search expression is wrong: " + ex.Message);
             return;
         }
 
         int i = ReplaceBookmarks(_replaceInSelection, matcher, _ReplaceTextBox.Text);
-        _ResultLabel.Text = i > 0 ? "替换了 " + i + " 个匹配的书签。" : "没有替换任何书签。";
+        _ResultLabel.Text = i > 0 ? "Replaced " + i + " matching bookmarks." : "No bookmarks were replaced.";
         _SearchTextBox.AddHistoryItem();
         _ReplaceTextBox.AddHistoryItem();
     }
@@ -185,7 +185,7 @@ public sealed partial class SearchBookmarkForm : Form
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("在替换匹配文本时出现错误：" + ex.Message);
+            FormHelper.ErrorBox("An error occurred while replacing the matching text:" + ex.Message);
         }
 
         if (undo.Count <= 0)

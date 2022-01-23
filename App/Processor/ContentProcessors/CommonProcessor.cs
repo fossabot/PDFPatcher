@@ -10,7 +10,7 @@ internal sealed class CommonProcessor : IPageProcessor
 
     #region IPageProcessor member
 
-    public string Name => "PDF 常规处理";
+    public string Name => "PDF General Processing";
 
     int IPageProcessor.EstimateWorkload(PdfReader pdf) => pdf.NumberOfPages;
 
@@ -22,39 +22,39 @@ internal sealed class CommonProcessor : IPageProcessor
             PdfDictionary c = pdf.Catalog;
             if (_options.RemoveUsageRights)
             {
-                Tracker.TraceMessage("删除权限控制。");
+                Tracker.TraceMessage("Remove permission control.");
                 pdf.RemoveUsageRights();
             }
 
             if (_options.RemoveXmlMetadata)
             {
-                Tracker.TraceMessage("删除 XML 元数据。");
+                Tracker.TraceMessage("Remove XML metadata.");
                 PdfReader.KillIndirect(c.Get(PdfName.METADATA));
                 c.Remove(PdfName.METADATA);
             }
 
             if (_options.RemoveDocAutoActions)
             {
-                Tracker.TraceMessage("删除打开文档时的自动动作。");
+                Tracker.TraceMessage("Delete the automatic action when opening the document.");
                 c.Remove(PdfName.OPENACTION);
                 c.Remove(PdfName.AA);
             }
 
             if (_options.RemoveAnnotations)
             {
-                Tracker.TraceMessage("删除文档批注。");
+                Tracker.TraceMessage("Remove document comments.");
                 pdf.Catalog.Remove(PdfName.ACROFORM);
             }
         }
 
         if (_options.RemovePageAutoActions)
         {
-            Tracker.TraceMessage("删除页面自动动作。");
+            Tracker.TraceMessage("Delete page automatic action.");
         }
 
         if (_options.RemovePageMetaData)
         {
-            Tracker.TraceMessage("删除页面扩展标记元数据属性。");
+            Tracker.TraceMessage("Remove page extension tag metadata attribute.");
         }
     }
 

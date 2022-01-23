@@ -39,7 +39,7 @@ internal static class BitmapHelper
 
         if (bmp.PixelFormat != PixelFormat.Format24bppRgb && bmp.PixelFormat != PixelFormat.Format32bppArgb)
         {
-            throw new InvalidOperationException("仅支持 Format24bppRgb 和 Format32bppArgb。");
+            throw new InvalidOperationException("Only Format24bppRgb and Format32bppArgb are supported.");
         }
 
         int bw = bmp.PixelFormat == PixelFormat.Format24bppRgb ? 3 : 4;
@@ -155,7 +155,7 @@ internal static class BitmapHelper
 
         if (source.PixelFormat != PixelFormat.Format24bppRgb && source.PixelFormat != PixelFormat.Format32bppArgb)
         {
-            throw new InvalidOperationException("仅支持 Format24bppRgb 和 Format32bppArgb。");
+            throw new InvalidOperationException("Only Format24bppRgb and Format32bppArgb are supported.");
         }
 
         Dictionary<int, byte> pi = new(pallette.Length);

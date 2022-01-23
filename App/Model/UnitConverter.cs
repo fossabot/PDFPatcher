@@ -35,7 +35,7 @@ public class UnitConverter
         {
             if (value is < 0 or > 6)
             {
-                throw new ArgumentException("转换精度不能小于 0 或大于 6。");
+                throw new ArgumentException("The conversion accuracy cannot be less than 0 or greater than 6.");
             }
 
             _Precision = value;
@@ -44,7 +44,7 @@ public class UnitConverter
     }
 
     /// <summary>Get or specify the unit of conversion.</summary>
-    [XmlAttribute("单位")]
+    [XmlAttribute("unit")]
     public string Unit
     {
         get => _Unit;
@@ -53,7 +53,7 @@ public class UnitConverter
             float f = ValueHelper.MapValue(value, Constants.Units.Names, Constants.Units.Factors, 0);
             if (f == 0)
             {
-                throw new ArgumentException("尺寸单位无效。");
+                throw new ArgumentException("Size unit is invalid.");
             }
 
             UnitFactor = f;

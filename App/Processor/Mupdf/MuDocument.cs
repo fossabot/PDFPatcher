@@ -24,7 +24,7 @@ public sealed class MuDocument : IDisposable
     {
         if (File.Exists(fileName) == false)
         {
-            throw new FileNotFoundException("找不到 PDF 文件：" + fileName);
+            throw new FileNotFoundException("Can't find a PDF file: " + fileName);
         }
 
         try
@@ -38,7 +38,7 @@ public sealed class MuDocument : IDisposable
         {
             _sourceStream.DisposeHandle();
             _document.DisposeHandle();
-            throw new IOException("PDF 文件无效：" + fileName);
+            throw new IOException("The PDF file is invalid: " + fileName);
         }
     }
 
@@ -78,12 +78,12 @@ public sealed class MuDocument : IDisposable
             {
                 if (NativeMethods.AuthenticatePassword(Context, _document, password) == false)
                 {
-                    throw new BadPasswordException("密码无效。");
+                    throw new BadPasswordException("Invalid password.");
                 }
             }
             else
             {
-                throw new BadPasswordException("需要提供打开 PDF 文档的密码。");
+                throw new BadPasswordException("You need to provide a password to open the PDF document.");
             }
         }
 

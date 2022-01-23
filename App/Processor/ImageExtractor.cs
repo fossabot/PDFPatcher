@@ -111,7 +111,8 @@ internal sealed class ImageExtractor
             {
                 if (item.ReferenceCount > 0)
                 {
-                    Tracker.TraceMessage(Tracker.Category.Error, "在导出第 " + pageNum + " 页图片时遇到错误：" + ex.Message);
+                    Tracker.TraceMessage(Tracker.Category.Error,
+                        "An error was encountered while exporting the image on page " + pageNum + ": " + ex.Message);
                 }
             }
         }
@@ -248,7 +249,7 @@ internal sealed class ImageExtractor
         if (PrintImageLocation)
         {
             Tracker.TraceMessage(Tracker.Category.OutputFile, n);
-            Tracker.TraceMessage("导出图片：" + n);
+            Tracker.TraceMessage("Export image:" + n);
         }
 
         if ((vFlip || _pageRotation != 0) && info.ExtName == Constants.FileExtensions.Jp2)
@@ -299,7 +300,7 @@ internal sealed class ImageExtractor
 
             if (PrintImageLocation)
             {
-                Tracker.TraceMessage("导出图片：" + n);
+                Tracker.TraceMessage("Export image:" + n);
             }
         }
         else
@@ -390,7 +391,7 @@ internal sealed class ImageExtractor
                 type = RotateFlipType.Rotate90FlipNone;
                 break;
             default:
-                Tracker.TraceMessage(Tracker.Category.Error, "无损翻转 JPG 图片失败：" + fileName);
+                Tracker.TraceMessage(Tracker.Category.Error, "Non-destructive flipping JPG picture failed:" + fileName);
                 return;
         }
 
@@ -421,12 +422,12 @@ internal sealed class ImageExtractor
         if (PrintImageLocation)
         {
             Tracker.TraceMessage(Tracker.Category.OutputFile, n);
-            Tracker.TraceMessage("导出图片：" + n);
+            Tracker.TraceMessage("Export image:" + n);
         }
 
         if (PdfName.DEVICECMYK.Equals(info.ColorSpace))
         {
-            // TODO: 转换字节数组的 CMYK 为 RGB 后加载到 FreeImageBitmap
+            // TODO: CMYK in the converted byte array is loaded to FreeImageBitmap after RGB
             //info.PixelFormat = PixelFormat.Undefined;
             using FreeImageBitmap bmp = new(
                 //info.Width,
@@ -481,7 +482,8 @@ internal sealed class ImageExtractor
                 }
                 catch (SEHException)
                 {
-                    Tracker.TraceMessage(Tracker.Category.Error, "保存图片时出现错误，请联系程序开发者：" + n);
+                    Tracker.TraceMessage(Tracker.Category.Error,
+                        "If you have an error while saving the picture, please contact developers:" + n);
                 }
             }
         }
@@ -577,9 +579,9 @@ internal sealed class ImageExtractor
         {
             ImageDisposition imageI = PosList[i];
             // Since only the PNG and TIF specify only the PixelFormat of the imageinfo, only these two types of files are handled during the merge process.
-            if (imageI.Image.ReferenceCount < 1 // 图像已处理
-                || imageI.Image.PixelFormat == PixelFormat.Undefined // 不属于可合并的类型
-                || l - i < 2 // 是最后一张图片
+            if (imageI.Image.ReferenceCount < 1 // Image has been processed
+                || imageI.Image.PixelFormat == PixelFormat.Undefined // Types that do not belong to merge
+                || l - i < 2 // Is the last picture
                )
             {
                 continue;
@@ -592,12 +594,12 @@ internal sealed class ImageExtractor
             for (int j = i; j < l; j++)
             {
                 ImageDisposition imageJ = PosList[j];
-                if (imageJ.Image.ReferenceCount < 1 // 图像已处理
-                    || imageJ.Image.Width != w // 宽度不相符
-                    || Math.Abs(Math.Round(imageJ.X - imageI.X)) > 1 // 位置相差超过 1 点
-                                                                     //|| imageJ.Image.PixelFormat != imageI.Image.PixelFormat // 格式不匹配
+                if (imageJ.Image.ReferenceCount < 1 // Image processed
+                    || imageJ.Image.Width != w // width does not match
+                    || Math.Abs(Math.Round(imageJ.X - imageI.X)) > 1 // positions differ by more than 1 point
+                                                                     //|| imageJ.Image.PixelFormat != imageI.Image.PixelFormat // format mismatch
                                                                      //|| imageJ.Image.ColorSpace == null
-                                                                     //|| imageJ.Image.ColorSpace.Equals (imageI.Image.ColorSpace) == false // Colorspace 不匹配
+                                                                     //|| imageJ.Image.ColorSpace.Equals (imageI.Image.ColorSpace) == false // Colorspace does not match
                    )
                 {
                     continue;
@@ -605,7 +607,7 @@ internal sealed class ImageExtractor
 
                 imageParts[i2] = imageJ.Image;
                 h += imageJ.Image.Height;
-                PosList[j].Image.ReferenceCount--; // 避免重复处理
+                PosList[j].Image.ReferenceCount--; // avoid repeated processing
                 i2++;
             }
 
@@ -626,7 +628,7 @@ internal sealed class ImageExtractor
 
             if (PrintImageLocation)
             {
-                Tracker.TraceMessage("合并图片：" + string.Join("、",
+                Tracker.TraceMessage("Merge picture:" + string.Join("、",
                     Array.ConvertAll(imageParts, p => Path.GetFileName(p.FileName))));
             }
 
@@ -671,7 +673,8 @@ internal sealed class ImageExtractor
                                     if (!bmp.ConvertColorDepth(FREE_IMAGE_COLOR_DEPTH.FICD_24_BPP) ||
                                         !bmp2.ConvertColorDepth(FREE_IMAGE_COLOR_DEPTH.FICD_24_BPP))
                                     {
-                                        throw new OverflowException("调色板溢出，无法合并图片。");
+                                        throw new OverflowException(
+                                            "The palette overflows and cannot merge the picture.");
                                     }
 
                                     ext = Constants.FileExtensions.Png;
@@ -740,7 +743,7 @@ internal sealed class ImageExtractor
                         bmp.ConvertColorDepth(FREE_IMAGE_COLOR_DEPTH.FICD_24_BPP);
                         if (bmp.Paste(bmp2, 0, h, int.MaxValue) == false)
                         {
-                            Tracker.TraceMessage("合并图片失败");
+                            Tracker.TraceMessage("Merge picture failed");
                         }
 
                         bmpPal = null;
@@ -768,7 +771,7 @@ internal sealed class ImageExtractor
             if (PrintImageLocation)
             {
                 Tracker.TraceMessage(Tracker.Category.OutputFile, f);
-                Tracker.TraceMessage("保存合并后的图片：" + f);
+                Tracker.TraceMessage("Save the merged picture:" + f);
             }
 
             if (ext == Constants.FileExtensions.Tif)
@@ -806,7 +809,7 @@ internal sealed class ImageExtractor
 
             if (PrintImageLocation)
             {
-                Tracker.TraceMessage(string.Concat("重命名合并后的文件 ", item.FileName, " 为 ", n));
+                Tracker.TraceMessage(string.Concat("Rename the merged file ", item.FileName, " to ", n));
                 Tracker.TraceMessage(Tracker.Category.OutputFile, n);
             }
 

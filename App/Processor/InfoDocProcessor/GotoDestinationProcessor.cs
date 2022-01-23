@@ -67,7 +67,7 @@ internal sealed class GotoDestinationProcessor : IInfoDocProcessor
             {
                 if (PageRemapper != null && page >= PageRemapper.Length)
                 {
-                    Trace.WriteLine("跳转页码位置无效：" + page);
+                    Trace.WriteLine("Jump page number is invalid: " + page);
                 }
                 else if (TransitionMapper[page] != null)
                 {

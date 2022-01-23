@@ -70,7 +70,7 @@ public partial class InsertBookmarkForm : DraggableForm
         set
         {
             _TargetPageNumber = value;
-            _PageLabel.Text = "第" + value.ToText() + "页";
+            _PageLabel.Text = "page" + value.ToText() + "page";
         }
     }
 

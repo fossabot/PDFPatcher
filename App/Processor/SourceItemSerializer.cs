@@ -30,7 +30,7 @@ internal static class SourceItemSerializer
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("在保存文件列表时遇到错误：" + ex.Message);
+            FormHelper.ErrorBox("An error was encountered while saving the file list: " + ex.Message);
         }
     }
 
@@ -64,7 +64,7 @@ internal static class SourceItemSerializer
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("在加载文件列表时遇到错误：" + ex.Message);
+            FormHelper.ErrorBox("An error was encountered while loading the file list: " + ex.Message);
         }
 
         XmlNodeList bl = d.Bookmarks;

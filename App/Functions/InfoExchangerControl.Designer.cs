@@ -133,8 +133,8 @@
 			this._AddFilesButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._AddFilesButton.Name = "_AddFilesButton";
 			this._AddFilesButton.Size = new System.Drawing.Size(102, 22);
-			this._AddFilesButton.Text = "添加文件(&T)";
-			this._AddFilesButton.ToolTipText = "添加文件";
+			this._AddFilesButton.Text = "Add files (&T)";
+			this._AddFilesButton.ToolTipText = "Add files";
 			this._AddFilesButton.ButtonClick += new System.EventHandler(this._MainToolbar_ButtonClick);
 			//
 			// _RecentFileMenu
@@ -154,7 +154,7 @@
 			_Actions.ImageTransparentColor = System.Drawing.Color.Magenta;
 			_Actions.Name = "_Actions";
 			_Actions.Size = new System.Drawing.Size(84, 22);
-			_Actions.Text = "补丁操作";
+			_Actions.Text = "Patch operation";
 			_Actions.Visible = false;
 			_Actions.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
 			//
@@ -166,20 +166,20 @@
 			_DocumentActions.Image = global::PDFPatcher.Properties.Resources.DocumentProcessor;
 			_DocumentActions.Name = "_DocumentActions";
 			_DocumentActions.Size = new System.Drawing.Size(194, 22);
-			_DocumentActions.Text = "添加文档处理操作";
+			_DocumentActions.Text = "Add a document processing operation";
 			_DocumentActions.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
 			//
 			// _RemoveUsageRightsAction
 			//
 			_RemoveUsageRightsAction.Name = "_RemoveUsageRightsAction";
 			_RemoveUsageRightsAction.Size = new System.Drawing.Size(182, 22);
-			_RemoveUsageRightsAction.Text = "移除复制、打印限制";
+			_RemoveUsageRightsAction.Text = "Remove copy, print restriction";
 			//
 			// _ModifyMetaDataAction
 			//
 			_ModifyMetaDataAction.Name = "_ModifyMetaDataAction";
 			_ModifyMetaDataAction.Size = new System.Drawing.Size(182, 22);
-			_ModifyMetaDataAction.Text = "修改元数据";
+			_ModifyMetaDataAction.Text = "Modify metadata";
 			//
 			// _PageActions
 			//
@@ -192,45 +192,45 @@
 			_PageActions.Image = global::PDFPatcher.Properties.Resources.PageProcessor;
 			_PageActions.Name = "_PageActions";
 			_PageActions.Size = new System.Drawing.Size(194, 22);
-			_PageActions.Text = "添加页面内容处理操作";
+			_PageActions.Text = "Add page content processing operation";
 			_PageActions.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
 			//
 			// _ImageRecompressionAction
 			//
 			_ImageRecompressionAction.Name = "_ImageRecompressionAction";
 			_ImageRecompressionAction.Size = new System.Drawing.Size(194, 22);
-			_ImageRecompressionAction.Text = "优化纯黑白图像压缩率";
+			_ImageRecompressionAction.Text = "Optimized pure black and white image compression ratio";
 			//
 			// _RemoveAnnotationAction
 			//
 			_RemoveAnnotationAction.Name = "_RemoveAnnotationAction";
 			_RemoveAnnotationAction.Size = new System.Drawing.Size(194, 22);
-			_RemoveAnnotationAction.Text = "删除批注";
+			_RemoveAnnotationAction.Text = "Delete annotation";
 			//
 			// _RemoveThumbnailAction
 			//
 			_RemoveThumbnailAction.Name = "_RemoveThumbnailAction";
 			_RemoveThumbnailAction.Size = new System.Drawing.Size(194, 22);
-			_RemoveThumbnailAction.Text = "删除缩略图";
+			_RemoveThumbnailAction.Text = "Delete thumbnails";
 			//
 			// _RemoveTextAction
 			//
 			_RemoveTextAction.Name = "_RemoveTextAction";
 			_RemoveTextAction.Size = new System.Drawing.Size(194, 22);
-			_RemoveTextAction.Text = "删除文本内容";
+			_RemoveTextAction.Text = "Delete text content";
 			//
 			// _RemoveImageAction
 			//
 			_RemoveImageAction.Name = "_RemoveImageAction";
 			_RemoveImageAction.Size = new System.Drawing.Size(194, 22);
-			_RemoveImageAction.Text = "删除图片";
+			_RemoveImageAction.Text = "Delete pictures";
 			//
 			// _RemoveActions
 			//
 			_RemoveActions.Image = global::PDFPatcher.Properties.Resources.Delete;
 			_RemoveActions.Name = "_RemoveActions";
 			_RemoveActions.Size = new System.Drawing.Size(194, 22);
-			_RemoveActions.Text = "删除选中的操作";
+			_RemoveActions.Text = "Delete selected operations";
 			//
 			// _Sort
 			//
@@ -239,7 +239,7 @@
 			_Sort.ImageTransparentColor = System.Drawing.Color.Magenta;
 			_Sort.Name = "_Sort";
 			_Sort.Size = new System.Drawing.Size(60, 22);
-			_Sort.Text = "排序";
+			_Sort.Text = "Sort";
 			_Sort.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._SortMenu_ItemClicked);
 			//
 			// _SortMenu
@@ -254,25 +254,25 @@
 			//
 			// _SortByNaturalNumberItem
 			//
-			this._SortByNaturalNumberItem.Image = global::PDFPatcher.Properties.Resources.NaturalSort;
-			this._SortByNaturalNumberItem.Name = "_SortByNaturalNumberItem";
-			this._SortByNaturalNumberItem.Size = new System.Drawing.Size(213, 22);
-			this._SortByNaturalNumberItem.Text = "按数值和字母顺序排序(&M)";
-			//
-			// _SortByAlphaItem
-			//
-			this._SortByAlphaItem.Image = global::PDFPatcher.Properties.Resources.AlphabeticSort;
-			this._SortByAlphaItem.Name = "_SortByAlphaItem";
-			this._SortByAlphaItem.Size = new System.Drawing.Size(213, 22);
-			this._SortByAlphaItem.Text = "按字母顺序排序(&Z)";
-			//
-			// _Delete
-			//
-			_Delete.Image = global::PDFPatcher.Properties.Resources.Delete;
-			_Delete.ImageTransparentColor = System.Drawing.Color.Magenta;
-			_Delete.Name = "_Delete";
-			_Delete.Size = new System.Drawing.Size(75, 22);
-			_Delete.Text = "删除文件";
+this._SortByNaturalNumberItem.Image = global::PDFPatcher.Properties.Resources.NaturalSort;
+this._SortByNaturalNumberItem.Name = "_SortByNaturalNumberItem";
+this._SortByNaturalNumberItem.Size = new System.Drawing.Size(213, 22);
+this._SortByNaturalNumberItem.Text = "Sort by &Numerically and Alphabetically";
+//
+// _SortByAlphaItem
+//
+this._SortByAlphaItem.Image = global::PDFPatcher.Properties.Resources.AlphabeticSort;
+this._SortByAlphaItem.Name = "_SortByAlphaItem";
+this._SortByAlphaItem.Size = new System.Drawing.Size(213, 22);
+this._SortByAlphaItem.Text = "Sort &Z alphabetically";
+//
+// _Delete
+//
+_Delete.Image = global::PDFPatcher.Properties.Resources.Delete;
+_Delete.ImageTransparentColor = System.Drawing.Color.Magenta;
+_Delete.Name = "_Delete";
+_Delete.Size = new System.Drawing.Size(75, 22);
+_Delete.Text = "Delete file";
 			//
 			// toolStripSeparator2
 			//
@@ -285,33 +285,33 @@
 			this._RefreshInfoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._RefreshInfoButton.Name = "_RefreshInfoButton";
 			this._RefreshInfoButton.Size = new System.Drawing.Size(111, 22);
-			this._RefreshInfoButton.Text = "刷新文档属性";
+			this._RefreshInfoButton.Text = "Refreshing document properties";
 			//
 			// _SelectAllItem
 			//
 			_SelectAllItem.Image = global::PDFPatcher.Properties.Resources.SelectAll;
 			_SelectAllItem.Name = "_SelectAllItem";
 			_SelectAllItem.Size = new System.Drawing.Size(122, 22);
-			_SelectAllItem.Text = "全部选中";
+			_SelectAllItem.Text = "All selected";
 			//
 			// _InvertSelectItem
 			//
 			_InvertSelectItem.Name = "_InvertSelectItem";
 			_InvertSelectItem.Size = new System.Drawing.Size(122, 22);
-			_InvertSelectItem.Text = "反转选择";
+			_InvertSelectItem.Text = "Inverse select";
 			//
 			// _SelectNoneItem
 			//
 			_SelectNoneItem.Name = "_SelectNoneItem";
 			_SelectNoneItem.Size = new System.Drawing.Size(122, 22);
-			_SelectNoneItem.Text = "取消选择";
+			_SelectNoneItem.Text = "cancel selection";
 			//
 			// _Copy
 			//
 			_Copy.Image = global::PDFPatcher.Properties.Resources.Copy;
 			_Copy.Name = "_Copy";
 			_Copy.Size = new System.Drawing.Size(146, 22);
-			_Copy.Text = "复制列表内容";
+			_Copy.Text = "Copy list content";
 			//
 			// _RefreshInfo
 			//
@@ -319,7 +319,7 @@
 			_RefreshInfo.Image = global::PDFPatcher.Properties.Resources.Refresh;
 			_RefreshInfo.Name = "_RefreshInfo";
 			_RefreshInfo.Size = new System.Drawing.Size(146, 22);
-			_RefreshInfo.Text = "刷新文档属性";
+			_RefreshInfo.Text = "Refresh document properties";
 			//
 			// _RefreshInfoMenu
 			//
@@ -344,7 +344,7 @@
 			this._SelectionMenuItem.Image = global::PDFPatcher.Properties.Resources.SelectItem;
 			this._SelectionMenuItem.Name = "_SelectionMenuItem";
 			this._SelectionMenuItem.Size = new System.Drawing.Size(146, 22);
-			this._SelectionMenuItem.Text = "选择文件";
+			this._SelectionMenuItem.Text = "Select the file";
 			//
 			// _ItemList
 			//
@@ -384,37 +384,37 @@
 			//
 			// _NameColumn
 			//
-			this._NameColumn.Text = "源文件名";
+			this._NameColumn.Text = "Source file name";
 			this._NameColumn.Width = 149;
 			//
 			// _PageCountColumn
 			//
 			this._PageCountColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this._PageCountColumn.IsEditable = false;
-			this._PageCountColumn.Text = "页数";
+			this._PageCountColumn.Text = "Number of pages";
 			this._PageCountColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this._PageCountColumn.Width = 50;
 			//
 			// _TitleColumn
 			//
-			this._TitleColumn.Text = "标题";
+			this._TitleColumn.Text = "title";
 			//
 			// _AuthorColumn
 			//
-			this._AuthorColumn.Text = "作者";
+			this._AuthorColumn.Text = "author";
 			//
 			// _SubjectColumn
 			//
-			this._SubjectColumn.Text = "主题";
+			this._SubjectColumn.Text = "theme";
 			//
 			// _KeywordsColumn
 			//
-			this._KeywordsColumn.Text = "关键词";
+			this._KeywordsColumn.Text = "Key words";
 			//
 			// _FolderColumn
 			//
 			this._FolderColumn.IsEditable = false;
-			this._FolderColumn.Text = "文件夹";
+			this._FolderColumn.Text = "folder";
 			this._FolderColumn.Width = 96;
 			//
 			// _ItemListMenu
@@ -436,9 +436,9 @@
 			// _OpenPdfBox
 			//
 			this._OpenPdfBox.DefaultExt = "pdf";
-			this._OpenPdfBox.Filter = "PDF 文件（*.pdf）|*.pdf";
+			this._OpenPdfBox.Filter = "PDF file (*.pdf）|*.pdf";
 			this._OpenPdfBox.Multiselect = true;
-			this._OpenPdfBox.Title = "选择需要处理的 PDF 文件";
+			this._OpenPdfBox.Title = "Select the PDF file that needs to be processed";
 			//
 			// _AutoClearListBox
 			//
@@ -450,7 +450,7 @@
 			this._AutoClearListBox.Name = "_AutoClearListBox";
 			this._AutoClearListBox.Size = new System.Drawing.Size(132, 16);
 			this._AutoClearListBox.TabIndex = 4;
-			this._AutoClearListBox.Text = "添加文件前清空列表";
+			this._AutoClearListBox.Text = "Calculate the list before adding a file";
 			this._AutoClearListBox.UseVisualStyleBackColor = true;
 			//
 			// _AddDocumentWorker
@@ -464,7 +464,7 @@
 			//
 			this._BookmarkControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-			this._BookmarkControl.LabelText = "P&DF 信息文件：";
+			this._BookmarkControl.LabelText = "P&DF information file:";
 			this._BookmarkControl.Location = new System.Drawing.Point(13, 235);
 			this._BookmarkControl.Name = "_BookmarkControl";
 			this._BookmarkControl.Size = new System.Drawing.Size(553, 24);
@@ -503,7 +503,7 @@
 			//
 			// _ActionNameColumn
 			//
-			this._ActionNameColumn.Text = "补丁操作";
+			this._ActionNameColumn.Text = "Patch operation";
 			this._ActionNameColumn.Width = 120;
 			//
 			// _ItemActionsContainerBox
@@ -535,7 +535,7 @@
 			this._ExportBookmarkButton.Name = "_ExportBookmarkButton";
 			this._ExportBookmarkButton.Size = new System.Drawing.Size(120, 23);
 			this._ExportBookmarkButton.TabIndex = 8;
-			this._ExportBookmarkButton.Text = "导出信息文件(&C)";
+			this._ExportBookmarkButton.Text = "&Export Bookmark";
 			this._ExportBookmarkButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._ExportBookmarkButton.UseVisualStyleBackColor = true;
 			this._ExportBookmarkButton.Click += new System.EventHandler(this._ExportBookmarkButton_Click);
@@ -557,7 +557,7 @@
 			this._ImportButton.ShowFocusBorder = true;
 			this._ImportButton.Size = new System.Drawing.Size(123, 29);
 			this._ImportButton.TabIndex = 13;
-			this._ImportButton.Text = "生成目标文件(&S)";
+			this._ImportButton.Text = "&Generate object file";
 			this._ImportButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._ImportButton.Click += new System.EventHandler(this._ImportButton_Click);
 			//
@@ -569,7 +569,7 @@
 			this._ConfigButton.Name = "_ConfigButton";
 			this._ConfigButton.Size = new System.Drawing.Size(181, 23);
 			this._ConfigButton.TabIndex = 14;
-			this._ConfigButton.Text = "设置 P&DF 文件的修改方式";
+			this._ConfigButton.Text = "Set the modification method of the P&DF file";
 			this._ConfigButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._ConfigButton.UseVisualStyleBackColor = true;
 			//
@@ -581,7 +581,7 @@
 			this._InfoConfigButton.Name = "_InfoConfigButton";
 			this._InfoConfigButton.Size = new System.Drawing.Size(103, 23);
 			this._InfoConfigButton.TabIndex = 14;
-			this._InfoConfigButton.Text = "信息文件配置";
+			this._InfoConfigButton.Text = "Information file configuration";
 			this._InfoConfigButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._InfoConfigButton.UseVisualStyleBackColor = true;
 			this._InfoConfigButton.Click += new System.EventHandler(this._MainToolbar_ButtonClick);

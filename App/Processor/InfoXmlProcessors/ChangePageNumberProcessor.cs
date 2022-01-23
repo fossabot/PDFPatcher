@@ -18,7 +18,7 @@ internal sealed class ChangePageNumberProcessor : IPdfInfoXmlProcessor
 
     #region IInfoDocProcessor member
 
-    public string Name => "更改目标页码";
+    public string Name => "Change the target page number";
 
     public IUndoAction Process(XmlElement item)
     {

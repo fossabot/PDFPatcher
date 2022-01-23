@@ -30,7 +30,7 @@ public class AutoBookmarkOptions
     /// <summary>
     ///     Whether or not to export the location information of the text.
     /// </summary>
-    [XmlAttribute("导出文本位置信息")]
+    [XmlAttribute("Export text location information")]
     public bool ExportTextCoordinates { get; set; }
 
     public class LevelAdjustmentOption
@@ -45,14 +45,16 @@ public class AutoBookmarkOptions
         [XmlElement(AutoBookmarkCondition.TextCondition.ThisName, typeof(AutoBookmarkCondition.TextCondition))]
         public AutoBookmarkCondition Condition { get; set; }
 
-        [XmlAttribute("合并前筛选")] public bool FilterBeforeMergeTitle { get; set; }
+        [XmlAttribute("Filter before merging")]
+        public bool FilterBeforeMergeTitle { get; set; }
 
-        [XmlAttribute("相对级别调整")] public bool RelativeAdjustment { get; set; }
+        [XmlAttribute("Relative Level Adjustment")]
+        public bool RelativeAdjustment { get; set; }
 
         /// <summary>
         ///     Title adjustment level.
         /// </summary>
-        [XmlAttribute("调整级别")]
+        [XmlAttribute("adjustment level")]
         public float AdjustmentLevel { get; set; }
 
         internal LevelAdjustmentOption Clone() =>
@@ -69,7 +71,7 @@ public class AutoBookmarkOptions
     /// <summary>
     ///     Page size range.
     /// </summary>
-    //[XmlAttribute ("页码范围")]
+    //[XmlAttribute ("page range")]
     [XmlIgnore]
     [JsonInclude(false)]
     public string PageRanges { get; set; }
@@ -77,67 +79,72 @@ public class AutoBookmarkOptions
     /// <summary>
     ///     minimum title font size.
     /// </summary>
-    [XmlAttribute("最小标题尺寸")]
+    [XmlAttribute("Minimum title size")]
     public float TitleThreshold { get; set; }
 
     /// <summary>
     ///     The first line of each page is the title.
     /// </summary>
-    [XmlAttribute("第一行为标题")]
+    [XmlAttribute("First line title")]
     public bool FirstLineAsTitle { get; set; }
 
     /// <summary>
     ///     Ignore the title of only one character.
     /// </summary>
-    [XmlAttribute("忽略单字符标题")]
+    [XmlAttribute("Ignore single-character title")]
     public bool IgnoreSingleCharacterTitle { get; set; }
 
     /// <summary>
     ///     Ignore only the title of only numbers.
     /// </summary>
-    [XmlAttribute("忽略数字标题")]
+    [XmlAttribute("Ignore numeric headers")]
     public bool IgnoreNumericTitle { get; set; }
 
     /// <summary>
     ///     The same level title is combined.
     /// </summary>
-    [XmlAttribute("合并相邻标题")]
+    [XmlAttribute("Merge adjacent titles")]
     public bool MergeAdjacentTitles { get; set; }
 
     /// <summary>
     ///     Whether to allow merged tabular titles.
     /// </summary>
-    [XmlAttribute("合并不同尺寸标题")]
+    [XmlAttribute("Merge titles of different sizes")]
     public bool MergeDifferentSizeTitles { get; set; }
 
-    [XmlAttribute("合并不同字体标题")] public bool MergeDifferentFontTitles { get; set; }
+    [XmlAttribute("Merge different font titles")]
+    public bool MergeDifferentFontTitles { get; set; }
 
-    [XmlAttribute("忽略重叠文本")] public bool IgnoreOverlappedText { get; set; }
+    [XmlAttribute("Ignore Overlapped Text")]
+    public bool IgnoreOverlappedText { get; set; }
 
     /// <summary>
     ///     Ignore the specified expression.
     /// </summary>
-    [XmlArray("忽略表达式")]
-    [XmlArrayItem("表达式")]
+    [XmlArray("Ignore expression")]
+    [XmlArrayItem("expression")]
     public Collection<MatchPattern> IgnorePatterns { get; } = new();
 
-    [XmlElement("级别调整")]
-    [JsonField("级别调整")]
+    [XmlElement("Level Adjustment")]
+    [JsonField("level adjustment")]
     public Collection<LevelAdjustmentOption> LevelAdjustment { get; } = new();
 
-    [XmlAttribute("自动组织标题层次")] public bool AutoHierarchicalArrangement { get; set; }
+    [XmlAttribute("Automatically organize title hierarchy")]
+    public bool AutoHierarchicalArrangement { get; set; }
 
-    [XmlAttribute("列出字体统计信息")] public bool DisplayFontStatistics { get; set; }
+    [XmlAttribute("List font statistics")] public bool DisplayFontStatistics { get; set; }
 
-    [XmlAttribute("列出所有字体")] public bool DisplayAllFonts { get; set; }
+    [XmlAttribute("List all fonts")] public bool DisplayAllFonts { get; set; }
 
-    [XmlAttribute("排版")] public WritingDirection WritingDirection { get; set; }
+    [XmlAttribute("Typesetting")] public WritingDirection WritingDirection { get; set; }
 
-    [XmlAttribute("最大合并行距")] public float MaxDistanceBetweenLines { get; set; }
+    [XmlAttribute("Maximum merged line spacing")]
+    public float MaxDistanceBetweenLines { get; set; }
 
-    [XmlAttribute("识别分栏")] public bool DetectColumns { get; set; }
+    [XmlAttribute("Identify columns")] public bool DetectColumns { get; set; }
 
-    [XmlAttribute("为首页生成书签")] public bool CreateBookmarkForFirstPage { get; set; }
+    [XmlAttribute("Create bookmarks for the first page")]
+    public bool CreateBookmarkForFirstPage { get; set; }
 
     /// <summary>
     ///     Home bookmark name.Specify this property to generate a bookmark for the first page.
@@ -151,13 +158,13 @@ public class AutoBookmarkOptions
     /// <summary>
     ///     Connect the page Y axis offset of the target.
     /// </summary>
-    [XmlAttribute("Y轴偏移")]
+    [XmlAttribute("Y-axis offset")]
     public float YOffset { get; set; }
 
     /// <summary>
     ///     Position the title level to the top of the page.
     /// </summary>
-    [XmlAttribute("定位到页面顶端")]
+    [XmlAttribute("Locate to the top of the page")]
     public int PageTopForLevel { get; set; }
 
     #endregion

@@ -15,19 +15,19 @@ namespace PDFPatcher.Processor
 		int _processedImageCount;
 		int _deskewedImageCount;
 
-		#region IPageProcessor member
-		public string Name { get { return "校正倾斜图片"; } }
+#region IPageProcessor member
+public string Name { get { return "Correct skew picture"; } }
 
-		public void BeginProcess (PdfReader pdf) {
-			_processedImageCount = 0;
-			_deskewedImageCount = 0;
-		}
-		public bool EndProcess (PdfReader pdf) {
-			Tracker.TraceMessage (Tracker.Category.Notice, this.Name + "功能：");
-			Tracker.TraceMessage ("　　处理了 " + _processedImageCount + " 幅图片。");
-			Tracker.TraceMessage ("　　校正了 " + _deskewedImageCount + " 幅图片的角度。");
-			return false;
-		}
+public void BeginProcess(PdfReader pdf) {
+_processedImageCount = 0;
+_deskewedImageCount = 0;
+}
+public bool EndProcess(PdfReader pdf) {
+Tracker.TraceMessage (Tracker.Category.Notice, this.Name + "Function:");
+Tracker.TraceMessage (" Processed " + _processedImageCount + " images.");
+Tracker.TraceMessage (" Corrected the angle of " + _deskewedImageCount + " images.");
+return false;
+}
 
 		public int EstimateWorkload (PdfReader pdf) {
 			return pdf.NumberOfPages * 10;
@@ -49,7 +49,7 @@ namespace PDFPatcher.Processor
 				}
 				_processedImageCount++;
 				var l = im.GetAsNumber (PdfName.LENGTH);
-				if (l == null || l.IntValue < 400 /*忽略小图片*/) {
+				if (l == null || l.IntValue < 400 /* Ignore small pictures */) {
 					continue;
 				}
 				var inf = new ImageInfo (item.Value as PdfIndirectReference);

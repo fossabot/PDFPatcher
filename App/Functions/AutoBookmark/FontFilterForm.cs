@@ -85,7 +85,7 @@ public partial class FontFilterForm : Form
     {
         if (_fontInfo == null)
         {
-            FormHelper.ErrorBox("缺少字体信息。");
+            FormHelper.ErrorBox("Missing font information.");
             _OkButton.Enabled = false;
             return;
         }
@@ -173,24 +173,29 @@ public partial class FontFilterForm : Form
                 fn = n.Substring(p + 1, m - p - 1);
                 if (s > 0)
                 {
-                    _AddFilterMenu.Items.Add("筛选名称包含“" + fn + "”且尺寸为" + s.ToText() + "的字体").Tag =
+                    _AddFilterMenu.Items
+                            .Add("Filter fonts whose name contains \"" + fn + "\" and whose size is " + s.ToText())
+                            .Tag =
                         new FilterSetting(fn, false, s);
                 }
                 else
                 {
-                    _AddFilterMenu.Items.Add("筛选名称包含“" + fn + "”的字体").Tag = new FilterSetting(fn, false, 0);
+                    _AddFilterMenu.Items.Add("Filter fonts whose name contains \"" + fn + "\"").Tag =
+                        new FilterSetting(fn, false, 0);
                 }
             }
 
             fn = n.Substring(p + 1);
             if (s > 0)
             {
-                _AddFilterMenu.Items.Add("筛选名称包含“" + fn + "”且尺寸为" + s.ToText() + "的字体").Tag =
+                _AddFilterMenu.Items
+                        .Add("Filter fonts whose name contains \"" + fn + "\" and whose size is " + s.ToText()).Tag =
                     new FilterSetting(fn, false, s);
             }
             else
             {
-                _AddFilterMenu.Items.Add("筛选名称包含“" + fn + "”的字体").Tag = new FilterSetting(fn, false, 0);
+                _AddFilterMenu.Items.Add("Filter fonts whose name contains \"" + fn + "\"").Tag =
+                    new FilterSetting(fn, false, 0);
             }
         }
         else if (m != -1)
@@ -198,12 +203,14 @@ public partial class FontFilterForm : Form
             fn = n.Substring(0, m);
             if (s > 0)
             {
-                _AddFilterMenu.Items.Add("筛选名称包含“" + fn + "”且尺寸为" + s.ToText() + "的字体").Tag =
+                _AddFilterMenu.Items
+                        .Add("Filter fonts whose name contains \"" + fn + "\" and whose size is " + s.ToText()).Tag =
                     new FilterSetting(fn, false, s);
             }
             else
             {
-                _AddFilterMenu.Items.Add("筛选名称包含“" + fn + "”的字体").Tag = new FilterSetting(fn, false, 0);
+                _AddFilterMenu.Items.Add("Filter fonts whose name contains \"" + fn + "\"").Tag =
+                    new FilterSetting(fn, false, 0);
             }
         }
 
@@ -214,11 +221,12 @@ public partial class FontFilterForm : Form
 
         if (s > 0)
         {
-            _AddFilterMenu.Items.Add("筛选名称为“" + n + "”且尺寸为" + s.ToText() + "的字体").Tag = new FilterSetting(n, true, s);
+            _AddFilterMenu.Items.Add("Filter font with name \"" + n + "\" and size " + s.ToText()).Tag =
+                new FilterSetting(n, true, s);
         }
         else
         {
-            _AddFilterMenu.Items.Add("筛选名称为“" + n + "”的字体").Tag = new FilterSetting(n, true, 0);
+            _AddFilterMenu.Items.Add("Filter fonts whose name is \"" + n + "\"").Tag = new FilterSetting(n, true, 0);
         }
 
         e.Cancel = false;

@@ -219,24 +219,25 @@ internal sealed class ImportOcrResultProcessor : IDocProcessor
             || h <= 0
            )
         {
-            Tracker.TraceMessage(string.Concat("识别结果的“", Constants.Ocr.Image, "”元素", w <= 0 ? "宽属性无效" : string.Empty,
-                h <= 0 ? "高属性无效" : string.Empty, "。"));
+            Tracker.TraceMessage(string.Concat("Recognition result \"", Constants.Ocr.Image, "\"Element",
+                w <= 0 ? "Invalid wide attribute" : string.Empty,
+                h <= 0 ? "High attribute invalid" : string.Empty, "."));
             return 0;
         }
 
         string m = result.GetAttribute(Constants.Content.OperandNames.Matrix);
         if (string.IsNullOrEmpty(m))
         {
-            Tracker.TraceMessage(string.Concat("识别结果的“", Constants.Ocr.Image, "”元素缺少",
-                Constants.Content.OperandNames.Matrix, "属性。"));
+            Tracker.TraceMessage(string.Concat("Recognition result \"", Constants.Ocr.Image, "\"The element is missing",
+                Constants.Content.OperandNames.Matrix, "Properties."));
             return 0;
         }
 
         float[] matrix = DocInfoImporter.ToSingleArray(m, true);
         if (matrix == null || matrix.Length < 6)
         {
-            Tracker.TraceMessage(string.Concat("识别结果的“", Constants.Ocr.Image, "”元素中，",
-                Constants.Content.OperandNames.Matrix, "属性值无效。"));
+            Tracker.TraceMessage(string.Concat("Recognition result \"", Constants.Ocr.Image, "\" element, ",
+                Constants.Content.OperandNames.Matrix, "Invalid property value."));
             return 0;
         }
 
@@ -287,7 +288,7 @@ internal sealed class ImportOcrResultProcessor : IDocProcessor
 
     private sealed class OcrContentInfo
     {
-        internal const int A1 = 0, A2 = 1, B1 = 2, B2 = 3, DX = 4, DY = 5; // 矩阵数组索引
+        internal const int A1 = 0, A2 = 1, B1 = 2, B2 = 3, DX = 4, DY = 5; // Matrix array index
         private int _cx, _cy;
 
         //float _ix, _iy, _dx, _dy;
@@ -361,7 +362,7 @@ internal sealed class ImportOcrResultProcessor : IDocProcessor
 
     #region IDocProcessor member
 
-    public string Name => "导入光学字符识别结果";
+    public string Name => "Import optical character recognition result";
 
     public int EstimateWorkload(PdfReader pdf) => pdf.NumberOfPages;
 

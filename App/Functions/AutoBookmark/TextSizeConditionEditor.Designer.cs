@@ -73,7 +73,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size (17, 12);
 			this.label2.TabIndex = 2;
-			this.label2.Text = "到";
+			this.label2.Text = " to ";
 			//
 			// _SizeBox
 			//
@@ -83,7 +83,7 @@
 			this._SizeBox.Size = new System.Drawing.Size (119, 16);
 			this._SizeBox.TabIndex = 3;
 			this._SizeBox.TabStop = true;
-			this._SizeBox.Text = "匹配特定文本尺寸";
+			this._SizeBox.Text = "Match a specific text size";
 			this._SizeBox.UseVisualStyleBackColor = true;
 			this._SizeBox.CheckedChanged += new System.EventHandler (this.ControlChanged);
 			//
@@ -110,7 +110,7 @@
 			this._SizeRangeBox.Size = new System.Drawing.Size (119, 16);
 			this._SizeRangeBox.TabIndex = 3;
 			this._SizeRangeBox.TabStop = true;
-			this._SizeRangeBox.Text = "匹配文本尺寸范围";
+			this._SizeRangeBox.Text = "Match text size range";
 			this._SizeRangeBox.UseVisualStyleBackColor = true;
 			this._SizeRangeBox.CheckedChanged += new System.EventHandler (this.ControlChanged);
 			//

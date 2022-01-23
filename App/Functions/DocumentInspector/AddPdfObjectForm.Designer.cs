@@ -44,7 +44,7 @@
 			this._OkButton.Name = "_OkButton";
 			this._OkButton.Size = new System.Drawing.Size(75, 23);
 			this._OkButton.TabIndex = 0;
-			this._OkButton.Text = "确定(&Q)";
+			this._OkButton.Text = "&OK";
 			this._OkButton.UseVisualStyleBackColor = true;
 			this._OkButton.Click += new System.EventHandler(this._OkButton_Click);
 			//
@@ -56,7 +56,7 @@
 			this._CancelButton.Name = "_CancelButton";
 			this._CancelButton.Size = new System.Drawing.Size(75, 23);
 			this._CancelButton.TabIndex = 1;
-			this._CancelButton.Text = "取消(&X)";
+			this._CancelButton.Text = "&Cancel";
 			this._CancelButton.UseVisualStyleBackColor = true;
 			this._CancelButton.Click += new System.EventHandler(this._CancelButton_Click);
 			//
@@ -67,7 +67,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(41, 12);
 			this.label1.TabIndex = 4;
-			this.label1.Text = "名称：";
+			this.label1.Text = "Name:";
 			//
 			// _ObjectNameBox
 			//
@@ -83,7 +83,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(41, 12);
 			this.label2.TabIndex = 6;
-			this.label2.Text = "取值：";
+			this.label2.Text = "Value: ";
 			//
 			// _TextValueBox
 			//
@@ -130,7 +130,7 @@
 			this._CreateAsRefBox.Name = "_CreateAsRefBox";
 			this._CreateAsRefBox.Size = new System.Drawing.Size(132, 16);
 			this._CreateAsRefBox.TabIndex = 11;
-			this._CreateAsRefBox.Text = "创建为间接引用节点";
+			this._CreateAsRefBox.Text = "Created for indirect reference nodes";
 			this._CreateAsRefBox.UseVisualStyleBackColor = true;
 			//
 			// AddPdfObjectForm
@@ -155,7 +155,7 @@
 			this.MinimizeBox = false;
 			this.Name = "AddPdfObjectForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "添加PDF对象";
+			this.Text = "Add PDF object";
 			this.Load += new System.EventHandler(this.AddPdfObjectForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

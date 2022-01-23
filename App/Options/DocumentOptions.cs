@@ -14,25 +14,27 @@ public abstract class DocumentOptions
         MetaData = new GeneralInfo();
     }
 
-    [XmlElement("指定元数据")] public GeneralInfo MetaData { get; set; }
+    [XmlElement("Specify metadata")] public GeneralInfo MetaData { get; set; }
 
-    [XmlElement("阅读器设置")] public ViewerOptions ViewerPreferences { get; set; }
+    [XmlElement("Reader settings")] public ViewerOptions ViewerPreferences { get; set; }
 
     [XmlIgnore] internal List<PageLabel> PageLabels { get; }
 
-    [XmlAttribute("压缩索引表和书签")] public bool FullCompression { get; set; }
+    [XmlAttribute("compress index table and bookmarks")]
+    public bool FullCompression { get; set; }
 
-    [XmlAttribute("统一页面方向")] public bool UnifyPageOrientation { get; set; }
+    [XmlAttribute("Unify Page Orientation")]
+    public bool UnifyPageOrientation { get; set; }
 
     /// <summary>
-    ///     Set the page to rotate in the unified page.The default rotates the horizontal page.
+    ///     Set the page to rotate in the unified page. The default rotates the horizontal page.
     /// </summary>
-    [XmlAttribute("旋转源页面方向")]
+    [XmlAttribute("Rotate source page orientation")]
     public bool RotateVerticalPages { get; set; }
 
     /// <summary>
-    ///     Set the direction of the unified page to rotate the page.The default is rotated clockwise.
+    ///     Set the direction of the unified page to rotate the page. The default is rotated clockwise.
     /// </summary>
-    [XmlAttribute("旋转方向")]
+    [XmlAttribute("Rotation direction")]
     public bool RotateAntiClockwise { get; set; }
 }

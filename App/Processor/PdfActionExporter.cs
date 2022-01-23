@@ -263,7 +263,7 @@ internal sealed class PdfActionExporter
 
                 break;
             default:
-                Trace.WriteLine("目标位置无效");
+                Trace.WriteLine("Target location invalid");
                 break;
         }
     }

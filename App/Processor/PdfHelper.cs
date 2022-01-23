@@ -49,7 +49,7 @@ internal static class PdfHelper
             {
                 if (File.Exists(sourceFile) == false)
                 {
-                    throw new FileNotFoundException(string.Concat("找不到文件：", sourceFile));
+                    throw new FileNotFoundException(string.Concat("Can't find the file:", sourceFile));
                 }
 
                 PdfReader r = partial
@@ -73,7 +73,7 @@ internal static class PdfHelper
                 PasswordEntryForm f = new(sourceFile);
                 if (f.ShowDialog() == DialogResult.Cancel)
                 {
-                    throw new BadPasswordException("密码错误，没有权限打开 PDF 文件。");
+                    throw new BadPasswordException("Password error, no permissions open the PDF file.");
                 }
 
                 password = Encoding.Default.GetBytes(f.Password);
@@ -109,7 +109,7 @@ internal static class PdfHelper
             PasswordEntryForm f = new(sourceFile);
             if (f.ShowDialog() == DialogResult.Cancel)
             {
-                throw new BadPasswordException("密码错误，没有权限打开 PDF 文件。");
+                throw new BadPasswordException("Password error, no permissions open the PDF file.");
             }
 
             return r;
@@ -159,7 +159,7 @@ internal static class PdfHelper
         };
 
     /// <summary>
-    ///     获取友好的 PdfName 文本。
+    ///     Get a friendly pdfname text.
     /// </summary>
     /// <param name="n"></param>
     /// <returns></returns>
@@ -484,7 +484,7 @@ internal static class PdfHelper
             {
                 d = source.GetAsDict(item);
 
-                source = d ?? throw new InvalidCastException(item + "不是 PdfDictionary。");
+                source = d ?? throw new InvalidCastException(item + " is not PdfDictionary.");
                 continue;
             }
 

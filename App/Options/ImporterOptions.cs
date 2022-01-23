@@ -14,26 +14,26 @@ public class ImporterOptions
     }
 
     /// <summary>Get or specify whether to import document property information.</summary>
-    [XmlAttribute("导入文档属性")]
+    [XmlAttribute("Import document attributes")]
     public bool ImportDocProperties { get; set; }
 
     /// <summary>Get or specifies whether to import bookmarks.</summary>
-    [XmlAttribute("导入文档书签")]
+    [XmlAttribute("Import document bookmarks")]
     public bool ImportBookmarks { get; set; }
 
     /// <summary>Get or specifies whether to import the connection within the page.</summary>
-    [XmlAttribute("导入页面链接")]
+    [XmlAttribute("Import page link")]
     public bool ImportPageLinks { get; set; }
 
     /// <summary>Get or specifies whether to keep the connection within the page.</summary>
-    [XmlAttribute("保留页面链接")]
+    [XmlAttribute("Keep page link")]
     public bool KeepPageLinks { get; set; }
 
     /// <summary>Get or specify whether to import reader settings.</summary>
-    [XmlAttribute("导入阅读器设置")]
+    [XmlAttribute("Import reader settings")]
     public bool ImportViewerPreferences { get; set; }
 
     /// <summary>Get or specifies whether to import the reading settings for the page.</summary>
-    [XmlAttribute("导入页面设置")]
+    [XmlAttribute("Import page settings")]
     public bool ImportPageSettings { get; set; }
 }

@@ -117,7 +117,7 @@ internal sealed class OcrProcessor
         {
             for (int i = r.StartValue; i <= r.EndValue; i++)
             {
-                Tracker.TraceMessage("正在识别第 " + i + " 页。");
+                Tracker.TraceMessage("Recognizing page " + i + ".");
                 IList<Result> or = OcrPage(i, el);
                 if (or.Count > 0)
                 {
@@ -154,7 +154,9 @@ internal sealed class OcrProcessor
         if (el.Count > 0)
         {
             Tracker.TraceMessage(Tracker.Category.Alert,
-                string.Concat("有 ", el.Count, " 页在识别过程中出现错误，页码为：", string.Join(", ", el)));
+                string.Concat("Yes", el.Count,
+                    "The page has an error in the identification process, the page number is: ",
+                    string.Join(", ", el)));
         }
     }
 
@@ -164,7 +166,8 @@ internal sealed class OcrProcessor
         Rectangle pr = _reader.GetPageNRelease(i).GetPageVisibleRectangle();
         List<TextLine> tl = _options.WritingDirection != WritingDirection.Unknown
             ? AutoBookmarkCreator.MergeTextInfoList(pr,
-                result.Texts.ConvertAll(GetMergedTextInfo), __MergeOptions) // 按照书写方向重组识别文本
+                result.Texts.ConvertAll(GetMergedTextInfo),
+                __MergeOptions) // Reorganize the text according to the writing direction
             : result.Texts;
         foreach (TextLine item in tl)
         {
@@ -216,11 +219,11 @@ internal sealed class OcrProcessor
     private IList<Result> OcrPage(int i, ICollection<int> errorList)
     {
 #if DEBUGOCR
-        Tracker.TraceMessage("导出第 " + i + " 页的图片。");
+        Tracker.TraceMessage("Export the picture on page " + i + ".");
 #endif
         _ocrImageExp.ExtractPageImages(_reader, i);
 #if DEBUGOCR
-        Tracker.TraceMessage("完成导出第 " + i + " 页的图片。");
+        Tracker.TraceMessage("Finished exporting the picture on page " + i + ".");
 #endif
         List<Result> or = new();
         try
@@ -237,17 +240,17 @@ internal sealed class OcrProcessor
             switch (ex.ErrorCode)
             {
                 case -959967087:
-                    err = "页面的图片不包含可识别的文本。";
+                    err = "The image on the page does not contain recognizable text.";
                     goto default;
                 default:
-                    Tracker.TraceMessage(Tracker.Category.Error, "在执行第 " + i + " 页的光学字符识别时出错：");
+                    Tracker.TraceMessage(Tracker.Category.Error, "Error performing OCR on page " + i + ": ");
                     if (err != null)
                     {
                         Tracker.TraceMessage(err);
                     }
                     else
                     {
-                        Tracker.TraceMessage("错误编号：" + ex.ErrorCode);
+                        Tracker.TraceMessage("Error number: " + ex.ErrorCode);
                         Tracker.TraceMessage(ex);
                         errorList.Add(i);
                     }
@@ -257,7 +260,7 @@ internal sealed class OcrProcessor
         }
         catch (Exception ex)
         {
-            Tracker.TraceMessage(Tracker.Category.Error, "在执行第 " + i + " 页的光学字符识别时出错：");
+            Tracker.TraceMessage(Tracker.Category.Error, "Error performing OCR on page " + i + ": ");
             Tracker.TraceMessage(ex);
             errorList.Add(i);
         }
@@ -272,7 +275,8 @@ internal sealed class OcrProcessor
                 catch (Exception ex)
                 {
                     Tracker.TraceMessage(Tracker.Category.Error, ex.Message);
-                    Tracker.TraceMessage(Tracker.Category.Error, "无法删除识别过程中产生的临时文件：" + item.FileName);
+                    Tracker.TraceMessage(Tracker.Category.Error,
+                        "Unable to delete the temporary file generated during the identification: " + item.FileName);
                 }
             }
         }
@@ -289,7 +293,7 @@ internal sealed class OcrProcessor
             return;
         }
 #if DEBUGOCR
-        Tracker.TraceMessage("识别图片：" + p);
+        Tracker.TraceMessage("Identify picture: " + p);
 #endif
 #if DEBUG
         Tracker.TraceMessage(p);
@@ -313,7 +317,7 @@ internal sealed class OcrProcessor
         //if (item.Text == "哉") {
         //    var lxx = 1;
         //}
-        //                // 求最小距离的 TextLine
+        //                // Ask minimum distances of TextLine
         //                foreach (var li in ll) {
         //                    cd = li.GetDistance (ir);
         //                    if ((cd.Location == DistanceInfo.Placement.Overlapping // Current items overlap
@@ -376,7 +380,7 @@ internal sealed class OcrProcessor
         //        r = item.Region;
         //        avgSize = letterCount > 0 ? size / letterCount : maxSize;
         //    AddLine:
-        //        if (r.Top > bottom + 0.2f * (avgSize) || i > end) { // 新行
+        //        if (r.Top > bottom + 0.2f * (avgSize) || i > end) { // New line
         //            size = image.YScale * avgSize;
         //            if (_OcrQuatitiveFactor > 0) {
         //                var a = Math.IEEERemainder (size, _OcrQuatitiveFactor);
@@ -470,7 +474,7 @@ internal sealed class OcrProcessor
 						File.Delete (t);
 					}
 					catch (Exception) {
-						Tracker.TraceMessage (Tracker.Category.Notice, "无法删除临时文件：" + t);
+						Tracker.TraceMessage (Tracker.Category.Notice, "Unable to delete temporary files:" + t);
 					}
 #endif
         }
@@ -479,7 +483,7 @@ internal sealed class OcrProcessor
             _Ocr.Ocr(p, sp, result);
         }
 #if DEBUGOCR
-        Tracker.TraceMessage("完成识别图片：" + p);
+        Tracker.TraceMessage("Complete identification picture:" + p);
 #endif
     }
 
@@ -685,14 +689,14 @@ internal sealed class OcrProcessor
 
         #region IResultWriter member
 
-        public void BeginWritePage(int i) => _writer.WriteLine("#识别页码=" + i);
+        public void BeginWritePage(int i) => _writer.WriteLine("#identify page number=" + i);
 
         public void WriteText(TextLine text, string optimizedText) => _writer.WriteLine(optimizedText ?? text.Text);
 
         public void EndWritePage() => _writer.WriteLine();
 
         public void BeginWriteImage(ImageDisposition image) =>
-            _writer.WriteLine("#识别图片=" + PdfHelper.MatrixToString(image.Ctm));
+            _writer.WriteLine("#Recognition image=" + PdfHelper.MatrixToString(image.Ctm));
 
         public void EndWriteImage()
         {

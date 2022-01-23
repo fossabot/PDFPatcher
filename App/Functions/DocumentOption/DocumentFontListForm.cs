@@ -137,7 +137,7 @@ public partial class DocumentFontListForm : Form
                 continue;
             }
 
-            fn = PdfHelper.GetPdfNameString(bf, AppContext.Encodings.FontNameEncoding); // 字体名称
+            fn = PdfHelper.GetPdfNameString(bf, AppContext.Encodings.FontNameEncoding); // Font name
             fn = PdfDocumentFont.RemoveSubsetPrefix(fn);
             _fontIdNames.Add(fr.Number, fn);
             if (_pageFonts.TryGetValue(fn, out PageFont pf))
@@ -186,7 +186,7 @@ public partial class DocumentFontListForm : Form
         IList<string> sf = SelectedFonts;
         if (sf.Count == 0)
         {
-            FormHelper.ErrorBox("请选择需要添加到替换列表的字体。");
+            FormHelper.ErrorBox("Please select the font that needs to be added to the replacement list.");
             return;
         }
 

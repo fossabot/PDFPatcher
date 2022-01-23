@@ -36,9 +36,9 @@ internal static class FontUtility
         Dictionary<string, string> fs = FontHelper.GetInstalledFonts(false);
         foreach (string item in fs.Keys)
         {
-            string dn = _boldItalic.Replace(item, "(粗斜体)") /* Font name */;
-            dn = _italic.Replace(dn, "(斜体)");
-            dn = _bold.Replace(dn, "(粗体)");
+            string dn = _boldItalic.Replace(item, "(Bold italic)") /* Font name */;
+            dn = _italic.Replace(dn, "(Italic)");
+            dn = _bold.Replace(dn, "(Bold)");
             if (dn[0] > 0xFF)
             {
                 uf.Add(new FriendlyFontName(item, dn));

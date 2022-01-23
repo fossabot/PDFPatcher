@@ -20,7 +20,8 @@ internal sealed class ChangeCoordinateProcessor : IPdfInfoXmlProcessor
 
     #region IInfoDocProcessor member
 
-    public string Name => string.Concat(IsAbsolute ? "更改" : IsProportional ? "缩放" : "调整", CoordinateName, "坐标定位");
+    public string Name => string.Concat(IsAbsolute ? "Change" : IsProportional ? "Zoom" : "Adjustment", CoordinateName,
+        "Coordinate Positioning");
 
     public IUndoAction Process(XmlElement item)
     {

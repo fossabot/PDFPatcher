@@ -50,7 +50,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 15);
             this.label1.TabIndex = 1;
-            this.label1.Text = "页码范围：";
+            this.label1.Text = "Page number range:";
             //
             // _PageRangeBox
             //
@@ -94,7 +94,7 @@
             // _NameColumn
             //
             this._NameColumn.AspectName = "";
-            this._NameColumn.Text = "字体名称";
+    this._NameColumn.Text = "Font Name";
             this._NameColumn.Width = 273;
             //
             // _EmbeddedColumn
@@ -103,14 +103,14 @@
             this._EmbeddedColumn.CheckBoxes = true;
             this._EmbeddedColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this._EmbeddedColumn.IsEditable = false;
-            this._EmbeddedColumn.Text = "已嵌入";
+            this._EmbeddedColumn.Text = "Embedded";
             this._EmbeddedColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             //
             // _FirstPageColumn
             //
             this._FirstPageColumn.AspectName = "";
             this._FirstPageColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this._FirstPageColumn.Text = "首次出现页码";
+            this._FirstPageColumn.Text = "First page number";
             this._FirstPageColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this._FirstPageColumn.Width = 96;
             //
@@ -118,7 +118,7 @@
             //
             this._ReferenceColumn.AspectName = "";
             this._ReferenceColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this._ReferenceColumn.Text = "出现页数";
+            this._ReferenceColumn.Text = "Number of pages";
             this._ReferenceColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             //
             // _Worker
@@ -144,7 +144,7 @@
             this._AddSelectedFontsButton.Name = "_AddSelectedFontsButton";
             this._AddSelectedFontsButton.Size = new System.Drawing.Size(208, 29);
             this._AddSelectedFontsButton.TabIndex = 7;
-            this._AddSelectedFontsButton.Text = "添加选中项至替换列表";
+   this._AddSelectedFontsButton.Text = "Add selected item to replacement list";
             this._AddSelectedFontsButton.UseVisualStyleBackColor = true;
             this._AddSelectedFontsButton.Click += new System.EventHandler(this._AddSelectedFontsButton_Click);
             //
@@ -156,7 +156,7 @@
             this._SelectAllButton.Name = "_SelectAllButton";
             this._SelectAllButton.Size = new System.Drawing.Size(127, 29);
             this._SelectAllButton.TabIndex = 6;
-            this._SelectAllButton.Text = "全部选中(&Q)";
+            this._SelectAllButton.Text = "&Select All";
             this._SelectAllButton.UseVisualStyleBackColor = true;
             this._SelectAllButton.Click += new System.EventHandler(this._SelectAllButton_Click);
             //
@@ -168,7 +168,7 @@
             this._ListFontsButton.Name = "_ListFontsButton";
             this._ListFontsButton.Size = new System.Drawing.Size(100, 29);
             this._ListFontsButton.TabIndex = 3;
-            this._ListFontsButton.Text = "列出字体";
+            this._ListFontsButton.Text = "List fonts";
             this._ListFontsButton.UseVisualStyleBackColor = true;
             this._ListFontsButton.Click += new System.EventHandler(this._ListFontsButton_Click);
             //
@@ -188,7 +188,7 @@
             this._AppConfigButton.Name = "_AppConfigButton";
             this._AppConfigButton.Size = new System.Drawing.Size(127, 29);
             this._AppConfigButton.TabIndex = 10;
-            this._AppConfigButton.Text = "程序配置...";
+            this._AppConfigButton.Text = "Program configuration...";
             this._AppConfigButton.UseVisualStyleBackColor = true;
             this._AppConfigButton.Click += new System.EventHandler(this._AppConfigButton_Click);
             //
@@ -213,7 +213,7 @@
             this.Name = "DocumentFontListForm";
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.Text = "PDF 文档使用的字体列表";
+            this.Text = "List of fonts used by the PDF document";
             ((System.ComponentModel.ISupportInitialize)(this._FontListBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

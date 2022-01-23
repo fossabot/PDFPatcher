@@ -47,7 +47,7 @@
 			this._MatchFontBox.Name = "_MatchFontBox";
 			this._MatchFontBox.Size = new System.Drawing.Size (72, 16);
 			this._MatchFontBox.TabIndex = 0;
-			this._MatchFontBox.Text = "匹配字体";
+			this._MatchFontBox.Text = "Match font";
 			this._MatchFontBox.UseVisualStyleBackColor = true;
 			//
 			// _MatchTextSizeBox
@@ -57,7 +57,7 @@
 			this._MatchTextSizeBox.Name = "_MatchTextSizeBox";
 			this._MatchTextSizeBox.Size = new System.Drawing.Size (108, 16);
 			this._MatchTextSizeBox.TabIndex = 2;
-			this._MatchTextSizeBox.Text = "匹配文本尺寸：";
+			this._MatchTextSizeBox.Text = "Match text size:";
 			this._MatchTextSizeBox.UseVisualStyleBackColor = true;
 			//
 			// _MinSizeBox
@@ -98,7 +98,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size (17, 12);
 			this.label1.TabIndex = 4;
-			this.label1.Text = "到";
+			this.label1.Text = " to ";
 			//
 			// _OkButton
 			//
@@ -106,7 +106,7 @@
 			this._OkButton.Name = "_OkButton";
 			this._OkButton.Size = new System.Drawing.Size (75, 23);
 			this._OkButton.TabIndex = 9;
-			this._OkButton.Text = "确定(&Q)";
+			this._OkButton.Text = "&OK";
 			this._OkButton.UseVisualStyleBackColor = true;
 			//
 			// _MatchTitlePatternBox
@@ -116,7 +116,7 @@
 			this._MatchTitlePatternBox.Name = "_MatchTitlePatternBox";
 			this._MatchTitlePatternBox.Size = new System.Drawing.Size (120, 16);
 			this._MatchTitlePatternBox.TabIndex = 6;
-			this._MatchTitlePatternBox.Text = "匹配标题编号模式";
+			this._MatchTitlePatternBox.Text = "Match Title Number Mode";
 			this._MatchTitlePatternBox.UseVisualStyleBackColor = true;
 			//
 			// _FontListBox
@@ -135,7 +135,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size (65, 12);
 			this.label2.TabIndex = 7;
-			this.label2.Text = "标题级别：";
+			this.label2.Text = "Title level: ";
 			//
 			// _TitleLevelBox
 			//
@@ -172,7 +172,7 @@
 			this.Controls.Add (this._MatchFontBox);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Name = "AddBookmarkConditionForm";
-			this.Text = "添加自动标记书签设置";
+			this.Text = "Add automatic tag bookmark settings";
 			((System.ComponentModel.ISupportInitialize)(this._MinSizeBox)).EndInit ();
 			((System.ComponentModel.ISupportInitialize)(this._MaxSizeBox)).EndInit ();
 			((System.ComponentModel.ISupportInitialize)(this._TitleLevelBox)).EndInit ();

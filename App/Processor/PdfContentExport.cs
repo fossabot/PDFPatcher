@@ -38,7 +38,7 @@ internal sealed class PdfContentExport
 
     internal void ExportTrailer(XmlWriter writer, PdfReader reader)
     {
-        Tracker.TraceMessage("导出文档总索引。");
+        Tracker.TraceMessage("Export the total index of the document.");
         writer.WriteStartElement("Trailer");
         writer.WriteAttributeString(Constants.ContentPrefix, "http://www.w3.org/2000/xmlns/",
             Constants.ContentNamespace);
@@ -56,7 +56,7 @@ internal sealed class PdfContentExport
 
     private void ExportCatalog(XmlWriter writer, PdfReader reader)
     {
-        Tracker.TraceMessage("导出文档编录。");
+        Tracker.TraceMessage("Export document catalog.");
         writer.WriteStartElement(Constants.Catalog);
         writer.WriteAttributeString(Constants.ContentPrefix, "http://www.w3.org/2000/xmlns/",
             Constants.ContentNamespace);
@@ -100,7 +100,7 @@ internal sealed class PdfContentExport
         ExportProcessor p = new(this, writer, _options);
         foreach (int i in ranges.SelectMany(r => r))
         {
-            Tracker.TraceMessage(string.Concat("导出第 ", i, " 页。"));
+            Tracker.TraceMessage(string.Concat("Export page ", i, "."));
             ExtractPage(i, reader, writer, p);
             Tracker.IncrementProgress(1);
         }
@@ -140,7 +140,7 @@ internal sealed class PdfContentExport
     }
 
     /// <summary>
-    ///     导出 PDFDictionary。
+    ///     Export PDFDictionary。
     /// </summary>
     /// <param name="writer"></param>
     /// <param name="dict"></param>
@@ -368,7 +368,7 @@ internal sealed class PdfContentExport
                                         bi++;
                                     }
 
-                                    writer.WriteAttributeString(Constants.Content.Type, "字节");
+                                    writer.WriteAttributeString(Constants.Content.Type, " byte");
                                     writer.WriteAttributeString(Constants.Content.Value, new string(chArray));
                                 }
 
@@ -684,7 +684,7 @@ internal sealed class PdfContentExport
         //    foreach (var item in _imageExporter.InfoList) {
         //        writer.WriteStartElement ("image", Constants.ContentNamespace);
         //        writer.WriteAttributeString (Constants.Content.ResourceID, Constants.ContentNamespace, item.PdfRef.ToString ());
-        //        writer.WriteAttributeString ("位置", String.Concat (item.X, ", ", item.Y, ", ", item.Z));
+        //        writer.WriteAttributeString ("Location", String.Concat (item.X, ", ", item.Y, ", ", item.Z));
         //        writer.WriteEndElement ();
         //    }
         //    writer.WriteEndElement ();
@@ -817,7 +817,7 @@ internal sealed class PdfContentExport
                         return;
                     }
 
-                    _writer.WriteStartElement(fn ?? "未知操作符");
+                    _writer.WriteStartElement(fn ?? "Unknown operation");
                     _writer.WriteAttributeString("name", o);
                     foreach (NameValuePair item in _operands)
                     {

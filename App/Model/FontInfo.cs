@@ -17,7 +17,12 @@ internal sealed class FontInfo : CMapAwareDocumentFont
         new("GBK-EUC-H"), new("GBK-EUC-V"), new("GB-EUC-H"), new("GB-EUC-V")
     };
 
-    private static readonly string[] __gbkFontNames = { "宋体", "黑体", "楷体_GB2312", "仿宋体", "仿宋_GB2312", "隶书", "幼圆" };
+    private static readonly string[] __gbkFontNames =
+    {
+        "Song style", "Hei Style", "Kaiti _GB2312", "Imitation Song style", "Imitation Song style _GB2312",
+        "Li Shu", "Young Yuan"
+    };
+
     private static readonly PdfName[] __IdentityEncodingNames = { new("Identity-H"), new("Identity-V") };
 
     //private readonly static string[] __big5FontNames = new string[] { "MINGLIU" };

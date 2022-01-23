@@ -68,10 +68,11 @@ internal sealed class EditModel
         internal string LiteralTextSource =>
             TextSource switch
             {
-                TextSource.Empty => "当前位置不包含文本",
-                TextSource.Text => "已自动匹配文本层文本",
-                TextSource.OcrText => "已自动识别图像文本",
-                TextSource.OcrError => "当前页面不包含可识别文本，或识别过程出错",
+                TextSource.Empty => "The current position does not contain text",
+                TextSource.Text => "Automatically matched text layer text",
+                TextSource.OcrText => "Automatically recognized image text",
+                TextSource.OcrError =>
+                    "The current page does not contain identifiable text, or there is an error in the recognition process",
                 _ => throw new IndexOutOfRangeException("TextSource")
             };
     }

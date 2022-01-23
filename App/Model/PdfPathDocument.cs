@@ -19,10 +19,10 @@ internal sealed class PdfPathDocument : IHierarchicalObject<DocumentObject>
         Trailer = new DocumentObject(this, null, "Trailer", Document.Trailer, PdfObjectType.Trailer)
         {
             IsKeyObject = true,
-            Description = "文档根节点",
+            Description = "Document root node",
             FriendlyValue = Path.GetFileNameWithoutExtension(pdfPath)
         };
-        DocumentObject hiddenObjects = new(this, null, "隐藏对象", null, PdfObjectType.Hidden);
+        DocumentObject hiddenObjects = new(this, null, "Hidden object", null, PdfObjectType.Hidden);
         int l = Document.NumberOfPages;
         if (l > 301)
         {
@@ -36,7 +36,7 @@ internal sealed class PdfPathDocument : IHierarchicalObject<DocumentObject>
                 {
                     IsKeyObject = true,
                     ExtensiveObject = a + "-" + b,
-                    FriendlyValue = string.Concat("第 ", a, " 至 ", b, " 页，共 ", l, " 页")
+                    FriendlyValue = string.Concat("page ", a, " to ", b, " pages of ", l, " pages")
                 };
             }
 
@@ -50,7 +50,7 @@ internal sealed class PdfPathDocument : IHierarchicalObject<DocumentObject>
                 Trailer,
                 new(this, null, "Pages", null, PdfObjectType.Pages)
                 {
-                    IsKeyObject = true, FriendlyValue = "共 " + l + " 页"
+                    IsKeyObject = true, FriendlyValue = "Total" + l + "Pages"
                 },
                 hiddenObjects
             };

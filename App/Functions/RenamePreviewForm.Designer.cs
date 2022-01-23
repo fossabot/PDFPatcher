@@ -55,23 +55,23 @@
 			//
 			// _OriginalNameColumn
 			//
-			this._OriginalNameColumn.Text = "原始文件名";
-			this._OriginalNameColumn.Width = 84;
-			//
-			// _OutputNameColumn
-			//
-			this._OutputNameColumn.Text = "输出文件名";
-			this._OutputNameColumn.Width = 83;
-			//
-			// _OriginalFolderColumn
-			//
-			this._OriginalFolderColumn.Text = "原始文件夹";
-			this._OriginalFolderColumn.Width = 85;
-			//
-			// _OutputFolderColumn
-			//
-			this._OutputFolderColumn.Text = "输出文件夹";
-			this._OutputFolderColumn.Width = 88;
+this._OriginalNameColumn.Text = "Original file name";
+this._OriginalNameColumn.Width = 84;
+//
+// _OutputNameColumn
+//
+this._OutputNameColumn.Text = "Output file name";
+this._OutputNameColumn.Width = 83;
+//
+// _OriginalFolderColumn
+//
+this._OriginalFolderColumn.Text = "Original Folder";
+this._OriginalFolderColumn.Width = 85;
+//
+// _OutputFolderColumn
+//
+this._OutputFolderColumn.Text = "Output Folder";
+this._OutputFolderColumn.Width = 88;
 			//
 			// label1
 			//
@@ -80,17 +80,17 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size (149, 12);
 			this.label1.TabIndex = 1;
-			this.label1.Text = "PDF 文件重命名结果预览：";
-			//
-			// _OKButton
-			//
-			this._OKButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this._OKButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this._OKButton.Location = new System.Drawing.Point (393, 232);
-			this._OKButton.Name = "_OKButton";
-			this._OKButton.Size = new System.Drawing.Size (75, 23);
-			this._OKButton.TabIndex = 2;
-			this._OKButton.Text = "确定(&Q)";
+this.label1.Text = "PDF file renaming result preview:";
+//
+// _OKButton
+//
+this._OKButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+this._OKButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+this._OKButton.Location = new System.Drawing.Point(393, 232);
+this._OKButton.Name = "_OKButton";
+this._OKButton.Size = new System.Drawing.Size(75, 23);
+this._OKButton.TabIndex = 2;
+this._OKButton.Text = "&OK";
 			this._OKButton.UseVisualStyleBackColor = true;
 			this._OKButton.Click += new System.EventHandler (this._OKButton_Click);
 			//
@@ -106,7 +106,7 @@
 			this.Controls.Add (this._RenamePreviewBox);
 			this.MinimumSize = new System.Drawing.Size (300, 200);
 			this.Name = "RenamePreviewForm";
-			this.Text = "重命名结果预览";
+			this.Text = "Rename results preview";
 			this.ResumeLayout (false);
 			this.PerformLayout ();
 

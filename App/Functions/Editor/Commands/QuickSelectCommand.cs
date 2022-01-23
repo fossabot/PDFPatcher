@@ -15,25 +15,26 @@ internal sealed class QuickSelectCommand : IEditorCommand
 
     private static readonly MatchPattern[] __commands =
     {
-        new("^" + __S + "第" + __S + __N + __S + "(?:部分|部)|^" + __S + "part" + __S + "[0-9]", false, false, true)
+        new("^" + __S + "Part" + __S + __N + __S + "(?:part|part)|^" + __S + "part" + __S + "[0-9]", false, false, true)
         {
-            Name = "“第N部分”"
+            Name = "\"Part N\""
         },
-        new("^" + __S + "第" + __S + __N + __S + "[篇卷]|^" + __S + "(?:volume|vol)" + __S + "[0-9]", false, false,
-            true) {Name = "“第N篇”或“第N卷”"},
-        new("^" + __S + "第" + __S + __N + __S + "章|^" + __S + "chapter" + __S + "[0-9]", false, false, true)
+        new("^" + __S + "Number" + __S + __N + __S + "[Volume]|^" + __S + "(?:volume|vol)" + __S + "[0-9]",
+            false, false,
+            true) {Name = "\"Title N\" or \"Volume N\""},
+        new("^" + __S + "chapter" + __S + __N + __S + "chapter|^" + __S + "chapter" + __S + "[0-9]", false, false, true)
         {
-            Name = "“第N章”"
+            Name = "\"Chapter N\""
         },
-        new("^" + __S + "第" + __S + __N + __S + "节|^" + __S + "section" + __S + "[0-9]", false, false, true)
+        new("^" + __S + "section" + __S + __N + __S + "section|^" + __S + "section" + __S + "[0-9]", false, false, true)
         {
-            Name = "“第N节”"
+            Name = "\"Section N\""
         },
-        new("^" + __S + __ND + "?" + __NN, true, false, true) {Name = "“N.”模式"},
-        new("^" + __S + __ND + __ND + "?" + __NN, true, false, true) {Name = "“N.N”模式"},
-        new("^" + __S + __ND + __ND + __ND + "?" + __NN, true, false, true) {Name = "“N.N.N”模式"},
-        new("^" + __S + __ND + __ND + __ND + __ND + "?" + __NN, true, false, true) {Name = "“N.N.N.N”模式"},
-        new("^" + __S + __ND + __ND + __ND + __ND + __ND + "?" + __NN, true, false, true) {Name = "“N.N.N.N.N”模式"}
+        new("^" + __S + __ND + "?" + __NN, true, false, true) {Name = "\"N.\" mode"},
+        new("^" + __S + __ND + __ND + "?" + __NN, true, false, true) {Name = "\"N.N\" mode"},
+        new("^" + __S + __ND + __ND + __ND + "?" + __NN, true, false, true) {Name = "\"N.N.N\" mode"},
+        new("^" + __S + __ND + __ND + __ND + __ND + "?" + __NN, true, false, true) {Name = "\"N.N.N.N\" mode"},
+        new("^" + __S + __ND + __ND + __ND + __ND + __ND + "?" + __NN, true, false, true) {Name = "\"N.N.N.N.N\" mode"}
     };
 
     private readonly BookmarkMatcher _command;

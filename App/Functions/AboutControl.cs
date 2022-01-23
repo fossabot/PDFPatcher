@@ -15,7 +15,7 @@ internal sealed partial class AboutControl : HtmlPageControl
     public AboutControl()
     {
         InitializeComponent();
-        Text = $"关于 {AssemblyTitle}";
+        Text = $"About {AssemblyTitle}";
         _FrontPageBox.Text = Resources.AboutPage
             .Replace("$AppName", Constants.AppName)
             .Replace("$AssemblyCopyright", AssemblyCopyright)
@@ -25,7 +25,7 @@ internal sealed partial class AboutControl : HtmlPageControl
             .Replace("$AssemblyVersion", AssemblyVersion);
     }
 
-    public override string FunctionName => "关于 " + AssemblyTitle;
+    public override string FunctionName => "About " + AssemblyTitle;
 
     public override Bitmap IconImage => Resources.About;
 

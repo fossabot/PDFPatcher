@@ -43,6 +43,6 @@ internal sealed class DeleteBookmarkItemCommand : IEditorCommand
             b.RefreshObject(item);
         }
 
-        controller.Model.Undo.AddUndo("删除书签", undo);
+        controller.Model.Undo.AddUndo("Delete bookmark", undo);
     }
 }

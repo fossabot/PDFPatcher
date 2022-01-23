@@ -38,6 +38,6 @@ internal sealed class ImageDisposition : IComparable<ImageDisposition>
     #endregion
 
     public override string ToString() =>
-        string.Concat(Image.InlineImage.PdfRef != null ? Image.InlineImage.PdfRef.Number.ToText() : "内嵌图像",
+        string.Concat(Image.InlineImage.PdfRef != null ? Image.InlineImage.PdfRef.Number.ToText() : "Embedded image",
             ":", X, ",", Y, ",", Z);
 }

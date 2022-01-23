@@ -48,7 +48,7 @@
 			this._OkButton.Name = "_OkButton";
 			this._OkButton.Size = new System.Drawing.Size (75, 23);
 			this._OkButton.TabIndex = 1;
-			this._OkButton.Text = "确定(&Q)";
+			this._OkButton.Text = "&OK";
 			this._OkButton.UseVisualStyleBackColor = true;
 			//
 			// _CancelButton
@@ -59,7 +59,7 @@
 			this._CancelButton.Name = "_CancelButton";
 			this._CancelButton.Size = new System.Drawing.Size (75, 23);
 			this._CancelButton.TabIndex = 2;
-			this._CancelButton.Text = "取消(&X)";
+			this._CancelButton.Text = "&Cancel";
 			this._CancelButton.UseVisualStyleBackColor = true;
 			//
 			// TextViewerForm
@@ -73,7 +73,7 @@
 			this.Controls.Add (this._OkButton);
 			this.Controls.Add (this._TextBox);
 			this.Name = "TextViewerForm";
-			this.Text = "文本内容";
+			this.Text = "Text content";
 			this.ResumeLayout (false);
 
 		}

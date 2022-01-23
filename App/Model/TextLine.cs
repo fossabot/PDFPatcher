@@ -31,7 +31,7 @@ internal sealed class TextLine : IDirectionalBoundObject
     /// <summary>Get the text included in this line.</summary>
     internal IEnumerable<TextInfo> Texts => _Texts;
 
-    /// <summary>获取 <see cref="Texts" /> 内的第一个 <see cref="TextInfo" />。</summary>
+    /// <summary>Get the first <see cref="TextInfo" /> within <see cref="Texts" />. </summary>
     internal TextInfo FirstText => _Texts[0];
 
     internal bool SuppressTextInfoArrangement { get; set; }
@@ -82,8 +82,8 @@ internal sealed class TextLine : IDirectionalBoundObject
     /// <summary>
     ///     Get zone <paramref name="other" /> Distance between the current line lines.
     /// </summary>
-    /// <param name="other">另一个区域。</param>
-    /// <returns><paramref name="other" /> 相对于此区域的距离关系。</returns>
+    /// <param name="other">Another area.</param>
+    /// <returns><paramref name="other" /> Distance relative to this area.</returns>
     internal DistanceInfo GetDistance(Bound other) => Region.GetDistance(other, Direction);
 
     /// <summary>

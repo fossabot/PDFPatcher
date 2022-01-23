@@ -153,7 +153,7 @@ internal sealed class PdfProcessingEngine
             }
             catch (Exception)
             {
-                Tracker.TraceMessage("在处理文档第 " + i + " 页时出错。");
+                Tracker.TraceMessage("In handling the document " + i + " An error occurred.");
                 throw;
             }
         }

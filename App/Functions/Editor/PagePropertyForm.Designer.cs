@@ -63,7 +63,7 @@
 			this._CloseButton.Name = "_CloseButton";
 			this._CloseButton.Size = new System.Drawing.Size(100, 29);
 			this._CloseButton.TabIndex = 1;
-			this._CloseButton.Text = "关闭(&G)";
+			this._CloseButton.Text = "Cancel (&G)";
 			this._CloseButton.UseVisualStyleBackColor = true;
 			//
 			// _PageDimensionBox
@@ -84,7 +84,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(82, 15);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "页面边框：";
+			this.label1.Text = "Page Border:";
 			//
 			// label2
 			//
@@ -94,7 +94,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(37, 15);
 			this.label2.TabIndex = 6;
-			this.label2.Text = "上：";
+			this.label2.Text = "Top: ";
 			//
 			// _TopBox
 			//
@@ -113,7 +113,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(37, 15);
 			this.label3.TabIndex = 8;
-			this.label3.Text = "右：";
+			this.label3.Text = "Right: ";
 			//
 			// _RightBox
 			//
@@ -132,7 +132,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(37, 15);
 			this.label4.TabIndex = 2;
-			this.label4.Text = "下：";
+			this.label4.Text = "Bottom: ";
 			//
 			// _BottomBox
 			//
@@ -151,7 +151,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(37, 15);
 			this.label5.TabIndex = 4;
-			this.label5.Text = "左：";
+			this.label5.Text = "Left: ";
 			//
 			// _LeftBox
 			//
@@ -170,7 +170,7 @@
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(52, 15);
 			this.label6.TabIndex = 14;
-			this.label6.Text = "旋转：";
+			this.label6.Text = "Rotate:";
 			//
 			// _RotationBox
 			//
@@ -219,7 +219,7 @@
 			this._DimensionPage.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this._DimensionPage.Size = new System.Drawing.Size(444, 231);
 			this._DimensionPage.TabIndex = 1;
-			this._DimensionPage.Text = "页面尺寸";
+			this._DimensionPage.Text = "Page size";
 			this._DimensionPage.UseVisualStyleBackColor = true;
 			//
 			// _TextStylePage
@@ -232,7 +232,7 @@
 			this._TextStylePage.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this._TextStylePage.Size = new System.Drawing.Size(444, 231);
 			this._TextStylePage.TabIndex = 2;
-			this._TextStylePage.Text = "文本样式";
+			this._TextStylePage.Text = "Text style";
 			this._TextStylePage.UseVisualStyleBackColor = true;
 			//
 			// _TextStyleBox
@@ -254,12 +254,12 @@
 			//
 			// _FontNameColumn
 			//
-			this._FontNameColumn.Text = "字体名称";
+			this._FontNameColumn.Text = "Font name";
 			this._FontNameColumn.Width = 219;
 			//
 			// _SizeColumn
 			//
-			this._SizeColumn.Text = "字体尺寸";
+			this._SizeColumn.Text = "Font size";
 			//
 			// label7
 			//
@@ -269,7 +269,7 @@
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(202, 15);
 			this.label7.TabIndex = 0;
-			this.label7.Text = "本页面包含如下样式的文本：";
+			this.label7.Text = "This page contains text on the following style:";
 			//
 			// label8
 			//
@@ -279,7 +279,7 @@
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(37, 15);
 			this.label8.TabIndex = 12;
-			this.label8.Text = "宽：";
+			this.label8.Text = "Width: ";
 			//
 			// _WidthBox
 			//
@@ -307,7 +307,7 @@
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(37, 15);
 			this.label9.TabIndex = 10;
-			this.label9.Text = "高：";
+			this.label9.Text = "Height: ";
 			//
 			// PagePropertyForm
 			//
@@ -323,7 +323,7 @@
 			this.MinimizeBox = false;
 			this.Name = "PagePropertyForm";
 			this.ShowInTaskbar = false;
-			this.Text = "页面属性";
+			this.Text = "Page attribute";
 			this._MainTab.ResumeLayout(false);
 			this._DimensionPage.ResumeLayout(false);
 			this._DimensionPage.PerformLayout();

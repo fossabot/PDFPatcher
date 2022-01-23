@@ -24,7 +24,7 @@ public abstract class AutoBookmarkCondition : ICloneable
     [JsonTypeAlias(ThisName)]
     public class MultiCondition : AutoBookmarkCondition
     {
-        internal const string ThisName = "条件组";
+        internal const string ThisName = "Condition group";
 
         public MultiCondition()
         {
@@ -49,7 +49,7 @@ public abstract class AutoBookmarkCondition : ICloneable
         [XmlElement(TextSizeCondition.ThisName, typeof(TextSizeCondition))]
         [XmlElement(PageRangeCondition.ThisName, typeof(PageRangeCondition))]
         [XmlElement(TextCondition.ThisName, typeof(TextCondition))]
-        [JsonField("条件")]
+        [JsonField("condition")]
         public Collection<AutoBookmarkCondition> Conditions { get; } = new();
 
         public override string Description
@@ -66,7 +66,7 @@ public abstract class AutoBookmarkCondition : ICloneable
             }
         }
 
-        public override string Name => "多条件组合";
+        public override string Name => "Multi-conditional combination";
 
         internal override bool IsTextLineFilter => Conditions.Any(item => item.IsTextLineFilter);
 
@@ -87,7 +87,7 @@ public abstract class AutoBookmarkCondition : ICloneable
     [JsonTypeAlias(ThisName)]
     public class FontNameCondition : AutoBookmarkCondition
     {
-        internal const string ThisName = "字体名称";
+        internal const string ThisName = "Font name";
 
         public FontNameCondition()
         {
@@ -100,18 +100,19 @@ public abstract class AutoBookmarkCondition : ICloneable
         }
 
         /// <summary>
-        ///     需要调整级别的字体名称。
+        ///     Need to adjust the font name of the level.
         /// </summary>
         [XmlAttribute(ThisName)]
         public string FontName { get; set; }
 
         /// <summary>
-        ///     是否匹配字体全名。
+        ///     Do you match the full name of the font.
         /// </summary>
-        [XmlAttribute("匹配字体全名")]
+        [XmlAttribute("Match font full name")]
         public bool MatchFullName { get; set; }
 
-        public override string Description => string.Concat(ThisName, MatchFullName ? "为" : "包含", "“", FontName, "”");
+        public override string Description =>
+            string.Concat(ThisName, MatchFullName ? "is" : "includes", "\"", FontName, "\"");
 
         public override string Name => ThisName;
 
@@ -125,7 +126,7 @@ public abstract class AutoBookmarkCondition : ICloneable
     [JsonTypeAlias(ThisName)]
     public class TextSizeCondition : AutoBookmarkCondition
     {
-        internal const string ThisName = "字体尺寸";
+        internal const string ThisName = "Font size";
         private string _description;
         private float _minSize, _maxSize;
 
@@ -137,7 +138,7 @@ public abstract class AutoBookmarkCondition : ICloneable
 
         internal TextSizeCondition(float minSize, float maxSize) => SetRange(minSize, maxSize);
 
-        [XmlAttribute("最小尺寸")]
+        [XmlAttribute("smallest size")]
         [DefaultValue(0)]
         public float MinSize
         {
@@ -149,7 +150,7 @@ public abstract class AutoBookmarkCondition : ICloneable
             }
         }
 
-        [XmlAttribute("最大尺寸")]
+        [XmlAttribute("biggest size")]
         [DefaultValue(0)]
         public float MaxSize
         {
@@ -180,8 +181,8 @@ public abstract class AutoBookmarkCondition : ICloneable
 
         private void UpdateRangeDescription() =>
             _description = ThisName + (_minSize == _maxSize
-                ? "等于" + _minSize.ToText()
-                : "介于" + _minSize.ToText() + "和" + _maxSize.ToText());
+                ? "equal to" + _minSize.ToText()
+                : "Between" + _minSize.ToText() + " and " + _maxSize.ToText());
 
         public override object Clone()
         {
@@ -213,7 +214,7 @@ public abstract class AutoBookmarkCondition : ICloneable
     [JsonTypeAlias(ThisName)]
     public class TextPositionCondition : AutoBookmarkCondition
     {
-        internal const string ThisName = "文本坐标";
+        internal const string ThisName = "Text coordinates";
         private string _description;
         private float _minValue, _maxValue;
         private byte _position;
@@ -226,7 +227,7 @@ public abstract class AutoBookmarkCondition : ICloneable
 
         internal TextPositionCondition(byte position, float value1, float value2) => SetRange(position, value1, value2);
 
-        [XmlAttribute("坐标值")]
+        [XmlAttribute("coordinate value")]
         [DefaultValue(0)]
         public byte Position
         {
@@ -238,7 +239,7 @@ public abstract class AutoBookmarkCondition : ICloneable
             }
         }
 
-        [XmlAttribute("坐标最小值")]
+        [XmlAttribute("Coordinate minimum value")]
         [DefaultValue(0)]
         public float MinValue
         {
@@ -250,7 +251,7 @@ public abstract class AutoBookmarkCondition : ICloneable
             }
         }
 
-        [XmlAttribute("坐标最大值")]
+        [XmlAttribute("coordinate maximum value")]
         [DefaultValue(0)]
         public float MaxValue
         {
@@ -283,16 +284,16 @@ public abstract class AutoBookmarkCondition : ICloneable
             _description = string.Concat(ThisName,
                 _position switch
                 {
-                    1 => "上",
-                    2 => "下",
-                    3 => "左",
-                    4 => "右",
+                    1 => "up",
+                    2 => "down",
+                    3 => "left",
+                    4 => "right",
                     _ => string.Empty
                 },
-                "坐标",
+                "coordinate",
                 _minValue == _maxValue
-                    ? "等于" + _minValue.ToText()
-                    : "介于" + _minValue.ToText() + "和" + _maxValue
+                    ? "equal to" + _minValue.ToText()
+                    : "between" + _minValue.ToText() + " and " + _maxValue
             );
 
         public override object Clone()
@@ -326,11 +327,11 @@ public abstract class AutoBookmarkCondition : ICloneable
     [JsonTypeAlias(ThisName)]
     public class PageRangeCondition : AutoBookmarkCondition
     {
-        internal const string ThisName = "页码范围";
+        internal const string ThisName = "Page size range";
 
         [XmlAttribute(ThisName)] public string PageRange { get; set; }
 
-        public override string Description => "页码范围为“" + PageRange + "”";
+        public override string Description => "The page size range is \"" + PageRange + "\"";
 
         public override string Name => ThisName;
 
@@ -344,18 +345,18 @@ public abstract class AutoBookmarkCondition : ICloneable
     [JsonTypeAlias(ThisName)]
     public class TextCondition : AutoBookmarkCondition
     {
-        internal const string ThisName = "文本内容";
+        internal const string ThisName = "Text content";
 
         public TextCondition() => Pattern = new MatchPattern();
 
         private TextCondition(MatchPattern pattern) => Pattern = pattern.Clone() as MatchPattern;
 
-        [XmlElement("文本模式")] public MatchPattern Pattern { get; set; }
+        [XmlElement("Text Pattern")] public MatchPattern Pattern { get; set; }
 
         public override string Description => string.Concat(ThisName,
-            Pattern.MatchCase ? "区分大小写" : string.Empty,
-            Pattern.FullMatch ? "完全匹配" : "符合",
-            Pattern.UseRegularExpression ? "正则表达式" : string.Empty,
+            Pattern.MatchCase ? "case sensitive" : string.Empty,
+            Pattern.FullMatch ? "exact match" : "match",
+            Pattern.UseRegularExpression ? "regular expression" : string.Empty,
             Pattern.Text);
 
         public override string Name => ThisName;

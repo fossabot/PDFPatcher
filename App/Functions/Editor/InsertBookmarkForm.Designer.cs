@@ -50,7 +50,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size (65, 12);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "书签文本：";
+			this.label1.Text = "Bookmark text:";
 			//
 			// _TitleBox
 			//
@@ -66,7 +66,7 @@
 			this._OkButton.Name = "_OkButton";
 			this._OkButton.Size = new System.Drawing.Size (75, 23);
 			this._OkButton.TabIndex = 12;
-			this._OkButton.Text = "插入(&C)";
+			this._OkButton.Text = "Insert (&C)";
 			this._OkButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._OkButton.UseVisualStyleBackColor = true;
 			//
@@ -77,7 +77,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size (101, 12);
 			this.label2.TabIndex = 2;
-			this.label2.Text = "插入到当前书签：";
+			this.label2.Text = "Insert to the current bookmark:";
 			//
 			// _CancelButton
 			//
@@ -86,7 +86,7 @@
 			this._CancelButton.Name = "_CancelButton";
 			this._CancelButton.Size = new System.Drawing.Size (75, 23);
 			this._CancelButton.TabIndex = 13;
-			this._CancelButton.Text = "取消(&X)";
+			this._CancelButton.Text = "Cancel (&X)";
 			this._CancelButton.UseVisualStyleBackColor = true;
 			//
 			// label3
@@ -96,7 +96,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size (65, 12);
 			this.label3.TabIndex = 8;
-			this.label3.Text = "目标位置：";
+			this.label3.Text = "target location:";
 			//
 			// _PositionBox
 			//
@@ -123,7 +123,7 @@
 			this._PageLabel.Name = "_PageLabel";
 			this._PageLabel.Size = new System.Drawing.Size (35, 12);
 			this._PageLabel.TabIndex = 9;
-			this._PageLabel.Text = "第N页";
+			this._PageLabel.Text = "Nth page";
 			//
 			// _DirectionBox
 			//
@@ -132,7 +132,7 @@
 			this._DirectionBox.Name = "_DirectionBox";
 			this._DirectionBox.Size = new System.Drawing.Size (41, 12);
 			this._DirectionBox.TabIndex = 10;
-			this._DirectionBox.Text = "方位：";
+			this._DirectionBox.Text = "position:";
 			//
 			// _CommentBox
 			//
@@ -149,7 +149,7 @@
 			this._AfterParentBox.Name = "_AfterParentBox";
 			this._AfterParentBox.Size = new System.Drawing.Size (101, 16);
 			this._AfterParentBox.TabIndex = 6;
-			this._AfterParentBox.Text = "上级书签后(&S)";
+			this._AfterParentBox.Text = "After the superior bookmark (&S)";
 			this._AfterParentBox.UseVisualStyleBackColor = true;
 			//
 			// _BeforeCurrentBox
@@ -159,7 +159,7 @@
 			this._BeforeCurrentBox.Name = "_BeforeCurrentBox";
 			this._BeforeCurrentBox.Size = new System.Drawing.Size (65, 16);
 			this._BeforeCurrentBox.TabIndex = 3;
-			this._BeforeCurrentBox.Text = "前面(&Q)";
+			this._BeforeCurrentBox.Text = "Front (&Q)";
 			this._BeforeCurrentBox.UseVisualStyleBackColor = true;
 			//
 			// _AsChildBox
@@ -169,7 +169,7 @@
 			this._AsChildBox.Name = "_AsChildBox";
 			this._AsChildBox.Size = new System.Drawing.Size (77, 16);
 			this._AsChildBox.TabIndex = 5;
-			this._AsChildBox.Text = "子书签(&Z)";
+			this._AsChildBox.Text = "Child bookmark (&Z)";
 			this._AsChildBox.UseVisualStyleBackColor = true;
 			//
 			// _AfterCurrentBox
@@ -181,7 +181,7 @@
 			this._AfterCurrentBox.Size = new System.Drawing.Size (65, 16);
 			this._AfterCurrentBox.TabIndex = 4;
 			this._AfterCurrentBox.TabStop = true;
-			this._AfterCurrentBox.Text = "后面(&H)";
+			this._AfterCurrentBox.Text = "later (&H)";
 			this._AfterCurrentBox.UseVisualStyleBackColor = true;
 			//
 			// _ReplaceBookmarkBox
@@ -192,7 +192,7 @@
 			this._ReplaceBookmarkBox.Size = new System.Drawing.Size (113, 16);
 			this._ReplaceBookmarkBox.TabIndex = 7;
 			this._ReplaceBookmarkBox.TabStop = true;
-			this._ReplaceBookmarkBox.Text = "替换当前书签(&T)";
+			this._ReplaceBookmarkBox.Text = "Replace the current bookmark (&T)";
 			this._ReplaceBookmarkBox.UseVisualStyleBackColor = true;
 			//
 			// InsertBookmarkForm
@@ -221,7 +221,7 @@
 			this.Name = "InsertBookmarkForm";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-			this.Text = "插入书签";
+			this.Text = "Insert bookmark";
 			this.TopMost = true;
 			((System.ComponentModel.ISupportInitialize)(this._PositionBox)).EndInit ();
 			this.ResumeLayout (false);

@@ -73,30 +73,30 @@
 			this._OkButton.Name = "_OkButton";
 			this._OkButton.Size = new System.Drawing.Size (75, 23);
 			this._OkButton.TabIndex = 5;
-			this._OkButton.Text = "确定(&Q)";
-			this._OkButton.UseVisualStyleBackColor = true;
-			this._OkButton.Click += new System.EventHandler (this._OkButton_Click);
-			//
-			// _CancelButton
-			//
-			this._CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this._CancelButton.Location = new System.Drawing.Point (369, 335);
-			this._CancelButton.Name = "_CancelButton";
-			this._CancelButton.Size = new System.Drawing.Size (75, 23);
-			this._CancelButton.TabIndex = 6;
-			this._CancelButton.Text = "取消(&X)";
-			this._CancelButton.UseVisualStyleBackColor = true;
-			this._CancelButton.Click += new System.EventHandler (this._CancelButton_Click);
-			//
-			// _MessageLabel
-			//
-			this._MessageLabel.AutoSize = true;
-			this._MessageLabel.Location = new System.Drawing.Point (12, 54);
-			this._MessageLabel.Name = "_MessageLabel";
-			this._MessageLabel.Size = new System.Drawing.Size (89, 12);
-			this._MessageLabel.TabIndex = 0;
-			this._MessageLabel.Text = "导入页码范围：";
+	this._OkButton.Text = "&Ok";
+this._OkButton.UseVisualStyleBackColor = true;
+this._OkButton.Click += new System.EventHandler (this._OkButton_Click);
+//
+// _CancelButton
+//
+this._CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+this._CancelButton.Location = new System.Drawing.Point(369, 335);
+this._CancelButton.Name = "_CancelButton";
+this._CancelButton.Size = new System.Drawing.Size(75, 23);
+this._CancelButton.TabIndex = 6;
+this._CancelButton.Text = "&Cancel";
+this._CancelButton.UseVisualStyleBackColor = true;
+this._CancelButton.Click += new System.EventHandler (this._CancelButton_Click);
+//
+// _MessageLabel
+//
+this._MessageLabel.AutoSize = true;
+this._MessageLabel.Location = new System.Drawing.Point(12, 54);
+this._MessageLabel.Name = "_MessageLabel";
+this._MessageLabel.Size = new System.Drawing.Size(89, 12);
+this._MessageLabel.TabIndex = 0;
+this._MessageLabel.Text = "Import page number range: ";
 			//
 			// _PageRangeBox
 			//
@@ -112,24 +112,24 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size (53, 12);
 			this.label2.TabIndex = 7;
-			this.label2.Text = "文件名：";
-			//
-			// _SourceFileBox
-			//
-			this._SourceFileBox.Location = new System.Drawing.Point (71, 12);
-			this._SourceFileBox.Name = "_SourceFileBox";
-			this._SourceFileBox.ReadOnly = true;
-			this._SourceFileBox.Size = new System.Drawing.Size (373, 21);
-			this._SourceFileBox.TabIndex = 8;
-			//
-			// _ImportImagesOnlyBox
-			//
-			this._ImportImagesOnlyBox.AutoSize = true;
-			this._ImportImagesOnlyBox.Location = new System.Drawing.Point (14, 78);
-			this._ImportImagesOnlyBox.Name = "_ImportImagesOnlyBox";
-			this._ImportImagesOnlyBox.Size = new System.Drawing.Size (162, 16);
-			this._ImportImagesOnlyBox.TabIndex = 3;
-			this._ImportImagesOnlyBox.Text = "仅导入源 PDF 文件的图片";
+this.label2.Text = "File name: ";
+//
+// _SourceFileBox
+//
+this._SourceFileBox.Location = new System.Drawing.Point(71, 12);
+this._SourceFileBox.Name = "_SourceFileBox";
+this._SourceFileBox.ReadOnly = true;
+this._SourceFileBox.Size = new System.Drawing.Size(373, 21);
+this._SourceFileBox.TabIndex = 8;
+//
+// _ImportImagesOnlyBox
+//
+this._ImportImagesOnlyBox.AutoSize = true;
+this._ImportImagesOnlyBox.Location = new System.Drawing.Point(14, 78);
+this._ImportImagesOnlyBox.Name = "_ImportImagesOnlyBox";
+this._ImportImagesOnlyBox.Size = new System.Drawing.Size (162, 16);
+this._ImportImagesOnlyBox.TabIndex = 3;
+this._ImportImagesOnlyBox.Text = "Import only images from the source PDF file";
 			this._ImportImagesOnlyBox.UseVisualStyleBackColor = true;
 			this._ImportImagesOnlyBox.CheckedChanged += new System.EventHandler (this._ImportImagesOnlyBox_CheckedChanged);
 			//
@@ -163,61 +163,61 @@
 			this._ExtractImageOptionBox.Size = new System.Drawing.Size (430, 175);
 			this._ExtractImageOptionBox.TabIndex = 4;
 			this._ExtractImageOptionBox.TabStop = false;
-			this._ExtractImageOptionBox.Text = "导入及处理源 PDF 文件图片的方式（尺寸单位：像素）";
-			//
-			// label13
-			//
-			this.label13.AutoSize = true;
-			this.label13.Location = new System.Drawing.Point (220, 21);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size (89, 12);
-			this.label13.TabIndex = 3;
-			this.label13.Text = "导入图片条件：";
-			//
-			// label12
-			//
-			this.label12.AutoSize = true;
-			this.label12.Location = new System.Drawing.Point (232, 116);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size (65, 12);
-			this.label12.TabIndex = 18;
-			this.label12.Text = "宽度不小于";
-			//
-			// label11
-			//
-			this.label11.AutoSize = true;
-			this.label11.Location = new System.Drawing.Point (220, 92);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size (65, 12);
-			this.label11.TabIndex = 17;
-			this.label11.Text = "裁剪条件：";
-			//
-			// label8
-			//
-			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point (232, 38);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size (65, 12);
-			this.label8.TabIndex = 4;
-			this.label8.Text = "宽度不小于";
-			//
-			// label9
-			//
-			this.label9.AutoSize = true;
-			this.label9.Location = new System.Drawing.Point (232, 143);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size (65, 12);
-			this.label9.TabIndex = 20;
-			this.label9.Text = "高度不小于";
-			//
-			// label10
-			//
-			this.label10.AutoSize = true;
-			this.label10.Location = new System.Drawing.Point (232, 65);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size (65, 12);
-			this.label10.TabIndex = 6;
-			this.label10.Text = "高度不小于";
+this._ExtractImageOptionBox.Text = "The way to import and process the image of the source PDF file (dimension unit: pixel)";
+//
+// label13
+//
+this.label13.AutoSize = true;
+this.label13.Location = new System.Drawing.Point(220, 21);
+this.label13.Name = "label13";
+this.label13.Size = new System.Drawing.Size(89, 12);
+this.label13.TabIndex = 3;
+this.label13.Text = "Import image condition:";
+//
+// label12
+//
+this.label12.AutoSize = true;
+this.label12.Location = new System.Drawing.Point(232, 116);
+this.label12.Name = "label12";
+this.label12.Size = new System.Drawing.Size(65, 12);
+this.label12.TabIndex = 18;
+this.label12.Text = "Width not less than";
+//
+// label11
+//
+this.label11.AutoSize = true;
+this.label11.Location = new System.Drawing.Point(220, 92);
+this.label11.Name = "label11";
+this.label11.Size = new System.Drawing.Size(65, 12);
+this.label11.TabIndex = 17;
+this.label11.Text = "Crop condition: ";
+//
+// label8
+//
+this.label8.AutoSize = true;
+this.label8.Location = new System.Drawing.Point(232, 38);
+this.label8.Name = "label8";
+this.label8.Size = new System.Drawing.Size(65, 12);
+this.label8.TabIndex = 4;
+this.label8.Text = "Width not less than";
+//
+// label9
+//
+this.label9.AutoSize = true;
+this.label9.Location = new System.Drawing.Point(232, 143);
+this.label9.Name = "label9";
+this.label9.Size = new System.Drawing.Size(65, 12);
+this.label9.TabIndex = 20;
+this.label9.Text = "Height is not less than";
+//
+// label10
+//
+this.label10.AutoSize = true;
+this.label10.Location = new System.Drawing.Point(232, 65);
+this.label10.Name = "label10";
+this.label10.Size = new System.Drawing.Size(65, 12);
+this.label10.TabIndex = 6;
+this.label10.Text = "Height is not less than";
 			//
 			// _MinCropWidthBox
 			//
@@ -298,29 +298,29 @@
 			this._VerticalFlipImagesBox.Name = "_VerticalFlipImagesBox";
 			this._VerticalFlipImagesBox.Size = new System.Drawing.Size (96, 16);
 			this._VerticalFlipImagesBox.TabIndex = 1;
-			this._VerticalFlipImagesBox.Text = "垂直翻转图片";
-			this._VerticalFlipImagesBox.UseVisualStyleBackColor = true;
-			//
-			// _InvertBlackAndWhiteImageBox
-			//
-			this._InvertBlackAndWhiteImageBox.AutoSize = true;
-			this._InvertBlackAndWhiteImageBox.Location = new System.Drawing.Point (6, 64);
-			this._InvertBlackAndWhiteImageBox.Name = "_InvertBlackAndWhiteImageBox";
-			this._InvertBlackAndWhiteImageBox.Size = new System.Drawing.Size (132, 16);
-			this._InvertBlackAndWhiteImageBox.TabIndex = 2;
-			this._InvertBlackAndWhiteImageBox.Text = "反转黑白图片的颜色";
-			this._InvertBlackAndWhiteImageBox.UseVisualStyleBackColor = true;
-			//
-			// _MergeImagesBox
-			//
-			this._MergeImagesBox.AutoSize = true;
-			this._MergeImagesBox.Checked = true;
-			this._MergeImagesBox.CheckState = System.Windows.Forms.CheckState.Checked;
-			this._MergeImagesBox.Location = new System.Drawing.Point (6, 20);
-			this._MergeImagesBox.Name = "_MergeImagesBox";
-			this._MergeImagesBox.Size = new System.Drawing.Size (120, 16);
-			this._MergeImagesBox.TabIndex = 0;
-			this._MergeImagesBox.Text = "尝试合并同页图片";
+this._VerticalFlipImagesBox.Text = "Flip images vertically";
+this._VerticalFlipImagesBox.UseVisualStyleBackColor = true;
+//
+//_InvertBlackAndWhiteImageBox
+//
+this._InvertBlackAndWhiteImageBox.AutoSize = true;
+this._InvertBlackAndWhiteImageBox.Location = new System.Drawing.Point(6, 64);
+this._InvertBlackAndWhiteImageBox.Name = "_InvertBlackAndWhiteImageBox";
+this._InvertBlackAndWhiteImageBox.Size = new System.Drawing.Size (132, 16);
+this._InvertBlackAndWhiteImageBox.TabIndex = 2;
+this._InvertBlackAndWhiteImageBox.Text = "Invert the color of the black and white image";
+this._InvertBlackAndWhiteImageBox.UseVisualStyleBackColor = true;
+//
+// _MergeImagesBox
+//
+this._MergeImagesBox.AutoSize = true;
+this._MergeImagesBox.Checked = true;
+this._MergeImagesBox.CheckState = System.Windows.Forms.CheckState.Checked;
+this._MergeImagesBox.Location = new System.Drawing.Point(6, 20);
+this._MergeImagesBox.Name = "_MergeImagesBox";
+this._MergeImagesBox.Size = new System.Drawing.Size (120, 16);
+this._MergeImagesBox.TabIndex = 0;
+this._MergeImagesBox.Text = "Attempt to merge images on the same page";
 			this._MergeImagesBox.UseVisualStyleBackColor = true;
 			//
 			// label5
@@ -330,7 +330,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size (65, 12);
 			this.label5.TabIndex = 8;
-			this.label5.Text = "裁剪图片：";
+			this.label5.Text = "Cropped picture:";
 			//
 			// _RightMarginBox
 			//
@@ -411,7 +411,7 @@
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size (29, 12);
 			this.label7.TabIndex = 15;
-			this.label7.Text = "右：";
+			this.label7.Text = "Right: ";
 			//
 			// label3
 			//
@@ -420,7 +420,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size (29, 12);
 			this.label3.TabIndex = 11;
-			this.label3.Text = "下：";
+			this.label3.Text = "Bottom: ";
 			//
 			// label6
 			//
@@ -429,7 +429,7 @@
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size (29, 12);
 			this.label6.TabIndex = 13;
-			this.label6.Text = "左：";
+			this.label6.Text = "Left: ";
 			//
 			// label4
 			//
@@ -438,7 +438,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size (29, 12);
 			this.label4.TabIndex = 9;
-			this.label4.Text = "上：";
+			this.label4.Text = "Top: ";
 			//
 			// SourcePdfOptionForm
 			//
@@ -460,7 +460,7 @@
 			this.MinimizeBox = false;
 			this.Name = "SourcePdfOptionForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "源 PDF 文件选项";
+			this.Text = "Source PDF file option";
 			this._ExtractImageOptionBox.ResumeLayout (false);
 			this._ExtractImageOptionBox.PerformLayout ();
 			((System.ComponentModel.ISupportInitialize)(this._MinCropWidthBox)).EndInit ();

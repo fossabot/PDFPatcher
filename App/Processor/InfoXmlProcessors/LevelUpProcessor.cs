@@ -6,7 +6,7 @@ internal sealed class LevelUpProcessor : IPdfInfoXmlProcessor
 {
     #region IInfoDocProcessor member
 
-    public string Name => "设置书签为父书签";
+    public string Name => "Set bookmarks for parent signs";
 
     public IUndoAction Process(XmlElement item)
     {

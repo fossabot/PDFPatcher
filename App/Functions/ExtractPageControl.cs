@@ -16,20 +16,25 @@ public partial class ExtractPageControl : FunctionControl, IResettableControl
     {
         InitializeComponent();
         //Icon = FormHelper.ToIcon (Properties.Resources.ExtractPages);
-        AppContext.MainForm.SetTooltip(_SourceFileControl.FileList, "需要提取页面的 PDF 文件路径，可选择多个文件");
-        AppContext.MainForm.SetTooltip(_ExtractPageRangeBox, "提取页面的页码范围，不指定页码范围时提取源文件的所有页");
-        AppContext.MainForm.SetTooltip(_TargetFileControl.FileList, "输出 PDF 文件的路径，右键点击插入文件名替代符");
-        AppContext.MainForm.SetTooltip(_ExtractButton, "点击此按钮，提取源 PDF 文件指定范围的页面，生成新的文件");
-        AppContext.MainForm.SetTooltip(_SeparatingModeBox, "选择拆分源 PDF 文档的方式");
-        AppContext.MainForm.SetTooltip(_SeperateByPageNumberBox, "将源 PDF 文档按页数拆分");
-        AppContext.MainForm.SetTooltip(_NumberFileNamesBox, "按书签拆分：在拆分所得的文件名前面添加“1 - ”、“2 - ”等顺序编号；其它拆分：第 1 个文件名也添加编号");
-        AppContext.MainForm.SetTooltip(_ExcludePageRangeBox, "不提取此范围内的页面");
+        AppContext.MainForm.SetTooltip(_SourceFileControl.FileList,
+            "The PDF file path of the page to be extracted, multiple files can be selected");
+        AppContext.MainForm.SetTooltip(_ExtractPageRangeBox,
+            "Extract the page number range of the page, extract all pages of the source file when the page number range is not specified");
+        AppContext.MainForm.SetTooltip(_TargetFileControl.FileList,
+            "The path of the output PDF file, right click to insert the file name substitute");
+        AppContext.MainForm.SetTooltip(_ExtractButton,
+            "Click this button to extract pages in the specified range of the source PDF file and generate a new file");
+        AppContext.MainForm.SetTooltip(_SeparatingModeBox, "Choose how to split the source PDF document");
+        AppContext.MainForm.SetTooltip(_SeperateByPageNumberBox, "Split the source PDF document by page number");
+        AppContext.MainForm.SetTooltip(_NumberFileNamesBox,
+            "Split by bookmarks: Add \"1 - \", \"2 - \" and other sequential numbers in front of the split file names; other splits: add numbers to the first file name");
+        AppContext.MainForm.SetTooltip(_ExcludePageRangeBox, "Do not extract pages in this range");
 
         _TargetFileControl.FileMacroMenu.LoadStandardInfoMacros();
         _TargetFileControl.FileMacroMenu.LoadStandardSourceFileMacros();
     }
 
-    public override string FunctionName => "提取页面";
+    public override string FunctionName => "Extraction page";
 
     public override Bitmap IconImage => Resources.ExtractPages;
 
@@ -43,7 +48,9 @@ public partial class ExtractPageControl : FunctionControl, IResettableControl
     {
         _SeparatingModeBox.SelectedIndexChanged += (_, _) =>
         {
-            _NumberFileNamesBox.Text = _SeparatingModeBox.SelectedIndex == 1 ? "在文件名前面添加编号" : "第一个文件名也添加编号";
+            _NumberFileNamesBox.Text = _SeparatingModeBox.SelectedIndex == 1
+                ? "Add a number in front of the file name"
+                : "The first file name is also added to the number";
             _SeperateByPageNumberBox.Enabled = _SeparatingModeBox.SelectedIndex == 2;
         };
         ((IResettableControl)this).Reload();
@@ -91,7 +98,7 @@ public partial class ExtractPageControl : FunctionControl, IResettableControl
             ExtractPageOptions options = a[2] as ExtractPageOptions;
             if (files.Length > 1)
             {
-                bool m = FileHelper.HasFileNameMacro(t); // 包含替换符
+                bool m = FileHelper.HasFileNameMacro(t); // Contains alternative
                 string p = m ? null : Path.GetDirectoryName(t);
                 Tracker.SetTotalProgressGoal(files.Length);
                 foreach (string file in files)

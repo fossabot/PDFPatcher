@@ -107,8 +107,8 @@
 			this._AddFilesButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._AddFilesButton.Name = "_AddFilesButton";
 			this._AddFilesButton.Size = new System.Drawing.Size(102, 22);
-			this._AddFilesButton.Text = "添加文件(&T)";
-			this._AddFilesButton.ToolTipText = "添加需要合并的文件到处理列表";
+			this._AddFilesButton.Text = "Add files (&T)";
+			this._AddFilesButton.ToolTipText = "Add files that need merge to process lists";
 			//
 			// _RecentFileMenu
 			//
@@ -124,7 +124,7 @@
 			_Sort.ImageTransparentColor = System.Drawing.Color.Magenta;
 			_Sort.Name = "_Sort";
 			_Sort.Size = new System.Drawing.Size(60, 22);
-			_Sort.Text = "排序";
+			_Sort.Text = "Sort";
 			_Sort.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._SortMenu_ItemClicked);
 			//
 			// _SortMenu
@@ -142,14 +142,14 @@
 			this._SortByNaturalNumberItem.Image = global::PDFPatcher.Properties.Resources.NaturalSort;
 			this._SortByNaturalNumberItem.Name = "_SortByNaturalNumberItem";
 			this._SortByNaturalNumberItem.Size = new System.Drawing.Size(213, 22);
-			this._SortByNaturalNumberItem.Text = "按数值和字母顺序排序(&M)";
+			this._SortByNaturalNumberItem.Text = "Sort by value and alphabetical order (&M)";
 			//
 			// _SortByAlphaItem
 			//
 			this._SortByAlphaItem.Image = global::PDFPatcher.Properties.Resources.AlphabeticSort;
 			this._SortByAlphaItem.Name = "_SortByAlphaItem";
 			this._SortByAlphaItem.Size = new System.Drawing.Size(213, 22);
-			this._SortByAlphaItem.Text = "按字母顺序排序(&Z)";
+			this._SortByAlphaItem.Text = "Sort by alphabetical order (&Z)";
 			//
 			// _Delete
 			//
@@ -157,7 +157,7 @@
 			_Delete.ImageTransparentColor = System.Drawing.Color.Magenta;
 			_Delete.Name = "_Delete";
 			_Delete.Size = new System.Drawing.Size(75, 22);
-			_Delete.Text = "删除文件";
+			_Delete.Text = "Delete Files";
 			//
 			// toolStripSeparator2
 			//
@@ -170,33 +170,33 @@
 			this._RefreshInfoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._RefreshInfoButton.Name = "_RefreshInfoButton";
 			this._RefreshInfoButton.Size = new System.Drawing.Size(111, 22);
-			this._RefreshInfoButton.Text = "刷新文档属性";
+			this._RefreshInfoButton.Text = "Refreshing document properties";
 			//
 			// _SelectAll
 			//
 			_SelectAll.Image = global::PDFPatcher.Properties.Resources.SelectAll;
 			_SelectAll.Name = "_SelectAll";
 			_SelectAll.Size = new System.Drawing.Size(122, 22);
-			_SelectAll.Text = "全部选中";
+			_SelectAll.Text = "All selected";
 			//
 			// _InvertSelect
 			//
 			_InvertSelect.Name = "_InvertSelect";
 			_InvertSelect.Size = new System.Drawing.Size(122, 22);
-			_InvertSelect.Text = "反转选择";
+			_InvertSelect.Text = "Inverse option";
 			//
 			// _SelectNone
 			//
 			_SelectNone.Name = "_SelectNone";
 			_SelectNone.Size = new System.Drawing.Size(122, 22);
-			_SelectNone.Text = "取消选择";
+			_SelectNone.Text = "cancel selection";
 			//
 			// _Copy
 			//
 			_Copy.Image = global::PDFPatcher.Properties.Resources.Copy;
 			_Copy.Name = "_Copy";
 			_Copy.Size = new System.Drawing.Size(146, 22);
-			_Copy.Text = "复制列表内容";
+			_Copy.Text = "Copy list content";
 			//
 			// _RefreshInfo
 			//
@@ -204,7 +204,7 @@
 			_RefreshInfo.Image = global::PDFPatcher.Properties.Resources.Refresh;
 			_RefreshInfo.Name = "_RefreshInfo";
 			_RefreshInfo.Size = new System.Drawing.Size(146, 22);
-			_RefreshInfo.Text = "刷新文档属性";
+			_RefreshInfo.Text = "Refreshing document properties";
 			//
 			// _RefreshInfoMenu
 			//
@@ -229,7 +229,7 @@
 			this._SelectionMenuItem.Image = global::PDFPatcher.Properties.Resources.SelectItem;
 			this._SelectionMenuItem.Name = "_SelectionMenuItem";
 			this._SelectionMenuItem.Size = new System.Drawing.Size(146, 22);
-			this._SelectionMenuItem.Text = "选择文件";
+			this._SelectionMenuItem.Text = "Select the file";
 			//
 			// _ItemList
 			//
@@ -269,37 +269,37 @@
 			//
 			// _NameColumn
 			//
-			this._NameColumn.Text = "源文件名";
+			this._NameColumn.Text = "Source file name";
 			this._NameColumn.Width = 149;
 			//
 			// _PageCountColumn
 			//
 			this._PageCountColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this._PageCountColumn.IsEditable = false;
-			this._PageCountColumn.Text = "页数";
+			this._PageCountColumn.Text = "Number of pages";
 			this._PageCountColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this._PageCountColumn.Width = 50;
 			//
 			// _TitleColumn
 			//
-			this._TitleColumn.Text = "标题";
+			this._TitleColumn.Text = "title";
 			//
 			// _AuthorColumn
 			//
-			this._AuthorColumn.Text = "作者";
+			this._AuthorColumn.Text = "author";
 			//
 			// _SubjectColumn
 			//
-			this._SubjectColumn.Text = "主题";
+			this._SubjectColumn.Text = "theme";
 			//
 			// _KeywordsColumn
 			//
-			this._KeywordsColumn.Text = "关键词";
+			this._KeywordsColumn.Text = "Key words";
 			//
 			// _FolderColumn
 			//
 			this._FolderColumn.IsEditable = false;
-			this._FolderColumn.Text = "文件夹";
+			this._FolderColumn.Text = "folder";
 			this._FolderColumn.Width = 96;
 			//
 			// _ItemListMenu
@@ -321,9 +321,9 @@
 			// _OpenPdfBox
 			//
 			this._OpenPdfBox.DefaultExt = "pdf";
-			this._OpenPdfBox.Filter = "PDF 文件（*.pdf）|*.pdf";
+			this._OpenPdfBox.Filter = "PDF document (*.pdf) |*.pdf";
 			this._OpenPdfBox.Multiselect = true;
-			this._OpenPdfBox.Title = "选择需要处理的 PDF 文件";
+			this._OpenPdfBox.Title = "Select the PDF file that needs to be processed";
 			//
 			// _AutoClearListBox
 			//
@@ -335,7 +335,7 @@
 			this._AutoClearListBox.Name = "_AutoClearListBox";
 			this._AutoClearListBox.Size = new System.Drawing.Size(132, 16);
 			this._AutoClearListBox.TabIndex = 4;
-			this._AutoClearListBox.Text = "添加文件前清空列表";
+			this._AutoClearListBox.Text = "Calculate the list before adding a file";
 			this._AutoClearListBox.UseVisualStyleBackColor = true;
 			//
 			// _AddDocumentWorker
@@ -378,7 +378,7 @@
 			//
 			// _ActionNameColumn
 			//
-			this._ActionNameColumn.Text = "补丁操作";
+			this._ActionNameColumn.Text = "Patch operation";
 			this._ActionNameColumn.Width = 120;
 			//
 			// _ItemActionsContainerBox
@@ -410,7 +410,7 @@
 			this._ConfigButton.Name = "_ConfigButton";
 			this._ConfigButton.Size = new System.Drawing.Size(181, 23);
 			this._ConfigButton.TabIndex = 11;
-			this._ConfigButton.Text = "设置 P&DF 文件的修改方式";
+			this._ConfigButton.Text = "Set the modification method of the P&DF file";
 			this._ConfigButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._ConfigButton.UseVisualStyleBackColor = true;
 			//
@@ -431,7 +431,7 @@
 			this._ImportButton.ShowFocusBorder = true;
 			this._ImportButton.Size = new System.Drawing.Size(123, 29);
 			this._ImportButton.TabIndex = 12;
-			this._ImportButton.Text = "生成目标文件(&S)";
+			this._ImportButton.Text = "&Generate object file";
 			this._ImportButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._ImportButton.Click += new System.EventHandler(this._ImportButton_Click);
 			//
@@ -445,7 +445,7 @@
 			this.Controls.Add(this._TargetPdfFile);
 			this.Controls.Add(this._ItemActionsContainerBox);
 			this.Controls.Add(this._AutoClearListBox);
-			this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.Name = "PatcherControl";
 			this.Size = new System.Drawing.Size(575, 342);
 			this.Load += new System.EventHandler(this.PatcherControl_OnLoad);

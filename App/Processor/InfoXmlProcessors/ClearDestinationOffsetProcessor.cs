@@ -24,8 +24,8 @@ internal sealed class
             _type = value;
             _name = _type switch
             {
-                PositionType.X => "横",
-                PositionType.Y => "纵",
+                PositionType.X => "horizontal",
+                PositionType.Y => "Vertical",
                 _ => string.Empty
             };
         }
@@ -33,7 +33,7 @@ internal sealed class
 
     #region IInfoDocProcessor member
 
-    public string Name => "清除" + _name + "坐标定位偏移值";
+    public string Name => "Clear" + _name + "Coordinate Positioning Offset";
 
     public IUndoAction Process(XmlElement item)
     {

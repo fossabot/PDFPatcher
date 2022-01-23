@@ -12952,7 +12952,7 @@
         <member name="M:FreeImageAPI.FreeImage.RegisterExternalPlugin(System.String,System.String,System.String,System.String,System.String)">
             <summary>
             Registers a new plugin to be used in FreeImage. The plugin is residing in a DLL.
-            The Init function must be called 揑nit?and must use the stdcall calling convention.
+            The Init function must be called unit and must use the stdcall calling convention.
             </summary>
             <param name="path">Complete path to the dll file hosting the plugin.</param>
             <param name="format">A string describing the format of the plugin.</param>

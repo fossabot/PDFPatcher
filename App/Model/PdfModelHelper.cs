@@ -37,7 +37,7 @@ internal static class PdfModelHelper
 
             if (item is int == false)
             {
-                throw new ArgumentException("参数类型必须为 Int32 或 PdfName");
+                throw new ArgumentException("Argument type must be Int32 or PdfName");
             }
 
             int i = (int)item;

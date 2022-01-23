@@ -26,12 +26,12 @@ public partial class MergerOptionForm : Form, IResettableControl
         _UnifyOrientationBox.CheckedChanged += CheckBoxChanged;
         _PageSizeBox.Items.AddRange(Array.FindAll(PdfDocumentCreator.PaperSizes,
             i => i.SpecialSize < SpecialPaperSize.AsSpecificPage));
-        _ImageHAlignBox.Items.Add("水平居中");
-        _ImageHAlignBox.Items.Add("左对齐");
-        _ImageHAlignBox.Items.Add("右对齐");
-        _ImageVAlignBox.Items.Add("垂直居中");
-        _ImageVAlignBox.Items.Add("置顶");
-        _ImageVAlignBox.Items.Add("置底");
+        _ImageHAlignBox.Items.Add("Horizontal Center");
+        _ImageHAlignBox.Items.Add("Left Align");
+        _ImageHAlignBox.Items.Add("Right alignment");
+        _ImageVAlignBox.Items.Add("Vertical Center");
+        _ImageVAlignBox.Items.Add("Top");
+        _ImageVAlignBox.Items.Add("Bottom");
 
         Reload();
     }

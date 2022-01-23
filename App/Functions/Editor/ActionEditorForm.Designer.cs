@@ -89,7 +89,7 @@
 			this._OkButton.Name = "_OkButton";
 			this._OkButton.Size = new System.Drawing.Size (75, 23);
 			this._OkButton.TabIndex = 0;
-			this._OkButton.Text = "确定(&Q)";
+			this._OkButton.Text = "OK (&Q)";
 			this._OkButton.UseVisualStyleBackColor = true;
 			this._OkButton.Click += new System.EventHandler (this._OkButton_Click);
 			//
@@ -101,7 +101,7 @@
 			this._CancelButton.Name = "_CancelButton";
 			this._CancelButton.Size = new System.Drawing.Size (75, 23);
 			this._CancelButton.TabIndex = 1;
-			this._CancelButton.Text = "取消(&X)";
+			this._CancelButton.Text = "Cancel (&X)";
 			this._CancelButton.UseVisualStyleBackColor = true;
 			this._CancelButton.Click += new System.EventHandler (this._CancelButton_Click);
 			//
@@ -119,7 +119,7 @@
 			this._DestinationPanel.Size = new System.Drawing.Size (417, 238);
 			this._DestinationPanel.TabIndex = 7;
 			this._DestinationPanel.TabStop = false;
-			this._DestinationPanel.Text = "目标";
+			this._DestinationPanel.Text = "Destination";
 			//
 			// _PathPanel
 			//
@@ -150,7 +150,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size (89, 12);
 			this.label4.TabIndex = 2;
-			this.label4.Text = "外部文档路径：";
+			this.label4.Text = "External document path:";
 			//
 			// _NewWindowBox
 			//
@@ -159,7 +159,7 @@
 			this._NewWindowBox.Name = "_NewWindowBox";
 			this._NewWindowBox.Size = new System.Drawing.Size (96, 16);
 			this._NewWindowBox.TabIndex = 4;
-			this._NewWindowBox.Text = "在新窗口打开";
+			this._NewWindowBox.Text = "Open in a new window";
 			this._NewWindowBox.UseVisualStyleBackColor = true;
 			//
 			// _NamedBox
@@ -178,7 +178,7 @@
 			this._GotoNamedDestBox.Size = new System.Drawing.Size (95, 16);
 			this._GotoNamedDestBox.TabIndex = 13;
 			this._GotoNamedDestBox.TabStop = true;
-			this._GotoNamedDestBox.Text = "转到命名位置";
+			this._GotoNamedDestBox.Text = "Go to a naming location";
 			this._GotoNamedDestBox.UseVisualStyleBackColor = true;
 			this._GotoNamedDestBox.CheckedChanged += new System.EventHandler (this.Control_ValueChanged);
 			//
@@ -190,7 +190,7 @@
 			this._GotoLocationBox.Size = new System.Drawing.Size (95, 16);
 			this._GotoLocationBox.TabIndex = 12;
 			this._GotoLocationBox.TabStop = true;
-			this._GotoLocationBox.Text = "转到指定位置";
+			this._GotoLocationBox.Text = "Go to the specified location";
 			this._GotoLocationBox.UseVisualStyleBackColor = true;
 			this._GotoLocationBox.CheckedChanged += new System.EventHandler (this.Control_ValueChanged);
 			//
@@ -223,7 +223,7 @@
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size (95, 12);
 			this.label10.TabIndex = 11;
-			this.label10.Text = "（0：保持不变）";
+			this.label10.Text = "(0: remain unchanged)";
 			//
 			// label3
 			//
@@ -232,7 +232,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size (65, 12);
 			this.label3.TabIndex = 0;
-			this.label3.Text = "目标页面：";
+			this.label3.Text = "Target page:";
 			//
 			// _KeepYBox
 			//
@@ -241,7 +241,7 @@
 			this._KeepYBox.Name = "_KeepYBox";
 			this._KeepYBox.Size = new System.Drawing.Size (48, 16);
 			this._KeepYBox.TabIndex = 7;
-			this._KeepYBox.Text = "默认";
+			this._KeepYBox.Text = "default";
 			this._KeepYBox.UseVisualStyleBackColor = true;
 			this._KeepYBox.CheckedChanged += new System.EventHandler (this.Control_ValueChanged);
 			//
@@ -274,7 +274,7 @@
 			this._KeepXBox.Name = "_KeepXBox";
 			this._KeepXBox.Size = new System.Drawing.Size (48, 16);
 			this._KeepXBox.TabIndex = 4;
-			this._KeepXBox.Text = "默认";
+			this._KeepXBox.Text = "default";
 			this._KeepXBox.UseVisualStyleBackColor = true;
 			this._KeepXBox.CheckedChanged += new System.EventHandler (this.Control_ValueChanged);
 			//
@@ -285,7 +285,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size (53, 12);
 			this.label5.TabIndex = 2;
-			this.label5.Text = "横坐标：";
+			this.label5.Text = "X-axis";
 			//
 			// _ZoomRateBox
 			//
@@ -321,7 +321,7 @@
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size (65, 12);
 			this.label7.TabIndex = 9;
-			this.label7.Text = "缩放比例：";
+			this.label7.Text = "scaling ratio:";
 			//
 			// _TopBox
 			//
@@ -348,7 +348,7 @@
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size (53, 12);
 			this.label6.TabIndex = 5;
-			this.label6.Text = "纵坐标：";
+			this.label6.Text = "Y-axis: ";
 			//
 			// _RectanglePanel
 			//
@@ -369,7 +369,7 @@
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size (41, 12);
 			this.label8.TabIndex = 0;
-			this.label8.Text = "宽度：";
+			this.label8.Text = "width:";
 			//
 			// _WidthBox
 			//
@@ -391,7 +391,7 @@
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size (41, 12);
 			this.label9.TabIndex = 2;
-			this.label9.Text = "高度：";
+			this.label9.Text = "high:";
 			//
 			// _HeightBox
 			//
@@ -423,7 +423,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size (41, 12);
 			this.label2.TabIndex = 5;
-			this.label2.Text = "动作：";
+			this.label2.Text = "action:";
 			//
 			// _TitleBox
 			//
@@ -441,7 +441,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size (41, 12);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "名称：";
+			this.label1.Text = "name:";
 			//
 			// tabControl1
 			//
@@ -467,7 +467,7 @@
 			this.tabPage1.Padding = new System.Windows.Forms.Padding (3);
 			this.tabPage1.Size = new System.Drawing.Size (429, 304);
 			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "常规";
+			this.tabPage1.Text = "conventional";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			//
 			// _DefaultOpenBox
@@ -477,7 +477,7 @@
 			this._DefaultOpenBox.Name = "_DefaultOpenBox";
 			this._DefaultOpenBox.Size = new System.Drawing.Size (96, 16);
 			this._DefaultOpenBox.TabIndex = 9;
-			this._DefaultOpenBox.Text = "默认打开书签";
+			this._DefaultOpenBox.Text = "Open bookmark by default";
 			this._DefaultOpenBox.UseVisualStyleBackColor = true;
 			//
 			// _ScriptBox
@@ -491,7 +491,7 @@
 			this._ScriptBox.Size = new System.Drawing.Size (75, 49);
 			this._ScriptBox.TabIndex = 8;
 			this._ScriptBox.TabStop = false;
-			this._ScriptBox.Text = "脚本内容";
+			this._ScriptBox.Text = "Scripting content";
 			this._ScriptBox.Visible = false;
 			//
 			// _ScriptContentBox
@@ -513,7 +513,7 @@
 			this.tabPage2.Padding = new System.Windows.Forms.Padding (3);
 			this.tabPage2.Size = new System.Drawing.Size (429, 304);
 			this.tabPage2.TabIndex = 1;
-			this.tabPage2.Text = "属性";
+			this.tabPage2.Text = "Attributes";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			//
 			// _AttributesBox
@@ -534,12 +534,12 @@
 			//
 			// _AttrNameColumn
 			//
-			this._AttrNameColumn.Text = "属性名称";
+			this._AttrNameColumn.Text = "Attribute name";
 			//
 			// _AttrValueColumn
 			//
 			this._AttrValueColumn.FillsFreeSpace = true;
-			this._AttrValueColumn.Text = "属性值";
+			this._AttrValueColumn.Text = "Attribute value";
 			//
 			// ActionEditorForm
 			//
@@ -557,7 +557,7 @@
 			this.MinimizeBox = false;
 			this.Name = "ActionEditorForm";
 			this.ShowInTaskbar = false;
-			this.Text = "链接属性编辑器";
+			this.Text = "Link Property Editor";
 			this._DestinationPanel.ResumeLayout (false);
 			this._DestinationPanel.PerformLayout ();
 			this._PathPanel.ResumeLayout (false);

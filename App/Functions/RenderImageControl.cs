@@ -49,7 +49,7 @@ public partial class RenderImageControl : FunctionControl, IResettableControl
         _ExtractPageRatioBox.GotFocus += (_, _) => { _SpecificRatioBox.Checked = true; };
     }
 
-    public override string FunctionName => "转换页面为图片";
+    public override string FunctionName => "Convert page for image";
 
     public override Bitmap IconImage => Resources.RenderDocument;
 
@@ -101,18 +101,22 @@ public partial class RenderImageControl : FunctionControl, IResettableControl
     {
         base.OnLoad(e);
         ShowFileMaskPreview();
-        AppContext.MainForm.SetTooltip(_SourceFileControl.FileList, "包含图片的 PDF 文件路径");
-        AppContext.MainForm.SetTooltip(_TargetBox, "放置输出图片的文件夹路径");
-        AppContext.MainForm.SetTooltip(_ExtractPageRangeBox, "需要提取图片的页码范围，不指定页码范围时提取所有页面的图片");
+        AppContext.MainForm.SetTooltip(_SourceFileControl.FileList, "Path to PDF file containing images");
+        AppContext.MainForm.SetTooltip(_TargetBox, "The path to the folder where the output image is placed");
+        AppContext.MainForm.SetTooltip(_ExtractPageRangeBox,
+            "The page number range of the picture needs to be extracted, and the pictures of all pages are extracted when the page number range is not specified");
         AppContext.MainForm.SetTooltip(_FileNameMaskBox,
-            "提取的图片文件名按其所在页码数字命名，可在此修改命名规则\n“0000”：不足四位用0补足四位\n“0”：文件名按实际页码，不用0补位\n可用英文双引号将文本括起来（如“\"相约2000\"0”，前面的“2000”不会被解释为占位符）");
-        AppContext.MainForm.SetTooltip(_VerticalFlipImageBox, "某些 PDF 文件导出的图片上下颠倒，可用此选项将其还原");
-        AppContext.MainForm.SetTooltip(_InvertColorBox, "翻转 PNG 和 TIFF 黑白图片的颜色");
-        AppContext.MainForm.SetTooltip(_QuantizeBox, "尽量减少导出图片所用的颜色，从而减小图片占用的磁盘空间");
-        AppContext.MainForm.SetTooltip(_SpecificWidthBox, "指定输出图片的宽度（单位为像素，图片的高度将按比例缩放）");
-        AppContext.MainForm.SetTooltip(_SpecificRatioBox, "指定输出图片的放大倍数");
+            "The name of the extracted image file is named according to the number of the page where it is located, and the naming rules can be modified here\n\"0000\": If there are less than four digits, use 0 to make up the four digits\n\"0\": The file name is based on the actual page number, without 0 to make up the digits\n n You can enclose the text in English double quotation marks (such as \"\\\" is about 2000\"0\", the preceding \"2000\" will not be interpreted as a placeholder)");
+        AppContext.MainForm.SetTooltip(_VerticalFlipImageBox,
+            "The image exported from some PDF files is upside down, you can use this option to restore it");
+        AppContext.MainForm.SetTooltip(_InvertColorBox, "Invert the color of PNG and TIFF black and white images");
+        AppContext.MainForm.SetTooltip(_QuantizeBox,
+            "Minimize the colors used for exporting pictures, thereby reducing the disk space occupied by pictures");
+        AppContext.MainForm.SetTooltip(_SpecificWidthBox,
+            "Specify the width of the output image (in pixels, the height of the image will be scaled proportionally)");
+        AppContext.MainForm.SetTooltip(_SpecificRatioBox, "Specify the magnification of the output image");
         AppContext.MainForm.SetTooltip(_ExtractPageImageWidthBox,
-            "指定输出图片的宽度（单位为像素，图片的高度将按比例缩放），宽度为 0 时相当于按 1：1 比例输出");
+            "Specify the width of the output image (in pixels, the height of the image will be scaled proportionally), when the width is 0, it is equivalent to a 1:1 ratio output");
         Reload();
     }
 
@@ -234,7 +238,7 @@ public partial class RenderImageControl : FunctionControl, IResettableControl
         }
         catch (Exception)
         {
-            _FileMaskPreviewBox.Text = "文件名掩码无效。";
+            _FileMaskPreviewBox.Text = "The file name mask is invalid.";
         }
     }
 

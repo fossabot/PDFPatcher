@@ -11,7 +11,7 @@ public class Bound
     {
         if (right < left)
         {
-            Debug.WriteLine("右端坐标不能小于左端坐标。");
+            Debug.WriteLine("The right end coordinates cannot be less than the left end coordinates.");
             float t = right;
             right = left;
             left = t;
@@ -124,7 +124,7 @@ public class Bound
     {
         if (IsTopDown != other.IsTopDown && IsTopUp != other.IsTopUp)
         {
-            throw new ArgumentException("区域坐标系不同。");
+            throw new ArgumentException("The area coordinate system is different.");
         }
 
         float hd = float.MaxValue, vd = float.MaxValue;
@@ -204,7 +204,7 @@ public class Bound
 
         if (hp == DistanceInfo.Placement.Unknown && vp == DistanceInfo.Placement.Unknown)
         {
-            throw new ArgumentOutOfRangeException("位置错误。");
+            throw new ArgumentOutOfRangeException("Location error.");
         }
 
         DistanceInfo v = new(vp, hd, vd);

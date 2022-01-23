@@ -10,7 +10,7 @@ internal sealed class ForceInternalLinkProcessor : IPdfInfoXmlProcessor
 {
     #region IInfoDocProcessor member
 
-    public string Name => "设置点击目标到页首";
+    public string Name => "Set click target to page";
 
     public IUndoAction Process(XmlElement item)
     {

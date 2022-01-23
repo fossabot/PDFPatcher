@@ -8,14 +8,14 @@ internal sealed class RemoveThumbnailProcessor : IPageProcessor
 
     #region IPageProcessor member
 
-    public string Name => "删除缩略图";
+    public string Name => "Delete Thumbnail";
 
     public void BeginProcess(DocProcessorContext context) => _processedItemCount = 0;
 
     public bool EndProcess(PdfReader pdf)
     {
-        Tracker.TraceMessage(Tracker.Category.Notice, Name + "功能：");
-        Tracker.TraceMessage("　　删除了 " + _processedItemCount + " 幅缩略图。");
+        Tracker.TraceMessage(Tracker.Category.Notice, Name + "Function:");
+        Tracker.TraceMessage(" Deleted " + _processedItemCount + " thumbnails.");
         return false;
     }
 

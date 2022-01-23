@@ -62,18 +62,18 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size (101, 12);
 			this.label2.TabIndex = 5;
-			this.label2.Text = "匹配文本块的坐标";
+			this.label2.Text = "Match the coordinates of text blocks";
 			//
 			// _PositionBox
 			//
 			this._PositionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this._PositionBox.FormattingEnabled = true;
-			this._PositionBox.Items.AddRange (new object[] {
-            "上坐标",
-            "下坐标",
-            "左坐标",
-            "右坐标"});
-			this._PositionBox.Location = new System.Drawing.Point (135, 3);
+	this._PositionBox.Items.AddRange (new object[] {
+             "upper coordinates",
+             "lower coordinates",
+             "left coordinate",
+             "Right coordinate"});
+this._PositionBox.Location = new System.Drawing.Point(135, 3);
 			this._PositionBox.Name = "_PositionBox";
 			this._PositionBox.Size = new System.Drawing.Size (121, 20);
 			this._PositionBox.TabIndex = 4;
@@ -87,7 +87,7 @@
 			this._RangeBox.Size = new System.Drawing.Size (95, 16);
 			this._RangeBox.TabIndex = 3;
 			this._RangeBox.TabStop = true;
-			this._RangeBox.Text = "匹配坐标范围";
+			this._RangeBox.Text = "Matching coordinate range";
 			this._RangeBox.UseVisualStyleBackColor = true;
 			this._RangeBox.CheckedChanged += new System.EventHandler (this.ControlChanged);
 			//
@@ -119,7 +119,7 @@
 			this._SpecificBox.Size = new System.Drawing.Size (107, 16);
 			this._SpecificBox.TabIndex = 3;
 			this._SpecificBox.TabStop = true;
-			this._SpecificBox.Text = "匹配特定坐标值";
+			this._SpecificBox.Text = "Match a specific coordinate value";
 			this._SpecificBox.UseVisualStyleBackColor = true;
 			this._SpecificBox.CheckedChanged += new System.EventHandler (this.ControlChanged);
 			//
@@ -150,7 +150,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size (17, 12);
 			this.label1.TabIndex = 2;
-			this.label1.Text = "到";
+			this.label1.Text = " to ";
 			//
 			// _MaxBox
 			//

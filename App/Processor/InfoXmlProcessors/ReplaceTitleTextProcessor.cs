@@ -24,7 +24,7 @@ internal sealed class ReplaceTitleTextProcessor : IPdfInfoXmlProcessor
 
     #region IInfoDocProcessor member
 
-    public string Name => string.Concat("替换文本为“", _replacement, "”");
+    public string Name => string.Concat("Replace text with \"", _replacement, "\"");
 
     public IUndoAction Process(XmlElement item)
     {

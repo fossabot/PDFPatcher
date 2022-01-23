@@ -24,7 +24,7 @@ internal sealed class ChangeZoomRateProcessor : IPdfInfoXmlProcessor
 
     #region IInfoDocProcessor member
 
-    public string Name => "更改缩放比例";
+    public string Name => "Change zoom ratio";
 
     public IUndoAction Process(XmlElement item)
     {

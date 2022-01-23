@@ -20,18 +20,19 @@ namespace PDFPatcher.Processor;
 
 internal static class Worker
 {
-    private const string OperationCanceled = "已经取消操作。";
+    private const string OperationCanceled = "The operation has been canceled.";
 
     private static PdfReader OpenPdf(string sourceFile, bool loadPartial, bool removeUnusedObjects)
     {
         try
         {
-            Tracker.TraceMessage(Tracker.Category.ImportantMessage, string.Concat("打开 PDF 文件：<<", sourceFile, ">>。"));
+            Tracker.TraceMessage(Tracker.Category.ImportantMessage,
+                string.Concat("Open the PDF file: <<", sourceFile, ">>。"));
             return PdfHelper.OpenPdfFile(sourceFile, loadPartial, removeUnusedObjects);
         }
         catch (FileNotFoundException)
         {
-            FormHelper.ErrorBox(string.Concat("找不到文件：“", sourceFile, "”。"));
+            FormHelper.ErrorBox(string.Concat("Can't find the file: \"", sourceFile, "\"."));
             return null;
         }
         catch (BadPasswordException)
@@ -42,7 +43,7 @@ internal static class Worker
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("在打开 PDF 文件时遇到错误：\n" + ex.Message);
+            FormHelper.ErrorBox("When you open the PDF file: \n" + ex.Message);
 #if DEBUG
             Tracker.TraceMessage(ex);
 #endif
@@ -54,7 +55,9 @@ internal static class Worker
     {
         const int loadDocProgressWeight = 10;
         Tracker.TraceMessage(Tracker.Category.InputFile, sourceFile);
-        PdfReader pdf = OpenPdf(sourceFile, true, false); // 由于导出图片一般不需要往复访问文档，可用此选项降低内存占用及提高打开速度
+        PdfReader
+            pdf = OpenPdf(sourceFile, true,
+                false); //Since the export image is generally not required to recover the document, this option can be used to reduce memory and improve the opening speed.
         if (pdf == null)
         {
             return;
@@ -72,7 +75,7 @@ internal static class Worker
         string om = options.FileMask;
         try
         {
-            Tracker.TraceMessage("正在导出图片。");
+            Tracker.TraceMessage("Export the picture.");
             Tracker.TrackProgress(loadDocProgressWeight);
             if (FileHelper.HasFileNameMacro(targetPath))
             {
@@ -98,7 +101,8 @@ internal static class Worker
             }
 
             Tracker.TrackProgress(loadCount);
-            Tracker.TraceMessage(Tracker.Category.Alert, "成功提取图片文件，存放目录为：<<" + targetPath + ">>。");
+            Tracker.TraceMessage(Tracker.Category.Alert,
+                "Successfully extract image files, save the directory: <<" + targetPath + ">>。");
         }
         catch (OperationCanceledException)
         {
@@ -107,7 +111,7 @@ internal static class Worker
         catch (Exception ex)
         {
             Tracker.TraceMessage(ex);
-            FormHelper.ErrorBox("在导出图片时遇到错误：\n" + ex.Message);
+            FormHelper.ErrorBox("When exporting pictures, you encounter an error: \n" + ex.Message);
         }
         finally
         {
@@ -134,7 +138,7 @@ internal static class Worker
             PageRangeCollection ranges = PageRangeCollection.Parse(options.ExtractPageRange, 1, mupdf.PageCount, true);
             int loadCount = loadDocProgressWeight + ranges.TotalPages;
             Tracker.SetProgressGoal(loadCount);
-            Tracker.TraceMessage("正在转换图片。");
+            Tracker.TraceMessage("Convert the picture.");
             Tracker.TrackProgress(loadDocProgressWeight);
             foreach (PageRange range in ranges)
                 foreach (int i in range)
@@ -146,7 +150,7 @@ internal static class Worker
                     {
                         if (bmp == null)
                         {
-                            Tracker.TraceMessage(Tracker.Category.Error, "页面" + i + "的尺寸为空。");
+                            Tracker.TraceMessage(Tracker.Category.Error, "The dimension of page" + i + " is empty.");
                         }
                         else if (options.FileFormat == ImageFormat.Tiff)
                         {
@@ -192,7 +196,9 @@ internal static class Worker
                 }
 
             Tracker.TrackProgress(loadCount);
-            Tracker.TraceMessage(Tracker.Category.Alert, "成功转换图片文件，存放目录为：<<" + options.ExtractImagePath + ">>。");
+            Tracker.TraceMessage(Tracker.Category.Alert,
+                "Successfully converted the image file, the storage directory is: <<" + options.ExtractImagePath +
+                ">>.");
         }
         catch (OperationCanceledException)
         {
@@ -201,7 +207,7 @@ internal static class Worker
         catch (Exception ex)
         {
             Tracker.TraceMessage(ex);
-            FormHelper.ErrorBox("在转换图片时遇到错误：\n" + ex.Message);
+            FormHelper.ErrorBox("An error was encountered while converting the image:\n" + ex.Message);
         }
         finally
         {
@@ -231,12 +237,12 @@ internal static class Worker
         if (AppContext.Exporter.ExtractImages)
         {
             AppContext.Exporter.Images.OutputPath = FileHelper.CombinePath(Path.GetDirectoryName(targetFile),
-                Path.GetFileNameWithoutExtension(targetFile) + "图片文件\\");
+                Path.GetFileNameWithoutExtension(targetFile) + "Picture file\\");
         }
 
         try
         {
-            Tracker.TraceMessage("正在导出信息文件。");
+            Tracker.TraceMessage("Exporting message file.");
             if (targetFile.EndsWith(".txt", StringComparison.OrdinalIgnoreCase))
             {
                 Tracker.SetProgressGoal(50);
@@ -260,12 +266,13 @@ internal static class Worker
                 w.WriteEndElement();
             }
 
-            Tracker.TraceMessage(Tracker.Category.Alert, "成功导出信息文件到 <<" + targetFile + ">>。");
+            Tracker.TraceMessage(Tracker.Category.Alert,
+                "Successfully exported message file to <<" + targetFile + ">>.");
             //if (this._BookmarkBox.Text.Length == 0) {
-            //    this._BookmarkBox.Text = targetFile;
+            // this._BookmarkBox.Text = targetFile;
             //}
-            //if (Common.Form.YesNoBox ("已完成导出信息文件到 " + targetFile + "，是否使用内置的编辑器编辑文件？") == DialogResult.Yes) {
-            //    ShowInfoFileEditorForm (targetFile);
+            //if (Common.Form.YesNoBox ("Completed exporting the information file to " + targetFile + ", do you want to use the built-in editor to edit the file?") == DialogResult.Yes) {
+            // ShowInfoFileEditorForm (targetFile);
             //}
         }
         catch (OperationCanceledException)
@@ -275,12 +282,13 @@ internal static class Worker
         catch (EncoderFallbackException ex)
         {
             Tracker.TraceMessage(ex);
-            FormHelper.ErrorBox("在导出信息文件时遇到错误：\n" + ex.Message + "\n\n请选择在导出信息选项中选择其它编码方式。");
+            FormHelper.ErrorBox("An error was encountered while exporting the message file:\n" + ex.Message +
+                                "\n\nPlease choose another encoding method in the export message option.");
         }
         catch (Exception ex)
         {
             Tracker.TraceMessage(ex);
-            FormHelper.ErrorBox("在导出信息文件时遇到错误：\n" + ex.Message);
+            FormHelper.ErrorBox("An error was encountered while exporting the message file:\n" + ex.Message);
         }
         finally
         {
@@ -294,13 +302,13 @@ internal static class Worker
         string sourcePath = sourceFile.FilePath.ToString();
         if (sourceFile.FilePath.IsEmpty)
         {
-            Tracker.TraceMessage(Tracker.Category.Error, "输入文件名为空。");
+            Tracker.TraceMessage(Tracker.Category.Error, "The input filename is empty.");
             return;
         }
 
         if (string.IsNullOrEmpty(targetFile) || targetFile.IsEmpty)
         {
-            Tracker.TraceMessage(Tracker.Category.Error, "输出文件名为空。");
+            Tracker.TraceMessage(Tracker.Category.Error, "The output filename is empty.");
             return;
         }
 
@@ -324,13 +332,16 @@ internal static class Worker
             }
             else if (string.IsNullOrEmpty(docPath))
             {
-                Tracker.TraceMessage("没有指定信息文件，将按程序界面的设置执行补丁。");
+                Tracker.TraceMessage(
+                    "The information file is not specified, the patch will be executed according to the settings of the program interface.");
                 import = new DocInfoImporter(options, pdf, pdfSettings, null);
-                Tracker.TraceMessage("加载源 PDF 文件信息完毕，准备执行补丁操作。");
+                Tracker.TraceMessage(
+                    "The information of the source PDF file is loaded, and the patch operation is ready.");
             }
             else
             {
-                Tracker.TraceMessage(Tracker.Category.ImportantMessage, string.Concat("加载信息文件：<<", docPath, ">>。"));
+                Tracker.TraceMessage(Tracker.Category.ImportantMessage,
+                    string.Concat("Load information file: <<", docPath, ">>."));
                 import = new DocInfoImporter(options, docPath);
                 if (import.InfoDoc != null && VerifyInfoDocument(import.InfoDoc) == false)
                 {
@@ -350,7 +361,7 @@ internal static class Worker
                 return;
             }
 
-            Tracker.TraceMessage("导入文档属性。");
+            Tracker.TraceMessage("Import document properties.");
             //var pdfInfo = DocInfoExporter.RewriteDocInfoWithEncoding (pdf.Trailer.GetAsDict (PdfName.INFO), AppContext.Encodings.DocInfoEncoding);
             GeneralInfo info = pdfSettings.MetaData.SpecifyMetaData
                 ? pdfSettings.MetaData
@@ -372,7 +383,9 @@ internal static class Worker
             Tracker.TraceMessage(Tracker.Category.OutputFile, targetFile);
             if (FileHelper.ComparePath(sourcePath, targetFile))
             {
-                if (FormHelper.YesNoBox("是否覆盖原始 PDF 文件？\n如处理过程出现错误，覆盖操作将导致原始数据无法恢复！") == DialogResult.No)
+                if (FormHelper.YesNoBox(
+                        "Would you like to overwrite the original PDF file?\nIf there is an error in the processing process, the overwriting operation will cause the original data to be unrecoverable!") ==
+                    DialogResult.No)
                 {
                     Tracker.TraceMessage(Tracker.Category.Error, Messages.SourceFileEqualsTargetFile);
                     return;
@@ -392,7 +405,7 @@ internal static class Worker
             PdfStamper st = new(pdf, s);
             pdfEngine.ProcessDocument(st.Writer);
 
-            #region 处理信息文件
+            #region Processing information files
 
             List<IInfoDocProcessor> processors = new();
             if (pdfSettings.ViewerPreferences.RemoveZoomRate)
@@ -416,10 +429,10 @@ internal static class Worker
                 processors.Add(new ForceInternalDestinationProcessor());
             }
 
-            //var cts = new CoordinateTranslationSettings[pdf.NumberOfPages + 1]; // 页面的位置偏移量
+            //var cts = new CoordinateTranslationSettings[pdf.NumberOfPages + 1]; // Page position offset
             //var sc = false;
             //if (pdfSettings.PageSettings.Count > 0) {
-            //    Tracker.TraceMessage ("重设页面尺寸。");
+            //    Tracker.TraceMessage ("Reset page size.");
             //    pdf.ResetReleasePage ();
             //    foreach (var item in pdfSettings.PageSettings) {
             //        var ranges = PageRangeCollection.Parse (item.PageRanges, 1, pdf.NumberOfPages, true);
@@ -428,7 +441,7 @@ internal static class Worker
             //                var s = PageDimensionProcessor.ResizePage (pdf.GetPageN (i), item.PaperSize, item.HorizontalAlign, item.VerticalAlign, -1, item.ScaleContent);
             //                if (item.ScaleContent && s.XScale != 1 && s.YScale != 1) {
             //                    PageDimensionProcessor.ScaleContent (pdf, i, s);
-            //                    cts[i] = s; // TODO: 需要解决重复指定相同页面的问题
+            //                    cts[i] = s; // TODO: Need to resolve the issue of repeated designation of the same page
             //                    sc = true;
             //                }
             //            }
@@ -474,7 +487,7 @@ internal static class Worker
             XmlElement bookmarks = null;
             if (options.ImportBookmarks && pdfSettings.RemoveBookmarks == false || xInfoDoc != null)
             {
-                Tracker.TraceMessage("导入书签。");
+                Tracker.TraceMessage("Import bookmarks.");
                 bookmarks = import.GetBookmarks() ??
                             OutlineManager.GetBookmark(pdf, new UnitConverter { Unit = Constants.Units.Point });
             }
@@ -509,12 +522,12 @@ internal static class Worker
             }
 
             Tracker.IncrementProgress(10);
-            Tracker.TraceMessage("导入文档设置。");
+            Tracker.TraceMessage("Import documentation settings.");
             import.ImportViewerPreferences(pdf);
             DocInfoImporter.OverrideViewerPreferences(pdfSettings.ViewerPreferences, pdf, st.Writer);
             //import.OverrideDocumentSettings (pdf);
             Tracker.IncrementProgress(5);
-            Tracker.TraceMessage("清理输出文件。");
+            Tracker.TraceMessage("Clean up the output file.");
             pdf.RemoveUnusedObjects();
             if (pdf.AcroForm == null)
             {
@@ -522,7 +535,7 @@ internal static class Worker
             }
 
             Tracker.IncrementProgress(10);
-            Tracker.TraceMessage("保存文件：" + targetFile);
+            Tracker.TraceMessage("save document: " + targetFile);
             st.Close();
             Tracker.TrackProgress(workload);
         }
@@ -534,7 +547,7 @@ internal static class Worker
         catch (Exception ex)
         {
             Tracker.TraceMessage(ex);
-            FormHelper.ErrorBox("在导入信息时发生错误：\n" + ex.Message);
+            FormHelper.ErrorBox("An error occurred while importing information: \n" + ex.Message);
             return;
         }
         finally
@@ -557,18 +570,20 @@ internal static class Worker
         {
             try
             {
-                Tracker.TraceMessage("覆盖输入文件。");
+                Tracker.TraceMessage("Overwrite the input file.");
                 File.Delete(sourcePath);
                 File.Move(targetFile, sourcePath);
                 targetFile = sourcePath;
             }
             catch (Exception)
             {
-                FormHelper.ErrorBox("无法覆盖输入文件。\n请手工将“" + Ext.Tmp + "”后缀的临时文件更名为输入文件。");
+                FormHelper.ErrorBox(
+                    "The input file cannot be overwritten.\nPlease manually rename the temporary file suffixed with \"" +
+                    Ext.Tmp + "\" to the input file.");
             }
         }
 
-        Tracker.TraceMessage(Tracker.Category.Alert, "成功导入信息到 <<" + targetFile + ">>。");
+        Tracker.TraceMessage(Tracker.Category.Alert, "Successfully imported message to <<" + targetFile + ">>.");
     }
 
     internal static string ReplaceTargetFileNameMacros(string sourceFile, string targetFile, PdfReader pdf)
@@ -592,7 +607,7 @@ internal static class Worker
     /// <returns>replaces the file name after the target file name.</returns>
     internal static string ReplaceTargetFileNameMacros(string sourceFile, string targetFile, PdfDictionary info)
     {
-        string p = null; // 文档属性
+        string p = null; // Document property
         if (info == null)
         {
             return targetFile
@@ -649,15 +664,18 @@ internal static class Worker
                 // Use Chinese bookmarks
                 string v = root.GetAttribute(Constants.Info.ProductVersion);
                 if (v != Constants.InfoDocVersion
-                    && FormHelper.YesNoBox(string.Concat("信息文件不是用这个版本的程序生成的，可能会导入不成功，是否继续？\n当前程序的版本是：",
-                        Application.ProductVersion, "\n信息文件的导出程序版本是：", v)) == DialogResult.No)
+                    && FormHelper.YesNoBox(string.Concat(
+                        "The information file is not generated by this version of the program, it may be imported unsuccessfully, do you want to continue?\nThe current program version is: ",
+                        Application.ProductVersion, "\nThe exporter version of the info file is:", v)) ==
+                    DialogResult.No)
                 {
                     return false;
                 }
 
                 break;
             default:
-                FormHelper.ErrorBox("信息文件格式有误，根元素不是“" + Constants.PdfInfo + "”。");
+                FormHelper.ErrorBox("The format of the information file is incorrect, the root element is not \"" +
+                                    Constants.PdfInfo + "\".");
                 return false;
         }
 
@@ -690,7 +708,7 @@ internal static class Worker
         catch (Exception ex)
         {
             Tracker.TraceMessage(ex);
-            FormHelper.ErrorBox("在导出页面内容时出错：\n" + ex.Message);
+            FormHelper.ErrorBox("An error occurred while exporting the page content: \n" + ex.Message);
         }
         finally
         {
@@ -716,7 +734,8 @@ internal static class Worker
         DocumentSink sink = new(sources, true);
         if (sink.Workload == 0)
         {
-            Tracker.TraceMessage(Tracker.Category.ImportantMessage, "合并文件列表不包含图片或 PDF 文件。");
+            Tracker.TraceMessage(Tracker.Category.ImportantMessage,
+                "The merged file list does not include a picture or PDF file.");
             return;
         }
 
@@ -729,7 +748,8 @@ internal static class Worker
             BookmarkContainer bookmarks = null;
             if (string.IsNullOrEmpty(infoFile) == false)
             {
-                Tracker.TraceMessage(Tracker.Category.ImportantMessage, string.Concat("加载信息文件：<<", infoFile, ">>。"));
+                Tracker.TraceMessage(Tracker.Category.ImportantMessage,
+                    string.Concat("Load information file: <<", infoFile, ">>。"));
                 DocInfoImporter import = new(impOptions, infoFile);
                 info = import.ImportDocumentInformation();
                 labels = import.ImportPageLabels();
@@ -743,10 +763,10 @@ internal static class Worker
 
             FilePath f = targetFile.EnsureExtension(Ext.Pdf);
             Tracker.TraceMessage(Tracker.Category.OutputFile, f.ToString());
-            Tracker.TraceMessage(Tracker.Category.ImportantMessage, string.Concat("输出到文件：", f, "。"));
+            Tracker.TraceMessage(Tracker.Category.ImportantMessage, string.Concat("Output to the file: ", f, "。"));
             if (f.IsValidPath == false)
             {
-                Tracker.TraceMessage(Tracker.Category.Error, "输出文件路径无效。");
+                Tracker.TraceMessage(Tracker.Category.Error, "The output file path is invalid.");
                 return;
             }
 
@@ -778,7 +798,7 @@ internal static class Worker
                 creator.ProcessFile(item, creator.PdfBookmarks.BookmarkRoot);
             }
 
-            Tracker.TraceMessage("设置文档选项。");
+            Tracker.TraceMessage("Set the document option.");
             DocInfoImporter.ImportDocumentInformation(option.MetaData.SpecifyMetaData
                 ? option.MetaData
                 : info, doc);
@@ -791,14 +811,14 @@ internal static class Worker
 
             if (bookmarks is { HasChildNodes: true })
             {
-                Tracker.TraceMessage("写入文档书签。");
+                Tracker.TraceMessage("Write document bookmarks.");
                 OutlineManager.WriteOutline(w, bookmarks,
                     w.PageEmpty ? w.CurrentPageNumber - 1 : w.CurrentPageNumber);
                 w.ViewerPreferences = PdfWriter.PageModeUseOutlines;
             }
 
-            Tracker.TraceMessage("写入文件索引。");
-            Tracker.TraceMessage(Tracker.Category.Alert, "生成文件：<<" + targetFile + ">>。");
+            Tracker.TraceMessage("Write file index.");
+            Tracker.TraceMessage(Tracker.Category.Alert, "Generated file: <<" + targetFile + ">>.");
             w.Close();
         }
         catch (OperationCanceledException)
@@ -808,7 +828,7 @@ internal static class Worker
         catch (Exception ex)
         {
             Tracker.TraceMessage(ex);
-            FormHelper.ErrorBox("在生成文档时出错：\n" + ex.Message);
+            FormHelper.ErrorBox("Error generating document:\n" + ex.Message);
         }
         finally
         {
@@ -856,7 +876,7 @@ internal static class Worker
 
         try
         {
-            Tracker.TraceMessage("正在分析 PDF 文件。");
+            Tracker.TraceMessage("Analyzing PDF file.");
             int workload = creator.EstimateWorkload();
             Tracker.SetProgressGoal(workload);
             using (XmlWriter w = XmlWriter.Create(bookmarkFile, DocInfoExporter.GetWriterSettings()))
@@ -865,7 +885,8 @@ internal static class Worker
                 w.WriteStartElement(Constants.PdfInfo);
                 w.WriteAttributeString(Constants.Info.ProductName, Application.ProductName);
                 w.WriteAttributeString(Constants.Info.ProductVersion, Constants.InfoDocVersion);
-                w.WriteAttributeString(Constants.Info.ExportDate, DateTime.Now.ToString("yyyy年MM月dd日 HH:mm:ss"));
+                w.WriteAttributeString(Constants.Info.ExportDate,
+                    DateTime.Now.ToString("MM month dd day yyyy HH:mm:ss"));
                 //w.WriteAttributeString (Constants.Info.DocumentName, Path.GetFileNameWithoutExtension (sourceFile));
                 w.WriteAttributeString(Constants.Info.DocumentPath, sourceFile);
                 w.WriteAttributeString(Constants.Info.PageNumber, r.NumberOfPages.ToText());
@@ -873,7 +894,8 @@ internal static class Worker
                 w.WriteEndElement();
             }
 
-            Tracker.TraceMessage(Tracker.Category.Alert, "成功导出信息文件到 <<" + bookmarkFile + ">>。");
+            Tracker.TraceMessage(Tracker.Category.Alert,
+                "Successfully exported message file to <<" + bookmarkFile + ">>.");
         }
         catch (OperationCanceledException)
         {
@@ -882,12 +904,13 @@ internal static class Worker
         catch (EncoderFallbackException ex)
         {
             Tracker.TraceMessage(ex);
-            FormHelper.ErrorBox("在导出信息文件时遇到错误：\n" + ex.Message + "\n\n请选择在导出信息选项中选择其它编码方式。");
+            FormHelper.ErrorBox("An error was encountered while exporting the message file:\n" + ex.Message +
+                                "\n\nPlease choose another encoding method in the export message option.");
         }
         catch (Exception ex)
         {
             Tracker.TraceMessage(ex);
-            FormHelper.ErrorBox("在导出信息文件时遇到错误：\n" + ex.Message);
+            FormHelper.ErrorBox("An error was encountered while exporting the message file:\n" + ex.Message);
         }
         finally
         {
@@ -946,7 +969,7 @@ internal static class Worker
 
         try
         {
-            Tracker.TraceMessage("正在分析 PDF 文件。");
+            Tracker.TraceMessage("Analyzing PDF file.");
             int workload = ocr.EstimateWorkload();
             Tracker.SetProgressGoal(workload);
             if (noOutputFile)
@@ -956,7 +979,7 @@ internal static class Worker
             else if (new FilePath(bookmarkFile).HasExtension(Ext.Txt))
             {
                 Tracker.TraceMessage(Tracker.Category.OutputFile, bookmarkFile);
-                Tracker.TraceMessage("输出简易信息文件：" + bookmarkFile);
+                Tracker.TraceMessage("Output brief information file: " + bookmarkFile);
                 using TextWriter w = new StreamWriter(bookmarkFile, false, AppContext.Exporter.GetEncoding());
                 DocInfoExporter.WriteDocumentInfoAttributes(w, sourceFile, r.NumberOfPages);
                 ocr.SetWriter(w);
@@ -965,7 +988,7 @@ internal static class Worker
             else
             {
                 Tracker.TraceMessage(Tracker.Category.OutputFile, bookmarkFile);
-                Tracker.TraceMessage("输出信息文件：" + bookmarkFile);
+                Tracker.TraceMessage("Output message file: " + bookmarkFile);
                 using XmlWriter w = XmlWriter.Create(bookmarkFile, DocInfoExporter.GetWriterSettings());
                 w.WriteStartDocument();
                 w.WriteStartElement(Constants.PdfInfo);
@@ -977,11 +1000,12 @@ internal static class Worker
 
             if (noOutputFile == false)
             {
-                Tracker.TraceMessage(Tracker.Category.Alert, "已完成导出信息文件到 <<" + bookmarkFile + ">>。");
+                Tracker.TraceMessage(Tracker.Category.Alert,
+                    "Completed exporting message file to <<" + bookmarkFile + ">>.");
             }
             else
             {
-                Tracker.TraceMessage(Tracker.Category.Alert, "分析文档完毕。");
+                Tracker.TraceMessage(Tracker.Category.Alert, "Completed analyzing the document.");
             }
         }
         catch (OperationCanceledException)
@@ -991,12 +1015,13 @@ internal static class Worker
         catch (EncoderFallbackException ex)
         {
             Tracker.TraceMessage(ex);
-            FormHelper.ErrorBox("在导出信息文件时遇到错误：\n" + ex.Message + "\n\n请选择在导出信息选项中选择其它编码方式。");
+            FormHelper.ErrorBox("An error was encountered while exporting the message file:\n" + ex.Message +
+                                "\n\nPlease choose another encoding method in the export message option.");
         }
         catch (Exception ex)
         {
             Tracker.TraceMessage(ex);
-            FormHelper.ErrorBox("在导出信息文件时遇到错误：\n" + ex.Message);
+            FormHelper.ErrorBox("An error was encountered while exporting the message file:\n" + ex.Message);
         }
         finally
         {
@@ -1029,7 +1054,7 @@ internal static class Worker
     internal static void RenameFiles(List<SourceItem.Pdf> items, string template, bool keepSourceFile)
     {
         Tracker.SetTotalProgressGoal(items.Count);
-        Tracker.TraceMessage(string.Concat("使用“", template, "”模板重命名。"));
+        Tracker.TraceMessage(string.Concat("Rename using \"", template, "\" template."));
         foreach (SourceItem.Pdf item in items)
         {
             try
@@ -1037,36 +1062,37 @@ internal static class Worker
                 FilePath s = item.FilePath.ToFullPath();
                 if (s.ExistsFile == false)
                 {
-                    Tracker.TraceMessage(Tracker.Category.Error, string.Concat("找不到 PDF 文件：", s));
+                    Tracker.TraceMessage(Tracker.Category.Error, string.Concat("Cannot find PDF file: ", s));
                     continue;
                 }
 
                 string t = RenameFile(template, item);
                 Tracker.TraceMessage(Tracker.Category.InputFile, s.ToString());
                 Tracker.TraceMessage(Tracker.Category.OutputFile, t);
-                Tracker.TraceMessage(Tracker.Category.ImportantMessage, string.Concat("重命名 PDF 文件：", s));
-                Tracker.TraceMessage(Tracker.Category.ImportantMessage, string.Concat("到目标 PDF 文件：<<", t, ">>。"));
+                Tracker.TraceMessage(Tracker.Category.ImportantMessage, string.Concat("Rename PDF file: ", s));
+                Tracker.TraceMessage(Tracker.Category.ImportantMessage,
+                    string.Concat("To the target PDF file: <<", t, ">>."));
                 if (FileHelper.IsPathValid(t) == false)
                 {
-                    Tracker.TraceMessage(Tracker.Category.Error, string.Concat("输出文件名 ", t, " 无效。"));
+                    Tracker.TraceMessage(Tracker.Category.Error, string.Concat("Output filename", t, "Invalid."));
                     goto Exit;
                 }
 
                 if (s.Equals(t))
                 {
-                    Tracker.TraceMessage("源文件与目标文件名称相同。不需重命名。");
+                    Tracker.TraceMessage("The source file has the same name as the target file. No need to rename.");
                     goto Exit;
                 }
 
                 if (Path.GetFileName(t).Trim().Length == 0)
                 {
-                    Tracker.TraceMessage("输出文件名为空，无法重命名。");
+                    Tracker.TraceMessage("The output file name is empty and cannot be renamed.");
                     goto Exit;
                 }
 
                 if (File.Exists(t))
                 {
-                    DialogResult r = FormHelper.YesNoCancelBox("是否覆盖已存在的 PDF 文件：" + t);
+                    DialogResult r = FormHelper.YesNoCancelBox("Whether to overwrite the existing PDF file: " + t);
                     switch (r)
                     {
                         case DialogResult.No:
@@ -1095,7 +1121,7 @@ internal static class Worker
             }
             catch (OperationCanceledException)
             {
-                Tracker.TraceMessage(Tracker.Category.Alert, "已取消重命名操作。");
+                Tracker.TraceMessage(Tracker.Category.Alert, "Removal operation has been canceled.");
                 return;
             }
             catch (Exception ex)
@@ -1107,26 +1133,26 @@ internal static class Worker
             Tracker.IncrementTotalProgress();
         }
 
-        Tracker.TraceMessage("重命名操作已完成。");
+        Tracker.TraceMessage("Rename operation completed.");
     }
 
     internal static void ImportOcr(string sourceFile, string infoFile, string targetFile)
     {
         if (FileHelper.IsPathValid(sourceFile) == false)
         {
-            Tracker.TraceMessage(Tracker.Category.Error, "输入 PDF 文件路径无效。");
+            Tracker.TraceMessage(Tracker.Category.Error, "The input PDF file path is invalid.");
             return;
         }
 
         if (FileHelper.IsPathValid(targetFile) == false)
         {
-            Tracker.TraceMessage(Tracker.Category.Error, "输出 PDF 文件路径无效。");
+            Tracker.TraceMessage(Tracker.Category.Error, "The output PDF file path is invalid.");
             return;
         }
 
         if (FileHelper.IsPathValid(infoFile) == false)
         {
-            Tracker.TraceMessage(Tracker.Category.Error, "信息文件路径无效。");
+            Tracker.TraceMessage(Tracker.Category.Error, "Invalid message file path.");
             return;
         }
 
@@ -1134,7 +1160,7 @@ internal static class Worker
         Tracker.TraceMessage(Tracker.Category.OutputFile, targetFile);
         if (FileHelper.ComparePath(sourceFile, targetFile))
         {
-            Tracker.TraceMessage(Tracker.Category.Error, "输入文件和输出文件不能相同。");
+            Tracker.TraceMessage(Tracker.Category.Error, "The input file and output file cannot be the same.");
             return;
         }
 
@@ -1166,7 +1192,8 @@ internal static class Worker
                 }
             }
 
-            Tracker.TraceMessage(Tracker.Category.ImportantMessage, "成功写入识别结果到文件：<<" + targetFile + ">>。");
+            Tracker.TraceMessage(Tracker.Category.ImportantMessage,
+                "Successfully write recognition result to file: <<" + targetFile + ">>.");
         }
         catch (OperationCanceledException)
         {
@@ -1175,7 +1202,7 @@ internal static class Worker
         catch (Exception ex)
         {
             Tracker.TraceMessage(ex);
-            FormHelper.ErrorBox("在导入信息时发生错误：\n" + ex.Message);
+            FormHelper.ErrorBox("Error importing message:\n" + ex.Message);
         }
         finally
         {

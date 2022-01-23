@@ -20,7 +20,9 @@ internal static class TiffHelper
         // Use the .NET TIFF Save mode, the file size is smaller
         if (_tiffCodec != null)
         {
-            if (bmp.ColorType == FREE_IMAGE_COLOR_TYPE.FIC_MINISWHITE) // HACK: TIFF编码黑色为1，解决 .NET TIFF 编码器无法正常保存双色图片的问题
+            if (bmp.ColorType ==
+                FREE_IMAGE_COLOR_TYPE
+                    .FIC_MINISWHITE) // HACK: TIFF encoding black is 1, solve the .NET TIFF encoder does not properly save two-color picture problem
             {
                 bmp.Invert();
             }

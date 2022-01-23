@@ -19,7 +19,7 @@ internal sealed class PageDimensionProcessor : IPageProcessor
 
     #region IProcessor member
 
-    public string Name => "修改页面尺寸";
+    public string Name => "Modify page size";
 
     #endregion
 
@@ -34,7 +34,7 @@ internal sealed class PageDimensionProcessor : IPageProcessor
         pb = page.GetAsArray(PdfName.MEDIABOX);
         if (pb == null)
         {
-            throw new PdfException("页面缺少 MediaBox。");
+            throw new PdfException("MediaBox is missing from the page.");
         }
 
         Rectangle mb = PdfReader.GetNormalizedRectangle(pb);
@@ -44,7 +44,7 @@ internal sealed class PageDimensionProcessor : IPageProcessor
             size = new PaperSize(size.PaperName, size.Height, size.Width);
         }
 
-        // 自动旋转页面适应原页面的方向
+        // Automatically rotate the page to adapt to the orientation of the original page
         if (settings.AutoRotation && size.SpecialSize == SpecialPaperSize.None &&
             (size.Width > size.Height) ^ (mb.Width > mb.Height))
         {
@@ -182,7 +182,7 @@ internal sealed class PageDimensionProcessor : IPageProcessor
         PdfArray pb = page.GetAsArray(PdfName.CROPBOX) ?? page.GetAsArray(PdfName.MEDIABOX);
         if (pb == null)
         {
-            throw new PdfException("页面缺少 MediaBox。");
+            throw new PdfException("MediaBox is missing from the page.");
         }
 
         return PdfReader.GetNormalizedRectangle(pb);
@@ -326,7 +326,8 @@ internal sealed class PageDimensionProcessor : IPageProcessor
                 _refPaperSize = GetRefPaperSize(context);
                 if (_refPaperSize == null)
                 {
-                    throw new InvalidOperationException("无法匹配与指定尺寸及页码范围相符的页面。");
+                    throw new InvalidOperationException(
+                        "Unable to match the page that is consistent with the specified size and page size.");
                 }
 
                 break;

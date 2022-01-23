@@ -131,7 +131,7 @@ internal static class OutlineManager
                 outline.Put(PdfName.FIRST, (PdfIndirectReference)lower[0]);
                 outline.Put(PdfName.LAST, (PdfIndirectReference)lower[1]);
                 int n = (int)lower[2];
-                // 默认关闭书签
+                // Bookmark by default
                 if (child.GetAttribute(Constants.BookmarkAttributes.Open) != Constants.Boolean.True)
                 {
                     outline.Put(PdfName.COUNT, -n);
@@ -249,7 +249,7 @@ internal static class OutlineManager
     internal static void ImportSimpleBookmarks(TextReader source, PdfInfoXmlDocument target)
     {
         string indentString = "\t";
-        bool isOpen = false; // 书签是否默认打开
+        bool isOpen = false; // Whether the bookmark is open by default
         int pageOffset = 0;
         int currentIndent = -1;
         int lineNum = 0;
@@ -274,30 +274,30 @@ internal static class OutlineManager
                 string cmdData = s.Substring(p + 1);
                 switch (cmd)
                 {
-                    case "首页页码":
+                    case "Home Page Number":
                         if (cmdData.TryParse(out pageOffset))
                         {
-                            Tracker.TraceMessage("首页页码改为 " + pageOffset);
+                            Tracker.TraceMessage("Home page number changed to " + pageOffset);
                             pageOffset--;
                         }
 
                         break;
-                    case "缩进标记":
+                    case "Indent Marker":
                         indentString = cmdData;
-                        Tracker.TraceMessage(string.Concat("缩进标记改为“", indentString, "”"));
+                        Tracker.TraceMessage(string.Concat("Indentation mark changed to \"", indentString, "\""));
                         break;
-                    case "版本":
+                    case "version":
                         if (lineNum == 1)
                         {
                             string v = cmdData.Trim();
                             target.DocumentElement.SetAttribute(Constants.Info.ProductVersion, v);
-                            Tracker.TraceMessage("导入简易书签文件，版本为：" + v);
+                            Tracker.TraceMessage("Import simple bookmark file, version: " + v);
                         }
 
                         break;
-                    case "打开书签":
+                    case "Open bookmark":
                         cmdData = cmdData.ToLowerInvariant();
-                        isOpen = cmdData is "是" or "true" or "y" or "yes" or "1";
+                        isOpen = cmdData is "yes" or "true" or "y" or "yes" or "1";
                         break;
                     case Constants.Info.DocumentPath:
                         target.PdfDocumentPath = cmdData.Trim();
@@ -306,13 +306,15 @@ internal static class OutlineManager
                         string[] l = cmdData.Split(__pageLabelSeparators, 3);
                         if (l.Length < 1)
                         {
-                            Tracker.TraceMessage(Constants.PageLabels + "格式不正确，至少应指定起始页码。");
+                            Tracker.TraceMessage(Constants.PageLabels +
+                                                 "Incorrect format, at least start page number should be specified.");
                             continue;
                         }
 
                         if (l[0].TryParse(out int pn) == false || pn < 1)
                         {
-                            Tracker.TraceMessage(Constants.PageLabels + "格式不正确：起始页码应为正整数。");
+                            Tracker.TraceMessage(Constants.PageLabels +
+                                                 "Incorrect format: starting page number should be a positive integer.");
                             continue;
                         }
 
@@ -389,8 +391,8 @@ internal static class OutlineManager
                 currentBookmark.AppendChild(bookmark);
                 if (indent - currentIndent > 1)
                 {
-                    throw new FormatException(string.Concat("在简易书签第 ", lineNum,
-                        " 行的缩进格式不正确。\n\n说明：下级书签最多只能比上级书签多一个缩进标记。"));
+                    throw new FormatException(string.Concat("In Simple Bookmark", lineNum,
+                        "The indentation format of the line is incorrect.\n\nNote: Subordinate bookmarks can only have at most one indentation mark more than the superior bookmark."));
                 }
 
                 currentIndent++;
@@ -467,15 +469,15 @@ internal static class OutlineManager
 
     private static Encoding DetectEncoding(string path)
     {
-        const string VersionString = "#版本";
-        const string VersionString2 = "＃版本";
+        const string VersionString = "#version";
+        const string VersionString2 = "#Version";
 
         byte[] b = new byte[20];
         using (FileStream r = new(path, FileMode.Open))
         {
             if (r.Length < b.Length)
             {
-                throw new FormatException("简易书签文件内容不足。");
+                throw new FormatException("Insufficient content in the simple bookmark file.");
             }
 
             r.Read(b, 0, b.Length);

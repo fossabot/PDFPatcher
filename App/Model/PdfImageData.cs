@@ -46,6 +46,6 @@ internal sealed class PdfImageData : PdfDictionary
     public byte[] RawBytes { get; }
 
     public override string ToString() =>
-        (PdfRef != null ? string.Concat(PdfRef.Generation, " ", PdfRef.Number) : "<内嵌图像>") + " " +
+        (PdfRef != null ? string.Concat(PdfRef.Generation, " ", PdfRef.Number) : "<Embedded image>") + " " +
         RawBytes.Length;
 }

@@ -22,7 +22,7 @@ public partial class RenameControl : FunctionControl
 
     public RenameControl() => InitializeComponent();
 
-    public override string FunctionName => "重命名文件";
+    public override string FunctionName => "Rename file";
 
     public override Bitmap IconImage => Resources.Rename;
 
@@ -37,10 +37,13 @@ public partial class RenameControl : FunctionControl
         //Icon = FormHelper.ToIcon (Properties.Resources.CreateDocument);
         _ItemList.ListViewItemSorter = new ListViewItemComparer(0);
 
-        AppContext.MainForm.SetTooltip(_ItemList, "在此添加需要重命名的 PDF 文件");
-        AppContext.MainForm.SetTooltip(_RenameButton, "点击此按钮根据文件属性和输出文件名将 PDF 文件重命名");
-        AppContext.MainForm.SetTooltip(_TargetPdfFile.FileList, "生成的目标 PDF 文件路径（鼠标右键点击列表可插入文件名替代符）");
-        _ItemList.EmptyListMsg = "请使用“添加文件”按钮添加需要处理的 PDF 文件，或从资源管理器拖放文件到本列表框";
+        AppContext.MainForm.SetTooltip(_ItemList, "Add the PDF file that needs to be renamed here");
+        AppContext.MainForm.SetTooltip(_RenameButton,
+            "Click this button to rename the PDF file according to the file properties and output file name");
+        AppContext.MainForm.SetTooltip(_TargetPdfFile.FileList,
+            "The generated target PDF file path (right-click the list to insert the file name substitute)");
+        _ItemList.EmptyListMsg =
+            "Please use the \"Add Files\" button to add PDF files to be processed, or drag and drop files from the Explorer to this list box";
 
         _TargetPdfFile.FileMacroMenu.LoadStandardInfoMacros();
         _TargetPdfFile.FileMacroMenu.LoadStandardSourceFileMacros();
@@ -136,7 +139,7 @@ public partial class RenameControl : FunctionControl
         int l = _ItemList.GetItemCount();
         if (l == 0)
         {
-            FormHelper.InfoBox("请添加需要重命名的 PDF 文件。");
+            FormHelper.InfoBox("Add PDF files that need to be renamed.");
             return;
         }
 
@@ -232,7 +235,7 @@ public partial class RenameControl : FunctionControl
         List<SourceItem.Pdf> pdfs = _listHelper.GetSourceItems<SourceItem.Pdf>(false);
         if (pdfs.Count == 0)
         {
-            FormHelper.InfoBox("请添加需要重命名的 PDF 文件。");
+            FormHelper.InfoBox("Add PDF files that need to be renamed.");
             return;
         }
 
@@ -251,18 +254,18 @@ public partial class RenameControl : FunctionControl
                 FilePath s = item.FilePath;
                 if (s.ExistsFile == false)
                 {
-                    string.Concat("(找不到 PDF 文件：", s, ")");
+                    string.Concat("(Can't find the PDF file: ", s, ")");
                     continue;
                 }
 
                 string t = Worker.RenameFile(template, item);
                 if (t.Length == 0)
                 {
-                    t = "<输出文件名无效>";
+                    t = "<Output file name is invalid>";
                 }
                 else if (Path.GetFileName(t).Length == 0)
                 {
-                    t = "<输出文件名为空>";
+                    t = "<Output file name is empty>";
                 }
 
                 source[i] = s.ToString();

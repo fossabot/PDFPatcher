@@ -10,11 +10,11 @@ public class ToolbarOptions
 {
     public ToolbarOptions() => ShowGeneralToolbar = true;
 
-    [XmlAttribute("显示主工具栏")]
+    [XmlAttribute("Show Main Toolbar")]
     [DefaultValue(true)]
     public bool ShowGeneralToolbar { get; set; }
 
-    [XmlElement("按钮")] public List<ButtonOption> Buttons { get; } = new();
+    [XmlElement("Button")] public List<ButtonOption> Buttons { get; } = new();
 
     public void Reset()
     {
@@ -72,11 +72,11 @@ public class ToolbarOptions
 
         [XmlAttribute("ID")] public string ID { get; set; }
 
-        [XmlAttribute("按钮名称")] public string DisplayName { get; set; }
+        [XmlAttribute("Button Name")] public string DisplayName { get; set; }
 
-        [XmlAttribute("显示按钮文字")] public bool ShowText { get; set; }
+        [XmlAttribute("Show button text")] public bool ShowText { get; set; }
 
-        [XmlAttribute("显示按钮")] public bool Visible { get; set; }
+        [XmlAttribute("Show button")] public bool Visible { get; set; }
 
         internal Toolkit GetToolkit() => Toolkit.Get(ID);
 

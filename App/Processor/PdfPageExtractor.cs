@@ -17,7 +17,7 @@ internal class PdfPageExtractor
         int pn = pdf.NumberOfPages;
         if (pn == 1)
         {
-            Tracker.TraceMessage("文档只有一页，无法拆分。");
+            Tracker.TraceMessage("The document is only one page and cannot be split.");
             return;
         }
 
@@ -43,7 +43,8 @@ internal class PdfPageExtractor
         int pn = pdf.NumberOfPages;
         if (pn <= options.SeparateByPage)
         {
-            Tracker.TraceMessage("拆分的页数超过文档页数，无法拆分。");
+            Tracker.TraceMessage(
+                "The number of pages that split exceeds the number of documentation and cannot be split.");
             return;
         }
 
@@ -106,13 +107,13 @@ internal class PdfPageExtractor
         ref PdfReader pdf)
     {
         int n = pdf.NumberOfPages;
-        Tracker.TraceMessage("导出文档书签。");
+        Tracker.TraceMessage("Export a document bookmark.");
         pdf.ConsolidateNamedDestinations();
         XmlElement b = OutlineManager.GetBookmark(pdf, new UnitConverter());
         pdf.Close();
         if (b == null)
         {
-            Tracker.TraceMessage("文档没有书签，无法拆分。");
+            Tracker.TraceMessage("There is no bookmark in the documentation, and you cannot split.");
             return;
         }
 
@@ -145,7 +146,7 @@ internal class PdfPageExtractor
 
         if (l.Count == 1 && l[0].Key == 1)
         {
-            Tracker.TraceMessage("文档只有一个有效书签，无法拆分。");
+            Tracker.TraceMessage("There is only one valid bookmark in the documentation and cannot be split.");
             return;
         }
 
@@ -179,7 +180,7 @@ internal class PdfPageExtractor
         Tracker.TraceMessage(Tracker.Category.OutputFile, targetFile);
         if (FileHelper.ComparePath(sourceFile, targetFile))
         {
-            Tracker.TraceMessage(Tracker.Category.Error, "输入文件和输出文件不能相同。");
+            Tracker.TraceMessage(Tracker.Category.Error, "Enter files and output files cannot be the same.");
             return;
         }
 
@@ -214,7 +215,7 @@ internal class PdfPageExtractor
         XmlElement bm = null;
         if (options.KeepBookmarks)
         {
-            Tracker.TraceMessage("导出原文档书签。");
+            Tracker.TraceMessage("Export the original document bookmark.");
             pdf.ConsolidateNamedDestinations();
             bm = OutlineManager.GetBookmark(pdf, new UnitConverter { Unit = Constants.Units.Point });
             if (bm is { HasChildNodes: true })
@@ -251,7 +252,7 @@ internal class PdfPageExtractor
 
         w.Writer.Info.Put(PdfName.PRODUCER,
             new PdfString(string.Concat(Application.ProductName, " ", Application.ProductVersion)));
-        Tracker.TraceMessage("保存文件：" + targetFile);
+        Tracker.TraceMessage("save document:" + targetFile);
         w.Close();
         //Document doc = new Document ();
         //PdfSmartCopy w = new PdfSmartCopy (doc, s);
@@ -262,16 +263,16 @@ internal class PdfPageExtractor
         //doc.Open ();
         //var creator = new PdfDocumentCreator (options, impOptions, doc, w);
         //creator.ProcessFile (options.SourceItems[0]);
-        //Tracker.TraceMessage ("保存文件：" + targetFile);
+        //Tracker.TraceMessage ("save document:" + targetFile);
         //var bm = creator.PdfBookmarks;
         //if (bm != null && bm.DocumentElement != null && bm.DocumentElement.HasChildNodes) {
-        //    Tracker.TraceMessage ("自动生成文档书签。");
+        //    Tracker.TraceMessage ("Automatically generate a document bookmark.");
         //    PdfBookmarkUtility.WriteOutline (w, bm.DocumentElement, w.PageEmpty ? w.CurrentPageNumber - 1 : w.CurrentPageNumber);
         //    w.ViewerPreferences = PdfWriter.PageModeUseOutlines;
         //}
         //doc.Close ();
         //w.Close ();
-        Tracker.TraceMessage(Tracker.Category.Alert, "成功提取文件内容到 <<" + targetFile + ">>。");
+        Tracker.TraceMessage(Tracker.Category.Alert, "Successfully extract the file content <<" + targetFile + ">>.");
     }
 
     private static string RewriteTargetFileName(string sourceFile, string targetFile, PdfReader pdf)

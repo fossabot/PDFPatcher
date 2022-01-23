@@ -41,15 +41,15 @@
             this.label1.Location = new System.Drawing.Point(3, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "输出 PD&F 文件：";
+this.label1.TabIndex = 0;
+            this.label1.Text = "Output PD&F file:";
             //
             // _SavePdfBox
             //
             this._SavePdfBox.DefaultExt = "pdf";
-            this._SavePdfBox.Filter = "PDF 文件 (*.pdf)|*.pdf";
+            this._SavePdfBox.Filter = "PDF file (*.pdf)|*.pdf";
             this._SavePdfBox.OverwritePrompt = false;
-            this._SavePdfBox.Title = "指定输出的 PDF 文件路径";
+            this._SavePdfBox.Title = "Specify the output PDF file path";
             //
             // _BrowseTargetPdfButton
             //
@@ -59,7 +59,7 @@
             this._BrowseTargetPdfButton.Name = "_BrowseTargetPdfButton";
             this._BrowseTargetPdfButton.Size = new System.Drawing.Size(75, 23);
             this._BrowseTargetPdfButton.TabIndex = 2;
-            this._BrowseTargetPdfButton.Text = "浏览...";
+            this._BrowseTargetPdfButton.Text = "Browse...";
             this._BrowseTargetPdfButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this._BrowseTargetPdfButton.UseVisualStyleBackColor = true;
             this._BrowseTargetPdfButton.Click += new System.EventHandler(this._BrowseTargetPdfButton_Click);

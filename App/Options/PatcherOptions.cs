@@ -5,7 +5,7 @@ using PowerJson;
 
 namespace PDFPatcher;
 
-[XmlRoot("文档设置")]
+[XmlRoot("Documentation")]
 public class PatcherOptions : DocumentOptions
 {
     public PatcherOptions()
@@ -15,70 +15,86 @@ public class PatcherOptions : DocumentOptions
         UnifiedPageSettings = new PageBoxSettings();
     }
 
-    [XmlAttribute("嵌入字库")] public bool EmbedFonts { get; set; }
+    [XmlAttribute("Embedded Font")] public bool EmbedFonts { get; set; }
 
-    [XmlAttribute("删除文本尾随空白")] public bool TrimTrailingWhiteSpace { get; set; }
+    [XmlAttribute("Remove text trailing whitespace")]
+    public bool TrimTrailingWhiteSpace { get; set; }
 
-    [XmlAttribute("允许替换字库")] public bool EnableFontSubstitutions { get; set; }
+    [XmlAttribute("Allow font substitution")]
+    public bool EnableFontSubstitutions { get; set; }
 
-    [XmlAttribute("修复内容流")] public bool FixContents { get; set; }
+    [XmlAttribute("Fix Content Stream")] public bool FixContents { get; set; }
 
-    [XmlAttribute("删除批注")] public bool RemoveAnnotations { get; set; }
+    [XmlAttribute("Remove Annotations")] public bool RemoveAnnotations { get; set; }
 
-    [XmlAttribute("删除导航书签")] public bool RemoveBookmarks { get; set; }
+    [XmlAttribute("Remove navigation bookmarks")]
+    public bool RemoveBookmarks { get; set; }
 
-    [XmlAttribute("删除页面开头指令")] [XmlIgnore] public int RemoveLeadingCommandCount { get; set; }
+    [XmlAttribute("Remove the page leading command")]
+    [XmlIgnore]
+    public int RemoveLeadingCommandCount { get; set; }
 
-    [XmlAttribute("删除页面结尾指令")] [XmlIgnore] public int RemoveTrailingCommandCount { get; set; }
+    [XmlAttribute("Remove page ending command")]
+    [XmlIgnore]
+    public int RemoveTrailingCommandCount { get; set; }
 
-    [XmlAttribute("删除使用限制")] public bool RemoveUsageRights { get; set; }
+    [XmlAttribute("Remove usage restrictions")]
+    public bool RemoveUsageRights { get; set; }
 
-    [XmlAttribute("删除文档自动动作")] public bool RemoveDocAutoActions { get; set; }
+    [XmlAttribute("Delete document automatic action")]
+    public bool RemoveDocAutoActions { get; set; }
 
-    [XmlAttribute("删除页面自动动作")] public bool RemovePageAutoActions { get; set; }
+    [XmlAttribute("Delete page auto action")]
+    public bool RemovePageAutoActions { get; set; }
 
-    [XmlAttribute("删除页面表单")] public bool RemovePageForms { get; set; }
+    [XmlAttribute("Remove Page Forms")] public bool RemovePageForms { get; set; }
 
-    [XmlAttribute("删除链接批注")] public bool RemovePageLinks { get; set; }
+    [XmlAttribute("Remove link annotation")]
+    public bool RemovePageLinks { get; set; }
 
-    [XmlAttribute("删除页面元数据")] public bool RemovePageMetaData { get; set; }
+    [XmlAttribute("Remove page metadata")] public bool RemovePageMetaData { get; set; }
 
-    [XmlAttribute("删除页面文本")] public bool RemovePageTextBlocks { get; set; }
+    [XmlAttribute("Remove page text")] public bool RemovePageTextBlocks { get; set; }
 
-    [XmlAttribute("删除页面缩略图")] public bool RemovePageThumbnails { get; set; }
+    [XmlAttribute("Remove page thumbnails")]
+    public bool RemovePageThumbnails { get; set; }
 
-    [XmlAttribute("删除XML元数据")] public bool RemoveXmlMetadata { get; set; }
+    [XmlAttribute("Remove XML metadata")] public bool RemoveXmlMetadata { get; set; }
 
-    [XmlAttribute("优化黑白图片压缩算法")] public bool RecompressWithJbig2 { get; set; }
+    [XmlAttribute("Optimize black and white image compression algorithm")]
+    public bool RecompressWithJbig2 { get; set; }
 
-    [XmlElement("页面布局")] public PageBoxSettings UnifiedPageSettings { get; set; }
+    [XmlElement("page layout")] public PageBoxSettings UnifiedPageSettings { get; set; }
 
-    [XmlArray("页面设置")]
-    [XmlArrayItem("设置项")]
+    [XmlArray("Page Setup")]
+    [XmlArrayItem("Set item")]
     public List<PageBoxSettings> PageSettings { get; }
 
-    [XmlArray("字体替换")]
-    [XmlArrayItem("替换项")]
+    [XmlArray("font substitution")]
+    [XmlArrayItem("replacement item")]
     public List<FontSubstitution> FontSubstitutions { get; }
 }
 
 public class FontSubstitution
 {
-    [XmlAttribute("原字体")] public string OriginalFont { get; set; }
+    [XmlAttribute("Original Font")] public string OriginalFont { get; set; }
 
-    [XmlAttribute("新字体")]
+    [XmlAttribute("new font")]
     [JsonField("SubstitutionFont")]
     public string Substitution { get; set; }
 
-    [XmlAttribute("原字符")] public string OriginalCharacters { get; set; }
+    [XmlAttribute("Original Characters")] public string OriginalCharacters { get; set; }
 
-    [XmlAttribute("替换字符")] public string SubstituteCharacters { get; set; }
+    [XmlAttribute("Substitute Characters")]
+    public string SubstituteCharacters { get; set; }
 
-    [XmlAttribute("简繁替换")] public int TraditionalChineseConversion { get; set; }
+    [XmlAttribute("Simplified and Traditional ChineseConversion")]
+    public int TraditionalChineseConversion { get; set; }
 
-    [XmlAttribute("数字替换")] public int NumericWidthConversion { get; set; }
+    [XmlAttribute("Number Replacement")] public int NumericWidthConversion { get; set; }
 
-    [XmlAttribute("字母替换")] public int AlphabeticWidthConversion { get; set; }
+    [XmlAttribute("Alphabetic Replacement")]
+    public int AlphabeticWidthConversion { get; set; }
 
-    [XmlAttribute("符号替换")] public int PunctuationWidthConversion { get; set; }
+    [XmlAttribute("Symbol Substitution")] public int PunctuationWidthConversion { get; set; }
 }

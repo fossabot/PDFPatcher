@@ -45,14 +45,14 @@ internal sealed class RemoveWrappedCommandProcessor : IPageProcessor
 
     #region IPageProcessor member
 
-    public string Name => "删除页面起始或结束指令";
+    public string Name => "Delete page start or end command";
 
     public void BeginProcess(DocProcessorContext context) => _processedPageCount = 0;
 
     public bool EndProcess(PdfReader pdf)
     {
-        Tracker.TraceMessage(Tracker.Category.Notice, Name + "功能：");
-        Tracker.TraceMessage("　　删除了 " + _processedPageCount + " 页的指令。");
+        Tracker.TraceMessage(Tracker.Category.Notice, Name + "Function:");
+        Tracker.TraceMessage(" Deleted the " + _processedPageCount + " page instruction.");
         return false;
     }
 

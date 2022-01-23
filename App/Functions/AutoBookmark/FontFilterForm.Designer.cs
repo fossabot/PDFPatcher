@@ -49,7 +49,7 @@
 			this._OkButton.Name = "_OkButton";
 			this._OkButton.Size = new System.Drawing.Size (75, 23);
 			this._OkButton.TabIndex = 5;
-			this._OkButton.Text = "确定(&Q)";
+			this._OkButton.Text = "&OK";
 			this._OkButton.UseVisualStyleBackColor = true;
 			this._OkButton.Click += new System.EventHandler (this._OkButton_Click);
 			//
@@ -61,7 +61,7 @@
 			this._CancelButton.Name = "_CancelButton";
 			this._CancelButton.Size = new System.Drawing.Size (75, 23);
 			this._CancelButton.TabIndex = 6;
-			this._CancelButton.Text = "取消(&X)";
+			this._CancelButton.Text = "&Cancel";
 			this._CancelButton.UseVisualStyleBackColor = true;
 			this._CancelButton.Click += new System.EventHandler (this._CancelButton_Click);
 			//
@@ -72,24 +72,24 @@
 			this._MessageLabel.Name = "_MessageLabel";
 			this._MessageLabel.Size = new System.Drawing.Size (407, 12);
 			this._MessageLabel.TabIndex = 0;
-			this._MessageLabel.Text = "下表列出了 PDF 文档中所使用的字体。右键点击项目可添加字体筛选条件。";
+			this._MessageLabel.Text = "The following table lists the fonts used in the PDF document. Right-click an item to add font filters.";
 			//
 			// _FontNameSizeColumn
 			//
-			this._FontNameSizeColumn.Text = "字体名称/文本尺寸（首次出现文本）";
+			this._FontNameSizeColumn.Text = "Font Name / Text Size (for the first time)";
 			this._FontNameSizeColumn.Width = 329;
 			//
 			// _FirstPageColumn
 			//
 			this._FirstPageColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this._FirstPageColumn.Text = "首次出现页码";
+			this._FirstPageColumn.Text = "First page number";
 			this._FirstPageColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this._FirstPageColumn.Width = 51;
 			//
 			// _CountColumn
 			//
 			this._CountColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this._CountColumn.Text = "出现次数";
+			this._CountColumn.Text = "The number of occurrences";
 			this._CountColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this._CountColumn.Width = 52;
 			//
@@ -148,28 +148,28 @@
 			//
 			// _ConditionColumn
 			//
-			this._ConditionColumn.Text = "筛选条件";
+			this._ConditionColumn.Text = "Filter Condition";
 			this._ConditionColumn.Width = 330;
 			//
 			// _AddConditionButton
 			//
 			this._AddConditionButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this._AddConditionButton.Location = new System.Drawing.Point (435, 248);
+			this._AddConditionButton.Location = new System.Drawing.Point(435, 248);
 			this._AddConditionButton.Name = "_AddConditionButton";
-			this._AddConditionButton.Size = new System.Drawing.Size (89, 23);
+			this._AddConditionButton.Size = new System.Drawing.Size(89, 23);
 			this._AddConditionButton.TabIndex = 3;
-			this._AddConditionButton.Text = "添加筛选条件";
+			this._AddConditionButton.Text = "Add Filter";
 			this._AddConditionButton.UseVisualStyleBackColor = true;
 			this._AddConditionButton.Click += new System.EventHandler (this.ControlEvent);
 			//
 			// _RemoveConditionButton
 			//
 			this._RemoveConditionButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this._RemoveConditionButton.Location = new System.Drawing.Point (435, 277);
+			this._RemoveConditionButton.Location = new System.Drawing.Point(435, 277);
 			this._RemoveConditionButton.Name = "_RemoveConditionButton";
-			this._RemoveConditionButton.Size = new System.Drawing.Size (89, 23);
+			this._RemoveConditionButton.Size = new System.Drawing.Size(89, 23);
 			this._RemoveConditionButton.TabIndex = 4;
-			this._RemoveConditionButton.Text = "删除筛选条件";
+			this._RemoveConditionButton.Text = "Remove Filter Condition";
 			this._RemoveConditionButton.UseVisualStyleBackColor = true;
 			this._RemoveConditionButton.Click += new System.EventHandler (this.ControlEvent);
 			//
@@ -192,7 +192,7 @@
 			this.Name = "FontFilterForm";
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "添加字体筛选条件";
+			this.Text = "Add font filter";
 			this.Load += new System.EventHandler (this.FontFilterForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this._FontInfoBox)).EndInit ();
 			((System.ComponentModel.ISupportInitialize)(this._FilterBox)).EndInit ();

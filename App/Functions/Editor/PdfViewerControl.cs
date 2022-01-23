@@ -732,7 +732,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
             );
             string pl = GetPageLabel(p);
             TextRenderer.DrawText(e.Graphics,
-                string.Concat(pl, pl.Length > 0 ? " / 第 " : "第 ", p, " 页 (", pb.Width, " * ", pb.Height, ")"),
+                string.Concat(pl, pl.Length > 0 ? " / p" : "p", p, " page(", pb.Width, " * ", pb.Height, ")"),
                 SystemFonts.MessageBoxFont,
                 new DrawingPoint(ox + op.X + __pageMargin, oy + op.Y),
                 Color.Black);
@@ -1022,10 +1022,12 @@ internal sealed class PdfViewerControl : ImageBoxEx
             switch (ex.ErrorCode)
             {
                 case -959971327:
-                    FormHelper.InfoBox("识别引擎初始化时遇到错误。\n请尝试以管理员身份运行程序，或重新安装 Office 2007 的 MODI 组件。");
+                    FormHelper.InfoBox(
+                        "An error occurred while initializing the recognition engine.\nTry running the program as an administrator, or reinstall the MODI component of Office 2007.");
                     return new List<TextLine>();
                 case -959967087:
-                    FormHelper.ErrorBox("识别引擎无法识别本页文本。请尝试调整页面的显示比例，然后再执行识别。");
+                    FormHelper.ErrorBox(
+                        "The recognition engine cannot recognize the text on this page. Please try to adjust the display scale of the page, and then perform recognition.");
                     return new List<TextLine>();
                 default:
                     throw;
@@ -1556,7 +1558,7 @@ internal sealed class PdfViewerControl : ImageBoxEx
     /// </summary>
     /// <param name="imageX">Virtual canvas level horizontal somewhere.</param>
     /// <param name="imageY">Merry coordinate of virtual canvas position.</param>
-    /// <returns>页面坐标。</returns>
+    /// <returns>Page coordinates.</returns>
     internal PagePosition TransposeVirtualImageToPagePosition(int imageX, int imageY)
     {
         int n = GetPageNumberFromOffset(imageX, imageY);

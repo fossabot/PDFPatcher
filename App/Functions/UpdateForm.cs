@@ -52,13 +52,13 @@ public partial class UpdateForm : Form
     private void CheckNewVersion()
     {
         _UpdateChecker = new WebClient();
-        _InfoBox.AppendLine("正在检查新版本，请稍候……");
+        _InfoBox.AppendLine("Checking for a new version, please wait...");
         _UpdateChecker.DownloadDataCompleted += (_, args) =>
         {
             _InfoBox.Clear();
             if (args.Error != null)
             {
-                _InfoBox.AppendText("检查新版本失败：" + args.Error.Message);
+                _InfoBox.AppendText("Failed to check new version: " + args.Error.Message);
                 goto Exit;
             }
 
@@ -70,7 +70,7 @@ public partial class UpdateForm : Form
             }
             catch (Exception)
             {
-                FormHelper.ErrorBox("版本信息文件格式错误，请稍候重试。");
+                FormHelper.ErrorBox("The format of the version information file is incorrect, please try again later.");
             }
 
         Exit:
@@ -86,7 +86,7 @@ public partial class UpdateForm : Form
         if (r is not { Name: Constants.AppEngName })
         {
             _InfoBox.SelectionColor = Color.Red;
-            _InfoBox.AppendLine("版本信息文件格式错误，请稍候重试。");
+            _InfoBox.AppendLine("The format of the version information file is incorrect, please try again later.");
             return;
         }
 
@@ -97,7 +97,7 @@ public partial class UpdateForm : Form
         if (new Version(ProductVersion) < new Version(r.GetAttribute("version")))
         {
             _InfoBox.SelectionColor = Color.Blue;
-            _InfoBox.AppendLine(string.Concat("发现新版本：", v, " ", d));
+            _InfoBox.AppendLine(string.Concat("Found a new version: ", v, " ", d));
             _InfoBox.AppendLine(c.InnerText);
             _InfoBox.SelectionStart = 0;
             if (u.Length <= 0)
@@ -110,7 +110,8 @@ public partial class UpdateForm : Form
         }
         else
         {
-            _InfoBox.AppendLine(string.Join("\n", "未发现新版本。", "服务器上发布的版本是：", v + " " + d));
+            _InfoBox.AppendLine(string.Join("\n", "No new version found.", "The version published on the server is: ",
+                v + " " + d));
         }
     }
 }

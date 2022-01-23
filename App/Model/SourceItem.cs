@@ -123,11 +123,11 @@ public abstract class SourceItem
             }
             catch (FileNotFoundException)
             {
-                FormHelper.ErrorBox(string.Concat("找不到文件：“", path, "”。"));
+                FormHelper.ErrorBox(string.Concat("Could not find file: \"", path, "\"."));
             }
             catch (Exception)
             {
-                FormHelper.ErrorBox(string.Concat("打开 PDF 文件时“", path, "”出错。"));
+                FormHelper.ErrorBox(string.Concat("Error opening PDF file \"", path, "\"."));
                 // ignore corrupted
             }
 
@@ -138,18 +138,18 @@ public abstract class SourceItem
         {
             return new Image(path);
             //try {
-            //    using (var i = new FreeImageAPI.FreeImageBitmap (path, (FreeImageAPI.FREE_IMAGE_LOAD_FLAGS)0x0800/*仅加载图像尺寸信息*/)) {
-            //        var fc = i.FrameCount;
-            //        return new Image (path);
-            //    }
+            // using (var i = new FreeImageAPI.FreeImageBitmap (path, (FreeImageAPI.FREE_IMAGE_LOAD_FLAGS)0x0800/*Only load image size information*/)) {
+            // var fc = i.FrameCount;
+            // return new Image (path);
+            // }
             //}
-            //catch (Exception) {
-            //    Common.FormHelper.ErrorBox (String.Concat ("不支持图片文件“", path, "”。"));
-            //    // ignore unsupported images
+            //catch(Exception) {
+            // Common.FormHelper.ErrorBox (String.Concat("The image file "", path, ""."));
+            // // ignore unsupported images
             //}
         }
 
-        FormHelper.ErrorBox(string.Concat("不支持文件“", path, "”。"));
+        FormHelper.ErrorBox(string.Concat("File \"", path, "\"."));
         return null;
     }
 
@@ -228,34 +228,34 @@ public abstract class SourceItem
         {
             if (MatchCajPattern(t, Constants.CajNaming.Cover))
             {
-                return t.EndsWith("001") ? new BookmarkSettings("封面")
-                    : t.EndsWith("002") ? new BookmarkSettings("封底")
+                return t.EndsWith("001") ? new BookmarkSettings("cover")
+                    : t.EndsWith("002") ? new BookmarkSettings("Back Cover")
                     : null; // More than 2 pages, only to generate a bookmark for the first page and the second page
             }
 
             if (MatchCajPattern(t, Constants.CajNaming.TitlePage))
             {
-                return t.EndsWith("001") ? new BookmarkSettings("书名") : null;
+                return t.EndsWith("001") ? new BookmarkSettings("Book Title") : null;
             }
 
             if (MatchCajPattern(t, Constants.CajNaming.CopyrightPage))
             {
-                return t.EndsWith("001") ? new BookmarkSettings("版权") : null;
+                return t.EndsWith("001") ? new BookmarkSettings("Copyright") : null;
             }
 
             if (MatchCajPattern(t, Constants.CajNaming.Foreword))
             {
-                return t.EndsWith("001") ? new BookmarkSettings("前言") : null;
+                return t.EndsWith("001") ? new BookmarkSettings("Foreword") : null;
             }
 
             if (MatchCajPattern(t, Constants.CajNaming.Contents))
             {
-                return t.EndsWith("00001") ? new BookmarkSettings("目录") : null;
+                return t.EndsWith("00001") ? new BookmarkSettings("Catalog") : null;
             }
 
             if (MatchCajPattern(t, string.Empty) && t == "000001")
             {
-                return new BookmarkSettings("正文");
+                return new BookmarkSettings("Text");
             }
         }
 
@@ -386,7 +386,7 @@ public abstract class SourceItem
 
         public override int FileSize => 0;
 
-        public override string ToString() => "<空白页>";
+        public override string ToString() => "<blank page>";
 
         public override SourceItem Clone()
         {
@@ -526,7 +526,7 @@ public abstract class SourceItem
             }
             catch (Exception)
             {
-                FormHelper.ErrorBox(string.Concat("打开 PDF 文件时“", path, "”出错。"));
+                FormHelper.ErrorBox(string.Concat("Error opening PDF file \"", path, "\"."));
                 // ignore corrupted
             }
         }

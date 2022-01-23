@@ -21,7 +21,7 @@ public partial class InfoExchangerControl : FunctionControl
 
     public InfoExchangerControl() => InitializeComponent();
 
-    public override string FunctionName => "导出导入信息文件";
+    public override string FunctionName => "Export import information file";
 
     public override Bitmap IconImage => Resources.CreateDocument;
 
@@ -36,12 +36,17 @@ public partial class InfoExchangerControl : FunctionControl
         //this.Icon = Common.FormHelper.ToIcon (Properties.Resources.CreateDocument);
         _ItemList.ListViewItemSorter = new ListViewItemComparer(0);
 
-        AppContext.MainForm.SetTooltip(_BookmarkControl.FileList, "需要导出或导入的信息文件路径");
-        AppContext.MainForm.SetTooltip(_ActionsBox, "双击项目编辑操作选项；右键点击项目弹出上下文菜单");
-        AppContext.MainForm.SetTooltip(_ItemList, "在此添加需要导出或导入信息文件的 PDF 文件");
-        AppContext.MainForm.SetTooltip(_ImportButton, "点击此按钮执行补丁生成新的 PDF 文件，该文件具有信息文件的设定");
-        AppContext.MainForm.SetTooltip(_TargetPdfFile.FileList, "在此指定导入信息文件后生成的目标 PDF 文件路径（鼠标右键点击列表可插入文件名替代符）");
-        _ItemList.EmptyListMsg = "请使用“添加文件”按钮添加需要处理的 PDF 文件，或从资源管理器拖放文件到本列表框";
+        AppContext.MainForm.SetTooltip(_BookmarkControl.FileList,
+            "The path to the information file that needs to be exported or imported");
+        AppContext.MainForm.SetTooltip(_ActionsBox,
+            "Double-click the item to edit the action option; right-click the item to pop up the context menu");
+        AppContext.MainForm.SetTooltip(_ItemList, "Add PDF files that need to export or import information files here");
+        AppContext.MainForm.SetTooltip(_ImportButton,
+            "Click this button to execute the patch to generate a new PDF file with the settings of the information file");
+        AppContext.MainForm.SetTooltip(_TargetPdfFile.FileList,
+            "Specify the path of the target PDF file generated after importing the information file (right-click the list to insert the file name substitute)");
+        _ItemList.EmptyListMsg =
+            "Please use the \"Add Files\" button to add PDF files to be processed, or drag and drop files from the Explorer to this list box";
 
         _ConfigButton.Click += (_, _) => AppContext.MainForm.SelectFunctionList(Function.PatcherOptions);
         _InfoConfigButton.Click += (_, _) => AppContext.MainForm.SelectFunctionList(Function.InfoFileOptions);
@@ -74,7 +79,7 @@ public partial class InfoExchangerControl : FunctionControl
         //_ItemList.SelectedIndexChanged += (s, args) => {
         //	if (_ItemList.SelectedIndex != -1 && _TargetPdfFile.Text.Trim ().Length > 0) {
         //		var f = _ItemList.GetModelObject (_ItemList.SelectedIndex) as SourceItem;
-        //		AppContext.MainForm.StatusText = "输出文件：" + f.GetTargetPdfFileName (_TargetPdfFile.Text.Trim ());
+        //		AppContext.MainForm.StatusText = "Output file:" + f.GetTargetPdfFileName (_TargetPdfFile.Text.Trim ());
         //	}
         //	else {
         //		AppContext.MainForm.StatusText = String.Empty;
@@ -148,12 +153,12 @@ public partial class InfoExchangerControl : FunctionControl
             {
                 case Commands.SaveBookmark:
                     item.Enabled = _ItemList.GetItemCount() > 0;
-                    item.Text = "导出书签文件(&Q)";
+                    item.Text = "Export bookmark file(&Q)";
                     item.Visible = true;
                     break;
                 case Commands.Options:
-                    item.Text = "修改文档设置(&S)...";
-                    item.ToolTipText = "设置修改后的 PDF 文档";
+                    item.Text = "&Modify document settings...";
+                    item.ToolTipText = "Set the modified PDF document";
                     EnableCommand(item, true, true);
                     item.Tag = nameof(Function.PatcherOptions);
                     break;
@@ -199,15 +204,15 @@ public partial class InfoExchangerControl : FunctionControl
             FormHelper.ErrorBox(Messages.TargetFileNotSpecified);
             return;
         }
-        //if (_mode == ProcessMode.Merge && Common.FileHelper.IsPathValid (targetPdfFile) == false) {
-        //    Common.FormHelper.ErrorBox ("输出文件名无效。" + (Common.FileUtility.HasFileNameMacro (targetPdfFile) ? "\n制作 PDF 文件功能不支持替代符。" : String.Empty));
-        //    return;
+        //if (_mode == ProcessMode.Merge && Common.FileHelper.IsPathValid(targetPdfFile) == false) {
+        // Common.FormHelper.ErrorBox ("The output file name is invalid." + (Common.FileUtility.HasFileNameMacro (targetPdfFile) ? "\nThe function of making PDF files does not support substitution characters." : String.Empty));
+        // return;
         //}
 
         int l = _ItemList.GetItemCount();
         if (l == 0)
         {
-            FormHelper.InfoBox("请添加需要处理的 PDF 文件。");
+            FormHelper.InfoBox("Please add the PDF file to be processed.");
             return;
         }
 
@@ -236,7 +241,7 @@ public partial class InfoExchangerControl : FunctionControl
                     }
                     else
                     {
-                        Tracker.TraceMessage("输入文件不是 PDF 文件。");
+                        Tracker.TraceMessage("The input file is not a PDF file.");
                     }
 
                     Tracker.IncrementTotalProgress();
@@ -250,7 +255,7 @@ public partial class InfoExchangerControl : FunctionControl
             {
                 if (files[0].Type != SourceItem.ItemType.Pdf)
                 {
-                    Tracker.TraceMessage("输入文件不是 PDF 文件。");
+                    Tracker.TraceMessage("The input file is not a PDF file.");
                     return;
                 }
 
@@ -307,7 +312,7 @@ public partial class InfoExchangerControl : FunctionControl
             {
                 if (files[0].Type != SourceItem.ItemType.Pdf)
                 {
-                    Tracker.TraceMessage("输入文件不是 PDF 文件。");
+                    Tracker.TraceMessage("The input file is not a PDF file.");
                     return;
                 }
 

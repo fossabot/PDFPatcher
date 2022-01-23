@@ -24,7 +24,7 @@ internal sealed class SetTextColorProcessor : IPdfInfoXmlProcessor
 
     #region IInfoDocProcessor member
 
-    public string Name => "设置书签文本颜色";
+    public string Name => "Set book sign text color";
 
     public IUndoAction Process(XmlElement item)
     {

@@ -35,8 +35,11 @@ internal sealed class SetCaseProcessor : IPdfInfoXmlProcessor
 
     internal static string[] CaseNames =
     {
-        "首字母大写", "英文大写", "英文小写", "全角数字", "全角字母", "全角标点", "半角数字", "半角字母", "半角标点", "中文数字", "大写中文数字", "繁体汉字转简体",
-        "简体汉字转繁体"
+        "First letter uppercase", "English uppercase", "English lowercase", "full-width numbers",
+        "full-width letters", "full-width punctuation", "half-width numbers", "half-width letters",
+        "half-width punctuation", "Chinese numbers", "Uppercase Chinese numbers",
+        "Traditional Chinese characters to simplified Chinese characters",
+        "Simplified Chinese characters to traditional Chinese"
     };
 
     public SetCaseProcessor(LetterCase letterCase) => Case = letterCase;
@@ -214,7 +217,7 @@ internal sealed class SetCaseProcessor : IPdfInfoXmlProcessor
 
     #region IInfoDocProcessor member
 
-    public string Name => "设置书签文本为" + CaseNames[(int)Case];
+    public string Name => "Set bookmark text to" + CaseNames[(int)Case];
 
     public IUndoAction Process(XmlElement item)
     {

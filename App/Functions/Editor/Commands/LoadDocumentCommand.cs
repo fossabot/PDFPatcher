@@ -21,7 +21,7 @@ internal sealed class LoadDocumentCommand : IEditorCommand
             using OpenFileDialog f = new()
             {
                 DefaultExt = _importBookmark ? Constants.FileExtensions.Xml : Constants.FileExtensions.Pdf,
-                Title = _importBookmark ? "打开需要导入的书签文件" : "打开需要编辑的文件",
+                Title = _importBookmark ? "Open bookmark file for import" : "Open file for editing",
                 Filter = Constants.FileExtensions.AllEditableFilter
             };
             if (f.ShowDialog() != DialogResult.OK)
@@ -38,7 +38,7 @@ internal sealed class LoadDocumentCommand : IEditorCommand
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("在加载信息文件时出现错误：" + ex.Message);
+            FormHelper.ErrorBox("An error occurred while loading the information file: " + ex.Message);
         }
     }
 }

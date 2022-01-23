@@ -36,7 +36,7 @@ public partial class ExtractImageControl : FunctionControl, IResettableControl
         };
     }
 
-    public override string FunctionName => "提取图片";
+    public override string FunctionName => "Extraction picture";
 
     public override Bitmap IconImage => Resources.ExtractImage;
 
@@ -75,20 +75,28 @@ public partial class ExtractImageControl : FunctionControl, IResettableControl
     {
         base.OnLoad(e);
         ShowFileMaskPreview();
-        AppContext.MainForm.SetTooltip(_SourceFileControl.FileList, "包含图片的 PDF 文件路径");
-        AppContext.MainForm.SetTooltip(_TargetBox, "放置输出图片的文件夹路径");
-        AppContext.MainForm.SetTooltip(_ExtractPageRangeBox, "在此指定需提取图片的页码范围，不指定页码范围时提取所有页面的图片");
+        AppContext.MainForm.SetTooltip(_SourceFileControl.FileList, "Path to PDF file containing images");
+        AppContext.MainForm.SetTooltip(_TargetBox, "The path to the folder where the output image is placed");
+        AppContext.MainForm.SetTooltip(_ExtractPageRangeBox,
+            "Specify the page number range to extract the picture here, if the page number range is not specified, extract the pictures of all pages");
         AppContext.MainForm.SetTooltip(_FileNameMaskBox,
-            "提取的图片文件名按其所在页码数字命名，可在此修改命名规则\n“0000”：不足四位用0补足四位\n“0”：文件名按实际页码，不用0补位\n可用英文双引号将文本括起来（如“\"相约2000\"0”，前面的“2000”不会被解释为占位符）");
+            "The name of the extracted image file is named according to the number of the page where it is located, and the naming rules can be modified here\n\"0000\": If there are less than four digits, use 0 to make up the four digits\n\"0\": The file name is based on the actual page number, without 0 to make up the digits\n n You can enclose the text in English double quotation marks (such as \"\\\" is about 2000\"0\", the preceding \"2000\" will not be interpreted as a placeholder)");
         AppContext.MainForm.SetTooltip(_MergeImageBox,
-            "尝试将相同页面下的图片合并为同一个文件\n①合并图片的格式必须相同\n②宽度必须相同\n③仅限 PNG 和 TIFF 格式");
-        AppContext.MainForm.SetTooltip(_VerticalFlipImageBox, "某些 PDF 文件导出的图片上下颠倒，可用此选项将其还原");
-        AppContext.MainForm.SetTooltip(_InvertBlackAndWhiteBox, "翻转 PNG 和 TIFF 黑白图片的颜色");
-        AppContext.MainForm.SetTooltip(_MinHeightBox, "忽略高度小于此处指定值的图片");
-        AppContext.MainForm.SetTooltip(_MinWidthBox, "忽略宽度小于此处指定值的图片");
-        AppContext.MainForm.SetTooltip(_MergeJpgToPngBox, "在合并图片时，将使用有损压缩的 JPEG 图片合并为无损压缩的 PNG 图片");
-        AppContext.MainForm.SetTooltip(_ExtractButton, "点击此按钮，将 PDF 文件的图片提取到指定的目录");
-        AppContext.MainForm.SetTooltip(_SkipRedundantImagesBox, "避免导出 PDF 内部引用值一致的图片");
+            "Attempt to merge pictures under the same page into the same file\n①The format of the merged pictures must be the same\n②The width must be the same\n③Only in PNG and TIFF format");
+        AppContext.MainForm.SetTooltip(_VerticalFlipImageBox,
+            "The image exported from some PDF files is upside down, you can use this option to restore it");
+        AppContext.MainForm.SetTooltip(_InvertBlackAndWhiteBox,
+            "Invert the color of PNG and TIFF black and white images");
+        AppContext.MainForm.SetTooltip(_MinHeightBox,
+            "Ignore images whose height is less than the value specified here");
+        AppContext.MainForm.SetTooltip(_MinWidthBox,
+            "Ignore images with a width smaller than the value specified here");
+        AppContext.MainForm.SetTooltip(_MergeJpgToPngBox,
+            "Merge JPEG images with lossy compression into PNG images with lossless compression when merging images");
+        AppContext.MainForm.SetTooltip(_ExtractButton,
+            "Click this button to extract the image of the PDF file to the specified directory");
+        AppContext.MainForm.SetTooltip(_SkipRedundantImagesBox,
+            "Avoid exporting images with consistent internal reference values ​​in PDF");
         Reload();
     }
 
@@ -206,7 +214,7 @@ public partial class ExtractImageControl : FunctionControl, IResettableControl
         }
         catch (Exception)
         {
-            _FileMaskPreviewBox.Text = "文件名掩码无效。";
+            _FileMaskPreviewBox.Text = "The file name mask is invalid.";
         }
     }
 

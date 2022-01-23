@@ -72,10 +72,10 @@ namespace PDFPatcher.Properties {
 
         /// <summary>
         ///  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
-        ///&lt;html&gt;
-        ///	&lt;head&gt;
-        ///		&lt;title&gt;关于 $AppName&lt;/title&gt;
-        ///		&lt;style&gt;
+  ///&lt;html&gt;
+         /// &lt;head&gt;
+         /// &lt;title&gt;About $AppName&lt;/title&gt;
+         /// &lt;style&gt;
         ///body {
         ///	margin: 0;
         ///	padding: 5pt;
@@ -104,7 +104,7 @@ namespace PDFPatcher.Properties {
         ///		&lt;/style&gt;
         ///	&lt;/head&gt;
         ///	&lt;body&gt;
-        ///		&lt;h1&gt;关于 $AppName&lt;/h1&gt;
+        ///		&lt;h1&gt;About $AppName&lt;/h1&gt;
         ///		&lt;div style=&quot;padding: 0  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AboutPage {

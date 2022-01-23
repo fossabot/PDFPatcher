@@ -61,7 +61,7 @@ public partial class MainForm : Form
         HideLogControl();
         _LogControl.VisibleChanged += (_, _) => _FunctionContainer.Visible = !_LogControl.Visible;
         _OpenConfigDialog.FileName =
-            _SaveConfigDialog.FileName = Constants.AppName + "配置文件" + Constants.FileExtensions.Json;
+            _SaveConfigDialog.FileName = Constants.AppName + "Profile" + Constants.FileExtensions.Json;
         _OpenConfigDialog.Filter = _SaveConfigDialog.Filter = Constants.FileExtensions.JsonFilter;
         _FunctionContainer.ImageList = new ImageList();
         _FunctionContainer.AllowDrop = true;
@@ -160,14 +160,14 @@ public partial class MainForm : Form
                 string u = r.GetAttribute("url");
                 if (string.IsNullOrEmpty(u) == false
                     && new Version(ProductVersion) < new Version(r.GetAttribute("version"))
-                    && this.ConfirmOKBox("发现新版本，是否前往下载？"))
+                    && this.ConfirmOKBox("Discover new versions, have you going to download?"))
                 {
                     ShowDialogWindow(new UpdateForm());
                 }
             }
             catch (Exception)
             {
-                FormHelper.ErrorBox("版本信息文件格式错误，请稍候重试。");
+                FormHelper.ErrorBox("Version information file format error, please try again later.");
             }
 
         Exit:
@@ -223,7 +223,8 @@ public partial class MainForm : Form
             case Commands.ResetOptions:
                 {
                     if (GetActiveFunctionControl() is IResettableControl f
-                        && FormHelper.YesNoBox("是否将当前功能恢复为默认设置？") == DialogResult.Yes)
+                        && FormHelper.YesNoBox("Do you return the current function to the default setting?") ==
+                        DialogResult.Yes)
                     {
                         f.Reset();
                     }
@@ -234,7 +235,7 @@ public partial class MainForm : Form
                 {
                     if (AppContext.Load(_OpenConfigDialog.FileName) == false)
                     {
-                        FormHelper.ErrorBox("无法加载指定的配置文件。");
+                        FormHelper.ErrorBox("Unable to load the specified profile.");
                         return;
                     }
 

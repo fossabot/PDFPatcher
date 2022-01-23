@@ -118,66 +118,66 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="BookmarkText" xml:space="preserve">
-        <value>书签文本</value>
+        <value>Bookmark Text</value>
     </data>
     <data name="CustomToolbarButtons" xml:space="preserve">
-        <value>自定义工具栏按钮</value>
+        <value>Customize Toolbar Buttons</value>
     </data>
     <data name="DocInfo" xml:space="preserve">
-        <value>文档属性</value>
+        <value>Document Information</value>
     </data>
     <data name="DocText" xml:space="preserve">
-        <value>正文文本</value>
+        <value>Document text</value>
     </data>
     <data name="Encodings" xml:space="preserve">
-        <value>编码方式</value>
+        <value>Encodings</value>
     </data>
     <data name="Folders" xml:space="preserve">
-        <value>导出图片目录</value>
+        <value>Folders</value>
     </data>
     <data name="InfoFiles" xml:space="preserve">
-        <value>信息文件</value>
+        <value>Info Files</value>
     </data>
     <data name="OptimalMemoryUsage" xml:space="preserve">
-        <value>减少占用内存</value>
+        <value>Optimal Memory Usage</value>
     </data>
     <data name="OptimalSpeed" xml:space="preserve">
-        <value>优化处理效率</value>
+        <value>Optimal Speed</value>
     </data>
     <data name="Options" xml:space="preserve">
-        <value>处理选项</value>
+        <value>Options</value>
     </data>
     <data name="Path" xml:space="preserve">
-        <value>路径</value>
+        <value>Path</value>
     </data>
     <data name="PdfLoadMode" xml:space="preserve">
-        <value>PDF读取方式</value>
+        <value>PDF Load Mode</value>
     </data>
     <data name="PdfReaderPath" xml:space="preserve">
-        <value>PDF阅读器路径</value>
+        <value>PDF Reader Path</value>
     </data>
     <data name="RecentFiles" xml:space="preserve">
-        <value>历史文件</value>
+        <value>Recent Files</value>
     </data>
     <data name="ReplaceItems" xml:space="preserve">
-        <value>替换文本</value>
+        <value>Replace Items</value>
     </data>
     <data name="Root" xml:space="preserve">
-        <value>配置文件</value>
+        <value>Root</value>
     </data>
     <data name="SaveAppSettings" xml:space="preserve">
-        <value>保存程序配置</value>
+        <value>Save App Settings</value>
     </data>
     <data name="SearchItems" xml:space="preserve">
-        <value>查找文本</value>
+        <value>Search Items</value>
     </data>
     <data name="SourceFiles" xml:space="preserve">
-        <value>输入文件</value>
+        <value>Source Files</value>
     </data>
     <data name="TargetFiles" xml:space="preserve">
-        <value>目标文件</value>
+        <value>Target Files</value>
     </data>
     <data name="Version" xml:space="preserve">
-        <value>版本</value>
+        <value>Version</value>
     </data>
 </root>

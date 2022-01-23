@@ -110,7 +110,7 @@ internal sealed class InsertBookmarkCommand : IEditorCommand
             string t = f.Title;
             if (string.IsNullOrEmpty(t))
             {
-                FormHelper.ErrorBox("书签标题不能为空。");
+                FormHelper.ErrorBox("The bookmark title cannot be empty.");
                 return;
             }
 

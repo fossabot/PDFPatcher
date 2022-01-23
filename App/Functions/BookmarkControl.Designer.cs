@@ -41,7 +41,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 12);
             this.label1.TabIndex = 0;
-            this.label1.Text = "P&DF 信息文件：";
+            this.label1.Text = "P&DF information file:";
             //
             // _BrowseBookmarkButton
             //
@@ -51,7 +51,7 @@
             this._BrowseBookmarkButton.Name = "_BrowseBookmarkButton";
             this._BrowseBookmarkButton.Size = new System.Drawing.Size(75, 23);
             this._BrowseBookmarkButton.TabIndex = 2;
-            this._BrowseBookmarkButton.Text = "浏览...";
+            this._BrowseBookmarkButton.Text = "Browse...";
             this._BrowseBookmarkButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this._BrowseBookmarkButton.UseVisualStyleBackColor = true;
             this._BrowseBookmarkButton.Click += new System.EventHandler(this._BrowseSourcePdfButton_Click);
@@ -59,14 +59,14 @@
             // _OpenBookmarkBox
             //
             this._OpenBookmarkBox.DefaultExt = "xml";
-            this._OpenBookmarkBox.Filter = "支持的信息文件 (*.xml,*.txt)|*.xml;*.txt|XML 信息文件 (*.xml)|*.xml|简易文本书签文件(*.txt)|*.txt";
-            this._OpenBookmarkBox.Title = "指定需要导入的信息文件的路径";
+            this._OpenBookmarkBox.Filter = "Supported information file (*.xml,*.txt)|*.xml;*.txt|XML Information file (*.xml)|*.xml|Simple text bookmark file(*.txt)|*.txt";
+            this._OpenBookmarkBox.Title = "Specify the path to the information that needs to be imported";
             //
             // _SaveBookmarkBox
             //
             this._SaveBookmarkBox.DefaultExt = "xml";
-            this._SaveBookmarkBox.Filter = "支持的信息文件 (*.xml,*.txt)|*.xml;*.txt|XML 信息文件 (*.xml)|*.xml|简易文本书签文件(*.txt)|*.txt";
-            this._SaveBookmarkBox.Title = "指定导出的信息文件路径";
+   this._SaveBookmarkBox.Filter = "Supported information file (*.xml,*.txt)|*.xml;*.txt|XML information file (*.xml)|*.xml|Simple text bookmark file (*.txt) |*.txt";
+             this._SaveBookmarkBox.Title = "Specify the exported information file path";
             //
             // panel1
             //

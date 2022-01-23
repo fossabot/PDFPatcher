@@ -20,7 +20,7 @@ public sealed class MuPage : IDisposable
         catch (AccessViolationException)
         {
             _page.DisposeHandle();
-            throw new MuPdfException("无法加载第 " + pageNumber + " 页。");
+            throw new MuPdfException("Could not load page " + pageNumber + ".");
         }
     }
 
@@ -81,7 +81,7 @@ public sealed class MuPage : IDisposable
 
         if (_cookie.ErrorCount > 0)
         {
-            Debug.WriteLine("在第 " + PageNumber + " 页有 " + _cookie.ErrorCount + " 个错误。");
+            Debug.WriteLine("There are " + _cookie.ErrorCount + " errors on page " + PageNumber + ".");
         }
 
         return _displayList;
@@ -173,7 +173,7 @@ public sealed class MuPage : IDisposable
         catch (AccessViolationException)
         {
             pix.DisposeHandle();
-            throw new MuPdfException("无法渲染页面：" + PageNumber);
+            throw new MuPdfException("Failed to render page: " + PageNumber);
         }
     }
 

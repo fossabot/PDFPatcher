@@ -81,25 +81,25 @@
 			//
 			// _SequenceColumn
 			//
-			this._SequenceColumn.Text = "序号";
-			this._SequenceColumn.Width = 40;
-			//
-			// _OriginalFontColumn
-			//
-			this._OriginalFontColumn.AspectName = "";
-			this._OriginalFontColumn.Text = "原字体";
-			this._OriginalFontColumn.Width = 160;
-			//
-			// _SubstitutionColumn
-			//
-			this._SubstitutionColumn.AspectName = "";
-			this._SubstitutionColumn.Text = "替换字体";
-			this._SubstitutionColumn.Width = 200;
-			//
-			// _CharSubstitutionColumn
-			//
-			this._CharSubstitutionColumn.Text = "替换字符";
-			this._CharSubstitutionColumn.Width = 71;
+this._SequenceColumn.Text = "Sequence Number";
+this._SequenceColumn.Width = 40;
+//
+// _OriginalFontColumn
+//
+this._OriginalFontColumn.AspectName = "";
+this._OriginalFontColumn.Text = "Original Font";
+this._OriginalFontColumn.Width = 160;
+//
+// _SubstitutionColumn
+//
+this._SubstitutionColumn.AspectName = "";
+this._SubstitutionColumn.Text = "Substitution Font";
+this._SubstitutionColumn.Width = 200;
+//
+// _CharSubstitutionColumn
+//
+this._CharSubstitutionColumn.Text = "Substitution Character";
+this._CharSubstitutionColumn.Width = 71;
 			//
 			// _FontSubstitutionMenu
 			//
@@ -117,26 +117,26 @@
 			this._CopySubstitutionFont.Image = global::PDFPatcher.Properties.Resources.Copy;
 			this._CopySubstitutionFont.Name = "_CopySubstitutionFont";
 			this._CopySubstitutionFont.Size = new System.Drawing.Size(191, 26);
-			this._CopySubstitutionFont.Text = "复制替换字体(&F)";
-			//
-			// _PasteSubstitutionFont
-			//
-			this._PasteSubstitutionFont.Image = global::PDFPatcher.Properties.Resources.Paste;
-			this._PasteSubstitutionFont.Name = "_PasteSubstitutionFont";
-			this._PasteSubstitutionFont.Size = new System.Drawing.Size(191, 26);
-			this._PasteSubstitutionFont.Text = "粘贴替换字体(&Z)";
-			//
-			// _RemovePageLabelButton
-			//
-			this._RemovePageLabelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this._RemovePageLabelButton.Enabled = false;
-			this._RemovePageLabelButton.Image = global::PDFPatcher.Properties.Resources.Delete;
-			this._RemovePageLabelButton.Location = new System.Drawing.Point(509, 4);
-			this._RemovePageLabelButton.Margin = new System.Windows.Forms.Padding(4);
-			this._RemovePageLabelButton.Name = "_RemovePageLabelButton";
-			this._RemovePageLabelButton.Size = new System.Drawing.Size(71, 29);
-			this._RemovePageLabelButton.TabIndex = 4;
-			this._RemovePageLabelButton.Text = "删除";
+this._CopySubstitutionFont.Text = "&Copy SubstitutionFont";
+//
+// _PasteSubstitutionFont
+//
+this._PasteSubstitutionFont.Image = global::PDFPatcher.Properties.Resources.Paste;
+this._PasteSubstitutionFont.Name = "_PasteSubstitutionFont";
+this._PasteSubstitutionFont.Size = new System.Drawing.Size(191, 26);
+this._PasteSubstitutionFont.Text = "&Paste Substitution Font";
+//
+// _RemovePageLabelButton
+//
+this._RemovePageLabelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+this._RemovePageLabelButton.Enabled = false;
+this._RemovePageLabelButton.Image = global::PDFPatcher.Properties.Resources.Delete;
+this._RemovePageLabelButton.Location = new System.Drawing.Point(509, 4);
+this._RemovePageLabelButton.Margin = new System.Windows.Forms.Padding(4);
+this._RemovePageLabelButton.Name = "_RemovePageLabelButton";
+this._RemovePageLabelButton.Size = new System.Drawing.Size(71, 29);
+this._RemovePageLabelButton.TabIndex = 4;
+this._RemovePageLabelButton.Text = "Remove";
 			this._RemovePageLabelButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._RemovePageLabelButton.UseVisualStyleBackColor = true;
 			this._RemovePageLabelButton.Click += new System.EventHandler(this._RemovePageLabelButton_Click);
@@ -151,7 +151,7 @@
 			this._AddPageLabelButton.Name = "_AddPageLabelButton";
 			this._AddPageLabelButton.Size = new System.Drawing.Size(71, 29);
 			this._AddPageLabelButton.TabIndex = 3;
-			this._AddPageLabelButton.Text = "添加";
+			this._AddPageLabelButton.Text = "Add";
 			this._AddPageLabelButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._AddPageLabelButton.UseVisualStyleBackColor = true;
 			this._AddPageLabelButton.Click += new System.EventHandler(this._AddPageLabelButton_Click);
@@ -165,7 +165,7 @@
 			this._ListDocumentFontButton.Name = "_ListDocumentFontButton";
 			this._ListDocumentFontButton.Size = new System.Drawing.Size(147, 29);
 			this._ListDocumentFontButton.TabIndex = 2;
-			this._ListDocumentFontButton.Text = "列出文档字体";
+			this._ListDocumentFontButton.Text = "List the document font";
 			this._ListDocumentFontButton.UseVisualStyleBackColor = true;
 			this._ListDocumentFontButton.Click += new System.EventHandler(this._ListDocumentFontButton_Click);
 			//
@@ -177,7 +177,7 @@
 			this._EmbedLegacyCjkFontsBox.Name = "_EmbedLegacyCjkFontsBox";
 			this._EmbedLegacyCjkFontsBox.Size = new System.Drawing.Size(104, 19);
 			this._EmbedLegacyCjkFontsBox.TabIndex = 0;
-			this._EmbedLegacyCjkFontsBox.Text = "嵌入汉字库";
+			this._EmbedLegacyCjkFontsBox.Text = "Embedded Chinese word library";
 			this._EmbedLegacyCjkFontsBox.UseVisualStyleBackColor = true;
 			//
 			// _EnableFontSubstitutionsBox
@@ -188,7 +188,7 @@
 			this._EnableFontSubstitutionsBox.Name = "_EnableFontSubstitutionsBox";
 			this._EnableFontSubstitutionsBox.Size = new System.Drawing.Size(119, 19);
 			this._EnableFontSubstitutionsBox.TabIndex = 1;
-			this._EnableFontSubstitutionsBox.Text = "允许替换字体";
+			this._EnableFontSubstitutionsBox.Text = "Allow replacement fonts";
 			this._EnableFontSubstitutionsBox.UseVisualStyleBackColor = true;
 			//
 			// panel1
@@ -214,7 +214,7 @@
 			this._TrimTrailingWhiteSpaceBox.Name = "_TrimTrailingWhiteSpaceBox";
 			this._TrimTrailingWhiteSpaceBox.Size = new System.Drawing.Size(179, 19);
 			this._TrimTrailingWhiteSpaceBox.TabIndex = 6;
-			this._TrimTrailingWhiteSpaceBox.Text = "同时删除文本尾随空格";
+			this._TrimTrailingWhiteSpaceBox.Text = "At the same time, delete the text tail space";
 			this._TrimTrailingWhiteSpaceBox.UseVisualStyleBackColor = true;
 			//
 			// FontSubstitutionsEditor

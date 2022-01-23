@@ -72,30 +72,30 @@
 			//
 			// _SequenceColumn
 			//
-			this._SequenceColumn.IsEditable = false;
-			this._SequenceColumn.Text = "序号";
-			this._SequenceColumn.Width = 40;
-			//
-			// _PageNumColumn
-			//
-			this._PageNumColumn.Text = "文档页码";
-			this._PageNumColumn.Width = 65;
-			//
-			// _LabelStyleColumn
-			//
-			this._LabelStyleColumn.IsEditable = false;
-			this._LabelStyleColumn.Text = "页码样式";
-			this._LabelStyleColumn.Width = 103;
-			//
-			// _LabelPrefixColumn
-			//
-			this._LabelPrefixColumn.Text = "前缀文本";
-			this._LabelPrefixColumn.Width = 70;
-			//
-			// _StartNumColumn
-			//
-			this._StartNumColumn.Text = "起始号码";
-			this._StartNumColumn.Width = 70;
+this._SequenceColumn.IsEditable = false;
+this._SequenceColumn.Text = "Sequence Number";
+this._SequenceColumn.Width = 40;
+//
+// _PageNumColumn
+//
+this._PageNumColumn.Text = "Document Page Number";
+this._PageNumColumn.Width = 65;
+//
+// _LabelStyleColumn
+//
+this._LabelStyleColumn.IsEditable = false;
+this._LabelStyleColumn.Text = "Page Number Style";
+this._LabelStyleColumn.Width = 103;
+//
+// _LabelPrefixColumn
+//
+this._LabelPrefixColumn.Text = "Prefix Text";
+this._LabelPrefixColumn.Width = 70;
+//
+// _StartNumColumn
+//
+this._StartNumColumn.Text = "Start Number";
+this._StartNumColumn.Width = 70;
 			//
 			// _RemovePageLabelButton
 			//
@@ -105,7 +105,7 @@
 			this._RemovePageLabelButton.Name = "_RemovePageLabelButton";
 			this._RemovePageLabelButton.Size = new System.Drawing.Size(53, 23);
 			this._RemovePageLabelButton.TabIndex = 2;
-			this._RemovePageLabelButton.Text = "删除";
+			this._RemovePageLabelButton.Text = "Delete";
 			this._RemovePageLabelButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._RemovePageLabelButton.UseVisualStyleBackColor = true;
 			this._RemovePageLabelButton.Click += new System.EventHandler(this._RemovePageLabelButton_Click);
@@ -118,7 +118,7 @@
 			this._AddPageLabelButton.Name = "_AddPageLabelButton";
 			this._AddPageLabelButton.Size = new System.Drawing.Size(53, 23);
 			this._AddPageLabelButton.TabIndex = 1;
-			this._AddPageLabelButton.Text = "添加";
+			this._AddPageLabelButton.Text = "Add";
 			this._AddPageLabelButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._AddPageLabelButton.UseVisualStyleBackColor = true;
 			this._AddPageLabelButton.Click += new System.EventHandler(this._AddPageLabelButton_Click);

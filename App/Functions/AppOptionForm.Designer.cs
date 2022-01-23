@@ -62,7 +62,7 @@
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size(82, 15);
 			this.label11.TabIndex = 2;
-			this.label11.Text = "文档属性：";
+			this.label11.Text = "Document properties:";
 			//
 			// _BookmarkEncodingBox
 			//
@@ -82,7 +82,7 @@
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(82, 15);
 			this.label10.TabIndex = 4;
-			this.label10.Text = "书签文本：";
+			this.label10.Text = "Bookmark text:";
 			//
 			// groupBox1
 			//
@@ -95,7 +95,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(573, 58);
 			this.groupBox1.TabIndex = 1;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "访问 PDF 文档";
+			this.groupBox1.Text = "Access PDF documentation";
 			//
 			// _LoadPartialFileBox
 			//
@@ -106,7 +106,7 @@
 			this._LoadPartialFileBox.Size = new System.Drawing.Size(268, 19);
 			this._LoadPartialFileBox.TabIndex = 1;
 			this._LoadPartialFileBox.TabStop = true;
-			this._LoadPartialFileBox.Text = "减少占用内存（仅加载需处理部分）";
+			this._LoadPartialFileBox.Text = "Reduce the occupation of memory (Only load the processing part)";
 			this._LoadPartialFileBox.UseVisualStyleBackColor = true;
 			//
 			// _LoadEntireFileBox
@@ -118,7 +118,7 @@
 			this._LoadEntireFileBox.Size = new System.Drawing.Size(238, 19);
 			this._LoadEntireFileBox.TabIndex = 0;
 			this._LoadEntireFileBox.TabStop = true;
-			this._LoadEntireFileBox.Text = "优化处理效率（加载整个文件）";
+			this._LoadEntireFileBox.Text = "Optimize processing efficiency (Load the entire file)";
 			this._LoadEntireFileBox.UseVisualStyleBackColor = true;
 			//
 			// label12
@@ -130,7 +130,7 @@
 			this.label12.Name = "label12";
 			this.label12.Size = new System.Drawing.Size(560, 21);
 			this.label12.TabIndex = 6;
-			this.label12.Text = "说明：当遇到 PDF 文档的文本为乱码时，可尝试使用此选项强制设定编码。";
+			this.label12.Text = "Note: When the text of the PDF document is garbled, you can try to use this option to force the setting encoding.";
 			//
 			// groupBox2
 			//
@@ -150,7 +150,7 @@
 			this.groupBox2.Size = new System.Drawing.Size(576, 114);
 			this.groupBox2.TabIndex = 9;
 			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "读取文档所用的编码";
+			this.groupBox2.Text = "Read the encoding used by the document";
 			//
 			// label2
 			//
@@ -160,7 +160,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(82, 15);
 			this.label2.TabIndex = 7;
-			this.label2.Text = "正文文本：";
+			this.label2.Text = "Text text:";
 			//
 			// _TextEncodingBox
 			//
@@ -180,7 +180,7 @@
 			this._SaveAppSettingsBox.Name = "_SaveAppSettingsBox";
 			this._SaveAppSettingsBox.Size = new System.Drawing.Size(179, 19);
 			this._SaveAppSettingsBox.TabIndex = 11;
-			this._SaveAppSettingsBox.Text = "自动保存应用程序设置";
+			this._SaveAppSettingsBox.Text = "Automatically save application settings";
 			this._SaveAppSettingsBox.UseVisualStyleBackColor = true;
 			//
 			// _CreateShortcutButton
@@ -190,7 +190,7 @@
 			this._CreateShortcutButton.Name = "_CreateShortcutButton";
 			this._CreateShortcutButton.Size = new System.Drawing.Size(216, 29);
 			this._CreateShortcutButton.TabIndex = 12;
-			this._CreateShortcutButton.Text = "在桌面创建程序快捷方式";
+			this._CreateShortcutButton.Text = "Create a program shortcut at desktop";
 			this._CreateShortcutButton.UseVisualStyleBackColor = true;
 			this._CreateShortcutButton.Click += new System.EventHandler(this._CreateShortcutButton_Click);
 			//
@@ -212,7 +212,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(82, 15);
 			this.label1.TabIndex = 7;
-			this.label1.Text = "字体名称：";
+			this.label1.Text = "Font Name:";
 			//
 			// AppOptionControl
 			//
@@ -229,7 +229,7 @@
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "AppOptionControl";
-			this.Text = "程序工作选项";
+			this.Text = "Program work option";
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.groupBox2.ResumeLayout(false);

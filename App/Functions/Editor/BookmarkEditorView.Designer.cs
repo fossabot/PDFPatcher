@@ -78,33 +78,33 @@
 			// _BookmarkNameColumn
 			//
 			this.BookmarkNameColumn.AspectName = "";
-			this.BookmarkNameColumn.Text = "书签文本";
-			this.BookmarkNameColumn.Width = 241;
-			//
-			// _BookmarkOpenColumn
-			//
-			this.BookmarkOpenColumn.AspectName = "";
-			this.BookmarkOpenColumn.CheckBoxes = true;
-			this.BookmarkOpenColumn.DisplayIndex = 2;
-			this.BookmarkOpenColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.BookmarkOpenColumn.Text = "打开";
-			this.BookmarkOpenColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.BookmarkOpenColumn.Width = 40;
-			//
-			// _BookmarkPageColumn
-			//
-			this.BookmarkPageColumn.AspectName = "";
-			this.BookmarkPageColumn.DisplayIndex = 1;
-			this.BookmarkPageColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.BookmarkPageColumn.Text = "页码";
-			this.BookmarkPageColumn.Width = 42;
-			//
-			// _ActionColumn
-			//
-			this._ActionColumn.AspectName = "";
-			this._ActionColumn.Hyperlink = true;
-			this._ActionColumn.IsEditable = false;
-			this._ActionColumn.Text = "书签动作";
+this.BookmarkNameColumn.Text = "Bookmark Text";
+this.BookmarkNameColumn.Width = 241;
+//
+// _BookmarkOpenColumn
+//
+this.BookmarkOpenColumn.AspectName = "";
+this.BookmarkOpenColumn.CheckBoxes = true;
+this.BookmarkOpenColumn.DisplayIndex = 2;
+this.BookmarkOpenColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+this.BookmarkOpenColumn.Text = "Open";
+this.BookmarkOpenColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+this.BookmarkOpenColumn.Width = 40;
+//
+// _BookmarkPageColumn
+//
+this.BookmarkPageColumn.AspectName = "";
+this.BookmarkPageColumn.DisplayIndex = 1;
+this.BookmarkPageColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+this.BookmarkPageColumn.Text = "Page Number";
+this.BookmarkPageColumn.Width = 42;
+//
+// _ActionColumn
+//
+this._ActionColumn.AspectName = "";
+this._ActionColumn.Hyperlink = true;
+this._ActionColumn.IsEditable = false;
+this._ActionColumn.Text = "Bookmark Action";
 			this._ActionColumn.Width = 100;
 			//
 			// BookmarkEditor

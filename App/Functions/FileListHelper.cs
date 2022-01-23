@@ -37,7 +37,7 @@ internal sealed class FileListHelper
             }
 
             args.Effect = DragDropEffects.Link;
-            args.InfoMessage = "添加 " + files.Length + " 个文件";
+            args.InfoMessage = "Add " + files.Length + " files";
             args.Handled = true;
         };
         ds.Dropped += (_, args) =>
@@ -102,6 +102,7 @@ internal sealed class FileListHelper
     /// <summary>
     ///     Setting write processing functions for <see cref="olvcolumn />).
     /// 
+    /// 
     /// </summary>
     /// <param name="columns">A column that needs to be set.</param>
     public static void SetupCommonPdfColumns(params OLVColumn[] columns)
@@ -110,25 +111,25 @@ internal sealed class FileListHelper
         {
             switch (item.Text)
             {
-                case "源文件名":
+                case "source filename":
                     SetupFileNameColumn(item);
                     break;
-                case "文件夹":
+                case "folder":
                     SetupFolderNameColumn(item);
                     break;
-                case "标题":
+                case "title":
                     SetupTitleColumn(item);
                     break;
-                case "作者":
+                case "author":
                     SetupAuthorColumn(item);
                     break;
-                case "主题":
+                case "subject":
                     SetupSubjectColumn(item);
                     break;
-                case "关键词":
+                case "keyword":
                     SetupKeywordsColumn(item);
                     break;
-                case "页数":
+                case "Number of pages":
                     SetupPageCountColumn(item);
                     break;
             }
@@ -169,7 +170,7 @@ internal sealed class FileListHelper
     private static void SetupFileNameColumn(OLVColumn column) =>
         column.AsTyped<SourceItem.Pdf>(c =>
         {
-            c.AspectGetter = o => o.Type == SourceItem.ItemType.Empty ? "<空白页面>" : o.FileName;
+            c.AspectGetter = o => o.Type == SourceItem.ItemType.Empty ? "<Blank page>" : o.FileName;
             c.ImageGetter = _ => 0;
         });
 
@@ -208,7 +209,7 @@ internal sealed class FileListHelper
                 IList l = _fileList.SelectedObjects;
                 if (l.Count == 0)
                 {
-                    if (FormHelper.YesNoBox("是否清空文件列表？") == DialogResult.Yes)
+                    if (FormHelper.YesNoBox("Will it empty a list of files?") == DialogResult.Yes)
                     {
                         _fileList.ClearObjects();
                     }

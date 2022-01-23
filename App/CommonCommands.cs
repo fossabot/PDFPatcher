@@ -20,7 +20,7 @@ internal static class CommonCommands
         string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
         s.Save(FileHelper.CombinePath(desktopPath, Constants.AppName + ".lnk"));
 
-        FormHelper.InfoBox("已在桌面创建" + Constants.AppName + "的快捷方式。");
+        FormHelper.InfoBox("A shortcut for " + Constants.AppName + " has been created on the desktop.");
     }
 
     internal static void VisitHomePage() => Process.Start(Constants.AppHomePage);

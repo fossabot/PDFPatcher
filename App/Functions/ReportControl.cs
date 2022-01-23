@@ -32,7 +32,8 @@ public partial class ReportControl : UserControl
         }
         else
         {
-            if (FormHelper.YesNoBox("程序正在工作，是否终止执行？") != DialogResult.Yes)
+            if (FormHelper.YesNoBox("The program is working, do you want to terminate the execution?") !=
+                DialogResult.Yes)
             {
                 return;
             }
@@ -114,7 +115,7 @@ public partial class ReportControl : UserControl
         _TotalProgressBar.Value = 0;
         _InputFileBox.Text = string.Empty;
         _OutputFileBox.Text = string.Empty;
-        _CancelButton.Text = "取消";
+        _CancelButton.Text = "Cancel";
         _CancelButton.Image = Resources.Reset;
     }
 
@@ -122,7 +123,7 @@ public partial class ReportControl : UserControl
     {
         _ProgressBar.Value = _ProgressBar.Maximum;
         _TotalProgressBar.Value = _TotalProgressBar.Maximum;
-        _CancelButton.Text = "返回";
+        _CancelButton.Text = "Return";
         _CancelButton.Image = Resources.Return;
     }
 
@@ -140,7 +141,7 @@ public partial class ReportControl : UserControl
         }
         catch (Exception)
         {
-            FormHelper.ErrorBox("无法打开文件：" + f);
+            FormHelper.ErrorBox("Unable to open the file:" + f);
         }
     }
 

@@ -5,12 +5,12 @@ namespace PDFPatcher.Functions;
 
 internal sealed class MacroMenu : ContextMenuStrip
 {
-    internal const string InsertText = "插入";
+    internal const string InsertText = "Insert";
 
-    //internal const string Copy = "复制";
-    //internal const string Paste = "粘贴";
-    //internal const string Cut = "剪切";
-    //internal const string Delete = "删除";
+    //internal const string Copy = "Copy";
+    //internal const string Paste = "Paste";
+    //internal const string Cut = "Cut";
+    //internal const string Delete = "Delete";
 
     //internal void LoadCopyEditMacros () {
     //    this.Items.AddRange (new ToolStripItem[] {

@@ -17,7 +17,7 @@ internal sealed class BookmarkOpenStatusProcessor : IPdfInfoXmlProcessor<bool>
 
     #region IInfoDocProcessor member
 
-    public string Name => "设置书签状态为" + (Parameter ? "打开" : "关闭");
+    public string Name => "Set bookmark status to" + (Parameter ? "Open" : "Close");
 
     public IUndoAction Process(XmlElement item)
     {

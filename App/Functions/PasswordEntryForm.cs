@@ -12,7 +12,7 @@ public partial class PasswordEntryForm : Form
 
         sourceFile = Path.GetFileName(sourceFile);
         Text += "：" + sourceFile;
-        _MessageLabel.Text = _MessageLabel.Text.Replace("PDF 文件", string.Concat("PDF 文件 ", sourceFile, " "));
+        _MessageLabel.Text = _MessageLabel.Text.Replace("PDF file", string.Concat("PDF file ", sourceFile, " "));
     }
 
     /// <summary>

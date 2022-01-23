@@ -55,12 +55,14 @@ internal sealed class ImageInfo
         {
             if (info.InlineImage.PdfRef != null)
             {
-                Tracker.TraceMessage(string.Concat("忽略了一幅编号为 ", info.InlineImage.ToString(), "，尺寸为 ", info.Width, "*",
-                    info.Height, "的图像。"));
+                Tracker.TraceMessage(string.Concat("Ignored a picture numbered ", info.InlineImage.ToString(),
+                    ", size is ", info.Width, "*",
+                    info.Height, "The image."));
             }
             else
             {
-                Tracker.TraceMessage(string.Concat("忽略了一幅尺寸为 ", info.Width, "*", info.Height, "的内嵌图像。"));
+                Tracker.TraceMessage(string.Concat("Ignoring an inline image with dimensions ", info.Width, "*",
+                    info.Height, "."));
             }
 
             return null;
@@ -128,7 +130,7 @@ internal sealed class ImageInfo
                     outBuf = JBig2Decoder.Decode(decodedBytes, globals);
                     if (outBuf == null)
                     {
-                        info.LastDecodeError = "导出 JBig2 编码图片失败。";
+                        info.LastDecodeError = "Export JBIG2 coded picture failed.";
                         return null;
                     }
 
@@ -154,7 +156,7 @@ internal sealed class ImageInfo
                 switch (info.PixelFormat)
                 {
                     case PixelFormat.Undefined:
-                        info.LastDecodeError = "无法判定图像的颜色格式。";
+                        info.LastDecodeError = "Unable to determine the color format of the image.";
                         info.ExtName = Constants.FileExtensions.Dat;
                         return null;
                     case PixelFormat.Format1bppIndexed:
@@ -220,7 +222,7 @@ internal sealed class ImageInfo
                 goto EXIT;
             default:
                 info.PixelFormat = PixelFormat.Undefined;
-                info.LastDecodeError = "未支持的图像数据格式：" + filter;
+                info.LastDecodeError = "Unsuined image data format: " + filter;
                 return null;
         }
 
@@ -421,7 +423,8 @@ internal sealed class ImageInfo
                 case "/JBIG2Decode":
                     if (i != filters.Count - 1)
                     {
-                        Tracker.TraceMessage(Tracker.Category.Error, "文件格式错误：" + name + " 解码器不是最后一个解码器。");
+                        Tracker.TraceMessage(Tracker.Category.Error,
+                            "File format error: " + name + " decoder is not the last decoder.");
                     }
 
                     break;
@@ -433,7 +436,7 @@ internal sealed class ImageInfo
 
                     break;
                 default:
-                    Trace.WriteLine(Tracker.Category.Error, "不支持的流编码格式：" + name);
+                    Trace.WriteLine(Tracker.Category.Error, "Unsupported stream encoding format: " + name);
                     break;
             }
         }
@@ -565,7 +568,7 @@ internal sealed class ImageInfo
                     else
                     {
                         info.ColorSpace = arr.GetAsName(0);
-                        //Tracker.TraceMessage (String.Concat ("不支持此图片的色域：", info.ColorSpace));
+                        //Tracker.TraceMessage (String.Concat ("The color gamut of this picture is not supported: ", info.ColorSpace));
                     }
                 }
             }

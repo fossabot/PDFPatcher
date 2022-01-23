@@ -20,10 +20,15 @@ internal sealed class ReplaceFontProcessor : IPageProcessor
 
     private static readonly string[] __LegacyFonts =
     {
-        "宋体", "楷体_GB2312", "仿宋_GB2312", "黑体", "STSONG-LIGHT-GB-EUC-H", "STSONG-LIGHT-GBK-EUC-H"
+        "SimSun", "Kaiti_GB2312", "Imitation Song_GB2312", "Black Body", "STSONG-LIGHT-GB-EUC-H",
+        "STSONG-LIGHT-GBK-EUC-H"
     };
 
-    private static readonly string[] __AlternativeFonts = { "宋体", "楷体", "仿宋", "微软雅黑", "宋体", "宋体" };
+    private static readonly string[] __AlternativeFonts =
+    {
+        "Song style", "Kaiti", "Fake Song", "Microsoft Yahei", "Song style", "Song style"
+    };
+
     private static readonly PdfName __GbkEncoding = new("GBK-EUC-H");
     private static readonly PdfName __GbEncoding = new("GB-EUC-H");
 
@@ -119,7 +124,7 @@ internal sealed class ReplaceFontProcessor : IPageProcessor
         {
             PdfName cf = item.Operands[0] as PdfName;
             if (_fontMap.TryGetValue(cf, out _currentNewFont) ==
-                false) //Tracker.TraceMessage ("找不到字体：" + cf.ToString ());
+                false) //Tracker.TraceMessage ("Can't find the font:" + cf.ToString ());
             {
                 _currentNewFont = null;
             }
@@ -253,7 +258,7 @@ internal sealed class ReplaceFontProcessor : IPageProcessor
 
     private void LoadFonts(PageProcessorContext context, PdfDictionary fonts)
     {
-        Dictionary<PdfName, PRIndirectReference> r = new(fonts.Length); // 替代的字体
+        Dictionary<PdfName, PRIndirectReference> r = new(fonts.Length); // Alternative font
         foreach (KeyValuePair<PdfName, PdfObject> item in fonts)
         {
             if (item.Value is not PdfIndirectReference fr
@@ -272,7 +277,7 @@ internal sealed class ReplaceFontProcessor : IPageProcessor
                     goto BYPASSFONT;
                 }
 
-                string n = PdfDocumentFont.RemoveSubsetPrefix(PdfHelper.GetPdfNameString(fn)); // 字体名称
+                string n = PdfDocumentFont.RemoveSubsetPrefix(PdfHelper.GetPdfNameString(fn)); // Font name
                 int p = -1;
                 string sn; // Replace the font name
                 if (_fontSubstitutions.TryGetValue(n, out FontSubstitution fs))
@@ -299,7 +304,7 @@ internal sealed class ReplaceFontProcessor : IPageProcessor
                 {
                     try
                     {
-                        Tracker.TraceMessage("加载字体：" + (sn != null ? string.Concat(sn, "(替换 ", n, ")") : n));
+                        Tracker.TraceMessage("Load font: " + (sn != null ? string.Concat(sn, "(replace ", n, ")") : n));
                         if (sn != null)
                         {
                             n = sn;
@@ -386,14 +391,14 @@ internal sealed class ReplaceFontProcessor : IPageProcessor
 
                         if (nf.Font.BaseFont == null)
                         {
-                            throw new FileNotFoundException("无法加载字体：" + n);
+                            throw new FileNotFoundException("Failed to load font: " + n);
                         }
 
                         _newFonts.Add(n, nf);
                     }
                     catch (Exception)
                     {
-                        Tracker.TraceMessage(Tracker.Category.Error, "无法加载字体");
+                        Tracker.TraceMessage(Tracker.Category.Error, "Failed to load font");
                         throw;
                     }
                 }
@@ -404,11 +409,11 @@ internal sealed class ReplaceFontProcessor : IPageProcessor
                     FontInfo fi = new(f, fr.Number);
                     _fontInfoMap.Add(fr.Number, fi);
                     //try {
-                    //	ReadSingleByteFontWidths (f, fi, nf);
-                    //	ReadCidFontWidths (f, fi, nf);
+                    // ReadSingleByteFontWidths (f, fi, nf);
+                    // ReadCidFontWidths (f, fi, nf);
                     //}
                     //catch (NullReferenceException) {
-                    //	Tracker.TraceMessage (Tracker.Category.ImportantMessage, "字体“" + n + "”的 CID 宽度表错误。");
+                    // Tracker.TraceMessage (Tracker.Category.ImportantMessage, "CID width table error for font "" + n + "".");
                     //}
                 }
 
@@ -536,11 +541,13 @@ internal sealed class ReplaceFontProcessor : IPageProcessor
     {
         foreach (NewFont newFont in _newFonts.Select(font => font.Value))
         {
-            Tracker.TraceMessage("嵌入字体：" + newFont.Font.Familyname + "(" + newFont.UsedCidMap.Count + "字)");
+            Tracker.TraceMessage("Embedded font: " + newFont.Font.Familyname + "(" + newFont.UsedCidMap.Count +
+                                 "Word)");
             if (newFont.AbsentChars.Count > 0)
             {
                 Tracker.TraceMessage(Tracker.Category.ImportantMessage,
-                    string.Concat("丢失", newFont.AbsentChars.Count, "字：", new string(newFont.AbsentChars.ToArray())));
+                    string.Concat("Lost", newFont.AbsentChars.Count, "Word:",
+                        new string(newFont.AbsentChars.ToArray())));
             }
 
             ChangeLegacyFontDictionary(pdf, newFont);
@@ -664,7 +671,7 @@ internal sealed class ReplaceFontProcessor : IPageProcessor
 
     #region IPageProcessor member
 
-    public string Name => "嵌入汉字库";
+    public string Name => "Embedded Chinese word library";
 
     public void BeginProcess(DocProcessorContext context)
     {

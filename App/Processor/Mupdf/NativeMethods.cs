@@ -22,7 +22,7 @@ internal static partial class NativeMethods
         ContextHandle c = NewContext(IntPtr.Zero, IntPtr.Zero, FZ_STORE_DEFAULT, FZ_VERSION);
         if (c.IsInvalid)
         {
-            throw new MuPdfException("MuPDF 引擎版本不匹配。");
+            throw new MuPdfException("MuPDF engine version does not match.");
         }
 
         return c;

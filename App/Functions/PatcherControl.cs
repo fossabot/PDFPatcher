@@ -21,7 +21,7 @@ public partial class PatcherControl : FunctionControl
 
     public PatcherControl() => InitializeComponent();
 
-    public override string FunctionName => "批量修改文档";
+    public override string FunctionName => "Batch modified documentation";
 
     public override Bitmap IconImage => Resources.CreateDocument;
 
@@ -31,12 +31,16 @@ public partial class PatcherControl : FunctionControl
     {
         //this.Icon = Common.FormHelper.ToIcon (Properties.Resources.CreateDocument);
 
-        AppContext.MainForm.SetTooltip(_ConfigButton, "点击此处设置 PDF 文件的修改方式选项");
-        AppContext.MainForm.SetTooltip(_ActionsBox, "双击项目编辑操作选项；右键点击项目弹出上下文菜单");
-        AppContext.MainForm.SetTooltip(_ItemList, "在此添加需要补丁修改的 PDF 文件");
-        AppContext.MainForm.SetTooltip(_ImportButton, "点击此按钮执行补丁生成新的 PDF 文件，该文件具有信息文件和 PDF 选项中的设定");
-        AppContext.MainForm.SetTooltip(_TargetPdfFile.FileList, "生成的目标 PDF 文件路径（鼠标右键点击列表可插入文件名替代符）");
-        _ItemList.EmptyListMsg = "请使用“添加文件”按钮添加需要处理的 PDF 文件，或从资源管理器拖放文件到本列表框";
+        AppContext.MainForm.SetTooltip(_ConfigButton, "Click here to set the PDF file modification options");
+        AppContext.MainForm.SetTooltip(_ActionsBox,
+            "Double-click the item to edit the action option; right-click the item to pop up the context menu");
+        AppContext.MainForm.SetTooltip(_ItemList, "Add PDF files that need patch modification here");
+        AppContext.MainForm.SetTooltip(_ImportButton,
+            "Click this button to execute the patch to generate a new PDF file with the settings in the info file and PDF options");
+        AppContext.MainForm.SetTooltip(_TargetPdfFile.FileList,
+            "The generated target PDF file path (right-click the list to insert the file name substitute)");
+        _ItemList.EmptyListMsg =
+            "Please use the \"Add Files\" button to add PDF files to be processed, or drag and drop files from the Explorer to this list box";
 
         _ConfigButton.Click += (_, _) => AppContext.MainForm.SelectFunctionList(Function.PatcherOptions);
 
@@ -132,8 +136,8 @@ public partial class PatcherControl : FunctionControl
         }
         else if (n == Commands.Options)
         {
-            item.Text = "修改文档设置(&S)...";
-            item.ToolTipText = "设置修改后的 PDF 文档";
+            item.Text = "Modify document settings (&S)...";
+            item.ToolTipText = "Set the modified PDF document";
             EnableCommand(item, true, true);
             item.Tag = nameof(Function.PatcherOptions);
         }
@@ -177,14 +181,14 @@ public partial class PatcherControl : FunctionControl
             return;
         }
         //if (_mode == ProcessMode.Merge && Common.FileHelper.IsPathValid (targetPdfFile) == false) {
-        //    Common.FormHelper.ErrorBox ("输出文件名无效。" + (Common.FileUtility.HasFileNameMacro (targetPdfFile) ? "\n制作 PDF 文件功能不支持替代符。" : String.Empty));
+        //    Common.FormHelper.ErrorBox ("The output file name is invalid." + (Common.FileUtility.HasFileNameMacro (targetPdfFile) ? "\nMaking the PDF file function does not support an alternative." : String.Empty));
         //    return;
         //}
 
         int l = _ItemList.GetItemCount();
         if (l == 0)
         {
-            FormHelper.InfoBox("请添加需要处理的 PDF 文件。");
+            FormHelper.InfoBox("Add PDF files that need to be processed.");
             return;
         }
 
@@ -238,7 +242,7 @@ public partial class PatcherControl : FunctionControl
                     }
                     else
                     {
-                        Tracker.TraceMessage("输入文件不是 PDF 文件。");
+                        Tracker.TraceMessage("The input file is not a PDF file.");
                     }
 
                     Tracker.IncrementTotalProgress();
@@ -252,7 +256,7 @@ public partial class PatcherControl : FunctionControl
             {
                 if (files[0].Type != SourceItem.ItemType.Pdf)
                 {
-                    Tracker.TraceMessage("输入文件不是 PDF 文件。");
+                    Tracker.TraceMessage("The input file is not a PDF file.");
                     return;
                 }
 

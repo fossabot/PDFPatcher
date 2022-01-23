@@ -255,7 +255,7 @@ internal class PdfContentStreamProcessor
         /**
 			 * Parses an inline image from the provided content parser.  The parser must be positioned immediately following the BI operator in the content stream.
 			 * The parser will be left with current position immediately following the EI operator that terminates the inline image
-			 * @param ps the content parser to use for reading the image. 
+			 * @param ps the content parser to use for reading the image.
 			 * @return the parsed image
 			 * @throws IOException if anything goes wring with the parsing
 			 * @throws InlineImageParseException if parsing of the inline image failed due to issues specific to inline image processing
@@ -300,7 +300,7 @@ internal class PdfContentStreamProcessor
         }
 
         /**
-		 * Transforms value abbreviations into their corresponding real value 
+		 * Transforms value abbreviations into their corresponding real value
 		 * @param key the key that the value is for
 		 * @param value the value that might be an abbreviation
 		 * @return if value is an allowed abbreviation for the key, the expanded value for that abbreviation.  Otherwise, value is returned without modification
@@ -422,7 +422,7 @@ internal class PdfContentStreamProcessor
 			 * Parses the samples of the image from the underlying content parser, ignoring all filters.
 			 * The parser must be positioned immediately after the ID operator that ends the inline image's dictionary.
 			 * The parser will be left positioned immediately following the EI operator.
-			 * This is primarily useful if no filters have been applied. 
+			 * This is primarily useful if no filters have been applied.
 			 * @param imageDictionary the dictionary of the inline image
 			 * @param ps the content parser
 			 * @return the samples of the image
@@ -498,7 +498,7 @@ internal class PdfContentStreamProcessor
 
 
             // read all content until we reach an EI operator surrounded by whitespace.
-            // The following algorithm has two potential issues: what if the image stream 
+            // The following algorithm has two potential issues: what if the image stream
             // contains <ws>EI<ws> ?
             // Plus, there are some streams that don't have the <ws> before the EI operator
             // it sounds like we would have to actually decode the content stream, which
@@ -560,7 +560,7 @@ internal class PdfContentStreamProcessor
 
         /**
 			 * Simple class in case users need to differentiate an exception from processing
-			 * inline images vs other exceptions 
+			 * inline images vs other exceptions
 			 * @since 5.0.4
 			 */
         public sealed class InlineImageParseException : IOException
@@ -814,7 +814,7 @@ internal class PdfContentStreamProcessor
             GraphicsState g = processor.CurrentGraphicState;
             if (f is not PRIndirectReference fref)
             {
-                Tracker.DebugMessage("字体（" + fontResourceName + "）不为引用。");
+                Tracker.DebugMessage("Font (" + fontResourceName + ") is not a reference.");
                 PdfDictionary fd = f as PdfDictionary;
                 g.FontID = 0;
                 g.Font = new FontInfo(fd, 0);

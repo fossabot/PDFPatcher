@@ -39,7 +39,7 @@ public sealed class DocumentObject : IHierarchicalObject<DocumentObject>
                             int page = ownerDocument.GetPageNumber(value as PdfIndirectReference);
                             if (page > 0)
                             {
-                                Description = string.Concat("指向第 ", page, " 页");
+                                Description = string.Concat("Point to page", page, "page");
                                 type = PdfObjectType.GoToPage;
                             }
 
@@ -274,7 +274,7 @@ public sealed class DocumentObject : IHierarchicalObject<DocumentObject>
 
         switch (po.Type)
         {
-            case PdfObject.DICTIONARY: return string.Concat("<<", (po as PdfDictionary).Size, " 子项>>");
+            case PdfObject.DICTIONARY: return string.Concat("<<", (po as PdfDictionary).Size, " Child>>");
             case PdfObject.INDIRECT:
                 if (eo == null || __CompoundTypes.Contains(eo.Type))
                 {
@@ -488,7 +488,7 @@ public sealed class DocumentObject : IHierarchicalObject<DocumentObject>
                     int i = 0;
                     foreach (int p in r.SelectMany(item => item))
                     {
-                        pn[i++] = new DocumentObject(OwnerDocument, this, "第" + p + "页", null, PdfObjectType.Page)
+                        pn[i++] = new DocumentObject(OwnerDocument, this, "page" + p + "page", null, PdfObjectType.Page)
                         {
                             ExtensiveObject = p
                         };
@@ -534,7 +534,7 @@ public sealed class DocumentObject : IHierarchicalObject<DocumentObject>
         string op = item.Name.ToString();
         if (PdfPageCommand.GetFriendlyCommandName(op, out string fn) == false)
         {
-            fn = "未知操作符";
+            fn = "Unknown operation";
         }
 
         DocumentObject o = new(OwnerDocument, this, fn, null, PdfObjectType.PageCommand)

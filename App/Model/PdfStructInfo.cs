@@ -93,7 +93,7 @@ internal readonly struct PdfStructInfo
     {
         if (d.ContainsKey(key))
         {
-            Debug.WriteLine("已添加 " + key);
+            Debug.WriteLine("Added " + key);
             return;
         }
 

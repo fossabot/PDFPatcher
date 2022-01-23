@@ -65,7 +65,7 @@ public partial class FontSubstitutionsEditor : UserControl
         };
         new TypedColumn<FontSubstitution>(_CharSubstitutionColumn)
         {
-            AspectGetter = o => string.IsNullOrEmpty(o.OriginalCharacters) ? "添加" : "修改"
+            AspectGetter = o => string.IsNullOrEmpty(o.OriginalCharacters) ? "Add" : "Modify"
         };
     }
 
@@ -159,7 +159,7 @@ public partial class FontSubstitutionsEditor : UserControl
 
     private void _AddPageLabelButton_Click(object sender, EventArgs e)
     {
-        FontSubstitution s = new() { OriginalFont = "请输入原字体名称" };
+        FontSubstitution s = new() { OriginalFont = "Please enter the original font name" };
         _Substitutions.Add(s);
         _FontSubstitutionsBox.AddObject(s);
         _FontSubstitutionsBox.EditSubItem(_FontSubstitutionsBox.GetLastItemInDisplayOrder(), 1);

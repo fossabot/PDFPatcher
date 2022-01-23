@@ -190,7 +190,7 @@ internal sealed class Controller
     {
         if (File.Exists(path) == false)
         {
-            FormHelper.ErrorBox("找不到文件：" + path);
+            FormHelper.ErrorBox("Can't find the file:" + path);
             return;
         }
 
@@ -270,7 +270,7 @@ internal sealed class Controller
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("在打开 PDF 文件时遇到错误：\n" + ex.Message);
+            FormHelper.ErrorBox("When you open the PDF file:\n" + ex.Message);
         }
     }
 
@@ -310,14 +310,14 @@ internal sealed class Controller
         {
             if (importMode)
             {
-                FormHelper.InfoBox("文档不包含书签。");
+                FormHelper.InfoBox("The document does not contain a bookmark.");
                 return;
             }
 
             ClearBookmarks();
             InitBookmarkEditor();
             //if (_currentFilePath != null) {
-            //	Common.FormHelper.InfoBox ("文档不包含书签。");
+            //	Common.FormHelper.InfoBox ("The document does not contain a bookmark.");
             //}
         }
         //_viewer = new PdfViewer (this._FilePathBox.Text, _doc.DocumentElement);
@@ -403,7 +403,7 @@ internal sealed class Controller
         }
 
         editView.SelectedObjects = il;
-        Model.Undo.AddUndo("导入书签", g);
+        Model.Undo.AddUndo("Import bookmark", g);
     }
 
     //internal void HideInsertBookmarkForm () {
@@ -662,7 +662,7 @@ internal sealed class Controller
         if (i == -1 && b.Items.Count == 0)
         {
             c = d.BookmarkRoot.AppendBookmark();
-            Model.Undo.AddUndo("插入书签", new RemoveElementAction(c));
+            Model.Undo.AddUndo("Insert bookmark", new RemoveElementAction(c));
             string s = title ?? Path.GetFileNameWithoutExtension(Model.DocumentPath);
             c.SetTitleAndGotoPagePosition(
                 string.IsNullOrEmpty(s) ? Constants.Bookmark : s,
@@ -684,7 +684,7 @@ internal sealed class Controller
                 g.SetAttribute(o, Constants.DestinationAttributes.View,
                     Constants.DestinationAttributes.ViewType.XYZ);
                 g.SetAttribute(o, Constants.Coordinates.Top, position.ToText());
-                Model.Undo.AddUndo("替换书签", g);
+                Model.Undo.AddUndo("Replacement bookmark", g);
                 c = o;
             }
             else
@@ -717,7 +717,7 @@ internal sealed class Controller
                         break;
                 }
 
-                Model.Undo.AddUndo("插入书签", new RemoveElementAction(c));
+                Model.Undo.AddUndo("Insert bookmark", new RemoveElementAction(c));
             }
 
             if (c.ParentNode.Name == Constants.DocumentBookmark)
@@ -794,7 +794,7 @@ internal sealed class Controller
         for (int i = 1; i < l; i++)
         {
             //if (es[i].SelectSingleNode (Constants.Bookmark) != null) {
-            //    Common.Form.ErrorBox ("合并的书签不能有子书签。");
+            //    Common.Form.ErrorBox ("The merged bookmarks cannot have a sub-bookmark.");
             //    return;
             //}
             if (es[i].ParentNode == p || es[i].ParentNode == es[0])
@@ -802,7 +802,7 @@ internal sealed class Controller
                 continue;
             }
 
-            FormHelper.ErrorBox("合并的书签必须有相同的上级书签。");
+            FormHelper.ErrorBox("The merged bookmarks must have the same superior bookmark.");
             return;
         }
 
@@ -862,7 +862,7 @@ internal sealed class Controller
             b.SetObjects(p.SelectNodes(Constants.Bookmark));
         }
 
-        Model.Undo.AddUndo("合并书签", undo);
+        Model.Undo.AddUndo("Merge bookmark", undo);
         b.RefreshObject(dest);
         b.SelectObject(dest);
     }
@@ -928,7 +928,7 @@ internal sealed class Controller
         }
 
         UndoActionGroup ug = new();
-        Model.Undo.AddUndo("自动生成书签", ug);
+        Model.Undo.AddUndo("Automatically generate bookmarks", ug);
         foreach (XmlElement item in bm.SubBookmarks)
         {
             ug.Add(new AddElementAction(item));

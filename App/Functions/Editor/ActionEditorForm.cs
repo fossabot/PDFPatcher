@@ -9,8 +9,8 @@ namespace PDFPatcher.Functions;
 
 public partial class ActionEditorForm : Form
 {
-    private const string KeepZoomRate = "保持不变";
-    private const string NoAction = "无";
+    private const string KeepZoomRate = "keep unchanged";
+    private const string NoAction = "None";
 
     public ActionEditorForm(BookmarkElement element)
     {
@@ -284,7 +284,7 @@ public partial class ActionEditorForm : Form
             switch (_ZoomRateBox.Text)
             {
                 case Constants.DestinationAttributes.ViewType.XYZ:
-                case "保持不变":
+                case "constant":
                     goto default;
                 case Constants.DestinationAttributes.ViewType.Fit:
                 case Constants.DestinationAttributes.ViewType.FitB:

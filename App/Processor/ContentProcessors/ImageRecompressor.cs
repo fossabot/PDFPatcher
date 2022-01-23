@@ -24,7 +24,7 @@ internal sealed class ImageRecompressor : IPageProcessor
 
     #region IPageProcessor member
 
-    public string Name => "优化压缩黑白图片";
+    public string Name => "Optimize compressed black and white images";
 
     public void BeginProcess(DocProcessorContext context)
     {
@@ -34,9 +34,9 @@ internal sealed class ImageRecompressor : IPageProcessor
 
     public bool EndProcess(PdfReader pdf)
     {
-        Tracker.TraceMessage(Tracker.Category.Notice, Name + "功能：");
-        Tracker.TraceMessage("　　处理了 " + _processedImageCount + " 幅图片。");
-        Tracker.TraceMessage("　　优化了 " + _optimizedImageCount + " 幅图片的压缩率。");
+        Tracker.TraceMessage(Tracker.Category.Notice, Name + "Function:");
+        Tracker.TraceMessage(" Processed " + _processedImageCount + " images.");
+        Tracker.TraceMessage(" Optimized the compression ratio of " + _optimizedImageCount + " images.");
         return false;
     }
 
@@ -61,7 +61,7 @@ internal sealed class ImageRecompressor : IPageProcessor
 
             _processedImageCount++;
             PdfNumber l = im.GetAsNumber(PdfName.LENGTH);
-            if (l == null || l.IntValue < 400 /*忽略小图片*/)
+            if (l == null || l.IntValue < 400 /* Ignore small pictures */)
             {
                 continue;
             }

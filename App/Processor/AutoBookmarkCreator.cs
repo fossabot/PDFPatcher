@@ -77,7 +77,8 @@ internal sealed class AutoBookmarkCreator
                 }
                 catch (ArgumentException ex)
                 {
-                    Tracker.TraceMessage(Tracker.Category.Alert, string.Concat("忽略文本（", item, "）无效：", ex.Message));
+                    Tracker.TraceMessage(Tracker.Category.Alert,
+                        string.Concat("Ignore text (", item, ") is invalid: ", ex.Message));
                 }
             }
         }
@@ -98,7 +99,7 @@ internal sealed class AutoBookmarkCreator
                     continue;
                 }
 
-                //Tracker.TraceMessage (String.Concat ("分析第 ", i, " 页。"));
+                //Tracker.TraceMessage(String.Concat("Analyze page ", i, "."));
                 Rectangle box = reader.GetCropBox(i);
                 p.Reset();
                 c.PageBox = box;
@@ -124,7 +125,7 @@ internal sealed class AutoBookmarkCreator
                 c.IsTextMerged = false;
                 c.TextLine = null;
                 // TODO: Automatically correct the typographic direction according to the known typesetting direction
-                // 合并前筛选文本
+                // Screening before merge
                 List<TextInfo> ptl = p.TextList;
                 for (int li = ptl.Count - 1; li >= 0; li--)
                 {
@@ -188,14 +189,14 @@ internal sealed class AutoBookmarkCreator
                         string t = PdfHelper.GetValidXmlString(ConcatRegionText(item)).Trim();
                         FontInfo f = item.Lines[0].FirstText.Font;
                         float s = item.Lines[0].FirstText.Size;
-                        writer.WriteStartElement("文本");
+                        writer.WriteStartElement("text");
                         writer.WriteAttributeString(Constants.Font.ThisName, f != null ? f.FontID.ToText() : "OCR");
                         writer.WriteValue(Constants.Coordinates.Top, item.Region.Top);
                         writer.WriteValue(Constants.Coordinates.Bottom, item.Region.Bottom);
                         writer.WriteValue(Constants.Coordinates.Left, item.Region.Left);
                         writer.WriteValue(Constants.Coordinates.Width, item.Region.Width);
                         writer.WriteValue(Constants.Coordinates.Height, item.Region.Height);
-                        writer.WriteValue("尺寸", s);
+                        writer.WriteValue("size", s);
                         writer.WriteString(t);
                         writer.WriteEndElement();
 
@@ -309,7 +310,8 @@ internal sealed class AutoBookmarkCreator
         }
 
         XmlNodeList topics =
-            doc.DocumentElement.SelectNodes(".//书签[count(ancestor::书签) < " + (options.PageTopForLevel + 1) + "]");
+            doc.DocumentElement.SelectNodes(".//Bookmarks[count(ancestor::Bookmarks) < " +
+                                            (options.PageTopForLevel + 1) + "]");
         foreach (XmlElement t in topics)
         {
             t.RemoveAttribute(Constants.Coordinates.Top);
@@ -320,7 +322,7 @@ internal sealed class AutoBookmarkCreator
         TextToBookmarkProcessor p, FontOccurance fontOccurances)
     {
         writer.WriteStartElement(Constants.Font.DocumentFont);
-        Tracker.TraceMessage("\n文档所用的字体");
+        Tracker.TraceMessage("\nThe font used in the document");
         List<string> dl = new();
         foreach (KeyValuePair<int, string> item in p.FontList)
         {
@@ -343,7 +345,8 @@ internal sealed class AutoBookmarkCreator
 
             if (options.DisplayFontStatistics && (sl != null || options.DisplayAllFonts))
             {
-                Tracker.TraceMessage(string.Concat("编号：", item.Key, "\t出现次数：", fo, "\t名称：", item.Value));
+                Tracker.TraceMessage(string.Concat("Number:", item.Key, "\tNumber of occurrences:", fo, "\tName:",
+                    item.Value));
             }
 
             writer.WriteStartElement(Constants.Font.ThisName);
@@ -361,8 +364,9 @@ internal sealed class AutoBookmarkCreator
                     writer.WriteAttributeString(Constants.FontOccurance.FirstPage, s.FirstPage.ToText());
                     if (options.DisplayFontStatistics && (s.Occurrence > 0 || options.DisplayAllFonts))
                     {
-                        Tracker.TraceMessage(string.Concat("\t尺寸：", s.Size.ToText(), "\t出现次数：", s.Occurrence.ToText(),
-                            "\t首次出现于第", s.FirstPage.ToText(), "页（", s.FirstInstance, "）"));
+                        Tracker.TraceMessage(string.Concat("\tSize:", s.Size.ToText(), "\tNumber of occurrences:",
+                            s.Occurrence.ToText(),
+                            "\tFirst appeared on page", s.FirstPage.ToText(), "Page(", s.FirstInstance, ")"));
                     }
 
                     writer.WriteEndElement();
@@ -466,7 +470,7 @@ internal sealed class AutoBookmarkCreator
         foreach (TextInfo item in textInfos)
         {
             Bound ir = item.Region;
-            DistanceInfo md = new(DistanceInfo.Placement.Unknown, float.MaxValue, float.MaxValue); // 最小距离
+            DistanceInfo md = new(DistanceInfo.Placement.Unknown, float.MaxValue, float.MaxValue); // shortest distance
             TextLine ml = null; // Minimum distance TextLine
 
             // Ask minimum distances of TextLine
@@ -487,7 +491,7 @@ internal sealed class AutoBookmarkCreator
                     break;
                 }
 
-                DistanceInfo cd = li.GetDistance(ir); // TextInfo 到 TextLine 的距离
+                DistanceInfo cd = li.GetDistance(ir); // Distance from TextInfo to TextLine
                 if ((!cd.IsOverlapping || md.IsOverlapping && !(cd.DistanceRadial < md.DistanceRadial)) &&
                     (md.Location != DistanceInfo.Placement.Unknown && (cd.IsOverlapping ||
                                                                        md.IsOverlapping ||
@@ -591,7 +595,7 @@ internal sealed class AutoBookmarkCreator
                     break;
                 }
 
-                DistanceInfo cd = li.Region.GetDistance(ir, li.Direction); // TextInfo 到 TextLine 的距离
+                DistanceInfo cd = li.Region.GetDistance(ir, li.Direction); // Distance from TextInfo to TextLine
                 if ((!cd.IsOverlapping || md.IsOverlapping && !(cd.DistanceRadial < md.DistanceRadial)) &&
                     (md.Location != DistanceInfo.Placement.Unknown && (cd.IsOverlapping ||
                                                                        md.IsOverlapping ||

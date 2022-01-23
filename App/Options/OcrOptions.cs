@@ -11,34 +11,39 @@ public class OcrOptions
         DetectColumns = true;
     }
 
-    //[XmlAttribute ("页码范围")]
+    //[XmlAttribute ("page range")]
     [XmlIgnore] public string PageRanges { get; set; }
 
     #region Optical character recognition option
 
-    [XmlAttribute("识别语言")] public int OcrLangID { get; set; }
+    [XmlAttribute("Identify language")] public int OcrLangID { get; set; }
 
-    [XmlAttribute("旋转校正")] public bool OrientPage { get; set; }
+    [XmlAttribute("Rotation Correction")] public bool OrientPage { get; set; }
 
-    [XmlAttribute("拉伸校正")] public bool StretchPage { get; set; }
+    [XmlAttribute("Stretch Correction")] public bool StretchPage { get; set; }
 
     [XmlIgnore] public float QuantitativeFactor { get; set; }
 
-    [XmlAttribute("排版")] public WritingDirection WritingDirection { get; set; }
+    [XmlAttribute("Typesetting")] public WritingDirection WritingDirection { get; set; }
 
-    [XmlAttribute("识别分栏")] public bool DetectColumns { get; set; }
+    [XmlAttribute("Identify columns")] public bool DetectColumns { get; set; }
 
-    [XmlAttribute("目录识别模式")] public bool DetectContentPunctuations { get; set; }
+    [XmlAttribute("Directory Recognition Mode")]
+    public bool DetectContentPunctuations { get; set; }
 
-    [XmlAttribute("压缩空白")] public bool CompressWhiteSpaces { get; set; }
+    [XmlAttribute("compress whitespace")] public bool CompressWhiteSpaces { get; set; }
 
-    [XmlAttribute("删除汉字间空白")] public bool RemoveWhiteSpacesBetweenChineseCharacters { get; set; }
+    [XmlAttribute("Remove whitespace between Chinese characters")]
+    public bool RemoveWhiteSpacesBetweenChineseCharacters { get; set; }
 
-    [XmlAttribute("识别前保留图像颜色")] public bool PreserveColor { get; set; }
+    [XmlAttribute("Preserve image color before recognition")]
+    public bool PreserveColor { get; set; }
 
-    [XmlAttribute("导出原始识别结果")] public bool OutputOriginalOcrResult { get; set; }
+    [XmlAttribute("Export original recognition result")]
+    public bool OutputOriginalOcrResult { get; set; }
 
-    [XmlAttribute("在屏幕输出识别文本")] public bool PrintOcrResult { get; set; }
+    [XmlAttribute("Output recognition text on the screen")]
+    public bool PrintOcrResult { get; set; }
 
     [XmlIgnore] public string SaveOcredImagePath { get; set; }
 

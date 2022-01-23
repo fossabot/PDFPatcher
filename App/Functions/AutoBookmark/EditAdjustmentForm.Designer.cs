@@ -47,7 +47,7 @@
 			this._AddFilterMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._AddFilterMenuItem.Name = "_AddFilterMenuItem";
 			this._AddFilterMenuItem.Size = new System.Drawing.Size (108, 22);
-			this._AddFilterMenuItem.Text = "添加匹配条件";
+			this._AddFilterMenuItem.Text = "Add match conditions";
 			this._AddFilterMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler (this._AddFilterMenuItem_DropDownItemClicked);
 			//
 			// _OkButton
@@ -57,7 +57,7 @@
 			this._OkButton.Name = "_OkButton";
 			this._OkButton.Size = new System.Drawing.Size (75, 23);
 			this._OkButton.TabIndex = 0;
-			this._OkButton.Text = "确定(&Q)";
+			this._OkButton.Text = "&OK";
 			this._OkButton.UseVisualStyleBackColor = true;
 			this._OkButton.Click += new System.EventHandler (this._OkButton_Click);
 			//
@@ -69,7 +69,7 @@
 			this._CancelButton.Name = "_CancelButton";
 			this._CancelButton.Size = new System.Drawing.Size (75, 23);
 			this._CancelButton.TabIndex = 1;
-			this._CancelButton.Text = "取消(&X)";
+			this._CancelButton.Text = "&Cancel";
 			this._CancelButton.UseVisualStyleBackColor = true;
 			this._CancelButton.Click += new System.EventHandler (this._CancelButton_Click);
 			//
@@ -103,19 +103,19 @@
 			// _TypeColumn
 			//
 			this._TypeColumn.IsEditable = false;
-			this._TypeColumn.Text = "筛选条件";
+			this._TypeColumn.Text = "Filter condition";
 			this._TypeColumn.Width = 69;
 			//
 			// _ConditionColumn
 			//
 			this._ConditionColumn.FillsFreeSpace = true;
-			this._ConditionColumn.Text = "匹配条件";
+			this._ConditionColumn.Text = "Match condition";
 			this._ConditionColumn.Width = 241;
 			//
 			// _IsInclusiveColumn
 			//
 			this._IsInclusiveColumn.IsEditable = false;
-			this._IsInclusiveColumn.Text = "包含筛选";
+			this._IsInclusiveColumn.Text = "Contain filter";
 			this._IsInclusiveColumn.Width = 78;
 			//
 			// toolStrip1
@@ -135,7 +135,7 @@
 			this._RemoveButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._RemoveButton.Name = "_RemoveButton";
 			this._RemoveButton.Size = new System.Drawing.Size (51, 22);
-			this._RemoveButton.Text = "删除";
+			this._RemoveButton.Text = "Delete";
 			this._RemoveButton.Click += new System.EventHandler (this._RemoveButton_Click);
 			//
 			// _EditFilterBox
@@ -148,7 +148,7 @@
 			this._EditFilterBox.Size = new System.Drawing.Size (411, 104);
 			this._EditFilterBox.TabIndex = 5;
 			this._EditFilterBox.TabStop = false;
-			this._EditFilterBox.Text = "更改匹配条件";
+			this._EditFilterBox.Text = "Change matching condition";
 			//
 			// _EditFilterPanel
 			//
@@ -176,7 +176,7 @@
 			this.Name = "EditAdjustmentForm";
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "编辑标题文本筛选条件";
+			this.Text = "Edit title text filtering conditions";
 			this.Load += new System.EventHandler (this.EditAdjustmentForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this._FilterBox)).EndInit ();
 			this.toolStrip1.ResumeLayout (false);

@@ -23,17 +23,25 @@ public partial class OcrControl : FunctionControl, IResettableControl
                                              Constants.FileExtensions.XmlFilter + "|" +
                                              Constants.FileExtensions.XmlOrTxtFilter;
 
-        AppContext.MainForm.SetTooltip(_SourceFileControl.FileList, "需要识别文本的 PDF 源文件路径");
-        AppContext.MainForm.SetTooltip(_BookmarkControl.FileList, "指定识别文本后生成的信息文件或文本文件路径，如路径为空则不输出文件");
-        AppContext.MainForm.SetTooltip(_ExportBookmarkButton, "点击此按钮导出识别后的文本到文件");
-        AppContext.MainForm.SetTooltip(_ImportOcrResultButton, "点击此按钮，将识别后的文本内容写入到目标 PDF 文件。");
+        AppContext.MainForm.SetTooltip(_SourceFileControl.FileList, "PDF source file path to recognize text");
+        AppContext.MainForm.SetTooltip(_BookmarkControl.FileList,
+            "Specify the information file or text file path generated after identifying the text, if the path is empty, the file will not be output");
+        AppContext.MainForm.SetTooltip(_ExportBookmarkButton,
+            "Click this button to export the recognized text to a file");
+        AppContext.MainForm.SetTooltip(_ImportOcrResultButton,
+            "Click this button to write the recognized text content to the target PDF file.");
         AppContext.MainForm.SetTooltip(_PageRangeBox, Messages.PageRanges);
-        AppContext.MainForm.SetTooltip(_DetectColumnsBox, "允许将距离较远的文本合并为同一行文本");
-        AppContext.MainForm.SetTooltip(_DetectContentPunctuationsBox, "将三个以上的连续标点替换成“ .... ”");
-        AppContext.MainForm.SetTooltip(_CompressWhiteSpaceBox, "将三个以上连续出现的空格压缩成两个空格");
-        AppContext.MainForm.SetTooltip(_OrientBox, "自动检测页面横竖置放方向");
-        AppContext.MainForm.SetTooltip(_StretchBox, "自动纠直倾斜的页面");
-        AppContext.MainForm.SetTooltip(_OutputOriginalOcrResultBox, "保存原始的未经过优化合并的识别结果（可用于写入 PDF 文档）");
+        AppContext.MainForm.SetTooltip(_DetectColumnsBox,
+            "Allows farther text to be merged into the same line of text");
+        AppContext.MainForm.SetTooltip(_DetectContentPunctuationsBox,
+            "Replace more than three consecutive punctuations with \"... \"");
+        AppContext.MainForm.SetTooltip(_CompressWhiteSpaceBox,
+            "Compress three or more consecutive spaces into two spaces");
+        AppContext.MainForm.SetTooltip(_OrientBox,
+            "Automatically detect the horizontal and vertical orientation of the page");
+        AppContext.MainForm.SetTooltip(_StretchBox, "Automatically straighten skewed pages");
+        AppContext.MainForm.SetTooltip(_OutputOriginalOcrResultBox,
+            "Save the original unoptimized merged recognition result (can be used to write PDF documents)");
 
         ComboBox.ObjectCollection lb = _OcrLangBox.Items;
         if (ModiOcr.ModiInstalled)
@@ -49,13 +57,14 @@ public partial class OcrControl : FunctionControl, IResettableControl
 
         if (lb.Count == 0)
         {
-            lb.Add("无");
+            lb.Add("None");
         }
 
         _ExportBookmarkButton.Enabled = ModiOcr.ModiInstalled;
         if (_ExportBookmarkButton.Enabled == false)
         {
-            AppContext.MainForm.SetTooltip(_OcrLangBox, "当前系统尚未安装识别引擎，请先安装微软 Office 文字识别引擎，再重新启动程序。");
+            AppContext.MainForm.SetTooltip(_OcrLangBox,
+                "The current system has not installed the identification engine, please install the Microsoft Office text recognition engine, restart the program.");
         }
 
         Reload();
@@ -70,7 +79,7 @@ public partial class OcrControl : FunctionControl, IResettableControl
         }
     }
 
-    public override string FunctionName => "识别图像文本";
+    public override string FunctionName => "Identify image text";
 
     public override Bitmap IconImage => Resources.Ocr;
 
@@ -108,8 +117,8 @@ public partial class OcrControl : FunctionControl, IResettableControl
         switch (n)
         {
             case Commands.SaveBookmark:
-                item.Text = "写入PDF文件(&Q)";
-                item.ToolTipText = "将识别结果写入 PDF 文件";
+                item.Text = "Write a PDF file (&Q)";
+                item.ToolTipText = "Write the identification result into a PDF file";
                 EnableCommand(item, true, true);
                 break;
         }
@@ -147,7 +156,7 @@ public partial class OcrControl : FunctionControl, IResettableControl
 
             if (_BookmarkControl.Text.Length == 0)
             {
-                FormHelper.ErrorBox("请指定识别结果文件。");
+                FormHelper.ErrorBox("Please specify the identification result file.");
                 return;
             }
         }

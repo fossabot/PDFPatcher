@@ -75,37 +75,37 @@
 			//
 			_ExportBinary.Name = "_ExportBinary";
 			_ExportBinary.Size = new System.Drawing.Size (242, 22);
-			_ExportBinary.Text = "二进制文件(&E)...";
+			_ExportBinary.Text = "&Binary File...";
 			//
 			// _ExportHexText
 			//
 			_ExportHexText.Name = "_ExportHexText";
 			_ExportHexText.Size = new System.Drawing.Size (242, 22);
-			_ExportHexText.Text = "二进制文本文件(&W)...";
+			_ExportHexText.Text = "Binary &Text File...";
 			//
 			// _ExportXml
 			//
 			_ExportXml.Name = "_ExportXml";
 			_ExportXml.Size = new System.Drawing.Size (242, 22);
-			_ExportXml.Text = "&XML信息文件...";
+			_ExportXml.Text = "&XML Information File...";
 			//
 			// _ExportUncompressedBinary
 			//
 			_ExportUncompressedBinary.Name = "_ExportUncompressedBinary";
 			_ExportUncompressedBinary.Size = new System.Drawing.Size (242, 22);
-			_ExportUncompressedBinary.Text = "原始流对象二进制文件(&Y)...";
+			_ExportUncompressedBinary.Text = "&Original stream object binary file...";
 			//
 			// _ExportUncompressedHexText
 			//
 			_ExportUncompressedHexText.Name = "_ExportUncompressedHexText";
 			_ExportUncompressedHexText.Size = new System.Drawing.Size (242, 22);
-			_ExportUncompressedHexText.Text = "原始流对象二进制文本文件(&Y)...";
+			_ExportUncompressedHexText.Text = "&Original stream object binary text file...";
 			//
 			// _ExportToUnicode
 			//
 			_ExportToUnicode.Name = "_ExportToUnicode";
 			_ExportToUnicode.Size = new System.Drawing.Size (242, 22);
-			_ExportToUnicode.Text = "&ToUnicode 映射表";
+			_ExportToUnicode.Text = "&ToUnicode mapping table";
 			//
 			// _Container
 			//
@@ -161,20 +161,20 @@
 			//
 			this._NameColumn.CellPadding = null;
 			this._NameColumn.IsEditable = false;
-			this._NameColumn.Text = "名称";
+			this._NameColumn.Text = "Name";
 			this._NameColumn.Width = 184;
 			//
 			// _ValueColumn
 			//
 			this._ValueColumn.CellPadding = null;
-			this._ValueColumn.Text = "值";
+			this._ValueColumn.Text = "Value";
 			this._ValueColumn.Width = 187;
 			//
 			// _DescriptionColumn
 			//
 			this._DescriptionColumn.CellPadding = null;
 			this._DescriptionColumn.IsEditable = false;
-			this._DescriptionColumn.Text = "说明";
+			this._DescriptionColumn.Text = "Description";
 			this._DescriptionColumn.Width = 93;
 			//
 			// _ObjectTypeIcons
@@ -260,8 +260,8 @@
 			this._OpenButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._OpenButton.Name = "_OpenButton";
 			this._OpenButton.Size = new System.Drawing.Size (79, 22);
-			this._OpenButton.Text = "打开(&D)";
-			this._OpenButton.ToolTipText = "打开 PDF 文档";
+			this._OpenButton.Text = "&Open";
+			this._OpenButton.ToolTipText = "Open the PDF document";
 			this._OpenButton.ButtonClick += new System.EventHandler (this.ControlEvent);
 			//
 			// _LoadDocumentWorker
@@ -294,8 +294,8 @@
 			this._SaveButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._SaveButton.Name = "_SaveButton";
 			this._SaveButton.Size = new System.Drawing.Size (66, 22);
-			this._SaveButton.Text = "保存(&B)";
-			this._SaveButton.ToolTipText = "保存修改后的 PDF 文档";
+			this._SaveButton.Text = "&Save";
+			this._SaveButton.ToolTipText = "Save the modified PDF document";
 			//
 			// toolStripSeparator1
 			//
@@ -316,8 +316,8 @@
 			this._ExportButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._ExportButton.Name = "_ExportButton";
 			this._ExportButton.Size = new System.Drawing.Size (60, 22);
-			this._ExportButton.Text = "导出";
-			this._ExportButton.ToolTipText = "导出流对象的内容";
+			this._ExportButton.Text = "Export";
+			this._ExportButton.ToolTipText = "Export stream object content";
 			this._ExportButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler (this.ToolbarItemClicked);
 			this._ExportButton.DropDownOpening += new System.EventHandler (this._ExportButton_DropDownOpening);
 			//
@@ -328,8 +328,8 @@
 			this._ViewButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._ViewButton.Name = "_ViewButton";
 			this._ViewButton.Size = new System.Drawing.Size (51, 22);
-			this._ViewButton.Text = "查看";
-			this._ViewButton.ToolTipText = "查看流对象";
+			this._ViewButton.Text = "View";
+			this._ViewButton.ToolTipText = "View flow object";
 			//
 			// _AddObjectMenu
 			//
@@ -345,45 +345,45 @@
 			this._AddObjectMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._AddObjectMenu.Name = "_AddObjectMenu";
 			this._AddObjectMenu.Size = new System.Drawing.Size (96, 22);
-			this._AddObjectMenu.Text = "插入子节点";
-			this._AddObjectMenu.ToolTipText = "添加子节点对象";
+			this._AddObjectMenu.Text = "Insert child node";
+			this._AddObjectMenu.ToolTipText = "Add a child node object";
 			this._AddObjectMenu.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler (this._AddObjectMenu_DropDownItemClicked);
 			//
 			// _AddArrayNode
 			//
 			this._AddArrayNode.Name = "_AddArrayNode";
 			this._AddArrayNode.Size = new System.Drawing.Size (134, 22);
-			this._AddArrayNode.Text = "列表节点";
+			this._AddArrayNode.Text = "List node";
 			//
 			// _AddDictNode
 			//
 			this._AddDictNode.Name = "_AddDictNode";
 			this._AddDictNode.Size = new System.Drawing.Size (134, 22);
-			this._AddDictNode.Text = "字典节点";
+			this._AddDictNode.Text = "Dictionary node";
 			//
 			// _AddBooleanNode
 			//
 			this._AddBooleanNode.Name = "_AddBooleanNode";
 			this._AddBooleanNode.Size = new System.Drawing.Size (134, 22);
-			this._AddBooleanNode.Text = "真假值节点";
+			this._AddBooleanNode.Text = "Real Value Node";
 			//
 			// _AddStringNode
 			//
 			this._AddStringNode.Name = "_AddStringNode";
 			this._AddStringNode.Size = new System.Drawing.Size (134, 22);
-			this._AddStringNode.Text = "字符串节点";
+			this._AddStringNode.Text = "String node";
 			//
 			// _AddNumberNode
 			//
 			this._AddNumberNode.Name = "_AddNumberNode";
 			this._AddNumberNode.Size = new System.Drawing.Size (134, 22);
-			this._AddNumberNode.Text = "数值节点";
+			this._AddNumberNode.Text = "Numerical node";
 			//
 			// _AddNameNode
 			//
 			this._AddNameNode.Name = "_AddNameNode";
 			this._AddNameNode.Size = new System.Drawing.Size (134, 22);
-			this._AddNameNode.Text = "名称节点";
+			this._AddNameNode.Text = "Name node";
 			//
 			// _DeleteButton
 			//
@@ -393,8 +393,8 @@
 			this._DeleteButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._DeleteButton.Name = "_DeleteButton";
 			this._DeleteButton.Size = new System.Drawing.Size (23, 22);
-			this._DeleteButton.Text = "删除";
-			this._DeleteButton.ToolTipText = "删除选中的对象";
+			this._DeleteButton.Text = "Delete";
+			this._DeleteButton.ToolTipText = "Delete the selected object";
 			//
 			// _ExpandButton
 			//
@@ -404,8 +404,8 @@
 			this._ExpandButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._ExpandButton.Name = "_ExpandButton";
 			this._ExpandButton.Size = new System.Drawing.Size (23, 22);
-			this._ExpandButton.Text = "展开";
-			this._ExpandButton.ToolTipText = "展开选中的项目";
+			this._ExpandButton.Text = "Expand";
+			this._ExpandButton.ToolTipText = "Expand the selected item";
 			//
 			// _CollapseButton
 			//
@@ -415,8 +415,8 @@
 			this._CollapseButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._CollapseButton.Name = "_CollapseButton";
 			this._CollapseButton.Size = new System.Drawing.Size (23, 22);
-			this._CollapseButton.Text = "收拢";
-			this._CollapseButton.ToolTipText = "收拢选中的项目";
+			this._CollapseButton.Text = "Collapse";
+			this._CollapseButton.ToolTipText = "Collapse selected items";
 			//
 			// DocumentInspectorControl
 			//

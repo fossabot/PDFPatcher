@@ -62,7 +62,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(89, 12);
 			this.label3.TabIndex = 0;
-			this.label3.Text = "识别页码范围：";
+			this.label3.Text = "Identify page range:";
 			//
 			// _PageRangeBox
 			//
@@ -108,7 +108,7 @@
 			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
 			this.tabPage1.Size = new System.Drawing.Size(439, 168);
 			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "识别选项";
+			this.tabPage1.Text = "Identification option";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			//
 			// _OutputOriginalOcrResultBox
@@ -118,7 +118,7 @@
 			this._OutputOriginalOcrResultBox.Name = "_OutputOriginalOcrResultBox";
 			this._OutputOriginalOcrResultBox.Size = new System.Drawing.Size(132, 16);
 			this._OutputOriginalOcrResultBox.TabIndex = 16;
-			this._OutputOriginalOcrResultBox.Text = "保存原始的识别结果";
+			this._OutputOriginalOcrResultBox.Text = "Save the original identification result";
 			this._OutputOriginalOcrResultBox.UseVisualStyleBackColor = true;
 			this._OutputOriginalOcrResultBox.CheckedChanged += new System.EventHandler(this.ControlEvent);
 			//
@@ -129,7 +129,7 @@
 			this._ConvertToMonoColorBox.Name = "_ConvertToMonoColorBox";
 			this._ConvertToMonoColorBox.Size = new System.Drawing.Size(144, 16);
 			this._ConvertToMonoColorBox.TabIndex = 12;
-			this._ConvertToMonoColorBox.Text = "转换为黑白图片再识别";
+			this._ConvertToMonoColorBox.Text = "Convert to black and white picture and then recognize";
 			this._ConvertToMonoColorBox.UseVisualStyleBackColor = true;
 			//
 			// _RemoveSpaceBetweenChineseBox
@@ -139,7 +139,7 @@
 			this._RemoveSpaceBetweenChineseBox.Name = "_RemoveSpaceBetweenChineseBox";
 			this._RemoveSpaceBetweenChineseBox.Size = new System.Drawing.Size(120, 16);
 			this._RemoveSpaceBetweenChineseBox.TabIndex = 11;
-			this._RemoveSpaceBetweenChineseBox.Text = "删除汉字间的空格";
+			this._RemoveSpaceBetweenChineseBox.Text = "Delete the space between Chinese characters";
 			this._RemoveSpaceBetweenChineseBox.UseVisualStyleBackColor = true;
 			//
 			// _SaveOcredImageBox
@@ -149,7 +149,7 @@
 			this._SaveOcredImageBox.Name = "_SaveOcredImageBox";
 			this._SaveOcredImageBox.Size = new System.Drawing.Size(156, 16);
 			this._SaveOcredImageBox.TabIndex = 13;
-			this._SaveOcredImageBox.Text = "保存识别引擎处理的图片";
+			this._SaveOcredImageBox.Text = "Save pictures of the identification engine";
 			this._SaveOcredImageBox.UseVisualStyleBackColor = true;
 			this._SaveOcredImageBox.Visible = false;
 			//
@@ -160,7 +160,7 @@
 			this._CompressWhiteSpaceBox.Name = "_CompressWhiteSpaceBox";
 			this._CompressWhiteSpaceBox.Size = new System.Drawing.Size(132, 16);
 			this._CompressWhiteSpaceBox.TabIndex = 10;
-			this._CompressWhiteSpaceBox.Text = "压缩连续出现的空格";
+			this._CompressWhiteSpaceBox.Text = "Compression continuous space";
 			this._CompressWhiteSpaceBox.UseVisualStyleBackColor = true;
 			//
 			// _DetectContentPunctuationsBox
@@ -170,7 +170,7 @@
 			this._DetectContentPunctuationsBox.Name = "_DetectContentPunctuationsBox";
 			this._DetectContentPunctuationsBox.Size = new System.Drawing.Size(192, 16);
 			this._DetectContentPunctuationsBox.TabIndex = 9;
-			this._DetectContentPunctuationsBox.Text = "识别目录页的点（……）分隔符";
+			this._DetectContentPunctuationsBox.Text = "Identify the point (...) separator of the directory page";
 			this._DetectContentPunctuationsBox.UseVisualStyleBackColor = true;
 			//
 			// _DetectColumnsBox
@@ -180,7 +180,7 @@
 			this._DetectColumnsBox.Name = "_DetectColumnsBox";
 			this._DetectColumnsBox.Size = new System.Drawing.Size(96, 16);
 			this._DetectColumnsBox.TabIndex = 8;
-			this._DetectColumnsBox.Text = "识别分栏排版";
+			this._DetectColumnsBox.Text = "Identification section";
 			this._DetectColumnsBox.UseVisualStyleBackColor = true;
 			//
 			// _StretchBox
@@ -190,7 +190,7 @@
 			this._StretchBox.Name = "_StretchBox";
 			this._StretchBox.Size = new System.Drawing.Size(96, 16);
 			this._StretchBox.TabIndex = 7;
-			this._StretchBox.Text = "纠正倾斜页面";
+			this._StretchBox.Text = "Correct tilt page";
 			this._StretchBox.UseVisualStyleBackColor = true;
 			//
 			// _OrientBox
@@ -200,7 +200,7 @@
 			this._OrientBox.Name = "_OrientBox";
 			this._OrientBox.Size = new System.Drawing.Size(96, 16);
 			this._OrientBox.TabIndex = 6;
-			this._OrientBox.Text = "检测页面方向";
+			this._OrientBox.Text = "Detection page";
 			this._OrientBox.UseVisualStyleBackColor = true;
 			//
 			// _OcrLangBox
@@ -219,7 +219,7 @@
 			this.label13.Name = "label13";
 			this.label13.Size = new System.Drawing.Size(89, 12);
 			this.label13.TabIndex = 4;
-			this.label13.Text = "文字识别语言：";
+			this.label13.Text = "Text recognition language:";
 			//
 			// label5
 			//
@@ -228,16 +228,16 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(89, 12);
 			this.label5.TabIndex = 2;
-			this.label5.Text = "文字排版方向：";
+			this.label5.Text = "Text Titting Direction:";
 			//
 			// _WritingDirectionBox
 			//
 			this._WritingDirectionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this._WritingDirectionBox.FormattingEnabled = true;
 			this._WritingDirectionBox.Items.AddRange(new object[] {
-            "自动检测",
-            "横向",
-            "纵向"});
+       "Automatic Detection",
+             "Horizontal",
+             "Portrait"});
 			this._WritingDirectionBox.Location = new System.Drawing.Point(98, 36);
 			this._WritingDirectionBox.Name = "_WritingDirectionBox";
 			this._WritingDirectionBox.Size = new System.Drawing.Size(76, 20);
@@ -251,7 +251,7 @@
 			this.label14.Name = "label14";
 			this.label14.Size = new System.Drawing.Size(89, 12);
 			this.label14.TabIndex = 14;
-			this.label14.Text = "尺寸量化因数：";
+			this.label14.Text = "Size quantization factor:";
 			this.label14.Visible = false;
 			//
 			// _QuantitiveFactorBox
@@ -287,7 +287,7 @@
 			//
 			this._BookmarkControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-			this._BookmarkControl.LabelText = "识别结果文件：";
+			this._BookmarkControl.LabelText = "Identification result file:";
 			this._BookmarkControl.Location = new System.Drawing.Point(9, 33);
 			this._BookmarkControl.Name = "_BookmarkControl";
 			this._BookmarkControl.Size = new System.Drawing.Size(454, 25);
@@ -311,7 +311,7 @@
 			this._ExportBookmarkButton.Name = "_ExportBookmarkButton";
 			this._ExportBookmarkButton.Size = new System.Drawing.Size(120, 23);
 			this._ExportBookmarkButton.TabIndex = 3;
-			this._ExportBookmarkButton.Text = "识别图像文本(&S)";
+			this._ExportBookmarkButton.Text = "Identify image text (&S)";
 			this._ExportBookmarkButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._ExportBookmarkButton.UseVisualStyleBackColor = true;
 			this._ExportBookmarkButton.Click += new System.EventHandler(this.Button_Click);
@@ -333,7 +333,7 @@
 			this._ImportOcrResultButton.ShowFocusBorder = true;
 			this._ImportOcrResultButton.Size = new System.Drawing.Size(123, 29);
 			this._ImportOcrResultButton.TabIndex = 17;
-			this._ImportOcrResultButton.Text = "写入PDF文档(&X)";
+			this._ImportOcrResultButton.Text = "Write a PDF document (&X)";
 			this._ImportOcrResultButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._ImportOcrResultButton.Click += new System.EventHandler(this.Button_Click);
 			//
@@ -344,7 +344,7 @@
 			this._PrintOcrResultBox.Name = "_PrintOcrResultBox";
 			this._PrintOcrResultBox.Size = new System.Drawing.Size(180, 16);
 			this._PrintOcrResultBox.TabIndex = 17;
-			this._PrintOcrResultBox.Text = "在日志窗口输出识别后的文本";
+			this._PrintOcrResultBox.Text = "Log window output identified text";
 			this._PrintOcrResultBox.UseVisualStyleBackColor = true;
 			//
 			// OcrControl
@@ -359,7 +359,7 @@
 			this.Controls.Add(this._BookmarkControl);
 			this.Controls.Add(this._QuantitiveFactorBox);
 			this.Controls.Add(this._ImportOcrResultButton);
-			this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.Name = "OcrControl";
 			this.Size = new System.Drawing.Size(475, 333);
 			this.tabControl1.ResumeLayout(false);

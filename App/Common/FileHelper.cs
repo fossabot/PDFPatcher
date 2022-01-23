@@ -156,8 +156,9 @@ internal static class FileHelper
         switch (__OverwriteMode)
         {
             case OverwriteType.Prompt:
-                DialogResult r = FormHelper.YesNoCancelBox(string.Join("\n", "是否覆盖目标文件？", targetFile,
-                    "\n按住 Shift 键重复此对话框的选择，本次操作不再弹出覆盖文件提示。"));
+                DialogResult r = FormHelper.YesNoCancelBox(string.Join("\n",
+                    "Do you want to overwrite the target file?", targetFile,
+                    "\nPress and hold the Shift key to repeat the selection in this dialog, this operation will no longer pop up the overwrite file prompt."));
                 if (r == DialogResult.No)
                 {
                     if (FormHelper.IsShiftKeyDown)
@@ -181,7 +182,7 @@ internal static class FileHelper
             case OverwriteType.Overwrite:
                 return true;
             case OverwriteType.Skip:
-                Tracker.TraceMessage(Tracker.Category.ImportantMessage, "取消覆盖文件：" + targetFile);
+                Tracker.TraceMessage(Tracker.Category.ImportantMessage, "Cancel overwriting file: " + targetFile);
                 return false;
             default:
                 goto case OverwriteType.Prompt;

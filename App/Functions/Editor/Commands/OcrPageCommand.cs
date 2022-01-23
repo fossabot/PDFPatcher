@@ -24,7 +24,7 @@ internal sealed class OcrPageCommand : IEditorCommand
         }
         else
         {
-            FormHelper.InfoBox("页面不包含可识别的文本，或出现识别引擎错误。");
+            FormHelper.InfoBox("The page does not contain identifiable text, or the recognition engine error occurs.");
         }
     }
 }

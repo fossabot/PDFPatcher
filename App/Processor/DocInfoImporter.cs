@@ -27,7 +27,7 @@ internal sealed class DocInfoImporter
     {
         if (string.IsNullOrEmpty(infoDocFile))
         {
-            throw new FileNotFoundException("找不到信息文件。");
+            throw new FileNotFoundException("No information file is found.");
         }
 
         PdfInfoXmlDocument infoDoc = new();
@@ -40,7 +40,7 @@ internal sealed class DocInfoImporter
             infoDoc.Load(infoDocFile);
         }
 
-        // 设置单位转换因数
+        // Set the unit conversion factor
         _unitFactor = GetUnitFactor(infoDoc.DocumentElement);
         InfoDoc = infoDoc;
         _options = options;
@@ -216,7 +216,7 @@ internal sealed class DocInfoImporter
             return null;
         }
 
-        Tracker.TraceMessage("导入文档元数据信息。");
+        Tracker.TraceMessage("Import document metadata information.");
         DocumentInfoElement info = InfoDoc.InfoNode;
         return info == null
             ? null
@@ -272,7 +272,7 @@ internal sealed class DocInfoImporter
         }
         catch (Exception)
         {
-            Trace.WriteLine("读写 XMP 属性时出现错误。");
+            Trace.WriteLine("An error occurred while reading and writing XMP properties.");
         }
     }
 
@@ -336,7 +336,7 @@ internal sealed class DocInfoImporter
             return null;
         }
 
-        Tracker.TraceMessage("导入页码设置。");
+        Tracker.TraceMessage("Import page number settings.");
         XmlNodeList pn = InfoDoc.DocumentElement.SelectNodes(
             Constants.PageLabels + "/" + Constants.PageLabelsAttributes.Style + "[@" +
             Constants.PageLabelsAttributes.PageNumber + "]");
@@ -347,8 +347,9 @@ internal sealed class DocInfoImporter
             if (item.GetAttribute(Constants.PageLabelsAttributes.PageNumber).TryParse(out int physicalPage) == false ||
                 physicalPage < 1)
             {
-                Trace.WriteLine(string.Concat("在“", Constants.PageLabels, "”的“", Constants.PageLabelsAttributes.Style,
-                    "”元素中，必须指定大于或等于 1 的“", Constants.PageLabelsAttributes.PageNumber, "”属性。"));
+                Trace.WriteLine(string.Concat("\"", Constants.PageLabels, "\"", Constants.PageLabelsAttributes.Style,
+                    "\" element, the \"", Constants.PageLabelsAttributes.PageNumber,
+                    "\" attribute greater than or equal to 1 must be specified. "));
                 continue;
             }
 
@@ -404,7 +405,7 @@ internal sealed class DocInfoImporter
             return;
         }
 
-        Tracker.TraceMessage("导入页面内连接。");
+        Tracker.TraceMessage("Import links in the page.");
         if (_options.KeepPageLinks == false)
         {
             r.ClearPageLinks();
@@ -415,7 +416,7 @@ internal sealed class DocInfoImporter
         {
             if (item.GetAttribute(Constants.PageLinkAttributes.PageNumber).TryParse(out int pageNum) == false)
             {
-                Trace.WriteLine("页码属性格式不正确");
+                Trace.WriteLine("The page number attribute format is incorrect");
                 continue;
             }
 
@@ -426,14 +427,14 @@ internal sealed class DocInfoImporter
 
             if (pageNum > pageCount)
             {
-                Trace.WriteLine("页码 " + pageNum + " 超出文档最大页数。");
+                Trace.WriteLine("PageNumber" + pageNum + "Exceeds the maximum number of pages in the document.");
                 continue;
             }
 
             float[] acc = ImportRectangle(item);
             if (acc == null)
             {
-                Trace.WriteLine("区域坐标不为 4 个。");
+                Trace.WriteLine("The area coordinates are not 4.");
                 continue;
             }
 
@@ -450,10 +451,10 @@ internal sealed class DocInfoImporter
             {
                 PdfName h = hl switch
                 {
-                    "无" => PdfName.N,
-                    "取反内容" => PdfName.I,
-                    "取反边框" => PdfName.O,
-                    "按下" => PdfName.P,
+                    "none" => PdfName.N,
+                    "Inverse content" => PdfName.I,
+                    "Inverse border" => PdfName.O,
+                    "pressed" => PdfName.P,
                     _ => PdfName.I
                 };
 
@@ -473,7 +474,7 @@ internal sealed class DocInfoImporter
             }
             else
             {
-                if (item.SelectSingleNode("边框样式") is XmlElement bse)
+                if (item.SelectSingleNode("Border pattern") is XmlElement bse)
                 {
                     PdfDictionary bs = ImportPdfBorderStyle(bse);
                     if (bs != null)
@@ -662,7 +663,7 @@ internal sealed class DocInfoImporter
                 dict.Put(PdfName.A, string.IsNullOrEmpty(p) == false ? PdfAction.JavaScript(p, writer) : null);
                 break;
             default:
-                Tracker.TraceMessage(Tracker.Category.Alert, string.Concat("不支持动作：", action));
+                Tracker.TraceMessage(Tracker.Category.Alert, string.Concat("Do not support action:", action));
                 break;
         }
     }
@@ -852,9 +853,9 @@ internal sealed class DocInfoImporter
 
     private static PdfDictionary ImportPdfBorderStyle(XmlElement item)
     {
-        string borderWidth = item.GetAttribute("宽度");
-        string borderStyle = item.GetAttribute("样式");
-        string borderPattern = item.GetAttribute("线形");
+        string borderWidth = item.GetAttribute("width");
+        string borderStyle = item.GetAttribute("Style");
+        string borderPattern = item.GetAttribute("Line");
         PdfDictionary bs = new(PdfName.BS);
         if (borderWidth.TryParse(out float bw))
         {
@@ -869,19 +870,19 @@ internal sealed class DocInfoImporter
         PdfName s;
         switch (borderStyle)
         {
-            case "方框":
+            case "box":
                 s = PdfName.S;
                 break;
-            case "下划线":
+            case "underscore":
                 s = PdfName.U;
                 break;
-            case "凸起":
+            case "raised":
                 s = PdfName.B;
                 break;
-            case "凹陷":
+            case "Sag":
                 s = PdfName.I;
                 break;
-            case "虚线":
+            case "dotted line":
                 s = PdfName.D;
                 if (string.IsNullOrEmpty(borderPattern) == false)
                 {
@@ -926,7 +927,7 @@ internal sealed class DocInfoImporter
             return;
         }
 
-        Tracker.TraceMessage("导入阅读器设置。");
+        Tracker.TraceMessage("Import reader settings.");
         if (InfoDoc.DocumentElement.SelectSingleNode(Constants.ViewerPreferences) is not XmlElement ps)
         {
             return;
@@ -1054,7 +1055,7 @@ internal sealed class DocInfoImporter
             return;
         }
 
-        XmlNodeList ds = InfoDoc.DocumentElement.SelectNodes("命名位置/位置[@名称]");
+        XmlNodeList ds = InfoDoc.DocumentElement.SelectNodes("Named Location/Location[@name]");
         if (ds.Count == 0)
         {
             return;
@@ -1071,7 +1072,7 @@ internal sealed class DocInfoImporter
         {
             if (item.Value.GetAttribute(Constants.DestinationAttributes.Page).TryParse(out int targetPn) == false)
             {
-                Trace.WriteLine("“目标页面”属性的数值格式不正确。");
+                Trace.WriteLine("The value of the \"Target Page\" property is not in the correct format.");
                 continue;
             }
 
@@ -1115,7 +1116,7 @@ internal sealed class DocInfoImporter
             return;
         }
 
-        Tracker.TraceMessage("导入页面设置。");
+        Tracker.TraceMessage("Import page settings.");
         int pn = pdf.NumberOfPages;
         foreach (XmlElement item in ps)
         {

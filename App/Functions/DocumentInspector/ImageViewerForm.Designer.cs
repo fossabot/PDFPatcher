@@ -56,8 +56,8 @@
 			_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
 			_Save.Name = "_Save";
 			_Save.Size = new System.Drawing.Size (90, 22);
-			_Save.Text = "保存图片(&B)";
-			_Save.ToolTipText = "将显示的图片保存为文件";
+			_Save.Text = "&Save Image";
+			_Save.ToolTipText = "Save the displayed picture as a file";
 			//
 			// _ZoomReset
 			//
@@ -65,7 +65,7 @@
 			_ZoomReset.ImageTransparentColor = System.Drawing.Color.Magenta;
 			_ZoomReset.Name = "_ZoomReset";
 			_ZoomReset.Size = new System.Drawing.Size (75, 22);
-			_ZoomReset.Text = "原图比例";
+			_ZoomReset.Text = "Zoom Scale";
 			//
 			// _FitWindow
 			//
@@ -73,7 +73,7 @@
 			this._FitWindow.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._FitWindow.Name = "_FitWindow";
 			this._FitWindow.Size = new System.Drawing.Size (75, 22);
-			this._FitWindow.Text = "适合窗口";
+			this._FitWindow.Text = "Fit to Window";
 			//
 			// toolStripSeparator1
 			//
@@ -103,7 +103,7 @@
 			this.Name = "ImageViewerForm";
 			this.ShowIcon = false;
 			this.ShowInTaskbar = false;
-			this.Text = "查看图片";
+			this.Text = "View image";
 			this._MainToolbar.ResumeLayout (false);
 			this._MainToolbar.PerformLayout ();
 			this.ResumeLayout (false);

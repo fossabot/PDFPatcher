@@ -79,7 +79,7 @@ public partial class SourceFileControl : UserControl
         string t = FileList.Text;
         if (files.Length > 1)
         {
-            Text = string.Concat("<选定了 ", files.Length, " 个文件>", Path.GetDirectoryName(files[0]));
+            Text = string.Concat("<selected", files.Length, "files>", Path.GetDirectoryName(files[0]));
         }
         else if (files[0] != t)
         {

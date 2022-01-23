@@ -111,20 +111,20 @@ internal static partial class NativeMethods
     {
         string ff = Path.GetDirectoryName(Environment.GetFolderPath(Environment.SpecialFolder.System)) + "\\Fonts\\";
         ff = name.StartsWith("SimKai", StringComparison.OrdinalIgnoreCase) ||
-             name.StartsWith("楷体_GB2312", StringComparison.OrdinalIgnoreCase) ||
+             name.StartsWith("Italics_GB2312", StringComparison.OrdinalIgnoreCase) ||
              name.StartsWith("Kaiti_GB2312", StringComparison.OrdinalIgnoreCase) ? ff + "simkai.ttf"
             : name.StartsWith("SimSun", StringComparison.OrdinalIgnoreCase) ||
               name.StartsWith("宋体", StringComparison.OrdinalIgnoreCase) ||
               name.StartsWith("STSong", StringComparison.OrdinalIgnoreCase) ? ff + "simsun.ttc"
             : name.StartsWith("SimHei", StringComparison.OrdinalIgnoreCase) ||
-              name.StartsWith("黑体", StringComparison.OrdinalIgnoreCase) ? ff + "simhei.ttf"
+              name.StartsWith("Blackbody", StringComparison.OrdinalIgnoreCase) ? ff + "simhei.ttf"
             : name.StartsWith("SimLi", StringComparison.OrdinalIgnoreCase) ||
-              name.StartsWith("隶书", StringComparison.OrdinalIgnoreCase) ? ff + "simli.ttf"
+              name.StartsWith("Lishu", StringComparison.OrdinalIgnoreCase) ? ff + "simli.ttf"
             : name.StartsWith("SimFang", StringComparison.OrdinalIgnoreCase) ||
-              name.StartsWith("仿宋_GB2312", StringComparison.OrdinalIgnoreCase) ||
+              name.StartsWith("Imitation Song_GB2312", StringComparison.OrdinalIgnoreCase) ||
               name.StartsWith("Fangsong_GB2312", StringComparison.OrdinalIgnoreCase) ? ff + "simfang.ttf"
             : name.StartsWith("SimYou", StringComparison.OrdinalIgnoreCase) ||
-              name.StartsWith("幼圆", StringComparison.OrdinalIgnoreCase) ? ff + "simyou.ttf"
+              name.StartsWith("Young Circle", StringComparison.OrdinalIgnoreCase) ? ff + "simyou.ttf"
             : null;
         return ff;
     }

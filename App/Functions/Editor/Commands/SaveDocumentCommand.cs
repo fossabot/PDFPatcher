@@ -46,7 +46,7 @@ internal sealed class SaveDocumentCommand : IEditorCommand
             using SaveFileDialog d = new()
             {
                 DefaultExt = Constants.FileExtensions.Xml,
-                Title = "指定保存文件的路径",
+                Title = "Specify the path to save the file",
                 Filter = Constants.FileExtensions.XmlFilter + "|" + Constants.FileExtensions.TxtFilter
             };
             if (t.ExistsFile)
@@ -69,14 +69,14 @@ internal sealed class SaveDocumentCommand : IEditorCommand
         {
             using StreamWriter writer = new(t);
             const string indentString = "\t";
-            writer.WriteLine("#版本=" + Constants.InfoDocVersion);
+            writer.WriteLine("#Version=" + Constants.InfoDocVersion);
             if (mudoc != null)
             {
                 writer.WriteLine("#" + Constants.Info.DocumentPath + "=" + mudoc.FilePath);
             }
 
-            writer.WriteLine("#缩进标记=" + indentString);
-            writer.WriteLine("#首页页码=1");
+            writer.WriteLine("#indent mark=" + indentString);
+            writer.WriteLine("#First page number=1");
             writer.WriteLine();
             OutlineManager.WriteSimpleBookmark(writer, idoc.BookmarkRoot, 0, indentString);
         }
@@ -105,7 +105,7 @@ internal sealed class SaveDocumentCommand : IEditorCommand
         PdfViewerControl vv = controller.View.Viewer;
         if (m.Document == null)
         {
-            FormHelper.ErrorBox("尚未加载书签文档。");
+            FormHelper.ErrorBox("The bookmark document has not been loaded.");
             return;
         }
 

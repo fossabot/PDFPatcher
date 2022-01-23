@@ -86,21 +86,21 @@ public partial class PageSettingsEditor : UserControl
                 PageFilterFlag eo = f & (PageFilterFlag.Even | PageFilterFlag.Odd);
                 PageFilterFlag pl = f & (PageFilterFlag.Landscape | PageFilterFlag.Portrait);
                 return f == PageFilterFlag.NotSpecified
-                    ? "所有页面"
+                    ? "All pages"
                     : string.Concat(
                         eo switch
                         {
-                            PageFilterFlag.Odd => "单数",
-                            PageFilterFlag.Even => "双数",
+                            PageFilterFlag.Odd => "Singular",
+                            PageFilterFlag.Even => "Double",
                             _ => string.Empty
                         },
                         pl switch
                         {
-                            PageFilterFlag.Landscape => "横向",
-                            PageFilterFlag.Portrait => "纵向",
+                            PageFilterFlag.Landscape => "Landscape",
+                            PageFilterFlag.Portrait => "Portrait",
                             _ => string.Empty
                         },
-                        "页");
+                        "Page");
             }
         };
         _RotateMenu.DropDownOpening += (_, _) =>

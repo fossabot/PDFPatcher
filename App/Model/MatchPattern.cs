@@ -19,15 +19,16 @@ public sealed class MatchPattern : ICloneable
         UseRegularExpression = useRegExp;
     }
 
-    [XmlAttribute("名称")] public string Name { get; set; }
+    [XmlAttribute("name")] public string Name { get; set; }
 
-    [XmlAttribute("匹配模板")] public string Text { get; set; }
+    [XmlAttribute("Match template")] public string Text { get; set; }
 
-    [XmlAttribute("匹配大小写")] public bool MatchCase { get; set; }
+    [XmlAttribute("match case")] public bool MatchCase { get; set; }
 
-    [XmlAttribute("匹配全标题")] public bool FullMatch { get; set; }
+    [XmlAttribute("Match full title")] public bool FullMatch { get; set; }
 
-    [XmlAttribute("使用正则表达式")] public bool UseRegularExpression { get; set; }
+    [XmlAttribute("Use Regular Expression")]
+    public bool UseRegularExpression { get; set; }
 
     #region ICloneable member
 

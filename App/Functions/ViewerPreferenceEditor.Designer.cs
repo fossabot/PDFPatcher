@@ -62,27 +62,27 @@
 			this.groupBox2.Size = new System.Drawing.Size (426, 70);
 			this.groupBox2.TabIndex = 2;
 			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "书签及链接动作";
-			//
-			// _ForceInternalLinkBox
-			//
-			this._ForceInternalLinkBox.AutoSize = true;
-			this._ForceInternalLinkBox.Location = new System.Drawing.Point (6, 42);
-			this._ForceInternalLinkBox.Name = "_ForceInternalLinkBox";
-			this._ForceInternalLinkBox.Size = new System.Drawing.Size (234, 16);
-			this._ForceInternalLinkBox.TabIndex = 3;
-			this._ForceInternalLinkBox.Text = "强制将外部 PDF 文件链接改成内部链接";
-			this._ForceInternalLinkBox.UseVisualStyleBackColor = true;
-			this._ForceInternalLinkBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
-			//
-			// _ForceRemoveZoomRateBox
-			//
-			this._ForceRemoveZoomRateBox.AutoSize = true;
-			this._ForceRemoveZoomRateBox.Location = new System.Drawing.Point (6, 20);
-			this._ForceRemoveZoomRateBox.Name = "_ForceRemoveZoomRateBox";
-			this._ForceRemoveZoomRateBox.Size = new System.Drawing.Size (204, 16);
-			this._ForceRemoveZoomRateBox.TabIndex = 0;
-			this._ForceRemoveZoomRateBox.Text = "禁止书签及页面链接更改显示比例";
+this.groupBox2.Text = "Bookmark and Link Action";
+//
+// _ForceInternalLinkBox
+//
+this._ForceInternalLinkBox.AutoSize = true;
+this._ForceInternalLinkBox.Location = new System.Drawing.Point(6, 42);
+this._ForceInternalLinkBox.Name = "_ForceInternalLinkBox";
+this._ForceInternalLinkBox.Size = new System.Drawing.Size(234, 16);
+this._ForceInternalLinkBox.TabIndex = 3;
+this._ForceInternalLinkBox.Text = "Force external PDF file links to internal links";
+this._ForceInternalLinkBox.UseVisualStyleBackColor = true;
+this._ForceInternalLinkBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
+//
+// _ForceRemoveZoomRateBox
+//
+this._ForceRemoveZoomRateBox.AutoSize = true;
+this._ForceRemoveZoomRateBox.Location = new System.Drawing.Point (6, 20);
+this._ForceRemoveZoomRateBox.Name = "_ForceRemoveZoomRateBox";
+this._ForceRemoveZoomRateBox.Size = new System.Drawing.Size (204, 16);
+this._ForceRemoveZoomRateBox.TabIndex = 0;
+this._ForceRemoveZoomRateBox.Text = "Forbid bookmarks and page links to change the display ratio";
 			this._ForceRemoveZoomRateBox.UseVisualStyleBackColor = true;
 			this._ForceRemoveZoomRateBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
 			//
@@ -103,33 +103,33 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size (65, 12);
 			this.label2.TabIndex = 1;
-			this.label2.Text = "书签状态：";
-			//
-			// groupBox1
-			//
-			this.groupBox1.Controls.Add (this.label8);
-			this.groupBox1.Controls.Add (this._ForceBookmarkOpenBox);
-			this.groupBox1.Controls.Add (this._ForceInitialModeBox);
-			this.groupBox1.Controls.Add (this._ForceDirectionBox);
-			this.groupBox1.Controls.Add (this.label2);
-			this.groupBox1.Controls.Add (this.label7);
-			this.groupBox1.Controls.Add (this._ForceInitialViewBox);
-			this.groupBox1.Controls.Add (this.label3);
-			this.groupBox1.Location = new System.Drawing.Point (6, 23);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size (210, 135);
-			this.groupBox1.TabIndex = 1;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "阅读器设定";
-			//
-			// label8
-			//
-			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point (6, 73);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size (65, 12);
-			this.label8.TabIndex = 4;
-			this.label8.Text = "初始模式：";
+this.label2.Text = "Bookmark Status:";
+//
+// groupBox1
+//
+this.groupBox1.Controls.Add(this.label8);
+this.groupBox1.Controls.Add(this._ForceBookmarkOpenBox);
+this.groupBox1.Controls.Add(this._ForceInitialModeBox);
+this.groupBox1.Controls.Add(this._ForceDirectionBox);
+this.groupBox1.Controls.Add(this.label2);
+this.groupBox1.Controls.Add(this.label7);
+this.groupBox1.Controls.Add (this._ForceInitialViewBox);
+this.groupBox1.Controls.Add(this.label3);
+this.groupBox1.Location = new System.Drawing.Point(6, 23);
+this.groupBox1.Name = "groupBox1";
+this.groupBox1.Size = new System.Drawing.Size(210, 135);
+this.groupBox1.TabIndex = 1;
+this.groupBox1.TabStop = false;
+this.groupBox1.Text = "Viewer Settings";
+//
+// label8
+//
+this.label8.AutoSize = true;
+this.label8.Location = new System.Drawing.Point(6, 73);
+this.label8.Name = "label8";
+this.label8.Size = new System.Drawing.Size(65, 12);
+this.label8.TabIndex = 4;
+this.label8.Text = "Initial mode: ";
 			//
 			// _ForceInitialModeBox
 			//
@@ -158,7 +158,7 @@
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size (65, 12);
 			this.label7.TabIndex = 2;
-			this.label7.Text = "阅读方向：";
+			this.label7.Text = "Reading direction:";
 			//
 			// _ForceInitialViewBox
 			//
@@ -176,7 +176,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size (65, 12);
 			this.label3.TabIndex = 0;
-			this.label3.Text = "初始视图：";
+			this.label3.Text = "Initial view:";
 			//
 			// label5
 			//
@@ -185,7 +185,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size (221, 12);
 			this.label5.TabIndex = 0;
-			this.label5.Text = "说明：以下设定优先于信息文件的内容。";
+			this.label5.Text = "Description: The following settings take precedence over the information file.";
 			//
 			// _HideMenuBox
 			//
@@ -194,51 +194,51 @@
 			this._HideMenuBox.Name = "_HideMenuBox";
 			this._HideMenuBox.Size = new System.Drawing.Size (72, 16);
 			this._HideMenuBox.TabIndex = 0;
-			this._HideMenuBox.Text = "隐藏菜单";
-			this._HideMenuBox.UseVisualStyleBackColor = true;
-			this._HideMenuBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
-			//
-			// _HideToolbarBox
-			//
-			this._HideToolbarBox.AutoSize = true;
-			this._HideToolbarBox.Location = new System.Drawing.Point (99, 3);
-			this._HideToolbarBox.Name = "_HideToolbarBox";
-			this._HideToolbarBox.Size = new System.Drawing.Size (84, 16);
-			this._HideToolbarBox.TabIndex = 1;
-			this._HideToolbarBox.Text = "隐藏工具栏";
-			this._HideToolbarBox.UseVisualStyleBackColor = true;
-			this._HideToolbarBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
-			//
-			// _HideUIBox
-			//
-			this._HideUIBox.AutoSize = true;
-			this._HideUIBox.Location = new System.Drawing.Point (3, 25);
-			this._HideUIBox.Name = "_HideUIBox";
-			this._HideUIBox.Size = new System.Drawing.Size (192, 16);
-			this._HideUIBox.TabIndex = 2;
-			this._HideUIBox.Text = "隐藏操作界面，仅显示文档内容";
-			this._HideUIBox.UseVisualStyleBackColor = true;
-			this._HideUIBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
-			//
-			// _FitWindowBox
-			//
-			this._FitWindowBox.AutoSize = true;
-			this._FitWindowBox.Location = new System.Drawing.Point (3, 47);
-			this._FitWindowBox.Name = "_FitWindowBox";
-			this._FitWindowBox.Size = new System.Drawing.Size (120, 16);
-			this._FitWindowBox.TabIndex = 3;
-			this._FitWindowBox.Text = "窗口适应文档首页";
-			this._FitWindowBox.UseVisualStyleBackColor = true;
-			this._FitWindowBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
-			//
-			// _CenterWindowBox
-			//
-			this._CenterWindowBox.AutoSize = true;
-			this._CenterWindowBox.Location = new System.Drawing.Point (3, 68);
-			this._CenterWindowBox.Name = "_CenterWindowBox";
-			this._CenterWindowBox.Size = new System.Drawing.Size (72, 16);
-			this._CenterWindowBox.TabIndex = 4;
-			this._CenterWindowBox.Text = "窗口居中";
+this._HideMenuBox.Text = "Hide Menu";
+this._HideMenuBox.UseVisualStyleBackColor = true;
+this._HideMenuBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
+//
+// _HideToolbarBox
+//
+this._HideToolbarBox.AutoSize = true;
+this._HideToolbarBox.Location = new System.Drawing.Point(99, 3);
+this._HideToolbarBox.Name = "_HideToolbarBox";
+this._HideToolbarBox.Size = new System.Drawing.Size(84, 16);
+this._HideToolbarBox.TabIndex = 1;
+this._HideToolbarBox.Text = "Hide Toolbar";
+this._HideToolbarBox.UseVisualStyleBackColor = true;
+this._HideToolbarBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
+//
+// _HideUIBox
+//
+this._HideUIBox.AutoSize = true;
+this._HideUIBox.Location = new System.Drawing.Point(3, 25);
+this._HideUIBox.Name = "_HideUIBox";
+this._HideUIBox.Size = new System.Drawing.Size(192, 16);
+this._HideUIBox.TabIndex = 2;
+this._HideUIBox.Text = "Hide the operation interface, only show the document content";
+this._HideUIBox.UseVisualStyleBackColor = true;
+this._HideUIBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
+//
+// _FitWindowBox
+//
+this._FitWindowBox.AutoSize = true;
+this._FitWindowBox.Location = new System.Drawing.Point(3, 47);
+this._FitWindowBox.Name = "_FitWindowBox";
+this._FitWindowBox.Size = new System.Drawing.Size (120, 16);
+this._FitWindowBox.TabIndex = 3;
+this._FitWindowBox.Text = "Fit the window to the first page of the document";
+this._FitWindowBox.UseVisualStyleBackColor = true;
+this._FitWindowBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
+//
+// _CenterWindowBox
+//
+this._CenterWindowBox.AutoSize = true;
+this._CenterWindowBox.Location = new System.Drawing.Point(3, 68);
+this._CenterWindowBox.Name = "_CenterWindowBox";
+this._CenterWindowBox.Size = new System.Drawing.Size(72, 16);
+this._CenterWindowBox.TabIndex = 4;
+this._CenterWindowBox.Text = "Center window";
 			this._CenterWindowBox.UseVisualStyleBackColor = true;
 			this._CenterWindowBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
 			//
@@ -249,7 +249,7 @@
 			this._DisplayDocTitleBox.Name = "_DisplayDocTitleBox";
 			this._DisplayDocTitleBox.Size = new System.Drawing.Size (96, 16);
 			this._DisplayDocTitleBox.TabIndex = 5;
-			this._DisplayDocTitleBox.Text = "显示文档标题";
+			this._DisplayDocTitleBox.Text = "Display document title";
 			this._DisplayDocTitleBox.UseVisualStyleBackColor = true;
 			this._DisplayDocTitleBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
 			//
@@ -274,7 +274,7 @@
 			this._OverrideUISettingsBox.Name = "_OverrideUISettingsBox";
 			this._OverrideUISettingsBox.Size = new System.Drawing.Size (144, 16);
 			this._OverrideUISettingsBox.TabIndex = 0;
-			this._OverrideUISettingsBox.Text = "设置阅读器的操作界面";
+			this._OverrideUISettingsBox.Text = "Set the operation interface of the reader";
 			this._OverrideUISettingsBox.UseVisualStyleBackColor = true;
 			this._OverrideUISettingsBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
 			//
@@ -287,7 +287,7 @@
 			this.groupBox4.Size = new System.Drawing.Size (210, 135);
 			this.groupBox4.TabIndex = 3;
 			this.groupBox4.TabStop = false;
-			this.groupBox4.Text = "阅读器操作界面设定";
+			this.groupBox4.Text = "Reader operation interface setting";
 			//
 			// ViewerPreferenceEditor
 			//

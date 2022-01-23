@@ -56,7 +56,7 @@
 			this._SearchButton.Name = "_SearchButton";
 			this._SearchButton.Size = new System.Drawing.Size (99, 23);
 			this._SearchButton.TabIndex = 2;
-			this._SearchButton.Text = "搜索全部(&S)";
+			this._SearchButton.Text = "Search all (&S)";
 			this._SearchButton.UseVisualStyleBackColor = true;
 			this._SearchButton.Click += new System.EventHandler (this._SearchButton_Click);
 			//
@@ -67,7 +67,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size (65, 12);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "搜索文本：";
+			this.label1.Text = "Search text:";
 			//
 			// _MatchCaseBox
 			//
@@ -76,7 +76,7 @@
 			this._MatchCaseBox.Name = "_MatchCaseBox";
 			this._MatchCaseBox.Size = new System.Drawing.Size (84, 16);
 			this._MatchCaseBox.TabIndex = 6;
-			this._MatchCaseBox.Text = "区分大小写";
+			this._MatchCaseBox.Text = "case sensitive";
 			this._MatchCaseBox.UseVisualStyleBackColor = true;
 			//
 			// _FullMatchBox
@@ -86,7 +86,7 @@
 			this._FullMatchBox.Name = "_FullMatchBox";
 			this._FullMatchBox.Size = new System.Drawing.Size (132, 16);
 			this._FullMatchBox.TabIndex = 8;
-			this._FullMatchBox.Text = "匹配整个书签的文本";
+			this._FullMatchBox.Text = "Match the text of the entire bookmark";
 			this._FullMatchBox.UseVisualStyleBackColor = true;
 			//
 			// label2
@@ -96,7 +96,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size (65, 12);
 			this.label2.TabIndex = 3;
-			this.label2.Text = "替换文本：";
+			this.label2.Text = "Replace text:";
 			//
 			// _ReplaceButton
 			//
@@ -106,7 +106,7 @@
 			this._ReplaceButton.Name = "_ReplaceButton";
 			this._ReplaceButton.Size = new System.Drawing.Size (99, 23);
 			this._ReplaceButton.TabIndex = 5;
-			this._ReplaceButton.Text = "替换(&T)";
+			this._ReplaceButton.Text = "Replace (&T)";
 			this._ReplaceButton.UseVisualStyleBackColor = true;
 			this._ReplaceButton.Click += new System.EventHandler (this._ReplaceButton_Click);
 			//
@@ -126,7 +126,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size (65, 12);
 			this.label3.TabIndex = 13;
-			this.label3.Text = "搜索模式：";
+			this.label3.Text = "Search mode:";
 			//
 			// _NormalSearchBox
 			//
@@ -136,7 +136,7 @@
 			this._NormalSearchBox.Size = new System.Drawing.Size (47, 16);
 			this._NormalSearchBox.TabIndex = 14;
 			this._NormalSearchBox.TabStop = true;
-			this._NormalSearchBox.Text = "普通";
+			this._NormalSearchBox.Text = "ordinary";
 			this._NormalSearchBox.UseVisualStyleBackColor = true;
 			this._NormalSearchBox.CheckedChanged += new System.EventHandler (this.MatchModeChanged);
 			//
@@ -148,7 +148,7 @@
 			this._RegexSearchBox.Size = new System.Drawing.Size (83, 16);
 			this._RegexSearchBox.TabIndex = 15;
 			this._RegexSearchBox.TabStop = true;
-			this._RegexSearchBox.Text = "正则表达式";
+			this._RegexSearchBox.Text = "Regular expression";
 			this._RegexSearchBox.UseVisualStyleBackColor = true;
 			this._RegexSearchBox.CheckedChanged += new System.EventHandler (this.MatchModeChanged);
 			//
@@ -171,7 +171,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size (65, 12);
 			this.label4.TabIndex = 17;
-			this.label4.Text = "替换范围：";
+			this.label4.Text = "Replacement range:";
 			//
 			// _ReplaceInSelectionBox
 			//
@@ -181,7 +181,7 @@
 			this._ReplaceInSelectionBox.Size = new System.Drawing.Size (83, 16);
 			this._ReplaceInSelectionBox.TabIndex = 18;
 			this._ReplaceInSelectionBox.TabStop = true;
-			this._ReplaceInSelectionBox.Text = "选中的书签";
+			this._ReplaceInSelectionBox.Text = "Select bookmark";
 			this._ReplaceInSelectionBox.UseVisualStyleBackColor = true;
 			this._ReplaceInSelectionBox.CheckedChanged += new System.EventHandler (this.ReplaceModeChanged);
 			//
@@ -193,7 +193,7 @@
 			this._ReplaceInAllBox.Size = new System.Drawing.Size (71, 16);
 			this._ReplaceInAllBox.TabIndex = 19;
 			this._ReplaceInAllBox.TabStop = true;
-			this._ReplaceInAllBox.Text = "所有书签";
+			this._ReplaceInAllBox.Text = "All bookmarks";
 			this._ReplaceInAllBox.UseVisualStyleBackColor = true;
 			this._ReplaceInAllBox.CheckedChanged += new System.EventHandler (this.ReplaceModeChanged);
 			//
@@ -223,7 +223,7 @@
 			this._SearchNextButton.Name = "_SearchNextButton";
 			this._SearchNextButton.Size = new System.Drawing.Size (99, 23);
 			this._SearchNextButton.TabIndex = 2;
-			this._SearchNextButton.Text = "搜索下一个(&X)";
+			this._SearchNextButton.Text = "Search the next one (&X)";
 			this._SearchNextButton.UseVisualStyleBackColor = true;
 			this._SearchNextButton.Click += new System.EventHandler (this._SearchButton_Click);
 			//
@@ -259,7 +259,7 @@
 			this._CloseButton.Name = "_CloseButton";
 			this._CloseButton.Size = new System.Drawing.Size (99, 23);
 			this._CloseButton.TabIndex = 5;
-			this._CloseButton.Text = "关闭";
+			this._CloseButton.Text = "Cancel";
 			this._CloseButton.UseVisualStyleBackColor = true;
 			this._CloseButton.Click += new System.EventHandler (this._CloseButton_Click);
 			//
@@ -292,7 +292,7 @@
 			this.ShowIcon = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "查找、替换书签项";
+			this.Text = "Find, replace bookmark item";
 			this.Load += new System.EventHandler (this.SearchBookmarkForm_Load);
 			this.panel1.ResumeLayout (false);
 			this.panel1.PerformLayout ();

@@ -5,9 +5,11 @@ namespace PDFPatcher.Model;
 [XmlRoot(Constants.Info.ThisName)]
 public class GeneralInfo
 {
-    [XmlAttribute("指定文档元数据属性")] public bool SpecifyMetaData { get; set; }
+    [XmlAttribute("Specify document metadata attribute")]
+    public bool SpecifyMetaData { get; set; }
 
-    [XmlAttribute("重写XML元数据属性")] public bool RewriteXmp { get; set; }
+    [XmlAttribute("Rewrite XML metadata attribute")]
+    public bool RewriteXmp { get; set; }
 
     [XmlAttribute(Constants.Info.Title)] public string Title { get; set; }
 

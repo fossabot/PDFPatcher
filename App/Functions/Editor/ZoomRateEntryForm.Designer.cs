@@ -38,7 +38,7 @@
 			this._OkButton.Name = "_OkButton";
 			this._OkButton.Size = new System.Drawing.Size(75, 23);
 			this._OkButton.TabIndex = 0;
-			this._OkButton.Text = "确定(&Q)";
+			this._OkButton.Text = "&OK";
 			this._OkButton.UseVisualStyleBackColor = true;
 			this._OkButton.Click += new System.EventHandler(this._OkButton_Click);
 			//
@@ -50,7 +50,7 @@
 			this._CancelButton.Name = "_CancelButton";
 			this._CancelButton.Size = new System.Drawing.Size(75, 23);
 			this._CancelButton.TabIndex = 1;
-			this._CancelButton.Text = "取消(&X)";
+			this._CancelButton.Text = "&Cancel";
 			this._CancelButton.UseVisualStyleBackColor = true;
 			this._CancelButton.Click += new System.EventHandler(this._CancelButton_Click);
 			//
@@ -61,14 +61,14 @@
 			this._MessageLabel.Name = "_MessageLabel";
 			this._MessageLabel.Size = new System.Drawing.Size(113, 12);
 			this._MessageLabel.TabIndex = 2;
-			this._MessageLabel.Text = "在此输入缩放比例：";
+			this._MessageLabel.Text = "In this input zoom ratio:";
 			//
 			// _ZoomRateBox
 			//
 			this._ZoomRateBox.FormattingEnabled = true;
 			this._ZoomRateBox.Items.AddRange(new object[] {
             "1",
-            "保持不变",
+            "constant",
             "——————",
             "4",
             "3",
@@ -103,7 +103,7 @@
 			this.MinimizeBox = false;
 			this.Name = "ZoomRateEntryForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "输入缩放比例";
+			this.Text = "Enter zoom ratio";
 			this.Load += new System.EventHandler(this.ZoomRateEntryForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

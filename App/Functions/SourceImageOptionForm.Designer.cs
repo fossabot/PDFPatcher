@@ -58,19 +58,19 @@
 			this._OkButton.Name = "_OkButton";
 			this._OkButton.Size = new System.Drawing.Size (75, 23);
 			this._OkButton.TabIndex = 5;
-			this._OkButton.Text = "确定(&Q)";
-			this._OkButton.UseVisualStyleBackColor = true;
-			this._OkButton.Click += new System.EventHandler (this._OkButton_Click);
-			//
-			// _CancelButton
-			//
-			this._CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this._CancelButton.Location = new System.Drawing.Point (307, 137);
-			this._CancelButton.Name = "_CancelButton";
-			this._CancelButton.Size = new System.Drawing.Size (75, 23);
-			this._CancelButton.TabIndex = 6;
-			this._CancelButton.Text = "取消(&X)";
+this._OkButton.Text = "&OK";
+this._OkButton.UseVisualStyleBackColor = true;
+this._OkButton.Click += new System.EventHandler (this._OkButton_Click);
+//
+// _CancelButton
+//
+this._CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+this._CancelButton.Location = new System.Drawing.Point(307, 137);
+this._CancelButton.Name = "_CancelButton";
+this._CancelButton.Size = new System.Drawing.Size(75, 23);
+this._CancelButton.TabIndex = 6;
+this._CancelButton.Text = "&Cancel";
 			this._CancelButton.UseVisualStyleBackColor = true;
 			this._CancelButton.Click += new System.EventHandler (this._CancelButton_Click);
 			//
@@ -81,7 +81,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size (53, 12);
 			this.label2.TabIndex = 7;
-			this.label2.Text = "文件名：";
+			this.label2.Text = "file name:";
 			//
 			// _SourceFileBox
 			//
@@ -98,7 +98,7 @@
 			this.label12.Name = "label12";
 			this.label12.Size = new System.Drawing.Size (65, 12);
 			this.label12.TabIndex = 18;
-			this.label12.Text = "宽度不小于";
+			this.label12.Text = "Width is not less than";
 			//
 			// label11
 			//
@@ -107,7 +107,7 @@
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size (149, 12);
 			this.label11.TabIndex = 17;
-			this.label11.Text = "裁剪条件（单位：像素）：";
+			this.label11.Text = "Crop condition (unit: pixel):";
 			//
 			// label9
 			//
@@ -116,7 +116,7 @@
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size (65, 12);
 			this.label9.TabIndex = 20;
-			this.label9.Text = "高度不小于";
+			this.label9.Text = "Height is not less than";
 			//
 			// _MinCropWidthBox
 			//
@@ -161,7 +161,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size (149, 12);
 			this.label5.TabIndex = 8;
-			this.label5.Text = "裁剪图片（单位：像素）：";
+			this.label5.Text = "Cropped pictures (unit: pixels):";
 			//
 			// _RightMarginBox
 			//
@@ -242,7 +242,7 @@
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size (29, 12);
 			this.label7.TabIndex = 15;
-			this.label7.Text = "右：";
+			this.label7.Text = "Right: ";
 			//
 			// label3
 			//
@@ -251,7 +251,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size (29, 12);
 			this.label3.TabIndex = 11;
-			this.label3.Text = "下：";
+			this.label3.Text = "Bottom: ";
 			//
 			// label6
 			//
@@ -260,7 +260,7 @@
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size (29, 12);
 			this.label6.TabIndex = 13;
-			this.label6.Text = "左：";
+			this.label6.Text = "Left: ";
 			//
 			// label4
 			//
@@ -269,7 +269,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size (29, 12);
 			this.label4.TabIndex = 9;
-			this.label4.Text = "上：";
+			this.label4.Text = "Top: ";
 			//
 			// SourceImageOptionForm
 			//
@@ -302,7 +302,7 @@
 			this.Name = "SourceImageOptionForm";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "源图片处理选项";
+			this.Text = "Source image processing options";
 			((System.ComponentModel.ISupportInitialize)(this._MinCropWidthBox)).EndInit ();
 			((System.ComponentModel.ISupportInitialize)(this._MinCropHeightBox)).EndInit ();
 			((System.ComponentModel.ISupportInitialize)(this._RightMarginBox)).EndInit ();

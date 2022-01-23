@@ -39,7 +39,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size (89, 12);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "匹配文本内容：";
+			this.label1.Text = "Match the text content:";
 			//
 			// _PatternBox
 			//
@@ -58,7 +58,7 @@
 			this._FullMatchBox.Name = "_FullMatchBox";
 			this._FullMatchBox.Size = new System.Drawing.Size (72, 16);
 			this._FullMatchBox.TabIndex = 2;
-			this._FullMatchBox.Text = "完全匹配";
+			this._FullMatchBox.Text = "Fully match";
 			this._FullMatchBox.UseVisualStyleBackColor = true;
 			this._FullMatchBox.CheckedChanged += new System.EventHandler (this.ControlChanged);
 			//
@@ -69,7 +69,7 @@
 			this._MatchCaseBox.Name = "_MatchCaseBox";
 			this._MatchCaseBox.Size = new System.Drawing.Size (108, 16);
 			this._MatchCaseBox.TabIndex = 3;
-			this._MatchCaseBox.Text = "匹配英文大小写";
+			this._MatchCaseBox.Text = "Match English case";
 			this._MatchCaseBox.UseVisualStyleBackColor = true;
 			this._MatchCaseBox.CheckedChanged += new System.EventHandler (this.ControlChanged);
 			//
@@ -80,7 +80,7 @@
 			this._UseRegexBox.Name = "_UseRegexBox";
 			this._UseRegexBox.Size = new System.Drawing.Size (108, 16);
 			this._UseRegexBox.TabIndex = 4;
-			this._UseRegexBox.Text = "使用正则表达式";
+			this._UseRegexBox.Text = "Use regular expressions";
 			this._UseRegexBox.UseVisualStyleBackColor = true;
 			this._UseRegexBox.CheckedChanged += new System.EventHandler (this.ControlChanged);
 			//

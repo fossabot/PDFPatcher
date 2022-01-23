@@ -101,7 +101,9 @@ internal sealed class PageRangeCollection : List<PageRange>
                 }
 
                 int startNum;
-                int rangeIndicator = range.Length > 1 ? range.IndexOf('-', 1) /*排除首位可能是负数页码的可能*/ : -1;
+                int rangeIndicator = range.Length > 1
+                    ? range.IndexOf('-', 1) /* Excluding the first place may be a negative page number */
+                    : -1;
                 if (rangeIndicator > 0)
                 {
                     string startRange = range.Substring(0, rangeIndicator);

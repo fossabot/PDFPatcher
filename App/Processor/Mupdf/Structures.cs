@@ -493,9 +493,9 @@ public readonly struct Matrix : IEquatable<Matrix>
     /// <summary>
     ///     Multiply two matrices.
     /// </summary>
-    /// <param name="one">被乘的矩阵。</param>
-    /// <param name="two">乘数矩阵。</param>
-    /// <returns>相乘后的新矩阵。</returns>
+    /// <param name="one">The matrix to be multiplied. </param>
+    /// <param name="two">Multiplier matrix. </param>
+    /// <returns>The new matrix after multiplication. </returns>
     public static Matrix Concat(Matrix one, Matrix two) =>
         new(
             one.A * two.A + one.B * two.C,

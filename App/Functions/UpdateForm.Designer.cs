@@ -54,7 +54,7 @@
 			this._HomePageButton.Name = "_HomePageButton";
 			this._HomePageButton.Size = new System.Drawing.Size(162, 35);
 			this._HomePageButton.TabIndex = 2;
-			this._HomePageButton.Text = "转到主页(&Z)";
+			this._HomePageButton.Text = "Go to homepage(&Z)";
 			this._HomePageButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._HomePageButton.UseVisualStyleBackColor = true;
 			//
@@ -66,7 +66,7 @@
 			this._CancelButton.Name = "_CancelButton";
 			this._CancelButton.Size = new System.Drawing.Size(112, 35);
 			this._CancelButton.TabIndex = 3;
-			this._CancelButton.Text = "取消(&Q)";
+			this._CancelButton.Text = "Cancel (&Q)";
 			this._CancelButton.UseVisualStyleBackColor = true;
 			//
 			// _DownloadButton
@@ -78,28 +78,28 @@
 			this._DownloadButton.Name = "_DownloadButton";
 			this._DownloadButton.Size = new System.Drawing.Size(170, 35);
 			this._DownloadButton.TabIndex = 1;
-			this._DownloadButton.Text = "下载新版本(&X)";
-			this._DownloadButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this._DownloadButton.UseVisualStyleBackColor = true;
-			//
-			// label1
-			//
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(490, 482);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(170, 18);
-			this.label1.TabIndex = 4;
-			this.label1.Text = "自动检查更新间隔：";
-			//
-			// _CheckUpdateIntervalBox
-			//
-			this._CheckUpdateIntervalBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this._CheckUpdateIntervalBox.FormattingEnabled = true;
-			this._CheckUpdateIntervalBox.Items.AddRange(new object[] {
-            "7天",
-            "14天",
-            "30天",
-            "从不检查"});
+this._DownloadButton.Text = "Download new version";
+this._DownloadButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+this._DownloadButton.UseVisualStyleBackColor = true;
+//
+// label1
+//
+this.label1.AutoSize = true;
+this.label1.Location = new System.Drawing.Point(490, 482);
+this.label1.Name = "label1";
+this.label1.Size = new System.Drawing.Size(170, 18);
+this.label1.TabIndex = 4;
+this.label1.Text = "Automatically check update interval:";
+//
+// _CheckUpdateIntervalBox
+//
+this._CheckUpdateIntervalBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+this._CheckUpdateIntervalBox.FormattingEnabled = true;
+this._CheckUpdateIntervalBox.Items.AddRange(new object[] {
+             "7 days",
+             "14 days",
+             "30 days",
+             "never check"});
 			this._CheckUpdateIntervalBox.Location = new System.Drawing.Point(657, 479);
 			this._CheckUpdateIntervalBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this._CheckUpdateIntervalBox.Name = "_CheckUpdateIntervalBox";
@@ -124,7 +124,7 @@
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "UpdateForm";
-			this.Text = "检查更新";
+			this.Text = "Check for updates";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

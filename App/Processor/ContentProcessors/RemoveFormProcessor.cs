@@ -34,14 +34,14 @@ internal sealed class RemoveFormProcessor : IPageProcessor
 
     #region IPageProcessor member
 
-    public string Name => "删除表单区域";
+    public string Name => "Delete form area";
 
     public void BeginProcess(DocProcessorContext context) => _processedPageCount = 0;
 
     public bool EndProcess(PdfReader pdf)
     {
-        Tracker.TraceMessage(Tracker.Category.Notice, Name + "功能：");
-        Tracker.TraceMessage("　　删除了 " + _processedPageCount + " 页的表单区域。");
+        Tracker.TraceMessage(Tracker.Category.Notice, Name + "Function:");
+        Tracker.TraceMessage(" Deleted the " + _processedPageCount + " page's form area.");
         return false;
     }
 

@@ -39,7 +39,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size (191, 12);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "请输入 PDF 文件的编辑权限密码：";
+			this.label1.Text = "Please enter the edit permission password for the PDF file:";
 			//
 			// _PasswordBox
 			//
@@ -55,7 +55,7 @@
 			this._OkButton.Name = "_OkButton";
 			this._OkButton.Size = new System.Drawing.Size (75, 23);
 			this._OkButton.TabIndex = 2;
-			this._OkButton.Text = "确定(&Q)";
+			this._OkButton.Text = "OK (&Q)";
 			this._OkButton.UseVisualStyleBackColor = true;
 			this._OkButton.Click += new System.EventHandler (this._OkButton_Click);
 			//
@@ -66,7 +66,7 @@
 			this._CancelButton.Name = "_CancelButton";
 			this._CancelButton.Size = new System.Drawing.Size (75, 23);
 			this._CancelButton.TabIndex = 3;
-			this._CancelButton.Text = "取消(&X)";
+			this._CancelButton.Text = "&Cancel";
 			this._CancelButton.UseVisualStyleBackColor = true;
 			this._CancelButton.Click += new System.EventHandler (this._CancelButton_Click);
 			//
@@ -78,7 +78,7 @@
 			this._MessageLabel.Name = "_MessageLabel";
 			this._MessageLabel.Size = new System.Drawing.Size (275, 37);
 			this._MessageLabel.TabIndex = 4;
-			this._MessageLabel.Text = "PDF 文件已被加密，需要编辑权限密码才能打开。";
+			this._MessageLabel.Text = "The PDF file has been encrypted and you need to edit the permission password to open.";
 			//
 			// PasswordEntryForm
 			//
@@ -98,7 +98,7 @@
 			this.Name = "PasswordEntryForm";
 			this.ShowIcon = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "输入密码";
+			this.Text = "Enter password";
 			this.ResumeLayout (false);
 			this.PerformLayout ();
 

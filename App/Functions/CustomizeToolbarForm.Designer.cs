@@ -37,9 +37,9 @@
 			this.label1 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this._ItemListBox)).BeginInit();
 			this.SuspendLayout();
-			// 
+			//
 			// _ItemListBox
-			// 
+			//
 			this._ItemListBox.AllColumns.Add(this._NameColumn);
 			this._ItemListBox.AllColumns.Add(this._VisibleColumn);
 			this._ItemListBox.AllColumns.Add(this._ShowTextColumn);
@@ -59,72 +59,72 @@
 			this._ItemListBox.TabIndex = 0;
 			this._ItemListBox.UseCompatibleStateImageBehavior = false;
 			this._ItemListBox.View = System.Windows.Forms.View.Details;
-			// 
+			//
 			// _NameColumn
-			// 
+			//
 			this._NameColumn.IsEditable = false;
-			this._NameColumn.Text = "工具栏按钮";
+			this._NameColumn.Text = "Toolbar button";
 			this._NameColumn.Width = 145;
-			// 
+			//
 			// _VisibleColumn
-			// 
+			//
 			this._VisibleColumn.CheckBoxes = true;
 			this._VisibleColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this._VisibleColumn.Text = "显示";
+			this._VisibleColumn.Text = "Show";
 			this._VisibleColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this._VisibleColumn.Width = 54;
-			// 
+			//
 			// _ShowTextColumn
-			// 
+			//
 			this._ShowTextColumn.CheckBoxes = true;
 			this._ShowTextColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this._ShowTextColumn.Text = "显示文本";
+			this._ShowTextColumn.Text = "Text";
 			this._ShowTextColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this._ShowTextColumn.Width = 63;
-			// 
+			//
 			// _DisplayTextColumn
-			// 
+			//
 			this._DisplayTextColumn.AutoCompleteEditor = false;
 			this._DisplayTextColumn.AutoCompleteEditorMode = System.Windows.Forms.AutoCompleteMode.None;
-			this._DisplayTextColumn.Text = "按钮文本内容";
+			this._DisplayTextColumn.Text = "Button text content";
 			this._DisplayTextColumn.Width = 120;
-			// 
+			//
 			// _ButtonImageList
-			// 
+			//
 			this._ButtonImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
 			this._ButtonImageList.ImageSize = new System.Drawing.Size(16, 16);
 			this._ButtonImageList.TransparentColor = System.Drawing.Color.Transparent;
-			// 
+			//
 			// _OkButton
-			// 
+			//
 			this._OkButton.Location = new System.Drawing.Point(325, 315);
 			this._OkButton.Name = "_OkButton";
 			this._OkButton.Size = new System.Drawing.Size(75, 23);
 			this._OkButton.TabIndex = 1;
-			this._OkButton.Text = "确定(&Q)";
+			this._OkButton.Text = "&OK";
 			this._OkButton.UseVisualStyleBackColor = true;
 			this._OkButton.Click += new System.EventHandler(this._OkButton_Click);
-			// 
+			//
 			// _ResetButton
-			// 
+			//
 			this._ResetButton.Location = new System.Drawing.Point(12, 315);
 			this._ResetButton.Name = "_ResetButton";
 			this._ResetButton.Size = new System.Drawing.Size(127, 23);
 			this._ResetButton.TabIndex = 2;
-			this._ResetButton.Text = "重置常用工具栏";
+			this._ResetButton.Text = "Reset common toolbar";
 			this._ResetButton.UseVisualStyleBackColor = true;
 			this._ResetButton.Click += new System.EventHandler(this._ResetButton_Click);
-			// 
+			//
 			// label1
-			// 
+			//
 			this.label1.Location = new System.Drawing.Point(12, 9);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(305, 34);
 			this.label1.TabIndex = 3;
-			this.label1.Text = "使用鼠标上下拖动项目可调整工具按钮的显示顺序。\r\n要隐藏按钮，请取消“是否显示”的选中状态。";
-			// 
+			this.label1.Text = "Drag items up and down with the mouse to adjust the display order of the tool buttons.\r\nTo hide the buttons, uncheck \"Show or not\".";
+			//
 			// CustomizeToolbarForm
-			// 
+			//
 			this.AcceptButton = this._OkButton;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -138,7 +138,7 @@
 			this.MinimizeBox = false;
 			this.Name = "CustomizeToolbarForm";
 			this.ShowInTaskbar = false;
-			this.Text = "自定义常用工具栏项目";
+			this.Text = "Customize common toolbar items";
 			this.Load += new System.EventHandler(this.CustomizeToolbarForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this._ItemListBox)).EndInit();
 			this.ResumeLayout(false);

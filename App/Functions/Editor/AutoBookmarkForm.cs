@@ -24,7 +24,7 @@ public sealed partial class AutoBookmarkForm : DraggableForm
         MinimumSize = Size;
         _ConditionColumn.AsTyped<EditModel.AutoBookmarkStyle>(c =>
         {
-            c.AspectGetter = o => string.Concat("字体为", o.FontName, "且尺寸为", o.FontSize);
+            c.AspectGetter = o => string.Concat("The font is", o.FontName, "and the size is", o.FontSize);
         });
         //_FontSizeColumn.AsTyped<EditModel.TitleStyle>(c => {
         //	c.AspectGetter = o => o.FontSize;
@@ -46,7 +46,7 @@ public sealed partial class AutoBookmarkForm : DraggableForm
             c.AspectGetter = o => o.Style.IsItalic;
             c.AspectPutter = (o, v) => o.Style.IsItalic = (bool)v;
         });
-        _ColorColumn.AsTyped<EditModel.AutoBookmarkStyle>(c => { c.AspectGetter = _ => "点击设置颜色"; });
+        _ColorColumn.AsTyped<EditModel.AutoBookmarkStyle>(c => { c.AspectGetter = _ => "Click to set the color"; });
         _OpenColumn.AsTyped<EditModel.AutoBookmarkStyle>(c =>
         {
             c.AspectGetter = o => o.Style.IsOpened;

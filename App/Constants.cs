@@ -29,7 +29,7 @@ internal enum Function
 
 internal static class Constants
 {
-    internal const string AppName = "PDF 补丁丁";
+    internal const string AppName = "PDFPatcher";
     internal const string AppEngName = "PDFPatcher";
     internal const string AppHomePage = "http://pdfpatcher.cnblogs.com";
     internal const string AppHubPage = "https://gitee.com/wmjordan/pdfpatcher";
@@ -38,7 +38,7 @@ internal static class Constants
     /// <summary>
     ///     Information file root elements.
     /// </summary>
-    internal const string PdfInfo = "PDF信息";
+    internal const string PdfInfo = "PDF information";
 
     internal const string InfoDocVersion = "0.3.3";
     internal const string ContentPrefix = "pdf";
@@ -47,22 +47,23 @@ internal static class Constants
     internal static class FileExtensions
     {
         internal const string Json = ".json";
-        internal const string JsonFilter = "程序配置文件 (*.json)|*.json";
+        internal const string JsonFilter = "Program configuration file (*.json)|*.json";
         internal const string Pdf = ".pdf";
-        internal const string PdfFilter = "PDF 文件 (*.pdf)|*.pdf";
+        internal const string PdfFilter = "PDF file (*.pdf)|*.pdf";
         internal const string Txt = ".txt";
-        internal const string TxtFilter = "简易文本书签文件 (*.txt)|*.txt";
+        internal const string TxtFilter = "Simple text bookmark file (*.txt)|*.txt";
         internal const string Xml = ".xml";
-        internal const string XmlFilter = "PDF 信息文件 (*.xml)|*.xml";
-        internal const string XmlOrTxtFilter = "书签文件 (*.xml, *.txt)|*.xml;*.txt";
+        internal const string XmlFilter = "PDF Information file (*.xml)|*.xml";
+        internal const string XmlOrTxtFilter = "Bookmark file (*.xml, *.txt)|*.xml;*.txt";
 
-        internal const string AllEditableFilter = "所有包含 PDF 信息的文件(*.pdf,*.xml,*.txt)|*.pdf;*.xml;*.txt|" + PdfFilter +
-                                                  "|" + XmlFilter + "|" + TxtFilter;
+        internal const string AllEditableFilter =
+            "All files that contain PDF information (*.pdf,*.xml,*.txt)|*.pdf;*.xml;*.txt|" + PdfFilter +
+            "|" + XmlFilter + "|" + TxtFilter;
 
-        internal const string AllFilter = "所有文件|*.*";
+        internal const string AllFilter = "All files|*.*";
 
         internal const string ImageFilter =
-            "图片文件 (*.jpg, *.jpeg, *.tiff, *.tif, *.png, *.gif)|*.jpg;*.jpeg;*.tiff;*.tif;*.png;*.gif";
+            "Picture file (*.jpg, *.jpeg, *.tiff, *.tif, *.png, *.gif)|*.jpg;*.jpeg;*.tiff;*.tif;*.png;*.gif";
 
         internal const string Tif = ".tif";
         internal const string Tiff = ".tiff";
@@ -86,7 +87,10 @@ internal static class Constants
 
     internal static class ObjectTypes
     {
-        internal static readonly string[] Names = { "字典", "名称", "数值", "文本", "数组", "布尔", "引用" };
+        internal static readonly string[] Names =
+        {
+            "dictionary", "name", "Numerical value", "text", "Array", "Boolean", "Quote"
+        };
 
         internal static readonly int[] IDs =
         {
@@ -101,9 +105,9 @@ internal static class Constants
 
     internal static class FileNameMacros
     {
-        internal const string FileName = "<源文件名>";
-        internal const string FolderName = "<源目录名>";
-        internal const string PathName = "<源目录路径>";
+        internal const string FileName = "<Source file name>";
+        internal const string FolderName = "<Source directory>";
+        internal const string PathName = "<Source directory path>";
         internal const string TitleProperty = "<" + Info.Title + ">";
         internal const string AuthorProperty = "<" + Info.Author + ">";
         internal const string SubjectProperty = "<" + Info.Subject + ">";
@@ -116,12 +120,12 @@ internal static class Constants
 
     internal static class Units
     {
-        internal const string ThisName = "度量单位";
-        internal const string Unit = "单位";
-        internal const string Point = "点";
-        internal const string CM = "厘米";
-        internal const string MM = "毫米";
-        internal const string Inch = "英寸";
+        internal const string ThisName = "Unit of measure";
+        internal const string Unit = "unit";
+        internal const string Point = "point";
+        internal const string CM = "cm";
+        internal const string MM = "mm";
+        internal const string Inch = "inch";
         internal const float CmToPoint = 72f / 2.54f;
         internal const float MmToPoint = 7.2f / 2.54f;
         internal const float DefaultDpi = 72f;
@@ -143,17 +147,17 @@ internal static class Constants
 
     internal static class Coordinates
     {
-        internal const string Left = "左";
-        internal const string Right = "右";
-        internal const string Top = "上";
-        internal const string Bottom = "下";
-        internal const string Width = "宽";
-        internal const string Height = "高";
-        internal const string Direction = "方向";
-        internal const string Horizontal = "横向";
-        internal const string Vertical = "纵向";
-        internal const string ScaleFactor = "比例";
-        internal const string Unchanged = "保持不变";
+        internal const string Left = "Left";
+        internal const string Right = "Right";
+        internal const string Top = "Top";
+        internal const string Bottom = "Bottom";
+        internal const string Width = "Width";
+        internal const string Height = "Height";
+        internal const string Direction = "Direction";
+        internal const string Horizontal = "Horizontal";
+        internal const string Vertical = "Vertical";
+        internal const string ScaleFactor = "ScaleFactor";
+        internal const string Unchanged = "Unchanged";
     }
 
     #endregion
@@ -162,8 +166,8 @@ internal static class Constants
 
     internal static class Encoding
     {
-        internal const string SystemDefault = "系统默认";
-        internal const string Automatic = "自动选择";
+        internal const string SystemDefault = "System Default";
+        internal const string Automatic = "Automatic";
 
         internal static readonly string[] EncodingNames =
         {
@@ -182,46 +186,46 @@ internal static class Constants
 
     internal static class Content
     {
-        internal const string Page = "页面";
-        internal const string PageNumber = "页码";
-        internal const string ResourceID = "资源编号";
-        internal const string RefType = "引用对象类型";
-        internal const string Texts = "文本内容";
-        internal const string Operators = "命令";
-        internal const string Operands = "参数";
-        internal const string Name = "名称";
-        internal const string Item = "项目";
-        internal const string Path = "路径";
-        internal const string Type = "类型";
-        internal const string Length = "长度";
-        internal const string Raw = "原始内容";
-        internal const string Value = "值";
+        internal const string Page = "Page";
+        internal const string PageNumber = "PageNumber";
+        internal const string ResourceID = "Resource ID";
+        internal const string RefType = "Reference Type";
+        internal const string Texts = "Texts";
+        internal const string Operators = "Operators";
+        internal const string Operands = "Operands";
+        internal const string Name = "Name";
+        internal const string Item = "Item";
+        internal const string Path = "Path";
+        internal const string Type = "Type";
+        internal const string Length = "Length";
+        internal const string Raw = "Raw";
+        internal const string Value = "Value";
 
         internal static class PageSettings
         {
-            internal const string ThisName = "页面设置";
-            internal const string MediaBox = "页面边框";
-            internal const string CropBox = "截取边框";
-            internal const string TrimBox = "裁剪边框";
-            internal const string ArtBox = "内容边框";
-            internal const string BleedBox = "出血边框";
-            internal const string Rotation = "旋转角度";
+            internal const string ThisName = "Page Settings";
+            internal const string MediaBox = "Media Box";
+            internal const string CropBox = "Crop Box";
+            internal const string TrimBox = "Trim Box";
+            internal const string ArtBox = "Art Box";
+            internal const string BleedBox = "Bleed Box";
+            internal const string Rotation = "Rotation";
         }
 
         internal static class OperandNames
         {
-            internal const string Matrix = "矩阵";
-            internal const string ResourceName = "资源名称";
-            internal const string Size = "尺寸";
-            internal const string Text = "文本";
+            internal const string Matrix = "Matrix";
+            internal const string ResourceName = "ResourceName";
+            internal const string Size = "Size";
+            internal const string Text = "Text";
         }
 
         internal static class RotationDirections
         {
-            internal const string Zero = "保持不变";
-            internal const string Right = "顺时针90度";
-            internal const string HalfClock = "180度";
-            internal const string Left = "逆时针90度";
+            internal const string Zero = "Zero";
+            internal const string Right = "Right";
+            internal const string HalfClock = "HalfClock";
+            internal const string Left = "Left";
             internal static readonly string[] Names = { Zero, Right, HalfClock, Left };
             internal static readonly int[] Values = { 0, 90, 180, 270 };
         }
@@ -256,10 +260,10 @@ internal static class Constants
         internal const int GreekLangID = 1032;
         internal const int RussianLangID = 1049;
         internal const int TurkishLangID = 1055;
-        internal const string Result = "识别结果";
-        internal const string Text = "文本";
-        internal const string Content = "内容";
-        internal const string Image = "图片";
+        internal const string Result = "Result";
+        internal const string Text = "Text";
+        internal const string Content = "Content";
+        internal const string Image = "Image";
 
         internal static int[] LangIDs =
         {
@@ -277,8 +281,9 @@ internal static class Constants
 
         internal static string[] LangNames =
         {
-            "简体中文", "繁体中文", "英文", "日文", "韩文", "丹麦文", "荷兰文", "芬兰文", "法文", "德文", "意大利文", "挪威文", "葡萄牙文", "西班牙文", "瑞典文",
-            "捷克文", "波兰文", "匈牙利文", "希腊文", "俄文", "土耳其文"
+            "Simplified Chinese", "Traditional Chinese", "English", "Japanese", "Korean", "Danish", "Dutch",
+            "Finnish", "French", "German", "Italian", "Norwegian", "Portuguese", "Spanish", "Swedish", "Czech",
+            "Polish", "Hungarian", "Greek", "Russian", "Turkish"
         };
     }
 
@@ -310,10 +315,10 @@ internal static class Constants
 
     internal static class AutoBookmark
     {
-        internal const string Group = "条件集合";
-        internal const string Name = "名称";
-        internal const string Description = "说明";
-        internal const string IsInclusive = "正向过滤";
+        internal const string Group = "Group";
+        internal const string Name = "Name";
+        internal const string Description = "Description";
+        internal const string IsInclusive = "Positive filtering";
     }
 
     #region function name
@@ -324,38 +329,42 @@ internal static class Constants
 
     internal static class Info
     {
-        internal const string ThisName = "文档信息";
+        internal const string ThisName = "Documentation";
 
-        internal const string ProductName = "程序名称";
-        internal const string ProductVersion = "程序版本";
-        internal const string ExportDate = "导出时间";
-        internal const string DocumentPath = "PDF文件位置";
-        internal const string PageNumber = "页数";
-        internal const string Title = "标题";
-        internal const string Author = "作者";
-        internal const string Subject = "主题";
-        internal const string Keywords = "关键字";
-        internal const string Creator = "创建程序";
-        internal const string Producer = "处理程序";
-        internal const string CreationDate = "创建日期";
-        internal const string ModDate = "最近修改日期";
-        internal const string MetaData = "XML元数据";
+        internal const string ProductName = "Product Name";
+        internal const string ProductVersion = "Product Version";
+        internal const string ExportDate = "Export Date";
+        internal const string DocumentPath = "PDF Document Path";
+        internal const string PageNumber = "Page Number";
+        internal const string Title = "Title";
+        internal const string Author = "Author";
+        internal const string Subject = "Subject";
+        internal const string Keywords = "Keywords";
+        internal const string Creator = "Creator";
+        internal const string Producer = "Producer";
+        internal const string CreationDate = "Creation Date";
+        internal const string ModDate = "Recently Modified Date";
+        internal const string MetaData = "XML Meta Data";
     }
 
-    internal const string Version = "PDF版本";
-    internal const string Catalog = "文档编录";
-    internal const string Body = "正文内容";
-    internal const string DocumentBookmark = "文档书签";
+    internal const string Version = "PDF version";
+    internal const string Catalog = "Document catalog";
+    internal const string Body = "Text content";
+    internal const string DocumentBookmark = "Document bookmark";
 
     #endregion
 
     #region Reader setting
 
-    internal const string PageLayout = "页面布局";
+    internal const string PageLayout = "Page Layout";
 
     internal static class PageLayoutType
     {
-        internal static readonly string[] Names = { "保持不变", "单页连续", "双页连续", "双页连续首页独置", "单页", "双页", "双页首页独置" };
+        internal static readonly string[] Names =
+        {
+            "constant", "Single page continuous", "Double page continuous", "Double page continuous home",
+            "Single page", "P-page", "Double page home page"
+        };
 
         internal static readonly PdfName[] PdfNames =
         {
@@ -364,11 +373,15 @@ internal static class Constants
         };
     }
 
-    internal const string PageMode = "初始模式";
+    internal const string PageMode = "Initial mode";
 
     internal static class PageModes
     {
-        internal static readonly string[] Names = { "保持不变", "不显示边栏", "显示文档书签", "显示页面缩略图", "全屏显示", "显示可选内容组", "显示附件栏" };
+        internal static readonly string[] Names =
+        {
+            "leave unchanged", "do not show sidebar", "show document bookmarks", "show page thumbnails",
+            "show full screen", "show optional content groups", "show attachments bar"
+        };
 
         internal static readonly PdfName[] PdfNames =
         {
@@ -377,13 +390,17 @@ internal static class Constants
         };
     }
 
-    internal const string ViewerPreferences = "阅读器设定";
+    internal const string ViewerPreferences = "Reader setting";
 
     internal static class ViewerPreferencesType
     {
-        internal const string Direction = "阅读方向";
+        internal const string Direction = "Reading direction";
 
-        internal static readonly string[] Names = { "隐藏菜单", "隐藏工具栏", "只显示文档内容", "窗口适合文档首页", "窗口居中", "显示文档标题" };
+        internal static readonly string[] Names =
+        {
+            "Hide menu", "Hide toolbar", "Show document content only",
+            "Fit the window to the first page of the document", "Center the window", "Show document title"
+        };
 
         internal static readonly PdfName[] PdfNames =
         {
@@ -393,7 +410,7 @@ internal static class Constants
 
         internal static class DirectionType
         {
-            internal static readonly string[] Names = { "保持不变", "从左到右", "从右到左" };
+            internal static readonly string[] Names = { "Keep", "Left to Right", "Right to Left" };
             internal static readonly PdfName[] PdfNames = { PdfName.NONE, PdfName.L2R, PdfName.R2L };
         }
     }
@@ -402,11 +419,16 @@ internal static class Constants
 
     #region Page code style
 
-    internal const string PageLabels = "页码样式";
+    internal const string PageLabels = "Page number style";
 
     internal static class PageLabelStyles
     {
-        internal static readonly string[] Names = { "数字", "大写罗马数字", "小写罗马数字", "大写英文字母", "小写英文字母" };
+        internal static readonly string[] Names =
+        {
+            "number", "Uppercase roman numeral", "Lowercase roman numeral", "Uppercase English letter",
+            "Lowercase English letter"
+        };
+
         internal static readonly char[] PdfValues = { 'D', 'R', 'r', 'A', 'a' };
         internal static readonly char[] SimpleInfoIdentifiers = { '0', 'I', 'i', 'A', 'a' };
 
@@ -419,23 +441,23 @@ internal static class Constants
 
     internal static class PageLabelsAttributes
     {
-        internal const string PageNumber = "实际页码";
-        internal const string StartPage = "起始页码";
-        internal const string Prefix = "页码前缀";
-        internal const string Style = "样式";
+        internal const string PageNumber = "Actual page number";
+        internal const string StartPage = "Start page";
+        internal const string Prefix = "Page prefix";
+        internal const string Style = "style";
     }
 
     #endregion
 
     #region Page size range
 
-    internal const string PageRange = "页码范围";
+    internal const string PageRange = "Page range";
 
     internal static class PageFilterTypes
     {
-        internal const string ThisName = "页码筛选";
-        internal const string AllPages = "所有页";
-        internal static readonly string[] Names = { AllPages, "单数页", "双数页" };
+        internal const string ThisName = "Page filter";
+        internal const string AllPages = "All pages";
+        internal static readonly string[] Names = { AllPages, "Singular pages", "Even pages" };
         internal static readonly int[] Values = { -1, 1, 0 };
     }
 
@@ -443,31 +465,31 @@ internal static class Constants
 
     #region Destination
 
-    internal const string NamedDestination = "命名位置";
+    internal const string NamedDestination = "Name location";
 
     internal static class DestinationAttributes
     {
-        internal const string Page = "页码";
-        internal const string FirstPageNumber = "首页页码";
-        internal const string Action = "动作";
-        internal const string NewWindow = "新窗口";
-        internal const string Path = "路径";
-        internal const string Name = "名称";
-        internal const string Named = "命名位置";
-        internal const string NamedN = "PDF名称";
-        internal const string View = "显示方式";
-        internal const string ScriptContent = "脚本内容";
+        internal const string Page = "Page Number";
+        internal const string FirstPageNumber = "First Page Number";
+        internal const string Action = "action";
+        internal const string NewWindow = "New Window";
+        internal const string Path = "Path";
+        internal const string Name = "Name";
+        internal const string Named = "Named Location";
+        internal const string NamedN = "PDF Name";
+        internal const string View = "Display Mode";
+        internal const string ScriptContent = "Script Content";
 
         internal static class ViewType
         {
-            internal const string XYZ = "坐标缩放";
-            internal const string Fit = "适合页面";
-            internal const string FitH = "适合页宽";
-            internal const string FitV = "适合页高";
-            internal const string FitB = "适合窗口";
-            internal const string FitBH = "适合窗口宽度";
-            internal const string FitBV = "适合窗口高度";
-            internal const string FitR = "适合区域";
+            internal const string XYZ = "Coordinate scaling";
+            internal const string Fit = "Fit to Page";
+            internal const string FitH = "Fit to page width";
+            internal const string FitV = "Fit to page height";
+            internal const string FitB = "Fit to Window";
+            internal const string FitBH = "Fit to window width";
+            internal const string FitBV = "Fit to window height";
+            internal const string FitR = "Fit Region";
             internal static readonly string[] Names = { XYZ, Fit, FitH, FitV, FitB, FitBH, FitBV, FitR };
 
             internal static readonly PdfName[] PdfNames =
@@ -480,11 +502,11 @@ internal static class Constants
 
     internal static class ActionType
     {
-        internal const string Goto = "转到页面";
-        internal const string GotoR = "打开外部PDF文档";
-        internal const string Launch = "启动程序";
-        internal const string Uri = "打开网址";
-        internal const string Javascript = "执行脚本";
+        internal const string Goto = "Go to page";
+        internal const string GotoR = "Open external PDF document";
+        internal const string Launch = "Launch Program";
+        internal const string Uri = "Open URL";
+        internal const string Javascript = "Execute Script";
         internal static readonly string[] Names = { Goto, GotoR, Launch, Uri, Javascript };
     }
 
@@ -492,60 +514,60 @@ internal static class Constants
 
     #region Bookmark
 
-    internal const string Bookmark = "书签";
+    internal const string Bookmark = "Bookmark";
 
     internal static class BookmarkAttributes
     {
-        internal const string Title = "文本";
-        internal const string Open = "默认打开";
-        internal const string Style = "样式";
+        internal const string Title = "Text";
+        internal const string Open = "Open by default";
+        internal const string Style = "Style";
 
         internal static class StyleType
         {
-            internal const string Normal = "常规";
-            internal const string Bold = "粗体";
-            internal const string BoldItalic = "粗斜体";
-            internal const string Italic = "斜体";
+            internal const string Normal = "Normal";
+            internal const string Bold = "bold";
+            internal const string BoldItalic = "Bold Italic";
+            internal const string Italic = "Italic";
             internal static readonly string[] Names = { Normal, Italic, Bold, BoldItalic };
         }
     }
 
-    internal const string Color = "颜色";
+    internal const string Color = "Color";
 
     internal static class Colors
     {
-        internal const string Red = "红";
-        internal const string Green = "绿";
-        internal const string Blue = "蓝";
-        internal const string Gray = "灰度";
-        internal const string Transparent = "透明";
-        internal const string Cyan = "青";
-        internal const string Magenta = "紫";
-        internal const string Yellow = "黄";
-        internal const string Black = "黑";
+        internal const string Red = "Red";
+        internal const string Green = "green";
+        internal const string Blue = "Blue";
+        internal const string Gray = "Grayscale";
+        internal const string Transparent = "Transparent";
+        internal const string Cyan = "cyan";
+        internal const string Magenta = "Purple";
+        internal const string Yellow = "Yellow";
+        internal const string Black = "Black";
     }
 
     internal static class Boolean
     {
-        internal const string True = "是";
-        internal const string False = "否";
+        internal const string True = "Yes";
+        internal const string False = "No";
     }
 
     #endregion
 
     #region Page link
 
-    internal const string PageLink = "页面链接";
+    internal const string PageLink = "Page Link";
 
     internal static class PageLinkAttributes
     {
-        internal const string Link = "链接";
-        internal const string LinkAction = "链接动作";
-        internal const string PageNumber = "页码";
-        internal const string Border = "边框";
-        internal const string Style = "点击效果";
-        internal const string QuadPoints = "四边形坐标";
-        internal const string Contents = "文本";
+        internal const string Link = "Link";
+        internal const string LinkAction = "Link Action";
+        internal const string PageNumber = "PageNumber";
+        internal const string Border = "Border";
+        internal const string Style = "Click Effect";
+        internal const string QuadPoints = "Quad coordinates";
+        internal const string Contents = "text";
     }
 
     #endregion
@@ -554,18 +576,18 @@ internal static class Constants
 
     internal static class Font
     {
-        internal const string ThisName = "字体";
-        internal const string DocumentFont = "文档字体";
-        internal const string ID = "编号";
-        internal const string Name = "名称";
-        internal const string Size = "文本尺寸";
+        internal const string ThisName = "font";
+        internal const string DocumentFont = "Document Font";
+        internal const string ID = "Number";
+        internal const string Name = "Name";
+        internal const string Size = "Text Size";
     }
 
     internal static class FontOccurance
     {
-        internal const string Count = "出现次数";
-        internal const string FirstText = "首次出现文本";
-        internal const string FirstPage = "首次出现页码";
+        internal const string Count = "Number of occurrences";
+        internal const string FirstText = "First Text";
+        internal const string FirstPage = "First page number";
     }
 
     #endregion
@@ -573,20 +595,24 @@ internal static class Constants
 
 internal static class Messages
 {
-    internal const string Welcome = "PDF 补丁丁——解除 PDF 文档的烦恼";
-    internal const string SourceFileNotFound = "源 PDF 文件不存在，请先指定有效的源 PDF 文件。";
-    internal const string TargetFileNotSpecified = "请指定输出 PDF 文件的路径。";
-    internal const string InfoDocNotSpecified = "请指定输出信息文件的路径。";
-    internal const string TargetFileNameInvalid = "输出 PDF 文件名无效。";
-    internal const string InfoFileNameInvalid = "信息文件的文件名无效。";
-    internal const string SourceFileEqualsTargetFile = "输入 PDF 文件和输出 PDF 文件的文件名不能相同。";
-    internal const string PasswordInvalid = "输入的密码错误，无法打开 PDF 文档。";
+    internal const string Welcome = "PDFPatcher - Take the trouble out of PDF documents";
+
+    internal const string SourceFileNotFound =
+        "The source PDF file does not exist, please specify a valid source PDF file first.";
+
+    internal const string TargetFileNotSpecified = "Please specify the path to the output PDF file.";
+    internal const string InfoDocNotSpecified = "Please specify the path to the output information file.";
+    internal const string TargetFileNameInvalid = "The output PDF filename is invalid.";
+    internal const string InfoFileNameInvalid = "Invalid file name for info file.";
+    internal const string SourceFileEqualsTargetFile = "The input and output PDF file names cannot be the same.";
+    internal const string PasswordInvalid = "The entered password is incorrect, the PDF document cannot be opened.";
 
     internal const string UserRightRequired =
-        "此 PDF 文件的作者设置了修改文件的权限控制。\n如果您继续操作，您必须得到创建者对该文档进行修改的授权。\n如果您不能保证自己有权修改此文档，请按“否”键退出，否则您需要承担修改此文档带来的一切责任。";
+        "The author of this PDF file has set permission controls to modify the file.\nIf you continue, you must be authorized by the creator to modify this document.\nIf you cannot guarantee that you have permission to modify this document, press \"No\" key to exit, otherwise you will take all responsibility for modifying this document.";
 
     internal const string PageRanges =
-        "在此输入需要处理的页码范围。\n如：“1-100”表示处理第1～100页。\n如有多个页码范围，可用空格、分号或逗号分开。\n如：“1-10;12;14-20”表示处理1～10、12和14～20页。";
+        "Enter the page number range to be processed here.\nFor example: \"1-100\" means to process pages 1 to 100.\nIf there are multiple page number ranges, they can be separated by spaces, semicolons or commas.\nFor example: \" 1-10;12;14-20\" means processing pages 1-10, 12 and 14-20.";
 
-    internal const string ModiNotAvailable = "本机尚未安装微软文本识别组件（MODI），无法使用识别文本功能。";
+    internal const string ModiNotAvailable =
+        "The Microsoft Text Recognition Component (MODI) has not been installed on this machine, and the text recognition function cannot be used.";
 }

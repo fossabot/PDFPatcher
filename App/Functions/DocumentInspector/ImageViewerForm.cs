@@ -30,7 +30,7 @@ public sealed partial class ImageViewerForm : Form
             }
             catch (Exception ex)
             {
-                this.ErrorBox("无法加载图片", ex);
+                this.ErrorBox("Unable to load pictures", ex);
             }
         }
     }
@@ -49,9 +49,9 @@ public sealed partial class ImageViewerForm : Form
             case "_Save":
                 using (SaveFileDialog f = new()
                 {
-                    Title = "保存图片文件",
+                    Title = "Save image files",
                     DefaultExt = Constants.FileExtensions.Png,
-                    FileName = "导出图片.png",
+                    FileName = "ExportedImage.png",
                     Filter = Constants.FileExtensions.ImageFilter
                 })
                 {

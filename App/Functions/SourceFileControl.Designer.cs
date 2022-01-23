@@ -40,7 +40,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 12);
             this.label1.TabIndex = 0;
-            this.label1.Text = "原始 &PDF 文件：";
+            this.label1.Text = "Original &PDF file: ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             //
             // _BrowseSourcePdfButton
@@ -51,7 +51,7 @@
             this._BrowseSourcePdfButton.Name = "_BrowseSourcePdfButton";
             this._BrowseSourcePdfButton.Size = new System.Drawing.Size(75, 23);
             this._BrowseSourcePdfButton.TabIndex = 2;
-            this._BrowseSourcePdfButton.Text = "浏览(&L)";
+        this._BrowseSourcePdfButton.Text = "&Browse";
             this._BrowseSourcePdfButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this._BrowseSourcePdfButton.UseVisualStyleBackColor = true;
             this._BrowseSourcePdfButton.Click += new System.EventHandler(this._BrowseSourcePdfButton_Click);
@@ -59,9 +59,9 @@
             // _OpenPdfBox
             //
             this._OpenPdfBox.DefaultExt = "pdf";
-            this._OpenPdfBox.Filter = "PDF 文件(*.pdf)|*.pdf";
-            this._OpenPdfBox.Multiselect = true;
-            this._OpenPdfBox.Title = "打开 PDF 源文件";
+this._OpenPdfBox.Filter = "PDF file (*.pdf)|*.pdf";
+             this._OpenPdfBox.Multiselect = true;
+             this._OpenPdfBox.Title = "Open PDF source file";
             //
             // panel1
             //

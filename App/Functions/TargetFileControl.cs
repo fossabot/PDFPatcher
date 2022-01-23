@@ -34,7 +34,7 @@ public partial class TargetFileControl : UserControl
     /// <summary>
     ///     Gets or sets the label text before the file drop-down box.
     /// </summary>
-    [DefaultValue("输出 PD&F 文件：")]
+    [DefaultValue("Output PD&F file:")]
     public string Label
     {
         get => label1.Text;

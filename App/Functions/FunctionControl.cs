@@ -95,8 +95,9 @@ public class FunctionControl : UserControl
                     EnableCommand(item, true, true);
                     break;
                 case Commands.SaveBookmark:
-                    item.Text = "保存书签文件(&Q)";
-                    item.ToolTipText = "将书签保存为 XML 格式的信息文件，可用于迁移书签";
+                    item.Text = "&Save bookmark file";
+                    item.ToolTipText =
+                        "Save bookmarks as an XML-formatted info file that can be used to migrate bookmarks";
                     goto default;
                 case Commands.ResetOptions:
                     EnableCommand(item, this is IResettableControl, true);

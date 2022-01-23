@@ -124,7 +124,7 @@
 			this._FilePage.Padding = new System.Windows.Forms.Padding (3);
 			this._FilePage.Size = new System.Drawing.Size (440, 293);
 			this._FilePage.TabIndex = 1;
-			this._FilePage.Text = "文件";
+			this._FilePage.Text = "File";
 			this._FilePage.UseVisualStyleBackColor = true;
 			//
 			// _CajSortBox
@@ -134,7 +134,7 @@
 			this._CajSortBox.Name = "_CajSortBox";
 			this._CajSortBox.Size = new System.Drawing.Size (144, 16);
 			this._CajSortBox.TabIndex = 4;
-			this._CajSortBox.Text = "使用超星命名规则排序";
+			this._CajSortBox.Text = "Sort by CAJ naming rules";
 			this._CajSortBox.UseVisualStyleBackColor = true;
 			//
 			// _NumericAwareSortBox
@@ -144,7 +144,7 @@
 			this._NumericAwareSortBox.Name = "_NumericAwareSortBox";
 			this._NumericAwareSortBox.Size = new System.Drawing.Size (180, 16);
 			this._NumericAwareSortBox.TabIndex = 3;
-			this._NumericAwareSortBox.Text = "文件名分别按数值和文本排序";
+			this._NumericAwareSortBox.Text = "The file name is sorted by value and text, respectively.";
 			this._NumericAwareSortBox.UseVisualStyleBackColor = true;
 			//
 			// _SubFoldersBeforeFilesBox
@@ -154,7 +154,7 @@
 			this._SubFoldersBeforeFilesBox.Name = "_SubFoldersBeforeFilesBox";
 			this._SubFoldersBeforeFilesBox.Size = new System.Drawing.Size (144, 16);
 			this._SubFoldersBeforeFilesBox.TabIndex = 2;
-			this._SubFoldersBeforeFilesBox.Text = "子文件夹排在文件前面";
+			this._SubFoldersBeforeFilesBox.Text = "Subfolder in front of the file";
 			this._SubFoldersBeforeFilesBox.UseVisualStyleBackColor = true;
 			//
 			// _AutoBookmarkTitleBox
@@ -163,39 +163,39 @@
 			this._AutoBookmarkTitleBox.Location = new System.Drawing.Point (16, 16);
 			this._AutoBookmarkTitleBox.Name = "_AutoBookmarkTitleBox";
 			this._AutoBookmarkTitleBox.Size = new System.Drawing.Size (240, 16);
-			this._AutoBookmarkTitleBox.TabIndex = 0;
-			this._AutoBookmarkTitleBox.Text = "添加项目时根据文件名自动生成书签文本";
-			this._AutoBookmarkTitleBox.UseVisualStyleBackColor = true;
-			//
-			// _IgnoreLeadingNumbersBox
-			//
-			this._IgnoreLeadingNumbersBox.AutoSize = true;
-			this._IgnoreLeadingNumbersBox.Location = new System.Drawing.Point (39, 38);
-			this._IgnoreLeadingNumbersBox.Name = "_IgnoreLeadingNumbersBox";
-			this._IgnoreLeadingNumbersBox.Size = new System.Drawing.Size (144, 16);
-			this._IgnoreLeadingNumbersBox.TabIndex = 1;
-			this._IgnoreLeadingNumbersBox.Text = "删除文件名的前导数字";
-			this._IgnoreLeadingNumbersBox.UseVisualStyleBackColor = true;
-			//
-			// _RemoveOrphanBoomarksBox
-			//
-			this._RemoveOrphanBoomarksBox.AutoSize = true;
-			this._RemoveOrphanBoomarksBox.Location = new System.Drawing.Point (39, 168);
-			this._RemoveOrphanBoomarksBox.Name = "_RemoveOrphanBoomarksBox";
-			this._RemoveOrphanBoomarksBox.Size = new System.Drawing.Size (168, 16);
-			this._RemoveOrphanBoomarksBox.TabIndex = 6;
-			this._RemoveOrphanBoomarksBox.Text = "删除连接到无效页面的书签";
-			this._RemoveOrphanBoomarksBox.UseVisualStyleBackColor = true;
-			//
-			// _KeepSourcePdfBookmarkBox
-			//
-			this._KeepSourcePdfBookmarkBox.AutoSize = true;
-			this._KeepSourcePdfBookmarkBox.Location = new System.Drawing.Point (16, 146);
-			this._KeepSourcePdfBookmarkBox.Name = "_KeepSourcePdfBookmarkBox";
-			this._KeepSourcePdfBookmarkBox.Size = new System.Drawing.Size (150, 16);
-			this._KeepSourcePdfBookmarkBox.TabIndex = 5;
-			this._KeepSourcePdfBookmarkBox.Text = "保留源 PDF 文档的书签";
-			this._KeepSourcePdfBookmarkBox.UseVisualStyleBackColor = true;
+this._AutoBookmarkTitleBox.TabIndex = 0;
+this._AutoBookmarkTitleBox.Text = "Automatically generate bookmark text based on file name when adding items";
+this._AutoBookmarkTitleBox.UseVisualStyleBackColor = true;
+//
+// _IgnoreLeadingNumbersBox
+//
+this._IgnoreLeadingNumbersBox.AutoSize = true;
+this._IgnoreLeadingNumbersBox.Location = new System.Drawing.Point(39, 38);
+this._IgnoreLeadingNumbersBox.Name = "_IgnoreLeadingNumbersBox";
+this._IgnoreLeadingNumbersBox.Size = new System.Drawing.Size (144, 16);
+this._IgnoreLeadingNumbersBox.TabIndex = 1;
+this._IgnoreLeadingNumbersBox.Text = "Remove leading numbers from filenames";
+this._IgnoreLeadingNumbersBox.UseVisualStyleBackColor = true;
+//
+//_RemoveOrphanBoomarksBox
+//
+this._RemoveOrphanBoomarksBox.AutoSize = true;
+this._RemoveOrphanBoomarksBox.Location = new System.Drawing.Point(39, 168);
+this._RemoveOrphanBoomarksBox.Name = "_RemoveOrphanBoomarksBox";
+this._RemoveOrphanBoomarksBox.Size = new System.Drawing.Size (168, 16);
+this._RemoveOrphanBoomarksBox.TabIndex = 6;
+this._RemoveOrphanBoomarksBox.Text = "Remove bookmarks linked to invalid pages";
+this._RemoveOrphanBoomarksBox.UseVisualStyleBackColor = true;
+//
+// _KeepSourcePdfBookmarkBox
+//
+this._KeepSourcePdfBookmarkBox.AutoSize = true;
+this._KeepSourcePdfBookmarkBox.Location = new System.Drawing.Point(16, 146);
+this._KeepSourcePdfBookmarkBox.Name = "_KeepSourcePdfBookmarkBox";
+this._KeepSourcePdfBookmarkBox.Size = new System.Drawing.Size (150, 16);
+this._KeepSourcePdfBookmarkBox.TabIndex = 5;
+this._KeepSourcePdfBookmarkBox.Text = "Keep source PDF document bookmarks";
+this._KeepSourcePdfBookmarkBox.UseVisualStyleBackColor = true;
 			//
 			// _LayoutPage
 			//
@@ -209,39 +209,39 @@
 			this._LayoutPage.Padding = new System.Windows.Forms.Padding (3);
 			this._LayoutPage.Size = new System.Drawing.Size (440, 293);
 			this._LayoutPage.TabIndex = 0;
-			this._LayoutPage.Text = "页面布局";
-			this._LayoutPage.UseVisualStyleBackColor = true;
-			//
-			// groupBox2
-			//
-			this.groupBox2.Controls.Add (this._RecompressImageBox);
-			this.groupBox2.Controls.Add (this._AutoMaskBWImageBox);
-			this.groupBox2.Location = new System.Drawing.Point (237, 139);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size (195, 70);
-			this.groupBox2.TabIndex = 9;
-			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "图片";
-			//
-			// _RecompressImageBox
-			//
-			this._RecompressImageBox.AutoSize = true;
-			this._RecompressImageBox.Location = new System.Drawing.Point (7, 43);
-			this._RecompressImageBox.Name = "_RecompressImageBox";
-			this._RecompressImageBox.Size = new System.Drawing.Size (120, 16);
-			this._RecompressImageBox.TabIndex = 2;
-			this._RecompressImageBox.Text = "优化压缩黑白图片";
-			this._RecompressImageBox.UseVisualStyleBackColor = true;
-			//
-			// _AutoMaskBWImageBox
-			//
-			this._AutoMaskBWImageBox.AutoSize = true;
-			this._AutoMaskBWImageBox.Location = new System.Drawing.Point (7, 21);
-			this._AutoMaskBWImageBox.Name = "_AutoMaskBWImageBox";
-			this._AutoMaskBWImageBox.Size = new System.Drawing.Size (120, 16);
-			this._AutoMaskBWImageBox.TabIndex = 1;
-			this._AutoMaskBWImageBox.Text = "黑白图片设为透明";
-			this._AutoMaskBWImageBox.UseVisualStyleBackColor = true;
+this._LayoutPage.Text = "Page Layout";
+this._LayoutPage.UseVisualStyleBackColor = true;
+//
+// groupBox2
+//
+this.groupBox2.Controls.Add(this._RecompressImageBox);
+this.groupBox2.Controls.Add(this._AutoMaskBWImageBox);
+this.groupBox2.Location = new System.Drawing.Point(237, 139);
+this.groupBox2.Name = "groupBox2";
+this.groupBox2.Size = new System.Drawing.Size(195, 70);
+this.groupBox2.TabIndex = 9;
+this.groupBox2.TabStop = false;
+this.groupBox2.Text = "Picture";
+//
+// _RecompressImageBox
+//
+this._RecompressImageBox.AutoSize = true;
+this._RecompressImageBox.Location = new System.Drawing.Point(7, 43);
+this._RecompressImageBox.Name = "_RecompressImageBox";
+this._RecompressImageBox.Size = new System.Drawing.Size(120, 16);
+this._RecompressImageBox.TabIndex = 2;
+this._RecompressImageBox.Text = "Optimize compressed black and white images";
+this._RecompressImageBox.UseVisualStyleBackColor = true;
+//
+// _AutoMaskBWImageBox
+//
+this._AutoMaskBWImageBox.AutoSize = true;
+this._AutoMaskBWImageBox.Location = new System.Drawing.Point(7, 21);
+this._AutoMaskBWImageBox.Name = "_AutoMaskBWImageBox";
+this._AutoMaskBWImageBox.Size = new System.Drawing.Size (120, 16);
+this._AutoMaskBWImageBox.TabIndex = 1;
+this._AutoMaskBWImageBox.Text = "Black and white image is set to transparent";
+this._AutoMaskBWImageBox.UseVisualStyleBackColor = true;
 			//
 			// _ImageGroupBox
 			//
@@ -251,30 +251,30 @@
 			this._ImageGroupBox.Name = "_ImageGroupBox";
 			this._ImageGroupBox.Size = new System.Drawing.Size (195, 48);
 			this._ImageGroupBox.TabIndex = 7;
-			this._ImageGroupBox.TabStop = false;
-			this._ImageGroupBox.Text = "缩放原始内容适应页面";
-			//
-			// _AutoScaleDownBox
-			//
-			this._AutoScaleDownBox.AutoSize = true;
-			this._AutoScaleDownBox.Checked = true;
-			this._AutoScaleDownBox.CheckState = System.Windows.Forms.CheckState.Checked;
-			this._AutoScaleDownBox.Location = new System.Drawing.Point (7, 20);
-			this._AutoScaleDownBox.Name = "_AutoScaleDownBox";
-			this._AutoScaleDownBox.Size = new System.Drawing.Size (72, 16);
-			this._AutoScaleDownBox.TabIndex = 0;
-			this._AutoScaleDownBox.Text = "无损缩小";
-			this._AutoScaleDownBox.UseVisualStyleBackColor = true;
-			//
-			// _AutoScaleUpBox
-			//
-			this._AutoScaleUpBox.AutoSize = true;
-			this._AutoScaleUpBox.Location = new System.Drawing.Point (94, 20);
-			this._AutoScaleUpBox.Name = "_AutoScaleUpBox";
-			this._AutoScaleUpBox.Size = new System.Drawing.Size (72, 16);
-			this._AutoScaleUpBox.TabIndex = 1;
-			this._AutoScaleUpBox.Text = "无损放大";
-			this._AutoScaleUpBox.UseVisualStyleBackColor = true;
+this._ImageGroupBox.TabStop = false;
+this._ImageGroupBox.Text = "Scale original content to fit page";
+//
+// _AutoScaleDownBox
+//
+this._AutoScaleDownBox.AutoSize = true;
+this._AutoScaleDownBox.Checked = true;
+this._AutoScaleDownBox.CheckState = System.Windows.Forms.CheckState.Checked;
+this._AutoScaleDownBox.Location = new System.Drawing.Point(7, 20);
+this._AutoScaleDownBox.Name = "_AutoScaleDownBox";
+this._AutoScaleDownBox.Size = new System.Drawing.Size(72, 16);
+this._AutoScaleDownBox.TabIndex = 0;
+this._AutoScaleDownBox.Text = "Lossless Scale Down";
+this._AutoScaleDownBox.UseVisualStyleBackColor = true;
+//
+// _AutoScaleUpBox
+//
+this._AutoScaleUpBox.AutoSize = true;
+this._AutoScaleUpBox.Location = new System.Drawing.Point(94, 20);
+this._AutoScaleUpBox.Name = "_AutoScaleUpBox";
+this._AutoScaleUpBox.Size = new System.Drawing.Size(72, 16);
+this._AutoScaleUpBox.TabIndex = 1;
+this._AutoScaleUpBox.Text = "Lossless Scale Up";
+this._AutoScaleUpBox.UseVisualStyleBackColor = true;
 			//
 			// _LayoutGroupBox
 			//
@@ -295,8 +295,8 @@
 			this._LayoutGroupBox.Name = "_LayoutGroupBox";
 			this._LayoutGroupBox.Size = new System.Drawing.Size (225, 171);
 			this._LayoutGroupBox.TabIndex = 5;
-			this._LayoutGroupBox.TabStop = false;
-			this._LayoutGroupBox.Text = "默认页面布局及尺寸（单位：厘米）";
+this._LayoutGroupBox.TabStop = false;
+this._LayoutGroupBox.Text = "Default page layout and size (unit: cm)";
 			//
 			// _HeightBox
 			//
@@ -363,17 +363,17 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size (41, 12);
 			this.label2.TabIndex = 0;
-			this.label2.Text = "尺寸：";
-			//
-			// label8
-			//
-			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point (6, 96);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size (41, 12);
-			this.label8.TabIndex = 7;
-			this.label8.Text = "位置：";
-			//
+this.label2.Text = "Size: ";
+//
+// label8
+//
+this.label8.AutoSize = true;
+this.label8.Location = new System.Drawing.Point(6, 96);
+this.label8.Name = "label8";
+this.label8.Size = new System.Drawing.Size(41, 12);
+this.label8.TabIndex = 7;
+this.label8.Text = "Location: ";
+//
 			// _PageSizeBox
 			//
 			this._PageSizeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -392,26 +392,26 @@
 			this._AutoRotateBox.Name = "_AutoRotateBox";
 			this._AutoRotateBox.Size = new System.Drawing.Size (192, 16);
 			this._AutoRotateBox.TabIndex = 6;
-			this._AutoRotateBox.Text = "旋转页面适应原始内容纵横方向";
-			this._AutoRotateBox.UseVisualStyleBackColor = true;
-			//
-			// label5
-			//
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point (120, 47);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size (29, 12);
-			this.label5.TabIndex = 4;
-			this.label5.Text = "高：";
-			//
-			// label4
-			//
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point (18, 47);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size (29, 12);
-			this.label4.TabIndex = 2;
-			this.label4.Text = "宽：";
+this._AutoRotateBox.Text = "Rotate the page to fit the original horizontal and vertical orientation";
+this._AutoRotateBox.UseVisualStyleBackColor = true;
+//
+// label5
+//
+this.label5.AutoSize = true;
+this.label5.Location = new System.Drawing.Point(120, 47);
+this.label5.Name = "label5";
+this.label5.Size = new System.Drawing.Size(29, 12);
+this.label5.TabIndex = 4;
+this.label5.Text = "High:";
+//
+// label4
+//
+this.label4.AutoSize = true;
+this.label4.Location = new System.Drawing.Point(18, 47);
+this.label4.Name = "label4";
+this.label4.Size = new System.Drawing.Size(29, 12);
+this.label4.TabIndex = 2;
+this.label4.Text = "Width: ";
 			//
 			// _MarginGroupBox
 			//
@@ -428,19 +428,19 @@
 			this._MarginGroupBox.Name = "_MarginGroupBox";
 			this._MarginGroupBox.Size = new System.Drawing.Size (225, 94);
 			this._MarginGroupBox.TabIndex = 6;
-			this._MarginGroupBox.TabStop = false;
-			this._MarginGroupBox.Text = "页边留白（单位：厘米）";
-			//
-			// _SyncMarginsBox
-			//
-			this._SyncMarginsBox.AutoSize = true;
-			this._SyncMarginsBox.Checked = true;
-			this._SyncMarginsBox.CheckState = System.Windows.Forms.CheckState.Checked;
-			this._SyncMarginsBox.Location = new System.Drawing.Point (53, 74);
-			this._SyncMarginsBox.Name = "_SyncMarginsBox";
-			this._SyncMarginsBox.Size = new System.Drawing.Size (120, 16);
-			this._SyncMarginsBox.TabIndex = 9;
-			this._SyncMarginsBox.Text = "同步调整四边留白";
+this._MarginGroupBox.TabStop = false;
+this._MarginGroupBox.Text = "Margin (unit: cm)";
+//
+// _SyncMarginsBox
+//
+this._SyncMarginsBox.AutoSize = true;
+this._SyncMarginsBox.Checked = true;
+this._SyncMarginsBox.CheckState = System.Windows.Forms.CheckState.Checked;
+this._SyncMarginsBox.Location = new System.Drawing.Point(53, 74);
+this._SyncMarginsBox.Name = "_SyncMarginsBox";
+this._SyncMarginsBox.Size = new System.Drawing.Size (120, 16);
+this._SyncMarginsBox.TabIndex = 9;
+this._SyncMarginsBox.Text = "Synchronously adjust the margins on the four sides";
 			this._SyncMarginsBox.UseVisualStyleBackColor = true;
 			//
 			// _RightMarginBox
@@ -530,7 +530,7 @@
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size (29, 12);
 			this.label7.TabIndex = 7;
-			this.label7.Text = "右：";
+			this.label7.Text = "Right: ";
 			//
 			// label3
 			//
@@ -539,7 +539,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size (29, 12);
 			this.label3.TabIndex = 3;
-			this.label3.Text = "下：";
+			this.label3.Text = "Bottom: ";
 			//
 			// label6
 			//
@@ -548,7 +548,7 @@
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size (29, 12);
 			this.label6.TabIndex = 5;
-			this.label6.Text = "左：";
+			this.label6.Text = "Left: ";
 			//
 			// label1
 			//
@@ -557,7 +557,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size (29, 12);
 			this.label1.TabIndex = 1;
-			this.label1.Text = "上：";
+			this.label1.Text = "Top: ";
 			//
 			// _PdfGroupBox
 			//
@@ -568,7 +568,7 @@
 			this._PdfGroupBox.Size = new System.Drawing.Size (195, 73);
 			this._PdfGroupBox.TabIndex = 8;
 			this._PdfGroupBox.TabStop = false;
-			this._PdfGroupBox.Text = "源 PDF 页面尺寸";
+			this._PdfGroupBox.Text = "Source PDF page size";
 			//
 			// _ResizePdfPagesBox
 			//
@@ -577,7 +577,7 @@
 			this._ResizePdfPagesBox.Name = "_ResizePdfPagesBox";
 			this._ResizePdfPagesBox.Size = new System.Drawing.Size (107, 16);
 			this._ResizePdfPagesBox.TabIndex = 1;
-			this._ResizePdfPagesBox.Text = "调整为页面尺寸";
+			this._ResizePdfPagesBox.Text = "Adjust to page size";
 			this._ResizePdfPagesBox.UseVisualStyleBackColor = true;
 			//
 			// _ScalePdfPagesBox
@@ -589,7 +589,7 @@
 			this._ScalePdfPagesBox.Size = new System.Drawing.Size (119, 16);
 			this._ScalePdfPagesBox.TabIndex = 2;
 			this._ScalePdfPagesBox.TabStop = true;
-			this._ScalePdfPagesBox.Text = "缩放内容适应页面";
+			this._ScalePdfPagesBox.Text = "Zoom content adaptation page";
 			this._ScalePdfPagesBox.UseVisualStyleBackColor = true;
 			//
 			// _ViewerSettingsPage
@@ -600,7 +600,7 @@
 			this._ViewerSettingsPage.Padding = new System.Windows.Forms.Padding (3);
 			this._ViewerSettingsPage.Size = new System.Drawing.Size (440, 293);
 			this._ViewerSettingsPage.TabIndex = 2;
-			this._ViewerSettingsPage.Text = "阅读方式";
+			this._ViewerSettingsPage.Text = "Reading method";
 			this._ViewerSettingsPage.UseVisualStyleBackColor = true;
 			//
 			// _ViewerSettingsEditor
@@ -619,7 +619,7 @@
 			this._DocumentInfoPage.Padding = new System.Windows.Forms.Padding (3);
 			this._DocumentInfoPage.Size = new System.Drawing.Size (440, 293);
 			this._DocumentInfoPage.TabIndex = 3;
-			this._DocumentInfoPage.Text = "文档杂项";
+			this._DocumentInfoPage.Text = "Document miscellaneous";
 			this._DocumentInfoPage.UseVisualStyleBackColor = true;
 			//
 			// _FullCompressionBox
@@ -629,7 +629,7 @@
 			this._FullCompressionBox.Name = "_FullCompressionBox";
 			this._FullCompressionBox.Size = new System.Drawing.Size (120, 16);
 			this._FullCompressionBox.TabIndex = 2;
-			this._FullCompressionBox.Text = "压缩索引表和书签";
+			this._FullCompressionBox.Text = "Compressed index table and bookmark";
 			this._FullCompressionBox.UseVisualStyleBackColor = true;
 			//
 			// _DocumentInfoEditor
@@ -650,7 +650,7 @@
 			this._PageLabelsPage.Padding = new System.Windows.Forms.Padding (3);
 			this._PageLabelsPage.Size = new System.Drawing.Size (440, 293);
 			this._PageLabelsPage.TabIndex = 4;
-			this._PageLabelsPage.Text = "页码标签";
+			this._PageLabelsPage.Text = "Table size label";
 			this._PageLabelsPage.UseVisualStyleBackColor = true;
 			//
 			// _PageLabelEditor
@@ -671,7 +671,7 @@
 			this._UnifyOrientationBox.Name = "_UnifyOrientationBox";
 			this._UnifyOrientationBox.Size = new System.Drawing.Size (156, 16);
 			this._UnifyOrientationBox.TabIndex = 10;
-			this._UnifyOrientationBox.Text = "修改所有页面的纵横方向";
+			this._UnifyOrientationBox.Text = "Modify the cross direction of all pages";
 			this._UnifyOrientationBox.UseVisualStyleBackColor = true;
 			//
 			// _SourceOrientationBox
@@ -679,8 +679,8 @@
 			this._SourceOrientationBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this._SourceOrientationBox.FormattingEnabled = true;
 			this._SourceOrientationBox.Items.AddRange (new object[] {
-            "横向页面",
-            "纵向页面"});
+            "Horizontal page",
+            "Portrait page"});
 			this._SourceOrientationBox.Location = new System.Drawing.Point (20, 140);
 			this._SourceOrientationBox.Name = "_SourceOrientationBox";
 			this._SourceOrientationBox.Size = new System.Drawing.Size (77, 20);
@@ -691,8 +691,8 @@
 			this._RotationBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this._RotationBox.FormattingEnabled = true;
 			this._RotationBox.Items.AddRange (new object[] {
-            "顺时针旋转90度",
-            "逆时针旋转90度"});
+            "Rotate 90 degrees clockwise",
+            "Turn 90 degrees counterclockwise"});
 			this._RotationBox.Location = new System.Drawing.Point (103, 140);
 			this._RotationBox.Name = "_RotationBox";
 			this._RotationBox.Size = new System.Drawing.Size (112, 20);
@@ -708,7 +708,7 @@
 			this.MinimizeBox = false;
 			this.Name = "MergerOptionForm";
 			this.ShowInTaskbar = false;
-			this.Text = "合并 PDF 文档选项";
+			this.Text = "Merge PDF Document Options";
 			this._MainTab.ResumeLayout (false);
 			this._FilePage.ResumeLayout (false);
 			this._FilePage.PerformLayout ();

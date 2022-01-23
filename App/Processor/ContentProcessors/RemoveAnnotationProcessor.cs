@@ -11,14 +11,14 @@ internal sealed class RemoveAnnotationProcessor : IPageProcessor
 
     #region IPageProcessor member
 
-    public string Name => "删除批注";
+    public string Name => "Remove Comment";
 
     public void BeginProcess(DocProcessorContext context) => _processedPageCount = 0;
 
     public bool EndProcess(PdfReader pdf)
     {
-        Tracker.TraceMessage(Tracker.Category.Notice, Name + "功能：");
-        Tracker.TraceMessage("　　删除了 " + _processedPageCount + " 页的批注。");
+        Tracker.TraceMessage(Tracker.Category.Notice, Name + "Function:");
+        Tracker.TraceMessage(" Deleted the annotation for " + _processedPageCount + " page.");
         return false;
     }
 

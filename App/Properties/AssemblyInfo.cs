@@ -10,7 +10,7 @@ using PDFPatcher;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("wmjordan@163.com")]
 [assembly: AssemblyProduct(Constants.AppEngName)]
-[assembly: AssemblyCopyright("著作权所有 © WMJordan 2009～2021")]
+[assembly: AssemblyCopyright("Copyright © WMJordan 2009~2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -21,16 +21,16 @@ public partial class PatcherOptionForm : Form, IResettableControl
         InitializeComponent();
         this.SetIcon(Resources.PdfOptions);
         _PageSizeBox.Items.AddRange(PdfDocumentCreator.PaperSizes);
-        _ImageHAlignBox.Items.Add("水平居中");
-        _ImageHAlignBox.Items.Add("左对齐");
-        _ImageHAlignBox.Items.Add("右对齐");
-        _ImageVAlignBox.Items.Add("垂直居中");
-        _ImageVAlignBox.Items.Add("置顶");
-        _ImageVAlignBox.Items.Add("置底");
+        _ImageHAlignBox.Items.Add("Horizontal Center");
+        _ImageHAlignBox.Items.Add("Left Align");
+        _ImageHAlignBox.Items.Add("Right alignment");
+        _ImageVAlignBox.Items.Add("Vertical Center");
+        _ImageVAlignBox.Items.Add("Top");
+        _ImageVAlignBox.Items.Add("Bottom");
         _editorOptions = editorOptions;
         _ResetButton.Click += (_, _) =>
         {
-            if (this.ConfirmYesBox("是否将选项配置还原为默认值？"))
+            if (this.ConfirmYesBox("Restore option configuration to default value?"))
             {
                 Reset();
             }

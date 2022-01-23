@@ -30,7 +30,7 @@ public partial class MergerControl : FunctionControl
         _bookmarkStyleButtonNames = new[] { "_BoldStyleButton", "_BookmarkColorButton", "_ItalicStyleButton" };
     }
 
-    public override string FunctionName => "合并文档";
+    public override string FunctionName => "Merge document";
 
     public override Bitmap IconImage => Resources.Merger;
 
@@ -45,12 +45,14 @@ public partial class MergerControl : FunctionControl
         //this.Icon = Common.FormHelper.ToIcon (Properties.Resources.CreateDocument);
         //_MainToolbar.ToggleEnabled (false, _bookmarkStyleButtonNames);
         _BookmarkColorButton.SelectedColorChanged += (_, _) => { RefreshBookmarkColor(); };
-
-        AppContext.MainForm.SetTooltip(_BookmarkControl.FileList, "为目标 PDF 文件添加书签的信息文件（可选）");
-        AppContext.MainForm.SetTooltip(_ItemList, "在此添加需要合并的 PDF 文件、图片文件或包含上述类型文件的文件夹");
-        AppContext.MainForm.SetTooltip(_ImportButton, "点击此按钮将列表的文件合并为一个 PDF 文件");
-        AppContext.MainForm.SetTooltip(_TargetPdfFile.FileList, "生成的目标 PDF 文件路径");
-        _ItemList.EmptyListMsg = "请使用“添加文件”按钮添加需要合并的文件，或从资源管理器拖放文件到本列表框";
+        AppContext.MainForm.SetTooltip(_BookmarkControl.FileList,
+            "Bookmark the information file for the target PDF file (optional)");
+        AppContext.MainForm.SetTooltip(_ItemList,
+            "Add PDF files, image files or folders containing the above types of files that need to be merged here");
+        AppContext.MainForm.SetTooltip(_ImportButton, "Click this button to merge the list of files into one PDF file");
+        AppContext.MainForm.SetTooltip(_TargetPdfFile.FileList, "Generated target PDF file path");
+        _ItemList.EmptyListMsg =
+            "Please use the \"Add Files\" button to add files to be merged, or drag and drop files from the Explorer to this list box";
 
         ImageList.ImageCollection fi = _FileTypeList.Images;
         fi.AddRange(
@@ -101,7 +103,7 @@ public partial class MergerControl : FunctionControl
         _ItemList.AsTyped<SourceItem>()
             .ConfigColumn(_NameColumn, c =>
             {
-                c.AspectGetter = o => o.FileName ?? "<空白页>";
+                c.AspectGetter = o => o.FileName ?? "<blank page>";
                 c.ImageGetter = o => (int)o.Type;
             })
             .ConfigColumn(_BookmarkColumn, c =>
@@ -188,8 +190,8 @@ public partial class MergerControl : FunctionControl
         }
         else if (n == Commands.Options)
         {
-            item.Text = "合并文档设置(&S)...";
-            item.ToolTipText = "设置合并后的 PDF 文档";
+            item.Text = "Merge document settings (&S)...";
+            item.ToolTipText = "Set the merged PDF document";
             EnableCommand(item, true, true);
             item.Tag = nameof(Function.MergerOptions);
         }
@@ -200,14 +202,14 @@ public partial class MergerControl : FunctionControl
     private void FileControl_BrowseForFile(object sender, EventArgs e) => _listHelper.PrepareSourceFiles();
 
     /// <summary>
-    ///     复制或移动书签。
+    ///     Copy or move bookmarks.
     /// </summary>
-    /// <param name="source">需要复制或移动的源书签。</param>
-    /// <param name="target">目标书签。</param>
-    /// <param name="child">是否复制为子节点。</param>
-    /// <param name="after">是否复制到后面。</param>
-    /// <param name="copy">是否复制书签。</param>
-    /// <param name="deepCopy">是否深度复制书签。</param>
+    /// <param name="source">The source bookmark that needs to be copied or moved. </param>
+    /// <param name="target">Target bookmark. </param>
+    /// <param name="child">Whether to copy as a child node. </param>
+    /// <param name="after">Whether to copy to the back. </param>
+    /// <param name="copy">Whether to copy bookmarks. </param>
+    /// <param name="deepCopy">Whether to deep copy bookmarks. </param>
     internal void CopyOrMoveElement(List<SourceItem> source, SourceItem target, bool child, bool after, bool copy,
         bool deepCopy)
     {
@@ -318,7 +320,7 @@ public partial class MergerControl : FunctionControl
         string f = e.ClickedItem.ToolTipText;
         if (Directory.Exists(f) == false)
         {
-            FormHelper.ErrorBox("文件夹不存在。");
+            FormHelper.ErrorBox("The folder does not exist.");
             return;
         }
 
@@ -338,8 +340,10 @@ public partial class MergerControl : FunctionControl
 
         if (FileHelper.IsPathValid(targetPdfFile) == false)
         {
-            FormHelper.ErrorBox("输出文件名无效。" +
-                                (FileHelper.HasFileNameMacro(targetPdfFile) ? "\n合并 PDF 文件功能不支持替代符。" : string.Empty));
+            FormHelper.ErrorBox("The output file name is invalid." +
+                                (FileHelper.HasFileNameMacro(targetPdfFile)
+                                    ? "\nThe merge PDF file function does not support an alternative."
+                                    : string.Empty));
             return;
         }
 
@@ -352,7 +356,7 @@ public partial class MergerControl : FunctionControl
         int l = _ItemList.GetItemCount();
         if (l == 0)
         {
-            FormHelper.InfoBox("请添加用于生成 PDF 文件的图片或 PDF 源文件。");
+            FormHelper.InfoBox("Add a picture or PDF source file used to generate a PDF file.");
             return;
         }
         //var si = new List<SourceItem> (l);
@@ -374,7 +378,8 @@ public partial class MergerControl : FunctionControl
 
             if (fl.Count == 0)
             {
-                Tracker.TraceMessage(Tracker.Category.Error, "合并文件列表没有包含子项的首层项目。");
+                Tracker.TraceMessage(Tracker.Category.Error,
+                    "The merged file list does not contain the first layer of items that contain children.");
             }
         }
 
@@ -396,7 +401,7 @@ public partial class MergerControl : FunctionControl
                     switch (item.Type)
                     {
                         case SourceItem.ItemType.Empty:
-                            Tracker.TraceMessage(Tracker.Category.Error, "首层项目不能为空白页。");
+                            Tracker.TraceMessage(Tracker.Category.Error, "The first layer cannot be a blank page.");
                             break;
                         case SourceItem.ItemType.Pdf:
                         case SourceItem.ItemType.Image:
@@ -440,10 +445,10 @@ public partial class MergerControl : FunctionControl
         {
             using OpenFileDialog f = new()
             {
-                FileName = "【选择目录】",
+                FileName = "[Select the directory]",
                 Filter = _OpenImageBox.Filter,
                 CheckFileExists = false,
-                Title = "选择包含图片或 PDF 的文件夹，点击“打开”按钮"
+                Title = "Select a folder with a picture or PDF, click the \"Open\" button"
             };
             if (f.ShowDialog() != DialogResult.OK)
             {
@@ -453,7 +458,7 @@ public partial class MergerControl : FunctionControl
             string p = Path.GetDirectoryName(f.FileName);
             if (string.IsNullOrEmpty(Path.GetFileName(p)))
             {
-                FormHelper.ErrorBox("选择的文件夹无效，不允许选择根目录。");
+                FormHelper.ErrorBox("The selected folder is invalid, and the root directory is not allowed.");
                 return;
             }
 
@@ -482,7 +487,7 @@ public partial class MergerControl : FunctionControl
             case Commands.LoadList:
                 using (OpenFileDialog f = new()
                 {
-                    Title = "请选择需要打开的文件列表",
+                    Title = "Please select a list of files that you want to open.",
                     Filter = Constants.FileExtensions.XmlFilter,
                     DefaultExt = Constants.FileExtensions.Xml
                 })
@@ -501,7 +506,7 @@ public partial class MergerControl : FunctionControl
             case Commands.SaveList:
                 using (SaveFileDialog f = new()
                 {
-                    Title = "请输入需要保存文件列表的文件名",
+                    Title = "Please enter the file name that you need to save the file list",
                     Filter = Constants.FileExtensions.XmlFilter,
                     DefaultExt = Constants.FileExtensions.Xml
                 })
@@ -522,7 +527,7 @@ public partial class MergerControl : FunctionControl
                 IList l = _ItemList.SelectedObjects;
                 if (l.Count == 0)
                 {
-                    if (FormHelper.YesNoBox("是否清空文件列表？") == DialogResult.Yes)
+                    if (FormHelper.YesNoBox("Will it empty a list of files?") == DialogResult.Yes)
                     {
                         _ItemList.ClearObjects();
                         _itemsContainer.Items.Clear();
@@ -833,7 +838,8 @@ public partial class MergerControl : FunctionControl
                 continue;
             }
 
-            if (FormHelper.YesNoBox("选择的图片具有不同的设置，是否重置为统一的值？") == DialogResult.No)
+            if (FormHelper.YesNoBox("The selected picture has different settings, is it reset to a unified value?") ==
+                DialogResult.No)
             {
                 return;
             }
@@ -846,7 +852,7 @@ public partial class MergerControl : FunctionControl
             return;
         }
 
-        SourceItem.Image o = new(c > 1 ? (FilePath)(c + " 个文件") : s.FilePath);
+        SourceItem.Image o = new(c > 1 ? (FilePath)(c + "files") : s.FilePath);
         s.Cropping.CopyTo(o.Cropping);
         using SourceImageOptionForm f = new(o);
         if (f.ShowDialog() != DialogResult.OK)
@@ -944,7 +950,7 @@ public partial class MergerControl : FunctionControl
         }
     }
 
-    #region 拖放操作
+    #region Drag and drop operation
 
     private static void ItemList_CanDropFile(object sender, OlvDropEventArgs e)
     {
@@ -964,7 +970,8 @@ public partial class MergerControl : FunctionControl
             {
                 e.Handled = true;
                 e.Effect = DragDropEffects.Copy;
-                e.InfoMessage = string.Concat("添加目录", item, "到", child ? "所有子项" : string.Empty, after ? "后面" : "前面");
+                e.InfoMessage = string.Concat("Add directory", item, "to", child ? "all children" : string.Empty,
+                    after ? "behind" : "before");
                 return;
             }
 
@@ -977,7 +984,8 @@ public partial class MergerControl : FunctionControl
 
             e.Handled = true;
             e.Effect = DragDropEffects.Copy;
-            e.InfoMessage = string.Concat("添加文件", item, "到", child ? "所有子项" : string.Empty, after ? "后面" : "前面");
+            e.InfoMessage = string.Concat("Add file", item, "to", child ? "all children" : string.Empty,
+                after ? "behind" : "before");
             return;
         }
     }
@@ -1027,7 +1035,7 @@ public partial class MergerControl : FunctionControl
             if (si.Cast<SourceItem>().Any(item => al.IndexOf(item) != -1))
             {
                 e.Effect = DragDropEffects.None;
-                e.InfoMessage = "目标项不能是源项目的子项。";
+                e.InfoMessage = "The target item cannot be a child of the source project.";
                 return;
             }
         }
@@ -1049,7 +1057,8 @@ public partial class MergerControl : FunctionControl
         }
 
         e.Effect = copy ? DragDropEffects.Copy : DragDropEffects.Move;
-        e.InfoMessage = string.Concat(copy ? "复制" : "移动", "到", child ? "所有子项" : string.Empty, append ? "后面" : "前面");
+        e.InfoMessage = string.Concat(copy ? "copy" : "move", "to", child ? "all children" : string.Empty,
+            append ? "behind" : "before");
     }
 
     private void ItemList_Dropped(object sender, ModelDropEventArgs e)

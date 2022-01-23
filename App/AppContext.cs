@@ -250,7 +250,7 @@ internal static class AppContext
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("在保存程序设置时出错" + ex.Message);
+            FormHelper.ErrorBox("An error occurred while saving the program setting " + ex.Message);
         }
     }
 
@@ -285,31 +285,31 @@ internal static class AppContext
     public sealed class RecentItems
     {
         /// <summary>Get a list of recently used PDF files.</summary>
-        [JsonField("源文件")]
+        [JsonField("SourcePdfFiles")]
         public List<string> SourcePdfFiles { get; } = new();
 
         /// <summary>Get a list of recently used PDF output files.</summary>
-        [JsonField("输出文件")]
+        [JsonField("TargetPdfFiles")]
         public List<string> TargetPdfFiles { get; } = new();
 
         /// <summary>Get the list of recently used information files.</summary>
-        [JsonField("信息文件")]
+        [JsonField("InfoDocuments")]
         public List<string> InfoDocuments { get; } = new();
 
         /// <summary>Get the most recently used file name template list.</summary>
-        [JsonField("文件名模板")]
+        [JsonField("FileNameTemplates")]
         public List<string> FileNameTemplates { get; } = new();
 
         /// <summary>Get the most recently used folder list.</summary>
-        [JsonField("文件夹")]
+        [JsonField("Folder")]
         public List<string> Folders { get; } = new();
 
         /// <summary>Get the most recently used lookup string list.</summary>
-        [JsonField("查找项")]
+        [JsonField("SearchPatterns")]
         public List<string> SearchPatterns { get; } = new();
 
         /// <summary>Get the list of recently used replacement strings.</summary>
-        [JsonField("替换项")]
+        [JsonField("ReplacePatterns")]
         public List<string> ReplacePatterns { get; } = new();
 
         internal static void AddHistoryItem(IList<string> list, string item)

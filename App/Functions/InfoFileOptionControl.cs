@@ -185,7 +185,7 @@ public partial class InfoFileOptionControl : Form, IResettableControl
         }
         catch (Exception)
         {
-            FormHelper.ErrorBox("输入的编码无效。");
+            FormHelper.ErrorBox("The encoding input is invalid.");
             _EncodingBox.Text = Constants.Encoding.SystemDefault;
         }
     }

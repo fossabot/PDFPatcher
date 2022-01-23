@@ -41,7 +41,7 @@ public sealed class ShortcutFile
 
     /// <summary>Load shortcut.</summary>
     /// <param name="shortcutFilePath">The location of the shortcut file.</param>
-    /// <returns><see cref="ShortcutFile" /> 实例。</returns>
+    /// <returns><see cref="ShortcutFile" /> Instance.</returns>
     public static ShortcutFile Load(string shortcutFilePath)
     {
         ShortcutFile s = new();

@@ -6,7 +6,7 @@ internal sealed class LevelDownProcessor : IPdfInfoXmlProcessor
 {
     #region IInfoDocProcessor member
 
-    public string Name => "设置书签为子书签";
+    public string Name => "Set bookmark as a sub-bookmark";
 
     public IUndoAction Process(XmlElement item)
     {

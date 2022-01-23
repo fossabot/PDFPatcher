@@ -82,7 +82,7 @@ public partial class BookmarkEditorView : TreeListView
                 }
 
                 ReplaceTitleTextProcessor p = new(s);
-                Undo?.AddUndo("编辑书签文本", p.Process(e));
+                Undo?.AddUndo("Editor's text", p.Process(e));
             }
         };
         new TypedColumn<BookmarkElement>(BookmarkOpenColumn)
@@ -151,7 +151,7 @@ public partial class BookmarkEditorView : TreeListView
             string a = e.GetAttribute(Constants.DestinationAttributes.Action);
             if (string.IsNullOrEmpty(a))
             {
-                return e.HasAttribute(Constants.DestinationAttributes.Page) ? Constants.ActionType.Goto : "无";
+                return e.HasAttribute(Constants.DestinationAttributes.Page) ? Constants.ActionType.Goto : "None";
             }
 
             return a;
@@ -322,7 +322,7 @@ public partial class BookmarkEditorView : TreeListView
             }
         }
 
-        Undo?.AddUndo(copy ? "复制书签" : "移动书签", undo);
+        Undo?.AddUndo(copy ? "Copy bookmark" : "Move bookmark", undo);
         if (copy == false && spr || tpr)
         {
             Roots = (target.OwnerDocument as PdfInfoXmlDocument).BookmarkRoot.SubBookmarks;
@@ -559,7 +559,7 @@ public partial class BookmarkEditorView : TreeListView
         }
 
         ReplaceTitleTextProcessor p = new(e.Label);
-        Undo?.AddUndo("编辑书签文本", p.Process(o));
+        Undo?.AddUndo("Editor's text", p.Process(o));
         OLVListItem i = GetItem(e.Item);
         if (o.HasChildNodes && FormHelper.IsCtrlKeyDown == false)
         {
@@ -598,7 +598,7 @@ public partial class BookmarkEditorView : TreeListView
             return;
         }
 
-        Undo?.AddUndo("更改书签动作属性", form.UndoActions);
+        Undo?.AddUndo("Change bookmark action attribute", form.UndoActions);
         RefreshObject(bookmark);
     }
 
@@ -689,7 +689,7 @@ public partial class BookmarkEditorView : TreeListView
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("在匹配文本时出现错误：" + ex.Message);
+            FormHelper.ErrorBox("An error occurred while matching text:" + ex.Message);
         }
 
         Unfreeze();
@@ -744,7 +744,7 @@ public partial class BookmarkEditorView : TreeListView
             args.Handled = true;
             args.DropTargetLocation = DropTargetLocation.Background;
             args.Effect = DragDropEffects.Copy;
-            args.InfoMessage = "打开文件" + item;
+            args.InfoMessage = "open a file" + item;
             return;
         }
 
@@ -774,7 +774,7 @@ public partial class BookmarkEditorView : TreeListView
             if (si.Cast<XmlElement>().Any(item => IsAncestorOrSelf(item, ti)))
             {
                 e.Effect = DragDropEffects.None;
-                e.InfoMessage = "目标书签不能是源书签的子书签。";
+                e.InfoMessage = "Target bookmarks cannot be a sub-bookmark for source bookmarks.";
                 return;
             }
         }
@@ -796,7 +796,8 @@ public partial class BookmarkEditorView : TreeListView
         }
 
         e.Effect = copy ? DragDropEffects.Copy : DragDropEffects.Move;
-        e.InfoMessage = string.Concat(copy ? "复制" : "移动", "到", child ? "所有子书签" : string.Empty, append ? "后面" : "前面");
+        e.InfoMessage = string.Concat(copy ? "copy" : "move", "to", child ? "all child bookmarks" : string.Empty,
+            append ? "behind" : "before");
         base.OnModelCanDrop(e);
     }
 

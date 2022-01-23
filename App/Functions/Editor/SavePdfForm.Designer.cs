@@ -41,7 +41,7 @@
 			this._OkButton.Name = "_OkButton";
 			this._OkButton.Size = new System.Drawing.Size(75, 23);
 			this._OkButton.TabIndex = 0;
-			this._OkButton.Text = "确定(&Q)";
+			this._OkButton.Text = "OK (&Q)";
 			this._OkButton.UseVisualStyleBackColor = true;
 			this._OkButton.Click += new System.EventHandler(this._OkButton_Click);
 			//
@@ -53,7 +53,7 @@
 			this._CancelButton.Name = "_CancelButton";
 			this._CancelButton.Size = new System.Drawing.Size(75, 23);
 			this._CancelButton.TabIndex = 1;
-			this._CancelButton.Text = "取消(&X)";
+			this._CancelButton.Text = "Cancel (&X)";
 			this._CancelButton.UseVisualStyleBackColor = true;
 			this._CancelButton.Click += new System.EventHandler(this._CancelButton_Click);
 			//
@@ -64,7 +64,7 @@
 			this._MessageLabel.Name = "_MessageLabel";
 			this._MessageLabel.Size = new System.Drawing.Size(347, 12);
 			this._MessageLabel.TabIndex = 2;
-			this._MessageLabel.Text = "点击“确定”按钮，将书签编辑器的书签写入到目标 PDF 文档。";
+			this._MessageLabel.Text = "Click the \"OK\" button to write bookmarks of the bookmark editor to the target PDF document.";
 			//
 			// _SourceFileBox
 			//
@@ -88,7 +88,7 @@
 			this._ConfigButton.Name = "_ConfigButton";
 			this._ConfigButton.Size = new System.Drawing.Size(181, 23);
 			this._ConfigButton.TabIndex = 12;
-			this._ConfigButton.Text = "设置 P&DF 文件的修改方式";
+			this._ConfigButton.Text = "Set the modification method of the P&DF file";
 			this._ConfigButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._ConfigButton.UseVisualStyleBackColor = true;
 			//
@@ -99,7 +99,7 @@
 			this._OverwriteBox.Name = "_OverwriteBox";
 			this._OverwriteBox.Size = new System.Drawing.Size(126, 16);
 			this._OverwriteBox.TabIndex = 13;
-			this._OverwriteBox.Text = "覆盖原始 PDF 文件";
+			this._OverwriteBox.Text = "Cover the original PDF file";
 			this._OverwriteBox.UseVisualStyleBackColor = true;
 			//
 			// SavePdfForm
@@ -121,7 +121,7 @@
 			this.MinimizeBox = false;
 			this.Name = "SavePdfForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "保存PDF文件";
+			this.Text = "Save PDF files";
 			this.Load += new System.EventHandler(this.ImportBookmarkForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

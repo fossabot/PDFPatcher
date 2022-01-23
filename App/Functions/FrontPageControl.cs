@@ -18,13 +18,13 @@ internal sealed partial class FrontPageControl : HtmlPageControl
     public FrontPageControl()
     {
         InitializeComponent();
-        Text = "主页";
+        Text = "Homepage";
         RefreshContent();
         RecentFileItemClicked = (_, args) => { AppContext.MainForm.OpenFileWithEditor(args.ClickedItem.ToolTipText); };
         AllowDrop = true;
     }
 
-    public override string FunctionName => "主页";
+    public override string FunctionName => "Homepage";
 
     public override Bitmap IconImage => Resources.HomePage;
 

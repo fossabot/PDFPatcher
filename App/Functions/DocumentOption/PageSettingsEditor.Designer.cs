@@ -70,7 +70,7 @@
 			//
 			this._RotateZeroMenuItem.Name = "_RotateZeroMenuItem";
 			this._RotateZeroMenuItem.Size = new System.Drawing.Size(149, 22);
-			this._RotateZeroMenuItem.Text = "保持不变(&B)";
+			this._RotateZeroMenuItem.Text = "constant(&B)";
 			//
 			// _PageSettingsBox
 			//
@@ -104,28 +104,28 @@
 			//
 			// _SequenceColumn
 			//
-			this._SequenceColumn.IsEditable = false;
-			this._SequenceColumn.Text = "序号";
-			this._SequenceColumn.Width = 40;
-			//
-			// _PageRangeColumn
-			//
-			this._PageRangeColumn.AspectName = "";
-			this._PageRangeColumn.Text = "页码范围";
-			this._PageRangeColumn.Width = 82;
-			//
-			// _PageFilterColumn
-			//
-			this._PageFilterColumn.AspectName = "";
-			this._PageFilterColumn.IsEditable = false;
-			this._PageFilterColumn.Text = "筛选页面";
-			this._PageFilterColumn.Width = 61;
-			//
-			// _SettingsColumn
-			//
-			this._SettingsColumn.IsEditable = false;
-			this._SettingsColumn.Text = "处理方式";
-			this._SettingsColumn.Width = 214;
+this._SequenceColumn.IsEditable = false;
+this._SequenceColumn.Text = "Sequence Number";
+this._SequenceColumn.Width = 40;
+//
+// _PageRangeColumn
+//
+this._PageRangeColumn.AspectName = "";
+this._PageRangeColumn.Text = "Page Range";
+this._PageRangeColumn.Width = 82;
+//
+// _PageFilterColumn
+//
+this._PageFilterColumn.AspectName = "";
+this._PageFilterColumn.IsEditable = false;
+this._PageFilterColumn.Text = "Filter page";
+this._PageFilterColumn.Width = 61;
+//
+// _SettingsColumn
+//
+this._SettingsColumn.IsEditable = false;
+this._SettingsColumn.Text = "Processing";
+this._SettingsColumn.Width = 214;
 			//
 			// _PageRangeFilterTypeMenu
 			//
@@ -145,35 +145,35 @@
 			this._AllPagesMenu.Image = global::PDFPatcher.Properties.Resources.Copy;
 			this._AllPagesMenu.Name = "_AllPagesMenu";
 			this._AllPagesMenu.Size = new System.Drawing.Size(141, 22);
-			this._AllPagesMenu.Text = "所有页面(&Y)";
+			this._AllPagesMenu.Text = "&All Pages";
 			//
 			// _OddPagesMenu
 			//
 			this._OddPagesMenu.Image = global::PDFPatcher.Properties.Resources.OddPage;
 			this._OddPagesMenu.Name = "_OddPagesMenu";
 			this._OddPagesMenu.Size = new System.Drawing.Size(141, 22);
-			this._OddPagesMenu.Text = "单数页(&D)";
+			this._OddPagesMenu.Text = "&Oddpages";
 			//
 			// _EvenPagesMenu
 			//
 			this._EvenPagesMenu.Image = global::PDFPatcher.Properties.Resources.EvenPage;
 			this._EvenPagesMenu.Name = "_EvenPagesMenu";
 			this._EvenPagesMenu.Size = new System.Drawing.Size(141, 22);
-			this._EvenPagesMenu.Text = "双数页(&S)";
+			this._EvenPagesMenu.Text = "&EvenPages";
 			//
 			// _PortraitPagesMenu
 			//
 			this._PortraitPagesMenu.Image = global::PDFPatcher.Properties.Resources.Portrait;
 			this._PortraitPagesMenu.Name = "_PortraitPagesMenu";
 			this._PortraitPagesMenu.Size = new System.Drawing.Size(141, 22);
-			this._PortraitPagesMenu.Text = "纵向页面(&Z)";
+			this._PortraitPagesMenu.Text = "&Portrait page";
 			//
-			// _LandscapePagesMenu
+			//_LandscapePagesMenu
 			//
 			this._LandscapePagesMenu.Image = global::PDFPatcher.Properties.Resources.Lanscape;
 			this._LandscapePagesMenu.Name = "_LandscapePagesMenu";
 			this._LandscapePagesMenu.Size = new System.Drawing.Size(141, 22);
-			this._LandscapePagesMenu.Text = "横向页面(&H)";
+			this._LandscapePagesMenu.Text = "&Landscape Pages";
 			//
 			// _PageSettingsMenu
 			//
@@ -191,28 +191,28 @@
             this._Rotate180MenuItem});
 			this._RotateMenu.Name = "_RotateMenu";
 			this._RotateMenu.Size = new System.Drawing.Size(140, 22);
-			this._RotateMenu.Text = "旋转页面(&X)";
+			this._RotateMenu.Text = "&Rotate the page";
 			//
 			// _RotateLeftMenuItem
 			//
 			this._RotateLeftMenuItem.Image = global::PDFPatcher.Properties.Resources.RotateLeft;
 			this._RotateLeftMenuItem.Name = "_RotateLeftMenuItem";
 			this._RotateLeftMenuItem.Size = new System.Drawing.Size(149, 22);
-			this._RotateLeftMenuItem.Text = "左转 90 度(&Z)";
+			this._RotateLeftMenuItem.Text = "Rotate &left 90 degrees";
 			//
 			// _RotateRightMenuItem
 			//
 			this._RotateRightMenuItem.Image = global::PDFPatcher.Properties.Resources.RotateRight;
 			this._RotateRightMenuItem.Name = "_RotateRightMenuItem";
 			this._RotateRightMenuItem.Size = new System.Drawing.Size(149, 22);
-			this._RotateRightMenuItem.Text = "右转 90 度(&Y)";
+			this._RotateRightMenuItem.Text = "Rotate &right 90 degrees";
 			//
 			// _Rotate180MenuItem
 			//
 			this._Rotate180MenuItem.Image = global::PDFPatcher.Properties.Resources.Refresh;
 			this._Rotate180MenuItem.Name = "_Rotate180MenuItem";
 			this._Rotate180MenuItem.Size = new System.Drawing.Size(149, 22);
-			this._Rotate180MenuItem.Text = "旋转 180 度";
+			this._Rotate180MenuItem.Text = "Rotate 180 degrees";
 			//
 			// _RemoveButton
 			//
@@ -222,7 +222,7 @@
 			this._RemoveButton.Name = "_RemoveButton";
 			this._RemoveButton.Size = new System.Drawing.Size(53, 23);
 			this._RemoveButton.TabIndex = 5;
-			this._RemoveButton.Text = "删除";
+			this._RemoveButton.Text = "Remove";
 			this._RemoveButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._RemoveButton.UseVisualStyleBackColor = true;
 			this._RemoveButton.Click += new System.EventHandler(this._RemovePageSettingsButton_Click);
@@ -235,7 +235,7 @@
 			this._AddButton.Name = "_AddButton";
 			this._AddButton.Size = new System.Drawing.Size(53, 23);
 			this._AddButton.TabIndex = 4;
-			this._AddButton.Text = "添加";
+			this._AddButton.Text = "Add";
 			this._AddButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._AddButton.UseVisualStyleBackColor = true;
 			this._AddButton.Click += new System.EventHandler(this._AddPageSettingsButton_Click);

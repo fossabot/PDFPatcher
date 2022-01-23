@@ -23,17 +23,26 @@ public partial class AutoBookmarkControl : FunctionControl, IResettableControl
     {
         InitializeComponent();
         //this.Icon = FormHelper.ToIcon (Properties.Resources.ExportInfoFile);
-        AppContext.MainForm.SetTooltip(_SourceFileControl.FileList, "需要识别标题为书签的 PDF 源文件路径");
-        AppContext.MainForm.SetTooltip(_BookmarkControl.FileList, "指定识别书签后生成的信息文件或简易文本书签文件路径");
-        AppContext.MainForm.SetTooltip(_ExportBookmarkButton, "点击此按钮识别 PDF 文件的标题为信息文件");
-        AppContext.MainForm.SetTooltip(_TitleSizeThresholdBox, "指定标题文本的最小尺寸，小于此尺寸的文本将被忽略");
-        AppContext.MainForm.SetTooltip(_AutoHierarchicleArrangementBox, "根据标题文本的尺寸级别生成多层次的书签");
-        AppContext.MainForm.SetTooltip(_YOffsetBox, "将标题的定位位置向上偏移的行距");
-        AppContext.MainForm.SetTooltip(_MergeAdjacentTitlesBox, "将连续出现的标题合并为一个标题");
-        AppContext.MainForm.SetTooltip(_MergeDifferentSizeTitlesBox, "合并不同尺寸的相邻标题");
-        AppContext.MainForm.SetTooltip(_GoToPageTopLevelBox, "小于指定层数的标题定位到页首，而非所在精确位置");
-        AppContext.MainForm.SetTooltip(_IgnoreOverlappedTextBox, "忽略用于制作粗体、阴影等效果的重叠文本");
-        AppContext.MainForm.SetTooltip(_CreateBookmarkForFirstPageBox, "生成一个书签指向文档的第一页，书签文本为 PDF 文件的名称");
+        AppContext.MainForm.SetTooltip(_SourceFileControl.FileList,
+            "Need to identify the PDF source file path titled bookmark");
+        AppContext.MainForm.SetTooltip(_BookmarkControl.FileList,
+            "Specify the path of the information file or simple text bookmark file generated after bookmark recognition");
+        AppContext.MainForm.SetTooltip(_ExportBookmarkButton,
+            "Click this button to identify the title of the PDF file as an information file");
+        AppContext.MainForm.SetTooltip(_TitleSizeThresholdBox,
+            "Specify the minimum size of the title text, text smaller than this size will be ignored");
+        AppContext.MainForm.SetTooltip(_AutoHierarchicleArrangementBox,
+            "Generate multi-level bookmarks according to the size level of the title text");
+        AppContext.MainForm.SetTooltip(_YOffsetBox,
+            "The line spacing to offset the positioning position of the title up");
+        AppContext.MainForm.SetTooltip(_MergeAdjacentTitlesBox, "Merge consecutive titles into one title");
+        AppContext.MainForm.SetTooltip(_MergeDifferentSizeTitlesBox, "Merge adjacent titles of different sizes");
+        AppContext.MainForm.SetTooltip(_GoToPageTopLevelBox,
+            "Titles smaller than the specified number of layers are positioned at the top of the page, not at the exact location");
+        AppContext.MainForm.SetTooltip(_IgnoreOverlappedTextBox,
+            "Ignore overlapping text used to make bold, shadow, etc.");
+        AppContext.MainForm.SetTooltip(_CreateBookmarkForFirstPageBox,
+            "Generate a bookmark pointing to the first page of the document, the bookmark text is the name of the PDF file");
         AppContext.MainForm.SetTooltip(_PageRangeBox, Messages.PageRanges);
 
         int i = 0;
@@ -97,7 +106,7 @@ public partial class AutoBookmarkControl : FunctionControl, IResettableControl
         }
     }
 
-    public override string FunctionName => "自动生成书签";
+    public override string FunctionName => "Automatically generate bookmarks";
 
     public override Bitmap IconImage => Resources.AutoBookmark;
 
@@ -271,12 +280,12 @@ public partial class AutoBookmarkControl : FunctionControl, IResettableControl
     private void ControlEvent(object sender, EventArgs e)
     {
         if (sender == _DeleteAdjustmentButton && _LevelAdjustmentBox.Items.Count > 0 &&
-            FormHelper.YesNoBox("是否删除选中的项？") == DialogResult.Yes)
+            FormHelper.YesNoBox("Do you want to delete the selected item?") == DialogResult.Yes)
         {
             _LevelAdjustmentBox.RemoveObjects(_LevelAdjustmentBox.SelectedObjects);
         }
         else if (sender == _ClearTextFiltersButton && _IgnorePatternsBox.Rows.Count > 0 &&
-                 FormHelper.YesNoBox("是否清空文本过滤列表？") == DialogResult.Yes)
+                 FormHelper.YesNoBox("Do you wan to clear the text filters?") == DialogResult.Yes)
         {
             _IgnorePatternsBox.Rows.Clear();
         }
@@ -320,7 +329,7 @@ public partial class AutoBookmarkControl : FunctionControl, IResettableControl
             {
                 if (_BookmarkControl.FileDialog.ShowDialog() != DialogResult.OK)
                 {
-                    FormHelper.InfoBox("请先指定信息文件的路径。");
+                    FormHelper.InfoBox("Please specify the path to the information file.");
                     return;
                 }
 
@@ -336,13 +345,13 @@ public partial class AutoBookmarkControl : FunctionControl, IResettableControl
             }
             catch (Exception ex)
             {
-                FormHelper.ErrorBox("无法从信息文件加载字体信息。" + ex.Message);
+                FormHelper.ErrorBox("Unable to load font information from the information file." + ex.Message);
                 return;
             }
 
             if (fontInfo == null)
             {
-                FormHelper.ErrorBox("无法从信息文件加载字体信息。");
+                FormHelper.ErrorBox("Unable to load font information from the information file.");
                 return;
             }
 

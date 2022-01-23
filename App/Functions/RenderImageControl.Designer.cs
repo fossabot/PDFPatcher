@@ -94,11 +94,11 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size (65, 12);
 			this.label3.TabIndex = 0;
-			this.label3.Text = "页码范围：";
+			this.label3.Text = "Page size range:";
 			//
 			// _SaveImageBox
 			//
-			this._SaveImageBox.Description = "请选择保存图片的文件夹";
+			this._SaveImageBox.Description = "Please select a folder that saves the image";
 			//
 			// label4
 			//
@@ -107,7 +107,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size (89, 12);
 			this.label4.TabIndex = 2;
-			this.label4.Text = "输出图片位置：";
+			this.label4.Text = "Output picture location:";
 			//
 			// label2
 			//
@@ -116,7 +116,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size (77, 12);
 			this.label2.TabIndex = 0;
-			this.label2.Text = "文件名掩码：";
+			this.label2.Text = "File name mask:";
 			//
 			// label5
 			//
@@ -125,7 +125,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size (77, 12);
 			this.label5.TabIndex = 2;
-			this.label5.Text = "文件名示例：";
+			this.label5.Text = "File name example:";
 			//
 			// _FileMaskPreviewBox
 			//
@@ -145,7 +145,7 @@
             "0000",
             "000",
             "0",
-            "图片0000"});
+            "Picture 0000"});
 			this._FileNameMaskBox.Location = new System.Drawing.Point (93, 6);
 			this._FileNameMaskBox.Name = "_FileNameMaskBox";
 			this._FileNameMaskBox.Size = new System.Drawing.Size (244, 20);
@@ -157,18 +157,18 @@
 			this.label6.Location = new System.Drawing.Point (46, 30);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size (522, 38);
-			this.label6.TabIndex = 2;
-			this.label6.Text = "用“-”表示起止页码。多个页码可用“;”、“,”或“ ”（空格）隔开，如“1;4-15;2 56”，表示依次提取第1页、第4至15页、第2页和第56页的内容。不指" +
-				"定页码时提取源文件所有页面的内容。";
-			//
-			// _InvertColorBox
-			//
-			this._InvertColorBox.AutoSize = true;
-			this._InvertColorBox.Location = new System.Drawing.Point (10, 48);
-			this._InvertColorBox.Name = "_InvertColorBox";
-			this._InvertColorBox.Size = new System.Drawing.Size (108, 16);
-			this._InvertColorBox.TabIndex = 3;
-			this._InvertColorBox.Text = "反转图片的颜色";
+this.label6.TabIndex = 2;
+this.label6.Text = "Use \"-\" to indicate the starting and ending page numbers. Multiple page numbers can be separated by \";\", \",\" or \" \" (space), such as \"1;4-15;2 56\", which means to extract sequentially Contents on pages 1, 4 to 15, 2 and 56. Do not refer to " +
+"Extract the content of all pages of the source file when setting page numbers.";
+//
+// _InvertColorBox
+//
+this._InvertColorBox.AutoSize = true;
+this._InvertColorBox.Location = new System.Drawing.Point(10, 48);
+this._InvertColorBox.Name = "_InvertColorBox";
+this._InvertColorBox.Size = new System.Drawing.Size (108, 16);
+this._InvertColorBox.TabIndex = 3;
+this._InvertColorBox.Text = "Invert the color of the image";
 			this._InvertColorBox.UseVisualStyleBackColor = true;
 			//
 			// tabControl1
@@ -201,7 +201,7 @@
 			this.tabPage1.Padding = new System.Windows.Forms.Padding (3);
 			this.tabPage1.Size = new System.Drawing.Size (577, 203);
 			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "选项";
+			this.tabPage1.Text = "Option";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			//
 			// groupBox3
@@ -216,17 +216,17 @@
 			this.groupBox3.Size = new System.Drawing.Size (179, 100);
 			this.groupBox3.TabIndex = 10;
 			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "其它";
+			this.groupBox3.Text = "Other";
 			//
 			// _RotationBox
 			//
 			this._RotationBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this._RotationBox.FormattingEnabled = true;
 			this._RotationBox.Items.AddRange (new object[] {
-            "不旋转",
-            "顺时针90度",
-            "180度",
-            "逆时针90度"});
+      "Do not rotate",
+            "Clockwise 90 degrees",
+            "180 degree",
+            "Counterclockwise 90 degrees"});
 			this._RotationBox.Location = new System.Drawing.Point (76, 20);
 			this._RotationBox.Name = "_RotationBox";
 			this._RotationBox.Size = new System.Drawing.Size (86, 20);
@@ -239,7 +239,7 @@
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size (65, 12);
 			this.label9.TabIndex = 0;
-			this.label9.Text = "旋转角度：";
+			this.label9.Text = "Rotation angle:";
 			//
 			// _HorizontalFlipImageBox
 			//
@@ -248,7 +248,7 @@
 			this._HorizontalFlipImageBox.Name = "_HorizontalFlipImageBox";
 			this._HorizontalFlipImageBox.Size = new System.Drawing.Size (72, 16);
 			this._HorizontalFlipImageBox.TabIndex = 2;
-			this._HorizontalFlipImageBox.Text = "水平翻转";
+			this._HorizontalFlipImageBox.Text = "horizontal flip";
 			this._HorizontalFlipImageBox.UseVisualStyleBackColor = true;
 			//
 			// _HideAnnotationsBox
@@ -258,7 +258,7 @@
 			this._HideAnnotationsBox.Name = "_HideAnnotationsBox";
 			this._HideAnnotationsBox.Size = new System.Drawing.Size (96, 16);
 			this._HideAnnotationsBox.TabIndex = 4;
-			this._HideAnnotationsBox.Text = "隐藏批注内容";
+			this._HideAnnotationsBox.Text = "Hidden comment content";
 			this._HideAnnotationsBox.UseVisualStyleBackColor = true;
 			//
 			// _VerticalFlipImageBox
@@ -268,7 +268,7 @@
 			this._VerticalFlipImageBox.Name = "_VerticalFlipImageBox";
 			this._VerticalFlipImageBox.Size = new System.Drawing.Size (72, 16);
 			this._VerticalFlipImageBox.TabIndex = 3;
-			this._VerticalFlipImageBox.Text = "垂直翻转";
+			this._VerticalFlipImageBox.Text = "Vertical flip";
 			this._VerticalFlipImageBox.UseVisualStyleBackColor = true;
 			//
 			// groupBox2
@@ -287,7 +287,7 @@
 			this.groupBox2.Size = new System.Drawing.Size (179, 100);
 			this.groupBox2.TabIndex = 9;
 			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "输出图片尺寸";
+			this.groupBox2.Text = "Output picture size";
 			//
 			// _ResolutionBox
 			//
@@ -315,7 +315,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size (53, 12);
 			this.label1.TabIndex = 6;
-			this.label1.Text = "分辨率：";
+			this.label1.Text = "Resolution:";
 			//
 			// label12
 			//
@@ -324,7 +324,7 @@
 			this.label12.Name = "label12";
 			this.label12.Size = new System.Drawing.Size (17, 12);
 			this.label12.TabIndex = 5;
-			this.label12.Text = "倍";
+			this.label12.Text = "Multiplication";
 			//
 			// _ExtractPageImageWidthBox
 			//
@@ -387,7 +387,7 @@
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size (29, 12);
 			this.label10.TabIndex = 2;
-			this.label10.Text = "像素";
+			this.label10.Text = "Pixel";
 			//
 			// _SpecificRatioBox
 			//
@@ -397,7 +397,7 @@
 			this._SpecificRatioBox.Size = new System.Drawing.Size (71, 16);
 			this._SpecificRatioBox.TabIndex = 3;
 			this._SpecificRatioBox.TabStop = true;
-			this._SpecificRatioBox.Text = "指定比例";
+			this._SpecificRatioBox.Text = "Specified ratio";
 			this._SpecificRatioBox.UseVisualStyleBackColor = true;
 			//
 			// _SpecificWidthBox
@@ -408,7 +408,7 @@
 			this._SpecificWidthBox.Size = new System.Drawing.Size (71, 16);
 			this._SpecificWidthBox.TabIndex = 0;
 			this._SpecificWidthBox.TabStop = true;
-			this._SpecificWidthBox.Text = "指定宽度";
+			this._SpecificWidthBox.Text = "Specify width";
 			this._SpecificWidthBox.UseVisualStyleBackColor = true;
 			//
 			// groupBox1
@@ -423,7 +423,7 @@
 			this.groupBox1.Size = new System.Drawing.Size (179, 100);
 			this.groupBox1.TabIndex = 8;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "颜色";
+			this.groupBox1.Text = "color";
 			//
 			// _ColorSpaceRgbBox
 			//
@@ -433,7 +433,7 @@
 			this._ColorSpaceRgbBox.Size = new System.Drawing.Size (47, 16);
 			this._ColorSpaceRgbBox.TabIndex = 1;
 			this._ColorSpaceRgbBox.TabStop = true;
-			this._ColorSpaceRgbBox.Text = "彩色";
+			this._ColorSpaceRgbBox.Text = "color";
 			this._ColorSpaceRgbBox.UseVisualStyleBackColor = true;
 			//
 			// label8
@@ -443,7 +443,7 @@
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size (41, 12);
 			this.label8.TabIndex = 0;
-			this.label8.Text = "颜色：";
+			this.label8.Text = "color:";
 			//
 			// _QuantizeBox
 			//
@@ -452,7 +452,7 @@
 			this._QuantizeBox.Name = "_QuantizeBox";
 			this._QuantizeBox.Size = new System.Drawing.Size (108, 16);
 			this._QuantizeBox.TabIndex = 4;
-			this._QuantizeBox.Text = "减少图片的颜色";
+			this._QuantizeBox.Text = "Reduce the color of the picture";
 			this._QuantizeBox.UseVisualStyleBackColor = true;
 			//
 			// _ColorSpaceGrayBox
@@ -463,7 +463,7 @@
 			this._ColorSpaceGrayBox.Size = new System.Drawing.Size (47, 16);
 			this._ColorSpaceGrayBox.TabIndex = 2;
 			this._ColorSpaceGrayBox.TabStop = true;
-			this._ColorSpaceGrayBox.Text = "灰度";
+			this._ColorSpaceGrayBox.Text = "Grayscale";
 			this._ColorSpaceGrayBox.UseVisualStyleBackColor = true;
 			//
 			// label11
@@ -473,7 +473,7 @@
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size (89, 12);
 			this.label11.TabIndex = 5;
-			this.label11.Text = "JPEG图片质量：";
+			this.label11.Text = "JPEG picture quality:";
 			//
 			// label7
 			//
@@ -482,7 +482,7 @@
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size (89, 12);
 			this.label7.TabIndex = 3;
-			this.label7.Text = "输出图片格式：";
+			this.label7.Text = "Output picture format:";
 			//
 			// _JpegQualityBox
 			//
@@ -505,7 +505,7 @@
 			this._ImageFormatBox.Items.AddRange (new object[] {
             "PNG",
             "JPEG",
-			"黑白TIFF"});
+			"Black and white TIFF"});
 			this._ImageFormatBox.Location = new System.Drawing.Point (101, 71);
 			this._ImageFormatBox.Name = "_ImageFormatBox";
 			this._ImageFormatBox.Size = new System.Drawing.Size (78, 20);
@@ -522,7 +522,7 @@
 			this.tabPage2.Padding = new System.Windows.Forms.Padding (3);
 			this.tabPage2.Size = new System.Drawing.Size (577, 203);
 			this.tabPage2.TabIndex = 1;
-			this.tabPage2.Text = "文件命名";
+			this.tabPage2.Text = "Document name";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			//
 			// _AutoOutputDirBox
@@ -532,7 +532,7 @@
 			this._AutoOutputDirBox.Name = "_AutoOutputDirBox";
 			this._AutoOutputDirBox.Size = new System.Drawing.Size (156, 16);
 			this._AutoOutputDirBox.TabIndex = 5;
-			this._AutoOutputDirBox.Text = "自动指定输出图片的位置";
+			this._AutoOutputDirBox.Text = "Automatically specify the location of the output picture";
 			this._AutoOutputDirBox.UseVisualStyleBackColor = true;
 			//
 			// _BrowseTargetPdfButton
@@ -543,7 +543,7 @@
 			this._BrowseTargetPdfButton.Name = "_BrowseTargetPdfButton";
 			this._BrowseTargetPdfButton.Size = new System.Drawing.Size (75, 23);
 			this._BrowseTargetPdfButton.TabIndex = 4;
-			this._BrowseTargetPdfButton.Text = "浏览...";
+			this._BrowseTargetPdfButton.Text = "Browse...";
 			this._BrowseTargetPdfButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._BrowseTargetPdfButton.UseVisualStyleBackColor = true;
 			this._BrowseTargetPdfButton.Click += new System.EventHandler (this._BrowseTargetPdfButton_Click);
@@ -586,7 +586,7 @@
 			this._ExtractButton.ShowFocusBorder = true;
 			this._ExtractButton.Size = new System.Drawing.Size (123, 29);
 			this._ExtractButton.TabIndex = 14;
-			this._ExtractButton.Text = " 转换图片(&T)";
+			this._ExtractButton.Text = "&Extract Image";
 			this._ExtractButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._ExtractButton.Click += new System.EventHandler (this._ExtractButton_Click);
 			//
@@ -601,7 +601,7 @@
 			this.Controls.Add (this.label4);
 			this.Controls.Add (this._SourceFileControl);
 			this.Controls.Add (this._BrowseTargetPdfButton);
-			this.Font = new System.Drawing.Font ("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.Font = new System.Drawing.Font ("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.Name = "RenderImageControl";
 			this.Size = new System.Drawing.Size (612, 333);
 			this.Load += new System.EventHandler (this.Control_Show);

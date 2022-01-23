@@ -29,12 +29,12 @@ internal sealed class PdfDocumentCreator
     {
         new(PaperSize.AsPageSize, 0, 0), new(PaperSize.FixedWidthAutoHeight, 0, 0),
         new(PaperSize.AsWidestPage, 0, 0), new(PaperSize.AsNarrowestPage, 0, 0), new(PaperSize.AsLargestPage, 0, 0),
-        new(PaperSize.AsSmallestPage, 0, 0), new("16 开 (18.4*26.0)", 1840, 2601),
-        new("32 开 (13.0*18.4)", 1300, 1840), new("大 32 开 (14.0*20.3)", 1400, 2030),
-        new("A4 (21.0*29.7)", 2100, 2970), new("A3 (29.7*42.0)", 2971, 4201), new("自定义", 0, 0),
-        new("————————————", 0, 0), new("8 开 (26.0*36.8)", 2601, 3681), new("16 开 (18.4*26.0)", 1840, 2601),
-        new("大 16 开 (21.0*28.5)", 2100, 2851), new("32 开 (13.0*18.4)", 1300, 1840),
-        new("大 32 开 (14.0*20.3)", 1400, 2030), new("8 K (27.3*39.3)", 2731, 3931),
+        new(PaperSize.AsSmallestPage, 0, 0), new("16 open (18.4*26.0)", 1840, 2601),
+        new("32K (13.0*18.4)", 1300, 1840), new("Large 32K (14.0*20.3)", 1400, 2030),
+        new("A4 (21.0*29.7)", 2100, 2970), new("A3 (29.7*42.0)", 2971, 4201), new("Custom", 0, 0),
+        new("————————————", 0, 0), new("8 open(26.0*36.8)", 2601, 3681), new("16 open(18.4*26.0)", 1840, 2601),
+        new("Large 16K (21.0*28.5)", 2100, 2851), new("32K (13.0*18.4)", 1300, 1840),
+        new("Large 32 K (14.0*20.3)", 1400, 2030), new("8 K (27.3*39.3)", 2731, 3931),
         new("16 K (19.6*27.3)", 1960, 2731), new("A0 (84.1*118.9)", 8410, 11890), new("A1 (59.4*84.1)", 5940, 8410),
         new("A2 (42.0*59.4)", 4200, 5940), new("A3 (29.7*42.0)", 2971, 4201), new("A4 (21.0*29.7)", 2100, 2971),
         new("A5 (14.8*21.0)", 1480, 2100), new("A6 (10.5*14.8)", 1050, 1480), new("B0 (100.0*141.3)", 10000, 14130),
@@ -103,22 +103,22 @@ internal sealed class PdfDocumentCreator
         switch (sourceFile.Type)
         {
             case SourceItem.ItemType.Empty:
-                Tracker.TraceMessage("添加空白页。");
+                Tracker.TraceMessage("Add a blank page.");
                 AddEmptyPage();
                 SetBookmarkAction(b);
                 break;
             case SourceItem.ItemType.Pdf:
-                Tracker.TraceMessage("添加文档：" + sourceFile);
+                Tracker.TraceMessage("Add document: " + sourceFile);
                 AddPdfPages(sourceFile as SourceItem.Pdf, b);
                 Tracker.IncrementProgress(sourceFile.FileSize);
                 break;
             case SourceItem.ItemType.Image:
-                Tracker.TraceMessage("添加图片：" + sourceFile);
+                Tracker.TraceMessage("Add image: " + sourceFile);
                 AddImagePage(sourceFile, b);
                 Tracker.IncrementProgress(sourceFile.FileSize);
                 break;
             case SourceItem.ItemType.Folder:
-                Tracker.TraceMessage("添加文件夹：" + sourceFile);
+                Tracker.TraceMessage("Add folder: " + sourceFile);
                 break;
         }
 
@@ -178,7 +178,7 @@ internal sealed class PdfDocumentCreator
 
             if (image == null)
             {
-                Tracker.TraceMessage("无法添加文件：" + source.FilePath);
+                Tracker.TraceMessage("Unable to add files:" + source.FilePath);
             }
             else
             {
@@ -229,13 +229,13 @@ internal sealed class PdfDocumentCreator
     {
         if (_content.SpecialSize is SpecialPaperSize.None or SpecialPaperSize.AsSpecificPage)
         {
-            // 插入空白页
+            // Insert blank page
             _doc.NewPage();
             _writer.PageEmpty = false;
         }
         else
         {
-            Tracker.TraceMessage("没有指定页面尺寸，无法插入空白页。");
+            Tracker.TraceMessage("No page size is specified, you cannot insert a blank page.");
         }
     }
 
@@ -244,7 +244,7 @@ internal sealed class PdfDocumentCreator
         PdfReader pdf = _sink.GetPdfReader(sourceFile.FilePath);
         if (pdf.ConfirmUnethicalMode() == false)
         {
-            Tracker.TraceMessage("忽略了没有权限处理的文件：" + sourceFile.FilePath);
+            Tracker.TraceMessage("Ignore the file with no permission processing:" + sourceFile.FilePath);
             if (_sink.DecrementReference(sourceFile.FilePath) < 1)
             {
                 pdf.Close();
@@ -255,7 +255,7 @@ internal sealed class PdfDocumentCreator
 
         PageRangeCollection ranges = PageRangeCollection.Parse(sourceFile.PageRanges, 1, pdf.NumberOfPages, true);
         int[] pageRemapper = new int[pdf.NumberOfPages + 1];
-        // 统一页面旋转角度
+        // Unified page rotation angle
         if (_option.UnifyPageOrientation)
         {
             bool rv = _option.RotateVerticalPages;
@@ -308,10 +308,10 @@ internal sealed class PdfDocumentCreator
             pdf.ConsolidateNamedDestinations();
         }
 
-        byte[] pp = new byte[pdf.NumberOfPages + 1]; // 已处理过的页面
+        byte[] pp = new byte[pdf.NumberOfPages + 1]; // Processable page
         CoordinateTranslationSettings[] cts = _pageSettings.PaperSize.SpecialSize != SpecialPaperSize.AsPageSize
             ? new CoordinateTranslationSettings[pdf.NumberOfPages + 1]
-            : null; // 页面的位置偏移量
+            : null; // Page position offset
         foreach (int i in ranges.SelectMany(r => r))
         {
             if (i < 1 || i > pn)
@@ -476,7 +476,7 @@ internal sealed class PdfDocumentCreator
                 ProcessInfoItem(ce, processors);
             }
 
-            if (c.ParentNode == null) // 节点在处理过程中被删除
+            if (c.ParentNode == null) // The node is deleted during processing
                                       //while (c.HasChildNodes) {
                                       //    var cc = c.FirstChild as XmlElement;
                                       //    if (cc == null ||
@@ -542,9 +542,9 @@ internal sealed class PdfDocumentCreator
 
         ext = ext.ToLowerInvariant();
         using FreeImageBitmap fi = new(sourceFile.FilePath);
-        if (fi.Height < cropOptions.MinHeight // 不满足尺寸限制
+        if (fi.Height < cropOptions.MinHeight // Do not meet dimensional limitations
             || fi.Width < cropOptions.MinWidth
-            || fi.Height <= cropOptions.Top + cropOptions.Bottom // 裁剪后尺寸小于 0
+            || fi.Height <= cropOptions.Top + cropOptions.Bottom // Cropped size less than 0
             || fi.Width <= cropOptions.Left + cropOptions.Right
            )
         {
@@ -622,12 +622,12 @@ internal sealed class PdfDocumentCreator
             default:
                 {
                     if (_autoRotate
-                        && ( // 页面不足以放下当前尺寸的图片
+                        && ( // Page is not enough to put down the picture of the current size
                             (image.ScaledHeight > _content.Height || image.ScaledWidth > _content.Width)
                             && (image.ScaledWidth > image.ScaledHeight && _portrait
                                 || image.ScaledHeight > image.ScaledWidth && _portrait == false)
                             ||
-                            // 图片较小，可以还原为原始的页面方向
+                            // The picture is small, you can restore the original page direction
                             _portrait != _option.ContentHeight > _option.ContentWidth
                             && image.ScaledHeight <= _content.Height && image.ScaledWidth <= _content.Width
                             && image.ScaledHeight <= _content.Width && image.ScaledWidth <= _content.Height
@@ -717,9 +717,9 @@ internal sealed class PdfDocumentCreator
         using (MemoryStream ms = new())
         {
             if (cropOptions.NeedCropping
-                && (fi.Height < cropOptions.MinHeight // 不满足尺寸限制
+                && (fi.Height < cropOptions.MinHeight // Do not meet dimensional limitations
                     || fi.Width < cropOptions.MinWidth
-                    || fi.Height <= cropOptions.Top + cropOptions.Bottom // 裁剪后尺寸小于 0
+                    || fi.Height <= cropOptions.Top + cropOptions.Bottom // Cropped size less than 0
                     || fi.Width <= cropOptions.Left + cropOptions.Right) == false)
             {
                 FreeImageBitmap temp = fi.Copy(cropOptions.Left, cropOptions.Top, fi.Width - cropOptions.Right,
@@ -747,7 +747,7 @@ internal sealed class PdfDocumentCreator
                 }
                 catch (IndexOutOfRangeException)
                 {
-                    // 在某些场合下 FreeImage 保存的流无法被读取，尝试读原始文件，让 iTextImage 自行解析
+                    // In some cases, the flow of FreeImage is not read, try reading the original file, let ITextImage resolve themselves
                     image = iTextImage.GetInstance(source.FilePath.ReadAllBytes(), true);
                 }
             }

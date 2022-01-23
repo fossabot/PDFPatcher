@@ -8,7 +8,7 @@ namespace PDFPatcher.Functions;
 
 public partial class EditAdjustmentForm : Form
 {
-    internal static string[] FilterNames = { "字体名称", "文本尺寸", "文本位置", "页码范围", "文本内容" };
+    internal static string[] FilterNames = { "Font name", "Text size", "Text position", "Page range", "Text content" };
 
     internal static string[] FilterIDs =
     {
@@ -34,7 +34,7 @@ public partial class EditAdjustmentForm : Form
         {
             if (x is AutoBookmarkCondition f)
             {
-                return f.IsInclusive ? "包含匹配项" : "过滤匹配项";
+                return f.IsInclusive ? "Inclusive matches" : "Filter matches";
             }
 
             return null;
@@ -124,7 +124,7 @@ public partial class EditAdjustmentForm : Form
             "_PageRangeFilter" => new AutoBookmarkCondition.PageRangeCondition(),
             "_TextFilter" => new AutoBookmarkCondition.TextCondition
             {
-                Pattern = new MatchPattern("筛选条件", false, false, false)
+                Pattern = new MatchPattern("Filter condition", false, false, false)
             },
             _ => null
         };
@@ -168,7 +168,7 @@ public partial class EditAdjustmentForm : Form
         }
         else
         {
-            FormHelper.ErrorBox("无法编辑选中的筛选条件。");
+            FormHelper.ErrorBox("Unable to edit the selected filter criteria.");
             return null;
         }
 

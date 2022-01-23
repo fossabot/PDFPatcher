@@ -145,7 +145,7 @@ internal sealed class DocInfoExporter
     {
         w.WriteAttributeString(Constants.Info.ProductName, Application.ProductName);
         w.WriteAttributeString(Constants.Info.ProductVersion, Constants.InfoDocVersion);
-        w.WriteAttributeString(Constants.Info.ExportDate, DateTime.Now.ToString("yyyy年MM月dd日 HH:mm:ss"));
+        w.WriteAttributeString(Constants.Info.ExportDate, DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss"));
         //w.WriteAttributeString (Constants.Info.DocumentName, Path.GetFileNameWithoutExtension (sourceFile));
         w.WriteAttributeString(Constants.Info.DocumentPath, sourcePath);
         w.WriteAttributeString(Constants.Info.PageNumber, numberOfPages.ToText());
@@ -163,14 +163,14 @@ internal sealed class DocInfoExporter
 
         if (_options.ExportDocProperties)
         {
-            Tracker.TraceMessage("导出文档信息。");
+            Tracker.TraceMessage("Export document information.");
             RewriteDocInfoWithEncoding(_reader, AppContext.Encodings.DocInfoEncoding);
             ExportDocumentInfo(w);
         }
 
         if (_options.ExportViewerPreferences)
         {
-            Tracker.TraceMessage("导出阅读器设置。");
+            Tracker.TraceMessage("Export reader settings.");
             ExportViewerPreferences(w);
         }
 
@@ -183,7 +183,7 @@ internal sealed class DocInfoExporter
 
             if (_options.ExportBookmarks)
             {
-                Tracker.TraceMessage("导出书签。");
+                Tracker.TraceMessage("Export bookmarks.");
                 w.WriteStartElement(Constants.DocumentBookmark);
                 ExportBookmarks(OutlineManager.GetBookmark(_reader, _options.UnitConverter), w);
                 w.WriteEndElement();
@@ -192,20 +192,20 @@ internal sealed class DocInfoExporter
 
             if (_options.ExtractPageLinks)
             {
-                Tracker.TraceMessage("导出页面连接。");
+                Tracker.TraceMessage("Export page connection.");
                 ExtractPageLinks(w);
             }
 
             if (_options.ConsolidateNamedDestinations == false)
             {
-                Tracker.TraceMessage("导出命名目标。");
+                Tracker.TraceMessage("Export named target.");
                 ExportNamedDestinations(w);
             }
         }
 
         if (_options.ExtractPageSettings)
         {
-            Tracker.TraceMessage("导出页面设置。");
+            Tracker.TraceMessage("Export page settings.");
             w.WriteStartElement(Constants.Content.PageSettings.ThisName);
             ExtractPageSettings(w);
             w.WriteEndElement();
@@ -221,7 +221,7 @@ internal sealed class DocInfoExporter
             _contentExport.ExportContents(w, _reader);
         }
 
-        Tracker.TraceMessage("完成导出任务。");
+        Tracker.TraceMessage("Complete the export task.");
     }
 
     internal void ExportDocumentInfo(XmlWriter w)
@@ -269,7 +269,7 @@ internal sealed class DocInfoExporter
                     case "//DecodeDate":
                         try
                         {
-                            val = PdfDate.Decode(val).ToString("yyyy年MM月dd日 HH:mm:ss");
+                            val = PdfDate.Decode(val).ToString("MM/dd/yyyy HH:mm:ss");
                         }
                         catch (Exception)
                         {
@@ -301,9 +301,9 @@ internal sealed class DocInfoExporter
 
     internal static void WriteDocumentInfoAttributes(TextWriter w, string sourcePath, int numberOfPages)
     {
-        w.WriteLine("#版本=" + Constants.InfoDocVersion);
+        w.WriteLine("#Version=" + Constants.InfoDocVersion);
         w.WriteLine("#" + Constants.Info.DocumentPath + "=" + sourcePath);
-        w.WriteLine("#页数=" + numberOfPages);
+        w.WriteLine("#Number of pages=" + numberOfPages);
         w.WriteLine();
     }
 
@@ -510,7 +510,7 @@ internal sealed class DocInfoExporter
         w.WriteStartElement(Constants.NamedDestination);
         foreach (KeyValuePair<object, PdfObject> item in nds)
         {
-            w.WriteStartElement("位置");
+            w.WriteStartElement("Location");
             w.WriteAttributeString(Constants.DestinationAttributes.Name,
                 StringHelper.ReplaceControlAndBomCharacters(item.Key.ToString()));
             _actionExport.ExportGotoAction(item.Value, w, PageReferenceMapper);
@@ -541,7 +541,7 @@ internal sealed class DocInfoExporter
 
             if (open != isOpen && item.HasChildNodes)
             {
-                OutlineManager.WriteSimpleBookmarkInstruction(w, "打开书签", open ? "是" : "否");
+                OutlineManager.WriteSimpleBookmarkInstruction(w, "Open Bookmark", open ? "Yes" : "No");
                 isOpen = open;
             }
 
@@ -691,19 +691,19 @@ internal sealed class DocInfoExporter
                     string style = PdfHelper.GetPdfNameString(annot.GetAsName(PdfName.H));
                     style = ValueHelper.MapValue(style,
                         new[] { "N", "I", "O", "P" },
-                        new[] { "无", "取反内容", "取反边框", "按下" },
+                        new[] { "none", "inverse content", "inverse border", "press" },
                         style
                     );
                     w.WriteAttributeString(Constants.PageLinkAttributes.Style, style);
                 }
 
-                //if (annot.Contains (PdfName.M)) {
-                //    try {
-                //        w.WriteAttributeString ("日期", PdfDate.Decode (annot.GetAsString (PdfName.M).ToString ()).ToString ());
-                //    }
-                //    catch (Exception) {
-                //        w.WriteAttributeString ("日期", annot.GetAsString (PdfName.M).ToString ());
-                //    }
+                //if (annot.Contains(PdfName.M)) {
+                // try {
+                // w.WriteAttributeString ("Date", PdfDate.Decode (annot.GetAsString (PdfName.M).ToString ()).ToString ());
+                // }
+                // catch (Exception) {
+                // w.WriteAttributeString ("Date", annot.GetAsString (PdfName.M).ToString ());
+                // }
                 //}
                 if (annot.Contains(PdfName.QUADPOINTS))
                 {
@@ -721,11 +721,11 @@ internal sealed class DocInfoExporter
                 ExportLinkAction(annot, w);
                 if (annot.Contains(PdfName.BS))
                 {
-                    w.WriteStartElement("边框样式");
+                    w.WriteStartElement("Border Style");
                     PdfDictionary bs = annot.GetAsDict(PdfName.BS);
                     if (bs.Contains(PdfName.W))
                     {
-                        w.WriteAttributeString("宽度", bs.GetAsNumber(PdfName.W).FloatValue.ToText());
+                        w.WriteAttributeString("Width", bs.GetAsNumber(PdfName.W).FloatValue.ToText());
                     }
 
                     if (bs.Contains(PdfName.S))
@@ -733,13 +733,13 @@ internal sealed class DocInfoExporter
                         string style = PdfHelper.GetPdfNameString(bs.GetAsName(PdfName.S));
                         style = ValueHelper.MapValue(style,
                             new[] { "S", "U", "D", "B", "I" },
-                            new[] { "方框", "下划线", "虚线", "凸起", "凹陷" },
+                            new[] { "box", "underline", "dashed line", "raised", "recessed" },
                             style
                         );
-                        w.WriteAttributeString("样式", style);
+                        w.WriteAttributeString("style", style);
                         if (PdfName.D.Equals(bs.GetAsName(PdfName.S)) && bs.Contains(PdfName.D))
                         {
-                            w.WriteAttributeString("线型", PdfHelper.GetArrayString(bs.GetAsArray(PdfName.D)));
+                            w.WriteAttributeString("Line Type", PdfHelper.GetArrayString(bs.GetAsArray(PdfName.D)));
                         }
                     }
 

@@ -9,18 +9,30 @@ internal sealed class Toolkit
 {
     internal static readonly Toolkit[] Toolkits =
     {
-        new("编辑器", "BookmarkEditor", "Editor", "创建或修改 PDF 文档的书签，修改 PDF 文档的设置", true),
-        new("批量修改文件", "Patcher", "DocumentProcessor", "根据配置批量处理 PDF 文档，生成新的文档", true),
-        new("合并文件", "Merger", "Merger", "将多个图片和 PDF 文档合并为新的 PDF 文档", true),
-        new("识别文本", "Ocr", "Ocr", "识别扫描 PDF 文档的文字（需微软 Office 2003或2007的光学字符识别（OCR）引擎支持）"),
-        new("自动书签", "BookmarkGenerator", "AutoBookmark", "根据 PDF 的文本样式生成书签文件"),
-        new("批量重命名", "Rename", "Rename", "根据 PDF 的文本属性更改文件名", false, false),
-        new("提取页面或拆分文档", "ExtractPages", "ExtractPages", "提取 PDF 文档的页面或重排页面"),
-        new("提取图片", "ExtractImages", "ExtractImage", "无损提取 PDF 文档中的图片", true),
-        new("转换页面为图片", "RenderPages", "RenderDocument", "将 PDF 文档的页面转换为图片"),
-        new("结构探查器", "Inspector", "DocumentInspector", "探查 PDF 文档的内部结构", false, false),
-        new("导出或导入信息文件", "InfoExchanger", "ExportInfoFile", "导出书签、文档元数据、阅读器设定等信息到信息文件"),
-        new("程序配置", "Options", "AppOptions", "修改 PDF 补丁丁的程序配置", false, false)
+        new("Editor", "BookmarkEditor", "Editor",
+            "Create or modify bookmarks for PDF documents, modify settings for PDF documents", true),
+        new("Batch-modify files", "Patcher", "DocumentProcessor",
+            "Batch-process PDF documents according to the configuration and generate new documents", true),
+        new("Merge files", "Merger", "Merger", "Merge multiple images and PDF documents into a new PDF document",
+            true),
+        new("Recognize text", "Ocr", "Ocr",
+            "Recognize text in scanned PDF documents (requires Microsoft Office 2003 or 2007 Optical Character Recognition (OCR) engine support)"),
+        new("Auto Bookmark", "BookmarkGenerator", "AutoBookmark",
+            "Generate bookmark file according to PDF text style"),
+        new("Batch Rename", "Rename", "Rename", "Change file name according to PDF's text properties", false,
+            false),
+        new("Extract pages or split documents", "ExtractPages", "ExtractPages",
+            "Extract pages or reflow pages of PDF documents"),
+        new("Extract images", "ExtractImages", "ExtractImage", "Extract images from PDF documents without loss",
+            true),
+        new("Convert pages to pictures", "RenderPages", "RenderDocument",
+            "Convert pages of PDF documents to pictures"),
+        new("Structure Inspector", "Inspector", "DocumentInspector",
+            "Inspect the internal structure of a PDF document", false, false),
+        new("Export or import info file", "InfoExchanger", "ExportInfoFile",
+            "Export bookmarks, document metadata, reader settings and other information to info file"),
+        new("Program Configuration", "Options", "AppOptions", "Modify PDF Patch Program Configuration", false,
+            false)
     };
 
     private Toolkit(string name, string id, string icon, string description, bool showText)

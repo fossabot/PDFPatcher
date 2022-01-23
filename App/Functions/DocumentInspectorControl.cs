@@ -45,7 +45,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
     public DocumentInspectorControl() => InitializeComponent();
 
     //this.Icon = Common.FormHelper.ToIcon (Properties.Resources.DocumentInspector);
-    public override string FunctionName => "文档结构探查器";
+    public override string FunctionName => "Document Structure Profiler";
 
     public override Bitmap IconImage => Resources.DocumentInspector;
 
@@ -70,7 +70,8 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
 
     private void DocumentInspectorControl_OnLoad(object sender, EventArgs e)
     {
-        _ObjectDetailBox.EmptyListMsg = "请使用“打开”按钮加载需要检查结构的 PDF 文件，或从资源管理器拖放文件到本列表框";
+        _ObjectDetailBox.EmptyListMsg =
+            "Please use the \"Open\" button to load the PDF file that needs to check the structure, or drag and drop file from the resource manager to this list.";
 
         if (__OpNameIcons == null || __OpNameIcons.Count == 0)
         {
@@ -260,7 +261,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
                     olvItem.SubItems[0].ForeColor = SystemColors.HotTrack;
                     olvItem.SubItems[_ValueColumn.Index].ForeColor = SystemColors.HotTrack;
                     break;
-                case PdfObjectType.PageCommand when o.Name is "字符串" or "换行字符串":
+                case PdfObjectType.PageCommand when o.Name is "String" or "Wrap string":
                     {
                         olvItem.UseItemStyleForSubItems = false;
                         ListViewItem.ListViewSubItem s = olvItem.SubItems[_DescriptionColumn.Index];
@@ -440,7 +441,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
             e.Handled = true;
             e.DropTargetLocation = DropTargetLocation.Background;
             e.Effect = DragDropEffects.Move;
-            e.InfoMessage = "打开文件" + item;
+            e.InfoMessage = "Open a file" + item;
             return;
         }
 
@@ -492,7 +493,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
                 _ExportButton.Enabled = _AddObjectMenu.Enabled = true;
                 if (PdfName.IMAGE.Equals(s.GetAsName(PdfName.SUBTYPE)))
                 {
-                    ShowDescription("图片", null, PdfHelper.GetTypeName(PdfObject.STREAM));
+                    ShowDescription("Picture", null, PdfHelper.GetTypeName(PdfObject.STREAM));
                     return;
                 }
             }
@@ -513,10 +514,10 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
             switch (d.Type)
             {
                 case PdfObjectType.Trailer:
-                    ShowDescription("文档根节点", _fileName, null);
+                    ShowDescription("Document root node", _fileName, null);
                     break;
                 case PdfObjectType.Pages:
-                    ShowDescription("文档页面", "页数：" + _pdf.PageCount, null);
+                    ShowDescription("Document page", "Pages:" + _pdf.PageCount, null);
                     break;
             }
 
@@ -616,7 +617,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
     private void LoadDocument(string path)
     {
         _MainMenu.Enabled = _ObjectDetailBox.Enabled = false;
-        _DescriptionBox.Text = "正在打开文档：" + path;
+        _DescriptionBox.Text = "Opening documentation:" + path;
         _LoadDocumentWorker.RunWorkerAsync(path);
     }
 
@@ -635,7 +636,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
         if (type != null)
         {
             _DescriptionBox.AppendText(Environment.NewLine);
-            _DescriptionBox.AppendText("类型：" + type);
+            _DescriptionBox.AppendText("Type: " + type);
         }
 
         if (description == null)
@@ -705,7 +706,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
 
                 if (info.LastDecodeError != null)
                 {
-                    FormHelper.ErrorBox("导出图像时出现错误：" + info.LastDecodeError);
+                    FormHelper.ErrorBox("An error occurred while exporting an image: " + info.LastDecodeError);
                 }
                 else if (info.ExtName != Constants.FileExtensions.Dat)
                 {
@@ -828,7 +829,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
             FileName = fileName + Constants.FileExtensions.Xml,
             DefaultExt = Constants.FileExtensions.Xml,
             Filter = Constants.FileExtensions.XmlFilter,
-            Title = "请选择信息文件的保存位置"
+            Title = "Please select the save location of the information file"
         };
         if (d.ShowDialog() != DialogResult.OK)
         {
@@ -858,8 +859,8 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
             AddExtension = true,
             FileName = (n.FriendlyName ?? n.Name) + Constants.FileExtensions.Txt,
             DefaultExt = Constants.FileExtensions.Txt,
-            Filter = "文本形式的二进制数据文件(*.txt)|*.txt|" + Constants.FileExtensions.AllFilter,
-            Title = "请选择文件流的保存位置"
+            Filter = "Text-based data file (*.txt)|*.txt|" + Constants.FileExtensions.AllFilter,
+            Title = "Please select the save location of the file stream"
         };
         if (d.ShowDialog() != DialogResult.OK)
         {
@@ -874,7 +875,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("在导出流数据时出错：" + ex.Message);
+            FormHelper.ErrorBox("An error occurred while exporting stream data:" + ex.Message);
         }
     }
 
@@ -885,8 +886,8 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
             AddExtension = true,
             FileName = (n.FriendlyName ?? n.Name) + ".bin",
             DefaultExt = ".bin",
-            Filter = "二进制数据文件(*.bin,*.dat)|*.bin;*.dat|" + Constants.FileExtensions.AllFilter,
-            Title = "请选择文件流的保存位置"
+            Filter = "Binary data file (*.bin,*.dat)|*.bin;*.dat|" + Constants.FileExtensions.AllFilter,
+            Title = "Please select the save location of the file stream"
         };
         if (d.ShowDialog() != DialogResult.OK)
         {
@@ -901,7 +902,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("在导出流数据时出错：" + ex.Message);
+            FormHelper.ErrorBox("An error occurred while exporting stream data:" + ex.Message);
         }
     }
 
@@ -912,8 +913,8 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
             AddExtension = true,
             FileName = (n.Parent.FriendlyName ?? n.Name) + ".xml",
             DefaultExt = ".xml",
-            Filter = "统一码映射信息文件(*.xml)|*.xml|" + Constants.FileExtensions.AllFilter,
-            Title = "请选择统一码映射表的保存位置"
+            Filter = "Unified code mapping information file (*.xml)|*.xml|" + Constants.FileExtensions.AllFilter,
+            Title = "Please select the save location of the unified code mapping table"
         };
         if (d.ShowDialog() != DialogResult.OK)
         {
@@ -947,7 +948,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("在导出统一码映射表数据时出错：" + ex.Message);
+            FormHelper.ErrorBox("An error occurred while exporting a unified code mapping table data:" + ex.Message);
         }
     }
 
@@ -985,7 +986,8 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
 
         bool o = false;
         string n = string.Empty;
-        if (FileHelper.ComparePath(path, _fileName) && FormHelper.YesNoBox("是否覆盖原始文件？") == DialogResult.Yes)
+        if (FileHelper.ComparePath(path, _fileName) &&
+            FormHelper.YesNoBox("Do you want to overwrite the original file?") == DialogResult.Yes)
         {
             o = true;
         }
@@ -1015,7 +1017,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("保存文件时出错：" + ex.Message);
+            FormHelper.ErrorBox("Error when saving files:" + ex.Message);
             if (o && File.Exists(n))
             {
                 try
@@ -1024,7 +1026,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
                 }
                 catch (Exception)
                 {
-                    FormHelper.ErrorBox("无法删除临时文件：" + n);
+                    FormHelper.ErrorBox("Unable to delete temporary files:" + n);
                 }
             }
 
@@ -1053,7 +1055,7 @@ public sealed partial class DocumentInspectorControl : FunctionControl, IDocumen
         }
         catch (Exception ex)
         {
-            FormHelper.ErrorBox("在打开 PDF 文件时遇到错误：\n" + ex.Message);
+            FormHelper.ErrorBox("When you open the PDF file:\n" + ex.Message);
         }
     }
 

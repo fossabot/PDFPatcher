@@ -29,7 +29,7 @@ public sealed partial class EditorControl : FunctionControl, IDocumentEditor, IE
         _controller = new Controller(this);
     }
 
-    public override string FunctionName => "文档编辑器";
+    public override string FunctionName => "Document editor";
 
     public override Bitmap IconImage => Resources.Editor;
 
@@ -147,7 +147,8 @@ public sealed partial class EditorControl : FunctionControl, IDocumentEditor, IE
 
         _SetOpenStatus.DropDownItemClicked += _MainToolbar_ItemClicked;
 
-        AppContext.MainForm.SetTooltip(_IncludeDecendantBox, "选中此选项后，加粗、斜体等其它修改书签的操作将应用到选中书签的子书签");
+        AppContext.MainForm.SetTooltip(_IncludeDecendantBox,
+            "After selecting this option, other other modified bookmarks such as bold, bertlasts will be applied to the sub-bookmarks selected by the bookmark.");
         _IncludeDecendantBox.CheckedChanged += (_, _) =>
         {
             _BookmarkBox.OperationAffectsDescendants = _IncludeDecendantBox.Checked;
@@ -249,17 +250,17 @@ public sealed partial class EditorControl : FunctionControl, IDocumentEditor, IE
         _ViewerBox.Enabled = false;
         _ViewerBox.DocumentLoaded += (_, _) =>
         {
-            _CurrentPageBox.ToolTipText = "文档共" + _ViewerBox.Document.PageCount + "页";
+            _CurrentPageBox.ToolTipText = "Document Total" + _ViewerBox.Document.PageCount + "Pages";
         };
         _ViewerBox.ZoomChanged += (_, _) =>
         {
-            _ZoomBox.ToolTipText = "当前显示比例：" + (_ViewerBox.ZoomFactor * 100).ToInt32() + "%";
+            _ZoomBox.ToolTipText = "Current display scale: " + (_ViewerBox.ZoomFactor * 100).ToInt32() + "%";
         };
         _ViewerBox.PageChanged += (_, _) =>
         {
             _CurrentPageBox.Text = _ViewerBox.CurrentPageNumber.ToText();
             //var b = _ViewerBox.PageBound;
-            //_PageInfoBox.Text = string.Concat ("尺寸：", Math.Round (b.Width, 1).ToText (), " * ", Math.Round (b.Height, 1).ToText ());
+            //_PageInfoBox.Text = string.Concat ("Size: ", Math.Round (b.Width, 1).ToText (), " * ", Math.Round (b.Height, 1).ToText ());
         };
         //_ViewerBox.SelectionChanged += (s, args) =>
         //{
@@ -286,11 +287,11 @@ public sealed partial class EditorControl : FunctionControl, IDocumentEditor, IE
 
             TextInfo ti = _ViewerBox.FindTextLines(p);
             string t = ti.TextLines != null ? ti.TextLines[0].Text : string.Empty;
-            _PageInfoBox.Text = string.Concat("页面：", p.Page, "; 位置：", Math.Round(p.PageX, 2), " * ",
+            _PageInfoBox.Text = string.Concat("Page: ", p.Page, "; Locaiton: ", Math.Round(p.PageX, 2), " * ",
                 Math.Round(p.PageY, 2),
                 ti.Spans.HasContent()
-                    ? string.Concat("; 字体：", ti.Page.GetFont(ti.Spans[0]).Name, " ", ti.Spans[0].Size)
-                    : null, t.Length > 0 ? "; 文本：" : null, t);
+                    ? string.Concat("; Font: ", ti.Page.GetFont(ti.Spans[0]).Name, " ", ti.Spans[0].Size)
+                    : null, t.Length > 0 ? "; Text: " : null, t);
         };
         _ViewerBox.MouseClick += _ViewBox_MouseClick;
         _ViewerToolbar.Enabled = false;
@@ -397,7 +398,7 @@ public sealed partial class EditorControl : FunctionControl, IDocumentEditor, IE
         {
             case Commands.Action:
                 EnableCommand(item, l, true);
-                item.ToolTipText = "将书签和编辑结果写入到 PDF 文件中";
+                item.ToolTipText = "Write the bookmark and editing results into the PDF file";
                 break;
             case Commands.SaveBookmark:
             case Commands.SaveAsInfoFile:
@@ -410,8 +411,8 @@ public sealed partial class EditorControl : FunctionControl, IDocumentEditor, IE
                 EnableCommand(item, false, false);
                 break;
             case Commands.Options:
-                item.Text = "设置文件修改方式(&X)...";
-                item.ToolTipText = "设置在编辑器修改 PDF 文档的选项";
+                item.Text = "Set file modification method (&X)...";
+                item.ToolTipText = "Set the option to modify the PDF document in the editor";
                 EnableCommand(item, true, true);
                 item.Tag = nameof(Function.EditorOptions);
                 break;
@@ -488,7 +489,7 @@ public sealed partial class EditorControl : FunctionControl, IDocumentEditor, IE
                     for (int i = 1; i < 8; i++)
                     {
                         m.DropDownItems.Add(
-                            new ToolStripMenuItem("&" + i + " 级标题") { Name = "_AutoBookmarkLevel" + i });
+                            new ToolStripMenuItem("&" + i + " level title") { Name = "_AutoBookmarkLevel" + i });
                     }
                 }
 

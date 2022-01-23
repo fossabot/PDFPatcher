@@ -44,7 +44,7 @@ public sealed class PdfInfoXmlDocument : XmlDocument
 
         root.SetAttribute(Constants.Info.ProductName, Application.ProductName);
         root.SetAttribute(Constants.Info.ProductVersion, Constants.InfoDocVersion);
-        root.SetAttribute(Constants.Info.ExportDate, DateTime.Now.ToString("yyyy年MM月dd日 HH:mm:ss"));
+        root.SetAttribute(Constants.Info.ExportDate, DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss"));
     }
 
     public BookmarkElement CreateBookmark() => new(this);
@@ -353,8 +353,8 @@ public sealed class BookmarkElement : BookmarkContainer
 
     public int MarkerColor
     {
-        get => this.GetValue("标记颜色", 0);
-        set => this.SetValue("标记颜色", value, 0);
+        get => this.GetValue("Tag color", 0);
+        set => this.SetValue("Tag color", value, 0);
     }
 
     /// <summary>Set the bookmark action jump to the page.</summary>

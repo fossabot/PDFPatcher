@@ -106,24 +106,24 @@ public class ModiOcr
         try
         {
 #if DEBUGOCR
-            Tracker.TraceMessage("创建识别引擎对象。");
+            Tracker.TraceMessage("Create a recognition engine object.");
 #endif
             ocr = Create("MODI.Document");
             string p = Environment.CurrentDirectory;
             //Environment.CurrentDirectory = _modiPath;
 #if DEBUGOCR
-            Tracker.TraceMessage("读取识别图像：" + path);
+            Tracker.TraceMessage("Read recognition image: " + path);
 #endif
             Call(ocr, "Create", path);
 #if DEBUGOCR
-            Tracker.TraceMessage("执行识别：" + LangID);
+            Tracker.TraceMessage("Perform identification: " + LangID);
 #endif
             Call(ocr, "OCR", ValueHelper.MapValue(LangID, Constants.Ocr.LangIDs, Constants.Ocr.OcrLangIDs), OrientPage,
                 StretchPage);
 
             Environment.CurrentDirectory = p;
 #if DEBUGOCR
-            Tracker.TraceMessage("读取识别结果。");
+            Tracker.TraceMessage("Read the recognition result.");
 #endif
             images = Get(ocr, "Images");
             image = Get(images, "Item", 0);
@@ -177,7 +177,7 @@ public class ModiOcr
                 {
                     switch (ti.Text[0])
                     {
-                        case '一':
+                        case '-':
                             Bound r = ti.Region;
                             ti.Size = r.Width > r.Height ? r.Width : r.Height;
                             int s = (int)Math.Ceiling(ti.Size / 2 - (r.Width > r.Height ? r.Height : r.Width) / 2);
@@ -196,7 +196,7 @@ public class ModiOcr
 
                 int cl = Get<int>(word, "LineID");
                 int cr = Get<int>(word, "RegionID");
-                bool sl = cl == lineID && cr == regionID; // 处于同一行
+                bool sl = cl == lineID && cr == regionID; // In the same line
                 if (sl && WritingDirection != WritingDirection.Unknown)
                 {
                     sl = cti != null
@@ -245,7 +245,7 @@ public class ModiOcr
             if (FileHelper.IsPathValid(saveImagePath))
             {
 #if DEBUGOCR
-                Tracker.TraceMessage("保存识别后图像路径：" + saveImagePath);
+                Tracker.TraceMessage("Save the image path:" + saveImagePath);
 #endif
                 if (File.Exists(saveImagePath) == false)
                 {
@@ -261,14 +261,14 @@ public class ModiOcr
                 }
             }
 #if DEBUGOCR
-            Tracker.TraceMessage("完成识别操作。");
+            Tracker.TraceMessage("Complete the identification operation.");
 #endif
             Call(ocr, "Close", false);
         }
         finally
         {
 #if DEBUGOCR
-            Tracker.TraceMessage("释放识别引擎对象。");
+            Tracker.TraceMessage("Release the identification engine object.");
 #endif
             FinalReleaseComObjects(rects, words, layout, image, images, ocr);
             FinalReleaseComObjects(merge, mergeImages);
@@ -327,7 +327,7 @@ public class ModiOcr
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("释放对象时出现错误：" + ex.Message);
+                Debug.WriteLine("An error occurred while releasing the object:" + ex.Message);
             }
         }
     }
@@ -346,6 +346,6 @@ public class ModiOcr
     //            return m;
     //        }
     //    }
-    //    throw new FileNotFoundException ("无法找到微软 Office 文档图像处理引擎。");
+    //    throw new FileNotFoundException ("The Microsoft Office Document Image Processing Engine cannot be found.");
     //}
 }

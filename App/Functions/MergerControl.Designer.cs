@@ -107,7 +107,7 @@
 			_File.ImageTransparentColor = System.Drawing.Color.Magenta;
 			_File.Name = "_File";
 			_File.Size = new System.Drawing.Size(69, 28);
-			_File.Text = "文件(&J)";
+			_File.Text = "File (&J)";
 			_File.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
 			//
 			// _FileMenu
@@ -129,7 +129,7 @@
 			this._SortByNaturalNumberItem.Image = global::PDFPatcher.Properties.Resources.NaturalSort;
 			this._SortByNaturalNumberItem.Name = "_SortByNaturalNumberItem";
 			this._SortByNaturalNumberItem.Size = new System.Drawing.Size(253, 26);
-			this._SortByNaturalNumberItem.Text = "按数值和字母顺序排序(&S)";
+			this._SortByNaturalNumberItem.Text = "Sort by value and alphabetical order (&S)";
 			this._SortByNaturalNumberItem.Visible = false;
 			//
 			// _SortByAlphaItem
@@ -137,7 +137,7 @@
 			this._SortByAlphaItem.Image = global::PDFPatcher.Properties.Resources.AlphabeticSort;
 			this._SortByAlphaItem.Name = "_SortByAlphaItem";
 			this._SortByAlphaItem.Size = new System.Drawing.Size(253, 26);
-			this._SortByAlphaItem.Text = "按字母顺序排序(&Z)";
+			this._SortByAlphaItem.Text = "Sort by alphabetical order (&Z)";
 			this._SortByAlphaItem.Visible = false;
 			//
 			// toolStripSeparator4
@@ -151,16 +151,16 @@
 			_LoadList.Image = global::PDFPatcher.Properties.Resources.Open;
 			_LoadList.Name = "_LoadList";
 			_LoadList.Size = new System.Drawing.Size(253, 26);
-			_LoadList.Text = "加载文件列表(&J)...";
-			_LoadList.ToolTipText = "加载上次保存的文件列表，供继续编辑";
+			_LoadList.Text = "Load file list (&J)...";
+			_LoadList.ToolTipText = "Load the list of files saved, for continuing editing";
 			//
 			// _SaveList
 			//
 			_SaveList.Image = global::PDFPatcher.Properties.Resources.Save;
 			_SaveList.Name = "_SaveList";
 			_SaveList.Size = new System.Drawing.Size(253, 26);
-			_SaveList.Text = "保存文件列表(&B)...";
-			_SaveList.ToolTipText = "保存文件列表到文件，供以后处理";
+			_SaveList.Text = "Save a list of files (&B)...";
+			_SaveList.ToolTipText = "Save the file list to the file for later processing";
 			//
 			// toolStripSeparator1
 			//
@@ -179,7 +179,7 @@
 			_EditItemProperty.ImageTransparentColor = System.Drawing.Color.Magenta;
 			_EditItemProperty.Name = "_EditItemProperty";
 			_EditItemProperty.Size = new System.Drawing.Size(24, 28);
-			_EditItemProperty.Text = "编辑源文件的处理方式";
+			_EditItemProperty.Text = "Edit the processing of the source file";
 			//
 			// _Refresh
 			//
@@ -195,62 +195,62 @@
 			//
 			_SetPdfOptions.Name = "_SetPdfOptions";
 			_SetPdfOptions.Size = new System.Drawing.Size(267, 26);
-			_SetPdfOptions.Text = "设置源 &PDF 文件处理方式...";
-			_SetPdfOptions.ToolTipText = "更改源 PDF 文件的页码范围";
+			_SetPdfOptions.Text = "Set the source &PDF file processing method ...";
+			_SetPdfOptions.ToolTipText = "Change the page number of PDF files";
 			//
 			// _SetCroppingOptions
 			//
 			_SetCroppingOptions.Name = "_SetCroppingOptions";
 			_SetCroppingOptions.Size = new System.Drawing.Size(267, 26);
-			_SetCroppingOptions.Text = "设置裁剪图片选项(&C)...";
+			_SetCroppingOptions.Text = "Set Crop Image Options (&C) ...";
 			//
 			// _Copy
 			//
 			_Copy.Name = "_Copy";
 			_Copy.Size = new System.Drawing.Size(267, 26);
-			_Copy.Text = "复制列表内容(&F)";
+			_Copy.Text = "Copy list content (&F)";
 			//
 			// _RefreshFolder
 			//
 			_RefreshFolder.Image = global::PDFPatcher.Properties.Resources.Refresh;
 			_RefreshFolder.Name = "_RefreshFolder";
 			_RefreshFolder.Size = new System.Drawing.Size(267, 26);
-			_RefreshFolder.Text = "刷新文件夹(&W)";
-			_RefreshFolder.ToolTipText = "刷新文件夹的内容";
+			_RefreshFolder.Text = "Refresh folder (&W)";
+			_RefreshFolder.ToolTipText = "Refresh the contents of the folder";
 			//
 			// _ClearBookmarkTitle
 			//
 			_ClearBookmarkTitle.Name = "_ClearBookmarkTitle";
 			_ClearBookmarkTitle.Size = new System.Drawing.Size(249, 26);
-			_ClearBookmarkTitle.Text = "清空书签文本";
-			_ClearBookmarkTitle.ToolTipText = "清空选中项目对应的书签文本及书签设置";
+			_ClearBookmarkTitle.Text = "Clear book sign text";
+			_ClearBookmarkTitle.ToolTipText = "Clear selection project corresponding to bookmark text and bookmark settings";
 			//
 			// _SetBookmarkTitle
 			//
 			_SetBookmarkTitle.Name = "_SetBookmarkTitle";
 			_SetBookmarkTitle.Size = new System.Drawing.Size(249, 26);
-			_SetBookmarkTitle.Text = "设置书签文本为源文件名";
-			_SetBookmarkTitle.ToolTipText = "将选中项目对应的书签文本设置为文件名";
+			_SetBookmarkTitle.Text = "Set the bookmark text as the source file name";
+			_SetBookmarkTitle.ToolTipText = "Set the bookmark text corresponding to the selected item to the file name";
 			//
 			// _PasteBookmarkText
 			//
 			_PasteBookmarkText.Image = global::PDFPatcher.Properties.Resources.Paste;
 			_PasteBookmarkText.Name = "_PasteBookmarkText";
 			_PasteBookmarkText.Size = new System.Drawing.Size(267, 26);
-			_PasteBookmarkText.Text = "粘贴书签文本(Z)";
+			_PasteBookmarkText.Text = "Paste book sign text (Z)";
 			//
 			// _CopyBookmarkText
 			//
 			_CopyBookmarkText.Image = global::PDFPatcher.Properties.Resources.Copy;
 			_CopyBookmarkText.Name = "_CopyBookmarkText";
 			_CopyBookmarkText.Size = new System.Drawing.Size(267, 26);
-			_CopyBookmarkText.Text = "复制书签文本(&S)";
+			_CopyBookmarkText.Text = "Copy book signature (&S)";
 			//
 			// _CopyFileName
 			//
 			_CopyFileName.Name = "_CopyFileName";
 			_CopyFileName.Size = new System.Drawing.Size(267, 26);
-			_CopyFileName.Text = "复制文件名(M)";
+			_CopyFileName.Text = "Copy file name (M)";
 			//
 			// _MainToolbar
 			//
@@ -284,8 +284,8 @@
 			this._AddFilesButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._AddFilesButton.Name = "_AddFilesButton";
 			this._AddFilesButton.Size = new System.Drawing.Size(127, 28);
-			this._AddFilesButton.Text = "添加文件(&T)";
-			this._AddFilesButton.ToolTipText = "添加需要合并的文件到处理列表";
+			this._AddFilesButton.Text = "Add files (&T)";
+			this._AddFilesButton.ToolTipText = "Add files that need merge to process lists";
 			this._AddFilesButton.ButtonClick += new System.EventHandler(this._MainToolbar_ButtonClick);
 			//
 			// _RecentFileMenu
@@ -303,8 +303,8 @@
 			this._AddFolderButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._AddFolderButton.Name = "_AddFolderButton";
 			this._AddFolderButton.Size = new System.Drawing.Size(123, 28);
-			this._AddFolderButton.Text = "添加文件夹";
-			this._AddFolderButton.ToolTipText = "添加文件夹及其包含的文件到处理列表";
+			this._AddFolderButton.Text = "Add a folder";
+			this._AddFolderButton.ToolTipText = "Add a folder and its files therebetween to the list of processes";
 			this._AddFolderButton.ButtonClick += new System.EventHandler(this._MainToolbar_ButtonClick);
 			this._AddFolderButton.DropDownOpening += new System.EventHandler(this._AddFolder_DropDownOpening);
 			this._AddFolderButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._AddFolderButton_DropDownItemClicked);
@@ -323,7 +323,7 @@
 			this._InsertEmptyPage.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._InsertEmptyPage.Name = "_InsertEmptyPage";
 			this._InsertEmptyPage.Size = new System.Drawing.Size(108, 28);
-			this._InsertEmptyPage.Text = "插入空白页";
+			this._InsertEmptyPage.Text = "Insert blank page";
 			//
 			// _Delete
 			//
@@ -332,7 +332,7 @@
 			_Delete.ImageTransparentColor = System.Drawing.Color.Magenta;
 			_Delete.Name = "_Delete";
 			_Delete.Size = new System.Drawing.Size(24, 28);
-			_Delete.Text = "删除选中项";
+			_Delete.Text = "Delete the selected item";
 			//
 			// _BoldStyleButton
 			//
@@ -341,7 +341,7 @@
 			this._BoldStyleButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._BoldStyleButton.Name = "_BoldStyleButton";
 			this._BoldStyleButton.Size = new System.Drawing.Size(24, 28);
-			this._BoldStyleButton.Text = "切换书签文本的粗体样式";
+			this._BoldStyleButton.Text = "Switch bookmark text bold pattern";
 			//
 			// _ItalicStyleButton
 			//
@@ -350,7 +350,7 @@
 			this._ItalicStyleButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._ItalicStyleButton.Name = "_ItalicStyleButton";
 			this._ItalicStyleButton.Size = new System.Drawing.Size(24, 28);
-			this._ItalicStyleButton.Text = "切换书签文本的斜体样式";
+			this._ItalicStyleButton.Text = "Switch bookmark text";
 			//
 			// _BookmarkColorButton
 			//
@@ -362,8 +362,8 @@
 			this._BookmarkColorButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._BookmarkColorButton.Name = "_BookmarkColorButton";
 			this._BookmarkColorButton.Size = new System.Drawing.Size(30, 23);
-			this._BookmarkColorButton.Text = "颜色";
-			this._BookmarkColorButton.ToolTipText = "设置书签文本的颜色";
+			this._BookmarkColorButton.Text = "Color";
+			this._BookmarkColorButton.ToolTipText = "Set the color of the bookmark text";
 			//
 			// _BookmarkTextMenu
 			//
@@ -375,7 +375,7 @@
 			this._BookmarkTextMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this._BookmarkTextMenu.Name = "_BookmarkTextMenu";
 			this._BookmarkTextMenu.Size = new System.Drawing.Size(34, 28);
-			this._BookmarkTextMenu.Text = "设置选中项目的书签文本";
+			this._BookmarkTextMenu.Text = "Set bookmark text for selecting items";
 			this._BookmarkTextMenu.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
 			//
 			// _ItemList
@@ -417,23 +417,23 @@
 			// _NameColumn
 			//
 			this._NameColumn.IsEditable = false;
-			this._NameColumn.Text = "源文件名";
+			this._NameColumn.Text = "Source file name";
 			this._NameColumn.Width = 178;
 			//
 			// _BookmarkColumn
 			//
-			this._BookmarkColumn.Text = "书签文本";
+			this._BookmarkColumn.Text = "Bookmark text";
 			this._BookmarkColumn.Width = 150;
 			//
 			// _PageRangeColumn
 			//
 			this._PageRangeColumn.AutoCompleteEditorMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-			this._PageRangeColumn.Text = "页码范围";
+			this._PageRangeColumn.Text = "Page range";
 			//
 			// _FolderColumn
 			//
 			this._FolderColumn.IsEditable = false;
-			this._FolderColumn.Text = "文件夹";
+			this._FolderColumn.Text = "folder";
 			this._FolderColumn.Width = 114;
 			//
 			// _ItemListMenu
@@ -468,14 +468,14 @@
 			//
 			this._OpenImageBox.Filter = resources.GetString("_OpenImageBox.Filter");
 			this._OpenImageBox.Multiselect = true;
-			this._OpenImageBox.Title = "选择需要导入的图片文件或PDF文件";
+			this._OpenImageBox.Title = "Select the image file or PDF file that needs to be imported.";
 			//
 			// _OpenPdfBox
 			//
 			this._OpenPdfBox.DefaultExt = "pdf";
-			this._OpenPdfBox.Filter = "PDF 文件（*.pdf）|*.pdf";
+			this._OpenPdfBox.Filter = "PDF file（*.pdf）|*.pdf";
 			this._OpenPdfBox.Multiselect = true;
-			this._OpenPdfBox.Title = "选择需要处理的 PDF 文件";
+			this._OpenPdfBox.Title = "Select the PDF file that needs to be processed";
 			//
 			// _AddDocumentWorker
 			//
@@ -488,7 +488,7 @@
 			//
 			this._BookmarkControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-			this._BookmarkControl.LabelText = "P&DF 信息文件：";
+			this._BookmarkControl.LabelText = "P&DF information file:";
 			this._BookmarkControl.Location = new System.Drawing.Point(17, 294);
 			this._BookmarkControl.Margin = new System.Windows.Forms.Padding(5);
 			this._BookmarkControl.Name = "_BookmarkControl";
@@ -523,7 +523,7 @@
 			this._ImportButton.ShowFocusBorder = true;
 			this._ImportButton.Size = new System.Drawing.Size(164, 36);
 			this._ImportButton.TabIndex = 5;
-			this._ImportButton.Text = "生成合并文件(&S)";
+			this._ImportButton.Text = "Generate a merge file (&S)";
 			this._ImportButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._ImportButton.Click += new System.EventHandler(this._ImportButton_Click);
 			//
@@ -536,7 +536,7 @@
 			this._IndividualMergerModeBox.Name = "_IndividualMergerModeBox";
 			this._IndividualMergerModeBox.Size = new System.Drawing.Size(233, 19);
 			this._IndividualMergerModeBox.TabIndex = 3;
-			this._IndividualMergerModeBox.Text = "顶层项目合并为单独的PDF文件";
+			this._IndividualMergerModeBox.Text = "The top-level project combines a separate PDF file";
 			this._IndividualMergerModeBox.UseVisualStyleBackColor = true;
 			//
 			// _ConfigButton
@@ -548,7 +548,7 @@
 			this._ConfigButton.Name = "_ConfigButton";
 			this._ConfigButton.Size = new System.Drawing.Size(241, 29);
 			this._ConfigButton.TabIndex = 12;
-			this._ConfigButton.Text = "设置合并后的 P&DF 文件选项";
+			this._ConfigButton.Text = "Set the merged P&DF file option";
 			this._ConfigButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._ConfigButton.UseVisualStyleBackColor = true;
 			this._ConfigButton.Click += new System.EventHandler(this._MainToolbar_ButtonClick);
@@ -564,7 +564,7 @@
 			this.Controls.Add(this._ImportButton);
 			this.Controls.Add(this._BookmarkControl);
 			this.Controls.Add(this._ItemList);
-			this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "MergerControl";
 			this.Size = new System.Drawing.Size(767, 428);

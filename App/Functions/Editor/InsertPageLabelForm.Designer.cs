@@ -38,52 +38,52 @@
 			this._RemoveLabelButton = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this._StartAtBox)).BeginInit();
 			this.SuspendLayout();
-			// 
+			//
 			// label1
-			// 
+			//
 			this.label1.AutoSize = true;
 			this.label1.Location = new System.Drawing.Point(12, 41);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(65, 12);
 			this.label1.TabIndex = 4;
-			this.label1.Text = "前缀文本：";
-			// 
+			this.label1.Text = "Prefix text:";
+			//
 			// _PrefixBox
-			// 
+			//
 			this._PrefixBox.Location = new System.Drawing.Point(83, 38);
 			this._PrefixBox.Name = "_PrefixBox";
 			this._PrefixBox.Size = new System.Drawing.Size(63, 21);
 			this._PrefixBox.TabIndex = 5;
-			// 
+			//
 			// label2
-			// 
+			//
 			this.label2.AutoSize = true;
 			this.label2.Location = new System.Drawing.Point(152, 13);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(65, 12);
 			this.label2.TabIndex = 2;
-			this.label2.Text = "编号格式：";
-			// 
+			this.label2.Text = "Number format:";
+			//
 			// _NumericStyleBox
-			// 
+			//
 			this._NumericStyleBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this._NumericStyleBox.FormattingEnabled = true;
 			this._NumericStyleBox.Location = new System.Drawing.Point(223, 11);
 			this._NumericStyleBox.Name = "_NumericStyleBox";
 			this._NumericStyleBox.Size = new System.Drawing.Size(121, 20);
 			this._NumericStyleBox.TabIndex = 3;
-			// 
+			//
 			// label3
-			// 
+			//
 			this.label3.AutoSize = true;
 			this.label3.Location = new System.Drawing.Point(152, 40);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(65, 12);
 			this.label3.TabIndex = 6;
-			this.label3.Text = "起始页号：";
-			// 
+			this.label3.Text = "Start page number:";
+			//
 			// _StartAtBox
-			// 
+			//
 			this._StartAtBox.Location = new System.Drawing.Point(223, 38);
 			this._StartAtBox.Maximum = new decimal(new int[] {
             99999,
@@ -103,53 +103,53 @@
             0,
             0,
             0});
-			// 
+			//
 			// _OkButton
-			// 
+			//
 			this._OkButton.Location = new System.Drawing.Point(202, 79);
 			this._OkButton.Name = "_OkButton";
 			this._OkButton.Size = new System.Drawing.Size(75, 23);
 			this._OkButton.TabIndex = 8;
-			this._OkButton.Text = "确定(&Q)";
+			this._OkButton.Text = "OK (&Q)";
 			this._OkButton.UseVisualStyleBackColor = true;
-			// 
+			//
 			// _CancelButton
-			// 
+			//
 			this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this._CancelButton.Location = new System.Drawing.Point(286, 79);
 			this._CancelButton.Name = "_CancelButton";
 			this._CancelButton.Size = new System.Drawing.Size(75, 23);
 			this._CancelButton.TabIndex = 9;
-			this._CancelButton.Text = "取消(&X)";
+			this._CancelButton.Text = "Cancel (&X)";
 			this._CancelButton.UseVisualStyleBackColor = true;
-			// 
+			//
 			// label4
-			// 
+			//
 			this.label4.AutoSize = true;
 			this.label4.Location = new System.Drawing.Point(12, 14);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(53, 12);
 			this.label4.TabIndex = 0;
-			this.label4.Text = "目标页面";
-			// 
+			this.label4.Text = "Target page";
+			//
 			// _PageNumberBox
-			// 
+			//
 			this._PageNumberBox.Location = new System.Drawing.Point(81, 14);
 			this._PageNumberBox.Name = "_PageNumberBox";
 			this._PageNumberBox.Size = new System.Drawing.Size(65, 19);
 			this._PageNumberBox.TabIndex = 1;
-			// 
+			//
 			// _RemoveLabelButton
-			// 
+			//
 			this._RemoveLabelButton.Location = new System.Drawing.Point(14, 79);
 			this._RemoveLabelButton.Name = "_RemoveLabelButton";
 			this._RemoveLabelButton.Size = new System.Drawing.Size(117, 23);
 			this._RemoveLabelButton.TabIndex = 10;
-			this._RemoveLabelButton.Text = "删除本页码标签(&S)";
+			this._RemoveLabelButton.Text = "Delete this page code tab (&S)";
 			this._RemoveLabelButton.UseVisualStyleBackColor = true;
-			// 
+			//
 			// InsertPageLabelForm
-			// 
+			//
 			this.AcceptButton = this._OkButton;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -170,7 +170,7 @@
 			this.Name = "InsertPageLabelForm";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-			this.Text = "插入页码标签";
+			this.Text = "Insert the page number label";
 			this.Load += new System.EventHandler(this.InsertPageLabelForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this._StartAtBox)).EndInit();
 			this.ResumeLayout(false);

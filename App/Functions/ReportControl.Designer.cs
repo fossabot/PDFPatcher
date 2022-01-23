@@ -57,7 +57,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(82, 15);
 			this.label2.TabIndex = 5;
-			this.label2.Text = "日志内容：";
+			this.label2.Text = "Log content:";
 			//
 			// _CancelButton
 			//
@@ -68,7 +68,7 @@
 			this._CancelButton.Name = "_CancelButton";
 			this._CancelButton.Size = new System.Drawing.Size(100, 42);
 			this._CancelButton.TabIndex = 9;
-			this._CancelButton.Text = "返回(&F)";
+			this._CancelButton.Text = "Back (&F)";
 			this._CancelButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this._CancelButton.UseVisualStyleBackColor = true;
 			this._CancelButton.Click += new System.EventHandler(this._CancelButton_Click);
@@ -82,7 +82,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(82, 15);
 			this.label3.TabIndex = 7;
-			this.label3.Text = "执行进度：";
+			this.label3.Text = "Perform progress:";
 			//
 			// label4
 			//
@@ -92,7 +92,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(82, 15);
 			this.label4.TabIndex = 1;
-			this.label4.Text = "输入文件：";
+			this.label4.Text = "Enter the file:";
 			//
 			// label5
 			//
@@ -102,7 +102,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(82, 15);
 			this.label5.TabIndex = 3;
-			this.label5.Text = "输出文件：";
+			this.label5.Text = "Output file:";
 			//
 			// _InputFileBox
 			//
@@ -150,7 +150,7 @@
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(82, 15);
 			this.label6.TabIndex = 7;
-			this.label6.Text = "总体进度：";
+			this.label6.Text = "Overall progress:";
 			//
 			// _LogBox
 			//
@@ -182,7 +182,7 @@
 			this.Controls.Add(this._TotalProgressBar);
 			this.Controls.Add(this._ProgressBar);
 			this.Controls.Add(this._LogBox);
-			this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "ReportControl";
 			this.Size = new System.Drawing.Size(680, 359);

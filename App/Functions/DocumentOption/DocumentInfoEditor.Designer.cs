@@ -53,7 +53,7 @@
 			this.groupBox4.Size = new System.Drawing.Size (426, 232);
 			this.groupBox4.TabIndex = 2;
 			this.groupBox4.TabStop = false;
-			this.groupBox4.Text = "文档信息";
+			this.groupBox4.Text = "Document Information";
 			//
 			// _MetadataPanel
 			//
@@ -79,7 +79,7 @@
 			this.label16.Name = "label16";
 			this.label16.Size = new System.Drawing.Size (41, 12);
 			this.label16.TabIndex = 0;
-			this.label16.Text = "标题：";
+			this.label16.Text = "Title:";
 			//
 			// _KeywordsBox
 			//
@@ -98,7 +98,7 @@
 			this.label17.Name = "label17";
 			this.label17.Size = new System.Drawing.Size (41, 12);
 			this.label17.TabIndex = 2;
-			this.label17.Text = "作者：";
+			this.label17.Text = "Author:";
 			//
 			// _SubjectBox
 			//
@@ -117,7 +117,7 @@
 			this.label18.Name = "label18";
 			this.label18.Size = new System.Drawing.Size (41, 12);
 			this.label18.TabIndex = 4;
-			this.label18.Text = "主题：";
+			this.label18.Text = "Topic:";
 			//
 			// _AuthorBox
 			//
@@ -136,7 +136,7 @@
 			this.label19.Name = "label19";
 			this.label19.Size = new System.Drawing.Size (53, 12);
 			this.label19.TabIndex = 6;
-			this.label19.Text = "关键词：";
+			this.label19.Text = "Keywords:";
 			//
 			// _TitleBox
 			//
@@ -155,7 +155,7 @@
 			this._ForceMetadataBox.Name = "_ForceMetadataBox";
 			this._ForceMetadataBox.Size = new System.Drawing.Size (180, 16);
 			this._ForceMetadataBox.TabIndex = 0;
-			this._ForceMetadataBox.Text = "使用此处设定的文档属性信息";
+			this._ForceMetadataBox.Text = "Use the document attribute information set here";
 			this._ForceMetadataBox.UseVisualStyleBackColor = true;
 			this._ForceMetadataBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
 			//
@@ -166,7 +166,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size (221, 12);
 			this.label5.TabIndex = 0;
-			this.label5.Text = "说明：以下设定优先于信息文件的内容。";
+			this.label5.Text = "Description: The following settings take precedence over the information file.";
 			//
 			// _RewriteXmpBox
 			//
@@ -175,7 +175,7 @@
 			this._RewriteXmpBox.Name = "_RewriteXmpBox";
 			this._RewriteXmpBox.Size = new System.Drawing.Size (198, 16);
 			this._RewriteXmpBox.TabIndex = 8;
-			this._RewriteXmpBox.Text = "重写扩展标记（XML）元数据属性";
+			this._RewriteXmpBox.Text = "Rewinding extended tag (XML) metadata properties";
 			this._RewriteXmpBox.UseVisualStyleBackColor = true;
 			this._RewriteXmpBox.CheckedChanged += new System.EventHandler (this.DocumentInfoChanged);
 			//

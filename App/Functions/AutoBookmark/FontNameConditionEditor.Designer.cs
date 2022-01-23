@@ -37,7 +37,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size (89, 12);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "匹配字体名称：";
+			this.label1.Text = "Match font name:";
 			//
 			// _FontNameBox
 			//
@@ -56,7 +56,7 @@
 			this._FullMatchBox.Name = "_FullMatchBox";
 			this._FullMatchBox.Size = new System.Drawing.Size (120, 16);
 			this._FullMatchBox.TabIndex = 2;
-			this._FullMatchBox.Text = "完全匹配字体名称";
+			this._FullMatchBox.Text = "Full match font name";
 			this._FullMatchBox.UseVisualStyleBackColor = true;
 			this._FullMatchBox.CheckedChanged += new System.EventHandler (this.ControlChanged);
 			//

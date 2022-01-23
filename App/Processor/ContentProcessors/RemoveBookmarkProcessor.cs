@@ -6,7 +6,7 @@ internal sealed class RemoveBookmarkProcessor : IDocProcessor
 {
     #region IDocProcessor member
 
-    public string Name => "删除导航书签";
+    public string Name => "Delete navigation bookmarks";
 
     public void BeginProcess(DocProcessorContext context)
     {

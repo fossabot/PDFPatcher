@@ -44,7 +44,7 @@ internal sealed class BookmarkMarkerCommand : IEditorCommand
                 b.UnmarkItems(b.GetSelectedElements(true));
                 break;
             case "_ClearBookmarkMarks":
-                if (b.HasMarker && FormHelper.YesNoBox("是否确定清除书签标记？") == DialogResult.Yes)
+                if (b.HasMarker && FormHelper.YesNoBox("Is it sure to clear the bookmark mark?") == DialogResult.Yes)
                 {
                     b.ClearMarks(true);
                 }
