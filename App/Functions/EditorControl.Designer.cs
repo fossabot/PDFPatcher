@@ -134,6 +134,7 @@
             this._MarkBookmarkCyan = new System.Windows.Forms.ToolStripMenuItem();
             this._ViewerButton = new System.Windows.Forms.ToolStripDropDownButton();
             this._OcrMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this._InsertWithOcrOnly = new System.Windows.Forms.ToolStripMenuItem();
             this._ShowAnnotations = new System.Windows.Forms.ToolStripMenuItem();
             this._EditMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
@@ -166,7 +167,6 @@
             this._ViewerToolbar = new System.Windows.Forms.ToolStrip();
             this._CurrentPageBox = new System.Windows.Forms.ToolStripTextBox();
             this._ZoomBox = new System.Windows.Forms.ToolStripComboBox();
-            this._InsertWithOcrOnly = new System.Windows.Forms.ToolStripMenuItem();
             _ClearPosition = new System.Windows.Forms.ToolStripMenuItem();
             _ChangeCoordinates = new System.Windows.Forms.ToolStripMenuItem();
             _ClearPositionX = new System.Windows.Forms.ToolStripMenuItem();
@@ -266,6 +266,7 @@
             this._EditMenu.SuspendLayout();
             this._RecentFileMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._BookmarkBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._MainPanel)).BeginInit();
             this._MainPanel.Panel1.SuspendLayout();
             this._MainPanel.Panel2.SuspendLayout();
             this._MainPanel.SuspendLayout();
@@ -273,9 +274,9 @@
             this._BookmarkToolbar.SuspendLayout();
             this._ViewerToolbar.SuspendLayout();
             this.SuspendLayout();
-            //
+            // 
             // _ClearPosition
-            //
+            // 
             _ClearPosition.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _ChangeCoordinates,
             _ClearPositionX,
@@ -283,189 +284,190 @@
             _ClearPositionXY});
             _ClearPosition.Image = global::PDFPatcher.Properties.Resources.ScrollPosition;
             _ClearPosition.Name = "_ClearPosition";
-            _ClearPosition.Size = new System.Drawing.Size(251, 26);
+            _ClearPosition.Size = new System.Drawing.Size(308, 26);
             _ClearPosition.Text = "Change the target page &coordinate";
             _ClearPosition.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-            //
+            // 
             // _ChangeCoordinates
-            //
+            // 
             _ChangeCoordinates.Image = global::PDFPatcher.Properties.Resources.ScrollPosition;
             _ChangeCoordinates.Name = "_ChangeCoordinates";
-            _ChangeCoordinates.Size = new System.Drawing.Size(227, 26);
+            _ChangeCoordinates.Size = new System.Drawing.Size(290, 22);
             _ChangeCoordinates.Text = "&Change coordinates...";
-            //
+            // 
             // _ClearPositionX
-            //
+            // 
             _ClearPositionX.Name = "_ClearPositionX";
-            _ClearPositionX.Size = new System.Drawing.Size(227, 26);
+            _ClearPositionX.Size = new System.Drawing.Size(290, 22);
             _ClearPositionX.Text = "Clear horizontal";
-            //
+            // 
             // _ClearPositionY
-            //
+            // 
             _ClearPositionY.Name = "_ClearPositionY";
-            _ClearPositionY.Size = new System.Drawing.Size(227, 26);
+            _ClearPositionY.Size = new System.Drawing.Size(290, 22);
             _ClearPositionY.Text = "Clear ordinate";
-            //
+            // 
             // _ClearPositionXY
-            //
+            // 
             _ClearPositionXY.Name = "_ClearPositionXY";
-            _ClearPositionXY.Size = new System.Drawing.Size(227, 26);
+            _ClearPositionXY.Size = new System.Drawing.Size(290, 22);
             _ClearPositionXY.Text = "Clear horizontal coordinate with ordinate";
-            //
+            // 
             // _ForceInternalLink
-            //
+            // 
             _ForceInternalLink.Name = "_ForceInternalLink";
-            _ForceInternalLink.Size = new System.Drawing.Size(251, 26);
+            _ForceInternalLink.Size = new System.Drawing.Size(308, 26);
             _ForceInternalLink.Text = "Forced set to file links";
-            //
+            // 
             // _SelectNone
-            //
+            // 
             _SelectNone.Name = "_SelectNone";
-            _SelectNone.Size = new System.Drawing.Size(172, 26);
+            _SelectNone.Size = new System.Drawing.Size(199, 26);
             _SelectNone.Text = "All do not choose";
-            //
+            // 
             // _InvertSelect
-            //
+            // 
             _InvertSelect.Name = "_InvertSelect";
-            _InvertSelect.Size = new System.Drawing.Size(172, 26);
+            _InvertSelect.Size = new System.Drawing.Size(199, 26);
             _InvertSelect.Text = "Inverse select state";
-            //
+            // 
             // _ShiftPageNumber
-            //
+            // 
             _ShiftPageNumber.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _ShiftMultiPageNumber,
             _IncrementPageNumber,
             _DecrementPageNumber});
             _ShiftPageNumber.Image = global::PDFPatcher.Properties.Resources.PageRange;
             _ShiftPageNumber.Name = "_ShiftPageNumber";
-            _ShiftPageNumber.Size = new System.Drawing.Size(251, 26);
+            _ShiftPageNumber.Size = new System.Drawing.Size(308, 26);
             _ShiftPageNumber.Text = "Change the target page &number";
             _ShiftPageNumber.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-            //
+            // 
             // _ShiftMultiPageNumber
-            //
+            // 
             _ShiftMultiPageNumber.Name = "_ShiftMultiPageNumber";
-            _ShiftMultiPageNumber.Size = new System.Drawing.Size(194, 26);
+            _ShiftMultiPageNumber.Size = new System.Drawing.Size(249, 22);
             _ShiftMultiPageNumber.Text = "Add or decrease specified value...";
-            //
+            // 
             // _IncrementPageNumber
-            //
+            // 
             _IncrementPageNumber.Name = "_IncrementPageNumber";
-            _IncrementPageNumber.Size = new System.Drawing.Size(194, 26);
+            _IncrementPageNumber.Size = new System.Drawing.Size(249, 22);
             _IncrementPageNumber.Text = "Increasing page number";
-            //
+            // 
             // _DecrementPageNumber
-            //
+            // 
             _DecrementPageNumber.Name = "_DecrementPageNumber";
-            _DecrementPageNumber.Size = new System.Drawing.Size(194, 26);
+            _DecrementPageNumber.Size = new System.Drawing.Size(249, 22);
             _DecrementPageNumber.Text = "Reduce page number";
-            //
+            // 
             // _MergeBookmark
-            //
+            // 
             _MergeBookmark.Image = global::PDFPatcher.Properties.Resources.Merge;
             _MergeBookmark.Name = "_MergeBookmark";
-            _MergeBookmark.Size = new System.Drawing.Size(251, 26);
+            _MergeBookmark.Size = new System.Drawing.Size(308, 26);
             _MergeBookmark.Text = "&Merge bookmark";
-            //
+            // 
             // _SelectAll
-            //
+            // 
             _SelectAll.Image = global::PDFPatcher.Properties.Resources.SelectAll;
             _SelectAll.Name = "_SelectAll";
-            _SelectAll.Size = new System.Drawing.Size(172, 26);
+            _SelectAll.Size = new System.Drawing.Size(199, 26);
             _SelectAll.Text = "All selected";
-            //
+            // 
             // toolStripSeparator3
-            //
+            // 
             toolStripSeparator3.Name = "toolStripSeparator3";
-            toolStripSeparator3.Size = new System.Drawing.Size(169, 6);
-            //
+            toolStripSeparator3.Size = new System.Drawing.Size(196, 6);
+            // 
             // dummyToolStripMenuItem
-            //
+            // 
             dummyToolStripMenuItem.Name = "dummyToolStripMenuItem";
-            dummyToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
+            dummyToolStripMenuItem.Size = new System.Drawing.Size(91, 22);
             dummyToolStripMenuItem.Text = "dummy";
-            //
+            // 
             // _Copy
-            //
+            // 
             _Copy.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             _Copy.Image = global::PDFPatcher.Properties.Resources.Copy;
             _Copy.ImageTransparentColor = System.Drawing.Color.Magenta;
             _Copy.Name = "_Copy";
-            _Copy.Size = new System.Drawing.Size(29, 24);
+            _Copy.Size = new System.Drawing.Size(24, 24);
             _Copy.Text = "Copy bookmark";
             _Copy.ToolTipText = "Copy bookmark\r\nCtrl+C";
-            //
+            // 
             // _Paste
-            //
+            // 
             _Paste.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             _Paste.Image = global::PDFPatcher.Properties.Resources.Paste;
             _Paste.ImageTransparentColor = System.Drawing.Color.Magenta;
             _Paste.Name = "_Paste";
-            _Paste.Size = new System.Drawing.Size(29, 24);
+            _Paste.Size = new System.Drawing.Size(24, 24);
             _Paste.Text = "Paste bookmark";
             _Paste.ToolTipText = "Paste bookmark\r\nCtrl+P";
-            //
+            // 
             // _DeleteBookmark
-            //
+            // 
             _DeleteBookmark.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             _DeleteBookmark.Image = global::PDFPatcher.Properties.Resources.Delete;
             _DeleteBookmark.ImageTransparentColor = System.Drawing.Color.Magenta;
             _DeleteBookmark.Name = "_DeleteBookmark";
-            _DeleteBookmark.Size = new System.Drawing.Size(29, 24);
+            _DeleteBookmark.Size = new System.Drawing.Size(24, 24);
             _DeleteBookmark.Text = "Delete";
             _DeleteBookmark.ToolTipText = "Delete bookmark items\r\nDelete";
-            //
+            // 
             // toolStripSeparator2
-            //
+            // 
             toolStripSeparator2.Name = "toolStripSeparator2";
             toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
-            //
+            // 
             // _InsertBookmark
-            //
+            // 
             _InsertBookmark.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             _InsertBookmark.Image = global::PDFPatcher.Properties.Resources.BookmarkFile;
             _InsertBookmark.ImageTransparentColor = System.Drawing.Color.Magenta;
             _InsertBookmark.Name = "_InsertBookmark";
-            _InsertBookmark.Size = new System.Drawing.Size(29, 24);
+            _InsertBookmark.Size = new System.Drawing.Size(24, 24);
             _InsertBookmark.Text = "&Insert";
             _InsertBookmark.ToolTipText = "Insert bookmark item\r\nInsert";
-            //
+            // 
             // _LevelUp
-            //
+            // 
             _LevelUp.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             _LevelUp.Image = global::PDFPatcher.Properties.Resources.MoveLeft;
             _LevelUp.ImageTransparentColor = System.Drawing.Color.Magenta;
             _LevelUp.Name = "_LevelUp";
-            _LevelUp.Size = new System.Drawing.Size(29, 24);
+            _LevelUp.Size = new System.Drawing.Size(24, 24);
             _LevelUp.Text = "Set to parent bookmarks";
             _LevelUp.ToolTipText = "Select the book to sign the first level to the parent bookmark\r\nShift+Tab";
-            //
+            // 
             // _LevelDown
-            //
+            // 
             _LevelDown.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             _LevelDown.Image = global::PDFPatcher.Properties.Resources.MoveRight;
             _LevelDown.ImageTransparentColor = System.Drawing.Color.Magenta;
             _LevelDown.Name = "_LevelDown";
-            _LevelDown.Size = new System.Drawing.Size(29, 24);
+            _LevelDown.Size = new System.Drawing.Size(24, 24);
             _LevelDown.Text = "Set to a sub-bookmark";
-            _LevelDown.ToolTipText = "Set the selected bookmark as a sub-bookmark on which the bookmark last level\r\nTab";
-            //
+            _LevelDown.ToolTipText = "Set the selected bookmark as a sub-bookmark on which the bookmark last level\r\nTab" +
+    "";
+            // 
             // toolStripSeparator7
-            //
+            // 
             toolStripSeparator7.Name = "toolStripSeparator7";
-            toolStripSeparator7.Size = new System.Drawing.Size(248, 6);
-            //
+            toolStripSeparator7.Size = new System.Drawing.Size(305, 6);
+            // 
             // _SelectItems
-            //
+            // 
             _SelectItems.DropDown = this._SelectionMenu;
             _SelectItems.Image = global::PDFPatcher.Properties.Resources.SelectItem;
             _SelectItems.ImageTransparentColor = System.Drawing.Color.Magenta;
             _SelectItems.Name = "_SelectItems";
-            _SelectItems.Size = new System.Drawing.Size(251, 26);
+            _SelectItems.Size = new System.Drawing.Size(308, 26);
             _SelectItems.Text = "&Bookmark";
-            //
+            // 
             // _SelectionMenu
-            //
+            // 
             this._SelectionMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._SelectionMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _SelectAll,
@@ -477,70 +479,70 @@
             this._ExpandAll});
             this._SelectionMenu.Name = "_SelectionMenu";
             this._SelectionMenu.OwnerItem = _SelectItems;
-            this._SelectionMenu.Size = new System.Drawing.Size(173, 166);
+            this._SelectionMenu.Size = new System.Drawing.Size(200, 166);
             this._SelectionMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-            //
+            // 
             // _CollapseAll
-            //
+            // 
             this._CollapseAll.Name = "_CollapseAll";
-            this._CollapseAll.Size = new System.Drawing.Size(172, 26);
+            this._CollapseAll.Size = new System.Drawing.Size(199, 26);
             this._CollapseAll.Text = "All fold";
-            //
+            // 
             // _CollapseChildren
-            //
+            // 
             this._CollapseChildren.Name = "_CollapseChildren";
-            this._CollapseChildren.Size = new System.Drawing.Size(172, 26);
+            this._CollapseChildren.Size = new System.Drawing.Size(199, 26);
             this._CollapseChildren.Text = "Folding sub-bookmark";
-            //
+            // 
             // _ExpandAll
-            //
+            // 
             this._ExpandAll.Name = "_ExpandAll";
-            this._ExpandAll.Size = new System.Drawing.Size(172, 26);
+            this._ExpandAll.Size = new System.Drawing.Size(199, 26);
             this._ExpandAll.Text = "Expand All";
-            //
+            // 
             // _SearchReplace
-            //
+            // 
             _SearchReplace.Image = global::PDFPatcher.Properties.Resources.SearchReplace;
             _SearchReplace.ImageTransparentColor = System.Drawing.Color.Magenta;
             _SearchReplace.Name = "_SearchReplace";
-            _SearchReplace.Size = new System.Drawing.Size(251, 26);
+            _SearchReplace.Size = new System.Drawing.Size(308, 26);
             _SearchReplace.Text = "&Search/Replace bookmark text...";
             _SearchReplace.ToolTipText = "Find or replace bookmark text\r\nCtrl+F";
-            //
+            // 
             // _BookmarkAction
-            //
+            // 
             _BookmarkAction.Image = global::PDFPatcher.Properties.Resources.EditItem;
             _BookmarkAction.Name = "_BookmarkAction";
-            _BookmarkAction.Size = new System.Drawing.Size(251, 26);
+            _BookmarkAction.Size = new System.Drawing.Size(308, 26);
             _BookmarkAction.Text = "Bookmark &Action Properties...";
             _BookmarkAction.ToolTipText = "Modify the action performed after clicking the bookmark";
-            //
+            // 
             // toolStripMenuItem1
-            //
+            // 
             toolStripMenuItem1.Image = global::PDFPatcher.Properties.Resources.SelectAll;
             toolStripMenuItem1.Name = "toolStripMenuItem1";
             toolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
             toolStripMenuItem1.Text = "Select All";
-            //
+            // 
             // toolStripMenuItem2
-            //
+            // 
             toolStripMenuItem2.Name = "toolStripMenuItem2";
             toolStripMenuItem2.Size = new System.Drawing.Size(158, 22);
             toolStripMenuItem2.Text = "Do not select all";
-            //
+            // 
             // toolStripMenuItem3
-            //
+            // 
             toolStripMenuItem3.Name = "toolStripMenuItem3";
             toolStripMenuItem3.Size = new System.Drawing.Size(158, 22);
             toolStripMenuItem3.Text = "Invert selection state";
-            //
+            // 
             // toolStripSeparator8
-            //
+            // 
             toolStripSeparator8.Name = "toolStripSeparator8";
             toolStripSeparator8.Size = new System.Drawing.Size(155, 6);
-            //
+            // 
             // toolStripMenuItem4
-            //
+            // 
             toolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             toolStripMenuItem5,
             toolStripMenuItem6,
@@ -556,63 +558,63 @@
             toolStripMenuItem4.Size = new System.Drawing.Size(158, 22);
             toolStripMenuItem4.Text = "Mark Bookmark";
             toolStripMenuItem4.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-            //
+            // 
             // toolStripMenuItem5
-            //
+            // 
             toolStripMenuItem5.Name = "toolStripMenuItem5";
-            toolStripMenuItem5.Size = new System.Drawing.Size(182, 26);
+            toolStripMenuItem5.Size = new System.Drawing.Size(141, 22);
             toolStripMenuItem5.Text = "Red";
-            //
+            // 
             // toolStripMenuItem6
-            //
+            // 
             toolStripMenuItem6.Name = "toolStripMenuItem6";
-            toolStripMenuItem6.Size = new System.Drawing.Size(182, 26);
+            toolStripMenuItem6.Size = new System.Drawing.Size(141, 22);
             toolStripMenuItem6.Text = "Yellow";
-            //
+            // 
             // toolStripMenuItem7
-            //
+            // 
             toolStripMenuItem7.Name = "toolStripMenuItem7";
-            toolStripMenuItem7.Size = new System.Drawing.Size(182, 26);
+            toolStripMenuItem7.Size = new System.Drawing.Size(141, 22);
             toolStripMenuItem7.Text = "green";
-            //
+            // 
             // toolStripMenuItem8
-            //
+            // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(182, 26);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(141, 22);
             this.toolStripMenuItem8.Text = "cyan";
-            //
+            // 
             // toolStripMenuItem9
-            //
+            // 
             toolStripMenuItem9.Name = "toolStripMenuItem9";
-            toolStripMenuItem9.Size = new System.Drawing.Size(182, 26);
+            toolStripMenuItem9.Size = new System.Drawing.Size(141, 22);
             toolStripMenuItem9.Text = "Blue";
-            //
+            // 
             // toolStripMenuItem10
-            //
+            // 
             toolStripMenuItem10.Name = "toolStripMenuItem10";
-            toolStripMenuItem10.Size = new System.Drawing.Size(182, 26);
+            toolStripMenuItem10.Size = new System.Drawing.Size(141, 22);
             toolStripMenuItem10.Text = "Purple";
-            //
+            // 
             // toolStripSeparator9
-            //
+            // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(179, 6);
-            //
+            this.toolStripSeparator9.Size = new System.Drawing.Size(138, 6);
+            // 
             // toolStripMenuItem11
-            //
+            // 
             toolStripMenuItem11.Image = global::PDFPatcher.Properties.Resources.Unmark;
             toolStripMenuItem11.Name = "toolStripMenuItem11";
-            toolStripMenuItem11.Size = new System.Drawing.Size(182, 26);
+            toolStripMenuItem11.Size = new System.Drawing.Size(141, 22);
             toolStripMenuItem11.Text = "Unmark";
-            //
+            // 
             // toolStripMenuItem12
-            //
+            // 
             toolStripMenuItem12.Name = "toolStripMenuItem12";
-            toolStripMenuItem12.Size = new System.Drawing.Size(182, 26);
+            toolStripMenuItem12.Size = new System.Drawing.Size(141, 22);
             toolStripMenuItem12.Text = "Clear all tags";
-            //
+            // 
             // toolStripMenuItem13
-            //
+            // 
             toolStripMenuItem13.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             toolStripMenuItem14,
             toolStripMenuItem15,
@@ -625,272 +627,274 @@
             toolStripMenuItem13.Size = new System.Drawing.Size(158, 22);
             toolStripMenuItem13.Text = "Select marked bookmark";
             toolStripMenuItem13.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-            //
+            // 
             // toolStripMenuItem14
-            //
+            // 
             toolStripMenuItem14.Name = "toolStripMenuItem14";
-            toolStripMenuItem14.Size = new System.Drawing.Size(122, 26);
+            toolStripMenuItem14.Size = new System.Drawing.Size(108, 22);
             toolStripMenuItem14.Text = "Red";
-            //
+            // 
             // toolStripMenuItem15
-            //
+            // 
             toolStripMenuItem15.Name = "toolStripMenuItem15";
-            toolStripMenuItem15.Size = new System.Drawing.Size(122, 26);
+            toolStripMenuItem15.Size = new System.Drawing.Size(108, 22);
             toolStripMenuItem15.Text = "Yellow";
-            //
+            // 
             // toolStripMenuItem16
-            //
+            // 
             toolStripMenuItem16.Name = "toolStripMenuItem16";
-            toolStripMenuItem16.Size = new System.Drawing.Size(122, 26);
+            toolStripMenuItem16.Size = new System.Drawing.Size(108, 22);
             toolStripMenuItem16.Text = "green";
-            //
+            // 
             // toolStripMenuItem17
-            //
+            // 
             toolStripMenuItem17.Name = "toolStripMenuItem17";
-            toolStripMenuItem17.Size = new System.Drawing.Size(122, 26);
+            toolStripMenuItem17.Size = new System.Drawing.Size(108, 22);
             toolStripMenuItem17.Text = "cyan";
-            //
+            // 
             // toolStripMenuItem18
-            //
+            // 
             toolStripMenuItem18.Name = "toolStripMenuItem18";
-            toolStripMenuItem18.Size = new System.Drawing.Size(122, 26);
+            toolStripMenuItem18.Size = new System.Drawing.Size(108, 22);
             toolStripMenuItem18.Text = "Blue";
-            //
+            // 
             // toolStripMenuItem19
-            //
+            // 
             toolStripMenuItem19.Name = "toolStripMenuItem19";
-            toolStripMenuItem19.Size = new System.Drawing.Size(122, 26);
+            toolStripMenuItem19.Size = new System.Drawing.Size(108, 22);
             toolStripMenuItem19.Text = "Purple";
-            //
+            // 
             // toolStripSeparator10
-            //
+            // 
             toolStripSeparator10.Name = "toolStripSeparator10";
             toolStripSeparator10.Size = new System.Drawing.Size(155, 6);
-            //
+            // 
             // _FirstPage
-            //
+            // 
             _FirstPage.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             _FirstPage.Image = global::PDFPatcher.Properties.Resources.MoveTop;
             _FirstPage.ImageTransparentColor = System.Drawing.Color.Magenta;
             _FirstPage.Name = "_FirstPage";
-            _FirstPage.Size = new System.Drawing.Size(29, 25);
+            _FirstPage.Size = new System.Drawing.Size(24, 24);
             _FirstPage.Text = "Go to the first page of the document";
-            //
+            // 
             // _PreviousPage
-            //
+            // 
             _PreviousPage.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             _PreviousPage.Image = global::PDFPatcher.Properties.Resources.MoveUp;
             _PreviousPage.ImageTransparentColor = System.Drawing.Color.Magenta;
             _PreviousPage.Name = "_PreviousPage";
-            _PreviousPage.Size = new System.Drawing.Size(29, 25);
+            _PreviousPage.Size = new System.Drawing.Size(24, 24);
             _PreviousPage.Text = "Go to previous page";
-            //
+            // 
             // _NextPage
-            //
+            // 
             _NextPage.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             _NextPage.Image = global::PDFPatcher.Properties.Resources.MoveDown;
             _NextPage.ImageTransparentColor = System.Drawing.Color.Magenta;
             _NextPage.Name = "_NextPage";
-            _NextPage.Size = new System.Drawing.Size(29, 25);
+            _NextPage.Size = new System.Drawing.Size(24, 24);
             _NextPage.Text = "Go to next page";
-            //
-            //_LastPage
-            //
+            // 
+            // _LastPage
+            // 
             _LastPage.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             _LastPage.Image = global::PDFPatcher.Properties.Resources.MoveBottom;
             _LastPage.ImageTransparentColor = System.Drawing.Color.Magenta;
             _LastPage.Name = "_LastPage";
-            _LastPage.Size = new System.Drawing.Size(29, 25);
+            _LastPage.Size = new System.Drawing.Size(24, 24);
             _LastPage.Text = "Go to the last page of the document";
-            //
+            // 
             // _MoveMode
-            //
+            // 
             _MoveMode.Checked = true;
             _MoveMode.CheckState = System.Windows.Forms.CheckState.Checked;
             _MoveMode.Image = global::PDFPatcher.Properties.Resources.Move;
             _MoveMode.Name = "_MoveMode";
-            _MoveMode.Size = new System.Drawing.Size(257, 26);
+            _MoveMode.Size = new System.Drawing.Size(397, 26);
             _MoveMode.Text = "&Move Page Mode";
             _MoveMode.ToolTipText = "Use the mouse to drag the page";
-            //
+            // 
             // _SelectionMode
-            //
+            // 
             _SelectionMode.Image = global::PDFPatcher.Properties.Resources.SelectItem;
             _SelectionMode.Name = "_SelectionMode";
-            _SelectionMode.Size = new System.Drawing.Size(257, 26);
+            _SelectionMode.Size = new System.Drawing.Size(397, 26);
             _SelectionMode.Text = "&Selection Mode";
-            _SelectionMode.ToolTipText = "Select the content of the document, you can copy the selected content and add bookmarks";
-            //
+            _SelectionMode.ToolTipText = "Select the content of the document, you can copy the selected content and add boo" +
+    "kmarks";
+            // 
             // toolStripSeparator1
-            //
+            // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new System.Drawing.Size(254, 6);
-            //
+            toolStripSeparator1.Size = new System.Drawing.Size(394, 6);
+            // 
             // _ScrollVertical
-            //
+            // 
             _ScrollVertical.Checked = true;
             _ScrollVertical.CheckState = System.Windows.Forms.CheckState.Checked;
             _ScrollVertical.Image = global::PDFPatcher.Properties.Resources.ScrollVertical;
             _ScrollVertical.Name = "_ScrollVertical";
-            _ScrollVertical.Size = new System.Drawing.Size(257, 26);
+            _ScrollVertical.Size = new System.Drawing.Size(397, 26);
             _ScrollVertical.Text = "&read from top to bottom";
-            //
+            // 
             // _ScrollHorizontal
-            //
+            // 
             _ScrollHorizontal.Image = global::PDFPatcher.Properties.Resources.ScrollHorizontal;
             _ScrollHorizontal.Name = "_ScrollHorizontal";
-            _ScrollHorizontal.Size = new System.Drawing.Size(257, 26);
+            _ScrollHorizontal.Size = new System.Drawing.Size(397, 26);
             _ScrollHorizontal.Text = "Read &Y right to left";
-            //
+            // 
             // _FullPageScroll
-            //
+            // 
             _FullPageScroll.Name = "_FullPageScroll";
-            _FullPageScroll.Size = new System.Drawing.Size(257, 26);
+            _FullPageScroll.Size = new System.Drawing.Size(397, 26);
             _FullPageScroll.Text = "&Z";
-            _FullPageScroll.ToolTipText = "When you press the page key to turn the page, press the full page to turn the page instead of the display window to turn the page";
-            //
+            _FullPageScroll.ToolTipText = "When you press the page key to turn the page, press the full page to turn the pag" +
+    "e instead of the display window to turn the page";
+            // 
             // toolStripSeparator6
-            //
+            // 
             toolStripSeparator6.Name = "toolStripSeparator6";
-            toolStripSeparator6.Size = new System.Drawing.Size(254, 6);
-            //
+            toolStripSeparator6.Size = new System.Drawing.Size(394, 6);
+            // 
             // _TrueColorSpace
-            //
+            // 
             _TrueColorSpace.Checked = true;
             _TrueColorSpace.CheckState = System.Windows.Forms.CheckState.Checked;
             _TrueColorSpace.Image = global::PDFPatcher.Properties.Resources.ColorDisplay;
             _TrueColorSpace.Name = "_TrueColorSpace";
-            _TrueColorSpace.Size = new System.Drawing.Size(257, 26);
+            _TrueColorSpace.Size = new System.Drawing.Size(397, 26);
             _TrueColorSpace.Text = "&Color Display";
-            //
+            // 
             // _GrayColorSpace
-            //
+            // 
             _GrayColorSpace.Image = global::PDFPatcher.Properties.Resources.GrayScaleDisplay;
             _GrayColorSpace.Name = "_GrayColorSpace";
-            _GrayColorSpace.Size = new System.Drawing.Size(257, 26);
+            _GrayColorSpace.Size = new System.Drawing.Size(397, 26);
             _GrayColorSpace.Text = "&Black & White";
-            //
+            // 
             // _InvertColor
-            //
+            // 
             _InvertColor.Image = global::PDFPatcher.Properties.Resources.InvertColor;
             _InvertColor.Name = "_InvertColor";
-            _InvertColor.Size = new System.Drawing.Size(257, 26);
+            _InvertColor.Size = new System.Drawing.Size(397, 26);
             _InvertColor.Text = "&Invert Color";
-            //
+            // 
             // _BookmarkHere
-            //
+            // 
             _BookmarkHere.Image = global::PDFPatcher.Properties.Resources.BookmarkFile;
             _BookmarkHere.Name = "_BookmarkHere";
-            _BookmarkHere.Size = new System.Drawing.Size(269, 26);
+            _BookmarkHere.Size = new System.Drawing.Size(338, 26);
             _BookmarkHere.Text = "Insert bookmark here...";
             _BookmarkHere.ToolTipText = "Insert bookmark, point to current location";
-            //
+            // 
             // _CopySelection
-            //
+            // 
             _CopySelection.Image = global::PDFPatcher.Properties.Resources.Copy;
             _CopySelection.Name = "_CopySelection";
-            _CopySelection.Size = new System.Drawing.Size(269, 26);
+            _CopySelection.Size = new System.Drawing.Size(338, 26);
             _CopySelection.Text = "&Copy Selection";
             _CopySelection.ToolTipText = "Copy selected image";
-            //
+            // 
             // toolStripSeparator11
-            //
+            // 
             toolStripSeparator11.Name = "toolStripSeparator11";
-            toolStripSeparator11.Size = new System.Drawing.Size(254, 6);
-            //
+            toolStripSeparator11.Size = new System.Drawing.Size(394, 6);
+            // 
             // _OcrDisabled
-            //
+            // 
             _OcrDisabled.Name = "_OcrDisabled";
-            _OcrDisabled.Size = new System.Drawing.Size(224, 26);
-            _OcrDisabled.Text = "&don't recognize text";
-            //
+            _OcrDisabled.Size = new System.Drawing.Size(179, 22);
+            _OcrDisabled.Text = "&don\'t recognize text";
+            // 
             // _ShowTextBorders
-            //
+            // 
             _ShowTextBorders.Name = "_ShowTextBorders";
-            _ShowTextBorders.Size = new System.Drawing.Size(257, 26);
+            _ShowTextBorders.Size = new System.Drawing.Size(397, 26);
             _ShowTextBorders.Text = "Show TextBorders";
-            //
+            // 
             // _DarkMode
-            //
+            // 
             _DarkMode.Image = global::PDFPatcher.Properties.Resources.DarkMode;
             _DarkMode.Name = "_DarkMode";
-            _DarkMode.Size = new System.Drawing.Size(257, 26);
+            _DarkMode.Size = new System.Drawing.Size(397, 26);
             _DarkMode.Text = "&Dark Mode";
-            //
+            // 
             // toolStripSeparator12
-            //
+            // 
             toolStripSeparator12.Name = "toolStripSeparator12";
-            toolStripSeparator12.Size = new System.Drawing.Size(254, 6);
-            //
+            toolStripSeparator12.Size = new System.Drawing.Size(394, 6);
+            // 
             // _GreenMode
-            //
+            // 
             _GreenMode.Image = global::PDFPatcher.Properties.Resources.GreenMode;
             _GreenMode.Name = "_GreenMode";
-            _GreenMode.Size = new System.Drawing.Size(257, 26);
+            _GreenMode.Size = new System.Drawing.Size(397, 26);
             _GreenMode.Text = "&Green Reading Mode";
-            //
+            // 
             // _ShowBookmarks
-            //
+            // 
             _ShowBookmarks.Name = "_ShowBookmarks";
-            _ShowBookmarks.Size = new System.Drawing.Size(257, 26);
+            _ShowBookmarks.Size = new System.Drawing.Size(397, 26);
             _ShowBookmarks.Text = "Show Bookmarks Bar";
-            //
+            // 
             // _InsertPageLabel
-            //
+            // 
             _InsertPageLabel.Image = global::PDFPatcher.Properties.Resources.PageRange;
             _InsertPageLabel.Name = "_InsertPageLabel";
-            _InsertPageLabel.Size = new System.Drawing.Size(269, 26);
+            _InsertPageLabel.Size = new System.Drawing.Size(338, 26);
             _InsertPageLabel.Text = "Insert Page Label (&Y)...";
             _InsertPageLabel.Visible = false;
-            //
+            // 
             // _AutoBookmark
-            //
+            // 
             _AutoBookmark.Enabled = false;
             _AutoBookmark.Image = global::PDFPatcher.Properties.Resources.AutoBookmark;
             _AutoBookmark.Name = "_AutoBookmark";
-            _AutoBookmark.Size = new System.Drawing.Size(269, 26);
+            _AutoBookmark.Size = new System.Drawing.Size(338, 26);
             _AutoBookmark.Text = "Format AutoBookmark Title";
-            //
+            // 
             // _SetOpenStatusTrue
-            //
+            // 
             _SetOpenStatusTrue.Name = "_SetOpenStatusTrue";
-            _SetOpenStatusTrue.Size = new System.Drawing.Size(122, 26);
+            _SetOpenStatusTrue.Size = new System.Drawing.Size(103, 22);
             _SetOpenStatusTrue.Text = "Open";
-            //
+            // 
             // _SetOpenStatusFalse
-            //
+            // 
             _SetOpenStatusFalse.Name = "_SetOpenStatusFalse";
-            _SetOpenStatusFalse.Size = new System.Drawing.Size(122, 26);
+            _SetOpenStatusFalse.Size = new System.Drawing.Size(103, 22);
             _SetOpenStatusFalse.Text = "Close";
-            //
+            // 
             // _OcrDetectPunctuation
-            //
+            // 
             _OcrDetectPunctuation.Name = "_OcrDetectPunctuation";
-            _OcrDetectPunctuation.Size = new System.Drawing.Size(257, 26);
+            _OcrDetectPunctuation.Size = new System.Drawing.Size(397, 26);
             _OcrDetectPunctuation.Text = "Enhanced recognition of table of contents page punctuation";
-            //
+            // 
             // _FullScreen
-            //
+            // 
             _FullScreen.Name = "_FullScreen";
-            _FullScreen.Size = new System.Drawing.Size(257, 26);
+            _FullScreen.Size = new System.Drawing.Size(397, 26);
             _FullScreen.Text = "&Full Screen";
-            //
+            // 
             // _PageProperties
-            //
+            // 
             _PageProperties.Image = global::PDFPatcher.Properties.Resources.Property;
             _PageProperties.Name = "_PageProperties";
-            _PageProperties.Size = new System.Drawing.Size(269, 26);
+            _PageProperties.Size = new System.Drawing.Size(338, 26);
             _PageProperties.Text = "View Page Properties(&X)...";
-            //
+            // 
             // _EditorOptions
-            //
+            // 
             _EditorOptions.Image = global::PDFPatcher.Properties.Resources.PdfOptions;
             _EditorOptions.Name = "_EditorOptions";
-            _EditorOptions.Size = new System.Drawing.Size(257, 26);
+            _EditorOptions.Size = new System.Drawing.Size(397, 26);
             _EditorOptions.Text = "Set file modification method (X)...";
-            //
+            // 
             // _MarkBookmark
-            //
+            // 
             _MarkBookmark.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _MarkBookmarkRed,
             _MarkBookmarkYellow,
@@ -903,122 +907,122 @@
             _ClearBookmarkMarks});
             _MarkBookmark.Image = global::PDFPatcher.Properties.Resources.Mark;
             _MarkBookmark.Name = "_MarkBookmark";
-            _MarkBookmark.Size = new System.Drawing.Size(251, 26);
+            _MarkBookmark.Size = new System.Drawing.Size(308, 26);
             _MarkBookmark.Text = "Mark Bookmark";
             _MarkBookmark.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-            //
+            // 
             // _MarkBookmarkRed
-            //
+            // 
             _MarkBookmarkRed.Name = "_MarkBookmarkRed";
-            _MarkBookmarkRed.Size = new System.Drawing.Size(182, 26);
+            _MarkBookmarkRed.Size = new System.Drawing.Size(170, 22);
             _MarkBookmarkRed.Text = "Red";
-            //
-            //_MarkBookmarkYellow
-            //
+            // 
+            // _MarkBookmarkYellow
+            // 
             _MarkBookmarkYellow.Name = "_MarkBookmarkYellow";
-            _MarkBookmarkYellow.Size = new System.Drawing.Size(182, 26);
+            _MarkBookmarkYellow.Size = new System.Drawing.Size(170, 22);
             _MarkBookmarkYellow.Text = "Yellow";
-            //
-            //_MarkBookmarkGreen
-            //
+            // 
+            // _MarkBookmarkGreen
+            // 
             _MarkBookmarkGreen.Name = "_MarkBookmarkGreen";
-            _MarkBookmarkGreen.Size = new System.Drawing.Size(182, 26);
+            _MarkBookmarkGreen.Size = new System.Drawing.Size(170, 22);
             _MarkBookmarkGreen.Text = "Green";
-            //
-            //_MarkBookmarkCyan
-            //
+            // 
+            // _MarkBookmarkCyan
+            // 
             this._MarkBookmarkCyan.Name = "_MarkBookmarkCyan";
-            this._MarkBookmarkCyan.Size = new System.Drawing.Size(182, 26);
+            this._MarkBookmarkCyan.Size = new System.Drawing.Size(170, 22);
             this._MarkBookmarkCyan.Text = "Cyan";
-            //
-            //_MarkBookmarkBlue
-            //
+            // 
+            // _MarkBookmarkBlue
+            // 
             _MarkBookmarkBlue.Name = "_MarkBookmarkBlue";
-            _MarkBookmarkBlue.Size = new System.Drawing.Size(182, 26);
+            _MarkBookmarkBlue.Size = new System.Drawing.Size(170, 22);
             _MarkBookmarkBlue.Text = "Blue";
-            //
-            //_MarkBookmarkPurple
-            //
+            // 
+            // _MarkBookmarkPurple
+            // 
             _MarkBookmarkPurple.Name = "_MarkBookmarkPurple";
-            _MarkBookmarkPurple.Size = new System.Drawing.Size(182, 26);
+            _MarkBookmarkPurple.Size = new System.Drawing.Size(170, 22);
             _MarkBookmarkPurple.Text = "Purple";
-            //
+            // 
             // toolStripSeparator5
-            //
+            // 
             toolStripSeparator5.Name = "toolStripSeparator5";
-            toolStripSeparator5.Size = new System.Drawing.Size(179, 6);
-            //
+            toolStripSeparator5.Size = new System.Drawing.Size(167, 6);
+            // 
             // _UnmarkBookmark
-            //
+            // 
             _UnmarkBookmark.Image = global::PDFPatcher.Properties.Resources.Unmark;
             _UnmarkBookmark.Name = "_UnmarkBookmark";
-            _UnmarkBookmark.Size = new System.Drawing.Size(182, 26);
+            _UnmarkBookmark.Size = new System.Drawing.Size(170, 22);
             _UnmarkBookmark.Text = "UnmarkBookmark";
-            //
-            //_ClearBookmarkMarks
-            //
+            // 
+            // _ClearBookmarkMarks
+            // 
             _ClearBookmarkMarks.Name = "_ClearBookmarkMarks";
-            _ClearBookmarkMarks.Size = new System.Drawing.Size(182, 26);
+            _ClearBookmarkMarks.Size = new System.Drawing.Size(170, 22);
             _ClearBookmarkMarks.Text = "Clear All Marks";
-            //
+            // 
             // _SelectMarkedBookmarks
-            //
+            // 
             _SelectMarkedBookmarks.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-             _SelectRedMarks,
-             _SelectYellowMarks,
-             _SelectGreenMarks,
-             _SelectCyanMarks,
-             _SelectBlueMarks,
-             _SelectPurpleMarks});
+            _SelectRedMarks,
+            _SelectYellowMarks,
+            _SelectGreenMarks,
+            _SelectCyanMarks,
+            _SelectBlueMarks,
+            _SelectPurpleMarks});
             _SelectMarkedBookmarks.Image = global::PDFPatcher.Properties.Resources.SelectMarks;
             _SelectMarkedBookmarks.Name = "_SelectMarkedBookmarks";
-            _SelectMarkedBookmarks.Size = new System.Drawing.Size(251, 26);
+            _SelectMarkedBookmarks.Size = new System.Drawing.Size(308, 26);
             _SelectMarkedBookmarks.Text = "Select Marked Bookmarks";
             _SelectMarkedBookmarks.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-            //
+            // 
             // _SelectRedMarks
-            //
+            // 
             _SelectRedMarks.Name = "_SelectRedMarks";
-            _SelectRedMarks.Size = new System.Drawing.Size(122, 26);
+            _SelectRedMarks.Size = new System.Drawing.Size(108, 22);
             _SelectRedMarks.Text = "Red";
-            //
+            // 
             // _SelectYellowMarks
-            //
+            // 
             _SelectYellowMarks.Name = "_SelectYellowMarks";
-            _SelectYellowMarks.Size = new System.Drawing.Size(122, 26);
+            _SelectYellowMarks.Size = new System.Drawing.Size(108, 22);
             _SelectYellowMarks.Text = "Yellow";
-            //
+            // 
             // _SelectGreenMarks
-            //
+            // 
             _SelectGreenMarks.Name = "_SelectGreenMarks";
-            _SelectGreenMarks.Size = new System.Drawing.Size(122, 26);
+            _SelectGreenMarks.Size = new System.Drawing.Size(108, 22);
             _SelectGreenMarks.Text = "Green";
-            //
+            // 
             // _SelectCyanMarks
-            //
+            // 
             _SelectCyanMarks.Name = "_SelectCyanMarks";
-            _SelectCyanMarks.Size = new System.Drawing.Size(122, 26);
+            _SelectCyanMarks.Size = new System.Drawing.Size(108, 22);
             _SelectCyanMarks.Text = "Cyan";
-            //
+            // 
             // _SelectBlueMarks
-            //
+            // 
             _SelectBlueMarks.Name = "_SelectBlueMarks";
-            _SelectBlueMarks.Size = new System.Drawing.Size(122, 26);
+            _SelectBlueMarks.Size = new System.Drawing.Size(108, 22);
             _SelectBlueMarks.Text = "Blue";
-            //
+            // 
             // _SelectPurpleMarks
-            //
+            // 
             _SelectPurpleMarks.Name = "_SelectPurpleMarks";
-            _SelectPurpleMarks.Size = new System.Drawing.Size(122, 26);
+            _SelectPurpleMarks.Size = new System.Drawing.Size(108, 22);
             _SelectPurpleMarks.Text = "Purple";
-            //
+            // 
             // toolStripSeparator14
-            //
+            // 
             toolStripSeparator14.Name = "toolStripSeparator14";
-            toolStripSeparator14.Size = new System.Drawing.Size(254, 6);
-            //
+            toolStripSeparator14.Size = new System.Drawing.Size(394, 6);
+            // 
             // _ViewerButton
-            //
+            // 
             this._ViewerButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this._ViewerButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _EditorOptions,
@@ -1047,29 +1051,35 @@
             this._ViewerButton.Image = global::PDFPatcher.Properties.Resources.CreateDocument;
             this._ViewerButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._ViewerButton.Name = "_ViewerButton";
-            this._ViewerButton.Size = new System.Drawing.Size(34, 25);
+            this._ViewerButton.Size = new System.Drawing.Size(33, 24);
             this._ViewerButton.Text = "Viewer";
             this._ViewerButton.ToolTipText = "Reading mode";
             this._ViewerButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-            //
+            // 
             // _OcrMenu
-            //
+            // 
             this._OcrMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-             _OcrDisabled});
+            _OcrDisabled});
             this._OcrMenu.Image = global::PDFPatcher.Properties.Resources.Ocr;
             this._OcrMenu.Name = "_OcrMenu";
-            this._OcrMenu.Size = new System.Drawing.Size(257, 26);
+            this._OcrMenu.Size = new System.Drawing.Size(397, 26);
             this._OcrMenu.Text = "Identify text language(&W)";
             this._OcrMenu.ToolTipText = "Set the recognition engine when inserting bookmarks and recognizing page text";
-            //
+            // 
+            // _InsertWithOcrOnly
+            // 
+            this._InsertWithOcrOnly.Name = "_InsertWithOcrOnly";
+            this._InsertWithOcrOnly.Size = new System.Drawing.Size(397, 26);
+            this._InsertWithOcrOnly.Text = "Insert bookmarks using only the recognition engine";
+            // 
             // _ShowAnnotations
-            //
+            // 
             this._ShowAnnotations.Name = "_ShowAnnotations";
-            this._ShowAnnotations.Size = new System.Drawing.Size(257, 26);
+            this._ShowAnnotations.Size = new System.Drawing.Size(397, 26);
             this._ShowAnnotations.Text = "Show document annotations (&P)";
-            //
+            // 
             // _EditMenu
-            //
+            // 
             this._EditMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._EditMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _BookmarkAction,
@@ -1089,116 +1099,117 @@
             _MarkBookmark,
             _SelectMarkedBookmarks});
             this._EditMenu.Name = "_EditMenu";
-            this._EditMenu.Size = new System.Drawing.Size(252, 360);
+            this._EditMenu.Size = new System.Drawing.Size(309, 360);
             this._EditMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-            //
+            // 
             // toolStripSeparator13
-            //
+            // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(248, 6);
-            //
+            this.toolStripSeparator13.Size = new System.Drawing.Size(305, 6);
+            // 
             // _SetOpenStatus
-            //
+            // 
             this._SetOpenStatus.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _SetOpenStatusTrue,
             _SetOpenStatusFalse});
             this._SetOpenStatus.Image = global::PDFPatcher.Properties.Resources.Open;
             this._SetOpenStatus.Name = "_SetOpenStatus";
-            this._SetOpenStatus.Size = new System.Drawing.Size(251, 26);
+            this._SetOpenStatus.Size = new System.Drawing.Size(308, 26);
             this._SetOpenStatus.Text = "Set the default open status of bookmarks(&T)";
-            //
+            // 
             // _ChangeZoomRate
-            //
+            // 
             this._ChangeZoomRate.Image = global::PDFPatcher.Properties.Resources.Zoom;
             this._ChangeZoomRate.Name = "_ChangeZoomRate";
-            this._ChangeZoomRate.Size = new System.Drawing.Size(251, 26);
+            this._ChangeZoomRate.Size = new System.Drawing.Size(308, 26);
             this._ChangeZoomRate.Text = "Set target display mode(&X)";
-            //
+            // 
             // _ChangeCase
-            //
+            // 
             this._ChangeCase.Image = global::PDFPatcher.Properties.Resources.ChangeCase;
             this._ChangeCase.Name = "_ChangeCase";
-            this._ChangeCase.Size = new System.Drawing.Size(251, 26);
+            this._ChangeCase.Size = new System.Drawing.Size(308, 26);
             this._ChangeCase.Text = "Change bookmark text case";
             this._ChangeCase.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-            //
+            // 
             // toolStripSeparator4
-            //
+            // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(248, 6);
-            //
+            this.toolStripSeparator4.Size = new System.Drawing.Size(305, 6);
+            // 
             // _QuickSelect
-            //
+            // 
             this._QuickSelect.Image = global::PDFPatcher.Properties.Resources.SelectItem;
             this._QuickSelect.Name = "_QuickSelect";
-            this._QuickSelect.Size = new System.Drawing.Size(251, 26);
+            this._QuickSelect.Size = new System.Drawing.Size(308, 26);
             this._QuickSelect.Text = "Quickly choose bookmarks(&K)";
             this._QuickSelect.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-            //
+            // 
             // _RecentFileMenu
-            //
+            // 
             this._RecentFileMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._RecentFileMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             dummyToolStripMenuItem});
             this._RecentFileMenu.Name = "_RecentFileMenu";
             this._RecentFileMenu.OwnerItem = this._AddFilesButton;
             this._RecentFileMenu.ShowImageMargin = false;
-            this._RecentFileMenu.Size = new System.Drawing.Size(109, 28);
-            //
+            this._RecentFileMenu.Size = new System.Drawing.Size(92, 26);
+            // 
             // _AddFilesButton
-            //
+            // 
             this._AddFilesButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this._AddFilesButton.DropDown = this._RecentFileMenu;
             this._AddFilesButton.Image = global::PDFPatcher.Properties.Resources.OpenFile;
             this._AddFilesButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._AddFilesButton.Name = "_AddFilesButton";
-            this._AddFilesButton.Size = new System.Drawing.Size(39, 24);
+            this._AddFilesButton.Size = new System.Drawing.Size(36, 24);
             this._AddFilesButton.Text = "Open";
             this._AddFilesButton.ToolTipText = "Open the PDF file that needs to be edited";
             this._AddFilesButton.ButtonClick += new System.EventHandler(this.ButtonClicked);
             this._AddFilesButton.DropDownOpening += new System.EventHandler(this._OpenButton_DropDownOpening);
             this._AddFilesButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._OpenButton_DropDownItemClicked);
-            //
+            // 
             // _UndoMenu
-            //
+            // 
             this._UndoMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._UndoMenu.Name = "_UndoMenu";
             this._UndoMenu.OwnerItem = this._UndoButton;
             this._UndoMenu.ShowImageMargin = false;
             this._UndoMenu.Size = new System.Drawing.Size(36, 4);
-            //
+            // 
             // _UndoButton
-            //
+            // 
             this._UndoButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this._UndoButton.DropDown = this._UndoMenu;
             this._UndoButton.Enabled = false;
             this._UndoButton.Image = global::PDFPatcher.Properties.Resources.Undo;
             this._UndoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._UndoButton.Name = "_UndoButton";
-            this._UndoButton.Size = new System.Drawing.Size(39, 24);
+            this._UndoButton.Size = new System.Drawing.Size(36, 24);
             this._UndoButton.Text = "Undo";
             this._UndoButton.ToolTipText = "Undo\r\nCtrl+Z";
             this._UndoButton.ButtonClick += new System.EventHandler(this.ButtonClicked);
-            //
+            // 
             // _IncludeDecendantBox
-            //
+            // 
             this._IncludeDecendantBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this._IncludeDecendantBox.AutoSize = true;
-            this._IncludeDecendantBox.Location = new System.Drawing.Point(4, 347);
+            this._IncludeDecendantBox.Location = new System.Drawing.Point(4, 350);
             this._IncludeDecendantBox.Margin = new System.Windows.Forms.Padding(4);
             this._IncludeDecendantBox.Name = "_IncludeDecendantBox";
-            this._IncludeDecendantBox.Size = new System.Drawing.Size(239, 19);
+            this._IncludeDecendantBox.Size = new System.Drawing.Size(348, 16);
             this._IncludeDecendantBox.TabIndex = 1;
             this._IncludeDecendantBox.Text = "Modify operation includes unchecked internal bookmarks";
             this._IncludeDecendantBox.UseVisualStyleBackColor = true;
-            //
+            // 
             // _BookmarkBox
-            //
+            // 
             this._BookmarkBox.AllowDrop = true;
-            this._BookmarkBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this._BookmarkBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this._BookmarkBox.CellEditActivation = BrightIdeasSoftware.ObjectListView.CellEditActivateMode.SingleClick;
+            this._BookmarkBox.CellEditUseWholeCell = false;
             this._BookmarkBox.ContextMenuStrip = this._EditMenu;
             this._BookmarkBox.CopySelectionOnControlC = false;
             this._BookmarkBox.Cursor = System.Windows.Forms.Cursors.Default;
@@ -1214,7 +1225,7 @@
             this._BookmarkBox.OperationAffectsDescendants = false;
             this._BookmarkBox.RevealAfterExpand = false;
             this._BookmarkBox.ShowGroups = false;
-            this._BookmarkBox.Size = new System.Drawing.Size(322, 334);
+            this._BookmarkBox.Size = new System.Drawing.Size(398, 334);
             this._BookmarkBox.TabIndex = 0;
             this._BookmarkBox.UseCellFormatEvents = true;
             this._BookmarkBox.UseCompatibleStateImageBehavior = false;
@@ -1224,49 +1235,49 @@
             this._BookmarkBox.VirtualMode = true;
             this._BookmarkBox.DragDrop += new System.Windows.Forms.DragEventHandler(this._BookmarkBox_DragDrop);
             this._BookmarkBox.DragEnter += new System.Windows.Forms.DragEventHandler(this._BookmarkBox_DragEnter);
-            //
+            // 
             // _MainPanel
-            //
-            this._MainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            // 
+            this._MainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this._MainPanel.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this._MainPanel.Location = new System.Drawing.Point(4, 36);
             this._MainPanel.Margin = new System.Windows.Forms.Padding(4);
             this._MainPanel.Name = "_MainPanel";
-            //
+            // 
             // _MainPanel.Panel1
-            //
+            // 
             this._MainPanel.Panel1.Controls.Add(this._IncludeDecendantBox);
             this._MainPanel.Panel1.Controls.Add(this._BookmarkBox);
-            //
+            // 
             // _MainPanel.Panel2
-            //
+            // 
             this._MainPanel.Panel2.Controls.Add(this._PageInfoBox);
             this._MainPanel.Panel2.Controls.Add(this._ViewerBox);
-            this._MainPanel.Size = new System.Drawing.Size(831, 370);
-            this._MainPanel.SplitterDistance = 332;
+            this._MainPanel.Size = new System.Drawing.Size(868, 370);
+            this._MainPanel.SplitterDistance = 363;
             this._MainPanel.SplitterWidth = 5;
             this._MainPanel.TabIndex = 1;
-            //
+            // 
             // _PageInfoBox
-            //
-            this._PageInfoBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            // 
+            this._PageInfoBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this._PageInfoBox.AutoEllipsis = true;
-            this._PageInfoBox.Location = new System.Drawing.Point(4, 348);
+            this._PageInfoBox.Location = new System.Drawing.Point(4, 347);
             this._PageInfoBox.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._PageInfoBox.Name = "_PageInfoBox";
-            this._PageInfoBox.Size = new System.Drawing.Size(486, 19);
+            this._PageInfoBox.Size = new System.Drawing.Size(492, 19);
             this._PageInfoBox.TabIndex = 1;
             this._PageInfoBox.Text = "PDF page information";
-            //
+            // 
             // _ViewerBox
-            //
+            // 
             this._ViewerBox.AllowUnfocusedMouseWheel = true;
             this._ViewerBox.AllowZoom = false;
-            this._ViewerBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this._ViewerBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this._ViewerBox.BackColor = System.Drawing.Color.DarkGray;
             this._ViewerBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1277,13 +1288,13 @@
             this._ViewerBox.Name = "_ViewerBox";
             this._ViewerBox.OcrLanguage = 2052;
             this._ViewerBox.PinPoint = new System.Drawing.Point(0, 0);
-            this._ViewerBox.Size = new System.Drawing.Size(485, 334);
+            this._ViewerBox.Size = new System.Drawing.Size(492, 334);
             this._ViewerBox.TabIndex = 0;
             this._ViewerBox.TintColor = System.Drawing.Color.Transparent;
             this._ViewerBox.VirtualMode = true;
-            //
+            // 
             // _ViewerMenu
-            //
+            // 
             this._ViewerMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._ViewerMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _BookmarkHere,
@@ -1294,26 +1305,27 @@
             _PageProperties,
             this._SavePageImage});
             this._ViewerMenu.Name = "_ViewerMenu";
-            this._ViewerMenu.Size = new System.Drawing.Size(270, 186);
+            this._ViewerMenu.Size = new System.Drawing.Size(339, 186);
             this._ViewerMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-            //
+            // 
             // _OcrPage
-            //
+            // 
             this._OcrPage.Image = global::PDFPatcher.Properties.Resources.Ocr;
             this._OcrPage.Name = "_OcrPage";
-            this._OcrPage.Size = new System.Drawing.Size(269, 26);
+            this._OcrPage.Size = new System.Drawing.Size(338, 26);
             this._OcrPage.Text = "Copy the text recognition result of this page(&W)...";
-            this._OcrPage.ToolTipText = "Call the image recognition engine to recognize the text of the selected image content";
-            //
+            this._OcrPage.ToolTipText = "Call the image recognition engine to recognize the text of the selected image con" +
+    "tent";
+            // 
             // _SavePageImage
-            //
+            // 
             this._SavePageImage.Image = global::PDFPatcher.Properties.Resources.RenderImage;
             this._SavePageImage.Name = "_SavePageImage";
-            this._SavePageImage.Size = new System.Drawing.Size(269, 26);
+            this._SavePageImage.Size = new System.Drawing.Size(338, 26);
             this._SavePageImage.Text = "&Save as Image...";
-            //
+            // 
             // _BookmarkToolbar
-            //
+            // 
             this._BookmarkToolbar.Dock = System.Windows.Forms.DockStyle.None;
             this._BookmarkToolbar.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._BookmarkToolbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1333,53 +1345,53 @@
             this._BookmarkColorButton});
             this._BookmarkToolbar.Location = new System.Drawing.Point(0, 0);
             this._BookmarkToolbar.Name = "_BookmarkToolbar";
-            this._BookmarkToolbar.Size = new System.Drawing.Size(417, 27);
+            this._BookmarkToolbar.Size = new System.Drawing.Size(360, 27);
             this._BookmarkToolbar.TabIndex = 2;
             this._BookmarkToolbar.Text = "menuStrip1";
             this._BookmarkToolbar.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-            //
+            // 
             // _SavePDF
-            //
+            // 
             this._SavePDF.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this._SavePDF.Image = global::PDFPatcher.Properties.Resources.Save;
             this._SavePDF.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._SavePDF.Name = "_SavePDF";
-            this._SavePDF.Size = new System.Drawing.Size(29, 24);
+            this._SavePDF.Size = new System.Drawing.Size(24, 24);
             this._SavePDF.Text = "Save PDF";
             this._SavePDF.ToolTipText = "Save PDF file\r\nCtrl+S";
-            //
+            // 
             // _SaveBookmark
-            //
+            // 
             this._SaveBookmark.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this._SaveBookmark.Image = global::PDFPatcher.Properties.Resources.ExportInfoFile;
             this._SaveBookmark.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._SaveBookmark.Name = "_SaveBookmark";
-            this._SaveBookmark.Size = new System.Drawing.Size(29, 24);
+            this._SaveBookmark.Size = new System.Drawing.Size(24, 24);
             this._SaveBookmark.Text = "Save Bookmark File";
             this._SaveBookmark.ToolTipText = "Save bookmark file\r\nCtrl+Q";
-            //
+            // 
             // _BookmarkBoldButton
-            //
+            // 
             this._BookmarkBoldButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this._BookmarkBoldButton.Image = global::PDFPatcher.Properties.Resources.Bold;
             this._BookmarkBoldButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._BookmarkBoldButton.Name = "_BookmarkBoldButton";
-            this._BookmarkBoldButton.Size = new System.Drawing.Size(29, 24);
+            this._BookmarkBoldButton.Size = new System.Drawing.Size(24, 24);
             this._BookmarkBoldButton.Text = "Bold";
             this._BookmarkBoldButton.ToolTipText = "Toggle bookmark text bold style\r\nCtrl+B";
-            //
+            // 
             // _BookmarkItalicButton
-            //
+            // 
             this._BookmarkItalicButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this._BookmarkItalicButton.Image = global::PDFPatcher.Properties.Resources.Italic;
             this._BookmarkItalicButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._BookmarkItalicButton.Name = "_BookmarkItalicButton";
-            this._BookmarkItalicButton.Size = new System.Drawing.Size(29, 24);
+            this._BookmarkItalicButton.Size = new System.Drawing.Size(24, 24);
             this._BookmarkItalicButton.Text = "Italic";
             this._BookmarkItalicButton.ToolTipText = "Toggle the italic style of bookmark text\r\nCtrl+I";
-            //
+            // 
             // _BookmarkColorButton
-            //
+            // 
             this._BookmarkColorButton.AutoSize = false;
             this._BookmarkColorButton.ButtonDisplayStyle = ColorPicker.ToolStripColorPickerDisplayType.UnderLineAndImage;
             this._BookmarkColorButton.Color = System.Drawing.Color.Black;
@@ -1392,27 +1404,27 @@
             this._BookmarkColorButton.ToolTipText = "Set the color of bookmark text";
             this._BookmarkColorButton.SelectedColorChanged += new System.EventHandler(this._BookmarkColorButton_SelectedColorChanged);
             this._BookmarkColorButton.ButtonClick += new System.EventHandler(this._BookmarkColorButton_SelectedColorChanged);
-            //
+            // 
             // toolStripMenuItem20
-            //
+            // 
             this.toolStripMenuItem20.Name = "toolStripMenuItem20";
             this.toolStripMenuItem20.Size = new System.Drawing.Size(158, 22);
             this.toolStripMenuItem20.Text = "Fold all";
-            //
+            // 
             // toolStripMenuItem21
-            //
+            // 
             this.toolStripMenuItem21.Name = "toolStripMenuItem21";
             this.toolStripMenuItem21.Size = new System.Drawing.Size(158, 22);
             this.toolStripMenuItem21.Text = "Collapse child bookmark";
-            //
+            // 
             // toolStripMenuItem22
-            //
+            // 
             this.toolStripMenuItem22.Name = "toolStripMenuItem22";
             this.toolStripMenuItem22.Size = new System.Drawing.Size(158, 22);
             this.toolStripMenuItem22.Text = "Expand All";
-            //
+            // 
             // _ViewerToolbar
-            //
+            // 
             this._ViewerToolbar.Dock = System.Windows.Forms.DockStyle.None;
             this._ViewerToolbar.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._ViewerToolbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1425,20 +1437,20 @@
             this._ViewerButton});
             this._ViewerToolbar.Location = new System.Drawing.Point(366, 0);
             this._ViewerToolbar.Name = "_ViewerToolbar";
-            this._ViewerToolbar.Size = new System.Drawing.Size(370, 28);
+            this._ViewerToolbar.Size = new System.Drawing.Size(309, 27);
             this._ViewerToolbar.TabIndex = 4;
             this._ViewerToolbar.Text = "toolStrip1";
             this._ViewerToolbar.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-            //
+            // 
             // _CurrentPageBox
-            //
+            // 
             this._CurrentPageBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this._CurrentPageBox.Name = "_CurrentPageBox";
-            this._CurrentPageBox.Size = new System.Drawing.Size(65, 28);
+            this._CurrentPageBox.Size = new System.Drawing.Size(65, 27);
             this._CurrentPageBox.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            //
+            // 
             // _ZoomBox
-            //
+            // 
             this._ZoomBox.Items.AddRange(new object[] {
             "Fit to page",
             "Fit to page width",
@@ -1454,17 +1466,11 @@
             "300%",
             "400%"});
             this._ZoomBox.Name = "_ZoomBox";
-            this._ZoomBox.Size = new System.Drawing.Size(99, 28);
-            //
-            // _InsertWithOcrOnly
-            //
-            this._InsertWithOcrOnly.Name = "_InsertWithOcrOnly";
-            this._InsertWithOcrOnly.Size = new System.Drawing.Size(257, 26);
-            this._InsertWithOcrOnly.Text = "Insert bookmarks using only the recognition engine";
-            //
+            this._ZoomBox.Size = new System.Drawing.Size(99, 27);
+            // 
             // EditorControl
-            //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this._MainPanel);
             this.Controls.Add(this._ViewerToolbar);
@@ -1472,7 +1478,7 @@
             this.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EditorControl";
-            this.Size = new System.Drawing.Size(839, 406);
+            this.Size = new System.Drawing.Size(876, 406);
             this._SelectionMenu.ResumeLayout(false);
             this._EditMenu.ResumeLayout(false);
             this._RecentFileMenu.ResumeLayout(false);
@@ -1480,6 +1486,7 @@
             this._MainPanel.Panel1.ResumeLayout(false);
             this._MainPanel.Panel1.PerformLayout();
             this._MainPanel.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this._MainPanel)).EndInit();
             this._MainPanel.ResumeLayout(false);
             this._ViewerMenu.ResumeLayout(false);
             this._BookmarkToolbar.ResumeLayout(false);

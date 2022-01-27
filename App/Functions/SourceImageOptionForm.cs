@@ -42,4 +42,9 @@ internal sealed partial class SourceImageOptionForm : Form
         DialogResult = DialogResult.Cancel;
         Close();
     }
+
+    private void _BottomMarginBox_ValueChanged(object sender, EventArgs e)
+    {
+
+    }
 }

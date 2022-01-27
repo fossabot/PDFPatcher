@@ -200,7 +200,7 @@ internal sealed class OcrProcessor
     {
         if (options.DetectContentPunctuations)
         {
-            text = __ContentPunctuationExpression.Replace(text, " .... ");
+            text = __ContentPunctuationExpression.Replace(text, ".... ");
         }
 
         if (options.CompressWhiteSpaces)

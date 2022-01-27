@@ -250,4 +250,9 @@ public partial class PatcherOptionForm : Form, IResettableControl
         decimal d = c.Value;
         _TopMarginBox.Value = _BottomMarginBox.Value = _LeftMarginBox.Value = _RightMarginBox.Value = d;
     }
+
+    private void _ViewerSettingsEditor_Load(object sender, EventArgs e)
+    {
+
+    }
 }

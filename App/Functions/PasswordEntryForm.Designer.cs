@@ -25,82 +25,89 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
-			this.label1 = new System.Windows.Forms.Label ();
-			this._PasswordBox = new System.Windows.Forms.TextBox ();
-			this._OkButton = new System.Windows.Forms.Button ();
-			this._CancelButton = new System.Windows.Forms.Button ();
-			this._MessageLabel = new System.Windows.Forms.Label ();
-			this.SuspendLayout ();
-			//
-			// label1
-			//
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point (12, 46);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size (191, 12);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Please enter the edit permission password for the PDF file:";
-			//
-			// _PasswordBox
-			//
-			this._PasswordBox.Location = new System.Drawing.Point (14, 61);
-			this._PasswordBox.Name = "_PasswordBox";
-			this._PasswordBox.PasswordChar = '★';
-			this._PasswordBox.Size = new System.Drawing.Size (274, 21);
-			this._PasswordBox.TabIndex = 1;
-			//
-			// _OkButton
-			//
-			this._OkButton.Location = new System.Drawing.Point (132, 88);
-			this._OkButton.Name = "_OkButton";
-			this._OkButton.Size = new System.Drawing.Size (75, 23);
-			this._OkButton.TabIndex = 2;
-			this._OkButton.Text = "OK (&Q)";
-			this._OkButton.UseVisualStyleBackColor = true;
-			this._OkButton.Click += new System.EventHandler (this._OkButton_Click);
-			//
-			// _CancelButton
-			//
-			this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this._CancelButton.Location = new System.Drawing.Point (213, 88);
-			this._CancelButton.Name = "_CancelButton";
-			this._CancelButton.Size = new System.Drawing.Size (75, 23);
-			this._CancelButton.TabIndex = 3;
-			this._CancelButton.Text = "&Cancel";
-			this._CancelButton.UseVisualStyleBackColor = true;
-			this._CancelButton.Click += new System.EventHandler (this._CancelButton_Click);
-			//
-			// _MessageLabel
-			//
-			this._MessageLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this._MessageLabel.Location = new System.Drawing.Point (12, 9);
-			this._MessageLabel.Name = "_MessageLabel";
-			this._MessageLabel.Size = new System.Drawing.Size (275, 37);
-			this._MessageLabel.TabIndex = 4;
-			this._MessageLabel.Text = "The PDF file has been encrypted and you need to edit the permission password to open.";
-			//
-			// PasswordEntryForm
-			//
-			this.AcceptButton = this._OkButton;
-			this.AutoScaleDimensions = new System.Drawing.SizeF (6F, 12F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.CancelButton = this._CancelButton;
-			this.ClientSize = new System.Drawing.Size (300, 123);
-			this.Controls.Add (this._MessageLabel);
-			this.Controls.Add (this._CancelButton);
-			this.Controls.Add (this._OkButton);
-			this.Controls.Add (this._PasswordBox);
-			this.Controls.Add (this.label1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "PasswordEntryForm";
-			this.ShowIcon = false;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Enter password";
-			this.ResumeLayout (false);
-			this.PerformLayout ();
+            this.label1 = new System.Windows.Forms.Label();
+            this._PasswordBox = new System.Windows.Forms.TextBox();
+            this._OkButton = new System.Windows.Forms.Button();
+            this._CancelButton = new System.Windows.Forms.Button();
+            this._MessageLabel = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 61);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(352, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Please enter the edit permission password for the PDF file:";
+            // 
+            // _PasswordBox
+            // 
+            this._PasswordBox.Location = new System.Drawing.Point(19, 81);
+            this._PasswordBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._PasswordBox.Name = "_PasswordBox";
+            this._PasswordBox.PasswordChar = '★';
+            this._PasswordBox.Size = new System.Drawing.Size(364, 22);
+            this._PasswordBox.TabIndex = 1;
+            // 
+            // _OkButton
+            // 
+            this._OkButton.Location = new System.Drawing.Point(176, 117);
+            this._OkButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._OkButton.Name = "_OkButton";
+            this._OkButton.Size = new System.Drawing.Size(100, 31);
+            this._OkButton.TabIndex = 2;
+            this._OkButton.Text = "&OK";
+            this._OkButton.UseVisualStyleBackColor = true;
+            this._OkButton.Click += new System.EventHandler(this._OkButton_Click);
+            // 
+            // _CancelButton
+            // 
+            this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this._CancelButton.Location = new System.Drawing.Point(284, 117);
+            this._CancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._CancelButton.Name = "_CancelButton";
+            this._CancelButton.Size = new System.Drawing.Size(100, 31);
+            this._CancelButton.TabIndex = 3;
+            this._CancelButton.Text = "&Cancel";
+            this._CancelButton.UseVisualStyleBackColor = true;
+            this._CancelButton.Click += new System.EventHandler(this._CancelButton_Click);
+            // 
+            // _MessageLabel
+            // 
+            this._MessageLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._MessageLabel.Location = new System.Drawing.Point(16, 12);
+            this._MessageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this._MessageLabel.Name = "_MessageLabel";
+            this._MessageLabel.Size = new System.Drawing.Size(367, 49);
+            this._MessageLabel.TabIndex = 4;
+            this._MessageLabel.Text = "The PDF file has been encrypted and you need to edit the permission password to o" +
+    "pen.";
+            // 
+            // PasswordEntryForm
+            // 
+            this.AcceptButton = this._OkButton;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this._CancelButton;
+            this.ClientSize = new System.Drawing.Size(400, 164);
+            this.Controls.Add(this._MessageLabel);
+            this.Controls.Add(this._CancelButton);
+            this.Controls.Add(this._OkButton);
+            this.Controls.Add(this._PasswordBox);
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "PasswordEntryForm";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Enter password";
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

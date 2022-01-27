@@ -748,7 +748,7 @@ internal static class JpgHelper
         {
             // From page 28 of the Exif 2.2 spec (http://www.exif.org/Exif2-2.PDF):
 
-            // "When the field is left blank, it is treated as unknown ... When the date and time are unknown,
+            // "When the field is left blank, it is treated as unknown... When the date and time are unknown,
             // all the character spaces except colons (":") may be filled with blank characters"
             if (string.IsNullOrEmpty(str) || _nullDateTimeMatcher.IsMatch(str))
             {

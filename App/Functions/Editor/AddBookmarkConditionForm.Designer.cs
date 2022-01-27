@@ -25,159 +25,158 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
-			this._MatchFontBox = new System.Windows.Forms.CheckBox ();
-			this._MatchTextSizeBox = new System.Windows.Forms.CheckBox ();
-			this._MinSizeBox = new System.Windows.Forms.NumericUpDown ();
-			this._MaxSizeBox = new System.Windows.Forms.NumericUpDown ();
-			this.label1 = new System.Windows.Forms.Label ();
-			this._OkButton = new System.Windows.Forms.Button ();
-			this._MatchTitlePatternBox = new System.Windows.Forms.CheckBox ();
-			this._FontListBox = new System.Windows.Forms.ListBox ();
-			this.label2 = new System.Windows.Forms.Label ();
-			this._TitleLevelBox = new System.Windows.Forms.NumericUpDown ();
-			((System.ComponentModel.ISupportInitialize)(this._MinSizeBox)).BeginInit ();
-			((System.ComponentModel.ISupportInitialize)(this._MaxSizeBox)).BeginInit ();
-			((System.ComponentModel.ISupportInitialize)(this._TitleLevelBox)).BeginInit ();
-			this.SuspendLayout ();
-			//
-			// _MatchFontBox
-			//
-			this._MatchFontBox.AutoSize = true;
-			this._MatchFontBox.Location = new System.Drawing.Point (12, 12);
-			this._MatchFontBox.Name = "_MatchFontBox";
-			this._MatchFontBox.Size = new System.Drawing.Size (72, 16);
-			this._MatchFontBox.TabIndex = 0;
-			this._MatchFontBox.Text = "Match font";
-			this._MatchFontBox.UseVisualStyleBackColor = true;
-			//
-			// _MatchTextSizeBox
-			//
-			this._MatchTextSizeBox.AutoSize = true;
-			this._MatchTextSizeBox.Location = new System.Drawing.Point (174, 12);
-			this._MatchTextSizeBox.Name = "_MatchTextSizeBox";
-			this._MatchTextSizeBox.Size = new System.Drawing.Size (108, 16);
-			this._MatchTextSizeBox.TabIndex = 2;
-			this._MatchTextSizeBox.Text = "Match text size:";
-			this._MatchTextSizeBox.UseVisualStyleBackColor = true;
-			//
-			// _MinSizeBox
-			//
-			this._MinSizeBox.DecimalPlaces = 2;
-			this._MinSizeBox.Location = new System.Drawing.Point (192, 34);
-			this._MinSizeBox.Name = "_MinSizeBox";
-			this._MinSizeBox.Size = new System.Drawing.Size (64, 21);
-			this._MinSizeBox.TabIndex = 3;
-			this._MinSizeBox.Value = new decimal (new int[] {
+            this._MatchFontBox = new System.Windows.Forms.CheckBox();
+            this._MatchTextSizeBox = new System.Windows.Forms.CheckBox();
+            this._MinSizeBox = new System.Windows.Forms.NumericUpDown();
+            this._MaxSizeBox = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this._OkButton = new System.Windows.Forms.Button();
+            this._MatchTitlePatternBox = new System.Windows.Forms.CheckBox();
+            this._FontListBox = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this._TitleLevelBox = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this._MinSizeBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._MaxSizeBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._TitleLevelBox)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // _MatchFontBox
+            // 
+            this._MatchFontBox.AutoSize = true;
+            this._MatchFontBox.Location = new System.Drawing.Point(12, 13);
+            this._MatchFontBox.Name = "_MatchFontBox";
+            this._MatchFontBox.Size = new System.Drawing.Size(77, 17);
+            this._MatchFontBox.TabIndex = 0;
+            this._MatchFontBox.Text = "Match font";
+            this._MatchFontBox.UseVisualStyleBackColor = true;
+            // 
+            // _MatchTextSizeBox
+            // 
+            this._MatchTextSizeBox.AutoSize = true;
+            this._MatchTextSizeBox.Location = new System.Drawing.Point(174, 13);
+            this._MatchTextSizeBox.Name = "_MatchTextSizeBox";
+            this._MatchTextSizeBox.Size = new System.Drawing.Size(100, 17);
+            this._MatchTextSizeBox.TabIndex = 2;
+            this._MatchTextSizeBox.Text = "Match text size:";
+            this._MatchTextSizeBox.UseVisualStyleBackColor = true;
+            // 
+            // _MinSizeBox
+            // 
+            this._MinSizeBox.DecimalPlaces = 2;
+            this._MinSizeBox.Location = new System.Drawing.Point(192, 37);
+            this._MinSizeBox.Name = "_MinSizeBox";
+            this._MinSizeBox.Size = new System.Drawing.Size(64, 20);
+            this._MinSizeBox.TabIndex = 3;
+            this._MinSizeBox.Value = new decimal(new int[] {
             2,
             0,
             0,
             0});
-			//
-			// _MaxSizeBox
-			//
-			this._MaxSizeBox.DecimalPlaces = 2;
-			this._MaxSizeBox.Location = new System.Drawing.Point (285, 34);
-			this._MaxSizeBox.Minimum = new decimal (new int[] {
+            // 
+            // _MaxSizeBox
+            // 
+            this._MaxSizeBox.DecimalPlaces = 2;
+            this._MaxSizeBox.Location = new System.Drawing.Point(285, 37);
+            this._MaxSizeBox.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-			this._MaxSizeBox.Name = "_MaxSizeBox";
-			this._MaxSizeBox.Size = new System.Drawing.Size (64, 21);
-			this._MaxSizeBox.TabIndex = 5;
-			this._MaxSizeBox.Value = new decimal (new int[] {
+            this._MaxSizeBox.Name = "_MaxSizeBox";
+            this._MaxSizeBox.Size = new System.Drawing.Size(64, 20);
+            this._MaxSizeBox.TabIndex = 5;
+            this._MaxSizeBox.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
-			//
-			// label1
-			//
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point (262, 36);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size (17, 12);
-			this.label1.TabIndex = 4;
-			this.label1.Text = " to ";
-			//
-			// _OkButton
-			//
-			this._OkButton.Location = new System.Drawing.Point (274, 120);
-			this._OkButton.Name = "_OkButton";
-			this._OkButton.Size = new System.Drawing.Size (75, 23);
-			this._OkButton.TabIndex = 9;
-			this._OkButton.Text = "&OK";
-			this._OkButton.UseVisualStyleBackColor = true;
-			//
-			// _MatchTitlePatternBox
-			//
-			this._MatchTitlePatternBox.AutoSize = true;
-			this._MatchTitlePatternBox.Location = new System.Drawing.Point (174, 61);
-			this._MatchTitlePatternBox.Name = "_MatchTitlePatternBox";
-			this._MatchTitlePatternBox.Size = new System.Drawing.Size (120, 16);
-			this._MatchTitlePatternBox.TabIndex = 6;
-			this._MatchTitlePatternBox.Text = "Match Title Number Mode";
-			this._MatchTitlePatternBox.UseVisualStyleBackColor = true;
-			//
-			// _FontListBox
-			//
-			this._FontListBox.FormattingEnabled = true;
-			this._FontListBox.ItemHeight = 12;
-			this._FontListBox.Location = new System.Drawing.Point (29, 34);
-			this._FontListBox.Name = "_FontListBox";
-			this._FontListBox.Size = new System.Drawing.Size (139, 76);
-			this._FontListBox.TabIndex = 1;
-			//
-			// label2
-			//
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point (12, 125);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size (65, 12);
-			this.label2.TabIndex = 7;
-			this.label2.Text = "Title level: ";
-			//
-			// _TitleLevelBox
-			//
-			this._TitleLevelBox.Location = new System.Drawing.Point (83, 123);
-			this._TitleLevelBox.Minimum = new decimal (new int[] {
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(262, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(22, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = " to ";
+            // 
+            // _OkButton
+            // 
+            this._OkButton.Location = new System.Drawing.Point(274, 130);
+            this._OkButton.Name = "_OkButton";
+            this._OkButton.Size = new System.Drawing.Size(75, 25);
+            this._OkButton.TabIndex = 9;
+            this._OkButton.Text = "&OK";
+            this._OkButton.UseVisualStyleBackColor = true;
+            // 
+            // _MatchTitlePatternBox
+            // 
+            this._MatchTitlePatternBox.AutoSize = true;
+            this._MatchTitlePatternBox.Location = new System.Drawing.Point(174, 66);
+            this._MatchTitlePatternBox.Name = "_MatchTitlePatternBox";
+            this._MatchTitlePatternBox.Size = new System.Drawing.Size(142, 17);
+            this._MatchTitlePatternBox.TabIndex = 6;
+            this._MatchTitlePatternBox.Text = "Match title number mode";
+            this._MatchTitlePatternBox.UseVisualStyleBackColor = true;
+            // 
+            // _FontListBox
+            // 
+            this._FontListBox.FormattingEnabled = true;
+            this._FontListBox.Location = new System.Drawing.Point(29, 37);
+            this._FontListBox.Name = "_FontListBox";
+            this._FontListBox.Size = new System.Drawing.Size(139, 82);
+            this._FontListBox.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 135);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Title level: ";
+            // 
+            // _TitleLevelBox
+            // 
+            this._TitleLevelBox.Location = new System.Drawing.Point(83, 133);
+            this._TitleLevelBox.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-			this._TitleLevelBox.Name = "_TitleLevelBox";
-			this._TitleLevelBox.Size = new System.Drawing.Size (41, 21);
-			this._TitleLevelBox.TabIndex = 8;
-			this._TitleLevelBox.Value = new decimal (new int[] {
+            this._TitleLevelBox.Name = "_TitleLevelBox";
+            this._TitleLevelBox.Size = new System.Drawing.Size(41, 20);
+            this._TitleLevelBox.TabIndex = 8;
+            this._TitleLevelBox.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
-			//
-			// AddBookmarkConditionForm
-			//
-			this.AcceptButton = this._OkButton;
-			this.AutoScaleDimensions = new System.Drawing.SizeF (6F, 12F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size (368, 155);
-			this.Controls.Add (this._TitleLevelBox);
-			this.Controls.Add (this.label2);
-			this.Controls.Add (this._FontListBox);
-			this.Controls.Add (this._MatchTitlePatternBox);
-			this.Controls.Add (this._OkButton);
-			this.Controls.Add (this.label1);
-			this.Controls.Add (this._MaxSizeBox);
-			this.Controls.Add (this._MinSizeBox);
-			this.Controls.Add (this._MatchTextSizeBox);
-			this.Controls.Add (this._MatchFontBox);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-			this.Name = "AddBookmarkConditionForm";
-			this.Text = "Add automatic tag bookmark settings";
-			((System.ComponentModel.ISupportInitialize)(this._MinSizeBox)).EndInit ();
-			((System.ComponentModel.ISupportInitialize)(this._MaxSizeBox)).EndInit ();
-			((System.ComponentModel.ISupportInitialize)(this._TitleLevelBox)).EndInit ();
-			this.ResumeLayout (false);
-			this.PerformLayout ();
+            // 
+            // AddBookmarkConditionForm
+            // 
+            this.AcceptButton = this._OkButton;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(368, 168);
+            this.Controls.Add(this._TitleLevelBox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this._FontListBox);
+            this.Controls.Add(this._MatchTitlePatternBox);
+            this.Controls.Add(this._OkButton);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this._MaxSizeBox);
+            this.Controls.Add(this._MinSizeBox);
+            this.Controls.Add(this._MatchTextSizeBox);
+            this.Controls.Add(this._MatchFontBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "AddBookmarkConditionForm";
+            this.Text = "Add automatic tag bookmark settings";
+            ((System.ComponentModel.ISupportInitialize)(this._MinSizeBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._MaxSizeBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._TitleLevelBox)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

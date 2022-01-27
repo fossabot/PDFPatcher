@@ -268,9 +268,9 @@ internal sealed class AutoBookmarkCreator
                         CountFontOccuranceInRegion(fontOccurances, i, item);
 #if DEBUG
                         Tracker.TraceMessage(string.Concat(item.Direction.ToString()[0], ':',
-                            level < 11 ? indentString.Substring(0, level) : indentString, t, " .... ", i.ToText()));
+                            level < 11 ? indentString.Substring(0, level) : indentString, t, ".... ", i.ToText()));
 #else
-							Tracker.TraceMessage (String.Concat (level < 11 ? indentString.Substring (0, level) : indentString, t, " .... ", ValueHelper.ToText (i)));
+							Tracker.TraceMessage (String.Concat (level < 11 ? indentString.Substring (0, level) : indentString, t, ".... ", ValueHelper.ToText (i)));
 #endif
                     }
 

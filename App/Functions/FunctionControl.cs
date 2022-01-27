@@ -95,7 +95,7 @@ public class FunctionControl : UserControl
                     EnableCommand(item, true, true);
                     break;
                 case Commands.SaveBookmark:
-                    item.Text = "&Save bookmark file";
+                    item.Text = "&Save Bookmark File";
                     item.ToolTipText =
                         "Save bookmarks as an XML-formatted info file that can be used to migrate bookmarks";
                     goto default;

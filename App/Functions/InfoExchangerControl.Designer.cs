@@ -25,342 +25,349 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
-			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.ToolStrip _MainToolbar;
-			System.Windows.Forms.ToolStripDropDownButton _Actions;
-			System.Windows.Forms.ToolStripMenuItem _DocumentActions;
-			System.Windows.Forms.ToolStripMenuItem _RemoveUsageRightsAction;
-			System.Windows.Forms.ToolStripMenuItem _ModifyMetaDataAction;
-			System.Windows.Forms.ToolStripMenuItem _PageActions;
-			System.Windows.Forms.ToolStripMenuItem _ImageRecompressionAction;
-			System.Windows.Forms.ToolStripMenuItem _RemoveAnnotationAction;
-			System.Windows.Forms.ToolStripMenuItem _RemoveThumbnailAction;
-			System.Windows.Forms.ToolStripMenuItem _RemoveTextAction;
-			System.Windows.Forms.ToolStripMenuItem _RemoveImageAction;
-			System.Windows.Forms.ToolStripMenuItem _RemoveActions;
-			System.Windows.Forms.ToolStripDropDownButton _Sort;
-			System.Windows.Forms.ToolStripButton _Delete;
-			System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-			System.Windows.Forms.ToolStripMenuItem _SelectAllItem;
-			System.Windows.Forms.ToolStripMenuItem _InvertSelectItem;
-			System.Windows.Forms.ToolStripMenuItem _SelectNoneItem;
-			System.Windows.Forms.ToolStripMenuItem _Copy;
-			System.Windows.Forms.ToolStripMenuItem _RefreshInfo;
-			this._AddFilesButton = new System.Windows.Forms.ToolStripSplitButton();
-			this._RecentFileMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-			this._SortMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-			this._SortByNaturalNumberItem = new System.Windows.Forms.ToolStripMenuItem();
-			this._SortByAlphaItem = new System.Windows.Forms.ToolStripMenuItem();
-			this._RefreshInfoButton = new System.Windows.Forms.ToolStripSplitButton();
-			this._RefreshInfoMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-			this._SelectionMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-			this._SelectionMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this._ItemList = new BrightIdeasSoftware.ObjectListView();
-			this._NameColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-			this._PageCountColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-			this._TitleColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-			this._AuthorColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-			this._SubjectColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-			this._KeywordsColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-			this._FolderColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-			this._ItemListMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-			this._FileTypeList = new System.Windows.Forms.ImageList(this.components);
-			this._OpenPdfBox = new System.Windows.Forms.OpenFileDialog();
-			this._AutoClearListBox = new System.Windows.Forms.CheckBox();
-			this._AddDocumentWorker = new System.ComponentModel.BackgroundWorker();
-			this._BookmarkControl = new PDFPatcher.BookmarkControl();
-			this._TargetPdfFile = new PDFPatcher.TargetFileControl();
-			this._ActionsBox = new BrightIdeasSoftware.ObjectListView();
-			this._ActionNameColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-			this._ItemActionsContainerBox = new System.Windows.Forms.SplitContainer();
-			this._ExportBookmarkButton = new System.Windows.Forms.Button();
-			this._ImportButton = new EnhancedGlassButton.GlassButton();
-			this._ConfigButton = new System.Windows.Forms.Button();
-			this._InfoConfigButton = new System.Windows.Forms.Button();
-			_MainToolbar = new System.Windows.Forms.ToolStrip();
-			_Actions = new System.Windows.Forms.ToolStripDropDownButton();
-			_DocumentActions = new System.Windows.Forms.ToolStripMenuItem();
-			_RemoveUsageRightsAction = new System.Windows.Forms.ToolStripMenuItem();
-			_ModifyMetaDataAction = new System.Windows.Forms.ToolStripMenuItem();
-			_PageActions = new System.Windows.Forms.ToolStripMenuItem();
-			_ImageRecompressionAction = new System.Windows.Forms.ToolStripMenuItem();
-			_RemoveAnnotationAction = new System.Windows.Forms.ToolStripMenuItem();
-			_RemoveThumbnailAction = new System.Windows.Forms.ToolStripMenuItem();
-			_RemoveTextAction = new System.Windows.Forms.ToolStripMenuItem();
-			_RemoveImageAction = new System.Windows.Forms.ToolStripMenuItem();
-			_RemoveActions = new System.Windows.Forms.ToolStripMenuItem();
-			_Sort = new System.Windows.Forms.ToolStripDropDownButton();
-			_Delete = new System.Windows.Forms.ToolStripButton();
-			toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-			_SelectAllItem = new System.Windows.Forms.ToolStripMenuItem();
-			_InvertSelectItem = new System.Windows.Forms.ToolStripMenuItem();
-			_SelectNoneItem = new System.Windows.Forms.ToolStripMenuItem();
-			_Copy = new System.Windows.Forms.ToolStripMenuItem();
-			_RefreshInfo = new System.Windows.Forms.ToolStripMenuItem();
-			_MainToolbar.SuspendLayout();
-			this._SortMenu.SuspendLayout();
-			this._SelectionMenu.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this._ItemList)).BeginInit();
-			this._ItemListMenu.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this._ActionsBox)).BeginInit();
-			this._ItemActionsContainerBox.Panel1.SuspendLayout();
-			this._ItemActionsContainerBox.Panel2.SuspendLayout();
-			this._ItemActionsContainerBox.SuspendLayout();
-			this.SuspendLayout();
-			//
-			// _MainToolbar
-			//
-			_MainToolbar.AutoSize = false;
-			_MainToolbar.Dock = System.Windows.Forms.DockStyle.None;
-			_MainToolbar.GripMargin = new System.Windows.Forms.Padding(0);
-			_MainToolbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.ToolStrip _MainToolbar;
+            System.Windows.Forms.ToolStripDropDownButton _Actions;
+            System.Windows.Forms.ToolStripMenuItem _DocumentActions;
+            System.Windows.Forms.ToolStripMenuItem _RemoveUsageRightsAction;
+            System.Windows.Forms.ToolStripMenuItem _ModifyMetaDataAction;
+            System.Windows.Forms.ToolStripMenuItem _PageActions;
+            System.Windows.Forms.ToolStripMenuItem _ImageRecompressionAction;
+            System.Windows.Forms.ToolStripMenuItem _RemoveAnnotationAction;
+            System.Windows.Forms.ToolStripMenuItem _RemoveThumbnailAction;
+            System.Windows.Forms.ToolStripMenuItem _RemoveTextAction;
+            System.Windows.Forms.ToolStripMenuItem _RemoveImageAction;
+            System.Windows.Forms.ToolStripMenuItem _RemoveActions;
+            System.Windows.Forms.ToolStripDropDownButton _Sort;
+            System.Windows.Forms.ToolStripButton _Delete;
+            System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+            System.Windows.Forms.ToolStripMenuItem _SelectAllItem;
+            System.Windows.Forms.ToolStripMenuItem _InvertSelectItem;
+            System.Windows.Forms.ToolStripMenuItem _SelectNoneItem;
+            System.Windows.Forms.ToolStripMenuItem _Copy;
+            System.Windows.Forms.ToolStripMenuItem _RefreshInfo;
+            this._AddFilesButton = new System.Windows.Forms.ToolStripSplitButton();
+            this._RecentFileMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this._SortMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this._SortByNaturalNumberItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._SortByAlphaItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._RefreshInfoButton = new System.Windows.Forms.ToolStripSplitButton();
+            this._RefreshInfoMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this._SelectionMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this._SelectionMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._ItemList = new BrightIdeasSoftware.ObjectListView();
+            this._NameColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this._PageCountColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this._TitleColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this._AuthorColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this._SubjectColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this._KeywordsColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this._FolderColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this._ItemListMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this._FileTypeList = new System.Windows.Forms.ImageList(this.components);
+            this._OpenPdfBox = new System.Windows.Forms.OpenFileDialog();
+            this._AutoClearListBox = new System.Windows.Forms.CheckBox();
+            this._AddDocumentWorker = new System.ComponentModel.BackgroundWorker();
+            this._BookmarkControl = new PDFPatcher.BookmarkControl();
+            this._TargetPdfFile = new PDFPatcher.TargetFileControl();
+            this._ActionsBox = new BrightIdeasSoftware.ObjectListView();
+            this._ActionNameColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this._ItemActionsContainerBox = new System.Windows.Forms.SplitContainer();
+            this._ExportBookmarkButton = new System.Windows.Forms.Button();
+            this._ImportButton = new EnhancedGlassButton.GlassButton();
+            this._ConfigButton = new System.Windows.Forms.Button();
+            this._InfoConfigButton = new System.Windows.Forms.Button();
+            _MainToolbar = new System.Windows.Forms.ToolStrip();
+            _Actions = new System.Windows.Forms.ToolStripDropDownButton();
+            _DocumentActions = new System.Windows.Forms.ToolStripMenuItem();
+            _RemoveUsageRightsAction = new System.Windows.Forms.ToolStripMenuItem();
+            _ModifyMetaDataAction = new System.Windows.Forms.ToolStripMenuItem();
+            _PageActions = new System.Windows.Forms.ToolStripMenuItem();
+            _ImageRecompressionAction = new System.Windows.Forms.ToolStripMenuItem();
+            _RemoveAnnotationAction = new System.Windows.Forms.ToolStripMenuItem();
+            _RemoveThumbnailAction = new System.Windows.Forms.ToolStripMenuItem();
+            _RemoveTextAction = new System.Windows.Forms.ToolStripMenuItem();
+            _RemoveImageAction = new System.Windows.Forms.ToolStripMenuItem();
+            _RemoveActions = new System.Windows.Forms.ToolStripMenuItem();
+            _Sort = new System.Windows.Forms.ToolStripDropDownButton();
+            _Delete = new System.Windows.Forms.ToolStripButton();
+            toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            _SelectAllItem = new System.Windows.Forms.ToolStripMenuItem();
+            _InvertSelectItem = new System.Windows.Forms.ToolStripMenuItem();
+            _SelectNoneItem = new System.Windows.Forms.ToolStripMenuItem();
+            _Copy = new System.Windows.Forms.ToolStripMenuItem();
+            _RefreshInfo = new System.Windows.Forms.ToolStripMenuItem();
+            _MainToolbar.SuspendLayout();
+            this._SortMenu.SuspendLayout();
+            this._SelectionMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._ItemList)).BeginInit();
+            this._ItemListMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._ActionsBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._ItemActionsContainerBox)).BeginInit();
+            this._ItemActionsContainerBox.Panel1.SuspendLayout();
+            this._ItemActionsContainerBox.Panel2.SuspendLayout();
+            this._ItemActionsContainerBox.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // _MainToolbar
+            // 
+            _MainToolbar.AutoSize = false;
+            _MainToolbar.Dock = System.Windows.Forms.DockStyle.None;
+            _MainToolbar.GripMargin = new System.Windows.Forms.Padding(0);
+            _MainToolbar.ImageScalingSize = new System.Drawing.Size(20, 20);
+            _MainToolbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._AddFilesButton,
             _Actions,
             _Sort,
             _Delete,
             toolStripSeparator2,
             this._RefreshInfoButton});
-			_MainToolbar.Location = new System.Drawing.Point(0, 0);
-			_MainToolbar.Name = "_MainToolbar";
-			_MainToolbar.Size = new System.Drawing.Size(390, 25);
-			_MainToolbar.TabIndex = 0;
-			_MainToolbar.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-			//
-			// _AddFilesButton
-			//
-			this._AddFilesButton.DropDown = this._RecentFileMenu;
-			this._AddFilesButton.Image = global::PDFPatcher.Properties.Resources.Add;
-			this._AddFilesButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this._AddFilesButton.Name = "_AddFilesButton";
-			this._AddFilesButton.Size = new System.Drawing.Size(102, 22);
-			this._AddFilesButton.Text = "Add files (&T)";
-			this._AddFilesButton.ToolTipText = "Add files";
-			this._AddFilesButton.ButtonClick += new System.EventHandler(this._MainToolbar_ButtonClick);
-			//
-			// _RecentFileMenu
-			//
-			this._RecentFileMenu.Name = "_RecentFileMenu";
-			this._RecentFileMenu.OwnerItem = this._AddFilesButton;
-			this._RecentFileMenu.ShowImageMargin = false;
-			this._RecentFileMenu.Size = new System.Drawing.Size(36, 4);
-			//
-			// _Actions
-			//
-			_Actions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            _MainToolbar.Location = new System.Drawing.Point(0, 0);
+            _MainToolbar.Name = "_MainToolbar";
+            _MainToolbar.Size = new System.Drawing.Size(390, 25);
+            _MainToolbar.TabIndex = 0;
+            _MainToolbar.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
+            // 
+            // _AddFilesButton
+            // 
+            this._AddFilesButton.DropDown = this._RecentFileMenu;
+            this._AddFilesButton.Image = global::PDFPatcher.Properties.Resources.Add;
+            this._AddFilesButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this._AddFilesButton.Name = "_AddFilesButton";
+            this._AddFilesButton.Size = new System.Drawing.Size(106, 22);
+            this._AddFilesButton.Text = "Add files (&T)";
+            this._AddFilesButton.ToolTipText = "Add files";
+            this._AddFilesButton.ButtonClick += new System.EventHandler(this._MainToolbar_ButtonClick);
+            // 
+            // _RecentFileMenu
+            // 
+            this._RecentFileMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this._RecentFileMenu.Name = "_RecentFileMenu";
+            this._RecentFileMenu.OwnerItem = this._AddFilesButton;
+            this._RecentFileMenu.ShowImageMargin = false;
+            this._RecentFileMenu.Size = new System.Drawing.Size(36, 4);
+            // 
+            // _Actions
+            // 
+            _Actions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _DocumentActions,
             _PageActions,
             _RemoveActions});
-			_Actions.Image = global::PDFPatcher.Properties.Resources.Actions;
-			_Actions.ImageTransparentColor = System.Drawing.Color.Magenta;
-			_Actions.Name = "_Actions";
-			_Actions.Size = new System.Drawing.Size(84, 22);
-			_Actions.Text = "Patch operation";
-			_Actions.Visible = false;
-			_Actions.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-			//
-			// _DocumentActions
-			//
-			_DocumentActions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            _Actions.Image = global::PDFPatcher.Properties.Resources.Actions;
+            _Actions.ImageTransparentColor = System.Drawing.Color.Magenta;
+            _Actions.Name = "_Actions";
+            _Actions.Size = new System.Drawing.Size(124, 22);
+            _Actions.Text = "Patch operation";
+            _Actions.Visible = false;
+            _Actions.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
+            // 
+            // _DocumentActions
+            // 
+            _DocumentActions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _RemoveUsageRightsAction,
             _ModifyMetaDataAction});
-			_DocumentActions.Image = global::PDFPatcher.Properties.Resources.DocumentProcessor;
-			_DocumentActions.Name = "_DocumentActions";
-			_DocumentActions.Size = new System.Drawing.Size(194, 22);
-			_DocumentActions.Text = "Add a document processing operation";
-			_DocumentActions.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-			//
-			// _RemoveUsageRightsAction
-			//
-			_RemoveUsageRightsAction.Name = "_RemoveUsageRightsAction";
-			_RemoveUsageRightsAction.Size = new System.Drawing.Size(182, 22);
-			_RemoveUsageRightsAction.Text = "Remove copy, print restriction";
-			//
-			// _ModifyMetaDataAction
-			//
-			_ModifyMetaDataAction.Name = "_ModifyMetaDataAction";
-			_ModifyMetaDataAction.Size = new System.Drawing.Size(182, 22);
-			_ModifyMetaDataAction.Text = "Modify metadata";
-			//
-			// _PageActions
-			//
-			_PageActions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            _DocumentActions.Image = global::PDFPatcher.Properties.Resources.DocumentProcessor;
+            _DocumentActions.Name = "_DocumentActions";
+            _DocumentActions.Size = new System.Drawing.Size(287, 26);
+            _DocumentActions.Text = "Add a document processing operation";
+            _DocumentActions.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
+            // 
+            // _RemoveUsageRightsAction
+            // 
+            _RemoveUsageRightsAction.Name = "_RemoveUsageRightsAction";
+            _RemoveUsageRightsAction.Size = new System.Drawing.Size(233, 22);
+            _RemoveUsageRightsAction.Text = "Remove copy, print restriction";
+            // 
+            // _ModifyMetaDataAction
+            // 
+            _ModifyMetaDataAction.Name = "_ModifyMetaDataAction";
+            _ModifyMetaDataAction.Size = new System.Drawing.Size(233, 22);
+            _ModifyMetaDataAction.Text = "Modify metadata";
+            // 
+            // _PageActions
+            // 
+            _PageActions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _ImageRecompressionAction,
             _RemoveAnnotationAction,
             _RemoveThumbnailAction,
             _RemoveTextAction,
             _RemoveImageAction});
-			_PageActions.Image = global::PDFPatcher.Properties.Resources.PageProcessor;
-			_PageActions.Name = "_PageActions";
-			_PageActions.Size = new System.Drawing.Size(194, 22);
-			_PageActions.Text = "Add page content processing operation";
-			_PageActions.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-			//
-			// _ImageRecompressionAction
-			//
-			_ImageRecompressionAction.Name = "_ImageRecompressionAction";
-			_ImageRecompressionAction.Size = new System.Drawing.Size(194, 22);
-			_ImageRecompressionAction.Text = "Optimized pure black and white image compression ratio";
-			//
-			// _RemoveAnnotationAction
-			//
-			_RemoveAnnotationAction.Name = "_RemoveAnnotationAction";
-			_RemoveAnnotationAction.Size = new System.Drawing.Size(194, 22);
-			_RemoveAnnotationAction.Text = "Delete annotation";
-			//
-			// _RemoveThumbnailAction
-			//
-			_RemoveThumbnailAction.Name = "_RemoveThumbnailAction";
-			_RemoveThumbnailAction.Size = new System.Drawing.Size(194, 22);
-			_RemoveThumbnailAction.Text = "Delete thumbnails";
-			//
-			// _RemoveTextAction
-			//
-			_RemoveTextAction.Name = "_RemoveTextAction";
-			_RemoveTextAction.Size = new System.Drawing.Size(194, 22);
-			_RemoveTextAction.Text = "Delete text content";
-			//
-			// _RemoveImageAction
-			//
-			_RemoveImageAction.Name = "_RemoveImageAction";
-			_RemoveImageAction.Size = new System.Drawing.Size(194, 22);
-			_RemoveImageAction.Text = "Delete images";
-			//
-			// _RemoveActions
-			//
-			_RemoveActions.Image = global::PDFPatcher.Properties.Resources.Delete;
-			_RemoveActions.Name = "_RemoveActions";
-			_RemoveActions.Size = new System.Drawing.Size(194, 22);
-			_RemoveActions.Text = "Delete selected operations";
-			//
-			// _Sort
-			//
-			_Sort.DropDown = this._SortMenu;
-			_Sort.Image = global::PDFPatcher.Properties.Resources.Sort;
-			_Sort.ImageTransparentColor = System.Drawing.Color.Magenta;
-			_Sort.Name = "_Sort";
-			_Sort.Size = new System.Drawing.Size(60, 22);
-			_Sort.Text = "Sort";
-			_Sort.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._SortMenu_ItemClicked);
-			//
-			// _SortMenu
-			//
-			this._SortMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            _PageActions.Image = global::PDFPatcher.Properties.Resources.PageProcessor;
+            _PageActions.Name = "_PageActions";
+            _PageActions.Size = new System.Drawing.Size(287, 26);
+            _PageActions.Text = "Add page content processing operation";
+            _PageActions.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
+            // 
+            // _ImageRecompressionAction
+            // 
+            _ImageRecompressionAction.Name = "_ImageRecompressionAction";
+            _ImageRecompressionAction.Size = new System.Drawing.Size(376, 22);
+            _ImageRecompressionAction.Text = "Optimized pure black and white image compression ratio";
+            // 
+            // _RemoveAnnotationAction
+            // 
+            _RemoveAnnotationAction.Name = "_RemoveAnnotationAction";
+            _RemoveAnnotationAction.Size = new System.Drawing.Size(376, 22);
+            _RemoveAnnotationAction.Text = "Delete annotation";
+            // 
+            // _RemoveThumbnailAction
+            // 
+            _RemoveThumbnailAction.Name = "_RemoveThumbnailAction";
+            _RemoveThumbnailAction.Size = new System.Drawing.Size(376, 22);
+            _RemoveThumbnailAction.Text = "Delete thumbnails";
+            // 
+            // _RemoveTextAction
+            // 
+            _RemoveTextAction.Name = "_RemoveTextAction";
+            _RemoveTextAction.Size = new System.Drawing.Size(376, 22);
+            _RemoveTextAction.Text = "Delete text content";
+            // 
+            // _RemoveImageAction
+            // 
+            _RemoveImageAction.Name = "_RemoveImageAction";
+            _RemoveImageAction.Size = new System.Drawing.Size(376, 22);
+            _RemoveImageAction.Text = "Delete images";
+            // 
+            // _RemoveActions
+            // 
+            _RemoveActions.Image = global::PDFPatcher.Properties.Resources.Delete;
+            _RemoveActions.Name = "_RemoveActions";
+            _RemoveActions.Size = new System.Drawing.Size(287, 26);
+            _RemoveActions.Text = "Delete selected operations";
+            // 
+            // _Sort
+            // 
+            _Sort.DropDown = this._SortMenu;
+            _Sort.Image = global::PDFPatcher.Properties.Resources.Sort;
+            _Sort.ImageTransparentColor = System.Drawing.Color.Magenta;
+            _Sort.Name = "_Sort";
+            _Sort.Size = new System.Drawing.Size(61, 22);
+            _Sort.Text = "Sort";
+            _Sort.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._SortMenu_ItemClicked);
+            // 
+            // _SortMenu
+            // 
+            this._SortMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this._SortMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._SortByNaturalNumberItem,
             this._SortByAlphaItem});
-			this._SortMenu.Name = "_SortMenu";
-			this._SortMenu.OwnerItem = _Sort;
-			this._SortMenu.Size = new System.Drawing.Size(214, 48);
-			this._SortMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._SortMenu_ItemClicked);
-			//
-			// _SortByNaturalNumberItem
-			//
-this._SortByNaturalNumberItem.Image = global::PDFPatcher.Properties.Resources.NaturalSort;
-this._SortByNaturalNumberItem.Name = "_SortByNaturalNumberItem";
-this._SortByNaturalNumberItem.Size = new System.Drawing.Size(213, 22);
-this._SortByNaturalNumberItem.Text = "Sort by &Numerically and Alphabetically";
-//
-// _SortByAlphaItem
-//
-this._SortByAlphaItem.Image = global::PDFPatcher.Properties.Resources.AlphabeticSort;
-this._SortByAlphaItem.Name = "_SortByAlphaItem";
-this._SortByAlphaItem.Size = new System.Drawing.Size(213, 22);
-this._SortByAlphaItem.Text = "Sort &Z alphabetically";
-//
-// _Delete
-//
-_Delete.Image = global::PDFPatcher.Properties.Resources.Delete;
-_Delete.ImageTransparentColor = System.Drawing.Color.Magenta;
-_Delete.Name = "_Delete";
-_Delete.Size = new System.Drawing.Size(75, 22);
-_Delete.Text = "Delete file";
-			//
-			// toolStripSeparator2
-			//
-			toolStripSeparator2.Name = "toolStripSeparator2";
-			toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-			//
-			// _RefreshInfoButton
-			//
-			this._RefreshInfoButton.Image = global::PDFPatcher.Properties.Resources.Refresh;
-			this._RefreshInfoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this._RefreshInfoButton.Name = "_RefreshInfoButton";
-			this._RefreshInfoButton.Size = new System.Drawing.Size(111, 22);
-			this._RefreshInfoButton.Text = "Refreshing document properties";
-			//
-			// _SelectAllItem
-			//
-			_SelectAllItem.Image = global::PDFPatcher.Properties.Resources.SelectAll;
-			_SelectAllItem.Name = "_SelectAllItem";
-			_SelectAllItem.Size = new System.Drawing.Size(122, 22);
-			_SelectAllItem.Text = "All selected";
-			//
-			// _InvertSelectItem
-			//
-			_InvertSelectItem.Name = "_InvertSelectItem";
-			_InvertSelectItem.Size = new System.Drawing.Size(122, 22);
-			_InvertSelectItem.Text = "Inverse select";
-			//
-			// _SelectNoneItem
-			//
-			_SelectNoneItem.Name = "_SelectNoneItem";
-			_SelectNoneItem.Size = new System.Drawing.Size(122, 22);
-			_SelectNoneItem.Text = "cancel selection";
-			//
-			// _Copy
-			//
-			_Copy.Image = global::PDFPatcher.Properties.Resources.Copy;
-			_Copy.Name = "_Copy";
-			_Copy.Size = new System.Drawing.Size(146, 22);
-			_Copy.Text = "Copy list content";
-			//
-			// _RefreshInfo
-			//
-			_RefreshInfo.DropDown = this._RefreshInfoMenu;
-			_RefreshInfo.Image = global::PDFPatcher.Properties.Resources.Refresh;
-			_RefreshInfo.Name = "_RefreshInfo";
-			_RefreshInfo.Size = new System.Drawing.Size(146, 22);
-			_RefreshInfo.Text = "Refresh document properties";
-			//
-			// _RefreshInfoMenu
-			//
-			this._RefreshInfoMenu.Name = "_RefreshInfoMenu";
-			this._RefreshInfoMenu.OwnerItem = _RefreshInfo;
-			this._RefreshInfoMenu.Size = new System.Drawing.Size(61, 4);
-			//
-			// _SelectionMenu
-			//
-			this._SelectionMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this._SortMenu.Name = "_SortMenu";
+            this._SortMenu.OwnerItem = _Sort;
+            this._SortMenu.Size = new System.Drawing.Size(284, 56);
+            this._SortMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._SortMenu_ItemClicked);
+            // 
+            // _SortByNaturalNumberItem
+            // 
+            this._SortByNaturalNumberItem.Image = global::PDFPatcher.Properties.Resources.NaturalSort;
+            this._SortByNaturalNumberItem.Name = "_SortByNaturalNumberItem";
+            this._SortByNaturalNumberItem.Size = new System.Drawing.Size(283, 26);
+            this._SortByNaturalNumberItem.Text = "Sort by &Numerically and Alphabetically";
+            // 
+            // _SortByAlphaItem
+            // 
+            this._SortByAlphaItem.Image = global::PDFPatcher.Properties.Resources.AlphabeticSort;
+            this._SortByAlphaItem.Name = "_SortByAlphaItem";
+            this._SortByAlphaItem.Size = new System.Drawing.Size(283, 26);
+            this._SortByAlphaItem.Text = "Sort &Z alphabetically";
+            // 
+            // _Delete
+            // 
+            _Delete.Image = global::PDFPatcher.Properties.Resources.Delete;
+            _Delete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            _Delete.Name = "_Delete";
+            _Delete.Size = new System.Drawing.Size(83, 22);
+            _Delete.Text = "Delete file";
+            // 
+            // toolStripSeparator2
+            // 
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // _RefreshInfoButton
+            // 
+            this._RefreshInfoButton.Image = global::PDFPatcher.Properties.Resources.Refresh;
+            this._RefreshInfoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this._RefreshInfoButton.Name = "_RefreshInfoButton";
+            this._RefreshInfoButton.Size = new System.Drawing.Size(213, 24);
+            this._RefreshInfoButton.Text = "Refreshing document properties";
+            // 
+            // _SelectAllItem
+            // 
+            _SelectAllItem.Image = global::PDFPatcher.Properties.Resources.SelectAll;
+            _SelectAllItem.Name = "_SelectAllItem";
+            _SelectAllItem.Size = new System.Drawing.Size(162, 26);
+            _SelectAllItem.Text = "All selected";
+            // 
+            // _InvertSelectItem
+            // 
+            _InvertSelectItem.Name = "_InvertSelectItem";
+            _InvertSelectItem.Size = new System.Drawing.Size(162, 26);
+            _InvertSelectItem.Text = "Inverse select";
+            // 
+            // _SelectNoneItem
+            // 
+            _SelectNoneItem.Name = "_SelectNoneItem";
+            _SelectNoneItem.Size = new System.Drawing.Size(162, 26);
+            _SelectNoneItem.Text = "cancel selection";
+            // 
+            // _Copy
+            // 
+            _Copy.Image = global::PDFPatcher.Properties.Resources.Copy;
+            _Copy.Name = "_Copy";
+            _Copy.Size = new System.Drawing.Size(231, 26);
+            _Copy.Text = "Copy list content";
+            // 
+            // _RefreshInfo
+            // 
+            _RefreshInfo.DropDown = this._RefreshInfoMenu;
+            _RefreshInfo.Image = global::PDFPatcher.Properties.Resources.Refresh;
+            _RefreshInfo.Name = "_RefreshInfo";
+            _RefreshInfo.Size = new System.Drawing.Size(231, 26);
+            _RefreshInfo.Text = "Refresh document properties";
+            // 
+            // _RefreshInfoMenu
+            // 
+            this._RefreshInfoMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this._RefreshInfoMenu.Name = "_RefreshInfoMenu";
+            this._RefreshInfoMenu.OwnerItem = _RefreshInfo;
+            this._RefreshInfoMenu.Size = new System.Drawing.Size(61, 4);
+            // 
+            // _SelectionMenu
+            // 
+            this._SelectionMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this._SelectionMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _SelectAllItem,
             _InvertSelectItem,
             _SelectNoneItem});
-			this._SelectionMenu.Name = "_SelectionMenu";
-			this._SelectionMenu.OwnerItem = this._SelectionMenuItem;
-			this._SelectionMenu.Size = new System.Drawing.Size(123, 70);
-			this._SelectionMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-			//
-			// _SelectionMenuItem
-			//
-			this._SelectionMenuItem.DropDown = this._SelectionMenu;
-			this._SelectionMenuItem.Image = global::PDFPatcher.Properties.Resources.SelectItem;
-			this._SelectionMenuItem.Name = "_SelectionMenuItem";
-			this._SelectionMenuItem.Size = new System.Drawing.Size(146, 22);
-			this._SelectionMenuItem.Text = "Select the file";
-			//
-			// _ItemList
-			//
-			this._ItemList.AllColumns.Add(this._NameColumn);
-			this._ItemList.AllColumns.Add(this._PageCountColumn);
-			this._ItemList.AllColumns.Add(this._TitleColumn);
-			this._ItemList.AllColumns.Add(this._AuthorColumn);
-			this._ItemList.AllColumns.Add(this._SubjectColumn);
-			this._ItemList.AllColumns.Add(this._KeywordsColumn);
-			this._ItemList.AllColumns.Add(this._FolderColumn);
-			this._ItemList.AllowDrop = true;
-			this._ItemList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this._SelectionMenu.Name = "_SelectionMenu";
+            this._SelectionMenu.OwnerItem = this._SelectionMenuItem;
+            this._SelectionMenu.Size = new System.Drawing.Size(163, 82);
+            this._SelectionMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
+            // 
+            // _SelectionMenuItem
+            // 
+            this._SelectionMenuItem.DropDown = this._SelectionMenu;
+            this._SelectionMenuItem.Image = global::PDFPatcher.Properties.Resources.SelectItem;
+            this._SelectionMenuItem.Name = "_SelectionMenuItem";
+            this._SelectionMenuItem.Size = new System.Drawing.Size(231, 26);
+            this._SelectionMenuItem.Text = "Select the file";
+            // 
+            // _ItemList
+            // 
+            this._ItemList.AllColumns.Add(this._NameColumn);
+            this._ItemList.AllColumns.Add(this._PageCountColumn);
+            this._ItemList.AllColumns.Add(this._TitleColumn);
+            this._ItemList.AllColumns.Add(this._AuthorColumn);
+            this._ItemList.AllColumns.Add(this._SubjectColumn);
+            this._ItemList.AllColumns.Add(this._KeywordsColumn);
+            this._ItemList.AllColumns.Add(this._FolderColumn);
+            this._ItemList.AllowDrop = true;
+            this._ItemList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this._ItemList.CellEditActivation = BrightIdeasSoftware.ObjectListView.CellEditActivateMode.SingleClick;
-			this._ItemList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this._ItemList.CellEditActivation = BrightIdeasSoftware.ObjectListView.CellEditActivateMode.SingleClick;
+            this._ItemList.CellEditUseWholeCell = false;
+            this._ItemList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this._NameColumn,
             this._PageCountColumn,
             this._TitleColumn,
@@ -368,253 +375,258 @@ _Delete.Text = "Delete file";
             this._SubjectColumn,
             this._KeywordsColumn,
             this._FolderColumn});
-			this._ItemList.ContextMenuStrip = this._ItemListMenu;
-			this._ItemList.GridLines = true;
-			this._ItemList.HideSelection = false;
-			this._ItemList.Location = new System.Drawing.Point(3, 3);
-			this._ItemList.Name = "_ItemList";
-			this._ItemList.OwnerDraw = true;
-			this._ItemList.ShowGroups = false;
-			this._ItemList.Size = new System.Drawing.Size(544, 224);
-			this._ItemList.SmallImageList = this._FileTypeList;
-			this._ItemList.TabIndex = 0;
-			this._ItemList.UseCompatibleStateImageBehavior = false;
-			this._ItemList.View = System.Windows.Forms.View.Details;
-			this._ItemList.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this._ImageList_ColumnClick);
-			//
-			// _NameColumn
-			//
-			this._NameColumn.Text = "Source file name";
-			this._NameColumn.Width = 149;
-			//
-			// _PageCountColumn
-			//
-			this._PageCountColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this._PageCountColumn.IsEditable = false;
-			this._PageCountColumn.Text = "Number of pages";
-			this._PageCountColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this._PageCountColumn.Width = 50;
-			//
-			// _TitleColumn
-			//
-			this._TitleColumn.Text = "title";
-			//
-			// _AuthorColumn
-			//
-			this._AuthorColumn.Text = "author";
-			//
-			// _SubjectColumn
-			//
-			this._SubjectColumn.Text = "theme";
-			//
-			// _KeywordsColumn
-			//
-			this._KeywordsColumn.Text = "Key words";
-			//
-			// _FolderColumn
-			//
-			this._FolderColumn.IsEditable = false;
-			this._FolderColumn.Text = "folder";
-			this._FolderColumn.Width = 96;
-			//
-			// _ItemListMenu
-			//
-			this._ItemListMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this._ItemList.ContextMenuStrip = this._ItemListMenu;
+            this._ItemList.Cursor = System.Windows.Forms.Cursors.Default;
+            this._ItemList.GridLines = true;
+            this._ItemList.HideSelection = false;
+            this._ItemList.Location = new System.Drawing.Point(3, 3);
+            this._ItemList.Name = "_ItemList";
+            this._ItemList.ShowGroups = false;
+            this._ItemList.Size = new System.Drawing.Size(711, 224);
+            this._ItemList.SmallImageList = this._FileTypeList;
+            this._ItemList.TabIndex = 0;
+            this._ItemList.UseCompatibleStateImageBehavior = false;
+            this._ItemList.View = System.Windows.Forms.View.Details;
+            this._ItemList.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this._ImageList_ColumnClick);
+            // 
+            // _NameColumn
+            // 
+            this._NameColumn.Text = "Source file name";
+            this._NameColumn.Width = 149;
+            // 
+            // _PageCountColumn
+            // 
+            this._PageCountColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this._PageCountColumn.IsEditable = false;
+            this._PageCountColumn.Text = "Number of pages";
+            this._PageCountColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this._PageCountColumn.Width = 50;
+            // 
+            // _TitleColumn
+            // 
+            this._TitleColumn.Text = "title";
+            // 
+            // _AuthorColumn
+            // 
+            this._AuthorColumn.Text = "author";
+            // 
+            // _SubjectColumn
+            // 
+            this._SubjectColumn.Text = "theme";
+            // 
+            // _KeywordsColumn
+            // 
+            this._KeywordsColumn.Text = "Key words";
+            // 
+            // _FolderColumn
+            // 
+            this._FolderColumn.IsEditable = false;
+            this._FolderColumn.Text = "folder";
+            this._FolderColumn.Width = 96;
+            // 
+            // _ItemListMenu
+            // 
+            this._ItemListMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this._ItemListMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _Copy,
             _RefreshInfo,
             this._SelectionMenuItem});
-			this._ItemListMenu.Name = "_ItemListMenu";
-			this._ItemListMenu.Size = new System.Drawing.Size(147, 70);
-			this._ItemListMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
-			//
-			// _FileTypeList
-			//
-			this._FileTypeList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-			this._FileTypeList.ImageSize = new System.Drawing.Size(16, 16);
-			this._FileTypeList.TransparentColor = System.Drawing.Color.Transparent;
-			//
-			// _OpenPdfBox
-			//
-			this._OpenPdfBox.DefaultExt = "pdf";
-			this._OpenPdfBox.Filter = "PDF file (*.pdf）|*.pdf";
-			this._OpenPdfBox.Multiselect = true;
-			this._OpenPdfBox.Title = "Select the PDF file that needs to be processed";
-			//
-			// _AutoClearListBox
-			//
-			this._AutoClearListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this._AutoClearListBox.AutoSize = true;
-			this._AutoClearListBox.Checked = true;
-			this._AutoClearListBox.CheckState = System.Windows.Forms.CheckState.Checked;
-			this._AutoClearListBox.Location = new System.Drawing.Point(434, 9);
-			this._AutoClearListBox.Name = "_AutoClearListBox";
-			this._AutoClearListBox.Size = new System.Drawing.Size(132, 16);
-			this._AutoClearListBox.TabIndex = 4;
-			this._AutoClearListBox.Text = "Calculate the list before adding a file";
-			this._AutoClearListBox.UseVisualStyleBackColor = true;
-			//
-			// _AddDocumentWorker
-			//
-			this._AddDocumentWorker.WorkerReportsProgress = true;
-			this._AddDocumentWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this._AddDocumentWorker_DoWork);
-			this._AddDocumentWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this._AddDocumentWorker_ProgressChanged);
-			this._AddDocumentWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this._AddDocumentWorker_RunWorkerCompleted);
-			//
-			// _BookmarkControl
-			//
-			this._BookmarkControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            this._ItemListMenu.Name = "_ItemListMenu";
+            this._ItemListMenu.Size = new System.Drawing.Size(232, 82);
+            this._ItemListMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
+            // 
+            // _FileTypeList
+            // 
+            this._FileTypeList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this._FileTypeList.ImageSize = new System.Drawing.Size(16, 16);
+            this._FileTypeList.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // _OpenPdfBox
+            // 
+            this._OpenPdfBox.DefaultExt = "pdf";
+            this._OpenPdfBox.Filter = "PDF file (*.pdf）|*.pdf";
+            this._OpenPdfBox.Multiselect = true;
+            this._OpenPdfBox.Title = "Select the PDF file that needs to be processed";
+            // 
+            // _AutoClearListBox
+            // 
+            this._AutoClearListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this._AutoClearListBox.AutoSize = true;
+            this._AutoClearListBox.Checked = true;
+            this._AutoClearListBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this._AutoClearListBox.Location = new System.Drawing.Point(502, 6);
+            this._AutoClearListBox.Name = "_AutoClearListBox";
+            this._AutoClearListBox.Size = new System.Drawing.Size(228, 16);
+            this._AutoClearListBox.TabIndex = 4;
+            this._AutoClearListBox.Text = "Clear the list before adding files";
+            this._AutoClearListBox.UseVisualStyleBackColor = true;
+            // 
+            // _AddDocumentWorker
+            // 
+            this._AddDocumentWorker.WorkerReportsProgress = true;
+            this._AddDocumentWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this._AddDocumentWorker_DoWork);
+            this._AddDocumentWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this._AddDocumentWorker_ProgressChanged);
+            this._AddDocumentWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this._AddDocumentWorker_RunWorkerCompleted);
+            // 
+            // _BookmarkControl
+            // 
+            this._BookmarkControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this._BookmarkControl.LabelText = "P&DF information file:";
-			this._BookmarkControl.Location = new System.Drawing.Point(13, 235);
-			this._BookmarkControl.Name = "_BookmarkControl";
-			this._BookmarkControl.Size = new System.Drawing.Size(553, 24);
-			this._BookmarkControl.TabIndex = 6;
-			//
-			// _TargetPdfFile
-			//
-			this._TargetPdfFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            this._BookmarkControl.LabelText = "P&DF info file:";
+            this._BookmarkControl.Location = new System.Drawing.Point(13, 235);
+            this._BookmarkControl.Margin = new System.Windows.Forms.Padding(4);
+            this._BookmarkControl.Name = "_BookmarkControl";
+            this._BookmarkControl.Size = new System.Drawing.Size(714, 24);
+            this._BookmarkControl.TabIndex = 6;
+            // 
+            // _TargetPdfFile
+            // 
+            this._TargetPdfFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this._TargetPdfFile.Location = new System.Drawing.Point(13, 265);
-			this._TargetPdfFile.Name = "_TargetPdfFile";
-			this._TargetPdfFile.Size = new System.Drawing.Size(553, 26);
-			this._TargetPdfFile.TabIndex = 7;
-			//
-			// _ActionsBox
-			//
-			this._ActionsBox.AllColumns.Add(this._ActionNameColumn);
-			this._ActionsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this._TargetPdfFile.Location = new System.Drawing.Point(13, 265);
+            this._TargetPdfFile.Margin = new System.Windows.Forms.Padding(4);
+            this._TargetPdfFile.Name = "_TargetPdfFile";
+            this._TargetPdfFile.Size = new System.Drawing.Size(720, 26);
+            this._TargetPdfFile.TabIndex = 7;
+            // 
+            // _ActionsBox
+            // 
+            this._ActionsBox.AllColumns.Add(this._ActionNameColumn);
+            this._ActionsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this._ActionsBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this._ActionsBox.CellEditUseWholeCell = false;
+            this._ActionsBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this._ActionNameColumn});
-			this._ActionsBox.FullRowSelect = true;
-			this._ActionsBox.GridLines = true;
-			this._ActionsBox.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this._ActionsBox.HideSelection = false;
-			this._ActionsBox.Location = new System.Drawing.Point(5, 3);
-			this._ActionsBox.Name = "_ActionsBox";
-			this._ActionsBox.OwnerDraw = true;
-			this._ActionsBox.RowHeight = 18;
-			this._ActionsBox.ShowGroups = false;
-			this._ActionsBox.Size = new System.Drawing.Size(126, 176);
-			this._ActionsBox.TabIndex = 18;
-			this._ActionsBox.UseCompatibleStateImageBehavior = false;
-			this._ActionsBox.View = System.Windows.Forms.View.Details;
-			//
-			// _ActionNameColumn
-			//
-			this._ActionNameColumn.Text = "Patch operation";
-			this._ActionNameColumn.Width = 120;
-			//
-			// _ItemActionsContainerBox
-			//
-			this._ItemActionsContainerBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this._ActionsBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this._ActionsBox.FullRowSelect = true;
+            this._ActionsBox.GridLines = true;
+            this._ActionsBox.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this._ActionsBox.HideSelection = false;
+            this._ActionsBox.Location = new System.Drawing.Point(5, 3);
+            this._ActionsBox.Name = "_ActionsBox";
+            this._ActionsBox.RowHeight = 18;
+            this._ActionsBox.ShowGroups = false;
+            this._ActionsBox.Size = new System.Drawing.Size(126, 176);
+            this._ActionsBox.TabIndex = 18;
+            this._ActionsBox.UseCompatibleStateImageBehavior = false;
+            this._ActionsBox.View = System.Windows.Forms.View.Details;
+            // 
+            // _ActionNameColumn
+            // 
+            this._ActionNameColumn.Text = "Patch operation";
+            this._ActionNameColumn.Width = 120;
+            // 
+            // _ItemActionsContainerBox
+            // 
+            this._ItemActionsContainerBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this._ItemActionsContainerBox.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
-			this._ItemActionsContainerBox.Location = new System.Drawing.Point(13, 28);
-			this._ItemActionsContainerBox.Name = "_ItemActionsContainerBox";
-			//
-			// _ItemActionsContainerBox.Panel1
-			//
-			this._ItemActionsContainerBox.Panel1.Controls.Add(this._ItemList);
-			//
-			// _ItemActionsContainerBox.Panel2
-			//
-			this._ItemActionsContainerBox.Panel2.Controls.Add(this._ActionsBox);
-			this._ItemActionsContainerBox.Panel2Collapsed = true;
-			this._ItemActionsContainerBox.Size = new System.Drawing.Size(550, 205);
-			this._ItemActionsContainerBox.SplitterDistance = 412;
-			this._ItemActionsContainerBox.TabIndex = 5;
-			//
-			// _ExportBookmarkButton
-			//
-			this._ExportBookmarkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this._ExportBookmarkButton.Image = global::PDFPatcher.Properties.Resources.ExportInfoFile;
-			this._ExportBookmarkButton.Location = new System.Drawing.Point(18, 297);
-			this._ExportBookmarkButton.Name = "_ExportBookmarkButton";
-			this._ExportBookmarkButton.Size = new System.Drawing.Size(120, 23);
-			this._ExportBookmarkButton.TabIndex = 8;
-			this._ExportBookmarkButton.Text = "&Export Bookmark";
-			this._ExportBookmarkButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this._ExportBookmarkButton.UseVisualStyleBackColor = true;
-			this._ExportBookmarkButton.Click += new System.EventHandler(this._ExportBookmarkButton_Click);
-			//
-			// _ImportButton
-			//
-			this._ImportButton.AlternativeFocusBorderColor = System.Drawing.SystemColors.Highlight;
-			this._ImportButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this._ImportButton.AnimateGlow = true;
-			this._ImportButton.BackColor = System.Drawing.SystemColors.Highlight;
-			this._ImportButton.CornerRadius = 3;
-			this._ImportButton.ForeColor = System.Drawing.SystemColors.ControlText;
-			this._ImportButton.GlowColor = System.Drawing.Color.White;
-			this._ImportButton.Image = global::PDFPatcher.Properties.Resources.Save;
-			this._ImportButton.InnerBorderColor = System.Drawing.SystemColors.ControlDarkDark;
-			this._ImportButton.Location = new System.Drawing.Point(440, 297);
-			this._ImportButton.Name = "_ImportButton";
-			this._ImportButton.OuterBorderColor = System.Drawing.SystemColors.ControlLightLight;
-			this._ImportButton.ShowFocusBorder = true;
-			this._ImportButton.Size = new System.Drawing.Size(123, 29);
-			this._ImportButton.TabIndex = 13;
-			this._ImportButton.Text = "&Generate object file";
-			this._ImportButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this._ImportButton.Click += new System.EventHandler(this._ImportButton_Click);
-			//
-			// _ConfigButton
-			//
-			this._ConfigButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this._ConfigButton.Image = global::PDFPatcher.Properties.Resources.PdfOptions;
-			this._ConfigButton.Location = new System.Drawing.Point(253, 297);
-			this._ConfigButton.Name = "_ConfigButton";
-			this._ConfigButton.Size = new System.Drawing.Size(181, 23);
-			this._ConfigButton.TabIndex = 14;
-			this._ConfigButton.Text = "Set the modification method of the P&DF file";
-			this._ConfigButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this._ConfigButton.UseVisualStyleBackColor = true;
-			//
-			// _InfoConfigButton
-			//
-			this._InfoConfigButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this._InfoConfigButton.Image = global::PDFPatcher.Properties.Resources.InfoFileOptions;
-			this._InfoConfigButton.Location = new System.Drawing.Point(144, 297);
-			this._InfoConfigButton.Name = "_InfoConfigButton";
-			this._InfoConfigButton.Size = new System.Drawing.Size(103, 23);
-			this._InfoConfigButton.TabIndex = 14;
-			this._InfoConfigButton.Text = "Information file configuration";
-			this._InfoConfigButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this._InfoConfigButton.UseVisualStyleBackColor = true;
-			this._InfoConfigButton.Click += new System.EventHandler(this._MainToolbar_ButtonClick);
-			//
-			// InfoExchangerControl
-			//
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this._InfoConfigButton);
-			this.Controls.Add(this._ConfigButton);
-			this.Controls.Add(this._ImportButton);
-			this.Controls.Add(_MainToolbar);
-			this.Controls.Add(this._TargetPdfFile);
-			this.Controls.Add(this._ExportBookmarkButton);
-			this.Controls.Add(this._ItemActionsContainerBox);
-			this.Controls.Add(this._AutoClearListBox);
-			this.Controls.Add(this._BookmarkControl);
-			this.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-			this.Name = "InfoExchangerControl";
-			this.Size = new System.Drawing.Size(575, 342);
-			this.Load += new System.EventHandler(this.PatcherControl_OnLoad);
-			_MainToolbar.ResumeLayout(false);
-			_MainToolbar.PerformLayout();
-			this._SortMenu.ResumeLayout(false);
-			this._SelectionMenu.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this._ItemList)).EndInit();
-			this._ItemListMenu.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this._ActionsBox)).EndInit();
-			this._ItemActionsContainerBox.Panel1.ResumeLayout(false);
-			this._ItemActionsContainerBox.Panel2.ResumeLayout(false);
-			this._ItemActionsContainerBox.ResumeLayout(false);
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this._ItemActionsContainerBox.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this._ItemActionsContainerBox.Location = new System.Drawing.Point(13, 28);
+            this._ItemActionsContainerBox.Name = "_ItemActionsContainerBox";
+            // 
+            // _ItemActionsContainerBox.Panel1
+            // 
+            this._ItemActionsContainerBox.Panel1.Controls.Add(this._ItemList);
+            // 
+            // _ItemActionsContainerBox.Panel2
+            // 
+            this._ItemActionsContainerBox.Panel2.Controls.Add(this._ActionsBox);
+            this._ItemActionsContainerBox.Panel2Collapsed = true;
+            this._ItemActionsContainerBox.Size = new System.Drawing.Size(717, 205);
+            this._ItemActionsContainerBox.SplitterDistance = 412;
+            this._ItemActionsContainerBox.TabIndex = 5;
+            // 
+            // _ExportBookmarkButton
+            // 
+            this._ExportBookmarkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this._ExportBookmarkButton.Image = global::PDFPatcher.Properties.Resources.ExportInfoFile;
+            this._ExportBookmarkButton.Location = new System.Drawing.Point(18, 297);
+            this._ExportBookmarkButton.Name = "_ExportBookmarkButton";
+            this._ExportBookmarkButton.Size = new System.Drawing.Size(120, 23);
+            this._ExportBookmarkButton.TabIndex = 8;
+            this._ExportBookmarkButton.Text = "&Export Bookmark";
+            this._ExportBookmarkButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this._ExportBookmarkButton.UseVisualStyleBackColor = true;
+            this._ExportBookmarkButton.Click += new System.EventHandler(this._ExportBookmarkButton_Click);
+            // 
+            // _ImportButton
+            // 
+            this._ImportButton.AlternativeFocusBorderColor = System.Drawing.SystemColors.Highlight;
+            this._ImportButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this._ImportButton.AnimateGlow = true;
+            this._ImportButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this._ImportButton.CornerRadius = 3;
+            this._ImportButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._ImportButton.GlowColor = System.Drawing.Color.White;
+            this._ImportButton.Image = global::PDFPatcher.Properties.Resources.Save;
+            this._ImportButton.InnerBorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this._ImportButton.Location = new System.Drawing.Point(571, 297);
+            this._ImportButton.Name = "_ImportButton";
+            this._ImportButton.OuterBorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this._ImportButton.ShowFocusBorder = true;
+            this._ImportButton.Size = new System.Drawing.Size(159, 29);
+            this._ImportButton.TabIndex = 13;
+            this._ImportButton.Text = "&Generate object file";
+            this._ImportButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this._ImportButton.Click += new System.EventHandler(this._ImportButton_Click);
+            // 
+            // _ConfigButton
+            // 
+            this._ConfigButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this._ConfigButton.Image = global::PDFPatcher.Properties.Resources.PdfOptions;
+            this._ConfigButton.Location = new System.Drawing.Point(253, 297);
+            this._ConfigButton.Name = "_ConfigButton";
+            this._ConfigButton.Size = new System.Drawing.Size(255, 23);
+            this._ConfigButton.TabIndex = 14;
+            this._ConfigButton.Text = "Set the modification method of the P&DF file";
+            this._ConfigButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this._ConfigButton.UseVisualStyleBackColor = true;
+            // 
+            // _InfoConfigButton
+            // 
+            this._InfoConfigButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this._InfoConfigButton.Image = global::PDFPatcher.Properties.Resources.InfoFileOptions;
+            this._InfoConfigButton.Location = new System.Drawing.Point(144, 297);
+            this._InfoConfigButton.Name = "_InfoConfigButton";
+            this._InfoConfigButton.Size = new System.Drawing.Size(103, 23);
+            this._InfoConfigButton.TabIndex = 14;
+            this._InfoConfigButton.Text = "Information file configuration";
+            this._InfoConfigButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this._InfoConfigButton.UseVisualStyleBackColor = true;
+            this._InfoConfigButton.Click += new System.EventHandler(this._MainToolbar_ButtonClick);
+            // 
+            // InfoExchangerControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this._InfoConfigButton);
+            this.Controls.Add(this._ConfigButton);
+            this.Controls.Add(this._ImportButton);
+            this.Controls.Add(_MainToolbar);
+            this.Controls.Add(this._TargetPdfFile);
+            this.Controls.Add(this._ExportBookmarkButton);
+            this.Controls.Add(this._ItemActionsContainerBox);
+            this.Controls.Add(this._AutoClearListBox);
+            this.Controls.Add(this._BookmarkControl);
+            this.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Name = "InfoExchangerControl";
+            this.Size = new System.Drawing.Size(742, 342);
+            this.Load += new System.EventHandler(this.PatcherControl_OnLoad);
+            _MainToolbar.ResumeLayout(false);
+            _MainToolbar.PerformLayout();
+            this._SortMenu.ResumeLayout(false);
+            this._SelectionMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this._ItemList)).EndInit();
+            this._ItemListMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this._ActionsBox)).EndInit();
+            this._ItemActionsContainerBox.Panel1.ResumeLayout(false);
+            this._ItemActionsContainerBox.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this._ItemActionsContainerBox)).EndInit();
+            this._ItemActionsContainerBox.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

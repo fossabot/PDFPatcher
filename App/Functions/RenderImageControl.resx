@@ -120,4 +120,7 @@
   <metadata name="_SaveImageBox.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Use "-" to indicate the starting and ending page numbers. Multiple page numbers can be separated by ";", "," or " " (space), such as "1;4-15;2 56", which means to extract sequentially Contents on pages 1, 4 to 15, 2 and 56. Do not refer to Extract the content of all pages of the source file when setting page numbers.</value>
+  </data>
 </root>

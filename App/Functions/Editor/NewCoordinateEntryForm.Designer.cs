@@ -39,44 +39,41 @@
             this._ProportionBox = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this._AdjustmentAmountBox)).BeginInit();
             this.SuspendLayout();
-            //
+            // 
             // _CancelButton
-            //
+            // 
             this._CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this._CancelButton.Location = new System.Drawing.Point(189, 198);
-            this._CancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._CancelButton.Location = new System.Drawing.Point(272, 172);
             this._CancelButton.Name = "_CancelButton";
-            this._CancelButton.Size = new System.Drawing.Size(100, 29);
+            this._CancelButton.Size = new System.Drawing.Size(75, 25);
             this._CancelButton.TabIndex = 5;
-            this._CancelButton.Text = "Cancel (&X)";
+            this._CancelButton.Text = "&Cancel";
             this._CancelButton.UseVisualStyleBackColor = true;
             this._CancelButton.Click += new System.EventHandler(this._CancelButton_Click);
-            //
+            // 
             // _OkButton
-            //
+            // 
             this._OkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this._OkButton.Location = new System.Drawing.Point(81, 198);
-            this._OkButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._OkButton.Location = new System.Drawing.Point(191, 172);
             this._OkButton.Name = "_OkButton";
-            this._OkButton.Size = new System.Drawing.Size(100, 29);
+            this._OkButton.Size = new System.Drawing.Size(75, 25);
             this._OkButton.TabIndex = 4;
             this._OkButton.Text = "&OK";
             this._OkButton.UseVisualStyleBackColor = true;
             this._OkButton.Click += new System.EventHandler(this._OkButton_Click);
-            //
+            // 
             // label1
-            //
+            // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 15);
+            this.label1.Size = new System.Drawing.Size(155, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Need to adjust the coordinates:";
-            //
+            // 
             // _CoordinateBox
-            //
+            // 
             this._CoordinateBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._CoordinateBox.FormattingEnabled = true;
             this._CoordinateBox.Items.AddRange(new object[] {
@@ -84,27 +81,24 @@
             "Bottom",
             "Left",
             "Right"});
-            this._CoordinateBox.Location = new System.Drawing.Point(159, 21);
-            this._CoordinateBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._CoordinateBox.Location = new System.Drawing.Point(173, 19);
             this._CoordinateBox.Name = "_CoordinateBox";
-            this._CoordinateBox.Size = new System.Drawing.Size(115, 23);
+            this._CoordinateBox.Size = new System.Drawing.Size(87, 21);
             this._CoordinateBox.TabIndex = 7;
-            //
+            // 
             // label2
-            //
+            // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 56);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(12, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 15);
+            this.label2.Size = new System.Drawing.Size(115, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Coordinate adjustment:";
-            //
+            // 
             // _AdjustmentAmountBox
-            //
+            // 
             this._AdjustmentAmountBox.DecimalPlaces = 2;
-            this._AdjustmentAmountBox.Location = new System.Drawing.Point(159, 54);
-            this._AdjustmentAmountBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._AdjustmentAmountBox.Location = new System.Drawing.Point(133, 47);
             this._AdjustmentAmountBox.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -116,52 +110,51 @@
             0,
             -2147483648});
             this._AdjustmentAmountBox.Name = "_AdjustmentAmountBox";
-            this._AdjustmentAmountBox.Size = new System.Drawing.Size(116, 25);
+            this._AdjustmentAmountBox.Size = new System.Drawing.Size(87, 20);
             this._AdjustmentAmountBox.TabIndex = 9;
             this._AdjustmentAmountBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            //
+            // 
             // _RelativeBox
-            //
+            // 
             this._RelativeBox.AutoSize = true;
             this._RelativeBox.Checked = true;
-            this._RelativeBox.Location = new System.Drawing.Point(19, 89);
-            this._RelativeBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._RelativeBox.Location = new System.Drawing.Point(14, 77);
             this._RelativeBox.Name = "_RelativeBox";
-            this._RelativeBox.Size = new System.Drawing.Size(223, 19);
+            this._RelativeBox.Size = new System.Drawing.Size(267, 17);
             this._RelativeBox.TabIndex = 10;
             this._RelativeBox.TabStop = true;
             this._RelativeBox.Text = "Relative adjustment (original coordinate adjustment)";
             this._RelativeBox.UseVisualStyleBackColor = true;
-            //
+            // 
             // _AbsoluteBox
-            //
+            // 
             this._AbsoluteBox.AutoSize = true;
-            this._AbsoluteBox.Location = new System.Drawing.Point(19, 116);
-            this._AbsoluteBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._AbsoluteBox.Location = new System.Drawing.Point(14, 101);
             this._AbsoluteBox.Name = "_AbsoluteBox";
-            this._AbsoluteBox.Size = new System.Drawing.Size(238, 19);
+            this._AbsoluteBox.Size = new System.Drawing.Size(294, 17);
             this._AbsoluteBox.TabIndex = 11;
             this._AbsoluteBox.Text = "Absolute adjustment (the original coordination is adjusted)";
             this._AbsoluteBox.UseVisualStyleBackColor = true;
-            //
+            // 
             // _ProportionBox
-            //
+            // 
             this._ProportionBox.AutoSize = true;
-            this._ProportionBox.Location = new System.Drawing.Point(19, 142);
+            this._ProportionBox.Location = new System.Drawing.Point(14, 123);
+            this._ProportionBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this._ProportionBox.Name = "_ProportionBox";
-            this._ProportionBox.Size = new System.Drawing.Size(238, 19);
+            this._ProportionBox.Size = new System.Drawing.Size(306, 17);
             this._ProportionBox.TabIndex = 12;
             this._ProportionBox.TabStop = true;
             this._ProportionBox.Text = "Proportional adjustment (original coordination by adjustment)";
             this._ProportionBox.UseVisualStyleBackColor = true;
-            //
+            // 
             // NewCoordinateEntryForm
-            //
+            // 
             this.AcceptButton = this._OkButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this._CancelButton;
-            this.ClientSize = new System.Drawing.Size(305, 242);
+            this.ClientSize = new System.Drawing.Size(359, 210);
             this.Controls.Add(this._ProportionBox);
             this.Controls.Add(this._AbsoluteBox);
             this.Controls.Add(this._RelativeBox);
@@ -172,7 +165,6 @@
             this.Controls.Add(this._CancelButton);
             this.Controls.Add(this._OkButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "NewCoordinateEntryForm";

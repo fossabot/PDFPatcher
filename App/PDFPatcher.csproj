@@ -690,27 +690,34 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\DocumentOption\FontCharSubstitutionForm.resx">
       <DependentUpon>FontCharSubstitutionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\Editor\AddBookmarkConditionForm.resx">
       <DependentUpon>AddBookmarkConditionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\Editor\AutoBookmarkForm.resx">
       <DependentUpon>AutoBookmarkForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\Editor\DocumentInfoForm.resx">
       <DependentUpon>DocumentInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\Editor\InsertBookmarkForm.resx">
       <DependentUpon>InsertBookmarkForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\CustomizeToolbarForm.resx">
       <DependentUpon>CustomizeToolbarForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\Editor\InsertPageLabelForm.resx">
       <DependentUpon>InsertPageLabelForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\Editor\PagePropertyForm.resx">
       <DependentUpon>PagePropertyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\FrontPageControl.resx">
       <DependentUpon>FrontPageControl.cs</DependentUpon>
@@ -734,6 +741,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\AutoBookmark\EditAdjustmentForm.resx">
       <DependentUpon>EditAdjustmentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\InfoFileOptionControl.resx">
       <DependentUpon>InfoFileOptionControl.cs</DependentUpon>
@@ -741,12 +749,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\InfoExchangerControl.resx">
       <DependentUpon>InfoExchangerControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\RenameControl.resx">
       <DependentUpon>RenameControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\PatcherControl.resx">
       <DependentUpon>PatcherControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\BookmarkControl.resx">
       <DependentUpon>BookmarkControl.cs</DependentUpon>
@@ -754,6 +764,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\PatcherOptionForm.resx">
       <DependentUpon>PatcherOptionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\AutoBookmark\FontFilterForm.resx">
       <DependentUpon>FontFilterForm.cs</DependentUpon>
@@ -766,24 +777,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\Editor\SavePdfForm.resx">
       <DependentUpon>SavePdfForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\AutoBookmark\TextSizeConditionEditor.resx">
       <DependentUpon>TextSizeConditionEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\Editor\NewCoordinateEntryForm.resx">
       <DependentUpon>NewCoordinateEntryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\DocumentOption\PageLabelEditor.resx">
       <DependentUpon>PageLabelEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\RenamePreviewForm.resx">
       <DependentUpon>RenamePreviewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\Editor\SearchBookmarkForm.resx">
       <DependentUpon>SearchBookmarkForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\Editor\ShiftPageNumberEntryForm.resx">
       <DependentUpon>ShiftPageNumberEntryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\TargetFileControl.resx">
       <DependentUpon>TargetFileControl.cs</DependentUpon>
@@ -795,6 +812,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\SourceImageOptionForm.resx">
       <DependentUpon>SourceImageOptionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\AppOptionForm.resx">
       <DependentUpon>AppOptionForm.cs</DependentUpon>
@@ -802,6 +820,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\ViewerPreferenceEditor.resx">
       <DependentUpon>ViewerPreferenceEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\AutoBookmarkControl.resx">
       <DependentUpon>AutoBookmarkControl.cs</DependentUpon>
@@ -823,6 +842,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\AutoBookmark\TextConditionEditor.resx">
       <DependentUpon>TextConditionEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\DocumentInspectorControl.resx">
       <DependentUpon>DocumentInspectorControl.cs</DependentUpon>
@@ -892,15 +912,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Functions\DocumentOption\DocumentFontListForm.resx">
       <DependentUpon>DocumentFontListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\DocumentInspector\AddPdfObjectForm.resx">
       <DependentUpon>AddPdfObjectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\DocumentOption\PageSettingsEditor.resx">
       <DependentUpon>PageSettingsEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\DocumentOption\FontSubstitutionsEditor.resx">
       <DependentUpon>FontSubstitutionsEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\MergerOptionForm.resx">
       <DependentUpon>MergerOptionForm.cs</DependentUpon>
@@ -924,6 +947,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Functions\UpdateForm.resx">
       <DependentUpon>UpdateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\PDFStructInfo.xml" />
     <Content Include="pdf_icon.ico" />

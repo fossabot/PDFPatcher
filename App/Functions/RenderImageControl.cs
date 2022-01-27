@@ -229,10 +229,10 @@ public partial class RenderImageControl : FunctionControl, IResettableControl
             string f = _FileNameMaskBox.Text;
             previews[0] = 1.ToString(f) + ".jpg";
             previews[1] = 2.ToString(f) + ".jpg";
-            previews[2] = 3.ToString(f) + ".jpg ...";
+            previews[2] = 3.ToString(f) + ".jpg...";
             previews[3] = "\n" + 11.ToString(f) + ".jpg";
             previews[4] = 12.ToString(f) + ".jpg";
-            previews[5] = 13.ToString(f) + ".jpg ...";
+            previews[5] = 13.ToString(f) + ".jpg...";
             previews[6] = 100.ToString(f) + ".jpg";
             _FileMaskPreviewBox.Text = string.Join(" ", previews);
         }

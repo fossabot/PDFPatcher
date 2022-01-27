@@ -282,7 +282,7 @@
             _Patcher.Name = "_Patcher";
             _Patcher.Size = new System.Drawing.Size(281, 26);
             _Patcher.Tag = "Patcher";
-            _Patcher.Text = "Modify PDF Files in Batch ...";
+            _Patcher.Text = "Modify PDF Files in Batch...";
             //
             // _Merger
             //
@@ -290,7 +290,7 @@
             _Merger.Name = "_Merger";
             _Merger.Size = new System.Drawing.Size(281, 26);
             _Merger.Tag = "Merger";
-            _Merger.Text = "Merge P&DF and Image Files ...";
+            _Merger.Text = "Merge P&DF and Image Files...";
             //
             // _Rename
             //
@@ -298,7 +298,7 @@
             _Rename.Name = "_Rename";
             _Rename.Size = new System.Drawing.Size(281, 26);
             _Rename.Tag = "Rename";
-            _Rename.Text = "&Rename PDF Files in Batch ...";
+            _Rename.Text = "&Rename PDF Files in Batch...";
             _Rename.ToolTipText = "Rename the PDF file according to the properties of the PDF document";
             //
             // _OcrImages
@@ -307,7 +307,7 @@
             _OcrImages.Name = "_OcrImages";
             _OcrImages.Size = new System.Drawing.Size(281, 26);
             _OcrImages.Tag = "Ocr";
-            _OcrImages.Text = "&Identify Image Text ...";
+            _OcrImages.Text = "&Identify Image Text...";
             //
             // _GenerateBookmark
             //
@@ -323,7 +323,7 @@
             _InfoExchanger.Name = "_InfoExchanger";
             _InfoExchanger.Size = new System.Drawing.Size(281, 26);
             _InfoExchanger.Tag = "InfoExchanger";
-            _InfoExchanger.Text = "Batch export or import information file (&X) ...";
+            _InfoExchanger.Text = "Batch export or import information file (&X)...";
             _InfoExchanger.Visible = false;
             //
             // _Imaging
@@ -343,7 +343,7 @@
             _Extract.Name = "_Extract";
             _Extract.Size = new System.Drawing.Size(250, 26);
             _Extract.Tag = "ExtractPages";
-            _Extract.Text = "Extract &Page or Split Document ...";
+            _Extract.Text = "Extract &Page or Split Document...";
             //
             // _ExtractImages
             //
@@ -359,7 +359,7 @@
             _RenderPages.Name = "_RenderPages";
             _RenderPages.Size = new System.Drawing.Size(250, 26);
             _RenderPages.Tag = "RenderPages";
-            _RenderPages.Text = "&Convert Page to Image ...";
+            _RenderPages.Text = "&Convert Page to Image...";
             //
             // _Explorer
             //
@@ -367,7 +367,7 @@
             _Explorer.Name = "_Explorer";
             _Explorer.Size = new System.Drawing.Size(237, 26);
             _Explorer.Tag = "Inspector";
-            _Explorer.Text = "Document &Structure Profiler ...";
+            _Explorer.Text = "Document &Structure Profiler...";
             //
             // _ExportInfoFile
             //
@@ -375,7 +375,7 @@
             _ExportInfoFile.Name = "_ExportInfoFile";
             _ExportInfoFile.Size = new System.Drawing.Size(237, 26);
             _ExportInfoFile.Tag = "InfoExchanger";
-            _ExportInfoFile.Text = "Export/Import &Info File ...";
+            _ExportInfoFile.Text = "Export/Import &Info File...";
             //
             // toolStripSeparator5
             //
@@ -393,7 +393,7 @@
             _CustomizeToolbarCommand.Image = ((System.Drawing.Image)(resources.GetObject("_CustomizeToolbarCommand.Image")));
             _CustomizeToolbarCommand.Name = "_CustomizeToolbarCommand";
             _CustomizeToolbarCommand.Size = new System.Drawing.Size(237, 26);
-            _CustomizeToolbarCommand.Text = "&Customize Toolbar ...";
+            _CustomizeToolbarCommand.Text = "&Customize Toolbar...";
             //
             // _LogWindow
             //
@@ -401,7 +401,7 @@
             _LogWindow.Name = "_LogWindow";
             _LogWindow.Size = new System.Drawing.Size(237, 26);
             _LogWindow.Tag = "";
-            _LogWindow.Text = "Program &Output Info ...";
+            _LogWindow.Text = "Program &Output Info...";
             //
             // _Help
             //
@@ -433,14 +433,14 @@
             _CheckUpdate.Image = ((System.Drawing.Image)(resources.GetObject("_CheckUpdate.Image")));
             _CheckUpdate.Name = "_CheckUpdate";
             _CheckUpdate.Size = new System.Drawing.Size(237, 26);
-            _CheckUpdate.Text = "Check for &Updates ...";
+            _CheckUpdate.Text = "Check for &Updates...";
             //
             // _VisitHomePage
             //
             _VisitHomePage.Image = ((System.Drawing.Image)(resources.GetObject("_VisitHomePage.Image")));
             _VisitHomePage.Name = "_VisitHomePage";
             _VisitHomePage.Size = new System.Drawing.Size(237, 26);
-            _VisitHomePage.Text = "Visit &Homepage ...";
+            _VisitHomePage.Text = "Visit &Homepage...";
             //
             // _About
             //
@@ -448,7 +448,7 @@
             _About.Name = "_About";
             _About.Size = new System.Drawing.Size(237, 26);
             _About.Tag = "About";
-            _About.Text = "About ...";
+            _About.Text = "About...";
             //
             // _Open
             //
@@ -471,7 +471,7 @@
             _ImportBookmark.Name = "_ImportBookmark";
             _ImportBookmark.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
             _ImportBookmark.Size = new System.Drawing.Size(267, 26);
-            _ImportBookmark.Text = "Import bookmark (&D)...";
+            _ImportBookmark.Text = "&Import Bookmark...";
             _ImportBookmark.ToolTipText = "Import bookmarks from other files to the current document";
             //
             // toolStripSeparator2
@@ -485,7 +485,7 @@
             _Action.Name = "_Action";
             _Action.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             _Action.Size = new System.Drawing.Size(267, 26);
-            _Action.Text = "Save PDF files(&C)...";
+            _Action.Text = "Save &PDF File...";
             //
             // _SaveBookmark
             //
@@ -493,7 +493,7 @@
             _SaveBookmark.Name = "_SaveBookmark";
             _SaveBookmark.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
             _SaveBookmark.Size = new System.Drawing.Size(267, 26);
-            _SaveBookmark.Text = "Save the bookmark file(&Q)";
+            _SaveBookmark.Text = "Save &Bookmark File";
             _SaveBookmark.ToolTipText = "Save the bookmark as an information file in XML format, available for migration bookmarks";
             //
             // _SaveAsInfoFile
@@ -501,7 +501,7 @@
             _SaveAsInfoFile.Image = ((System.Drawing.Image)(resources.GetObject("_SaveAsInfoFile.Image")));
             _SaveAsInfoFile.Name = "_SaveAsInfoFile";
             _SaveAsInfoFile.Size = new System.Drawing.Size(267, 26);
-            _SaveAsInfoFile.Text = "Save a bookmark file (&H)...";
+            _SaveAsInfoFile.Text = "Save Bookmark File &As...";
             //
             // _configSeparator
             //
@@ -514,13 +514,13 @@
             _AppOptions.Name = "_AppOptions";
             _AppOptions.Size = new System.Drawing.Size(267, 26);
             _AppOptions.Tag = "Options";
-            _AppOptions.Text = "Configuration (&P)...";
+            _AppOptions.Text = "&Configuration...";
             //
             // _RestoreOptions
             //
             _RestoreOptions.Name = "_RestoreOptions";
             _RestoreOptions.Size = new System.Drawing.Size(267, 26);
-            _RestoreOptions.Text = "Load Configuration (&J)...";
+            _RestoreOptions.Text = "&Load Configuration...";
             //
             // _SaveOptions
             //
@@ -560,7 +560,7 @@
             _Options.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
             _Options.Size = new System.Drawing.Size(267, 26);
             _Options.Tag = "PatcherOptions";
-            _Options.Text = "Function &Setting ...";
+            _Options.Text = "Function &Setting...";
             //
             // _CustomizeToolbar
             //

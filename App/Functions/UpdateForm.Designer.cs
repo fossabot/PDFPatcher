@@ -25,108 +25,104 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
-			this._InfoBox = new System.Windows.Forms.RichTextBox();
-			this._HomePageButton = new System.Windows.Forms.Button();
-			this._CancelButton = new System.Windows.Forms.Button();
-			this._DownloadButton = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
-			this._CheckUpdateIntervalBox = new System.Windows.Forms.ComboBox();
-			this.SuspendLayout();
-			//
-			// _InfoBox
-			//
-			this._InfoBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this._InfoBox = new System.Windows.Forms.RichTextBox();
+            this._HomePageButton = new System.Windows.Forms.Button();
+            this._CancelButton = new System.Windows.Forms.Button();
+            this._DownloadButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this._CheckUpdateIntervalBox = new System.Windows.Forms.ComboBox();
+            this.SuspendLayout();
+            // 
+            // _InfoBox
+            // 
+            this._InfoBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this._InfoBox.Location = new System.Drawing.Point(21, 18);
-			this._InfoBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this._InfoBox.Name = "_InfoBox";
-			this._InfoBox.ReadOnly = true;
-			this._InfoBox.Size = new System.Drawing.Size(777, 446);
-			this._InfoBox.TabIndex = 0;
-			this._InfoBox.Text = "";
-			//
-			// _HomePageButton
-			//
-			this._HomePageButton.Image = global::PDFPatcher.Properties.Resources.HomePage;
-			this._HomePageButton.Location = new System.Drawing.Point(199, 474);
-			this._HomePageButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this._HomePageButton.Name = "_HomePageButton";
-			this._HomePageButton.Size = new System.Drawing.Size(162, 35);
-			this._HomePageButton.TabIndex = 2;
-			this._HomePageButton.Text = "Go to homepage(&Z)";
-			this._HomePageButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this._HomePageButton.UseVisualStyleBackColor = true;
-			//
-			// _CancelButton
-			//
-			this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this._CancelButton.Location = new System.Drawing.Point(370, 474);
-			this._CancelButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this._CancelButton.Name = "_CancelButton";
-			this._CancelButton.Size = new System.Drawing.Size(112, 35);
-			this._CancelButton.TabIndex = 3;
-			this._CancelButton.Text = "Cancel (&Q)";
-			this._CancelButton.UseVisualStyleBackColor = true;
-			//
-			// _DownloadButton
-			//
-			this._DownloadButton.Enabled = false;
-			this._DownloadButton.Image = global::PDFPatcher.Properties.Resources.Save;
-			this._DownloadButton.Location = new System.Drawing.Point(21, 474);
-			this._DownloadButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this._DownloadButton.Name = "_DownloadButton";
-			this._DownloadButton.Size = new System.Drawing.Size(170, 35);
-			this._DownloadButton.TabIndex = 1;
-this._DownloadButton.Text = "Download new version";
-this._DownloadButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-this._DownloadButton.UseVisualStyleBackColor = true;
-//
-// label1
-//
-this.label1.AutoSize = true;
-this.label1.Location = new System.Drawing.Point(490, 482);
-this.label1.Name = "label1";
-this.label1.Size = new System.Drawing.Size(170, 18);
-this.label1.TabIndex = 4;
-this.label1.Text = "Automatically check update interval:";
-//
-// _CheckUpdateIntervalBox
-//
-this._CheckUpdateIntervalBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-this._CheckUpdateIntervalBox.FormattingEnabled = true;
-this._CheckUpdateIntervalBox.Items.AddRange(new object[] {
-             "7 days",
-             "14 days",
-             "30 days",
-             "never check"});
-			this._CheckUpdateIntervalBox.Location = new System.Drawing.Point(657, 479);
-			this._CheckUpdateIntervalBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this._CheckUpdateIntervalBox.Name = "_CheckUpdateIntervalBox";
-			this._CheckUpdateIntervalBox.Size = new System.Drawing.Size(136, 26);
-			this._CheckUpdateIntervalBox.TabIndex = 5;
-			//
-			// UpdateForm
-			//
-			this.AcceptButton = this._HomePageButton;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.CancelButton = this._CancelButton;
-			this.ClientSize = new System.Drawing.Size(818, 534);
-			this.Controls.Add(this._CheckUpdateIntervalBox);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this._DownloadButton);
-			this.Controls.Add(this._CancelButton);
-			this.Controls.Add(this._HomePageButton);
-			this.Controls.Add(this._InfoBox);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "UpdateForm";
-			this.Text = "Check for updates";
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this._InfoBox.Location = new System.Drawing.Point(14, 13);
+            this._InfoBox.Name = "_InfoBox";
+            this._InfoBox.ReadOnly = true;
+            this._InfoBox.Size = new System.Drawing.Size(616, 323);
+            this._InfoBox.TabIndex = 0;
+            this._InfoBox.Text = "";
+            // 
+            // _HomePageButton
+            // 
+            this._HomePageButton.Image = global::PDFPatcher.Properties.Resources.HomePage;
+            this._HomePageButton.Location = new System.Drawing.Point(133, 342);
+            this._HomePageButton.Name = "_HomePageButton";
+            this._HomePageButton.Size = new System.Drawing.Size(108, 25);
+            this._HomePageButton.TabIndex = 2;
+            this._HomePageButton.Text = "&Homepage";
+            this._HomePageButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this._HomePageButton.UseVisualStyleBackColor = true;
+            // 
+            // _CancelButton
+            // 
+            this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this._CancelButton.Location = new System.Drawing.Point(247, 342);
+            this._CancelButton.Name = "_CancelButton";
+            this._CancelButton.Size = new System.Drawing.Size(75, 25);
+            this._CancelButton.TabIndex = 3;
+            this._CancelButton.Text = "&Cancel";
+            this._CancelButton.UseVisualStyleBackColor = true;
+            // 
+            // _DownloadButton
+            // 
+            this._DownloadButton.Enabled = false;
+            this._DownloadButton.Image = global::PDFPatcher.Properties.Resources.Save;
+            this._DownloadButton.Location = new System.Drawing.Point(14, 342);
+            this._DownloadButton.Name = "_DownloadButton";
+            this._DownloadButton.Size = new System.Drawing.Size(113, 25);
+            this._DownloadButton.TabIndex = 1;
+            this._DownloadButton.Text = "Download new version";
+            this._DownloadButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this._DownloadButton.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(327, 348);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(178, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Automatically check update interval:";
+            // 
+            // _CheckUpdateIntervalBox
+            // 
+            this._CheckUpdateIntervalBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._CheckUpdateIntervalBox.FormattingEnabled = true;
+            this._CheckUpdateIntervalBox.Items.AddRange(new object[] {
+            "7 days",
+            "14 days",
+            "30 days",
+            "never check"});
+            this._CheckUpdateIntervalBox.Location = new System.Drawing.Point(509, 342);
+            this._CheckUpdateIntervalBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this._CheckUpdateIntervalBox.Name = "_CheckUpdateIntervalBox";
+            this._CheckUpdateIntervalBox.Size = new System.Drawing.Size(92, 21);
+            this._CheckUpdateIntervalBox.TabIndex = 5;
+            // 
+            // UpdateForm
+            // 
+            this.AcceptButton = this._HomePageButton;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this._CancelButton;
+            this.ClientSize = new System.Drawing.Size(642, 386);
+            this.Controls.Add(this._CheckUpdateIntervalBox);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this._DownloadButton);
+            this.Controls.Add(this._CancelButton);
+            this.Controls.Add(this._HomePageButton);
+            this.Controls.Add(this._InfoBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "UpdateForm";
+            this.Text = "Check for updates";
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 
