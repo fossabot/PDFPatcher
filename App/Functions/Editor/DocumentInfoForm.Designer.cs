@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DocumentInfoForm));
             this.label1 = new System.Windows.Forms.Label();
             this._TitleBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,207 +56,129 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 49);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Title:";
             // 
             // _TitleBox
             // 
-            this._TitleBox.Location = new System.Drawing.Point(101, 46);
+            resources.ApplyResources(this._TitleBox, "_TitleBox");
             this._TitleBox.Name = "_TitleBox";
-            this._TitleBox.Size = new System.Drawing.Size(324, 20);
-            this._TitleBox.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 78);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Subject:";
             // 
             // _SubjectBox
             // 
-            this._SubjectBox.Location = new System.Drawing.Point(101, 75);
+            resources.ApplyResources(this._SubjectBox, "_SubjectBox");
             this._SubjectBox.Name = "_SubjectBox";
-            this._SubjectBox.Size = new System.Drawing.Size(324, 20);
-            this._SubjectBox.TabIndex = 5;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 107);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Author:";
             // 
             // _AuthorBox
             // 
-            this._AuthorBox.Location = new System.Drawing.Point(101, 104);
+            resources.ApplyResources(this._AuthorBox, "_AuthorBox");
             this._AuthorBox.Name = "_AuthorBox";
-            this._AuthorBox.Size = new System.Drawing.Size(324, 20);
-            this._AuthorBox.TabIndex = 7;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 136);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Creator:";
             // 
             // _CreatorBox
             // 
-            this._CreatorBox.Location = new System.Drawing.Point(101, 133);
+            resources.ApplyResources(this._CreatorBox, "_CreatorBox");
             this._CreatorBox.Name = "_CreatorBox";
-            this._CreatorBox.Size = new System.Drawing.Size(324, 20);
-            this._CreatorBox.TabIndex = 9;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 166);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Maker:";
             // 
             // _ProducerBox
             // 
-            this._ProducerBox.Location = new System.Drawing.Point(101, 162);
+            resources.ApplyResources(this._ProducerBox, "_ProducerBox");
             this._ProducerBox.Name = "_ProducerBox";
-            this._ProducerBox.Size = new System.Drawing.Size(324, 20);
-            this._ProducerBox.TabIndex = 11;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 195);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Keywords:";
             // 
             // _KeywordsBox
             // 
-            this._KeywordsBox.Location = new System.Drawing.Point(101, 192);
+            resources.ApplyResources(this._KeywordsBox, "_KeywordsBox");
             this._KeywordsBox.Name = "_KeywordsBox";
-            this._KeywordsBox.Size = new System.Drawing.Size(324, 20);
-            this._KeywordsBox.TabIndex = 13;
             // 
             // _FilePathBox
             // 
-            this._FilePathBox.Location = new System.Drawing.Point(101, 16);
+            resources.ApplyResources(this._FilePathBox, "_FilePathBox");
             this._FilePathBox.Name = "_FilePathBox";
             this._FilePathBox.ReadOnly = true;
-            this._FilePathBox.Size = new System.Drawing.Size(324, 20);
-            this._FilePathBox.TabIndex = 1;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 20);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Document Path:";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 228);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 13);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Create date:";
             // 
             // _CreationDateBox
             // 
-            this._CreationDateBox.AutoSize = true;
-            this._CreationDateBox.Location = new System.Drawing.Point(99, 228);
+            resources.ApplyResources(this._CreationDateBox, "_CreationDateBox");
             this._CreationDateBox.Name = "_CreationDateBox";
-            this._CreationDateBox.Size = new System.Drawing.Size(62, 13);
-            this._CreationDateBox.TabIndex = 15;
-            this._CreationDateBox.Text = "Create date";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 251);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 13);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Modify date:";
             // 
             // _ModDateBox
             // 
-            this._ModDateBox.AutoSize = true;
-            this._ModDateBox.Location = new System.Drawing.Point(99, 251);
+            resources.ApplyResources(this._ModDateBox, "_ModDateBox");
             this._ModDateBox.Name = "_ModDateBox";
-            this._ModDateBox.Size = new System.Drawing.Size(62, 13);
-            this._ModDateBox.TabIndex = 17;
-            this._ModDateBox.Text = "Modify date";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 274);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(40, 13);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Pages:";
             // 
             // _PageCountBox
             // 
-            this._PageCountBox.AutoSize = true;
-            this._PageCountBox.Location = new System.Drawing.Point(99, 274);
+            resources.ApplyResources(this._PageCountBox, "_PageCountBox");
             this._PageCountBox.Name = "_PageCountBox";
-            this._PageCountBox.Size = new System.Drawing.Size(88, 13);
-            this._PageCountBox.TabIndex = 19;
-            this._PageCountBox.Text = "Number of pages";
             // 
             // _OkButton
             // 
-            this._OkButton.Location = new System.Drawing.Point(269, 303);
+            resources.ApplyResources(this._OkButton, "_OkButton");
             this._OkButton.Name = "_OkButton";
-            this._OkButton.Size = new System.Drawing.Size(75, 25);
-            this._OkButton.TabIndex = 20;
-            this._OkButton.Text = "&OK";
             this._OkButton.UseVisualStyleBackColor = true;
             // 
             // _CancelButton
             // 
-            this._CancelButton.Location = new System.Drawing.Point(350, 303);
+            resources.ApplyResources(this._CancelButton, "_CancelButton");
             this._CancelButton.Name = "_CancelButton";
-            this._CancelButton.Size = new System.Drawing.Size(75, 25);
-            this._CancelButton.TabIndex = 20;
-            this._CancelButton.Text = "&Cancel";
             this._CancelButton.UseVisualStyleBackColor = true;
             // 
             // _ConfigButton
             // 
-            this._ConfigButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            resources.ApplyResources(this._ConfigButton, "_ConfigButton");
             this._ConfigButton.Image = global::PDFPatcher.Properties.Resources.PdfOptions;
-            this._ConfigButton.Location = new System.Drawing.Point(14, 303);
             this._ConfigButton.Name = "_ConfigButton";
-            this._ConfigButton.Size = new System.Drawing.Size(216, 25);
-            this._ConfigButton.TabIndex = 21;
-            this._ConfigButton.Text = "Set modification method of the P&DF file";
-            this._ConfigButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this._ConfigButton.UseVisualStyleBackColor = true;
             // 
             // DocumentInfoForm
             // 
             this.AcceptButton = this._OkButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 341);
             this.Controls.Add(this._ConfigButton);
             this.Controls.Add(this._CancelButton);
             this.Controls.Add(this._OkButton);
@@ -284,8 +207,6 @@
             this.MinimizeBox = false;
             this.Name = "DocumentInfoForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Document Property";
             this.ResumeLayout(false);
             this.PerformLayout();
 

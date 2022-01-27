@@ -26,6 +26,7 @@
 		/// </summary>
 		private void InitializeComponent () {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomizeToolbarForm));
             this._ItemListBox = new BrightIdeasSoftware.ObjectListView();
             this._NameColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this._VisibleColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
@@ -53,85 +54,66 @@
             this._DisplayTextColumn});
             this._ItemListBox.Cursor = System.Windows.Forms.Cursors.Default;
             this._ItemListBox.HideSelection = false;
-            this._ItemListBox.Location = new System.Drawing.Point(12, 50);
+            resources.ApplyResources(this._ItemListBox, "_ItemListBox");
             this._ItemListBox.Name = "_ItemListBox";
             this._ItemListBox.ShowGroups = false;
-            this._ItemListBox.Size = new System.Drawing.Size(388, 285);
             this._ItemListBox.SmallImageList = this._ButtonImageList;
-            this._ItemListBox.TabIndex = 0;
             this._ItemListBox.UseCompatibleStateImageBehavior = false;
             this._ItemListBox.View = System.Windows.Forms.View.Details;
             // 
             // _NameColumn
             // 
             this._NameColumn.IsEditable = false;
-            this._NameColumn.Text = "Toolbar button";
-            this._NameColumn.Width = 145;
+            resources.ApplyResources(this._NameColumn, "_NameColumn");
             // 
             // _VisibleColumn
             // 
             this._VisibleColumn.CheckBoxes = true;
             this._VisibleColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._VisibleColumn.Text = "Show";
-            this._VisibleColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._VisibleColumn.Width = 54;
+            resources.ApplyResources(this._VisibleColumn, "_VisibleColumn");
             // 
             // _ShowTextColumn
             // 
             this._ShowTextColumn.CheckBoxes = true;
             this._ShowTextColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._ShowTextColumn.Text = "Text";
-            this._ShowTextColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._ShowTextColumn.Width = 63;
+            resources.ApplyResources(this._ShowTextColumn, "_ShowTextColumn");
             // 
             // _DisplayTextColumn
             // 
             this._DisplayTextColumn.AutoCompleteEditor = false;
             this._DisplayTextColumn.AutoCompleteEditorMode = System.Windows.Forms.AutoCompleteMode.None;
-            this._DisplayTextColumn.Text = "Button text content";
-            this._DisplayTextColumn.Width = 120;
+            resources.ApplyResources(this._DisplayTextColumn, "_DisplayTextColumn");
             // 
             // _ButtonImageList
             // 
             this._ButtonImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this._ButtonImageList.ImageSize = new System.Drawing.Size(16, 16);
+            resources.ApplyResources(this._ButtonImageList, "_ButtonImageList");
             this._ButtonImageList.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // _OkButton
             // 
-            this._OkButton.Location = new System.Drawing.Point(325, 341);
+            resources.ApplyResources(this._OkButton, "_OkButton");
             this._OkButton.Name = "_OkButton";
-            this._OkButton.Size = new System.Drawing.Size(75, 25);
-            this._OkButton.TabIndex = 1;
-            this._OkButton.Text = "&OK";
             this._OkButton.UseVisualStyleBackColor = true;
             this._OkButton.Click += new System.EventHandler(this._OkButton_Click);
             // 
             // _ResetButton
             // 
-            this._ResetButton.Location = new System.Drawing.Point(12, 341);
+            resources.ApplyResources(this._ResetButton, "_ResetButton");
             this._ResetButton.Name = "_ResetButton";
-            this._ResetButton.Size = new System.Drawing.Size(131, 25);
-            this._ResetButton.TabIndex = 2;
-            this._ResetButton.Text = "Reset common toolbar";
             this._ResetButton.UseVisualStyleBackColor = true;
             this._ResetButton.Click += new System.EventHandler(this._ResetButton_Click);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(12, 10);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(305, 37);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Drag items up and down with the mouse to adjust the display order of the tool but" +
-    "tons.\r\nTo hide the buttons, uncheck \"Show or not\".";
             // 
             // CustomizeToolbarForm
             // 
             this.AcceptButton = this._OkButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 379);
             this.Controls.Add(this.label1);
             this.Controls.Add(this._ResetButton);
             this.Controls.Add(this._OkButton);
@@ -141,7 +123,6 @@
             this.MinimizeBox = false;
             this.Name = "CustomizeToolbarForm";
             this.ShowInTaskbar = false;
-            this.Text = "Customize common toolbar items";
             this.Load += new System.EventHandler(this.CustomizeToolbarForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this._ItemListBox)).EndInit();
             this.ResumeLayout(false);

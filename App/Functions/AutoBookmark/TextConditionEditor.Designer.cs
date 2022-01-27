@@ -25,6 +25,7 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TextConditionEditor));
             this.label1 = new System.Windows.Forms.Label();
             this._PatternBox = new System.Windows.Forms.TextBox();
             this._FullMatchBox = new System.Windows.Forms.CheckBox();
@@ -34,59 +35,39 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 10);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Match the text content:";
             // 
             // _PatternBox
             // 
-            this._PatternBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._PatternBox.Location = new System.Drawing.Point(126, 7);
+            resources.ApplyResources(this._PatternBox, "_PatternBox");
             this._PatternBox.Name = "_PatternBox";
-            this._PatternBox.Size = new System.Drawing.Size(321, 20);
-            this._PatternBox.TabIndex = 1;
             this._PatternBox.TextChanged += new System.EventHandler(this.ControlChanged);
             // 
             // _FullMatchBox
             // 
-            this._FullMatchBox.AutoSize = true;
-            this._FullMatchBox.Location = new System.Drawing.Point(5, 36);
+            resources.ApplyResources(this._FullMatchBox, "_FullMatchBox");
             this._FullMatchBox.Name = "_FullMatchBox";
-            this._FullMatchBox.Size = new System.Drawing.Size(79, 17);
-            this._FullMatchBox.TabIndex = 2;
-            this._FullMatchBox.Text = "Fully match";
             this._FullMatchBox.UseVisualStyleBackColor = true;
             this._FullMatchBox.CheckedChanged += new System.EventHandler(this.ControlChanged);
             // 
             // _MatchCaseBox
             // 
-            this._MatchCaseBox.AutoSize = true;
-            this._MatchCaseBox.Location = new System.Drawing.Point(98, 36);
+            resources.ApplyResources(this._MatchCaseBox, "_MatchCaseBox");
             this._MatchCaseBox.Name = "_MatchCaseBox";
-            this._MatchCaseBox.Size = new System.Drawing.Size(119, 17);
-            this._MatchCaseBox.TabIndex = 3;
-            this._MatchCaseBox.Text = "Match English case";
             this._MatchCaseBox.UseVisualStyleBackColor = true;
             this._MatchCaseBox.CheckedChanged += new System.EventHandler(this.ControlChanged);
             // 
             // _UseRegexBox
             // 
-            this._UseRegexBox.AutoSize = true;
-            this._UseRegexBox.Location = new System.Drawing.Point(223, 36);
+            resources.ApplyResources(this._UseRegexBox, "_UseRegexBox");
             this._UseRegexBox.Name = "_UseRegexBox";
-            this._UseRegexBox.Size = new System.Drawing.Size(138, 17);
-            this._UseRegexBox.TabIndex = 4;
-            this._UseRegexBox.Text = "Use regular expressions";
             this._UseRegexBox.UseVisualStyleBackColor = true;
             this._UseRegexBox.CheckedChanged += new System.EventHandler(this.ControlChanged);
             // 
             // TextConditionEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this._UseRegexBox);
             this.Controls.Add(this._MatchCaseBox);
@@ -94,7 +75,6 @@
             this.Controls.Add(this._PatternBox);
             this.Controls.Add(this.label1);
             this.Name = "TextConditionEditor";
-            this.Size = new System.Drawing.Size(380, 69);
             this.ResumeLayout(false);
             this.PerformLayout();
 

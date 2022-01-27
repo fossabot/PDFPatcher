@@ -117,4 +117,1852 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_PageSettingsEditor.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_PageSettingsEditor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="_PageSettingsEditor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="_PageSettingsEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>697, 364</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_PageSettingsEditor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_PageSettingsEditor.Name" xml:space="preserve">
+    <value>_PageSettingsEditor</value>
+  </data>
+  <data name="&gt;&gt;_PageSettingsEditor.Type" xml:space="preserve">
+    <value>PDFPatcher.Functions.PageSettingsEditor, PDFPatcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_PageSettingsEditor.Parent" xml:space="preserve">
+    <value>_PageSettingsPage</value>
+  </data>
+  <data name="&gt;&gt;_PageSettingsEditor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_PageSettingsPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="_PageSettingsPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_PageSettingsPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_PageSettingsPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>705, 372</value>
+  </data>
+  <data name="_PageSettingsPage.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_PageSettingsPage.Text" xml:space="preserve">
+    <value>Page Settings</value>
+  </data>
+  <data name="&gt;&gt;_PageSettingsPage.Name" xml:space="preserve">
+    <value>_PageSettingsPage</value>
+  </data>
+  <data name="&gt;&gt;_PageSettingsPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_PageSettingsPage.Parent" xml:space="preserve">
+    <value>_MainTab</value>
+  </data>
+  <data name="&gt;&gt;_PageSettingsPage.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_MainTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="_MarginUnitBox.Items" xml:space="preserve">
+    <value>centimeter</value>
+  </data>
+  <data name="_MarginUnitBox.Items1" xml:space="preserve">
+    <value>Ratio to original page size</value>
+  </data>
+  <data name="_MarginUnitBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 57</value>
+  </data>
+  <data name="_MarginUnitBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 23</value>
+  </data>
+  <data name="_MarginUnitBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_MarginUnitBox.Name" xml:space="preserve">
+    <value>_MarginUnitBox</value>
+  </data>
+  <data name="&gt;&gt;_MarginUnitBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_MarginUnitBox.Parent" xml:space="preserve">
+    <value>_MarginGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_MarginUnitBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 60</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 15</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Unit:</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>_MarginGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_SyncMarginsBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_SyncMarginsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 59</value>
+  </data>
+  <data name="_SyncMarginsBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_SyncMarginsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>341, 19</value>
+  </data>
+  <data name="_SyncMarginsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_SyncMarginsBox.Text" xml:space="preserve">
+    <value>Synchronous adjustment four-sided white</value>
+  </data>
+  <data name="&gt;&gt;_SyncMarginsBox.Name" xml:space="preserve">
+    <value>_SyncMarginsBox</value>
+  </data>
+  <data name="&gt;&gt;_SyncMarginsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SyncMarginsBox.Parent" xml:space="preserve">
+    <value>_MarginGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_SyncMarginsBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_RightMarginBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 25</value>
+  </data>
+  <data name="_RightMarginBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RightMarginBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 25</value>
+  </data>
+  <data name="_RightMarginBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_RightMarginBox.Name" xml:space="preserve">
+    <value>_RightMarginBox</value>
+  </data>
+  <data name="&gt;&gt;_RightMarginBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RightMarginBox.Parent" xml:space="preserve">
+    <value>_MarginGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_RightMarginBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_LeftMarginBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 25</value>
+  </data>
+  <data name="_LeftMarginBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_LeftMarginBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 25</value>
+  </data>
+  <data name="_LeftMarginBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_LeftMarginBox.Name" xml:space="preserve">
+    <value>_LeftMarginBox</value>
+  </data>
+  <data name="&gt;&gt;_LeftMarginBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_LeftMarginBox.Parent" xml:space="preserve">
+    <value>_MarginGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_LeftMarginBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_BottomMarginBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 25</value>
+  </data>
+  <data name="_BottomMarginBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_BottomMarginBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 25</value>
+  </data>
+  <data name="_BottomMarginBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_BottomMarginBox.Name" xml:space="preserve">
+    <value>_BottomMarginBox</value>
+  </data>
+  <data name="&gt;&gt;_BottomMarginBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_BottomMarginBox.Parent" xml:space="preserve">
+    <value>_MarginGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_BottomMarginBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_TopMarginBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 25</value>
+  </data>
+  <data name="_TopMarginBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_TopMarginBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 25</value>
+  </data>
+  <data name="_TopMarginBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_TopMarginBox.Name" xml:space="preserve">
+    <value>_TopMarginBox</value>
+  </data>
+  <data name="&gt;&gt;_TopMarginBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_TopMarginBox.Parent" xml:space="preserve">
+    <value>_MarginGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_TopMarginBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 29</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 15</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Right: </value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>_MarginGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 28</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 15</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Bottom: </value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>_MarginGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 29</value>
+  </data>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 15</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Left: </value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>_MarginGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 29</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 15</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Top: </value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>_MarginGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="_MarginGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 171</value>
+  </data>
+  <data name="_MarginGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_MarginGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_MarginGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>576, 90</value>
+  </data>
+  <data name="_MarginGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_MarginGroupBox.Text" xml:space="preserve">
+    <value>Adjust the page</value>
+  </data>
+  <data name="&gt;&gt;_MarginGroupBox.Name" xml:space="preserve">
+    <value>_MarginGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_MarginGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_MarginGroupBox.Parent" xml:space="preserve">
+    <value>_PageLayoutPage</value>
+  </data>
+  <data name="&gt;&gt;_MarginGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_ImageHAlignBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 116</value>
+  </data>
+  <data name="_ImageHAlignBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_ImageHAlignBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="_ImageHAlignBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;_ImageHAlignBox.Name" xml:space="preserve">
+    <value>_ImageHAlignBox</value>
+  </data>
+  <data name="&gt;&gt;_ImageHAlignBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ImageHAlignBox.Parent" xml:space="preserve">
+    <value>_LayoutGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_ImageHAlignBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 120</value>
+  </data>
+  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 15</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>_LayoutGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_ImageVAlignBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 116</value>
+  </data>
+  <data name="_ImageVAlignBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_ImageVAlignBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="_ImageVAlignBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;_ImageVAlignBox.Name" xml:space="preserve">
+    <value>_ImageVAlignBox</value>
+  </data>
+  <data name="&gt;&gt;_ImageVAlignBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ImageVAlignBox.Parent" xml:space="preserve">
+    <value>_LayoutGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_ImageVAlignBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_ScalePdfPagesBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ScalePdfPagesBox.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="_ScalePdfPagesBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 89</value>
+  </data>
+  <data name="_ScalePdfPagesBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_ScalePdfPagesBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 19</value>
+  </data>
+  <data name="_ScalePdfPagesBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="_ScalePdfPagesBox.Text" xml:space="preserve">
+    <value>Scalable to the edge of the page</value>
+  </data>
+  <data name="&gt;&gt;_ScalePdfPagesBox.Name" xml:space="preserve">
+    <value>_ScalePdfPagesBox</value>
+  </data>
+  <data name="&gt;&gt;_ScalePdfPagesBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ScalePdfPagesBox.Parent" xml:space="preserve">
+    <value>_LayoutGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_ScalePdfPagesBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_ResizePdfPagesBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ResizePdfPagesBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 89</value>
+  </data>
+  <data name="_ResizePdfPagesBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_ResizePdfPagesBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 19</value>
+  </data>
+  <data name="_ResizePdfPagesBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="_ResizePdfPagesBox.Text" xml:space="preserve">
+    <value>constant</value>
+  </data>
+  <data name="&gt;&gt;_ResizePdfPagesBox.Name" xml:space="preserve">
+    <value>_ResizePdfPagesBox</value>
+  </data>
+  <data name="&gt;&gt;_ResizePdfPagesBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ResizePdfPagesBox.Parent" xml:space="preserve">
+    <value>_LayoutGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_ResizePdfPagesBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_HeightBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 21</value>
+  </data>
+  <data name="_HeightBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_HeightBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 25</value>
+  </data>
+  <data name="_HeightBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_HeightBox.Name" xml:space="preserve">
+    <value>_HeightBox</value>
+  </data>
+  <data name="&gt;&gt;_HeightBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_HeightBox.Parent" xml:space="preserve">
+    <value>_LayoutGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_HeightBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_WidthBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 21</value>
+  </data>
+  <data name="_WidthBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_WidthBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 25</value>
+  </data>
+  <data name="_WidthBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_WidthBox.Name" xml:space="preserve">
+    <value>_WidthBox</value>
+  </data>
+  <data name="&gt;&gt;_WidthBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_WidthBox.Parent" xml:space="preserve">
+    <value>_LayoutGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_WidthBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 91</value>
+  </data>
+  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 15</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Content:</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>_LayoutGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 26</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 15</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Size:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>_LayoutGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_PageSizeBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="_PageSizeBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_PageSizeBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 23</value>
+  </data>
+  <data name="_PageSizeBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_PageSizeBox.Name" xml:space="preserve">
+    <value>_PageSizeBox</value>
+  </data>
+  <data name="&gt;&gt;_PageSizeBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_PageSizeBox.Parent" xml:space="preserve">
+    <value>_LayoutGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_PageSizeBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="_AutoRotateBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_AutoRotateBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 55</value>
+  </data>
+  <data name="_AutoRotateBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_AutoRotateBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>413, 19</value>
+  </data>
+  <data name="_AutoRotateBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_AutoRotateBox.Text" xml:space="preserve">
+    <value>Adapt to the original content crossing direction</value>
+  </data>
+  <data name="&gt;&gt;_AutoRotateBox.Name" xml:space="preserve">
+    <value>_AutoRotateBox</value>
+  </data>
+  <data name="&gt;&gt;_AutoRotateBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AutoRotateBox.Parent" xml:space="preserve">
+    <value>_LayoutGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_AutoRotateBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 26</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 15</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Height: </value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>_LayoutGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 26</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 15</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Width: </value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>_LayoutGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="_LayoutGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="_LayoutGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_LayoutGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_LayoutGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>576, 156</value>
+  </data>
+  <data name="_LayoutGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_LayoutGroupBox.Text" xml:space="preserve">
+    <value>Specify page layout and size (unit: cm)</value>
+  </data>
+  <data name="&gt;&gt;_LayoutGroupBox.Name" xml:space="preserve">
+    <value>_LayoutGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_LayoutGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_LayoutGroupBox.Parent" xml:space="preserve">
+    <value>_PageLayoutPage</value>
+  </data>
+  <data name="&gt;&gt;_LayoutGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_PageLayoutPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="_PageLayoutPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_PageLayoutPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_PageLayoutPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>705, 372</value>
+  </data>
+  <data name="_PageLayoutPage.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="_PageLayoutPage.Text" xml:space="preserve">
+    <value>Page Size</value>
+  </data>
+  <data name="&gt;&gt;_PageLayoutPage.Name" xml:space="preserve">
+    <value>_PageLayoutPage</value>
+  </data>
+  <data name="&gt;&gt;_PageLayoutPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_PageLayoutPage.Parent" xml:space="preserve">
+    <value>_MainTab</value>
+  </data>
+  <data name="&gt;&gt;_PageLayoutPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_ViewerSettingsEditor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="_ViewerSettingsEditor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="_ViewerSettingsEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>647, 349</value>
+  </data>
+  <data name="_ViewerSettingsEditor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_ViewerSettingsEditor.Name" xml:space="preserve">
+    <value>_ViewerSettingsEditor</value>
+  </data>
+  <data name="&gt;&gt;_ViewerSettingsEditor.Type" xml:space="preserve">
+    <value>PDFPatcher.Functions.ViewerPreferenceEditor, PDFPatcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_ViewerSettingsEditor.Parent" xml:space="preserve">
+    <value>_ViewerSettingsPage</value>
+  </data>
+  <data name="&gt;&gt;_ViewerSettingsEditor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_ViewerSettingsPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="_ViewerSettingsPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_ViewerSettingsPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_ViewerSettingsPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>705, 372</value>
+  </data>
+  <data name="_ViewerSettingsPage.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_ViewerSettingsPage.Text" xml:space="preserve">
+    <value>Reading Method</value>
+  </data>
+  <data name="&gt;&gt;_ViewerSettingsPage.Name" xml:space="preserve">
+    <value>_ViewerSettingsPage</value>
+  </data>
+  <data name="&gt;&gt;_ViewerSettingsPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ViewerSettingsPage.Parent" xml:space="preserve">
+    <value>_MainTab</value>
+  </data>
+  <data name="&gt;&gt;_ViewerSettingsPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 134</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 15</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value> instruction(s)</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 134</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 15</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>end</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_RemoveTrailingCommandCountBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 132</value>
+  </data>
+  <data name="_RemoveTrailingCommandCountBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 25</value>
+  </data>
+  <data name="_RemoveTrailingCommandCountBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_RemoveTrailingCommandCountBox.Name" xml:space="preserve">
+    <value>_RemoveTrailingCommandCountBox</value>
+  </data>
+  <data name="&gt;&gt;_RemoveTrailingCommandCountBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemoveTrailingCommandCountBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;_RemoveTrailingCommandCountBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_RemoveLeadingCommandCountBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 132</value>
+  </data>
+  <data name="_RemoveLeadingCommandCountBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 25</value>
+  </data>
+  <data name="_RemoveLeadingCommandCountBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_RemoveLeadingCommandCountBox.Name" xml:space="preserve">
+    <value>_RemoveLeadingCommandCountBox</value>
+  </data>
+  <data name="&gt;&gt;_RemoveLeadingCommandCountBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemoveLeadingCommandCountBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;_RemoveLeadingCommandCountBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 134</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 15</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Clear page start </value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_RemovePageFormsBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_RemovePageFormsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 52</value>
+  </data>
+  <data name="_RemovePageFormsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 19</value>
+  </data>
+  <data name="_RemovePageFormsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_RemovePageFormsBox.Text" xml:space="preserve">
+    <value>Clear all forms</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageFormsBox.Name" xml:space="preserve">
+    <value>_RemovePageFormsBox</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageFormsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageFormsBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageFormsBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_RemovePageThumbnailsBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_RemovePageThumbnailsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 52</value>
+  </data>
+  <data name="_RemovePageThumbnailsBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RemovePageThumbnailsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 19</value>
+  </data>
+  <data name="_RemovePageThumbnailsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_RemovePageThumbnailsBox.Text" xml:space="preserve">
+    <value>Clear page thumbnail</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageThumbnailsBox.Name" xml:space="preserve">
+    <value>_RemovePageThumbnailsBox</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageThumbnailsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageThumbnailsBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageThumbnailsBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_RemovePageTextBlocksBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_RemovePageTextBlocksBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 106</value>
+  </data>
+  <data name="_RemovePageTextBlocksBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RemovePageTextBlocksBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 19</value>
+  </data>
+  <data name="_RemovePageTextBlocksBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_RemovePageTextBlocksBox.Text" xml:space="preserve">
+    <value>Clear page all text</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageTextBlocksBox.Name" xml:space="preserve">
+    <value>_RemovePageTextBlocksBox</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageTextBlocksBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageTextBlocksBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageTextBlocksBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="_RemovePageLinksBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_RemovePageLinksBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 77</value>
+  </data>
+  <data name="_RemovePageLinksBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RemovePageLinksBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 19</value>
+  </data>
+  <data name="_RemovePageLinksBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_RemovePageLinksBox.Text" xml:space="preserve">
+    <value>Clear page All link annotations</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageLinksBox.Name" xml:space="preserve">
+    <value>_RemovePageLinksBox</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageLinksBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageLinksBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageLinksBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_RemoveAnnotationsBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_RemoveAnnotationsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 79</value>
+  </data>
+  <data name="_RemoveAnnotationsBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RemoveAnnotationsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 19</value>
+  </data>
+  <data name="_RemoveAnnotationsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_RemoveAnnotationsBox.Text" xml:space="preserve">
+    <value>Clear all comments on the page</value>
+  </data>
+  <data name="&gt;&gt;_RemoveAnnotationsBox.Name" xml:space="preserve">
+    <value>_RemoveAnnotationsBox</value>
+  </data>
+  <data name="&gt;&gt;_RemoveAnnotationsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemoveAnnotationsBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;_RemoveAnnotationsBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="_RemovePageAutoActionsBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_RemovePageAutoActionsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 25</value>
+  </data>
+  <data name="_RemovePageAutoActionsBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RemovePageAutoActionsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>365, 19</value>
+  </data>
+  <data name="_RemovePageAutoActionsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_RemovePageAutoActionsBox.Text" xml:space="preserve">
+    <value>Prohibited page automatic execution action</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageAutoActionsBox.Name" xml:space="preserve">
+    <value>_RemovePageAutoActionsBox</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageAutoActionsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageAutoActionsBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageAutoActionsBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="_RemovePageMetaDataBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_RemovePageMetaDataBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 25</value>
+  </data>
+  <data name="_RemovePageMetaDataBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RemovePageMetaDataBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 19</value>
+  </data>
+  <data name="_RemovePageMetaDataBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_RemovePageMetaDataBox.Text" xml:space="preserve">
+    <value>Delete page extension tag (XML) metadata</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageMetaDataBox.Name" xml:space="preserve">
+    <value>_RemovePageMetaDataBox</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageMetaDataBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageMetaDataBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageMetaDataBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 131</value>
+  </data>
+  <data name="groupBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>689, 166</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Source document page</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>_CleanerPage</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_RemoveBookmarksBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_RemoveBookmarksBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 80</value>
+  </data>
+  <data name="_RemoveBookmarksBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RemoveBookmarksBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 19</value>
+  </data>
+  <data name="_RemoveBookmarksBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_RemoveBookmarksBox.Text" xml:space="preserve">
+    <value>Delete navigation bookmarks</value>
+  </data>
+  <data name="&gt;&gt;_RemoveBookmarksBox.Name" xml:space="preserve">
+    <value>_RemoveBookmarksBox</value>
+  </data>
+  <data name="&gt;&gt;_RemoveBookmarksBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemoveBookmarksBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;_RemoveBookmarksBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_FixContentBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_FixContentBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>424, 52</value>
+  </data>
+  <data name="_FixContentBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_FixContentBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 19</value>
+  </data>
+  <data name="_FixContentBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_FixContentBox.Text" xml:space="preserve">
+    <value>Try fixing document errors</value>
+  </data>
+  <data name="&gt;&gt;_FixContentBox.Name" xml:space="preserve">
+    <value>_FixContentBox</value>
+  </data>
+  <data name="&gt;&gt;_FixContentBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_FixContentBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;_FixContentBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_RemoveXmlMetaDataBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_RemoveXmlMetaDataBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 25</value>
+  </data>
+  <data name="_RemoveXmlMetaDataBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RemoveXmlMetaDataBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>389, 19</value>
+  </data>
+  <data name="_RemoveXmlMetaDataBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_RemoveXmlMetaDataBox.Text" xml:space="preserve">
+    <value>Delete extended tag (XML) metadata properties</value>
+  </data>
+  <data name="&gt;&gt;_RemoveXmlMetaDataBox.Name" xml:space="preserve">
+    <value>_RemoveXmlMetaDataBox</value>
+  </data>
+  <data name="&gt;&gt;_RemoveXmlMetaDataBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemoveXmlMetaDataBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;_RemoveXmlMetaDataBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_RemoveDocAutoActionsBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_RemoveDocAutoActionsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 52</value>
+  </data>
+  <data name="_RemoveDocAutoActionsBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RemoveDocAutoActionsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>541, 19</value>
+  </data>
+  <data name="_RemoveDocAutoActionsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_RemoveDocAutoActionsBox.Text" xml:space="preserve">
+    <value>Automatically perform action when prohibiting open documentation</value>
+  </data>
+  <data name="&gt;&gt;_RemoveDocAutoActionsBox.Name" xml:space="preserve">
+    <value>_RemoveDocAutoActionsBox</value>
+  </data>
+  <data name="&gt;&gt;_RemoveDocAutoActionsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemoveDocAutoActionsBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;_RemoveDocAutoActionsBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_RemoveUsageRightsBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_RemoveUsageRightsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 25</value>
+  </data>
+  <data name="_RemoveUsageRightsBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RemoveUsageRightsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>429, 19</value>
+  </data>
+  <data name="_RemoveUsageRightsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_RemoveUsageRightsBox.Text" xml:space="preserve">
+    <value>Clear replication, printing and other restrictions</value>
+  </data>
+  <data name="&gt;&gt;_RemoveUsageRightsBox.Name" xml:space="preserve">
+    <value>_RemoveUsageRightsBox</value>
+  </data>
+  <data name="&gt;&gt;_RemoveUsageRightsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemoveUsageRightsBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;_RemoveUsageRightsBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="groupBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>689, 116</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Source document</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>_CleanerPage</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_RecompressWithJbig2Box.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_RecompressWithJbig2Box.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 25</value>
+  </data>
+  <data name="_RecompressWithJbig2Box.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RecompressWithJbig2Box.Size" type="System.Drawing.Size, System.Drawing">
+    <value>413, 19</value>
+  </data>
+  <data name="_RecompressWithJbig2Box.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_RecompressWithJbig2Box.Text" xml:space="preserve">
+    <value>Optimize black and white image compression ratio</value>
+  </data>
+  <data name="&gt;&gt;_RecompressWithJbig2Box.Name" xml:space="preserve">
+    <value>_RecompressWithJbig2Box</value>
+  </data>
+  <data name="&gt;&gt;_RecompressWithJbig2Box.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RecompressWithJbig2Box.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;_RecompressWithJbig2Box.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_FullCompressionBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_FullCompressionBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 25</value>
+  </data>
+  <data name="_FullCompressionBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_FullCompressionBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 19</value>
+  </data>
+  <data name="_FullCompressionBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_FullCompressionBox.Text" xml:space="preserve">
+    <value>Compressed index table and bookmark</value>
+  </data>
+  <data name="&gt;&gt;_FullCompressionBox.Name" xml:space="preserve">
+    <value>_FullCompressionBox</value>
+  </data>
+  <data name="&gt;&gt;_FullCompressionBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_FullCompressionBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;_FullCompressionBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 305</value>
+  </data>
+  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>689, 54</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Content compression</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>_CleanerPage</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_CleanerPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="_CleanerPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_CleanerPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_CleanerPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>705, 372</value>
+  </data>
+  <data name="_CleanerPage.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_CleanerPage.Text" xml:space="preserve">
+    <value>Compression Cleaning</value>
+  </data>
+  <data name="&gt;&gt;_CleanerPage.Name" xml:space="preserve">
+    <value>_CleanerPage</value>
+  </data>
+  <data name="&gt;&gt;_CleanerPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_CleanerPage.Parent" xml:space="preserve">
+    <value>_MainTab</value>
+  </data>
+  <data name="&gt;&gt;_CleanerPage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_DocumentInfoEditor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="_DocumentInfoEditor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="_DocumentInfoEditor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="_DocumentInfoEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>695, 368</value>
+  </data>
+  <data name="_DocumentInfoEditor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_DocumentInfoEditor.Name" xml:space="preserve">
+    <value>_DocumentInfoEditor</value>
+  </data>
+  <data name="&gt;&gt;_DocumentInfoEditor.Type" xml:space="preserve">
+    <value>PDFPatcher.Functions.DocumentInfoEditor, PDFPatcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_DocumentInfoEditor.Parent" xml:space="preserve">
+    <value>_DocumentInfoPage</value>
+  </data>
+  <data name="&gt;&gt;_DocumentInfoEditor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_DocumentInfoPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="_DocumentInfoPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_DocumentInfoPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_DocumentInfoPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>705, 372</value>
+  </data>
+  <data name="_DocumentInfoPage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_DocumentInfoPage.Text" xml:space="preserve">
+    <value>Document Property</value>
+  </data>
+  <data name="&gt;&gt;_DocumentInfoPage.Name" xml:space="preserve">
+    <value>_DocumentInfoPage</value>
+  </data>
+  <data name="&gt;&gt;_DocumentInfoPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_DocumentInfoPage.Parent" xml:space="preserve">
+    <value>_MainTab</value>
+  </data>
+  <data name="&gt;&gt;_DocumentInfoPage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_PageLabelEditor.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="_PageLabelEditor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="_PageLabelEditor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="_PageLabelEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>697, 364</value>
+  </data>
+  <data name="_PageLabelEditor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_PageLabelEditor.Name" xml:space="preserve">
+    <value>_PageLabelEditor</value>
+  </data>
+  <data name="&gt;&gt;_PageLabelEditor.Type" xml:space="preserve">
+    <value>PDFPatcher.Functions.PageLabelEditor, PDFPatcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_PageLabelEditor.Parent" xml:space="preserve">
+    <value>_PageLabelsPage</value>
+  </data>
+  <data name="&gt;&gt;_PageLabelEditor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_PageLabelsPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="_PageLabelsPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_PageLabelsPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_PageLabelsPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>705, 372</value>
+  </data>
+  <data name="_PageLabelsPage.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_PageLabelsPage.Text" xml:space="preserve">
+    <value>Table Size Label</value>
+  </data>
+  <data name="&gt;&gt;_PageLabelsPage.Name" xml:space="preserve">
+    <value>_PageLabelsPage</value>
+  </data>
+  <data name="&gt;&gt;_PageLabelsPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_PageLabelsPage.Parent" xml:space="preserve">
+    <value>_MainTab</value>
+  </data>
+  <data name="&gt;&gt;_PageLabelsPage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_FontSubstitutionsEditor.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="_FontSubstitutionsEditor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="_FontSubstitutionsEditor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="_FontSubstitutionsEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>697, 364</value>
+  </data>
+  <data name="_FontSubstitutionsEditor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_FontSubstitutionsEditor.Name" xml:space="preserve">
+    <value>_FontSubstitutionsEditor</value>
+  </data>
+  <data name="&gt;&gt;_FontSubstitutionsEditor.Type" xml:space="preserve">
+    <value>PDFPatcher.Functions.FontSubstitutionsEditor, PDFPatcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_FontSubstitutionsEditor.Parent" xml:space="preserve">
+    <value>_FontSubstitutionsPage</value>
+  </data>
+  <data name="&gt;&gt;_FontSubstitutionsEditor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_FontSubstitutionsPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="_FontSubstitutionsPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_FontSubstitutionsPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_FontSubstitutionsPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>705, 372</value>
+  </data>
+  <data name="_FontSubstitutionsPage.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_FontSubstitutionsPage.Text" xml:space="preserve">
+    <value>Replace Font</value>
+  </data>
+  <data name="&gt;&gt;_FontSubstitutionsPage.Name" xml:space="preserve">
+    <value>_FontSubstitutionsPage</value>
+  </data>
+  <data name="&gt;&gt;_FontSubstitutionsPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_FontSubstitutionsPage.Parent" xml:space="preserve">
+    <value>_MainTab</value>
+  </data>
+  <data name="&gt;&gt;_FontSubstitutionsPage.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_ResetButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 80</value>
+  </data>
+  <data name="_ResetButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 23</value>
+  </data>
+  <data name="_ResetButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_ResetButton.Text" xml:space="preserve">
+    <value>The restore option is the default value</value>
+  </data>
+  <data name="&gt;&gt;_ResetButton.Name" xml:space="preserve">
+    <value>_ResetButton</value>
+  </data>
+  <data name="&gt;&gt;_ResetButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ResetButton.Parent" xml:space="preserve">
+    <value>_ConfigPage</value>
+  </data>
+  <data name="&gt;&gt;_ResetButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_ImportButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 51</value>
+  </data>
+  <data name="_ImportButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 23</value>
+  </data>
+  <data name="_ImportButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_ImportButton.Text" xml:space="preserve">
+    <value>Import Instrument Profile...</value>
+  </data>
+  <data name="&gt;&gt;_ImportButton.Name" xml:space="preserve">
+    <value>_ImportButton</value>
+  </data>
+  <data name="&gt;&gt;_ImportButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ImportButton.Parent" xml:space="preserve">
+    <value>_ConfigPage</value>
+  </data>
+  <data name="&gt;&gt;_ImportButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_ExportButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 22</value>
+  </data>
+  <data name="_ExportButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 23</value>
+  </data>
+  <data name="_ExportButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_ExportButton.Text" xml:space="preserve">
+    <value>Export option configuration file...</value>
+  </data>
+  <data name="&gt;&gt;_ExportButton.Name" xml:space="preserve">
+    <value>_ExportButton</value>
+  </data>
+  <data name="&gt;&gt;_ExportButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportButton.Parent" xml:space="preserve">
+    <value>_ConfigPage</value>
+  </data>
+  <data name="&gt;&gt;_ExportButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_ConfigPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="_ConfigPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="_ConfigPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>705, 372</value>
+  </data>
+  <data name="_ConfigPage.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_ConfigPage.Name" xml:space="preserve">
+    <value>_ConfigPage</value>
+  </data>
+  <data name="&gt;&gt;_ConfigPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ConfigPage.Parent" xml:space="preserve">
+    <value>_MainTab</value>
+  </data>
+  <data name="&gt;&gt;_ConfigPage.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="_MainTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 15</value>
+  </data>
+  <data name="_MainTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_MainTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>713, 401</value>
+  </data>
+  <data name="_MainTab.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_MainTab.Name" xml:space="preserve">
+    <value>_MainTab</value>
+  </data>
+  <data name="&gt;&gt;_MainTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_MainTab.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_MainTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>745, 435</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 9pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>637, 458</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>PDF document option</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PatcherOptionForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

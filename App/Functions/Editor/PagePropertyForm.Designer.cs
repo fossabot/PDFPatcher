@@ -25,6 +25,7 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PagePropertyForm));
             this._CloseButton = new System.Windows.Forms.Button();
             this._PageDimensionBox = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,128 +58,83 @@
             // 
             // _CloseButton
             // 
-            this._CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this._CloseButton.Location = new System.Drawing.Point(276, 244);
+            resources.ApplyResources(this._CloseButton, "_CloseButton");
             this._CloseButton.Name = "_CloseButton";
-            this._CloseButton.Size = new System.Drawing.Size(75, 25);
-            this._CloseButton.TabIndex = 1;
-            this._CloseButton.Text = "&Cancel";
             this._CloseButton.UseVisualStyleBackColor = true;
             // 
             // _PageDimensionBox
             // 
             this._PageDimensionBox.FormattingEnabled = true;
-            this._PageDimensionBox.Location = new System.Drawing.Point(100, 17);
+            resources.ApplyResources(this._PageDimensionBox, "_PageDimensionBox");
             this._PageDimensionBox.Name = "_PageDimensionBox";
-            this._PageDimensionBox.Size = new System.Drawing.Size(120, 95);
-            this._PageDimensionBox.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 17);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Page Border:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(226, 17);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Top: ";
             // 
             // _TopBox
             // 
-            this._TopBox.Location = new System.Drawing.Point(261, 14);
+            resources.ApplyResources(this._TopBox, "_TopBox");
             this._TopBox.Name = "_TopBox";
             this._TopBox.ReadOnly = true;
-            this._TopBox.Size = new System.Drawing.Size(53, 20);
-            this._TopBox.TabIndex = 7;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(226, 47);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Right: ";
             // 
             // _RightBox
             // 
-            this._RightBox.Location = new System.Drawing.Point(261, 43);
+            resources.ApplyResources(this._RightBox, "_RightBox");
             this._RightBox.Name = "_RightBox";
             this._RightBox.ReadOnly = true;
-            this._RightBox.Size = new System.Drawing.Size(53, 20);
-            this._RightBox.TabIndex = 9;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 64);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Bottom: ";
             // 
             // _BottomBox
             // 
-            this._BottomBox.Location = new System.Drawing.Point(45, 61);
+            resources.ApplyResources(this._BottomBox, "_BottomBox");
             this._BottomBox.Name = "_BottomBox";
             this._BottomBox.ReadOnly = true;
-            this._BottomBox.Size = new System.Drawing.Size(53, 20);
-            this._BottomBox.TabIndex = 3;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 94);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Left: ";
             // 
             // _LeftBox
             // 
-            this._LeftBox.Location = new System.Drawing.Point(45, 91);
+            resources.ApplyResources(this._LeftBox, "_LeftBox");
             this._LeftBox.Name = "_LeftBox";
             this._LeftBox.ReadOnly = true;
-            this._LeftBox.Size = new System.Drawing.Size(53, 20);
-            this._LeftBox.TabIndex = 5;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(53, 137);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 13);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Rotate:";
             // 
             // _RotationBox
             // 
-            this._RotationBox.Location = new System.Drawing.Point(100, 133);
+            resources.ApplyResources(this._RotationBox, "_RotationBox");
             this._RotationBox.Name = "_RotationBox";
             this._RotationBox.ReadOnly = true;
-            this._RotationBox.Size = new System.Drawing.Size(41, 20);
-            this._RotationBox.TabIndex = 15;
             // 
             // _MainTab
             // 
-            this._MainTab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._MainTab, "_MainTab");
             this._MainTab.Controls.Add(this._DimensionPage);
             this._MainTab.Controls.Add(this._TextStylePage);
-            this._MainTab.Location = new System.Drawing.Point(12, 13);
             this._MainTab.Name = "_MainTab";
             this._MainTab.SelectedIndex = 0;
-            this._MainTab.Size = new System.Drawing.Size(339, 225);
-            this._MainTab.TabIndex = 0;
             // 
             // _DimensionPage
             // 
@@ -198,58 +154,38 @@
             this._DimensionPage.Controls.Add(this._RightBox);
             this._DimensionPage.Controls.Add(this.label3);
             this._DimensionPage.Controls.Add(this._BottomBox);
-            this._DimensionPage.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this._DimensionPage, "_DimensionPage");
             this._DimensionPage.Name = "_DimensionPage";
-            this._DimensionPage.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this._DimensionPage.Size = new System.Drawing.Size(331, 199);
-            this._DimensionPage.TabIndex = 1;
-            this._DimensionPage.Text = "Page size";
             this._DimensionPage.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(226, 75);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 13);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Height: ";
             // 
             // _HeightBox
             // 
-            this._HeightBox.Location = new System.Drawing.Point(261, 72);
+            resources.ApplyResources(this._HeightBox, "_HeightBox");
             this._HeightBox.Name = "_HeightBox";
             this._HeightBox.ReadOnly = true;
-            this._HeightBox.Size = new System.Drawing.Size(53, 20);
-            this._HeightBox.TabIndex = 11;
             // 
             // _WidthBox
             // 
-            this._WidthBox.Location = new System.Drawing.Point(261, 101);
+            resources.ApplyResources(this._WidthBox, "_WidthBox");
             this._WidthBox.Name = "_WidthBox";
             this._WidthBox.ReadOnly = true;
-            this._WidthBox.Size = new System.Drawing.Size(53, 20);
-            this._WidthBox.TabIndex = 13;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(226, 105);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 13);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Width: ";
             // 
             // _TextStylePage
             // 
             this._TextStylePage.Controls.Add(this._TextStyleBox);
             this._TextStylePage.Controls.Add(this.label7);
-            this._TextStylePage.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this._TextStylePage, "_TextStylePage");
             this._TextStylePage.Name = "_TextStylePage";
-            this._TextStylePage.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this._TextStylePage.Size = new System.Drawing.Size(331, 199);
-            this._TextStylePage.TabIndex = 2;
-            this._TextStylePage.Text = "Text style";
             this._TextStylePage.UseVisualStyleBackColor = true;
             // 
             // _TextStyleBox
@@ -262,38 +198,30 @@
             this._SizeColumn});
             this._TextStyleBox.Cursor = System.Windows.Forms.Cursors.Default;
             this._TextStyleBox.HideSelection = false;
-            this._TextStyleBox.Location = new System.Drawing.Point(8, 19);
+            resources.ApplyResources(this._TextStyleBox, "_TextStyleBox");
             this._TextStyleBox.Name = "_TextStyleBox";
             this._TextStyleBox.ShowGroups = false;
-            this._TextStyleBox.Size = new System.Drawing.Size(317, 170);
-            this._TextStyleBox.TabIndex = 1;
             this._TextStyleBox.UseCompatibleStateImageBehavior = false;
             this._TextStyleBox.View = System.Windows.Forms.View.Details;
             // 
             // _FontNameColumn
             // 
-            this._FontNameColumn.Text = "Font name";
-            this._FontNameColumn.Width = 219;
+            resources.ApplyResources(this._FontNameColumn, "_FontNameColumn");
             // 
             // _SizeColumn
             // 
-            this._SizeColumn.Text = "Font size";
+            resources.ApplyResources(this._SizeColumn, "_SizeColumn");
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 3);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(221, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "This page contains text on the following style:";
             // 
             // PagePropertyForm
             // 
             this.AcceptButton = this._CloseButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(363, 283);
             this.Controls.Add(this._MainTab);
             this.Controls.Add(this._CloseButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -301,7 +229,6 @@
             this.MinimizeBox = false;
             this.Name = "PagePropertyForm";
             this.ShowInTaskbar = false;
-            this.Text = "Page attribute";
             this._MainTab.ResumeLayout(false);
             this._DimensionPage.ResumeLayout(false);
             this._DimensionPage.PerformLayout();

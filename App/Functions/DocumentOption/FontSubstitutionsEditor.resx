@@ -117,7 +117,361 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="_SequenceColumn.Text" xml:space="preserve">
+    <value>Sequence Number</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_SequenceColumn.Width" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="_OriginalFontColumn.Text" xml:space="preserve">
+    <value>Original Font</value>
+  </data>
+  <data name="_OriginalFontColumn.Width" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="_SubstitutionColumn.Text" xml:space="preserve">
+    <value>Substitution Font</value>
+  </data>
+  <data name="_SubstitutionColumn.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="_CharSubstitutionColumn.Text" xml:space="preserve">
+    <value>Substitution Character</value>
+  </data>
+  <data name="_CharSubstitutionColumn.Width" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_FontSubstitutionsBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <metadata name="_FontSubstitutionMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_CopySubstitutionFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 26</value>
+  </data>
+  <data name="_CopySubstitutionFont.Text" xml:space="preserve">
+    <value>&amp;Copy SubstitutionFont</value>
+  </data>
+  <data name="_PasteSubstitutionFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 26</value>
+  </data>
+  <data name="_PasteSubstitutionFont.Text" xml:space="preserve">
+    <value>&amp;Paste Substitution Font</value>
+  </data>
+  <data name="_FontSubstitutionMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 56</value>
+  </data>
+  <data name="&gt;&gt;_FontSubstitutionMenu.Name" xml:space="preserve">
+    <value>_FontSubstitutionMenu</value>
+  </data>
+  <data name="&gt;&gt;_FontSubstitutionMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_FontSubstitutionsBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_FontSubstitutionsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 74</value>
+  </data>
+  <data name="_FontSubstitutionsBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_FontSubstitutionsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>731, 293</value>
+  </data>
+  <data name="_FontSubstitutionsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_FontSubstitutionsBox.Name" xml:space="preserve">
+    <value>_FontSubstitutionsBox</value>
+  </data>
+  <data name="&gt;&gt;_FontSubstitutionsBox.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.ObjectListView, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_FontSubstitutionsBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_FontSubstitutionsBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_RemovePageLabelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_RemovePageLabelButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_RemovePageLabelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>665, 4</value>
+  </data>
+  <data name="_RemovePageLabelButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RemovePageLabelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 31</value>
+  </data>
+  <data name="_RemovePageLabelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_RemovePageLabelButton.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="_RemovePageLabelButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageLabelButton.Name" xml:space="preserve">
+    <value>_RemovePageLabelButton</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageLabelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageLabelButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageLabelButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_AddPageLabelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_AddPageLabelButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_AddPageLabelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 4</value>
+  </data>
+  <data name="_AddPageLabelButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_AddPageLabelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 31</value>
+  </data>
+  <data name="_AddPageLabelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_AddPageLabelButton.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="_AddPageLabelButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;_AddPageLabelButton.Name" xml:space="preserve">
+    <value>_AddPageLabelButton</value>
+  </data>
+  <data name="&gt;&gt;_AddPageLabelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AddPageLabelButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_AddPageLabelButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_ListDocumentFontButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_ListDocumentFontButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_ListDocumentFontButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>411, 4</value>
+  </data>
+  <data name="_ListDocumentFontButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_ListDocumentFontButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 31</value>
+  </data>
+  <data name="_ListDocumentFontButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_ListDocumentFontButton.Text" xml:space="preserve">
+    <value>List document font</value>
+  </data>
+  <data name="&gt;&gt;_ListDocumentFontButton.Name" xml:space="preserve">
+    <value>_ListDocumentFontButton</value>
+  </data>
+  <data name="&gt;&gt;_ListDocumentFontButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ListDocumentFontButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_ListDocumentFontButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_EmbedLegacyCjkFontsBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_EmbedLegacyCjkFontsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 10</value>
+  </data>
+  <data name="_EmbedLegacyCjkFontsBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_EmbedLegacyCjkFontsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 20</value>
+  </data>
+  <data name="_EmbedLegacyCjkFontsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_EmbedLegacyCjkFontsBox.Text" xml:space="preserve">
+    <value>Embedded Chinese word library</value>
+  </data>
+  <data name="&gt;&gt;_EmbedLegacyCjkFontsBox.Name" xml:space="preserve">
+    <value>_EmbedLegacyCjkFontsBox</value>
+  </data>
+  <data name="&gt;&gt;_EmbedLegacyCjkFontsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_EmbedLegacyCjkFontsBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_EmbedLegacyCjkFontsBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_EnableFontSubstitutionsBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_EnableFontSubstitutionsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 10</value>
+  </data>
+  <data name="_EnableFontSubstitutionsBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_EnableFontSubstitutionsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 20</value>
+  </data>
+  <data name="_EnableFontSubstitutionsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_EnableFontSubstitutionsBox.Text" xml:space="preserve">
+    <value>Allow replacement fonts</value>
+  </data>
+  <data name="&gt;&gt;_EnableFontSubstitutionsBox.Name" xml:space="preserve">
+    <value>_EnableFontSubstitutionsBox</value>
+  </data>
+  <data name="&gt;&gt;_EnableFontSubstitutionsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_EnableFontSubstitutionsBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_EnableFontSubstitutionsBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_TrimTrailingWhiteSpaceBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_TrimTrailingWhiteSpaceBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 37</value>
+  </data>
+  <data name="_TrimTrailingWhiteSpaceBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="_TrimTrailingWhiteSpaceBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 20</value>
+  </data>
+  <data name="_TrimTrailingWhiteSpaceBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_TrimTrailingWhiteSpaceBox.Text" xml:space="preserve">
+    <value>Also remove text trailing spaces</value>
+  </data>
+  <data name="&gt;&gt;_TrimTrailingWhiteSpaceBox.Name" xml:space="preserve">
+    <value>_TrimTrailingWhiteSpaceBox</value>
+  </data>
+  <data name="&gt;&gt;_TrimTrailingWhiteSpaceBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_TrimTrailingWhiteSpaceBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_TrimTrailingWhiteSpaceBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>740, 372</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>740, 372</value>
+  </data>
+  <data name="&gt;&gt;_SequenceColumn.Name" xml:space="preserve">
+    <value>_SequenceColumn</value>
+  </data>
+  <data name="&gt;&gt;_SequenceColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_OriginalFontColumn.Name" xml:space="preserve">
+    <value>_OriginalFontColumn</value>
+  </data>
+  <data name="&gt;&gt;_OriginalFontColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_SubstitutionColumn.Name" xml:space="preserve">
+    <value>_SubstitutionColumn</value>
+  </data>
+  <data name="&gt;&gt;_SubstitutionColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_CharSubstitutionColumn.Name" xml:space="preserve">
+    <value>_CharSubstitutionColumn</value>
+  </data>
+  <data name="&gt;&gt;_CharSubstitutionColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_CopySubstitutionFont.Name" xml:space="preserve">
+    <value>_CopySubstitutionFont</value>
+  </data>
+  <data name="&gt;&gt;_CopySubstitutionFont.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_PasteSubstitutionFont.Name" xml:space="preserve">
+    <value>_PasteSubstitutionFont</value>
+  </data>
+  <data name="&gt;&gt;_PasteSubstitutionFont.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FontSubstitutionsEditor</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

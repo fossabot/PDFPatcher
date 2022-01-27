@@ -25,56 +25,41 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
-			this._TextBox = new System.Windows.Forms.RichTextBox ();
-			this._OkButton = new System.Windows.Forms.Button ();
-			this._CancelButton = new System.Windows.Forms.Button ();
-			this.SuspendLayout ();
-			//
-			// _TextBox
-			//
-			this._TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this._TextBox.Location = new System.Drawing.Point (12, 12);
-			this._TextBox.Name = "_TextBox";
-			this._TextBox.Size = new System.Drawing.Size (472, 219);
-			this._TextBox.TabIndex = 0;
-			this._TextBox.Text = "";
-			//
-			// _OkButton
-			//
-			this._OkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this._OkButton.Location = new System.Drawing.Point (328, 240);
-			this._OkButton.Name = "_OkButton";
-			this._OkButton.Size = new System.Drawing.Size (75, 23);
-			this._OkButton.TabIndex = 1;
-			this._OkButton.Text = "&OK";
-			this._OkButton.UseVisualStyleBackColor = true;
-			//
-			// _CancelButton
-			//
-			this._CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this._CancelButton.Location = new System.Drawing.Point (409, 240);
-			this._CancelButton.Name = "_CancelButton";
-			this._CancelButton.Size = new System.Drawing.Size (75, 23);
-			this._CancelButton.TabIndex = 2;
-			this._CancelButton.Text = "&Cancel";
-			this._CancelButton.UseVisualStyleBackColor = true;
-			//
-			// TextViewerForm
-			//
-			this.AcceptButton = this._OkButton;
-			this.AutoScaleDimensions = new System.Drawing.SizeF (6F, 12F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.CancelButton = this._CancelButton;
-			this.ClientSize = new System.Drawing.Size (496, 275);
-			this.Controls.Add (this._CancelButton);
-			this.Controls.Add (this._OkButton);
-			this.Controls.Add (this._TextBox);
-			this.Name = "TextViewerForm";
-			this.Text = "Text content";
-			this.ResumeLayout (false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TextViewerForm));
+            this._TextBox = new System.Windows.Forms.RichTextBox();
+            this._OkButton = new System.Windows.Forms.Button();
+            this._CancelButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // _TextBox
+            // 
+            resources.ApplyResources(this._TextBox, "_TextBox");
+            this._TextBox.Name = "_TextBox";
+            // 
+            // _OkButton
+            // 
+            resources.ApplyResources(this._OkButton, "_OkButton");
+            this._OkButton.Name = "_OkButton";
+            this._OkButton.UseVisualStyleBackColor = true;
+            // 
+            // _CancelButton
+            // 
+            resources.ApplyResources(this._CancelButton, "_CancelButton");
+            this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this._CancelButton.Name = "_CancelButton";
+            this._CancelButton.UseVisualStyleBackColor = true;
+            // 
+            // TextViewerForm
+            // 
+            this.AcceptButton = this._OkButton;
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this._CancelButton;
+            this.Controls.Add(this._CancelButton);
+            this.Controls.Add(this._OkButton);
+            this.Controls.Add(this._TextBox);
+            this.Name = "TextViewerForm";
+            this.ResumeLayout(false);
 
 		}
 

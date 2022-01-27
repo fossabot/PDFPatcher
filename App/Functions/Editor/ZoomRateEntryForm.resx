@@ -117,4 +117,190 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_OkButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_OkButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 99</value>
+  </data>
+  <data name="_OkButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_OkButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 31</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_OkButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_OkButton.Text" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="&gt;&gt;_OkButton.Name" xml:space="preserve">
+    <value>_OkButton</value>
+  </data>
+  <data name="&gt;&gt;_OkButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_OkButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_OkButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_CancelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="_CancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 99</value>
+  </data>
+  <data name="_CancelButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_CancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 31</value>
+  </data>
+  <data name="_CancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_CancelButton.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="&gt;&gt;_CancelButton.Name" xml:space="preserve">
+    <value>_CancelButton</value>
+  </data>
+  <data name="&gt;&gt;_CancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_CancelButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_CancelButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_MessageLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_MessageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 44</value>
+  </data>
+  <data name="_MessageLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="_MessageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 16</value>
+  </data>
+  <data name="_MessageLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_MessageLabel.Text" xml:space="preserve">
+    <value>Zoom ratio:</value>
+  </data>
+  <data name="&gt;&gt;_MessageLabel.Name" xml:space="preserve">
+    <value>_MessageLabel</value>
+  </data>
+  <data name="&gt;&gt;_MessageLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_MessageLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_MessageLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_ZoomRateBox.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_ZoomRateBox.Items1" xml:space="preserve">
+    <value>constant</value>
+  </data>
+  <data name="_ZoomRateBox.Items2" xml:space="preserve">
+    <value>——————</value>
+  </data>
+  <data name="_ZoomRateBox.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_ZoomRateBox.Items4" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_ZoomRateBox.Items5" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_ZoomRateBox.Items6" xml:space="preserve">
+    <value>1.5</value>
+  </data>
+  <data name="_ZoomRateBox.Items7" xml:space="preserve">
+    <value>1.3</value>
+  </data>
+  <data name="_ZoomRateBox.Items8" xml:space="preserve">
+    <value>1.2</value>
+  </data>
+  <data name="_ZoomRateBox.Items9" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_ZoomRateBox.Items10" xml:space="preserve">
+    <value>0.9</value>
+  </data>
+  <data name="_ZoomRateBox.Items11" xml:space="preserve">
+    <value>0.8</value>
+  </data>
+  <data name="_ZoomRateBox.Items12" xml:space="preserve">
+    <value>0.5</value>
+  </data>
+  <data name="_ZoomRateBox.Items13" xml:space="preserve">
+    <value>0.3</value>
+  </data>
+  <data name="_ZoomRateBox.Items14" xml:space="preserve">
+    <value>0.2</value>
+  </data>
+  <data name="_ZoomRateBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 40</value>
+  </data>
+  <data name="_ZoomRateBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_ZoomRateBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 24</value>
+  </data>
+  <data name="_ZoomRateBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_ZoomRateBox.Name" xml:space="preserve">
+    <value>_ZoomRateBox</value>
+  </data>
+  <data name="&gt;&gt;_ZoomRateBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ZoomRateBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_ZoomRateBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>353, 145</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Enter zoom ratio</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ZoomRateEntryForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

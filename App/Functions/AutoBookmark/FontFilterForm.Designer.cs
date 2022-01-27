@@ -25,179 +25,146 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
-			this.components = new System.ComponentModel.Container ();
-			this._OkButton = new System.Windows.Forms.Button ();
-			this._CancelButton = new System.Windows.Forms.Button ();
-			this._MessageLabel = new System.Windows.Forms.Label ();
-			this._FontNameSizeColumn = new BrightIdeasSoftware.OLVColumn ();
-			this._FirstPageColumn = new BrightIdeasSoftware.OLVColumn ();
-			this._CountColumn = new BrightIdeasSoftware.OLVColumn ();
-			this._FontInfoBox = new BrightIdeasSoftware.TreeListView ();
-			this._AddFilterMenu = new System.Windows.Forms.ContextMenuStrip (this.components);
-			this._FilterBox = new BrightIdeasSoftware.ObjectListView ();
-			this._ConditionColumn = new BrightIdeasSoftware.OLVColumn ();
-			this._AddConditionButton = new System.Windows.Forms.Button ();
-			this._RemoveConditionButton = new System.Windows.Forms.Button ();
-			((System.ComponentModel.ISupportInitialize)(this._FontInfoBox)).BeginInit ();
-			((System.ComponentModel.ISupportInitialize)(this._FilterBox)).BeginInit ();
-			this.SuspendLayout ();
-			//
-			// _OkButton
-			//
-			this._OkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this._OkButton.Location = new System.Drawing.Point (368, 376);
-			this._OkButton.Name = "_OkButton";
-			this._OkButton.Size = new System.Drawing.Size (75, 23);
-			this._OkButton.TabIndex = 5;
-			this._OkButton.Text = "&OK";
-			this._OkButton.UseVisualStyleBackColor = true;
-			this._OkButton.Click += new System.EventHandler (this._OkButton_Click);
-			//
-			// _CancelButton
-			//
-			this._CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this._CancelButton.Location = new System.Drawing.Point (449, 376);
-			this._CancelButton.Name = "_CancelButton";
-			this._CancelButton.Size = new System.Drawing.Size (75, 23);
-			this._CancelButton.TabIndex = 6;
-			this._CancelButton.Text = "&Cancel";
-			this._CancelButton.UseVisualStyleBackColor = true;
-			this._CancelButton.Click += new System.EventHandler (this._CancelButton_Click);
-			//
-			// _MessageLabel
-			//
-			this._MessageLabel.AutoSize = true;
-			this._MessageLabel.Location = new System.Drawing.Point (12, 9);
-			this._MessageLabel.Name = "_MessageLabel";
-			this._MessageLabel.Size = new System.Drawing.Size (407, 12);
-			this._MessageLabel.TabIndex = 0;
-			this._MessageLabel.Text = "The following table lists the fonts used in the PDF document. Right-click an item to add font filters.";
-			//
-			// _FontNameSizeColumn
-			//
-			this._FontNameSizeColumn.Text = "Font Name / Text Size (for the first time)";
-			this._FontNameSizeColumn.Width = 329;
-			//
-			// _FirstPageColumn
-			//
-			this._FirstPageColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this._FirstPageColumn.Text = "First page number";
-			this._FirstPageColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this._FirstPageColumn.Width = 51;
-			//
-			// _CountColumn
-			//
-			this._CountColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this._CountColumn.Text = "The number of occurrences";
-			this._CountColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this._CountColumn.Width = 52;
-			//
-			// _FontInfoBox
-			//
-			this._FontInfoBox.AllColumns.Add (this._FontNameSizeColumn);
-			this._FontInfoBox.AllColumns.Add (this._FirstPageColumn);
-			this._FontInfoBox.AllColumns.Add (this._CountColumn);
-			this._FontInfoBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this._FontInfoBox.CheckBoxes = false;
-			this._FontInfoBox.Columns.AddRange (new System.Windows.Forms.ColumnHeader[] {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FontFilterForm));
+            this._OkButton = new System.Windows.Forms.Button();
+            this._CancelButton = new System.Windows.Forms.Button();
+            this._MessageLabel = new System.Windows.Forms.Label();
+            this._FontNameSizeColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this._FirstPageColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this._CountColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this._FontInfoBox = new BrightIdeasSoftware.TreeListView();
+            this._AddFilterMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this._FilterBox = new BrightIdeasSoftware.ObjectListView();
+            this._ConditionColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
+            this._AddConditionButton = new System.Windows.Forms.Button();
+            this._RemoveConditionButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this._FontInfoBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._FilterBox)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // _OkButton
+            // 
+            resources.ApplyResources(this._OkButton, "_OkButton");
+            this._OkButton.Name = "_OkButton";
+            this._OkButton.UseVisualStyleBackColor = true;
+            this._OkButton.Click += new System.EventHandler(this._OkButton_Click);
+            // 
+            // _CancelButton
+            // 
+            resources.ApplyResources(this._CancelButton, "_CancelButton");
+            this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this._CancelButton.Name = "_CancelButton";
+            this._CancelButton.UseVisualStyleBackColor = true;
+            this._CancelButton.Click += new System.EventHandler(this._CancelButton_Click);
+            // 
+            // _MessageLabel
+            // 
+            resources.ApplyResources(this._MessageLabel, "_MessageLabel");
+            this._MessageLabel.Name = "_MessageLabel";
+            // 
+            // _FontNameSizeColumn
+            // 
+            resources.ApplyResources(this._FontNameSizeColumn, "_FontNameSizeColumn");
+            // 
+            // _FirstPageColumn
+            // 
+            this._FirstPageColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            resources.ApplyResources(this._FirstPageColumn, "_FirstPageColumn");
+            // 
+            // _CountColumn
+            // 
+            this._CountColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            resources.ApplyResources(this._CountColumn, "_CountColumn");
+            // 
+            // _FontInfoBox
+            // 
+            this._FontInfoBox.AllColumns.Add(this._FontNameSizeColumn);
+            this._FontInfoBox.AllColumns.Add(this._FirstPageColumn);
+            this._FontInfoBox.AllColumns.Add(this._CountColumn);
+            resources.ApplyResources(this._FontInfoBox, "_FontInfoBox");
+            this._FontInfoBox.CellEditUseWholeCell = false;
+            this._FontInfoBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this._FontNameSizeColumn,
             this._FirstPageColumn,
             this._CountColumn});
-			this._FontInfoBox.ContextMenuStrip = this._AddFilterMenu;
-			this._FontInfoBox.FullRowSelect = true;
-			this._FontInfoBox.GridLines = true;
-			this._FontInfoBox.HeaderWordWrap = true;
-			this._FontInfoBox.Location = new System.Drawing.Point (14, 36);
-			this._FontInfoBox.MultiSelect = false;
-			this._FontInfoBox.Name = "_FontInfoBox";
-			this._FontInfoBox.OwnerDraw = true;
-			this._FontInfoBox.ShowGroups = false;
-			this._FontInfoBox.Size = new System.Drawing.Size (510, 206);
-			this._FontInfoBox.TabIndex = 1;
-			this._FontInfoBox.UseCompatibleStateImageBehavior = false;
-			this._FontInfoBox.View = System.Windows.Forms.View.Details;
-			this._FontInfoBox.VirtualMode = true;
-			//
-			// _AddFilterMenu
-			//
-			this._AddFilterMenu.Name = "_AddFilterMenu";
-			this._AddFilterMenu.ShowImageMargin = false;
-			this._AddFilterMenu.Size = new System.Drawing.Size (36, 4);
-			this._AddFilterMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler (this._AddFilterMenu_ItemClicked);
-			this._AddFilterMenu.Opening += new System.ComponentModel.CancelEventHandler (this._AddFilterMenu_Opening);
-			//
-			// _FilterBox
-			//
-			this._FilterBox.AllColumns.Add (this._ConditionColumn);
-			this._FilterBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this._FilterBox.Columns.AddRange (new System.Windows.Forms.ColumnHeader[] {
+            this._FontInfoBox.ContextMenuStrip = this._AddFilterMenu;
+            this._FontInfoBox.FullRowSelect = true;
+            this._FontInfoBox.GridLines = true;
+            this._FontInfoBox.HeaderWordWrap = true;
+            this._FontInfoBox.HideSelection = false;
+            this._FontInfoBox.MultiSelect = false;
+            this._FontInfoBox.Name = "_FontInfoBox";
+            this._FontInfoBox.ShowGroups = false;
+            this._FontInfoBox.UseCompatibleStateImageBehavior = false;
+            this._FontInfoBox.View = System.Windows.Forms.View.Details;
+            this._FontInfoBox.VirtualMode = true;
+            // 
+            // _AddFilterMenu
+            // 
+            this._AddFilterMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this._AddFilterMenu.Name = "_AddFilterMenu";
+            this._AddFilterMenu.ShowImageMargin = false;
+            resources.ApplyResources(this._AddFilterMenu, "_AddFilterMenu");
+            this._AddFilterMenu.Opening += new System.ComponentModel.CancelEventHandler(this._AddFilterMenu_Opening);
+            this._AddFilterMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._AddFilterMenu_ItemClicked);
+            // 
+            // _FilterBox
+            // 
+            this._FilterBox.AllColumns.Add(this._ConditionColumn);
+            resources.ApplyResources(this._FilterBox, "_FilterBox");
+            this._FilterBox.CellEditUseWholeCell = false;
+            this._FilterBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this._ConditionColumn});
-			this._FilterBox.FullRowSelect = true;
-			this._FilterBox.GridLines = true;
-			this._FilterBox.Location = new System.Drawing.Point (14, 248);
-			this._FilterBox.Name = "_FilterBox";
-			this._FilterBox.ShowGroups = false;
-			this._FilterBox.Size = new System.Drawing.Size (415, 122);
-			this._FilterBox.TabIndex = 2;
-			this._FilterBox.UseCompatibleStateImageBehavior = false;
-			this._FilterBox.View = System.Windows.Forms.View.Details;
-			//
-			// _ConditionColumn
-			//
-			this._ConditionColumn.Text = "Filter Condition";
-			this._ConditionColumn.Width = 330;
-			//
-			// _AddConditionButton
-			//
-			this._AddConditionButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this._AddConditionButton.Location = new System.Drawing.Point(435, 248);
-			this._AddConditionButton.Name = "_AddConditionButton";
-			this._AddConditionButton.Size = new System.Drawing.Size(89, 23);
-			this._AddConditionButton.TabIndex = 3;
-			this._AddConditionButton.Text = "Add Filter";
-			this._AddConditionButton.UseVisualStyleBackColor = true;
-			this._AddConditionButton.Click += new System.EventHandler (this.ControlEvent);
-			//
-			// _RemoveConditionButton
-			//
-			this._RemoveConditionButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this._RemoveConditionButton.Location = new System.Drawing.Point(435, 277);
-			this._RemoveConditionButton.Name = "_RemoveConditionButton";
-			this._RemoveConditionButton.Size = new System.Drawing.Size(89, 23);
-			this._RemoveConditionButton.TabIndex = 4;
-			this._RemoveConditionButton.Text = "Remove Filter Condition";
-			this._RemoveConditionButton.UseVisualStyleBackColor = true;
-			this._RemoveConditionButton.Click += new System.EventHandler (this.ControlEvent);
-			//
-			// FontFilterForm
-			//
-			this.AcceptButton = this._OkButton;
-			this.AutoScaleDimensions = new System.Drawing.SizeF (6F, 12F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.CancelButton = this._CancelButton;
-			this.ClientSize = new System.Drawing.Size (536, 411);
-			this.Controls.Add (this._RemoveConditionButton);
-			this.Controls.Add (this._AddConditionButton);
-			this.Controls.Add (this._FontInfoBox);
-			this.Controls.Add (this._MessageLabel);
-			this.Controls.Add (this._FilterBox);
-			this.Controls.Add (this._CancelButton);
-			this.Controls.Add (this._OkButton);
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "FontFilterForm";
-			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Add font filter";
-			this.Load += new System.EventHandler (this.FontFilterForm_Load);
-			((System.ComponentModel.ISupportInitialize)(this._FontInfoBox)).EndInit ();
-			((System.ComponentModel.ISupportInitialize)(this._FilterBox)).EndInit ();
-			this.ResumeLayout (false);
-			this.PerformLayout ();
+            this._FilterBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this._FilterBox.FullRowSelect = true;
+            this._FilterBox.GridLines = true;
+            this._FilterBox.HideSelection = false;
+            this._FilterBox.Name = "_FilterBox";
+            this._FilterBox.ShowGroups = false;
+            this._FilterBox.UseCompatibleStateImageBehavior = false;
+            this._FilterBox.View = System.Windows.Forms.View.Details;
+            // 
+            // _ConditionColumn
+            // 
+            resources.ApplyResources(this._ConditionColumn, "_ConditionColumn");
+            // 
+            // _AddConditionButton
+            // 
+            resources.ApplyResources(this._AddConditionButton, "_AddConditionButton");
+            this._AddConditionButton.Name = "_AddConditionButton";
+            this._AddConditionButton.UseVisualStyleBackColor = true;
+            this._AddConditionButton.Click += new System.EventHandler(this.ControlEvent);
+            // 
+            // _RemoveConditionButton
+            // 
+            resources.ApplyResources(this._RemoveConditionButton, "_RemoveConditionButton");
+            this._RemoveConditionButton.Name = "_RemoveConditionButton";
+            this._RemoveConditionButton.UseVisualStyleBackColor = true;
+            this._RemoveConditionButton.Click += new System.EventHandler(this.ControlEvent);
+            // 
+            // FontFilterForm
+            // 
+            this.AcceptButton = this._OkButton;
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this._CancelButton;
+            this.Controls.Add(this._RemoveConditionButton);
+            this.Controls.Add(this._AddConditionButton);
+            this.Controls.Add(this._FontInfoBox);
+            this.Controls.Add(this._MessageLabel);
+            this.Controls.Add(this._FilterBox);
+            this.Controls.Add(this._CancelButton);
+            this.Controls.Add(this._OkButton);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FontFilterForm";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.Load += new System.EventHandler(this.FontFilterForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this._FontInfoBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._FilterBox)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

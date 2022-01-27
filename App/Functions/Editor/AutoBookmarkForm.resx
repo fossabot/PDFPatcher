@@ -117,4 +117,259 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 11</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 16</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Bookmark identification condition list:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_ConditionColumn.Text" xml:space="preserve">
+    <value>Recognition Condition</value>
+  </data>
+  <data name="_ConditionColumn.Width" type="System.Int32, mscorlib">
+    <value>244</value>
+  </data>
+  <data name="_LevelColumn.Text" xml:space="preserve">
+    <value>Bookmark Level</value>
+  </data>
+  <data name="_LevelColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="_LevelColumn.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="_BoldColumn.Text" xml:space="preserve">
+    <value>Bold</value>
+  </data>
+  <data name="_BoldColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="_ItalicColumn.Text" xml:space="preserve">
+    <value>Italic</value>
+  </data>
+  <data name="_ItalicColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="_ColorColumn.Text" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="_OpenColumn.Text" xml:space="preserve">
+    <value>Default Expand</value>
+  </data>
+  <data name="_OpenColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="_OpenColumn.Width" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="_BookmarkConditionBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="_BookmarkConditionBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 46</value>
+  </data>
+  <data name="_BookmarkConditionBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_BookmarkConditionBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>580, 219</value>
+  </data>
+  <data name="_BookmarkConditionBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_BookmarkConditionBox.Name" xml:space="preserve">
+    <value>_BookmarkConditionBox</value>
+  </data>
+  <data name="&gt;&gt;_BookmarkConditionBox.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.ObjectListView, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_BookmarkConditionBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_BookmarkConditionBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_RemoveButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_RemoveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 5</value>
+  </data>
+  <data name="_RemoveButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_RemoveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 31</value>
+  </data>
+  <data name="_RemoveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_RemoveButton.Text" xml:space="preserve">
+    <value>&amp;Remove</value>
+  </data>
+  <data name="_RemoveButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;_RemoveButton.Name" xml:space="preserve">
+    <value>_RemoveButton</value>
+  </data>
+  <data name="&gt;&gt;_RemoveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemoveButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_RemoveButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_AutoBookmarkButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_AutoBookmarkButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 5</value>
+  </data>
+  <data name="_AutoBookmarkButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="_AutoBookmarkButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 31</value>
+  </data>
+  <data name="_AutoBookmarkButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_AutoBookmarkButton.Text" xml:space="preserve">
+    <value>&amp;Create Bookmark</value>
+  </data>
+  <data name="_AutoBookmarkButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;_AutoBookmarkButton.Name" xml:space="preserve">
+    <value>_AutoBookmarkButton</value>
+  </data>
+  <data name="&gt;&gt;_AutoBookmarkButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AutoBookmarkButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_AutoBookmarkButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_MergeAdjacentTitleBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="_MergeAdjacentTitleBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_MergeAdjacentTitleBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 275</value>
+  </data>
+  <data name="_MergeAdjacentTitleBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="_MergeAdjacentTitleBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 20</value>
+  </data>
+  <data name="_MergeAdjacentTitleBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_MergeAdjacentTitleBox.Text" xml:space="preserve">
+    <value>Merge adjacent titles of the same font size</value>
+  </data>
+  <data name="&gt;&gt;_MergeAdjacentTitleBox.Name" xml:space="preserve">
+    <value>_MergeAdjacentTitleBox</value>
+  </data>
+  <data name="&gt;&gt;_MergeAdjacentTitleBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_MergeAdjacentTitleBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_MergeAdjacentTitleBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>624, 300</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Automatically generate bookmarks</value>
+  </data>
+  <data name="&gt;&gt;_ConditionColumn.Name" xml:space="preserve">
+    <value>_ConditionColumn</value>
+  </data>
+  <data name="&gt;&gt;_ConditionColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_LevelColumn.Name" xml:space="preserve">
+    <value>_LevelColumn</value>
+  </data>
+  <data name="&gt;&gt;_LevelColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_BoldColumn.Name" xml:space="preserve">
+    <value>_BoldColumn</value>
+  </data>
+  <data name="&gt;&gt;_BoldColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_ItalicColumn.Name" xml:space="preserve">
+    <value>_ItalicColumn</value>
+  </data>
+  <data name="&gt;&gt;_ItalicColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_ColorColumn.Name" xml:space="preserve">
+    <value>_ColorColumn</value>
+  </data>
+  <data name="&gt;&gt;_ColorColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_OpenColumn.Name" xml:space="preserve">
+    <value>_OpenColumn</value>
+  </data>
+  <data name="&gt;&gt;_OpenColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AutoBookmarkForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>PDFPatcher.Functions.DraggableForm, PDFPatcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
 </root>

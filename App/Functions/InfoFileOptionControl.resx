@@ -117,4 +117,1066 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="_EncodingBox.Items" xml:space="preserve">
+    <value>System default</value>
+  </data>
+  <data name="_EncodingBox.Items1" xml:space="preserve">
+    <value>GB18030</value>
+  </data>
+  <data name="_EncodingBox.Items2" xml:space="preserve">
+    <value>UTF-8</value>
+  </data>
+  <data name="_EncodingBox.Items3" xml:space="preserve">
+    <value>UTF-16</value>
+  </data>
+  <data name="_EncodingBox.Items4" xml:space="preserve">
+    <value>Big5</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_EncodingBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 6</value>
+  </data>
+  <data name="_EncodingBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_EncodingBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_EncodingBox.Name" xml:space="preserve">
+    <value>_EncodingBox</value>
+  </data>
+  <data name="&gt;&gt;_EncodingBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_EncodingBox.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;_EncodingBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 9</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 15</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Character Encoding:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_ExtractPageLinksBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ExtractPageLinksBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 42</value>
+  </data>
+  <data name="_ExtractPageLinksBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 19</value>
+  </data>
+  <data name="_ExtractPageLinksBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_ExtractPageLinksBox.Text" xml:space="preserve">
+    <value>Link within the page</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageLinksBox.Name" xml:space="preserve">
+    <value>_ExtractPageLinksBox</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageLinksBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageLinksBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageLinksBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_ExportViewerPreferencesBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ExportViewerPreferencesBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 86</value>
+  </data>
+  <data name="_ExportViewerPreferencesBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>573, 19</value>
+  </data>
+  <data name="_ExportViewerPreferencesBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_ExportViewerPreferencesBox.Text" xml:space="preserve">
+    <value>Reader settings (such as typography layout, page number style, etc.)</value>
+  </data>
+  <data name="&gt;&gt;_ExportViewerPreferencesBox.Name" xml:space="preserve">
+    <value>_ExportViewerPreferencesBox</value>
+  </data>
+  <data name="&gt;&gt;_ExportViewerPreferencesBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportViewerPreferencesBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;_ExportViewerPreferencesBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_ExportBookmarksBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ExportBookmarksBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 42</value>
+  </data>
+  <data name="_ExportBookmarksBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 19</value>
+  </data>
+  <data name="_ExportBookmarksBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_ExportBookmarksBox.Text" xml:space="preserve">
+    <value>Document bookmark</value>
+  </data>
+  <data name="&gt;&gt;_ExportBookmarksBox.Name" xml:space="preserve">
+    <value>_ExportBookmarksBox</value>
+  </data>
+  <data name="&gt;&gt;_ExportBookmarksBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportBookmarksBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;_ExportBookmarksBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_ExportOptionsTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="_UnitBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 11</value>
+  </data>
+  <data name="_UnitBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 23</value>
+  </data>
+  <data name="_UnitBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_UnitBox.Name" xml:space="preserve">
+    <value>_UnitBox</value>
+  </data>
+  <data name="&gt;&gt;_UnitBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_UnitBox.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;_UnitBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>277, 14</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 15</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Dimensional measure:</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_ExportDocPropertiesBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ExportDocPropertiesBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="_ExportDocPropertiesBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>493, 19</value>
+  </data>
+  <data name="_ExportDocPropertiesBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_ExportDocPropertiesBox.Text" xml:space="preserve">
+    <value>Document properties (such as title, author, keyword, etc.)</value>
+  </data>
+  <data name="&gt;&gt;_ExportDocPropertiesBox.Name" xml:space="preserve">
+    <value>_ExportDocPropertiesBox</value>
+  </data>
+  <data name="&gt;&gt;_ExportDocPropertiesBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportDocPropertiesBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;_ExportDocPropertiesBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_ExtractPageSettingsBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ExtractPageSettingsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 108</value>
+  </data>
+  <data name="_ExtractPageSettingsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>517, 19</value>
+  </data>
+  <data name="_ExtractPageSettingsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_ExtractPageSettingsBox.Text" xml:space="preserve">
+    <value>Page settings (such as page size, crop, rotation angle, etc.)</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageSettingsBox.Name" xml:space="preserve">
+    <value>_ExtractPageSettingsBox</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageSettingsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageSettingsBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageSettingsBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_ConsolidateNamedDestBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ConsolidateNamedDestBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 64</value>
+  </data>
+  <data name="_ConsolidateNamedDestBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 19</value>
+  </data>
+  <data name="_ConsolidateNamedDestBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_ConsolidateNamedDestBox.Text" xml:space="preserve">
+    <value>Analyze bookmarks and page links namings</value>
+  </data>
+  <data name="&gt;&gt;_ConsolidateNamedDestBox.Name" xml:space="preserve">
+    <value>_ConsolidateNamedDestBox</value>
+  </data>
+  <data name="&gt;&gt;_ConsolidateNamedDestBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ConsolidateNamedDestBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;_ConsolidateNamedDestBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 32</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>520, 185</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Export as follows to the information file</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1149, 216</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Regular export option</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>_ExportOptionsTab</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_ExportCatalogBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ExportCatalogBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 38</value>
+  </data>
+  <data name="_ExportCatalogBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 19</value>
+  </data>
+  <data name="_ExportCatalogBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_ExportCatalogBox.Text" xml:space="preserve">
+    <value>Export catalog information</value>
+  </data>
+  <data name="&gt;&gt;_ExportCatalogBox.Name" xml:space="preserve">
+    <value>_ExportCatalogBox</value>
+  </data>
+  <data name="&gt;&gt;_ExportCatalogBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportCatalogBox.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;_ExportCatalogBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 3</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1165, 31</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Note: The content exported by the advanced export option is only for the purpose of studying the PDF file structure, and these content will not be imported when importing information files.</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 61</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1040, 28</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>This option will generate a large information file that contains most of the page (such as font, image information, etc.).</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_ExtractPageContentBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ExtractPageContentBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 60</value>
+  </data>
+  <data name="_ExtractPageContentBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 19</value>
+  </data>
+  <data name="_ExtractPageContentBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_ExtractPageContentBox.Text" xml:space="preserve">
+    <value>Export page content</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageContentBox.Name" xml:space="preserve">
+    <value>_ExtractPageContentBox</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageContentBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageContentBox.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageContentBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_ExportContentOperatorsBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ExportContentOperatorsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 36</value>
+  </data>
+  <data name="_ExportContentOperatorsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 19</value>
+  </data>
+  <data name="_ExportContentOperatorsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_ExportContentOperatorsBox.Text" xml:space="preserve">
+    <value>Export Drawing Page Command</value>
+  </data>
+  <data name="&gt;&gt;_ExportContentOperatorsBox.Name" xml:space="preserve">
+    <value>_ExportContentOperatorsBox</value>
+  </data>
+  <data name="&gt;&gt;_ExportContentOperatorsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportContentOperatorsBox.Parent" xml:space="preserve">
+    <value>_PageContentBox</value>
+  </data>
+  <data name="&gt;&gt;_ExportContentOperatorsBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_ExtractPageDictionaryBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ExtractPageDictionaryBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 36</value>
+  </data>
+  <data name="_ExtractPageDictionaryBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 19</value>
+  </data>
+  <data name="_ExtractPageDictionaryBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="_ExtractPageDictionaryBox.Text" xml:space="preserve">
+    <value>Export page dictionary information</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageDictionaryBox.Name" xml:space="preserve">
+    <value>_ExtractPageDictionaryBox</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageDictionaryBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageDictionaryBox.Parent" xml:space="preserve">
+    <value>_PageContentBox</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageDictionaryBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_ExtractPageRangeBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 3</value>
+  </data>
+  <data name="_ExtractPageRangeBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 25</value>
+  </data>
+  <data name="_ExtractPageRangeBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageRangeBox.Name" xml:space="preserve">
+    <value>_ExtractPageRangeBox</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageRangeBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageRangeBox.Parent" xml:space="preserve">
+    <value>_PageContentBox</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageRangeBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>283, 77</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 15</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>(0: Unlimited)</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>_PageContentBox</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 15</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Export page range:</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>_PageContentBox</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 77</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 15</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Limit export binary stream bytes:</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>_PageContentBox</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_ExportBinaryStreamBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 75</value>
+  </data>
+  <data name="_ExportBinaryStreamBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 25</value>
+  </data>
+  <data name="_ExportBinaryStreamBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_ExportBinaryStreamBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;_ExportBinaryStreamBox.Name" xml:space="preserve">
+    <value>_ExportBinaryStreamBox</value>
+  </data>
+  <data name="&gt;&gt;_ExportBinaryStreamBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportBinaryStreamBox.Parent" xml:space="preserve">
+    <value>_PageContentBox</value>
+  </data>
+  <data name="&gt;&gt;_ExportBinaryStreamBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_ExtractImagesBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ExtractImagesBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 58</value>
+  </data>
+  <data name="_ExtractImagesBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 19</value>
+  </data>
+  <data name="_ExtractImagesBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_ExtractImagesBox.Text" xml:space="preserve">
+    <value>Export image as a separate file</value>
+  </data>
+  <data name="&gt;&gt;_ExtractImagesBox.Name" xml:space="preserve">
+    <value>_ExtractImagesBox</value>
+  </data>
+  <data name="&gt;&gt;_ExtractImagesBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExtractImagesBox.Parent" xml:space="preserve">
+    <value>_PageContentBox</value>
+  </data>
+  <data name="&gt;&gt;_ExtractImagesBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="_ExtractPageTextContentBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ExtractPageTextContentBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 58</value>
+  </data>
+  <data name="_ExtractPageTextContentBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 19</value>
+  </data>
+  <data name="_ExtractPageTextContentBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_ExtractPageTextContentBox.Text" xml:space="preserve">
+    <value>Decoding text within the export page</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageTextContentBox.Name" xml:space="preserve">
+    <value>_ExtractPageTextContentBox</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageTextContentBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageTextContentBox.Parent" xml:space="preserve">
+    <value>_PageContentBox</value>
+  </data>
+  <data name="&gt;&gt;_ExtractPageTextContentBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_PageContentBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_PageContentBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 92</value>
+  </data>
+  <data name="_PageContentBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 125</value>
+  </data>
+  <data name="_PageContentBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_PageContentBox.Name" xml:space="preserve">
+    <value>_PageContentBox</value>
+  </data>
+  <data name="&gt;&gt;_PageContentBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_PageContentBox.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;_PageContentBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1149, 216</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Advanced Export Options</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>_ExportOptionsTab</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_ImportPageSettingsBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ImportPageSettingsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 108</value>
+  </data>
+  <data name="_ImportPageSettingsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>517, 19</value>
+  </data>
+  <data name="_ImportPageSettingsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="_ImportPageSettingsBox.Text" xml:space="preserve">
+    <value>Page settings (such as page size, crop, rotation angle, etc.)</value>
+  </data>
+  <data name="&gt;&gt;_ImportPageSettingsBox.Name" xml:space="preserve">
+    <value>_ImportPageSettingsBox</value>
+  </data>
+  <data name="&gt;&gt;_ImportPageSettingsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ImportPageSettingsBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;_ImportPageSettingsBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_ImportDocumentInfoBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ImportDocumentInfoBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="_ImportDocumentInfoBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>589, 19</value>
+  </data>
+  <data name="_ImportDocumentInfoBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_ImportDocumentInfoBox.Text" xml:space="preserve">
+    <value>Document property information (such as author, subject, keyword, etc.)</value>
+  </data>
+  <data name="&gt;&gt;_ImportDocumentInfoBox.Name" xml:space="preserve">
+    <value>_ImportDocumentInfoBox</value>
+  </data>
+  <data name="&gt;&gt;_ImportDocumentInfoBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ImportDocumentInfoBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;_ImportDocumentInfoBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 15</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Original page link:</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_RemoveOriginalPageLinksBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_RemoveOriginalPageLinksBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 1</value>
+  </data>
+  <data name="_RemoveOriginalPageLinksBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 19</value>
+  </data>
+  <data name="_RemoveOriginalPageLinksBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_RemoveOriginalPageLinksBox.Text" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="&gt;&gt;_RemoveOriginalPageLinksBox.Name" xml:space="preserve">
+    <value>_RemoveOriginalPageLinksBox</value>
+  </data>
+  <data name="&gt;&gt;_RemoveOriginalPageLinksBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemoveOriginalPageLinksBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_RemoveOriginalPageLinksBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_KeepOriginalPageLinksBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_KeepOriginalPageLinksBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 0</value>
+  </data>
+  <data name="_KeepOriginalPageLinksBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 19</value>
+  </data>
+  <data name="_KeepOriginalPageLinksBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_KeepOriginalPageLinksBox.Text" xml:space="preserve">
+    <value>Reserve</value>
+  </data>
+  <data name="&gt;&gt;_KeepOriginalPageLinksBox.Name" xml:space="preserve">
+    <value>_KeepOriginalPageLinksBox</value>
+  </data>
+  <data name="&gt;&gt;_KeepOriginalPageLinksBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_KeepOriginalPageLinksBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_KeepOriginalPageLinksBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 61</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 19</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_ImportBookmarksBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ImportBookmarksBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 42</value>
+  </data>
+  <data name="_ImportBookmarksBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 19</value>
+  </data>
+  <data name="_ImportBookmarksBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="_ImportBookmarksBox.Text" xml:space="preserve">
+    <value>Document bookmark</value>
+  </data>
+  <data name="&gt;&gt;_ImportBookmarksBox.Name" xml:space="preserve">
+    <value>_ImportBookmarksBox</value>
+  </data>
+  <data name="&gt;&gt;_ImportBookmarksBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ImportBookmarksBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;_ImportBookmarksBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_ImportPageLinksBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ImportPageLinksBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 64</value>
+  </data>
+  <data name="_ImportPageLinksBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>413, 19</value>
+  </data>
+  <data name="_ImportPageLinksBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_ImportPageLinksBox.Text" xml:space="preserve">
+    <value>Link within the page (invalid in the merge mode)</value>
+  </data>
+  <data name="&gt;&gt;_ImportPageLinksBox.Name" xml:space="preserve">
+    <value>_ImportPageLinksBox</value>
+  </data>
+  <data name="&gt;&gt;_ImportPageLinksBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ImportPageLinksBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;_ImportPageLinksBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_ImportViewerPreferencesBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_ImportViewerPreferencesBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 86</value>
+  </data>
+  <data name="_ImportViewerPreferencesBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>573, 19</value>
+  </data>
+  <data name="_ImportViewerPreferencesBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="_ImportViewerPreferencesBox.Text" xml:space="preserve">
+    <value>Reader settings (such as typography layout, page number style, etc.)</value>
+  </data>
+  <data name="&gt;&gt;_ImportViewerPreferencesBox.Name" xml:space="preserve">
+    <value>_ImportViewerPreferencesBox</value>
+  </data>
+  <data name="&gt;&gt;_ImportViewerPreferencesBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ImportViewerPreferencesBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;_ImportViewerPreferencesBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1163, 211</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Import information files as follows</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1149, 216</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Import option</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>_ExportOptionsTab</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_ExportOptionsTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="_ExportOptionsTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1157, 245</value>
+  </data>
+  <data name="_ExportOptionsTab.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_ExportOptionsTab.Name" xml:space="preserve">
+    <value>_ExportOptionsTab</value>
+  </data>
+  <data name="&gt;&gt;_ExportOptionsTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportOptionsTab.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_ExportOptionsTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1181, 269</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 9pt</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Information file option</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>InfoFileOptionControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

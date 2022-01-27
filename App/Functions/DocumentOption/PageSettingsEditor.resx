@@ -120,13 +120,358 @@
   <metadata name="toolStripSeparator1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 6</value>
+  </data>
   <metadata name="toolStripSeparator2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 6</value>
+  </data>
+  <data name="_RotateZeroMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 26</value>
+  </data>
+  <data name="_RotateZeroMenuItem.Text" xml:space="preserve">
+    <value>constant(&amp;B)</value>
+  </data>
+  <data name="_SequenceColumn.Text" xml:space="preserve">
+    <value>Sequence Number</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_SequenceColumn.Width" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="_PageRangeColumn.Text" xml:space="preserve">
+    <value>Page Range</value>
+  </data>
+  <data name="_PageRangeColumn.Width" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="_PageFilterColumn.Text" xml:space="preserve">
+    <value>Filter page</value>
+  </data>
+  <data name="_PageFilterColumn.Width" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="_SettingsColumn.Text" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="_SettingsColumn.Width" type="System.Int32, mscorlib">
+    <value>214</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_PageSettingsBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="_PageSettingsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 43</value>
+  </data>
+  <data name="_PageSettingsBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_PageSettingsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>575, 324</value>
+  </data>
+  <data name="_PageSettingsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_PageSettingsBox.Name" xml:space="preserve">
+    <value>_PageSettingsBox</value>
+  </data>
+  <data name="&gt;&gt;_PageSettingsBox.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.ObjectListView, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_PageSettingsBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_PageSettingsBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="_PageRangeFilterTypeMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="_AllPagesMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 26</value>
+  </data>
+  <data name="_AllPagesMenu.Text" xml:space="preserve">
+    <value>&amp;All Pages</value>
+  </data>
+  <data name="_OddPagesMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 26</value>
+  </data>
+  <data name="_OddPagesMenu.Text" xml:space="preserve">
+    <value>&amp;Oddpages</value>
+  </data>
+  <data name="_EvenPagesMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 26</value>
+  </data>
+  <data name="_EvenPagesMenu.Text" xml:space="preserve">
+    <value>&amp;EvenPages</value>
+  </data>
+  <data name="_PortraitPagesMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 26</value>
+  </data>
+  <data name="_PortraitPagesMenu.Text" xml:space="preserve">
+    <value>&amp;Portrait page</value>
+  </data>
+  <data name="_LandscapePagesMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 26</value>
+  </data>
+  <data name="_LandscapePagesMenu.Text" xml:space="preserve">
+    <value>&amp;Landscape Pages</value>
+  </data>
+  <data name="_PageRangeFilterTypeMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 146</value>
+  </data>
+  <data name="&gt;&gt;_PageRangeFilterTypeMenu.Name" xml:space="preserve">
+    <value>_PageRangeFilterTypeMenu</value>
+  </data>
+  <data name="&gt;&gt;_PageRangeFilterTypeMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <metadata name="_PageSettingsMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>220, 17</value>
   </metadata>
+  <data name="_RotateLeftMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 26</value>
+  </data>
+  <data name="_RotateLeftMenuItem.Text" xml:space="preserve">
+    <value>Rotate &amp;left 90 degrees</value>
+  </data>
+  <data name="_RotateRightMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 26</value>
+  </data>
+  <data name="_RotateRightMenuItem.Text" xml:space="preserve">
+    <value>Rotate &amp;right 90 degrees</value>
+  </data>
+  <data name="_Rotate180MenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 26</value>
+  </data>
+  <data name="_Rotate180MenuItem.Text" xml:space="preserve">
+    <value>Rotate 180 degrees</value>
+  </data>
+  <data name="_RotateMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 24</value>
+  </data>
+  <data name="_RotateMenu.Text" xml:space="preserve">
+    <value>&amp;Rotate the page</value>
+  </data>
+  <data name="_PageSettingsMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 28</value>
+  </data>
+  <data name="&gt;&gt;_PageSettingsMenu.Name" xml:space="preserve">
+    <value>_PageSettingsMenu</value>
+  </data>
+  <data name="&gt;&gt;_PageSettingsMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_RemoveButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_RemoveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>485, 4</value>
+  </data>
+  <data name="_RemoveButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RemoveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 31</value>
+  </data>
+  <data name="_RemoveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_RemoveButton.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="_RemoveButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;_RemoveButton.Name" xml:space="preserve">
+    <value>_RemoveButton</value>
+  </data>
+  <data name="&gt;&gt;_RemoveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemoveButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_RemoveButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_AddButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_AddButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>407, 4</value>
+  </data>
+  <data name="_AddButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_AddButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 31</value>
+  </data>
+  <data name="_AddButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="_AddButton.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="_AddButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;_AddButton.Name" xml:space="preserve">
+    <value>_AddButton</value>
+  </data>
+  <data name="&gt;&gt;_AddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AddButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_AddButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>584, 372</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>584, 372</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
+    <value>toolStripSeparator2</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RotateZeroMenuItem.Name" xml:space="preserve">
+    <value>_RotateZeroMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_RotateZeroMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SequenceColumn.Name" xml:space="preserve">
+    <value>_SequenceColumn</value>
+  </data>
+  <data name="&gt;&gt;_SequenceColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_PageRangeColumn.Name" xml:space="preserve">
+    <value>_PageRangeColumn</value>
+  </data>
+  <data name="&gt;&gt;_PageRangeColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_PageFilterColumn.Name" xml:space="preserve">
+    <value>_PageFilterColumn</value>
+  </data>
+  <data name="&gt;&gt;_PageFilterColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_SettingsColumn.Name" xml:space="preserve">
+    <value>_SettingsColumn</value>
+  </data>
+  <data name="&gt;&gt;_SettingsColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_AllPagesMenu.Name" xml:space="preserve">
+    <value>_AllPagesMenu</value>
+  </data>
+  <data name="&gt;&gt;_AllPagesMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_OddPagesMenu.Name" xml:space="preserve">
+    <value>_OddPagesMenu</value>
+  </data>
+  <data name="&gt;&gt;_OddPagesMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_EvenPagesMenu.Name" xml:space="preserve">
+    <value>_EvenPagesMenu</value>
+  </data>
+  <data name="&gt;&gt;_EvenPagesMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_PortraitPagesMenu.Name" xml:space="preserve">
+    <value>_PortraitPagesMenu</value>
+  </data>
+  <data name="&gt;&gt;_PortraitPagesMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_LandscapePagesMenu.Name" xml:space="preserve">
+    <value>_LandscapePagesMenu</value>
+  </data>
+  <data name="&gt;&gt;_LandscapePagesMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RotateMenu.Name" xml:space="preserve">
+    <value>_RotateMenu</value>
+  </data>
+  <data name="&gt;&gt;_RotateMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RotateLeftMenuItem.Name" xml:space="preserve">
+    <value>_RotateLeftMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_RotateLeftMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RotateRightMenuItem.Name" xml:space="preserve">
+    <value>_RotateRightMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_RotateRightMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Rotate180MenuItem.Name" xml:space="preserve">
+    <value>_Rotate180MenuItem</value>
+  </data>
+  <data name="&gt;&gt;_Rotate180MenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PageSettingsEditor</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

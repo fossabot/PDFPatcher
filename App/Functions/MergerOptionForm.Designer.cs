@@ -25,6 +25,7 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MergerOptionForm));
             this._MainTab = new System.Windows.Forms.TabControl();
             this._FilePage = new System.Windows.Forms.TabPage();
             this._CajSortBox = new System.Windows.Forms.CheckBox();
@@ -96,19 +97,14 @@
             // 
             // _MainTab
             // 
-            this._MainTab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._MainTab, "_MainTab");
             this._MainTab.Controls.Add(this._FilePage);
             this._MainTab.Controls.Add(this._LayoutPage);
             this._MainTab.Controls.Add(this._ViewerSettingsPage);
             this._MainTab.Controls.Add(this._DocumentInfoPage);
             this._MainTab.Controls.Add(this._PageLabelsPage);
-            this._MainTab.Location = new System.Drawing.Point(12, 13);
             this._MainTab.Name = "_MainTab";
             this._MainTab.SelectedIndex = 0;
-            this._MainTab.Size = new System.Drawing.Size(530, 346);
-            this._MainTab.TabIndex = 0;
             // 
             // _FilePage
             // 
@@ -119,82 +115,50 @@
             this._FilePage.Controls.Add(this._IgnoreLeadingNumbersBox);
             this._FilePage.Controls.Add(this._RemoveOrphanBoomarksBox);
             this._FilePage.Controls.Add(this._KeepSourcePdfBookmarkBox);
-            this._FilePage.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this._FilePage, "_FilePage");
             this._FilePage.Name = "_FilePage";
-            this._FilePage.Padding = new System.Windows.Forms.Padding(3);
-            this._FilePage.Size = new System.Drawing.Size(522, 320);
-            this._FilePage.TabIndex = 1;
-            this._FilePage.Text = "File";
             this._FilePage.UseVisualStyleBackColor = true;
             // 
             // _CajSortBox
             // 
-            this._CajSortBox.AutoSize = true;
-            this._CajSortBox.Location = new System.Drawing.Point(16, 113);
+            resources.ApplyResources(this._CajSortBox, "_CajSortBox");
             this._CajSortBox.Name = "_CajSortBox";
-            this._CajSortBox.Size = new System.Drawing.Size(143, 17);
-            this._CajSortBox.TabIndex = 4;
-            this._CajSortBox.Text = "Sort by CAJ naming rules";
             this._CajSortBox.UseVisualStyleBackColor = true;
             // 
             // _NumericAwareSortBox
             // 
-            this._NumericAwareSortBox.AutoSize = true;
-            this._NumericAwareSortBox.Location = new System.Drawing.Point(16, 89);
+            resources.ApplyResources(this._NumericAwareSortBox, "_NumericAwareSortBox");
             this._NumericAwareSortBox.Name = "_NumericAwareSortBox";
-            this._NumericAwareSortBox.Size = new System.Drawing.Size(281, 17);
-            this._NumericAwareSortBox.TabIndex = 3;
-            this._NumericAwareSortBox.Text = "The file name is sorted by value and text, respectively.";
             this._NumericAwareSortBox.UseVisualStyleBackColor = true;
             // 
             // _SubFoldersBeforeFilesBox
             // 
-            this._SubFoldersBeforeFilesBox.AutoSize = true;
-            this._SubFoldersBeforeFilesBox.Location = new System.Drawing.Point(16, 65);
+            resources.ApplyResources(this._SubFoldersBeforeFilesBox, "_SubFoldersBeforeFilesBox");
             this._SubFoldersBeforeFilesBox.Name = "_SubFoldersBeforeFilesBox";
-            this._SubFoldersBeforeFilesBox.Size = new System.Drawing.Size(152, 17);
-            this._SubFoldersBeforeFilesBox.TabIndex = 2;
-            this._SubFoldersBeforeFilesBox.Text = "Subfolder in front of the file";
             this._SubFoldersBeforeFilesBox.UseVisualStyleBackColor = true;
             // 
             // _AutoBookmarkTitleBox
             // 
-            this._AutoBookmarkTitleBox.AutoSize = true;
-            this._AutoBookmarkTitleBox.Location = new System.Drawing.Point(16, 17);
+            resources.ApplyResources(this._AutoBookmarkTitleBox, "_AutoBookmarkTitleBox");
             this._AutoBookmarkTitleBox.Name = "_AutoBookmarkTitleBox";
-            this._AutoBookmarkTitleBox.Size = new System.Drawing.Size(386, 17);
-            this._AutoBookmarkTitleBox.TabIndex = 0;
-            this._AutoBookmarkTitleBox.Text = "Automatically generate bookmark text based on file name when adding items";
             this._AutoBookmarkTitleBox.UseVisualStyleBackColor = true;
             // 
             // _IgnoreLeadingNumbersBox
             // 
-            this._IgnoreLeadingNumbersBox.AutoSize = true;
-            this._IgnoreLeadingNumbersBox.Location = new System.Drawing.Point(39, 41);
+            resources.ApplyResources(this._IgnoreLeadingNumbersBox, "_IgnoreLeadingNumbersBox");
             this._IgnoreLeadingNumbersBox.Name = "_IgnoreLeadingNumbersBox";
-            this._IgnoreLeadingNumbersBox.Size = new System.Drawing.Size(216, 17);
-            this._IgnoreLeadingNumbersBox.TabIndex = 1;
-            this._IgnoreLeadingNumbersBox.Text = "Remove leading numbers from filenames";
             this._IgnoreLeadingNumbersBox.UseVisualStyleBackColor = true;
             // 
             // _RemoveOrphanBoomarksBox
             // 
-            this._RemoveOrphanBoomarksBox.AutoSize = true;
-            this._RemoveOrphanBoomarksBox.Location = new System.Drawing.Point(39, 182);
+            resources.ApplyResources(this._RemoveOrphanBoomarksBox, "_RemoveOrphanBoomarksBox");
             this._RemoveOrphanBoomarksBox.Name = "_RemoveOrphanBoomarksBox";
-            this._RemoveOrphanBoomarksBox.Size = new System.Drawing.Size(229, 17);
-            this._RemoveOrphanBoomarksBox.TabIndex = 6;
-            this._RemoveOrphanBoomarksBox.Text = "Remove bookmarks linked to invalid pages";
             this._RemoveOrphanBoomarksBox.UseVisualStyleBackColor = true;
             // 
             // _KeepSourcePdfBookmarkBox
             // 
-            this._KeepSourcePdfBookmarkBox.AutoSize = true;
-            this._KeepSourcePdfBookmarkBox.Location = new System.Drawing.Point(16, 158);
+            resources.ApplyResources(this._KeepSourcePdfBookmarkBox, "_KeepSourcePdfBookmarkBox");
             this._KeepSourcePdfBookmarkBox.Name = "_KeepSourcePdfBookmarkBox";
-            this._KeepSourcePdfBookmarkBox.Size = new System.Drawing.Size(215, 17);
-            this._KeepSourcePdfBookmarkBox.TabIndex = 5;
-            this._KeepSourcePdfBookmarkBox.Text = "Keep source PDF document bookmarks";
             this._KeepSourcePdfBookmarkBox.UseVisualStyleBackColor = true;
             // 
             // _LayoutPage
@@ -204,76 +168,50 @@
             this._LayoutPage.Controls.Add(this._LayoutGroupBox);
             this._LayoutPage.Controls.Add(this._MarginGroupBox);
             this._LayoutPage.Controls.Add(this._PdfGroupBox);
-            this._LayoutPage.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this._LayoutPage, "_LayoutPage");
             this._LayoutPage.Name = "_LayoutPage";
-            this._LayoutPage.Padding = new System.Windows.Forms.Padding(3);
-            this._LayoutPage.Size = new System.Drawing.Size(522, 320);
-            this._LayoutPage.TabIndex = 0;
-            this._LayoutPage.Text = "Page Layout";
             this._LayoutPage.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this._RecompressImageBox);
             this.groupBox2.Controls.Add(this._AutoMaskBWImageBox);
-            this.groupBox2.Location = new System.Drawing.Point(237, 151);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(254, 76);
-            this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Image";
             // 
             // _RecompressImageBox
             // 
-            this._RecompressImageBox.AutoSize = true;
-            this._RecompressImageBox.Location = new System.Drawing.Point(7, 47);
+            resources.ApplyResources(this._RecompressImageBox, "_RecompressImageBox");
             this._RecompressImageBox.Name = "_RecompressImageBox";
-            this._RecompressImageBox.Size = new System.Drawing.Size(240, 17);
-            this._RecompressImageBox.TabIndex = 2;
-            this._RecompressImageBox.Text = "Optimize compressed black and white images";
             this._RecompressImageBox.UseVisualStyleBackColor = true;
             // 
             // _AutoMaskBWImageBox
             // 
-            this._AutoMaskBWImageBox.AutoSize = true;
-            this._AutoMaskBWImageBox.Location = new System.Drawing.Point(7, 23);
+            resources.ApplyResources(this._AutoMaskBWImageBox, "_AutoMaskBWImageBox");
             this._AutoMaskBWImageBox.Name = "_AutoMaskBWImageBox";
-            this._AutoMaskBWImageBox.Size = new System.Drawing.Size(228, 17);
-            this._AutoMaskBWImageBox.TabIndex = 1;
-            this._AutoMaskBWImageBox.Text = "Black and white image is set to transparent";
             this._AutoMaskBWImageBox.UseVisualStyleBackColor = true;
             // 
             // _ImageGroupBox
             // 
             this._ImageGroupBox.Controls.Add(this._AutoScaleDownBox);
             this._ImageGroupBox.Controls.Add(this._AutoScaleUpBox);
-            this._ImageGroupBox.Location = new System.Drawing.Point(237, 6);
+            resources.ApplyResources(this._ImageGroupBox, "_ImageGroupBox");
             this._ImageGroupBox.Name = "_ImageGroupBox";
-            this._ImageGroupBox.Size = new System.Drawing.Size(208, 52);
-            this._ImageGroupBox.TabIndex = 7;
             this._ImageGroupBox.TabStop = false;
-            this._ImageGroupBox.Text = "Scale original content to fit page";
             // 
             // _AutoScaleDownBox
             // 
-            this._AutoScaleDownBox.AutoSize = true;
+            resources.ApplyResources(this._AutoScaleDownBox, "_AutoScaleDownBox");
             this._AutoScaleDownBox.Checked = true;
             this._AutoScaleDownBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this._AutoScaleDownBox.Location = new System.Drawing.Point(7, 22);
             this._AutoScaleDownBox.Name = "_AutoScaleDownBox";
-            this._AutoScaleDownBox.Size = new System.Drawing.Size(127, 17);
-            this._AutoScaleDownBox.TabIndex = 0;
-            this._AutoScaleDownBox.Text = "Lossless Scale Down";
             this._AutoScaleDownBox.UseVisualStyleBackColor = true;
             // 
             // _AutoScaleUpBox
             // 
-            this._AutoScaleUpBox.AutoSize = true;
-            this._AutoScaleUpBox.Location = new System.Drawing.Point(94, 22);
+            resources.ApplyResources(this._AutoScaleUpBox, "_AutoScaleUpBox");
             this._AutoScaleUpBox.Name = "_AutoScaleUpBox";
-            this._AutoScaleUpBox.Size = new System.Drawing.Size(113, 17);
-            this._AutoScaleUpBox.TabIndex = 1;
-            this._AutoScaleUpBox.Text = "Lossless Scale Up";
             this._AutoScaleUpBox.UseVisualStyleBackColor = true;
             // 
             // _LayoutGroupBox
@@ -291,45 +229,34 @@
             this._LayoutGroupBox.Controls.Add(this._AutoRotateBox);
             this._LayoutGroupBox.Controls.Add(this.label5);
             this._LayoutGroupBox.Controls.Add(this.label4);
-            this._LayoutGroupBox.Location = new System.Drawing.Point(6, 6);
+            resources.ApplyResources(this._LayoutGroupBox, "_LayoutGroupBox");
             this._LayoutGroupBox.Name = "_LayoutGroupBox";
-            this._LayoutGroupBox.Size = new System.Drawing.Size(225, 185);
-            this._LayoutGroupBox.TabIndex = 5;
             this._LayoutGroupBox.TabStop = false;
-            this._LayoutGroupBox.Text = "Default page layout and size (unit: cm)";
             // 
             // _RotationBox
             // 
             this._RotationBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._RotationBox.FormattingEnabled = true;
             this._RotationBox.Items.AddRange(new object[] {
-            "Rotate 90 degrees clockwise",
-            "Turn 90 degrees counterclockwise"});
-            this._RotationBox.Location = new System.Drawing.Point(103, 152);
+            resources.GetString("_RotationBox.Items"),
+            resources.GetString("_RotationBox.Items1")});
+            resources.ApplyResources(this._RotationBox, "_RotationBox");
             this._RotationBox.Name = "_RotationBox";
-            this._RotationBox.Size = new System.Drawing.Size(112, 21);
-            this._RotationBox.TabIndex = 11;
             // 
             // _SourceOrientationBox
             // 
             this._SourceOrientationBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._SourceOrientationBox.FormattingEnabled = true;
             this._SourceOrientationBox.Items.AddRange(new object[] {
-            "Horizontal page",
-            "Portrait page"});
-            this._SourceOrientationBox.Location = new System.Drawing.Point(20, 152);
+            resources.GetString("_SourceOrientationBox.Items"),
+            resources.GetString("_SourceOrientationBox.Items1")});
+            resources.ApplyResources(this._SourceOrientationBox, "_SourceOrientationBox");
             this._SourceOrientationBox.Name = "_SourceOrientationBox";
-            this._SourceOrientationBox.Size = new System.Drawing.Size(77, 21);
-            this._SourceOrientationBox.TabIndex = 11;
             // 
             // _UnifyOrientationBox
             // 
-            this._UnifyOrientationBox.AutoSize = true;
-            this._UnifyOrientationBox.Location = new System.Drawing.Point(8, 128);
+            resources.ApplyResources(this._UnifyOrientationBox, "_UnifyOrientationBox");
             this._UnifyOrientationBox.Name = "_UnifyOrientationBox";
-            this._UnifyOrientationBox.Size = new System.Drawing.Size(203, 17);
-            this._UnifyOrientationBox.TabIndex = 10;
-            this._UnifyOrientationBox.Text = "Modify the cross direction of all pages";
             this._UnifyOrientationBox.UseVisualStyleBackColor = true;
             // 
             // _HeightBox
@@ -340,16 +267,13 @@
             0,
             0,
             131072});
-            this._HeightBox.Location = new System.Drawing.Point(154, 49);
+            resources.ApplyResources(this._HeightBox, "_HeightBox");
             this._HeightBox.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
             this._HeightBox.Name = "_HeightBox";
-            this._HeightBox.Size = new System.Drawing.Size(61, 20);
-            this._HeightBox.TabIndex = 5;
-            this._HeightBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // _WidthBox
             // 
@@ -359,93 +283,64 @@
             0,
             0,
             131072});
-            this._WidthBox.Location = new System.Drawing.Point(53, 48);
+            resources.ApplyResources(this._WidthBox, "_WidthBox");
             this._WidthBox.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
             this._WidthBox.Name = "_WidthBox";
-            this._WidthBox.Size = new System.Drawing.Size(61, 20);
-            this._WidthBox.TabIndex = 3;
-            this._WidthBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // _ImageVAlignBox
             // 
             this._ImageVAlignBox.DisplayMember = "Key";
             this._ImageVAlignBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._ImageVAlignBox.Location = new System.Drawing.Point(139, 101);
+            resources.ApplyResources(this._ImageVAlignBox, "_ImageVAlignBox");
             this._ImageVAlignBox.Name = "_ImageVAlignBox";
-            this._ImageVAlignBox.Size = new System.Drawing.Size(76, 21);
-            this._ImageVAlignBox.TabIndex = 9;
             this._ImageVAlignBox.ValueMember = "Value";
             // 
             // _ImageHAlignBox
             // 
             this._ImageHAlignBox.DisplayMember = "Key";
             this._ImageHAlignBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._ImageHAlignBox.Location = new System.Drawing.Point(53, 101);
+            resources.ApplyResources(this._ImageHAlignBox, "_ImageHAlignBox");
             this._ImageHAlignBox.Name = "_ImageHAlignBox";
-            this._ImageHAlignBox.Size = new System.Drawing.Size(76, 21);
-            this._ImageHAlignBox.TabIndex = 8;
             this._ImageHAlignBox.ValueMember = "Value";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 25);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Size: ";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 104);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Location: ";
             // 
             // _PageSizeBox
             // 
             this._PageSizeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._PageSizeBox.Location = new System.Drawing.Point(53, 20);
+            resources.ApplyResources(this._PageSizeBox, "_PageSizeBox");
             this._PageSizeBox.Name = "_PageSizeBox";
-            this._PageSizeBox.Size = new System.Drawing.Size(162, 21);
-            this._PageSizeBox.TabIndex = 1;
             this._PageSizeBox.SelectedIndexChanged += new System.EventHandler(this._PageSizeBox_SelectedIndexChanged);
             // 
             // _AutoRotateBox
             // 
-            this._AutoRotateBox.AutoSize = true;
+            resources.ApplyResources(this._AutoRotateBox, "_AutoRotateBox");
             this._AutoRotateBox.Checked = true;
             this._AutoRotateBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this._AutoRotateBox.Location = new System.Drawing.Point(20, 78);
             this._AutoRotateBox.Name = "_AutoRotateBox";
-            this._AutoRotateBox.Size = new System.Drawing.Size(338, 17);
-            this._AutoRotateBox.TabIndex = 6;
-            this._AutoRotateBox.Text = "Rotate the page to fit the original horizontal and vertical orientation";
             this._AutoRotateBox.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(120, 51);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "High:";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 51);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Width: ";
             // 
             // _MarginGroupBox
             // 
@@ -458,23 +353,16 @@
             this._MarginGroupBox.Controls.Add(this.label3);
             this._MarginGroupBox.Controls.Add(this.label6);
             this._MarginGroupBox.Controls.Add(this.label1);
-            this._MarginGroupBox.Location = new System.Drawing.Point(6, 198);
+            resources.ApplyResources(this._MarginGroupBox, "_MarginGroupBox");
             this._MarginGroupBox.Name = "_MarginGroupBox";
-            this._MarginGroupBox.Size = new System.Drawing.Size(365, 102);
-            this._MarginGroupBox.TabIndex = 6;
             this._MarginGroupBox.TabStop = false;
-            this._MarginGroupBox.Text = "Margin (unit: cm)";
             // 
             // _SyncMarginsBox
             // 
-            this._SyncMarginsBox.AutoSize = true;
+            resources.ApplyResources(this._SyncMarginsBox, "_SyncMarginsBox");
             this._SyncMarginsBox.Checked = true;
             this._SyncMarginsBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this._SyncMarginsBox.Location = new System.Drawing.Point(53, 80);
             this._SyncMarginsBox.Name = "_SyncMarginsBox";
-            this._SyncMarginsBox.Size = new System.Drawing.Size(264, 17);
-            this._SyncMarginsBox.TabIndex = 9;
-            this._SyncMarginsBox.Text = "Synchronously adjust the margins on the four sides";
             this._SyncMarginsBox.UseVisualStyleBackColor = true;
             // 
             // _RightMarginBox
@@ -485,16 +373,13 @@
             0,
             0,
             131072});
-            this._RightMarginBox.Location = new System.Drawing.Point(154, 51);
+            resources.ApplyResources(this._RightMarginBox, "_RightMarginBox");
             this._RightMarginBox.Maximum = new decimal(new int[] {
             99,
             0,
             0,
             0});
             this._RightMarginBox.Name = "_RightMarginBox";
-            this._RightMarginBox.Size = new System.Drawing.Size(61, 20);
-            this._RightMarginBox.TabIndex = 8;
-            this._RightMarginBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this._RightMarginBox.ValueChanged += new System.EventHandler(this.MarginBox_ValueChanged);
             // 
             // _LeftMarginBox
@@ -505,16 +390,13 @@
             0,
             0,
             131072});
-            this._LeftMarginBox.Location = new System.Drawing.Point(53, 51);
+            resources.ApplyResources(this._LeftMarginBox, "_LeftMarginBox");
             this._LeftMarginBox.Maximum = new decimal(new int[] {
             99,
             0,
             0,
             0});
             this._LeftMarginBox.Name = "_LeftMarginBox";
-            this._LeftMarginBox.Size = new System.Drawing.Size(61, 20);
-            this._LeftMarginBox.TabIndex = 6;
-            this._LeftMarginBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this._LeftMarginBox.ValueChanged += new System.EventHandler(this.MarginBox_ValueChanged);
             // 
             // _BottomMarginBox
@@ -525,16 +407,13 @@
             0,
             0,
             131072});
-            this._BottomMarginBox.Location = new System.Drawing.Point(154, 22);
+            resources.ApplyResources(this._BottomMarginBox, "_BottomMarginBox");
             this._BottomMarginBox.Maximum = new decimal(new int[] {
             99,
             0,
             0,
             0});
             this._BottomMarginBox.Name = "_BottomMarginBox";
-            this._BottomMarginBox.Size = new System.Drawing.Size(61, 20);
-            this._BottomMarginBox.TabIndex = 4;
-            this._BottomMarginBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this._BottomMarginBox.ValueChanged += new System.EventHandler(this.MarginBox_ValueChanged);
             // 
             // _TopMarginBox
@@ -545,170 +424,109 @@
             0,
             0,
             131072});
-            this._TopMarginBox.Location = new System.Drawing.Point(53, 22);
+            resources.ApplyResources(this._TopMarginBox, "_TopMarginBox");
             this._TopMarginBox.Maximum = new decimal(new int[] {
             99,
             0,
             0,
             0});
             this._TopMarginBox.Name = "_TopMarginBox";
-            this._TopMarginBox.Size = new System.Drawing.Size(61, 20);
-            this._TopMarginBox.TabIndex = 2;
-            this._TopMarginBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this._TopMarginBox.ValueChanged += new System.EventHandler(this.MarginBox_ValueChanged);
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(119, 54);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 13);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Right: ";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(119, 24);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Bottom: ";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 54);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Left: ";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 25);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Top: ";
             // 
             // _PdfGroupBox
             // 
             this._PdfGroupBox.Controls.Add(this._ResizePdfPagesBox);
             this._PdfGroupBox.Controls.Add(this._ScalePdfPagesBox);
-            this._PdfGroupBox.Location = new System.Drawing.Point(237, 65);
+            resources.ApplyResources(this._PdfGroupBox, "_PdfGroupBox");
             this._PdfGroupBox.Name = "_PdfGroupBox";
-            this._PdfGroupBox.Size = new System.Drawing.Size(208, 79);
-            this._PdfGroupBox.TabIndex = 8;
             this._PdfGroupBox.TabStop = false;
-            this._PdfGroupBox.Text = "Source PDF page size";
             // 
             // _ResizePdfPagesBox
             // 
-            this._ResizePdfPagesBox.AutoSize = true;
-            this._ResizePdfPagesBox.Location = new System.Drawing.Point(7, 22);
+            resources.ApplyResources(this._ResizePdfPagesBox, "_ResizePdfPagesBox");
             this._ResizePdfPagesBox.Name = "_ResizePdfPagesBox";
-            this._ResizePdfPagesBox.Size = new System.Drawing.Size(114, 17);
-            this._ResizePdfPagesBox.TabIndex = 1;
-            this._ResizePdfPagesBox.Text = "Adjust to page size";
             this._ResizePdfPagesBox.UseVisualStyleBackColor = true;
             // 
             // _ScalePdfPagesBox
             // 
-            this._ScalePdfPagesBox.AutoSize = true;
-            this._ScalePdfPagesBox.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
-            this._ScalePdfPagesBox.Location = new System.Drawing.Point(7, 46);
+            resources.ApplyResources(this._ScalePdfPagesBox, "_ScalePdfPagesBox");
             this._ScalePdfPagesBox.Name = "_ScalePdfPagesBox";
-            this._ScalePdfPagesBox.Size = new System.Drawing.Size(171, 17);
-            this._ScalePdfPagesBox.TabIndex = 2;
             this._ScalePdfPagesBox.TabStop = true;
-            this._ScalePdfPagesBox.Text = "Zoom content adaptation page";
             this._ScalePdfPagesBox.UseVisualStyleBackColor = true;
             // 
             // _ViewerSettingsPage
             // 
             this._ViewerSettingsPage.Controls.Add(this._ViewerSettingsEditor);
-            this._ViewerSettingsPage.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this._ViewerSettingsPage, "_ViewerSettingsPage");
             this._ViewerSettingsPage.Name = "_ViewerSettingsPage";
-            this._ViewerSettingsPage.Padding = new System.Windows.Forms.Padding(3);
-            this._ViewerSettingsPage.Size = new System.Drawing.Size(522, 320);
-            this._ViewerSettingsPage.TabIndex = 2;
-            this._ViewerSettingsPage.Text = "Reading method";
             this._ViewerSettingsPage.UseVisualStyleBackColor = true;
             // 
             // _ViewerSettingsEditor
             // 
-            this._ViewerSettingsEditor.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this._ViewerSettingsEditor, "_ViewerSettingsEditor");
             this._ViewerSettingsEditor.Name = "_ViewerSettingsEditor";
-            this._ViewerSettingsEditor.Size = new System.Drawing.Size(438, 302);
-            this._ViewerSettingsEditor.TabIndex = 1;
             // 
             // _DocumentInfoPage
             // 
             this._DocumentInfoPage.Controls.Add(this._FullCompressionBox);
             this._DocumentInfoPage.Controls.Add(this._DocumentInfoEditor);
-            this._DocumentInfoPage.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this._DocumentInfoPage, "_DocumentInfoPage");
             this._DocumentInfoPage.Name = "_DocumentInfoPage";
-            this._DocumentInfoPage.Padding = new System.Windows.Forms.Padding(3);
-            this._DocumentInfoPage.Size = new System.Drawing.Size(522, 320);
-            this._DocumentInfoPage.TabIndex = 3;
-            this._DocumentInfoPage.Text = "Document miscellaneous";
             this._DocumentInfoPage.UseVisualStyleBackColor = true;
             // 
             // _FullCompressionBox
             // 
-            this._FullCompressionBox.AutoSize = true;
-            this._FullCompressionBox.Location = new System.Drawing.Point(15, 282);
+            resources.ApplyResources(this._FullCompressionBox, "_FullCompressionBox");
             this._FullCompressionBox.Name = "_FullCompressionBox";
-            this._FullCompressionBox.Size = new System.Drawing.Size(209, 17);
-            this._FullCompressionBox.TabIndex = 2;
-            this._FullCompressionBox.Text = "Compressed index table and bookmark";
             this._FullCompressionBox.UseVisualStyleBackColor = true;
             // 
             // _DocumentInfoEditor
             // 
-            this._DocumentInfoEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._DocumentInfoEditor.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this._DocumentInfoEditor, "_DocumentInfoEditor");
             this._DocumentInfoEditor.Name = "_DocumentInfoEditor";
-            this._DocumentInfoEditor.Size = new System.Drawing.Size(521, 318);
-            this._DocumentInfoEditor.TabIndex = 1;
             // 
             // _PageLabelsPage
             // 
             this._PageLabelsPage.Controls.Add(this._PageLabelEditor);
-            this._PageLabelsPage.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this._PageLabelsPage, "_PageLabelsPage");
             this._PageLabelsPage.Name = "_PageLabelsPage";
-            this._PageLabelsPage.Padding = new System.Windows.Forms.Padding(3);
-            this._PageLabelsPage.Size = new System.Drawing.Size(522, 320);
-            this._PageLabelsPage.TabIndex = 4;
-            this._PageLabelsPage.Text = "Table size label";
             this._PageLabelsPage.UseVisualStyleBackColor = true;
             // 
             // _PageLabelEditor
             // 
-            this._PageLabelEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._PageLabelEditor, "_PageLabelEditor");
             this._PageLabelEditor.Labels = null;
-            this._PageLabelEditor.Location = new System.Drawing.Point(-2, 0);
             this._PageLabelEditor.Name = "_PageLabelEditor";
-            this._PageLabelEditor.Size = new System.Drawing.Size(521, 306);
-            this._PageLabelEditor.TabIndex = 1;
             // 
             // MergerOptionForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(556, 372);
             this.Controls.Add(this._MainTab);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MergerOptionForm";
             this.ShowInTaskbar = false;
-            this.Text = "Merge PDF Document Options";
             this._MainTab.ResumeLayout(false);
             this._FilePage.ResumeLayout(false);
             this._FilePage.PerformLayout();

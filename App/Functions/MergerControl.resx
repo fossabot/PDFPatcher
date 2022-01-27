@@ -123,71 +123,309 @@
   <metadata name="_FileMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>269, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_SortByNaturalNumberItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 26</value>
+  </data>
+  <data name="_SortByNaturalNumberItem.Text" xml:space="preserve">
+    <value>Sort by value and alphabetical order (&amp;S)</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_SortByNaturalNumberItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_SortByAlphaItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 26</value>
+  </data>
+  <data name="_SortByAlphaItem.Text" xml:space="preserve">
+    <value>Sort by alphabetical order (&amp;Z)</value>
+  </data>
+  <data name="_SortByAlphaItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <metadata name="toolStripSeparator4.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>342, 6</value>
+  </data>
+  <data name="toolStripSeparator4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <metadata name="_LoadList.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_LoadList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 26</value>
+  </data>
+  <data name="_LoadList.Text" xml:space="preserve">
+    <value>Load file list (&amp;J)...</value>
+  </data>
+  <data name="_LoadList.ToolTipText" xml:space="preserve">
+    <value>Load the list of files saved, for continuing editing</value>
+  </data>
   <metadata name="_SaveList.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_SaveList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 26</value>
+  </data>
+  <data name="_SaveList.Text" xml:space="preserve">
+    <value>Save a list of files (&amp;B)...</value>
+  </data>
+  <data name="_SaveList.ToolTipText" xml:space="preserve">
+    <value>Save the file list to the file for later processing</value>
+  </data>
+  <data name="_FileMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 114</value>
+  </data>
+  <data name="&gt;&gt;_FileMenu.Name" xml:space="preserve">
+    <value>_FileMenu</value>
+  </data>
+  <data name="&gt;&gt;_FileMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_File.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_File.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 28</value>
+  </data>
+  <data name="_File.Text" xml:space="preserve">
+    <value>File (&amp;J)</value>
+  </data>
   <metadata name="toolStripSeparator1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 31</value>
+  </data>
   <metadata name="toolStripSeparator2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 31</value>
+  </data>
   <metadata name="_EditItemProperty.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_EditItemProperty.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_EditItemProperty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 28</value>
+  </data>
+  <data name="_EditItemProperty.Text" xml:space="preserve">
+    <value>Edit the processing of the source file</value>
+  </data>
   <metadata name="_Refresh.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_Refresh.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_Refresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 28</value>
+  </data>
+  <data name="_Refresh.Text" xml:space="preserve">
+    <value>toolStripButton1</value>
+  </data>
+  <data name="_Refresh.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <metadata name="_SetPdfOptions.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_SetPdfOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 26</value>
+  </data>
+  <data name="_SetPdfOptions.Text" xml:space="preserve">
+    <value>Set the source &amp;PDF file processing method...</value>
+  </data>
+  <data name="_SetPdfOptions.ToolTipText" xml:space="preserve">
+    <value>Change the page number of PDF files</value>
+  </data>
   <metadata name="_SetCroppingOptions.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_SetCroppingOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 26</value>
+  </data>
+  <data name="_SetCroppingOptions.Text" xml:space="preserve">
+    <value>Set Crop Image Options (&amp;C)...</value>
+  </data>
   <metadata name="_Copy.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_Copy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 26</value>
+  </data>
+  <data name="_Copy.Text" xml:space="preserve">
+    <value>Copy list content (&amp;F)</value>
+  </data>
   <metadata name="_RefreshFolder.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_RefreshFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 26</value>
+  </data>
+  <data name="_RefreshFolder.Text" xml:space="preserve">
+    <value>Refresh folder (&amp;W)</value>
+  </data>
+  <data name="_RefreshFolder.ToolTipText" xml:space="preserve">
+    <value>Refresh the contents of the folder</value>
+  </data>
   <metadata name="_ClearBookmarkTitle.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_ClearBookmarkTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 26</value>
+  </data>
+  <data name="_ClearBookmarkTitle.Text" xml:space="preserve">
+    <value>Clear book sign text</value>
+  </data>
+  <data name="_ClearBookmarkTitle.ToolTipText" xml:space="preserve">
+    <value>Clear selection project corresponding to bookmark text and bookmark settings</value>
+  </data>
   <metadata name="_SetBookmarkTitle.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_SetBookmarkTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 26</value>
+  </data>
+  <data name="_SetBookmarkTitle.Text" xml:space="preserve">
+    <value>Set the bookmark text as the source file name</value>
+  </data>
+  <data name="_SetBookmarkTitle.ToolTipText" xml:space="preserve">
+    <value>Set the bookmark text corresponding to the selected item to the file name</value>
+  </data>
   <metadata name="_PasteBookmarkText.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_PasteBookmarkText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 26</value>
+  </data>
+  <data name="_PasteBookmarkText.Text" xml:space="preserve">
+    <value>Paste book sign text (Z)</value>
+  </data>
   <metadata name="_CopyBookmarkText.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_CopyBookmarkText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 26</value>
+  </data>
+  <data name="_CopyBookmarkText.Text" xml:space="preserve">
+    <value>Copy book signature (&amp;S)</value>
+  </data>
   <metadata name="_CopyFileName.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_CopyFileName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 26</value>
+  </data>
+  <data name="_CopyFileName.Text" xml:space="preserve">
+    <value>Copy file name (M)</value>
+  </data>
   <metadata name="_Delete.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_Delete.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_Delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 28</value>
+  </data>
+  <data name="_Delete.Text" xml:space="preserve">
+    <value>Delete the selected item</value>
+  </data>
   <metadata name="_MainToolbar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>508, 17</value>
   </metadata>
+  <data name="_MainToolbar.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <metadata name="_RecentFileMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>634, 17</value>
   </metadata>
+  <data name="_RecentFileMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 4</value>
+  </data>
+  <data name="&gt;&gt;_RecentFileMenu.Name" xml:space="preserve">
+    <value>_RecentFileMenu</value>
+  </data>
+  <data name="&gt;&gt;_RecentFileMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_AddFilesButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_AddFilesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 28</value>
+  </data>
+  <data name="_AddFilesButton.Text" xml:space="preserve">
+    <value>Add files (&amp;T)</value>
+  </data>
+  <data name="_AddFilesButton.ToolTipText" xml:space="preserve">
+    <value>Add files that need merge to process lists</value>
+  </data>
   <metadata name="_RecentFolderMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>149, 55</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_RecentFolderMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 4</value>
+  </data>
+  <data name="&gt;&gt;_RecentFolderMenu.Name" xml:space="preserve">
+    <value>_RecentFolderMenu</value>
+  </data>
+  <data name="&gt;&gt;_RecentFolderMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_AddFolderButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_AddFolderButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 28</value>
+  </data>
+  <data name="_AddFolderButton.Text" xml:space="preserve">
+    <value>Add a folder</value>
+  </data>
+  <data name="_AddFolderButton.ToolTipText" xml:space="preserve">
+    <value>Add a folder and its files therebetween to the list of processes</value>
+  </data>
+  <data name="_InsertEmptyPage.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_InsertEmptyPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 28</value>
+  </data>
+  <data name="_InsertEmptyPage.Text" xml:space="preserve">
+    <value>Insert blank page</value>
+  </data>
+  <data name="_BoldStyleButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_BoldStyleButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 28</value>
+  </data>
+  <data name="_BoldStyleButton.Text" xml:space="preserve">
+    <value>Switch bookmark text bold pattern</value>
+  </data>
+  <data name="_ItalicStyleButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_ItalicStyleButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 28</value>
+  </data>
+  <data name="_ItalicStyleButton.Text" xml:space="preserve">
+    <value>Switch bookmark text</value>
+  </data>
+  <data name="_BookmarkColorButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="_BookmarkColorButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALRSURBVDhPzZJrSJNhFMefd+9EISiFMogICaL6IPkhQcWK
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALRSURBVDhPzZJrSJNhFMefd+9EISiFMogICaL6IPkhQcWK
         nM3USs0MLxO3hSFIoYRZar6StVfdNHUzxVBWppWXzdm87L4xL02GzAuFdFGbo9SpaWkmymnvXEnQxz70
         gz+Hczj/8xye50H/HB2B6BqO2zEDl5ak59Jz9Gy8RM/B+XoOPd+h6wYuzlSw0A5X+zbNcQjXcOkntWw6
         MZJ8pHs2JgamIyPBRmSu2zqI9Ql5+ldTz2nok58ANbG3VcVxP+iyIqTkon3qFPrNV7cONdjaM95NMJnw
@@ -202,25 +440,530 @@
         XijWR4ZgvWQo1sJjYALyDGIVhaIDrtb/BoR+AhgWoMzludfHAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="_BookmarkColorButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_BookmarkColorButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 23</value>
+  </data>
+  <data name="_BookmarkColorButton.Text" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="_BookmarkColorButton.ToolTipText" xml:space="preserve">
+    <value>Set the color of the bookmark text</value>
+  </data>
+  <data name="_BookmarkTextMenu.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_BookmarkTextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 28</value>
+  </data>
+  <data name="_BookmarkTextMenu.Text" xml:space="preserve">
+    <value>Set bookmark text for selecting items</value>
+  </data>
+  <data name="_MainToolbar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="_MainToolbar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>809, 31</value>
+  </data>
+  <data name="_MainToolbar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_MainToolbar.Name" xml:space="preserve">
+    <value>_MainToolbar</value>
+  </data>
+  <data name="&gt;&gt;_MainToolbar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_MainToolbar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_MainToolbar.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_NameColumn.Text" xml:space="preserve">
+    <value>Source file name</value>
+  </data>
+  <data name="_NameColumn.Width" type="System.Int32, mscorlib">
+    <value>178</value>
+  </data>
+  <data name="_BookmarkColumn.Text" xml:space="preserve">
+    <value>Bookmark text</value>
+  </data>
+  <data name="_BookmarkColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="_PageRangeColumn.Text" xml:space="preserve">
+    <value>Page range</value>
+  </data>
+  <data name="_FolderColumn.Text" xml:space="preserve">
+    <value>folder</value>
+  </data>
+  <data name="_FolderColumn.Width" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_ItemList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <metadata name="_ItemListMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>376, 17</value>
   </metadata>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 6</value>
+  </data>
+  <data name="_ItemListMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>371, 192</value>
+  </data>
+  <data name="&gt;&gt;_ItemListMenu.Name" xml:space="preserve">
+    <value>_ItemListMenu</value>
+  </data>
+  <data name="&gt;&gt;_ItemListMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_ItemList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 35</value>
+  </data>
+  <data name="_ItemList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_ItemList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>774, 246</value>
+  </data>
   <metadata name="_FileTypeList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 55</value>
   </metadata>
+  <data name="_FileTypeList.ImageSize" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="_ItemList.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_ItemList.Name" xml:space="preserve">
+    <value>_ItemList</value>
+  </data>
+  <data name="&gt;&gt;_ItemList.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.TreeListView, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_ItemList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_ItemList.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <metadata name="_OpenImageBox.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="_OpenImageBox.Filter" xml:space="preserve">
     <value>Supported files (*.pdf,*.jpg,*.png,*.gif,*.bmp,*.tif,*.jp2)|*.pdf;*.jpg;*.jpeg;*.png;* .gif;*.bmp;*.tif;*.tiff;*.jp2;*.j2k|PDF file(*.pdf)|*.pdf|Image file(,*.jpg,*.jpeg,*.png ,*.gif,*.bmp,*.tif)|*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.tif;*.tiff;;*.jp2;*.j2k</value>
   </data>
+  <data name="_OpenImageBox.Title" xml:space="preserve">
+    <value>Select the image file or PDF file that needs to be imported.</value>
+  </data>
   <metadata name="_OpenPdfBox.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>149, 17</value>
   </metadata>
+  <data name="_OpenPdfBox.Filter" xml:space="preserve">
+    <value>PDF file（*.pdf）|*.pdf</value>
+  </data>
+  <data name="_OpenPdfBox.Title" xml:space="preserve">
+    <value>Select the PDF file that needs to be processed</value>
+  </data>
   <metadata name="_AddDocumentWorker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>778, 17</value>
+  </metadata>
+  <data name="_BookmarkControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="_BookmarkControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 290</value>
+  </data>
+  <data name="_BookmarkControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="_BookmarkControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>779, 30</value>
+  </data>
+  <data name="_BookmarkControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_BookmarkControl.Name" xml:space="preserve">
+    <value>_BookmarkControl</value>
+  </data>
+  <data name="&gt;&gt;_BookmarkControl.Type" xml:space="preserve">
+    <value>PDFPatcher.BookmarkControl, PDFPatcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_BookmarkControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_BookmarkControl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="_TargetPdfFile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="_TargetPdfFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 331</value>
+  </data>
+  <data name="_TargetPdfFile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="_TargetPdfFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>779, 32</value>
+  </data>
+  <data name="_TargetPdfFile.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_TargetPdfFile.Name" xml:space="preserve">
+    <value>_TargetPdfFile</value>
+  </data>
+  <data name="&gt;&gt;_TargetPdfFile.Type" xml:space="preserve">
+    <value>PDFPatcher.TargetFileControl, PDFPatcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_TargetPdfFile.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_TargetPdfFile.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="_ImportButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="_ImportButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>607, 369</value>
+  </data>
+  <data name="_ImportButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_ImportButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 36</value>
+  </data>
+  <data name="_ImportButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_ImportButton.Text" xml:space="preserve">
+    <value>&amp;Generate a merge file</value>
+  </data>
+  <data name="_ImportButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;_ImportButton.Name" xml:space="preserve">
+    <value>_ImportButton</value>
+  </data>
+  <data name="&gt;&gt;_ImportButton.Type" xml:space="preserve">
+    <value>EnhancedGlassButton.GlassButton, PDFPatcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_ImportButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_ImportButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_IndividualMergerModeBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="_IndividualMergerModeBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_IndividualMergerModeBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 377</value>
+  </data>
+  <data name="_IndividualMergerModeBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_IndividualMergerModeBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>429, 19</value>
+  </data>
+  <data name="_IndividualMergerModeBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_IndividualMergerModeBox.Text" xml:space="preserve">
+    <value>The top-level project combines a separate PDF file</value>
+  </data>
+  <data name="&gt;&gt;_IndividualMergerModeBox.Name" xml:space="preserve">
+    <value>_IndividualMergerModeBox</value>
+  </data>
+  <data name="&gt;&gt;_IndividualMergerModeBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_IndividualMergerModeBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_IndividualMergerModeBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_ConfigButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="_ConfigButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 372</value>
+  </data>
+  <data name="_ConfigButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_ConfigButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 29</value>
+  </data>
+  <data name="_ConfigButton.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="_ConfigButton.Text" xml:space="preserve">
+    <value>Set merged P&amp;DF file option</value>
+  </data>
+  <data name="_ConfigButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;_ConfigButton.Name" xml:space="preserve">
+    <value>_ConfigButton</value>
+  </data>
+  <data name="&gt;&gt;_ConfigButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ConfigButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_ConfigButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>123</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 15</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 9pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>809, 428</value>
+  </data>
+  <data name="&gt;&gt;_File.Name" xml:space="preserve">
+    <value>_File</value>
+  </data>
+  <data name="&gt;&gt;_File.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SortByNaturalNumberItem.Name" xml:space="preserve">
+    <value>_SortByNaturalNumberItem</value>
+  </data>
+  <data name="&gt;&gt;_SortByNaturalNumberItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SortByAlphaItem.Name" xml:space="preserve">
+    <value>_SortByAlphaItem</value>
+  </data>
+  <data name="&gt;&gt;_SortByAlphaItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator4.Name" xml:space="preserve">
+    <value>toolStripSeparator4</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_LoadList.Name" xml:space="preserve">
+    <value>_LoadList</value>
+  </data>
+  <data name="&gt;&gt;_LoadList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SaveList.Name" xml:space="preserve">
+    <value>_SaveList</value>
+  </data>
+  <data name="&gt;&gt;_SaveList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
+    <value>toolStripSeparator2</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_EditItemProperty.Name" xml:space="preserve">
+    <value>_EditItemProperty</value>
+  </data>
+  <data name="&gt;&gt;_EditItemProperty.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Refresh.Name" xml:space="preserve">
+    <value>_Refresh</value>
+  </data>
+  <data name="&gt;&gt;_Refresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SetPdfOptions.Name" xml:space="preserve">
+    <value>_SetPdfOptions</value>
+  </data>
+  <data name="&gt;&gt;_SetPdfOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SetCroppingOptions.Name" xml:space="preserve">
+    <value>_SetCroppingOptions</value>
+  </data>
+  <data name="&gt;&gt;_SetCroppingOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Copy.Name" xml:space="preserve">
+    <value>_Copy</value>
+  </data>
+  <data name="&gt;&gt;_Copy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RefreshFolder.Name" xml:space="preserve">
+    <value>_RefreshFolder</value>
+  </data>
+  <data name="&gt;&gt;_RefreshFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ClearBookmarkTitle.Name" xml:space="preserve">
+    <value>_ClearBookmarkTitle</value>
+  </data>
+  <data name="&gt;&gt;_ClearBookmarkTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SetBookmarkTitle.Name" xml:space="preserve">
+    <value>_SetBookmarkTitle</value>
+  </data>
+  <data name="&gt;&gt;_SetBookmarkTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_PasteBookmarkText.Name" xml:space="preserve">
+    <value>_PasteBookmarkText</value>
+  </data>
+  <data name="&gt;&gt;_PasteBookmarkText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_CopyBookmarkText.Name" xml:space="preserve">
+    <value>_CopyBookmarkText</value>
+  </data>
+  <data name="&gt;&gt;_CopyBookmarkText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_CopyFileName.Name" xml:space="preserve">
+    <value>_CopyFileName</value>
+  </data>
+  <data name="&gt;&gt;_CopyFileName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Delete.Name" xml:space="preserve">
+    <value>_Delete</value>
+  </data>
+  <data name="&gt;&gt;_Delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AddFilesButton.Name" xml:space="preserve">
+    <value>_AddFilesButton</value>
+  </data>
+  <data name="&gt;&gt;_AddFilesButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AddFolderButton.Name" xml:space="preserve">
+    <value>_AddFolderButton</value>
+  </data>
+  <data name="&gt;&gt;_AddFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_InsertEmptyPage.Name" xml:space="preserve">
+    <value>_InsertEmptyPage</value>
+  </data>
+  <data name="&gt;&gt;_InsertEmptyPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_BoldStyleButton.Name" xml:space="preserve">
+    <value>_BoldStyleButton</value>
+  </data>
+  <data name="&gt;&gt;_BoldStyleButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ItalicStyleButton.Name" xml:space="preserve">
+    <value>_ItalicStyleButton</value>
+  </data>
+  <data name="&gt;&gt;_ItalicStyleButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_BookmarkColorButton.Name" xml:space="preserve">
+    <value>_BookmarkColorButton</value>
+  </data>
+  <data name="&gt;&gt;_BookmarkColorButton.Type" xml:space="preserve">
+    <value>ColorPicker.ToolStripColorPicker, ColorPicker, Version=1.0.5860.37912, Culture=neutral, PublicKeyToken=8e7271250c09e1ac</value>
+  </data>
+  <data name="&gt;&gt;_BookmarkTextMenu.Name" xml:space="preserve">
+    <value>_BookmarkTextMenu</value>
+  </data>
+  <data name="&gt;&gt;_BookmarkTextMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_NameColumn.Name" xml:space="preserve">
+    <value>_NameColumn</value>
+  </data>
+  <data name="&gt;&gt;_NameColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_BookmarkColumn.Name" xml:space="preserve">
+    <value>_BookmarkColumn</value>
+  </data>
+  <data name="&gt;&gt;_BookmarkColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_PageRangeColumn.Name" xml:space="preserve">
+    <value>_PageRangeColumn</value>
+  </data>
+  <data name="&gt;&gt;_PageRangeColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_FolderColumn.Name" xml:space="preserve">
+    <value>_FolderColumn</value>
+  </data>
+  <data name="&gt;&gt;_FolderColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
+    <value>toolStripSeparator3</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_FileTypeList.Name" xml:space="preserve">
+    <value>_FileTypeList</value>
+  </data>
+  <data name="&gt;&gt;_FileTypeList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_OpenImageBox.Name" xml:space="preserve">
+    <value>_OpenImageBox</value>
+  </data>
+  <data name="&gt;&gt;_OpenImageBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_OpenPdfBox.Name" xml:space="preserve">
+    <value>_OpenPdfBox</value>
+  </data>
+  <data name="&gt;&gt;_OpenPdfBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AddDocumentWorker.Name" xml:space="preserve">
+    <value>_AddDocumentWorker</value>
+  </data>
+  <data name="&gt;&gt;_AddDocumentWorker.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MergerControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>PDFPatcher.Functions.FunctionControl, PDFPatcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
 </root>

@@ -123,52 +123,7 @@
   <metadata name="_Copy.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="_Delete.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="toolStripSeparator3.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_SelectAllPdfFiles.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_SelectAllImages.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_SelectAllFolders.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_ItemTypeSeparator.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_SelectAll.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_InvertSelect.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_SelectNone.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="_Select.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH/SURBVDhPnZHfS1NhHMbf29F9QXcWBOJFBPZjYQzToqhB
-        UAssvMhk1WIVi5EeXUtK648I+gOii6AfN5uIttbyOFOHiJmNpdWazcZ29sOd7el9DpxDQjfbCw883xc+
-        D8/7fcXFQMDpCgbdzYisuDA0dA1NHrLinKJcr8uhWwW6pus4/rGGzpgOR3QLxyJldEwVcXRSw5GJPA6N
-        53Aw/AftoU2QISvO+v0evV43Ap5kYQSMZnQ8+lU1AoLrRQS+FYwAJZnDwOqmEUCGrDjt892s1GpWg/64
-        htH5DB5+SmMk/gMP1HXcn17DcCwFJZrE4PuvGIisggxZcdLr9ZZ03WowNr+BLTlTkcVFy0/MzVk+NDMD
-        MmRFl8dzq1Cton9sA5eGU3DeTsBx5R0OnH+DfadeYE/3c+w98RKtZ8LyToX98md0Xv0JMmSFw+2+k6tU
-        jABFvnnw9W+EVM3Qs7dJyz999cXyDCBDVnT09fmy5XLDDciQFYd7e+9mSqVtO8jJmeIOTM8dmJ47IENW
-        tPf0+NPFovULDIgtLyO6tAR1ZQVTiQQmFxbwQc7js7MIx+NGABmyYr/Lde+7pm1rkJUzxQamZwPTM4AM
-        WdHqdCprhcJ/GzDAbMCAfxuQISt22e0jabnRVD7fkMiQFbaWlhs72toeNyOyQh6b1E6p3Q1KMsL2FzoD
-        tHKcosAUAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <metadata name="_Copy.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <data name="_Copy.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -183,13 +138,22 @@
         na4AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="_Copy.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Ctrl+C</value>
+  </data>
+  <data name="_Copy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 26</value>
+  </data>
+  <data name="_Copy.Text" xml:space="preserve">
+    <value>Copy Selected Item</value>
+  </data>
   <metadata name="_Delete.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <data name="_Delete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFsSURBVDhPrVG7SgNBFL2QIoVWWmgXdAkiioIRFINmQsR0
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFsSURBVDhPrVG7SgNBFL2QIoVWWmgXdAkiioIRFINmQsR0
         plALtYgYfBQ2KaxEWNDCysbC0srGX4kPMNgoaJFCQURsFBG5zpl7s2TZtdIDh5nzWnYT+jfwWsHn9Wnm
         jYJRKwJkrmO7agm+K3nfkvnsgHF+VXKRh8Br7WCjEdFnedIFfLrnTuiPcjZ4CO5xHY1tYXnMvC+NM5/s
         Cm0BGn6QYax5M9O54HUuY97mR5iPt4V2AO08jNWHRldnYTyXBszL7CDz4ZYQQ1A1MnS0Ho/Homeeimnm
@@ -198,9 +162,24 @@
         EpHvhNfawUYjQa2H/PNe4ppH8T+SBTLXsV21/gqiH0YlVZLkitJ3AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="_Delete.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_Delete.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="_Delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 26</value>
+  </data>
+  <data name="_Delete.Text" xml:space="preserve">
+    <value>Delete Selected Item</value>
+  </data>
   <metadata name="toolStripSeparator3.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 6</value>
+  </data>
   <metadata name="_SelectAllPdfFiles.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -218,6 +197,12 @@
         B1lsZSaf5xQCiUzGKIljFq+KmTrc2XlNNq2EPahWksQsXhUzZWlvd0mBqFpJCtfiVTFTB1tarqt8WXKc
         ohQBKcqBDMqymMWrYqYONDXZ6hobb/wP4t1PEf0B0acbCXs9gqQAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="_SelectAllPdfFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 26</value>
+  </data>
+  <data name="_SelectAllPdfFiles.Text" xml:space="preserve">
+    <value>Check all PDF files</value>
   </data>
   <metadata name="_SelectAllImages.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -237,6 +222,12 @@
         uOWqw8SoGjxsFW81YIfReImi/PDvcE+4sXw7fMU8J1nKK95qwKaODnFje7vnf8TeX3VQ/QQocLSW8bqV
         FAAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="_SelectAllImages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 26</value>
+  </data>
+  <data name="_SelectAllImages.Text" xml:space="preserve">
+    <value>Select All Images</value>
   </data>
   <metadata name="_SelectAllFolders.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -259,9 +250,18 @@
         bCuCcYIAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="_SelectAllFolders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 26</value>
+  </data>
+  <data name="_SelectAllFolders.Text" xml:space="preserve">
+    <value>Select All Folders</value>
+  </data>
   <metadata name="_ItemTypeSeparator.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_ItemTypeSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 6</value>
+  </data>
   <metadata name="_SelectAll.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -279,76 +279,61 @@
         ztTXj1YTsmL+E/8RyAkWl85tVYbA9AAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="_SelectAll.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Ctrl+A</value>
+  </data>
+  <data name="_SelectAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 26</value>
+  </data>
+  <data name="_SelectAll.Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
   <metadata name="_InvertSelect.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_InvertSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 26</value>
+  </data>
+  <data name="_InvertSelect.Text" xml:space="preserve">
+    <value>Invert Selection</value>
+  </data>
   <metadata name="_SelectNone.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_SelectNone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 26</value>
+  </data>
+  <data name="_SelectNone.Text" xml:space="preserve">
+    <value>Cancel Selection</value>
+  </data>
+  <data name="_Select.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAH/SURBVDhPnZHfS1NhHMbf29F9QXcWBOJFBPZjYQzToqhB
+        UAssvMhk1WIVi5EeXUtK648I+gOii6AfN5uIttbyOFOHiJmNpdWazcZ29sOd7el9DpxDQjfbCw883xc+
+        D8/7fcXFQMDpCgbdzYisuDA0dA1NHrLinKJcr8uhWwW6pus4/rGGzpgOR3QLxyJldEwVcXRSw5GJPA6N
+        53Aw/AftoU2QISvO+v0evV43Ap5kYQSMZnQ8+lU1AoLrRQS+FYwAJZnDwOqmEUCGrDjt892s1GpWg/64
+        htH5DB5+SmMk/gMP1HXcn17DcCwFJZrE4PuvGIisggxZcdLr9ZZ03WowNr+BLTlTkcVFy0/MzVk+NDMD
+        MmRFl8dzq1Cton9sA5eGU3DeTsBx5R0OnH+DfadeYE/3c+w98RKtZ8LyToX98md0Xv0JMmSFw+2+k6tU
+        jABFvnnw9W+EVM3Qs7dJyz999cXyDCBDVnT09fmy5XLDDciQFYd7e+9mSqVtO8jJmeIOTM8dmJ47IENW
+        tPf0+NPFovULDIgtLyO6tAR1ZQVTiQQmFxbwQc7js7MIx+NGABmyYr/Lde+7pm1rkJUzxQamZwPTM4AM
+        WdHqdCprhcJ/GzDAbMCAfxuQISt22e0jabnRVD7fkMiQFbaWlhs72toeNyOyQh6b1E6p3Q1KMsL2FzoD
+        tHKcosAUAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="_Select.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_Select.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 24</value>
+  </data>
+  <data name="_Select.Text" xml:space="preserve">
+    <value>&amp;Select</value>
+  </data>
   <metadata name="_ToolBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="toolStripMenuItem23.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_Imaging.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_Explorer.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_ExportInfoFile.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="toolStripSeparator5.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_ShowGeneralToolbar.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_CustomizeToolbarCommand.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_LogWindow.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="_ToolBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAALFSURBVDhPfdNbSFNxHAfwf4jQxfBRsB4E80FFlHrIl0AT
-        pugMb0sNJCxzeekijAxvg0DsRRDbk9mIbd3pMk0pyztulNou3nVetjm3vFB4t7l9+53jyaigH3wezv/8
-        vr/zP2f/sV91vrIyWSKX5/9Phlx+Qmj/t1LLy6Ubu7v4trODxc1NONbXYVtbg3V1laft6QHXk1ZRESJE
-        9uoLY7XjjGGKWMgEGSFG8pkMVlVh2OHAo9ZWcJVSVnb1jyFcs50skmXiJLNklPSTbjKysIB7Gs2+kPj4
-        CiHOmIka5sgCcfn6Al4vrEFBGKbrT6SdTLhc/BBuJ9zriGWyIiHO2CA1TJIZ4oiIwI+hITjz8mCg617y
-        jswuL+8P4QaISkqKhThjOmowE+5VXFIpHLm52NLrMRoTg4+01kRed3Whw2BAi07Hf9i4oqJrQpyxDmrQ
-        k5nUVHimp/FdpcJWXx9ATxyXyfCC7pntdphsNhjm5vhf52xBwQ0hzlgLNbwnsFrhrK+HSSxGZ2Agmnx8
-        8JLW1aTLaERPXy1635ZipU0LReYldd3p6wH8gFfUwNEK3hAuyD35OXlAhmzTMA4UY7EzEx6lEnq5evvx
-        RY2SH/CUzoGGmlTkIaFVNJL7pIFocnLQrmuEwZ6PsRkFKm8WQlvXAdNtk2OguuEMP4SrU1lZt7x0UCwr
-        K7wp+vKTS0vYoJO5suWC6ms1ErNjEZeUApVyHopC9+SFw/NRQpyxyPT0Uu6kfRgYQFt/P/otFnSbzdh2
-        u2F1ORCbEYuTafGQ2624rJ53x2W7FYw9OyTEGQtJSCjnBnDlpcO06/HATVy0i+Tkc0hMEuOJ04hGWouq
-        aW4+Lp04JkT3KiA6+o6Q54t7HQ8NkkgkEIlE/KBt+rNt0o64XiH2u/zCwq4cCQ2t+dtRf/+xg8HBdfx1
-        ePhdUuMXGZlP3/cAY4z9BHEtE6xVzJYRAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <metadata name="toolStripMenuItem23.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_Patcher.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_Merger.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_Rename.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_OcrImages.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_GenerateBookmark.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_InfoExchanger.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="_Patcher.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -372,6 +357,12 @@
         HmKMsZ/XiRYLs2lecgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="_Patcher.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 26</value>
+  </data>
+  <data name="_Patcher.Text" xml:space="preserve">
+    <value>Modify PDF Files in Batch...</value>
+  </data>
   <metadata name="_Merger.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -394,6 +385,12 @@
         7BuU0iASw/TUhgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="_Merger.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 26</value>
+  </data>
+  <data name="_Merger.Text" xml:space="preserve">
+    <value>Merge P&amp;DF and Image Files...</value>
+  </data>
   <metadata name="_Rename.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -412,6 +409,15 @@
         Go0GgxTvU3wXDDZIsiTlXCEYsVigS6ms8YwFvKrVar2TAv0fxzvhy8a5cFOjgfO9vcd5flQvFn9OhUUE
         i4pEnmQFeuZc6NO+gY4bD+FsT49AIpMZz3R3v/ofJDKZ8S9oxY1XC8E7XAAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="_Rename.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 26</value>
+  </data>
+  <data name="_Rename.Text" xml:space="preserve">
+    <value>&amp;Rename PDF Files in Batch...</value>
+  </data>
+  <data name="_Rename.ToolTipText" xml:space="preserve">
+    <value>Rename the PDF file according to the properties of the PDF document</value>
   </data>
   <metadata name="_OcrImages.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -432,9 +438,21 @@
         V5Se1+vV0QYqJL6NcfwD7Csg08GXW4UAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="_OcrImages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 26</value>
+  </data>
+  <data name="_OcrImages.Text" xml:space="preserve">
+    <value>&amp;Identify Image Text...</value>
+  </data>
   <metadata name="_GenerateBookmark.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_GenerateBookmark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 26</value>
+  </data>
+  <data name="_GenerateBookmark.Text" xml:space="preserve">
+    <value>&amp;Automatically Generate Bookmarks...</value>
+  </data>
   <metadata name="_InfoExchanger.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -453,16 +471,23 @@
         CbN5+n8k3gaLRWmwWJTfD6TTCWZqcZ4AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="_InfoExchanger.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 26</value>
+  </data>
+  <data name="_InfoExchanger.Text" xml:space="preserve">
+    <value>Batch export or import information file (&amp;X)...</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_InfoExchanger.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripMenuItem23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 26</value>
+  </data>
+  <data name="toolStripMenuItem23.Text" xml:space="preserve">
+    <value>&amp;Process PDF Files</value>
+  </data>
   <metadata name="_Imaging.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_Extract.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_ExtractImages.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_RenderPages.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="_Extract.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -482,6 +507,12 @@
         G9Dqp2+0nc4O/lYB2vLybq1ON/5maIZnC+osRwW1X//wGoDmGf2OAjpoA1ceAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="_Extract.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 26</value>
+  </data>
+  <data name="_Extract.Text" xml:space="preserve">
+    <value>Extract &amp;Page or Split Document...</value>
+  </data>
   <metadata name="_ExtractImages.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -500,9 +531,27 @@
         VXIve1AaHAvKkg6j/IOSb2MqKI7UBBR55+XbImak38qMwNWohUA+AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="_ExtractImages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 26</value>
+  </data>
+  <data name="_ExtractImages.Text" xml:space="preserve">
+    <value>Extract &amp;Images...</value>
+  </data>
   <metadata name="_RenderPages.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_RenderPages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 26</value>
+  </data>
+  <data name="_RenderPages.Text" xml:space="preserve">
+    <value>&amp;Convert Page to Image...</value>
+  </data>
+  <data name="_Imaging.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 26</value>
+  </data>
+  <data name="_Imaging.Text" xml:space="preserve">
+    <value>&amp;Extract Document</value>
+  </data>
   <metadata name="_Explorer.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -524,6 +573,12 @@
         6LnaAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="_Explorer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 26</value>
+  </data>
+  <data name="_Explorer.Text" xml:space="preserve">
+    <value>Document &amp;Structure Profiler...</value>
+  </data>
   <metadata name="_ExportInfoFile.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -542,12 +597,27 @@
         cyIuJqF3PCvpnWvqNdD39t7p6OmJ/Y9LA7O/OkTn+1YddH8B7KTLCzNS/AAAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="_ExportInfoFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 26</value>
+  </data>
+  <data name="_ExportInfoFile.Text" xml:space="preserve">
+    <value>Export/Import &amp;Info File...</value>
+  </data>
   <metadata name="toolStripSeparator5.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 6</value>
+  </data>
   <metadata name="_ShowGeneralToolbar.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_ShowGeneralToolbar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 26</value>
+  </data>
+  <data name="_ShowGeneralToolbar.Text" xml:space="preserve">
+    <value>&amp;View Toolbar</value>
+  </data>
   <metadata name="_CustomizeToolbarCommand.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -561,6 +631,12 @@
         HT5yhyXKsvya5/kN5ZRluRFv6PCROyxxKeRBEISzKIof94QOf83tl/ivwXHfxSsWzwVUgTEAAAAASUVO
         RK5CYII=
 </value>
+  </data>
+  <data name="_CustomizeToolbarCommand.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 26</value>
+  </data>
+  <data name="_CustomizeToolbarCommand.Text" xml:space="preserve">
+    <value>&amp;Customize Toolbar...</value>
   </data>
   <metadata name="_LogWindow.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -578,19 +654,40 @@
         74C+Ae2m7hiEPU+bAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="_LogWindow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 26</value>
+  </data>
+  <data name="_LogWindow.Text" xml:space="preserve">
+    <value>Program &amp;Output Info...</value>
+  </data>
+  <data name="_ToolBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALFSURBVDhPfdNbSFNxHAfwf4jQxfBRsB4E80FFlHrIl0AT
+        VHSGt6UGEoq5vHQRRoa3QSD2IojtyWzEXHe6TFPK8o4btdk275d52ebcUkfh3eb27XeOJ6OCfvB5OP/z
+        +/7O/5z9x37VxerqFLFMVvg/mTLZKaH930qrrJRs7u3h2+4ulre2YN/YgHV9HZa1NZ66vx9cT3pVVYgQ
+        2a8vjNVPMoYZYiZTZIwYyWcyVFODUbsdjzo6wFVqRcXVP4ZwzTayTFaJg8yTcaIjfWRsaQn3VKoDIQkJ
+        VUKcMRM1LJAl4vT1BbxeWIKCMErXn0gXmXI6+SHcTrjXEUmlJUKcsSFqmCZzxB4RgR8jI3AUFMBA1wPk
+        HZlfXT0Ywg2ILysrFeKMaahhmHCv4pRIYM/Lw7ZWi/GYGHyktVbyurcX3QYD2jUa/sPGlZRcE+KMdVOD
+        lsylpcEzO4vvSiW2BwcBeuKkVIoXdG/YZoPJaoVhYYH/dc4XFd0Q4oy1U8N7AosFjsZGmEQi9AQGotXH
+        By9pvYX0Go3oH6zHwNtyuDrVkGfltzScvR7AD3hFDRy14A3hgtyTn5MHZMQ6C6O+FMs9WfAoFNDKWnYe
+        X1Yp+AFP6RyoqElJHhJaRTO5T5qIKjcXXZpmGGyFmJiTo/pmMdQN3TDdNtn1tU3n+CFcncnOvuWlg2J2
+        uXgz9OWnV1awSSfTte2E8mstknJiEZecCqViEfJi9/Slo4tRQpyxyIyMcu6kfdDr0anTQWc2o294GDtu
+        NyxOO2IzY3E6PQEymwX5Sps7LsctZ+zZESHOWEhiYiU3gCsvHaY9jwdu4qRdpKRcQFKyCE8cRjTTWlRd
+        W9tJydQJIbpfAdHRd4Q8X9zreGiQWCxGfHw8P2iH/mxbtCOuV4j9Lr+wsCvHQkPr/nbc33/icHBwA38d
+        Hn6X1PlFRhbS9z3EGGM/AW7DE6lHSW6SAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="_ToolBox.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_ToolBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 24</value>
+  </data>
+  <data name="_ToolBox.Text" xml:space="preserve">
+    <value>&amp;Tools</value>
+  </data>
   <metadata name="_Help.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_CreateShortcut.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_CheckUpdate.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_VisitHomePage.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="_About.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="_CreateShortcut.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -605,6 +702,15 @@
         FRqO35TM2d4KooEGE2cAb8zyM7bH//+XKttzky9uZQHIRULJ64xBGF0tCGMIcIYuMGYNmH2GLXBOAdAw
         sJeAmsEYXS0IYxUkBWMVJAVjFSQFYxUkBWMVJB7/ZwAAMnjTFsqoud8AAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="_CreateShortcut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 26</value>
+  </data>
+  <data name="_CreateShortcut.Text" xml:space="preserve">
+    <value>Create Desktop &amp;Shortcut</value>
+  </data>
+  <data name="toolStripSeparator14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 6</value>
   </data>
   <metadata name="_CheckUpdate.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -623,6 +729,12 @@
         puZc99DPnBRYLJbHvFar1Toz6GdOCsxm8y2TyfTivGBOCvi4CP47PDtg+AP5hsNBK4PnIQAAAABJRU5E
         rkJggg==
 </value>
+  </data>
+  <data name="_CheckUpdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 26</value>
+  </data>
+  <data name="_CheckUpdate.Text" xml:space="preserve">
+    <value>Check for &amp;Updates...</value>
   </data>
   <metadata name="_VisitHomePage.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -643,6 +755,12 @@
         YII=
 </value>
   </data>
+  <data name="_VisitHomePage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 26</value>
+  </data>
+  <data name="_VisitHomePage.Text" xml:space="preserve">
+    <value>Visit &amp;Homepage...</value>
+  </data>
   <metadata name="_About.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -659,6 +777,18 @@
         e8EdJF6oAr/fT6ZpSjD/FsCBixt7wQTzxbwxj8w1c+Xz+UYAz0Xmhnli4HwyE6rg/5D2DXLVhphIeTwb
         AAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="_About.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 26</value>
+  </data>
+  <data name="_About.Text" xml:space="preserve">
+    <value>About...</value>
+  </data>
+  <data name="_Help.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
+  </data>
+  <data name="_Help.Text" xml:space="preserve">
+    <value>&amp;Help</value>
   </data>
   <metadata name="_Open.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -679,9 +809,28 @@
         yJYygk0V1NMFGyQywbpSHcMwqxaHWfEXhcCu4hm3kHoAAAAASUVORK5CYII=
 </value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_Open.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+D</value>
+  </data>
+  <data name="_Open.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 26</value>
+  </data>
+  <data name="_Open.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
   <metadata name="dummyToolStripMenuItem.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="dummyToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dummyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 26</value>
+  </data>
+  <data name="dummyToolStripMenuItem.Text" xml:space="preserve">
+    <value>Open &amp;Recent File</value>
+  </data>
   <metadata name="_ImportBookmark.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -700,15 +849,51 @@
         AABJRU5ErkJggg==
 </value>
   </data>
+  <data name="_ImportBookmark.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+R</value>
+  </data>
+  <data name="_ImportBookmark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 26</value>
+  </data>
+  <data name="_ImportBookmark.Text" xml:space="preserve">
+    <value>&amp;Import Bookmark...</value>
+  </data>
+  <data name="_ImportBookmark.ToolTipText" xml:space="preserve">
+    <value>Import bookmarks from other files to the current document</value>
+  </data>
   <metadata name="toolStripSeparator2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 6</value>
+  </data>
   <metadata name="_Action.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_Action.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+S</value>
+  </data>
+  <data name="_Action.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 26</value>
+  </data>
+  <data name="_Action.Text" xml:space="preserve">
+    <value>Save &amp;PDF File...</value>
+  </data>
   <metadata name="_SaveBookmark.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_SaveBookmark.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Q</value>
+  </data>
+  <data name="_SaveBookmark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 26</value>
+  </data>
+  <data name="_SaveBookmark.Text" xml:space="preserve">
+    <value>Save &amp;Bookmark File</value>
+  </data>
+  <data name="_SaveBookmark.ToolTipText" xml:space="preserve">
+    <value>Save the bookmark as an information file in XML format, available for migration bookmarks</value>
+  </data>
   <metadata name="_SaveAsInfoFile.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -728,9 +913,18 @@
         FwTf/mk2rA8eAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="_SaveAsInfoFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 26</value>
+  </data>
+  <data name="_SaveAsInfoFile.Text" xml:space="preserve">
+    <value>Save Bookmark File &amp;As...</value>
+  </data>
   <metadata name="_configSeparator.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_configSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 6</value>
+  </data>
   <metadata name="_AppOptions.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -747,24 +941,66 @@
         uVN/2CJMbc4P2A8Zf+kAI/4jBAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="_AppOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 26</value>
+  </data>
+  <data name="_AppOptions.Text" xml:space="preserve">
+    <value>&amp;Configuration...</value>
+  </data>
   <metadata name="_RestoreOptions.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_RestoreOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 26</value>
+  </data>
+  <data name="_RestoreOptions.Text" xml:space="preserve">
+    <value>&amp;Load Configuration...</value>
+  </data>
   <metadata name="_SaveOptions.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_SaveOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 26</value>
+  </data>
+  <data name="_SaveOptions.Text" xml:space="preserve">
+    <value>&amp;Save Configuration...</value>
+  </data>
   <metadata name="toolStripSeparator11.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="toolStripSeparator11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 6</value>
+  </data>
   <metadata name="_Exit.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_Exit.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+F4</value>
+  </data>
+  <data name="_Exit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 26</value>
+  </data>
+  <data name="_Exit.Text" xml:space="preserve">
+    <value>&amp;Exit</value>
+  </data>
   <metadata name="_Close.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_Close.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+F4</value>
+  </data>
+  <data name="_Close.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 26</value>
+  </data>
+  <data name="_Close.Text" xml:space="preserve">
+    <value>&amp;Close Current Function</value>
+  </data>
   <metadata name="toolStripSeparator1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 6</value>
+  </data>
   <metadata name="_Options.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -785,13 +1021,22 @@
         GB6lMoWFna1l5E+BR2DghWMBAQX/ctTbW3fE09MgRpH9PQ+KX6DEi0hG/YRhAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="_Options.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+G</value>
+  </data>
+  <data name="_Options.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 26</value>
+  </data>
+  <data name="_Options.Text" xml:space="preserve">
+    <value>Function &amp;Setting...</value>
+  </data>
   <metadata name="_CustomizeToolbar.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <data name="_CustomizeToolbar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEPSURBVDhP5VAxaoRQFPQKNgqWW+QS3kBMZ5GkEEyxrpsg
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEPSURBVDhP5VAxaoRQFPQKNgqWW+QS3kBMZ5GkEEyxrpsg
         NgmooHgEe09g6UFsAnsCCxVBCxFB4cX5GCGLXiAZGN77M/N+MdwfQRiGpyAInpd5vueqn5DzPO/R930T
         xM6OAdd1X6qq+qIdQIePnGma13meCcTOjgHHcS4Qp2n6xSzLWBg+coqi2MuH+JSws2PAsqzrOI40DMPG
         NE0pjmOCDh85SZKeeJ7/BLGzY8AwjLe+7ylJEuq6js0oitgOHf4a3Yemae9t25Jt2xvrumaEDh+5wxJV
@@ -799,36 +1044,50 @@
         Fs8FVIExAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="_CustomizeToolbar.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_CustomizeToolbar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 24</value>
+  </data>
+  <data name="_CustomizeToolbar.Text" xml:space="preserve">
+    <value>Modify the common toolbar button</value>
+  </data>
   <metadata name="_Properties.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_Properties.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 26</value>
+  </data>
+  <data name="_Properties.Text" xml:space="preserve">
+    <value>Document property (&amp;X)...</value>
+  </data>
+  <data name="_Properties.ToolTipText" xml:space="preserve">
+    <value>View and edit the metadata properties of the current document</value>
+  </data>
   <metadata name="_ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="_SaveConfigDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>118, 17</value>
   </metadata>
+  <data name="_SaveConfigDialog.Title" xml:space="preserve">
+    <value>Save application configuration information</value>
+  </data>
   <metadata name="_OpenConfigDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>275, 17</value>
   </metadata>
+  <data name="_OpenConfigDialog.Title" xml:space="preserve">
+    <value>Open the application configuration file</value>
+  </data>
   <metadata name="_MainMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>432, 17</value>
   </metadata>
-  <data name="_File.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAIsSURBVDhPjZJNSFRxFMUviCvbB65cNAsFaRGERAspSBcT
-        ZFq4cKHgOEkNOfEocEYH2rRqY7vSiGmCKBIVkoIsMmyosDI/0EptijczDIPpfH/fzh3/8x4RDB34wbvv
-        nXPe/Oddquj8yMjpcx7PQDW6PJ5Dyv6vulwue7JQ4N/ZLEdSKdYTCf4Zj3MgFiszPT/P4jnrdltUZF8f
-        iW6uE/E38B1sgFXwGbwHi6OjvKLr/GB2lkVnhocv/FUi5l8gAqIgBLbBGvgAXoPVYJBv+XwGlrY2t4oT
-        LcHwAwRBuLaWuVTiQEMDr2B+B+bARjhcLpFfIsexatpFFSdahOEr2AJ6czPnlpc51N/PnzC/Ac/AdjRq
-        lEjBKafzkooTvYXhC5CjhO121vv6OO3381prK7/AvRkQ2tszSuSPPelwOFSc6CUMfrDV0cHFzU3e9Xo5
-        vbDADPO6pvFjPIvii1RK5OucGBy8rOJET2F4DjgQ4NDYGC9Zrfyqvp5namr4Ce7fBzvJpFESSaf5uM3m
-        VHGiSRiEacUUkKC8+RGYALvYi0qJ7Mmx3t4rKk70EHvgg8kL7oG7YBzcAbfB3NAQx/DWSkksl+OjPT2a
-        ips60t19tYRFKRSLnAdZbGUmn+cUAolMxiiJYxavipk63Nl5TTathD2oVpLELF4VM2Vpb3dJgahaSQrX
-        4lUxUwdbWq6rfFlynKIUASnKgQzKspjFq2KmDjQ12eoaG2/8D+LdTxH9AdGnGwl7PYKkAAAAAElFTkSu
-        QmCC
-</value>
+  <data name="_RecentFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 26</value>
+  </data>
+  <data name="_RecentFiles.Text" xml:space="preserve">
+    <value>Open &amp;Recent File</value>
   </data>
   <data name="_ResetOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -848,15 +1107,160 @@
         ObeSULbTjhxy/x1Qsr+c8frHFzb/LgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="_ResetOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 26</value>
+  </data>
+  <data name="_ResetOptions.Text" xml:space="preserve">
+    <value>Reset Current Function (&amp;Z)...</value>
+  </data>
+  <data name="_File.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIsSURBVDhPjZJNSFRxFMUviCvbB65cNAsFaRGERAspSBcT
+        ZFq4cKHgOEkNOfEocEYH2rRqY7vSiGmCKBIVkoIsMmyosDI/0EptijczDIPpfH/fzh3/8x4RDB34wbvv
+        nXPe/Oddquj8yMjpcx7PQDW6PJ5Dyv6vulwue7JQ4N/ZLEdSKdYTCf4Zj3MgFiszPT/P4jnrdltUZF8f
+        iW6uE/E38B1sgFXwGbwHi6OjvKLr/GB2lkVnhocv/FUi5l8gAqIgBLbBGvgAXoPVYJBv+XwGlrY2t4oT
+        LcHwAwRBuLaWuVTiQEMDr2B+B+bARjhcLpFfIsexatpFFSdahOEr2AJ6czPnlpc51N/PnzC/Ac/AdjRq
+        lEjBKafzkooTvYXhC5CjhO121vv6OO3381prK7/AvRkQ2tszSuSPPelwOFSc6CUMfrDV0cHFzU3e9Xo5
+        vbDADPO6pvFjPIvii1RK5OucGBy8rOJET2F4DjgQ4NDYGC9Zrfyqvp5namr4Ce7fBzvJpFESSaf5uM3m
+        VHGiSRiEacUUkKC8+RGYALvYi0qJ7Mmx3t4rKk70EHvgg8kL7oG7YBzcAbfB3NAQx/DWSkksl+OjPT2a
+        ips60t19tYRFKRSLnAdZbGUmn+cUAolMxiiJYxavipk63Nl5TTathD2oVpLELF4VM2Vpb3dJgahaSQrX
+        4lUxUwdbWq6rfFlynKIUASnKgQzKspjFq2KmDjQ12eoaG2/8D+LdTxH9AdGnGwl7PYKkAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="_File.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_File.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 24</value>
+  </data>
+  <data name="_File.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="_MainMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="_MainMenu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 0, 0</value>
+  </data>
+  <data name="_MainMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>805, 24</value>
+  </data>
+  <data name="_MainMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_MainMenu.Name" xml:space="preserve">
+    <value>_MainMenu</value>
+  </data>
+  <data name="&gt;&gt;_MainMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_MainMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_MainMenu.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <metadata name="_OpenPdfDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>539, 17</value>
   </metadata>
+  <data name="_OpenPdfDialog.Title" xml:space="preserve">
+    <value>Please select the PDF document you want to open.</value>
+  </data>
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>677, 17</value>
   </metadata>
+  <data name="_MainStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 612</value>
+  </data>
+  <data name="statusStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 1, 0</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>805, 22</value>
+  </data>
+  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="_GeneralToolbar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>793, 17</value>
   </metadata>
+  <data name="_GeneralToolbar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="_GeneralToolbar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="_GeneralToolbar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>805, 27</value>
+  </data>
+  <data name="_GeneralToolbar.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;_GeneralToolbar.Name" xml:space="preserve">
+    <value>_GeneralToolbar</value>
+  </data>
+  <data name="&gt;&gt;_GeneralToolbar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_GeneralToolbar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_GeneralToolbar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_FunctionContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="_FunctionContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 51</value>
+  </data>
+  <data name="_FunctionContainer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 1, 0, 1</value>
+  </data>
+  <data name="_FunctionContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>805, 561</value>
+  </data>
+  <data name="_FunctionContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_FunctionContainer.Name" xml:space="preserve">
+    <value>_FunctionContainer</value>
+  </data>
+  <data name="&gt;&gt;_FunctionContainer.Type" xml:space="preserve">
+    <value>TradeWright.UI.Forms.TabControlExtra, TradeWright.TabControlExtra, Version=2.0.1.0, Culture=neutral, PublicKeyToken=1c837007e228387a</value>
+  </data>
+  <data name="&gt;&gt;_FunctionContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_FunctionContainer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>805, 634</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAcAEBAAAAAAAABoBAAAdgAAACAgAAAAAAAAqAgAAN4EAABAQAAAAAAAAChCAACGDQAAwMAAAAAA
@@ -3986,5 +4390,383 @@
         AAAAA/AA8AAAAAAB8ADwAAAAAAPwAPAAAAAAw/AA+AAAAAP/8AD/AAAAB//4AP+AAAAH//8A/4AAAB//
         /4D/gAAAP///gP+AAAA///+A/4AAAP///4D/////////gA==
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 1, 0, 1</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>PDFPatcher</value>
+  </data>
+  <data name="&gt;&gt;_Select.Name" xml:space="preserve">
+    <value>_Select</value>
+  </data>
+  <data name="&gt;&gt;_Select.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Copy.Name" xml:space="preserve">
+    <value>_Copy</value>
+  </data>
+  <data name="&gt;&gt;_Copy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Delete.Name" xml:space="preserve">
+    <value>_Delete</value>
+  </data>
+  <data name="&gt;&gt;_Delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
+    <value>toolStripSeparator3</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SelectAllPdfFiles.Name" xml:space="preserve">
+    <value>_SelectAllPdfFiles</value>
+  </data>
+  <data name="&gt;&gt;_SelectAllPdfFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SelectAllImages.Name" xml:space="preserve">
+    <value>_SelectAllImages</value>
+  </data>
+  <data name="&gt;&gt;_SelectAllImages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SelectAllFolders.Name" xml:space="preserve">
+    <value>_SelectAllFolders</value>
+  </data>
+  <data name="&gt;&gt;_SelectAllFolders.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ItemTypeSeparator.Name" xml:space="preserve">
+    <value>_ItemTypeSeparator</value>
+  </data>
+  <data name="&gt;&gt;_ItemTypeSeparator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SelectAll.Name" xml:space="preserve">
+    <value>_SelectAll</value>
+  </data>
+  <data name="&gt;&gt;_SelectAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_InvertSelect.Name" xml:space="preserve">
+    <value>_InvertSelect</value>
+  </data>
+  <data name="&gt;&gt;_InvertSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SelectNone.Name" xml:space="preserve">
+    <value>_SelectNone</value>
+  </data>
+  <data name="&gt;&gt;_SelectNone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ToolBox.Name" xml:space="preserve">
+    <value>_ToolBox</value>
+  </data>
+  <data name="&gt;&gt;_ToolBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem23.Name" xml:space="preserve">
+    <value>toolStripMenuItem23</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Patcher.Name" xml:space="preserve">
+    <value>_Patcher</value>
+  </data>
+  <data name="&gt;&gt;_Patcher.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Merger.Name" xml:space="preserve">
+    <value>_Merger</value>
+  </data>
+  <data name="&gt;&gt;_Merger.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Rename.Name" xml:space="preserve">
+    <value>_Rename</value>
+  </data>
+  <data name="&gt;&gt;_Rename.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_OcrImages.Name" xml:space="preserve">
+    <value>_OcrImages</value>
+  </data>
+  <data name="&gt;&gt;_OcrImages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_GenerateBookmark.Name" xml:space="preserve">
+    <value>_GenerateBookmark</value>
+  </data>
+  <data name="&gt;&gt;_GenerateBookmark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_InfoExchanger.Name" xml:space="preserve">
+    <value>_InfoExchanger</value>
+  </data>
+  <data name="&gt;&gt;_InfoExchanger.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Imaging.Name" xml:space="preserve">
+    <value>_Imaging</value>
+  </data>
+  <data name="&gt;&gt;_Imaging.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Extract.Name" xml:space="preserve">
+    <value>_Extract</value>
+  </data>
+  <data name="&gt;&gt;_Extract.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExtractImages.Name" xml:space="preserve">
+    <value>_ExtractImages</value>
+  </data>
+  <data name="&gt;&gt;_ExtractImages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RenderPages.Name" xml:space="preserve">
+    <value>_RenderPages</value>
+  </data>
+  <data name="&gt;&gt;_RenderPages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Explorer.Name" xml:space="preserve">
+    <value>_Explorer</value>
+  </data>
+  <data name="&gt;&gt;_Explorer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportInfoFile.Name" xml:space="preserve">
+    <value>_ExportInfoFile</value>
+  </data>
+  <data name="&gt;&gt;_ExportInfoFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator5.Name" xml:space="preserve">
+    <value>toolStripSeparator5</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ShowGeneralToolbar.Name" xml:space="preserve">
+    <value>_ShowGeneralToolbar</value>
+  </data>
+  <data name="&gt;&gt;_ShowGeneralToolbar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_CustomizeToolbarCommand.Name" xml:space="preserve">
+    <value>_CustomizeToolbarCommand</value>
+  </data>
+  <data name="&gt;&gt;_CustomizeToolbarCommand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_LogWindow.Name" xml:space="preserve">
+    <value>_LogWindow</value>
+  </data>
+  <data name="&gt;&gt;_LogWindow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Help.Name" xml:space="preserve">
+    <value>_Help</value>
+  </data>
+  <data name="&gt;&gt;_Help.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_CreateShortcut.Name" xml:space="preserve">
+    <value>_CreateShortcut</value>
+  </data>
+  <data name="&gt;&gt;_CreateShortcut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator14.Name" xml:space="preserve">
+    <value>toolStripSeparator14</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_CheckUpdate.Name" xml:space="preserve">
+    <value>_CheckUpdate</value>
+  </data>
+  <data name="&gt;&gt;_CheckUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_VisitHomePage.Name" xml:space="preserve">
+    <value>_VisitHomePage</value>
+  </data>
+  <data name="&gt;&gt;_VisitHomePage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_About.Name" xml:space="preserve">
+    <value>_About</value>
+  </data>
+  <data name="&gt;&gt;_About.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Open.Name" xml:space="preserve">
+    <value>_Open</value>
+  </data>
+  <data name="&gt;&gt;_Open.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dummyToolStripMenuItem.Name" xml:space="preserve">
+    <value>dummyToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;dummyToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ImportBookmark.Name" xml:space="preserve">
+    <value>_ImportBookmark</value>
+  </data>
+  <data name="&gt;&gt;_ImportBookmark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
+    <value>toolStripSeparator2</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Action.Name" xml:space="preserve">
+    <value>_Action</value>
+  </data>
+  <data name="&gt;&gt;_Action.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SaveBookmark.Name" xml:space="preserve">
+    <value>_SaveBookmark</value>
+  </data>
+  <data name="&gt;&gt;_SaveBookmark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SaveAsInfoFile.Name" xml:space="preserve">
+    <value>_SaveAsInfoFile</value>
+  </data>
+  <data name="&gt;&gt;_SaveAsInfoFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_configSeparator.Name" xml:space="preserve">
+    <value>_configSeparator</value>
+  </data>
+  <data name="&gt;&gt;_configSeparator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AppOptions.Name" xml:space="preserve">
+    <value>_AppOptions</value>
+  </data>
+  <data name="&gt;&gt;_AppOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RestoreOptions.Name" xml:space="preserve">
+    <value>_RestoreOptions</value>
+  </data>
+  <data name="&gt;&gt;_RestoreOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SaveOptions.Name" xml:space="preserve">
+    <value>_SaveOptions</value>
+  </data>
+  <data name="&gt;&gt;_SaveOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator11.Name" xml:space="preserve">
+    <value>toolStripSeparator11</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Exit.Name" xml:space="preserve">
+    <value>_Exit</value>
+  </data>
+  <data name="&gt;&gt;_Exit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Close.Name" xml:space="preserve">
+    <value>_Close</value>
+  </data>
+  <data name="&gt;&gt;_Close.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Options.Name" xml:space="preserve">
+    <value>_Options</value>
+  </data>
+  <data name="&gt;&gt;_Options.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_CustomizeToolbar.Name" xml:space="preserve">
+    <value>_CustomizeToolbar</value>
+  </data>
+  <data name="&gt;&gt;_CustomizeToolbar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Properties.Name" xml:space="preserve">
+    <value>_Properties</value>
+  </data>
+  <data name="&gt;&gt;_Properties.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ToolTip.Name" xml:space="preserve">
+    <value>_ToolTip</value>
+  </data>
+  <data name="&gt;&gt;_ToolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SaveConfigDialog.Name" xml:space="preserve">
+    <value>_SaveConfigDialog</value>
+  </data>
+  <data name="&gt;&gt;_SaveConfigDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_OpenConfigDialog.Name" xml:space="preserve">
+    <value>_OpenConfigDialog</value>
+  </data>
+  <data name="&gt;&gt;_OpenConfigDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_File.Name" xml:space="preserve">
+    <value>_File</value>
+  </data>
+  <data name="&gt;&gt;_File.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RecentFiles.Name" xml:space="preserve">
+    <value>_RecentFiles</value>
+  </data>
+  <data name="&gt;&gt;_RecentFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ResetOptions.Name" xml:space="preserve">
+    <value>_ResetOptions</value>
+  </data>
+  <data name="&gt;&gt;_ResetOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_OpenPdfDialog.Name" xml:space="preserve">
+    <value>_OpenPdfDialog</value>
+  </data>
+  <data name="&gt;&gt;_OpenPdfDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_MainStatusLabel.Name" xml:space="preserve">
+    <value>_MainStatusLabel</value>
+  </data>
+  <data name="&gt;&gt;_MainStatusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

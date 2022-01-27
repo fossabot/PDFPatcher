@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -120,30 +120,105 @@
   <metadata name="_ExportBinary.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_ExportBinary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 26</value>
+  </data>
+  <data name="_ExportBinary.Text" xml:space="preserve">
+    <value>&amp;Binary File...</value>
+  </data>
   <metadata name="_ExportHexText.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_ExportHexText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 26</value>
+  </data>
+  <data name="_ExportHexText.Text" xml:space="preserve">
+    <value>Binary &amp;Text File...</value>
+  </data>
   <metadata name="_ExportXml.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_ExportXml.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 26</value>
+  </data>
+  <data name="_ExportXml.Text" xml:space="preserve">
+    <value>&amp;XML Information File...</value>
+  </data>
   <metadata name="_ExportUncompressedBinary.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_ExportUncompressedBinary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 26</value>
+  </data>
+  <data name="_ExportUncompressedBinary.Text" xml:space="preserve">
+    <value>&amp;Original stream object binary file...</value>
+  </data>
   <metadata name="_ExportUncompressedHexText.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_ExportUncompressedHexText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 26</value>
+  </data>
+  <data name="_ExportUncompressedHexText.Text" xml:space="preserve">
+    <value>&amp;Original stream object binary text file...</value>
+  </data>
   <metadata name="_ExportToUnicode.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="_ExportToUnicode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 26</value>
+  </data>
+  <data name="_ExportToUnicode.Text" xml:space="preserve">
+    <value>&amp;ToUnicode mapping table</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_Container.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="_Container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 28</value>
+  </data>
+  <data name="_Container.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="_NameColumn.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_NameColumn.Width" type="System.Int32, mscorlib">
+    <value>184</value>
+  </data>
+  <data name="_ValueColumn.Text" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="_ValueColumn.Width" type="System.Int32, mscorlib">
+    <value>187</value>
+  </data>
+  <data name="_DescriptionColumn.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="_DescriptionColumn.Width" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="_ObjectDetailBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="_ObjectDetailBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="_ObjectDetailBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>481, 223</value>
+  </data>
   <metadata name="_ObjectTypeIcons.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="_ObjectTypeIcons.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACa
-        PgAAAk1TRnQBSQFMAgEBNAEAATwBAAE8AQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        PgAAAk1TRnQBSQFMAgEBNAEAAUQBAAFEAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAAeADAAEBAQABCAYAATgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -413,13 +488,460 @@
         AQ8BwAEPAcABDws=
 </value>
   </data>
+  <data name="_ObjectDetailBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_ObjectDetailBox.Name" xml:space="preserve">
+    <value>_ObjectDetailBox</value>
+  </data>
+  <data name="&gt;&gt;_ObjectDetailBox.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.TreeListView, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_ObjectDetailBox.Parent" xml:space="preserve">
+    <value>_Container.Panel1</value>
+  </data>
+  <data name="&gt;&gt;_ObjectDetailBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_Container.Panel1.Name" xml:space="preserve">
+    <value>_Container.Panel1</value>
+  </data>
+  <data name="&gt;&gt;_Container.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Container.Panel1.Parent" xml:space="preserve">
+    <value>_Container</value>
+  </data>
+  <data name="&gt;&gt;_Container.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_DescriptionBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="_DescriptionBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="_DescriptionBox.ScrollBars" type="System.Windows.Forms.RichTextBoxScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="_DescriptionBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>481, 71</value>
+  </data>
+  <data name="_DescriptionBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_DescriptionBox.Name" xml:space="preserve">
+    <value>_DescriptionBox</value>
+  </data>
+  <data name="&gt;&gt;_DescriptionBox.Type" xml:space="preserve">
+    <value>RichTextBoxLinks.RichTextBoxEx, PDFPatcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_DescriptionBox.Parent" xml:space="preserve">
+    <value>_Container.Panel2</value>
+  </data>
+  <data name="&gt;&gt;_DescriptionBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_Container.Panel2.Name" xml:space="preserve">
+    <value>_Container.Panel2</value>
+  </data>
+  <data name="&gt;&gt;_Container.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Container.Panel2.Parent" xml:space="preserve">
+    <value>_Container</value>
+  </data>
+  <data name="&gt;&gt;_Container.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_Container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 310</value>
+  </data>
+  <data name="_Container.SplitterDistance" type="System.Int32, mscorlib">
+    <value>229</value>
+  </data>
+  <data name="_Container.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_Container.Name" xml:space="preserve">
+    <value>_Container</value>
+  </data>
+  <data name="&gt;&gt;_Container.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_Container.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_Container.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="_RecentFileMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>257, 17</value>
   </metadata>
+  <data name="_OpenButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_OpenButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 24</value>
+  </data>
+  <data name="_OpenButton.Text" xml:space="preserve">
+    <value>&amp;Open</value>
+  </data>
+  <data name="_OpenButton.ToolTipText" xml:space="preserve">
+    <value>Open the PDF document</value>
+  </data>
+  <data name="_RecentFileMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 4</value>
+  </data>
+  <data name="&gt;&gt;_RecentFileMenu.Name" xml:space="preserve">
+    <value>_RecentFileMenu</value>
+  </data>
+  <data name="&gt;&gt;_RecentFileMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <metadata name="_LoadDocumentWorker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>393, 17</value>
   </metadata>
   <metadata name="_MainMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>158, 17</value>
   </metadata>
+  <data name="_SaveButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_SaveButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_SaveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
+  </data>
+  <data name="_SaveButton.Text" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="_SaveButton.ToolTipText" xml:space="preserve">
+    <value>Save the modified PDF document</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 27</value>
+  </data>
+  <data name="_ExportButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_ExportButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_ExportButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="_ExportButton.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="_ExportButton.ToolTipText" xml:space="preserve">
+    <value>Export stream object content</value>
+  </data>
+  <data name="_ViewButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_ViewButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_ViewButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 24</value>
+  </data>
+  <data name="_ViewButton.Text" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="_ViewButton.ToolTipText" xml:space="preserve">
+    <value>View flow object</value>
+  </data>
+  <data name="_AddArrayNode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 26</value>
+  </data>
+  <data name="_AddArrayNode.Text" xml:space="preserve">
+    <value>List node</value>
+  </data>
+  <data name="_AddDictNode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 26</value>
+  </data>
+  <data name="_AddDictNode.Text" xml:space="preserve">
+    <value>Dictionary node</value>
+  </data>
+  <data name="_AddBooleanNode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 26</value>
+  </data>
+  <data name="_AddBooleanNode.Text" xml:space="preserve">
+    <value>Real Value Node</value>
+  </data>
+  <data name="_AddStringNode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 26</value>
+  </data>
+  <data name="_AddStringNode.Text" xml:space="preserve">
+    <value>String node</value>
+  </data>
+  <data name="_AddNumberNode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 26</value>
+  </data>
+  <data name="_AddNumberNode.Text" xml:space="preserve">
+    <value>Numerical node</value>
+  </data>
+  <data name="_AddNameNode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 26</value>
+  </data>
+  <data name="_AddNameNode.Text" xml:space="preserve">
+    <value>Name node</value>
+  </data>
+  <data name="_AddObjectMenu.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_AddObjectMenu.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_AddObjectMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 24</value>
+  </data>
+  <data name="_AddObjectMenu.Text" xml:space="preserve">
+    <value>Insert child node</value>
+  </data>
+  <data name="_AddObjectMenu.ToolTipText" xml:space="preserve">
+    <value>Add a child node object</value>
+  </data>
+  <data name="_DeleteButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_DeleteButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_DeleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 24</value>
+  </data>
+  <data name="_DeleteButton.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="_DeleteButton.ToolTipText" xml:space="preserve">
+    <value>Delete the selected object</value>
+  </data>
+  <data name="_ExpandButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_ExpandButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_ExpandButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 24</value>
+  </data>
+  <data name="_ExpandButton.Text" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+  <data name="_ExpandButton.ToolTipText" xml:space="preserve">
+    <value>Expand the selected item</value>
+  </data>
+  <data name="_CollapseButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_CollapseButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="_CollapseButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 24</value>
+  </data>
+  <data name="_CollapseButton.Text" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+  <data name="_CollapseButton.ToolTipText" xml:space="preserve">
+    <value>Collapse selected items</value>
+  </data>
+  <data name="_MainMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="_MainMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>495, 27</value>
+  </data>
+  <data name="_MainMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_MainMenu.Name" xml:space="preserve">
+    <value>_MainMenu</value>
+  </data>
+  <data name="&gt;&gt;_MainMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_MainMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_MainMenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 15</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 9pt</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>495, 341</value>
+  </data>
+  <data name="&gt;&gt;_ExportBinary.Name" xml:space="preserve">
+    <value>_ExportBinary</value>
+  </data>
+  <data name="&gt;&gt;_ExportBinary.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportHexText.Name" xml:space="preserve">
+    <value>_ExportHexText</value>
+  </data>
+  <data name="&gt;&gt;_ExportHexText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportXml.Name" xml:space="preserve">
+    <value>_ExportXml</value>
+  </data>
+  <data name="&gt;&gt;_ExportXml.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportUncompressedBinary.Name" xml:space="preserve">
+    <value>_ExportUncompressedBinary</value>
+  </data>
+  <data name="&gt;&gt;_ExportUncompressedBinary.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportUncompressedHexText.Name" xml:space="preserve">
+    <value>_ExportUncompressedHexText</value>
+  </data>
+  <data name="&gt;&gt;_ExportUncompressedHexText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportToUnicode.Name" xml:space="preserve">
+    <value>_ExportToUnicode</value>
+  </data>
+  <data name="&gt;&gt;_ExportToUnicode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_NameColumn.Name" xml:space="preserve">
+    <value>_NameColumn</value>
+  </data>
+  <data name="&gt;&gt;_NameColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_ValueColumn.Name" xml:space="preserve">
+    <value>_ValueColumn</value>
+  </data>
+  <data name="&gt;&gt;_ValueColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_DescriptionColumn.Name" xml:space="preserve">
+    <value>_DescriptionColumn</value>
+  </data>
+  <data name="&gt;&gt;_DescriptionColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_ObjectTypeIcons.Name" xml:space="preserve">
+    <value>_ObjectTypeIcons</value>
+  </data>
+  <data name="&gt;&gt;_ObjectTypeIcons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_OpenButton.Name" xml:space="preserve">
+    <value>_OpenButton</value>
+  </data>
+  <data name="&gt;&gt;_OpenButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_LoadDocumentWorker.Name" xml:space="preserve">
+    <value>_LoadDocumentWorker</value>
+  </data>
+  <data name="&gt;&gt;_LoadDocumentWorker.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SaveButton.Name" xml:space="preserve">
+    <value>_SaveButton</value>
+  </data>
+  <data name="&gt;&gt;_SaveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExportButton.Name" xml:space="preserve">
+    <value>_ExportButton</value>
+  </data>
+  <data name="&gt;&gt;_ExportButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ViewButton.Name" xml:space="preserve">
+    <value>_ViewButton</value>
+  </data>
+  <data name="&gt;&gt;_ViewButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AddObjectMenu.Name" xml:space="preserve">
+    <value>_AddObjectMenu</value>
+  </data>
+  <data name="&gt;&gt;_AddObjectMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AddArrayNode.Name" xml:space="preserve">
+    <value>_AddArrayNode</value>
+  </data>
+  <data name="&gt;&gt;_AddArrayNode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AddDictNode.Name" xml:space="preserve">
+    <value>_AddDictNode</value>
+  </data>
+  <data name="&gt;&gt;_AddDictNode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AddBooleanNode.Name" xml:space="preserve">
+    <value>_AddBooleanNode</value>
+  </data>
+  <data name="&gt;&gt;_AddBooleanNode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AddStringNode.Name" xml:space="preserve">
+    <value>_AddStringNode</value>
+  </data>
+  <data name="&gt;&gt;_AddStringNode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AddNumberNode.Name" xml:space="preserve">
+    <value>_AddNumberNode</value>
+  </data>
+  <data name="&gt;&gt;_AddNumberNode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AddNameNode.Name" xml:space="preserve">
+    <value>_AddNameNode</value>
+  </data>
+  <data name="&gt;&gt;_AddNameNode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_DeleteButton.Name" xml:space="preserve">
+    <value>_DeleteButton</value>
+  </data>
+  <data name="&gt;&gt;_DeleteButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ExpandButton.Name" xml:space="preserve">
+    <value>_ExpandButton</value>
+  </data>
+  <data name="&gt;&gt;_ExpandButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_CollapseButton.Name" xml:space="preserve">
+    <value>_CollapseButton</value>
+  </data>
+  <data name="&gt;&gt;_CollapseButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DocumentInspectorControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>PDFPatcher.Functions.FunctionControl, PDFPatcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
 </root>

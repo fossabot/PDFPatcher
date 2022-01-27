@@ -25,6 +25,7 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewerPreferenceEditor));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this._ForceInternalLinkBox = new System.Windows.Forms.CheckBox();
             this._ForceRemoveZoomRateBox = new System.Windows.Forms.CheckBox();
@@ -57,32 +58,21 @@
             // 
             this.groupBox2.Controls.Add(this._ForceInternalLinkBox);
             this.groupBox2.Controls.Add(this._ForceRemoveZoomRateBox);
-            this.groupBox2.Location = new System.Drawing.Point(6, 178);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(426, 76);
-            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Bookmark and Link Action";
             // 
             // _ForceInternalLinkBox
             // 
-            this._ForceInternalLinkBox.AutoSize = true;
-            this._ForceInternalLinkBox.Location = new System.Drawing.Point(6, 46);
+            resources.ApplyResources(this._ForceInternalLinkBox, "_ForceInternalLinkBox");
             this._ForceInternalLinkBox.Name = "_ForceInternalLinkBox";
-            this._ForceInternalLinkBox.Size = new System.Drawing.Size(230, 17);
-            this._ForceInternalLinkBox.TabIndex = 3;
-            this._ForceInternalLinkBox.Text = "Force external PDF file links to internal links";
             this._ForceInternalLinkBox.UseVisualStyleBackColor = true;
             this._ForceInternalLinkBox.CheckedChanged += new System.EventHandler(this.DocumentInfoChanged);
             // 
             // _ForceRemoveZoomRateBox
             // 
-            this._ForceRemoveZoomRateBox.AutoSize = true;
-            this._ForceRemoveZoomRateBox.Location = new System.Drawing.Point(6, 22);
+            resources.ApplyResources(this._ForceRemoveZoomRateBox, "_ForceRemoveZoomRateBox");
             this._ForceRemoveZoomRateBox.Name = "_ForceRemoveZoomRateBox";
-            this._ForceRemoveZoomRateBox.Size = new System.Drawing.Size(309, 17);
-            this._ForceRemoveZoomRateBox.TabIndex = 0;
-            this._ForceRemoveZoomRateBox.Text = "Forbid bookmarks and page links to change the display ratio";
             this._ForceRemoveZoomRateBox.UseVisualStyleBackColor = true;
             this._ForceRemoveZoomRateBox.CheckedChanged += new System.EventHandler(this.DocumentInfoChanged);
             // 
@@ -90,20 +80,14 @@
             // 
             this._ForceBookmarkOpenBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._ForceBookmarkOpenBox.FormattingEnabled = true;
-            this._ForceBookmarkOpenBox.Location = new System.Drawing.Point(103, 104);
+            resources.ApplyResources(this._ForceBookmarkOpenBox, "_ForceBookmarkOpenBox");
             this._ForceBookmarkOpenBox.Name = "_ForceBookmarkOpenBox";
-            this._ForceBookmarkOpenBox.Size = new System.Drawing.Size(127, 21);
-            this._ForceBookmarkOpenBox.TabIndex = 2;
             this._ForceBookmarkOpenBox.SelectedIndexChanged += new System.EventHandler(this.DocumentInfoChanged);
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 107);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Bookmark Status:";
             // 
             // groupBox1
             // 
@@ -115,141 +99,92 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this._ForceInitialViewBox);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(6, 25);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(210, 146);
-            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Viewer Settings";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 79);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 13);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Initial mode: ";
             // 
             // _ForceInitialModeBox
             // 
             this._ForceInitialModeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._ForceInitialModeBox.FormattingEnabled = true;
-            this._ForceInitialModeBox.Location = new System.Drawing.Point(103, 75);
+            resources.ApplyResources(this._ForceInitialModeBox, "_ForceInitialModeBox");
             this._ForceInitialModeBox.Name = "_ForceInitialModeBox";
-            this._ForceInitialModeBox.Size = new System.Drawing.Size(127, 21);
-            this._ForceInitialModeBox.TabIndex = 5;
             this._ForceInitialModeBox.SelectedIndexChanged += new System.EventHandler(this.DocumentInfoChanged);
             // 
             // _ForceDirectionBox
             // 
             this._ForceDirectionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._ForceDirectionBox.FormattingEnabled = true;
-            this._ForceDirectionBox.Location = new System.Drawing.Point(103, 49);
+            resources.ApplyResources(this._ForceDirectionBox, "_ForceDirectionBox");
             this._ForceDirectionBox.Name = "_ForceDirectionBox";
-            this._ForceDirectionBox.Size = new System.Drawing.Size(127, 21);
-            this._ForceDirectionBox.TabIndex = 3;
             this._ForceDirectionBox.SelectedIndexChanged += new System.EventHandler(this.DocumentInfoChanged);
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 51);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 13);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Reading direction:";
             // 
             // _ForceInitialViewBox
             // 
             this._ForceInitialViewBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._ForceInitialViewBox.Location = new System.Drawing.Point(103, 20);
+            resources.ApplyResources(this._ForceInitialViewBox, "_ForceInitialViewBox");
             this._ForceInitialViewBox.Name = "_ForceInitialViewBox";
-            this._ForceInitialViewBox.Size = new System.Drawing.Size(127, 21);
-            this._ForceInitialViewBox.TabIndex = 1;
             this._ForceInitialViewBox.SelectedIndexChanged += new System.EventHandler(this.DocumentInfoChanged);
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 23);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Initial view:";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 9);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(367, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Description: The following settings take precedence over the information file.";
             // 
             // _HideMenuBox
             // 
-            this._HideMenuBox.AutoSize = true;
-            this._HideMenuBox.Location = new System.Drawing.Point(3, 3);
+            resources.ApplyResources(this._HideMenuBox, "_HideMenuBox");
             this._HideMenuBox.Name = "_HideMenuBox";
-            this._HideMenuBox.Size = new System.Drawing.Size(78, 17);
-            this._HideMenuBox.TabIndex = 0;
-            this._HideMenuBox.Text = "Hide Menu";
             this._HideMenuBox.UseVisualStyleBackColor = true;
             this._HideMenuBox.CheckedChanged += new System.EventHandler(this.DocumentInfoChanged);
             // 
             // _HideToolbarBox
             // 
-            this._HideToolbarBox.AutoSize = true;
-            this._HideToolbarBox.Location = new System.Drawing.Point(99, 3);
+            resources.ApplyResources(this._HideToolbarBox, "_HideToolbarBox");
             this._HideToolbarBox.Name = "_HideToolbarBox";
-            this._HideToolbarBox.Size = new System.Drawing.Size(87, 17);
-            this._HideToolbarBox.TabIndex = 1;
-            this._HideToolbarBox.Text = "Hide Toolbar";
             this._HideToolbarBox.UseVisualStyleBackColor = true;
             this._HideToolbarBox.CheckedChanged += new System.EventHandler(this.DocumentInfoChanged);
             // 
             // _HideUIBox
             // 
-            this._HideUIBox.AutoSize = true;
-            this._HideUIBox.Location = new System.Drawing.Point(3, 27);
+            resources.ApplyResources(this._HideUIBox, "_HideUIBox");
             this._HideUIBox.Name = "_HideUIBox";
-            this._HideUIBox.Size = new System.Drawing.Size(317, 17);
-            this._HideUIBox.TabIndex = 2;
-            this._HideUIBox.Text = "Hide the operation interface, only show the document content";
             this._HideUIBox.UseVisualStyleBackColor = true;
             this._HideUIBox.CheckedChanged += new System.EventHandler(this.DocumentInfoChanged);
             // 
             // _FitWindowBox
             // 
-            this._FitWindowBox.AutoSize = true;
-            this._FitWindowBox.Location = new System.Drawing.Point(3, 51);
+            resources.ApplyResources(this._FitWindowBox, "_FitWindowBox");
             this._FitWindowBox.Name = "_FitWindowBox";
-            this._FitWindowBox.Size = new System.Drawing.Size(250, 17);
-            this._FitWindowBox.TabIndex = 3;
-            this._FitWindowBox.Text = "Fit the window to the first page of the document";
             this._FitWindowBox.UseVisualStyleBackColor = true;
             this._FitWindowBox.CheckedChanged += new System.EventHandler(this.DocumentInfoChanged);
             // 
             // _CenterWindowBox
             // 
-            this._CenterWindowBox.AutoSize = true;
-            this._CenterWindowBox.Location = new System.Drawing.Point(3, 74);
+            resources.ApplyResources(this._CenterWindowBox, "_CenterWindowBox");
             this._CenterWindowBox.Name = "_CenterWindowBox";
-            this._CenterWindowBox.Size = new System.Drawing.Size(96, 17);
-            this._CenterWindowBox.TabIndex = 4;
-            this._CenterWindowBox.Text = "Center window";
             this._CenterWindowBox.UseVisualStyleBackColor = true;
             this._CenterWindowBox.CheckedChanged += new System.EventHandler(this.DocumentInfoChanged);
             // 
             // _DisplayDocTitleBox
             // 
-            this._DisplayDocTitleBox.AutoSize = true;
-            this._DisplayDocTitleBox.Location = new System.Drawing.Point(99, 74);
+            resources.ApplyResources(this._DisplayDocTitleBox, "_DisplayDocTitleBox");
             this._DisplayDocTitleBox.Name = "_DisplayDocTitleBox";
-            this._DisplayDocTitleBox.Size = new System.Drawing.Size(129, 17);
-            this._DisplayDocTitleBox.TabIndex = 5;
-            this._DisplayDocTitleBox.Text = "Display document title";
             this._DisplayDocTitleBox.UseVisualStyleBackColor = true;
             this._DisplayDocTitleBox.CheckedChanged += new System.EventHandler(this.DocumentInfoChanged);
             // 
@@ -261,20 +196,13 @@
             this._UISettingsPanel.Controls.Add(this._HideToolbarBox);
             this._UISettingsPanel.Controls.Add(this._FitWindowBox);
             this._UISettingsPanel.Controls.Add(this._HideUIBox);
-            this._UISettingsPanel.Enabled = false;
-            this._UISettingsPanel.Location = new System.Drawing.Point(2, 46);
+            resources.ApplyResources(this._UISettingsPanel, "_UISettingsPanel");
             this._UISettingsPanel.Name = "_UISettingsPanel";
-            this._UISettingsPanel.Size = new System.Drawing.Size(342, 94);
-            this._UISettingsPanel.TabIndex = 1;
             // 
             // _OverrideUISettingsBox
             // 
-            this._OverrideUISettingsBox.AutoSize = true;
-            this._OverrideUISettingsBox.Location = new System.Drawing.Point(5, 22);
+            resources.ApplyResources(this._OverrideUISettingsBox, "_OverrideUISettingsBox");
             this._OverrideUISettingsBox.Name = "_OverrideUISettingsBox";
-            this._OverrideUISettingsBox.Size = new System.Drawing.Size(214, 17);
-            this._OverrideUISettingsBox.TabIndex = 0;
-            this._OverrideUISettingsBox.Text = "Set the operation interface of the reader";
             this._OverrideUISettingsBox.UseVisualStyleBackColor = true;
             this._OverrideUISettingsBox.CheckedChanged += new System.EventHandler(this.DocumentInfoChanged);
             // 
@@ -282,23 +210,19 @@
             // 
             this.groupBox4.Controls.Add(this._OverrideUISettingsBox);
             this.groupBox4.Controls.Add(this._UISettingsPanel);
-            this.groupBox4.Location = new System.Drawing.Point(222, 25);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(369, 146);
-            this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Reader operation interface setting";
             // 
             // ViewerPreferenceEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label5);
             this.Name = "ViewerPreferenceEditor";
-            this.Size = new System.Drawing.Size(596, 302);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);

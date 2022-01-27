@@ -25,6 +25,7 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatcherOptionForm));
             this._PageSettingsPage = new System.Windows.Forms.TabPage();
             this._PageSettingsEditor = new PDFPatcher.Functions.PageSettingsEditor();
             this._MainTab = new System.Windows.Forms.TabControl();
@@ -117,30 +118,19 @@
             // _PageSettingsPage
             // 
             this._PageSettingsPage.Controls.Add(this._PageSettingsEditor);
-            this._PageSettingsPage.Location = new System.Drawing.Point(4, 22);
-            this._PageSettingsPage.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._PageSettingsPage, "_PageSettingsPage");
             this._PageSettingsPage.Name = "_PageSettingsPage";
-            this._PageSettingsPage.Padding = new System.Windows.Forms.Padding(4);
-            this._PageSettingsPage.Size = new System.Drawing.Size(705, 375);
-            this._PageSettingsPage.TabIndex = 6;
-            this._PageSettingsPage.Text = "Page Settings";
             this._PageSettingsPage.UseVisualStyleBackColor = true;
             // 
             // _PageSettingsEditor
             // 
-            this._PageSettingsEditor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._PageSettingsEditor.Location = new System.Drawing.Point(4, 4);
-            this._PageSettingsEditor.Margin = new System.Windows.Forms.Padding(5);
+            resources.ApplyResources(this._PageSettingsEditor, "_PageSettingsEditor");
             this._PageSettingsEditor.Name = "_PageSettingsEditor";
             this._PageSettingsEditor.Settings = null;
-            this._PageSettingsEditor.Size = new System.Drawing.Size(697, 367);
-            this._PageSettingsEditor.TabIndex = 0;
             // 
             // _MainTab
             // 
-            this._MainTab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._MainTab, "_MainTab");
             this._MainTab.Controls.Add(this._PageLayoutPage);
             this._MainTab.Controls.Add(this._ViewerSettingsPage);
             this._MainTab.Controls.Add(this._CleanerPage);
@@ -149,24 +139,15 @@
             this._MainTab.Controls.Add(this._PageSettingsPage);
             this._MainTab.Controls.Add(this._FontSubstitutionsPage);
             this._MainTab.Controls.Add(this._ConfigPage);
-            this._MainTab.Location = new System.Drawing.Point(16, 15);
-            this._MainTab.Margin = new System.Windows.Forms.Padding(4);
             this._MainTab.Name = "_MainTab";
             this._MainTab.SelectedIndex = 0;
-            this._MainTab.Size = new System.Drawing.Size(713, 401);
-            this._MainTab.TabIndex = 1;
             // 
             // _PageLayoutPage
             // 
             this._PageLayoutPage.Controls.Add(this._MarginGroupBox);
             this._PageLayoutPage.Controls.Add(this._LayoutGroupBox);
-            this._PageLayoutPage.Location = new System.Drawing.Point(4, 22);
-            this._PageLayoutPage.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._PageLayoutPage, "_PageLayoutPage");
             this._PageLayoutPage.Name = "_PageLayoutPage";
-            this._PageLayoutPage.Padding = new System.Windows.Forms.Padding(4);
-            this._PageLayoutPage.Size = new System.Drawing.Size(705, 375);
-            this._PageLayoutPage.TabIndex = 8;
-            this._PageLayoutPage.Text = "Page Size";
             this._PageLayoutPage.UseVisualStyleBackColor = true;
             // 
             // _MarginGroupBox
@@ -182,45 +163,29 @@
             this._MarginGroupBox.Controls.Add(this.label3);
             this._MarginGroupBox.Controls.Add(this.label6);
             this._MarginGroupBox.Controls.Add(this.label1);
-            this._MarginGroupBox.Location = new System.Drawing.Point(8, 171);
-            this._MarginGroupBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._MarginGroupBox, "_MarginGroupBox");
             this._MarginGroupBox.Name = "_MarginGroupBox";
-            this._MarginGroupBox.Padding = new System.Windows.Forms.Padding(4);
-            this._MarginGroupBox.Size = new System.Drawing.Size(576, 90);
-            this._MarginGroupBox.TabIndex = 7;
             this._MarginGroupBox.TabStop = false;
-            this._MarginGroupBox.Text = "Adjust the page";
             // 
             // _MarginUnitBox
             // 
             this._MarginUnitBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._MarginUnitBox.FormattingEnabled = true;
             this._MarginUnitBox.Items.AddRange(new object[] {
-            "centimeter",
-            "Ratio to original page size"});
-            this._MarginUnitBox.Location = new System.Drawing.Point(71, 57);
+            resources.GetString("_MarginUnitBox.Items"),
+            resources.GetString("_MarginUnitBox.Items1")});
+            resources.ApplyResources(this._MarginUnitBox, "_MarginUnitBox");
             this._MarginUnitBox.Name = "_MarginUnitBox";
-            this._MarginUnitBox.Size = new System.Drawing.Size(215, 20);
-            this._MarginUnitBox.TabIndex = 12;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(9, 60);
+            resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(35, 12);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "Unit:";
             // 
             // _SyncMarginsBox
             // 
-            this._SyncMarginsBox.AutoSize = true;
-            this._SyncMarginsBox.Location = new System.Drawing.Point(303, 59);
-            this._SyncMarginsBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._SyncMarginsBox, "_SyncMarginsBox");
             this._SyncMarginsBox.Name = "_SyncMarginsBox";
-            this._SyncMarginsBox.Size = new System.Drawing.Size(258, 16);
-            this._SyncMarginsBox.TabIndex = 9;
-            this._SyncMarginsBox.Text = "Synchronous adjustment four-sided white";
             this._SyncMarginsBox.UseVisualStyleBackColor = true;
             // 
             // _RightMarginBox
@@ -231,8 +196,7 @@
             0,
             0,
             65536});
-            this._RightMarginBox.Location = new System.Drawing.Point(481, 25);
-            this._RightMarginBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._RightMarginBox, "_RightMarginBox");
             this._RightMarginBox.Maximum = new decimal(new int[] {
             99,
             0,
@@ -244,8 +208,6 @@
             0,
             -2147483648});
             this._RightMarginBox.Name = "_RightMarginBox";
-            this._RightMarginBox.Size = new System.Drawing.Size(81, 21);
-            this._RightMarginBox.TabIndex = 8;
             this._RightMarginBox.ValueChanged += new System.EventHandler(this.MarginBox_ValueChanged);
             // 
             // _LeftMarginBox
@@ -256,8 +218,7 @@
             0,
             0,
             65536});
-            this._LeftMarginBox.Location = new System.Drawing.Point(347, 25);
-            this._LeftMarginBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._LeftMarginBox, "_LeftMarginBox");
             this._LeftMarginBox.Maximum = new decimal(new int[] {
             99,
             0,
@@ -269,8 +230,6 @@
             0,
             -2147483648});
             this._LeftMarginBox.Name = "_LeftMarginBox";
-            this._LeftMarginBox.Size = new System.Drawing.Size(81, 21);
-            this._LeftMarginBox.TabIndex = 6;
             this._LeftMarginBox.ValueChanged += new System.EventHandler(this.MarginBox_ValueChanged);
             // 
             // _BottomMarginBox
@@ -281,8 +240,7 @@
             0,
             0,
             65536});
-            this._BottomMarginBox.Location = new System.Drawing.Point(205, 25);
-            this._BottomMarginBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._BottomMarginBox, "_BottomMarginBox");
             this._BottomMarginBox.Maximum = new decimal(new int[] {
             99,
             0,
@@ -294,8 +252,6 @@
             0,
             -2147483648});
             this._BottomMarginBox.Name = "_BottomMarginBox";
-            this._BottomMarginBox.Size = new System.Drawing.Size(81, 21);
-            this._BottomMarginBox.TabIndex = 4;
             this._BottomMarginBox.ValueChanged += new System.EventHandler(this.MarginBox_ValueChanged);
             // 
             // _TopMarginBox
@@ -306,8 +262,7 @@
             0,
             0,
             65536});
-            this._TopMarginBox.Location = new System.Drawing.Point(71, 25);
-            this._TopMarginBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._TopMarginBox, "_TopMarginBox");
             this._TopMarginBox.Maximum = new decimal(new int[] {
             99,
             0,
@@ -319,49 +274,27 @@
             0,
             -2147483648});
             this._TopMarginBox.Name = "_TopMarginBox";
-            this._TopMarginBox.Size = new System.Drawing.Size(81, 21);
-            this._TopMarginBox.TabIndex = 2;
             this._TopMarginBox.ValueChanged += new System.EventHandler(this.MarginBox_ValueChanged);
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(435, 29);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 12);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Right: ";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(159, 28);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Bottom: ";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(300, 29);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 12);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Left: ";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 29);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 12);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Top: ";
             // 
             // _LayoutGroupBox
             // 
@@ -378,69 +311,42 @@
             this._LayoutGroupBox.Controls.Add(this._AutoRotateBox);
             this._LayoutGroupBox.Controls.Add(this.label5);
             this._LayoutGroupBox.Controls.Add(this.label4);
-            this._LayoutGroupBox.Location = new System.Drawing.Point(8, 8);
-            this._LayoutGroupBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._LayoutGroupBox, "_LayoutGroupBox");
             this._LayoutGroupBox.Name = "_LayoutGroupBox";
-            this._LayoutGroupBox.Padding = new System.Windows.Forms.Padding(4);
-            this._LayoutGroupBox.Size = new System.Drawing.Size(576, 156);
-            this._LayoutGroupBox.TabIndex = 6;
             this._LayoutGroupBox.TabStop = false;
-            this._LayoutGroupBox.Text = "Specify page layout and size (unit: cm)";
             // 
             // _ImageHAlignBox
             // 
             this._ImageHAlignBox.DisplayMember = "Key";
             this._ImageHAlignBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._ImageHAlignBox.Location = new System.Drawing.Point(71, 116);
-            this._ImageHAlignBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._ImageHAlignBox, "_ImageHAlignBox");
             this._ImageHAlignBox.Name = "_ImageHAlignBox";
-            this._ImageHAlignBox.Size = new System.Drawing.Size(100, 20);
-            this._ImageHAlignBox.TabIndex = 13;
             this._ImageHAlignBox.ValueMember = "Value";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(8, 120);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 12);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Position:";
             // 
             // _ImageVAlignBox
             // 
             this._ImageVAlignBox.DisplayMember = "Key";
             this._ImageVAlignBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._ImageVAlignBox.Location = new System.Drawing.Point(185, 116);
-            this._ImageVAlignBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._ImageVAlignBox, "_ImageVAlignBox");
             this._ImageVAlignBox.Name = "_ImageVAlignBox";
-            this._ImageVAlignBox.Size = new System.Drawing.Size(100, 20);
-            this._ImageVAlignBox.TabIndex = 14;
             this._ImageVAlignBox.ValueMember = "Value";
             // 
             // _ScalePdfPagesBox
             // 
-            this._ScalePdfPagesBox.AutoSize = true;
-            this._ScalePdfPagesBox.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
-            this._ScalePdfPagesBox.Location = new System.Drawing.Point(185, 89);
-            this._ScalePdfPagesBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._ScalePdfPagesBox, "_ScalePdfPagesBox");
             this._ScalePdfPagesBox.Name = "_ScalePdfPagesBox";
-            this._ScalePdfPagesBox.Size = new System.Drawing.Size(215, 16);
-            this._ScalePdfPagesBox.TabIndex = 11;
             this._ScalePdfPagesBox.TabStop = true;
-            this._ScalePdfPagesBox.Text = "Scalable to the edge of the page";
             this._ScalePdfPagesBox.UseVisualStyleBackColor = true;
             // 
             // _ResizePdfPagesBox
             // 
-            this._ResizePdfPagesBox.AutoSize = true;
-            this._ResizePdfPagesBox.Location = new System.Drawing.Point(71, 89);
-            this._ResizePdfPagesBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._ResizePdfPagesBox, "_ResizePdfPagesBox");
             this._ResizePdfPagesBox.Name = "_ResizePdfPagesBox";
-            this._ResizePdfPagesBox.Size = new System.Drawing.Size(71, 16);
-            this._ResizePdfPagesBox.TabIndex = 10;
-            this._ResizePdfPagesBox.Text = "constant";
             this._ResizePdfPagesBox.UseVisualStyleBackColor = true;
             // 
             // _HeightBox
@@ -451,16 +357,13 @@
             0,
             0,
             65536});
-            this._HeightBox.Location = new System.Drawing.Point(481, 21);
-            this._HeightBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._HeightBox, "_HeightBox");
             this._HeightBox.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
             this._HeightBox.Name = "_HeightBox";
-            this._HeightBox.Size = new System.Drawing.Size(81, 21);
-            this._HeightBox.TabIndex = 5;
             // 
             // _WidthBox
             // 
@@ -470,99 +373,60 @@
             0,
             0,
             65536});
-            this._WidthBox.Location = new System.Drawing.Point(347, 21);
-            this._WidthBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._WidthBox, "_WidthBox");
             this._WidthBox.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
             this._WidthBox.Name = "_WidthBox";
-            this._WidthBox.Size = new System.Drawing.Size(81, 21);
-            this._WidthBox.TabIndex = 3;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 91);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 12);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Content:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 26);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 12);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Size:";
             // 
             // _PageSizeBox
             // 
             this._PageSizeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._PageSizeBox.Location = new System.Drawing.Point(71, 22);
-            this._PageSizeBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._PageSizeBox, "_PageSizeBox");
             this._PageSizeBox.Name = "_PageSizeBox";
-            this._PageSizeBox.Size = new System.Drawing.Size(215, 20);
-            this._PageSizeBox.TabIndex = 1;
             this._PageSizeBox.SelectedIndexChanged += new System.EventHandler(this._PageSizeBox_SelectedIndexChanged);
             // 
             // _AutoRotateBox
             // 
-            this._AutoRotateBox.AutoSize = true;
+            resources.ApplyResources(this._AutoRotateBox, "_AutoRotateBox");
             this._AutoRotateBox.Checked = true;
             this._AutoRotateBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this._AutoRotateBox.Location = new System.Drawing.Point(71, 55);
-            this._AutoRotateBox.Margin = new System.Windows.Forms.Padding(4);
             this._AutoRotateBox.Name = "_AutoRotateBox";
-            this._AutoRotateBox.Size = new System.Drawing.Size(312, 16);
-            this._AutoRotateBox.TabIndex = 6;
-            this._AutoRotateBox.Text = "Adapt to the original content crossing direction";
             this._AutoRotateBox.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(436, 26);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 12);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Height: ";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(300, 26);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 12);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Width: ";
             // 
             // _ViewerSettingsPage
             // 
             this._ViewerSettingsPage.Controls.Add(this._ViewerSettingsEditor);
-            this._ViewerSettingsPage.Location = new System.Drawing.Point(4, 22);
-            this._ViewerSettingsPage.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._ViewerSettingsPage, "_ViewerSettingsPage");
             this._ViewerSettingsPage.Name = "_ViewerSettingsPage";
-            this._ViewerSettingsPage.Padding = new System.Windows.Forms.Padding(4);
-            this._ViewerSettingsPage.Size = new System.Drawing.Size(705, 375);
-            this._ViewerSettingsPage.TabIndex = 4;
-            this._ViewerSettingsPage.Text = "Reading Method";
             this._ViewerSettingsPage.UseVisualStyleBackColor = true;
             // 
             // _ViewerSettingsEditor
             // 
-            this._ViewerSettingsEditor.Location = new System.Drawing.Point(0, 0);
-            this._ViewerSettingsEditor.Margin = new System.Windows.Forms.Padding(5);
+            resources.ApplyResources(this._ViewerSettingsEditor, "_ViewerSettingsEditor");
             this._ViewerSettingsEditor.Name = "_ViewerSettingsEditor";
-            this._ViewerSettingsEditor.Size = new System.Drawing.Size(647, 349);
-            this._ViewerSettingsEditor.TabIndex = 0;
             this._ViewerSettingsEditor.Load += new System.EventHandler(this._ViewerSettingsEditor_Load);
             // 
             // _CleanerPage
@@ -570,13 +434,8 @@
             this._CleanerPage.Controls.Add(this.groupBox4);
             this._CleanerPage.Controls.Add(this.groupBox3);
             this._CleanerPage.Controls.Add(this.groupBox1);
-            this._CleanerPage.Location = new System.Drawing.Point(4, 22);
-            this._CleanerPage.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._CleanerPage, "_CleanerPage");
             this._CleanerPage.Name = "_CleanerPage";
-            this._CleanerPage.Padding = new System.Windows.Forms.Padding(4);
-            this._CleanerPage.Size = new System.Drawing.Size(705, 375);
-            this._CleanerPage.TabIndex = 5;
-            this._CleanerPage.Text = "Compression Cleaning";
             this._CleanerPage.UseVisualStyleBackColor = true;
             // 
             // groupBox4
@@ -593,130 +452,75 @@
             this.groupBox4.Controls.Add(this._RemoveAnnotationsBox);
             this.groupBox4.Controls.Add(this._RemovePageAutoActionsBox);
             this.groupBox4.Controls.Add(this._RemovePageMetaDataBox);
-            this.groupBox4.Location = new System.Drawing.Point(8, 131);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(689, 166);
-            this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Source document page";
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(296, 134);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(95, 12);
-            this.label12.TabIndex = 10;
-            this.label12.Text = " instruction(s)";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(190, 134);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(23, 12);
-            this.label11.TabIndex = 9;
-            this.label11.Text = "end";
             // 
             // _RemoveTrailingCommandCountBox
             // 
-            this._RemoveTrailingCommandCountBox.Location = new System.Drawing.Point(233, 132);
+            resources.ApplyResources(this._RemoveTrailingCommandCountBox, "_RemoveTrailingCommandCountBox");
             this._RemoveTrailingCommandCountBox.Name = "_RemoveTrailingCommandCountBox";
-            this._RemoveTrailingCommandCountBox.Size = new System.Drawing.Size(51, 21);
-            this._RemoveTrailingCommandCountBox.TabIndex = 8;
             // 
             // _RemoveLeadingCommandCountBox
             // 
-            this._RemoveLeadingCommandCountBox.Location = new System.Drawing.Point(118, 132);
+            resources.ApplyResources(this._RemoveLeadingCommandCountBox, "_RemoveLeadingCommandCountBox");
             this._RemoveLeadingCommandCountBox.Name = "_RemoveLeadingCommandCountBox";
-            this._RemoveLeadingCommandCountBox.Size = new System.Drawing.Size(51, 21);
-            this._RemoveLeadingCommandCountBox.TabIndex = 8;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(7, 134);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(107, 12);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "Clear page start ";
             // 
             // _RemovePageFormsBox
             // 
-            this._RemovePageFormsBox.AutoSize = true;
-            this._RemovePageFormsBox.Location = new System.Drawing.Point(299, 52);
+            resources.ApplyResources(this._RemovePageFormsBox, "_RemovePageFormsBox");
             this._RemovePageFormsBox.Name = "_RemovePageFormsBox";
-            this._RemovePageFormsBox.Size = new System.Drawing.Size(114, 16);
-            this._RemovePageFormsBox.TabIndex = 3;
-            this._RemovePageFormsBox.Text = "Clear all forms";
             this._RemovePageFormsBox.UseVisualStyleBackColor = true;
             // 
             // _RemovePageThumbnailsBox
             // 
-            this._RemovePageThumbnailsBox.AutoSize = true;
-            this._RemovePageThumbnailsBox.Location = new System.Drawing.Point(8, 52);
-            this._RemovePageThumbnailsBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._RemovePageThumbnailsBox, "_RemovePageThumbnailsBox");
             this._RemovePageThumbnailsBox.Name = "_RemovePageThumbnailsBox";
-            this._RemovePageThumbnailsBox.Size = new System.Drawing.Size(144, 16);
-            this._RemovePageThumbnailsBox.TabIndex = 2;
-            this._RemovePageThumbnailsBox.Text = "Clear page thumbnail";
             this._RemovePageThumbnailsBox.UseVisualStyleBackColor = true;
             // 
             // _RemovePageTextBlocksBox
             // 
-            this._RemovePageTextBlocksBox.AutoSize = true;
-            this._RemovePageTextBlocksBox.Location = new System.Drawing.Point(8, 106);
-            this._RemovePageTextBlocksBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._RemovePageTextBlocksBox, "_RemovePageTextBlocksBox");
             this._RemovePageTextBlocksBox.Name = "_RemovePageTextBlocksBox";
-            this._RemovePageTextBlocksBox.Size = new System.Drawing.Size(138, 16);
-            this._RemovePageTextBlocksBox.TabIndex = 6;
-            this._RemovePageTextBlocksBox.Text = "Clear page all text";
             this._RemovePageTextBlocksBox.UseVisualStyleBackColor = true;
             // 
             // _RemovePageLinksBox
             // 
-            this._RemovePageLinksBox.AutoSize = true;
-            this._RemovePageLinksBox.Location = new System.Drawing.Point(299, 77);
-            this._RemovePageLinksBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._RemovePageLinksBox, "_RemovePageLinksBox");
             this._RemovePageLinksBox.Name = "_RemovePageLinksBox";
-            this._RemovePageLinksBox.Size = new System.Drawing.Size(210, 16);
-            this._RemovePageLinksBox.TabIndex = 5;
-            this._RemovePageLinksBox.Text = "Clear page All link annotations";
             this._RemovePageLinksBox.UseVisualStyleBackColor = true;
             // 
             // _RemoveAnnotationsBox
             // 
-            this._RemoveAnnotationsBox.AutoSize = true;
-            this._RemoveAnnotationsBox.Location = new System.Drawing.Point(8, 79);
-            this._RemoveAnnotationsBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._RemoveAnnotationsBox, "_RemoveAnnotationsBox");
             this._RemoveAnnotationsBox.Name = "_RemoveAnnotationsBox";
-            this._RemoveAnnotationsBox.Size = new System.Drawing.Size(204, 16);
-            this._RemoveAnnotationsBox.TabIndex = 4;
-            this._RemoveAnnotationsBox.Text = "Clear all comments on the page";
             this._RemoveAnnotationsBox.UseVisualStyleBackColor = true;
             // 
             // _RemovePageAutoActionsBox
             // 
-            this._RemovePageAutoActionsBox.AutoSize = true;
-            this._RemovePageAutoActionsBox.Location = new System.Drawing.Point(8, 25);
-            this._RemovePageAutoActionsBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._RemovePageAutoActionsBox, "_RemovePageAutoActionsBox");
             this._RemovePageAutoActionsBox.Name = "_RemovePageAutoActionsBox";
-            this._RemovePageAutoActionsBox.Size = new System.Drawing.Size(276, 16);
-            this._RemovePageAutoActionsBox.TabIndex = 0;
-            this._RemovePageAutoActionsBox.Text = "Prohibited page automatic execution action";
             this._RemovePageAutoActionsBox.UseVisualStyleBackColor = true;
             // 
             // _RemovePageMetaDataBox
             // 
-            this._RemovePageMetaDataBox.AutoSize = true;
-            this._RemovePageMetaDataBox.Location = new System.Drawing.Point(299, 25);
-            this._RemovePageMetaDataBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._RemovePageMetaDataBox, "_RemovePageMetaDataBox");
             this._RemovePageMetaDataBox.Name = "_RemovePageMetaDataBox";
-            this._RemovePageMetaDataBox.Size = new System.Drawing.Size(264, 16);
-            this._RemovePageMetaDataBox.TabIndex = 1;
-            this._RemovePageMetaDataBox.Text = "Delete page extension tag (XML) metadata";
             this._RemovePageMetaDataBox.UseVisualStyleBackColor = true;
             // 
             // groupBox3
@@ -726,227 +530,136 @@
             this.groupBox3.Controls.Add(this._RemoveXmlMetaDataBox);
             this.groupBox3.Controls.Add(this._RemoveDocAutoActionsBox);
             this.groupBox3.Controls.Add(this._RemoveUsageRightsBox);
-            this.groupBox3.Location = new System.Drawing.Point(8, 8);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(689, 116);
-            this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Source document";
             // 
             // _RemoveBookmarksBox
             // 
-            this._RemoveBookmarksBox.AutoSize = true;
-            this._RemoveBookmarksBox.Location = new System.Drawing.Point(8, 80);
-            this._RemoveBookmarksBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._RemoveBookmarksBox, "_RemoveBookmarksBox");
             this._RemoveBookmarksBox.Name = "_RemoveBookmarksBox";
-            this._RemoveBookmarksBox.Size = new System.Drawing.Size(186, 16);
-            this._RemoveBookmarksBox.TabIndex = 4;
-            this._RemoveBookmarksBox.Text = "Delete navigation bookmarks";
             this._RemoveBookmarksBox.UseVisualStyleBackColor = true;
             // 
             // _FixContentBox
             // 
-            this._FixContentBox.AutoSize = true;
-            this._FixContentBox.Location = new System.Drawing.Point(424, 52);
-            this._FixContentBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._FixContentBox, "_FixContentBox");
             this._FixContentBox.Name = "_FixContentBox";
-            this._FixContentBox.Size = new System.Drawing.Size(180, 16);
-            this._FixContentBox.TabIndex = 3;
-            this._FixContentBox.Text = "Try fixing document errors";
             this._FixContentBox.UseVisualStyleBackColor = true;
             // 
             // _RemoveXmlMetaDataBox
             // 
-            this._RemoveXmlMetaDataBox.AutoSize = true;
-            this._RemoveXmlMetaDataBox.Location = new System.Drawing.Point(340, 25);
-            this._RemoveXmlMetaDataBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._RemoveXmlMetaDataBox, "_RemoveXmlMetaDataBox");
             this._RemoveXmlMetaDataBox.Name = "_RemoveXmlMetaDataBox";
-            this._RemoveXmlMetaDataBox.Size = new System.Drawing.Size(294, 16);
-            this._RemoveXmlMetaDataBox.TabIndex = 1;
-            this._RemoveXmlMetaDataBox.Text = "Delete extended tag (XML) metadata properties";
             this._RemoveXmlMetaDataBox.UseVisualStyleBackColor = true;
             // 
             // _RemoveDocAutoActionsBox
             // 
-            this._RemoveDocAutoActionsBox.AutoSize = true;
-            this._RemoveDocAutoActionsBox.Location = new System.Drawing.Point(8, 52);
-            this._RemoveDocAutoActionsBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._RemoveDocAutoActionsBox, "_RemoveDocAutoActionsBox");
             this._RemoveDocAutoActionsBox.Name = "_RemoveDocAutoActionsBox";
-            this._RemoveDocAutoActionsBox.Size = new System.Drawing.Size(408, 16);
-            this._RemoveDocAutoActionsBox.TabIndex = 2;
-            this._RemoveDocAutoActionsBox.Text = "Automatically perform action when prohibiting open documentation";
             this._RemoveDocAutoActionsBox.UseVisualStyleBackColor = true;
             // 
             // _RemoveUsageRightsBox
             // 
-            this._RemoveUsageRightsBox.AutoSize = true;
-            this._RemoveUsageRightsBox.Location = new System.Drawing.Point(8, 25);
-            this._RemoveUsageRightsBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._RemoveUsageRightsBox, "_RemoveUsageRightsBox");
             this._RemoveUsageRightsBox.Name = "_RemoveUsageRightsBox";
-            this._RemoveUsageRightsBox.Size = new System.Drawing.Size(324, 16);
-            this._RemoveUsageRightsBox.TabIndex = 0;
-            this._RemoveUsageRightsBox.Text = "Clear replication, printing and other restrictions";
             this._RemoveUsageRightsBox.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this._RecompressWithJbig2Box);
             this.groupBox1.Controls.Add(this._FullCompressionBox);
-            this.groupBox1.Location = new System.Drawing.Point(8, 305);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(689, 54);
-            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Content compression";
             // 
             // _RecompressWithJbig2Box
             // 
-            this._RecompressWithJbig2Box.AutoSize = true;
-            this._RecompressWithJbig2Box.Location = new System.Drawing.Point(299, 25);
-            this._RecompressWithJbig2Box.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._RecompressWithJbig2Box, "_RecompressWithJbig2Box");
             this._RecompressWithJbig2Box.Name = "_RecompressWithJbig2Box";
-            this._RecompressWithJbig2Box.Size = new System.Drawing.Size(312, 16);
-            this._RecompressWithJbig2Box.TabIndex = 1;
-            this._RecompressWithJbig2Box.Text = "Optimize black and white image compression ratio";
             this._RecompressWithJbig2Box.UseVisualStyleBackColor = true;
             // 
             // _FullCompressionBox
             // 
-            this._FullCompressionBox.AutoSize = true;
-            this._FullCompressionBox.Location = new System.Drawing.Point(8, 25);
-            this._FullCompressionBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._FullCompressionBox, "_FullCompressionBox");
             this._FullCompressionBox.Name = "_FullCompressionBox";
-            this._FullCompressionBox.Size = new System.Drawing.Size(234, 16);
-            this._FullCompressionBox.TabIndex = 0;
-            this._FullCompressionBox.Text = "Compressed index table and bookmark";
             this._FullCompressionBox.UseVisualStyleBackColor = true;
             // 
             // _DocumentInfoPage
             // 
             this._DocumentInfoPage.Controls.Add(this._DocumentInfoEditor);
-            this._DocumentInfoPage.Location = new System.Drawing.Point(4, 22);
-            this._DocumentInfoPage.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._DocumentInfoPage, "_DocumentInfoPage");
             this._DocumentInfoPage.Name = "_DocumentInfoPage";
-            this._DocumentInfoPage.Padding = new System.Windows.Forms.Padding(4);
-            this._DocumentInfoPage.Size = new System.Drawing.Size(705, 375);
-            this._DocumentInfoPage.TabIndex = 2;
-            this._DocumentInfoPage.Text = "Document Property";
             this._DocumentInfoPage.UseVisualStyleBackColor = true;
             // 
             // _DocumentInfoEditor
             // 
-            this._DocumentInfoEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._DocumentInfoEditor.Location = new System.Drawing.Point(0, 0);
-            this._DocumentInfoEditor.Margin = new System.Windows.Forms.Padding(5);
+            resources.ApplyResources(this._DocumentInfoEditor, "_DocumentInfoEditor");
             this._DocumentInfoEditor.Name = "_DocumentInfoEditor";
-            this._DocumentInfoEditor.Size = new System.Drawing.Size(695, 368);
-            this._DocumentInfoEditor.TabIndex = 0;
             // 
             // _PageLabelsPage
             // 
             this._PageLabelsPage.Controls.Add(this._PageLabelEditor);
-            this._PageLabelsPage.Location = new System.Drawing.Point(4, 22);
-            this._PageLabelsPage.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._PageLabelsPage, "_PageLabelsPage");
             this._PageLabelsPage.Name = "_PageLabelsPage";
-            this._PageLabelsPage.Padding = new System.Windows.Forms.Padding(4);
-            this._PageLabelsPage.Size = new System.Drawing.Size(705, 375);
-            this._PageLabelsPage.TabIndex = 3;
-            this._PageLabelsPage.Text = "Table Size Label";
             this._PageLabelsPage.UseVisualStyleBackColor = true;
             // 
             // _PageLabelEditor
             // 
-            this._PageLabelEditor.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this._PageLabelEditor, "_PageLabelEditor");
             this._PageLabelEditor.Labels = null;
-            this._PageLabelEditor.Location = new System.Drawing.Point(4, 4);
-            this._PageLabelEditor.Margin = new System.Windows.Forms.Padding(5);
             this._PageLabelEditor.Name = "_PageLabelEditor";
-            this._PageLabelEditor.Size = new System.Drawing.Size(697, 367);
-            this._PageLabelEditor.TabIndex = 0;
             // 
             // _FontSubstitutionsPage
             // 
             this._FontSubstitutionsPage.Controls.Add(this._FontSubstitutionsEditor);
-            this._FontSubstitutionsPage.Location = new System.Drawing.Point(4, 22);
-            this._FontSubstitutionsPage.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._FontSubstitutionsPage, "_FontSubstitutionsPage");
             this._FontSubstitutionsPage.Name = "_FontSubstitutionsPage";
-            this._FontSubstitutionsPage.Padding = new System.Windows.Forms.Padding(4);
-            this._FontSubstitutionsPage.Size = new System.Drawing.Size(705, 375);
-            this._FontSubstitutionsPage.TabIndex = 7;
-            this._FontSubstitutionsPage.Text = "Replace Font";
             this._FontSubstitutionsPage.UseVisualStyleBackColor = true;
             // 
             // _FontSubstitutionsEditor
             // 
-            this._FontSubstitutionsEditor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._FontSubstitutionsEditor.Location = new System.Drawing.Point(4, 4);
-            this._FontSubstitutionsEditor.Margin = new System.Windows.Forms.Padding(5);
+            resources.ApplyResources(this._FontSubstitutionsEditor, "_FontSubstitutionsEditor");
             this._FontSubstitutionsEditor.Name = "_FontSubstitutionsEditor";
             this._FontSubstitutionsEditor.Options = null;
-            this._FontSubstitutionsEditor.Size = new System.Drawing.Size(697, 367);
             this._FontSubstitutionsEditor.Substitutions = null;
-            this._FontSubstitutionsEditor.TabIndex = 0;
             // 
             // _ConfigPage
             // 
             this._ConfigPage.Controls.Add(this._ResetButton);
             this._ConfigPage.Controls.Add(this._ImportButton);
             this._ConfigPage.Controls.Add(this._ExportButton);
-            this._ConfigPage.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this._ConfigPage, "_ConfigPage");
             this._ConfigPage.Name = "_ConfigPage";
-            this._ConfigPage.Padding = new System.Windows.Forms.Padding(3);
-            this._ConfigPage.Size = new System.Drawing.Size(705, 375);
-            this._ConfigPage.TabIndex = 9;
             this._ConfigPage.UseVisualStyleBackColor = true;
             // 
             // _ResetButton
             // 
-            this._ResetButton.Location = new System.Drawing.Point(30, 80);
+            resources.ApplyResources(this._ResetButton, "_ResetButton");
             this._ResetButton.Name = "_ResetButton";
-            this._ResetButton.Size = new System.Drawing.Size(185, 23);
-            this._ResetButton.TabIndex = 0;
-            this._ResetButton.Text = "The restore option is the default value";
             this._ResetButton.UseVisualStyleBackColor = true;
             // 
             // _ImportButton
             // 
-            this._ImportButton.Location = new System.Drawing.Point(30, 51);
+            resources.ApplyResources(this._ImportButton, "_ImportButton");
             this._ImportButton.Name = "_ImportButton";
-            this._ImportButton.Size = new System.Drawing.Size(185, 23);
-            this._ImportButton.TabIndex = 0;
-            this._ImportButton.Text = "Import Instrument Profile...";
             this._ImportButton.UseVisualStyleBackColor = true;
             // 
             // _ExportButton
             // 
-            this._ExportButton.Location = new System.Drawing.Point(30, 22);
+            resources.ApplyResources(this._ExportButton, "_ExportButton");
             this._ExportButton.Name = "_ExportButton";
-            this._ExportButton.Size = new System.Drawing.Size(185, 23);
-            this._ExportButton.TabIndex = 0;
-            this._ExportButton.Text = "Export option configuration file...";
             this._ExportButton.UseVisualStyleBackColor = true;
             // 
             // PatcherOptionForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 435);
             this.Controls.Add(this._MainTab);
-            this.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(637, 458);
             this.Name = "PatcherOptionForm";
             this.ShowInTaskbar = false;
-            this.Text = "PDF document option";
             this.Load += new System.EventHandler(this.PatcherOptionForm_Load);
             this._PageSettingsPage.ResumeLayout(false);
             this._MainTab.ResumeLayout(false);

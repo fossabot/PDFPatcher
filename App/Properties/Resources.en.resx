@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutPage" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;About $AppName&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            margin: 0;
+            padding: 5pt;
+        }
+
+        h1 {
+            border-bottom: 1px dashed #9900ff;
+            color: #6666cc;
+            font-size: 15pt;
+            margin: 5pt 0;
+        }
+
+        p, td {
+            font-size: 11pt;
+            margin: 0pt;
+            padding: 3pt 0pt;
+        }
+
+        h2 {
+            color: #6666cc;
+            font-size: 12pt;
+            margin: 0;
+            padding: 3pt 0;
+        }
+
+        span {
+            display: inline-block;
+            width: 50%;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;About $AppName&lt;/h1&gt;
+&lt;div style="padding: 0 10pt;"&gt;
+    &lt;table style="max-width: 800px; width: 100%;"&gt;
+        &lt;tr&gt;
+            &lt;td rowspan="5"&gt;
+                &lt;img src="res:Logo"/&gt;
+            &lt;/td&gt;
+            &lt;td colspan="2"&gt;$AssemblyCopyright&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Version:&lt;/td&gt;
+            &lt;td&gt;$AssemblyVersion &lt;a href="exec:_CheckUpdate"&gt;Check for Updates&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Homepage:&lt;/td&gt;
+            &lt;td&gt;
+                &lt;a href="$AppHomePage"&gt;$AppHomePage&lt;/a&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Source code:&lt;/td&gt;
+            &lt;td&gt;
+                &lt;a href="$AppHubPage"&gt;$AppHubPage&lt;/a&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Author's email:&lt;/td&gt;
+            &lt;td&gt;$AssemblyCompany&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p&gt;PDF Patcher is open source free software. Before using the software, you must agree to the use agreement accompanying this software. BY USING THIS SOFTWARE, YOU AGREE TO AND COMPLY WITH THE TERMS OF THE SOFTWARE USE AGREEMENT AND ACKNOWLEDGE OF YOUR RESPONSIBILITY FOR USE OF THE SOFTWARE. &lt;/p&gt;
+    &lt;p&gt;This software and source code are under the agreement of "&lt;strong&gt;Conscience Authorization&lt;/strong&gt;" - &lt;strong&gt;If users benefit from this software each time, they should do a good deed; if they use the source code to develop To obtain new software and obtain benefits, no less than one thousandth of the proceeds should be donated to disadvantaged groups in society. &lt;/strong&gt; This software and its copyright owner are not responsible for any loss caused by the installation, copying and use of this software. &lt;/p&gt;
+    &lt;p&gt;This software uses the results of the following open source projects, thanks to:&lt;/p&gt;
+    &lt;ol&gt;
+        &lt;li&gt;PDF Components: &lt;a href="http://itextsharp.sourceforge.net"&gt;http://itextsharp.sourceforge.net&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;PDF Engine: &lt;a href="http://mupdf.com"&gt;http://mupdf.com&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Image Processing: &lt;a href="http://freeimage.sourceforge.net"&gt;http://freeimage.sourceforge.net&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;JBIG2 Decoder: &lt;a href="http://artifex.com/"&gt;http://artifex.com/&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;JBIG2 Encoder: Adam Langley, &lt;a href="https://github.com/agl/jbig2enc"&gt;https://github.com/agl/jbig2enc&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Data Editor: Phillip Piper, &lt;a href="http://objectlistview.sourceforge.net"&gt;http://objectlistview.sourceforge.net&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Web UI: ArthurHub, &lt;a href="https://github.com/ArthurHub/HTML-Renderer"&gt;https://github.com/ArthurHub/HTML-Renderer&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;GUI icon: Yusuke Kamiyamane, &lt;a href="http://p.yusukekamiyamane.com"&gt;http://p.yusukekamiyamane.com&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Image browsing: Cyotek ImageBox, &lt;a href="http://www.cyotek.com/"&gt;http://www.cyotek.com/&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Image Quantization Algorithm: Wu Xiaolin, &lt;a href="http://www.ece.mcmaster.ca/~xwu/cq.c"&gt;http://www.ece.mcmaster.ca/~xwu/cq.c&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</value>
+  </data>
+  <data name="FrontPage" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;$appName&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            margin: 0;
+            padding: 5pt;
+        }
+
+        h1 {
+            border-bottom: 1px dashed #9900ff;
+            color: #6666cc;
+            font-size: 15pt;
+            margin: 5pt 0;
+        }
+
+        p {
+            color: #999999;
+            font-size: 11pt;
+            margin: 0pt;
+            padding: 3pt 10pt;
+        }
+
+        h2 {
+            color: #6666cc;
+            font-size: 12pt;
+            margin: 0;
+            padding: 3pt 0;
+        }
+
+        td { vertical-align: top; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;
+    &lt;a href="func:About"&gt;$appName&lt;/a&gt;
+&lt;/h1&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td style="border-right: 1px solid blue; padding-right: 5pt; width: 160pt;"&gt;
+            &lt;h2&gt;Process&lt;/h2&gt;
+            &lt;div&gt;Editor;BookmarkEditor;Modify PDF Files;Create or modify bookmarks of PDF documents, modify settings of PDF documents&lt;/div&gt;
+            &lt;div&gt;DocumentProcessor;Patcher;Modify PDFs in Batch; batch process PDF documents according to the configuration to generate new documents&lt;/div&gt;
+            &lt;div&gt;Merger;Merger;Merge PDF &amp; Images;Merge multiple image and PDF documents into a new PDF document&lt;/div&gt;
+            &lt;div&gt;Ocr;Ocr;OCR;Identify text in scanned PDF documents (requires Microsoft Office 2003 or 2007 Optical Character Recognition &lt;i&gt;(OCR)&lt;/i&gt;engine support)&lt;/div&gt;
+            &lt;div&gt;AutoBookmark;BookmarkGenerator;Auto-gen bookmarks;Generate bookmark files according to the text style of PDF&lt;/div&gt;
+            &lt;div&gt;Rename;Rename;Rename Files in Batch;Change filename based on PDF's text properties&lt;/div&gt;
+            &lt;h2&gt;Extract&lt;/h2&gt;
+            &lt;div&gt;ExtractPages;ExtractPages;Extract Pages / Split;Extract Pages or Reflow Pages from PDF Document&lt;/div&gt;
+            &lt;div&gt;ExtractImage;ExtractImages;Extract images;Extract images from PDF documents without loss&lt;/div&gt;
+            &lt;div&gt;RenderDocument;RenderPages;Convert to Images;Convert pages of a PDF document to images&lt;/div&gt;
+            &lt;h2&gt;Advanced&lt;/h2&gt;
+            &lt;div&gt;DocumentInspector;Inspector;PDF Inspector;Inspects the internal structure of a PDF document&lt;/div&gt;
+            &lt;div&gt;ExportInfoFile;InfoExchanger;Export/Import info;Export bookmarks, document metadata, reader settings and other information to information files&lt;/div&gt;
+            &lt;div&gt;AppOptions;Options;Configuration;Modify the program configuration of the PDF patch&lt;/div&gt;
+            &lt;h2&gt;Help&lt;/h2&gt;
+            &lt;div&gt;About;About;About;Support software development&lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-left: 5pt;"&gt;
+            &lt;div&gt;Click the function on the left, or &lt;a href="exec:_Open"&gt;open the file you want to modify&lt;/a&gt;. &lt;/div&gt;
+            &lt;ol style="margin-top: 5pt;"&gt;
+                &lt;li&gt;&lt;/li&gt;
+            &lt;/ol&gt;
+            &lt;div&gt;Click here to &lt;a href="exec:_CleanUpInexistentFiles"&gt;Clean up obsolete file records&lt;/a&gt;. &lt;/div&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;div style="font-size: 9pt"&gt;Copyright: WMJordan; Homepage: &lt;a href="$AppHomePage"&gt;$AppHomePage&lt;/a&gt;; Email: wmjordan@163.com&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</value>
+  </data>
+</root>

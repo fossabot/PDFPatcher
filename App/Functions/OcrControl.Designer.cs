@@ -25,349 +25,247 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
-			this.label3 = new System.Windows.Forms.Label();
-			this._PageRangeBox = new System.Windows.Forms.TextBox();
-			this.tabControl1 = new System.Windows.Forms.TabControl();
-			this.tabPage1 = new System.Windows.Forms.TabPage();
-			this._OutputOriginalOcrResultBox = new System.Windows.Forms.CheckBox();
-			this._ConvertToMonoColorBox = new System.Windows.Forms.CheckBox();
-			this._RemoveSpaceBetweenChineseBox = new System.Windows.Forms.CheckBox();
-			this._SaveOcredImageBox = new System.Windows.Forms.CheckBox();
-			this._CompressWhiteSpaceBox = new System.Windows.Forms.CheckBox();
-			this._DetectContentPunctuationsBox = new System.Windows.Forms.CheckBox();
-			this._DetectColumnsBox = new System.Windows.Forms.CheckBox();
-			this._StretchBox = new System.Windows.Forms.CheckBox();
-			this._OrientBox = new System.Windows.Forms.CheckBox();
-			this._OcrLangBox = new System.Windows.Forms.ComboBox();
-			this.label13 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this._WritingDirectionBox = new System.Windows.Forms.ComboBox();
-			this.label14 = new System.Windows.Forms.Label();
-			this._QuantitiveFactorBox = new System.Windows.Forms.NumericUpDown();
-			this._SourceFileControl = new PDFPatcher.SourceFileControl();
-			this._BookmarkControl = new PDFPatcher.BookmarkControl();
-			this._TargetFileControl = new PDFPatcher.TargetFileControl();
-			this._ExportBookmarkButton = new System.Windows.Forms.Button();
-			this._ImportOcrResultButton = new EnhancedGlassButton.GlassButton();
-			this._PrintOcrResultBox = new System.Windows.Forms.CheckBox();
-			this.tabControl1.SuspendLayout();
-			this.tabPage1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this._QuantitiveFactorBox)).BeginInit();
-			this.SuspendLayout();
-			//
-			// label3
-			//
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(3, 12);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(89, 12);
-			this.label3.TabIndex = 0;
-			this.label3.Text = "Identify page range:";
-			//
-			// _PageRangeBox
-			//
-			this._PageRangeBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this._PageRangeBox.Location = new System.Drawing.Point(98, 9);
-			this._PageRangeBox.Name = "_PageRangeBox";
-			this._PageRangeBox.Size = new System.Drawing.Size(335, 21);
-			this._PageRangeBox.TabIndex = 1;
-			//
-			// tabControl1
-			//
-			this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.tabControl1.Controls.Add(this.tabPage1);
-			this.tabControl1.Location = new System.Drawing.Point(13, 124);
-			this.tabControl1.Name = "tabControl1";
-			this.tabControl1.SelectedIndex = 0;
-			this.tabControl1.Size = new System.Drawing.Size(447, 194);
-			this.tabControl1.TabIndex = 4;
-			//
-			// tabPage1
-			//
-			this.tabPage1.Controls.Add(this._PrintOcrResultBox);
-			this.tabPage1.Controls.Add(this._OutputOriginalOcrResultBox);
-			this.tabPage1.Controls.Add(this._ConvertToMonoColorBox);
-			this.tabPage1.Controls.Add(this._RemoveSpaceBetweenChineseBox);
-			this.tabPage1.Controls.Add(this._SaveOcredImageBox);
-			this.tabPage1.Controls.Add(this._CompressWhiteSpaceBox);
-			this.tabPage1.Controls.Add(this._DetectContentPunctuationsBox);
-			this.tabPage1.Controls.Add(this._DetectColumnsBox);
-			this.tabPage1.Controls.Add(this._StretchBox);
-			this.tabPage1.Controls.Add(this._OrientBox);
-			this.tabPage1.Controls.Add(this._OcrLangBox);
-			this.tabPage1.Controls.Add(this.label13);
-			this.tabPage1.Controls.Add(this.label5);
-			this.tabPage1.Controls.Add(this._WritingDirectionBox);
-			this.tabPage1.Controls.Add(this.label3);
-			this.tabPage1.Controls.Add(this._PageRangeBox);
-			this.tabPage1.Location = new System.Drawing.Point(4, 22);
-			this.tabPage1.Name = "tabPage1";
-			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage1.Size = new System.Drawing.Size(439, 168);
-			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "Identification option";
-			this.tabPage1.UseVisualStyleBackColor = true;
-			//
-			// _OutputOriginalOcrResultBox
-			//
-			this._OutputOriginalOcrResultBox.AutoSize = true;
-			this._OutputOriginalOcrResultBox.Location = new System.Drawing.Point(202, 128);
-			this._OutputOriginalOcrResultBox.Name = "_OutputOriginalOcrResultBox";
-			this._OutputOriginalOcrResultBox.Size = new System.Drawing.Size(132, 16);
-			this._OutputOriginalOcrResultBox.TabIndex = 16;
-			this._OutputOriginalOcrResultBox.Text = "Save the original identification result";
-			this._OutputOriginalOcrResultBox.UseVisualStyleBackColor = true;
-			this._OutputOriginalOcrResultBox.CheckedChanged += new System.EventHandler(this.ControlEvent);
-			//
-			// _ConvertToMonoColorBox
-			//
-			this._ConvertToMonoColorBox.AutoSize = true;
-			this._ConvertToMonoColorBox.Location = new System.Drawing.Point(6, 128);
-			this._ConvertToMonoColorBox.Name = "_ConvertToMonoColorBox";
-			this._ConvertToMonoColorBox.Size = new System.Drawing.Size(144, 16);
-			this._ConvertToMonoColorBox.TabIndex = 12;
-			this._ConvertToMonoColorBox.Text = "Convert to black and white image and then recognize";
-			this._ConvertToMonoColorBox.UseVisualStyleBackColor = true;
-			//
-			// _RemoveSpaceBetweenChineseBox
-			//
-			this._RemoveSpaceBetweenChineseBox.AutoSize = true;
-			this._RemoveSpaceBetweenChineseBox.Location = new System.Drawing.Point(202, 106);
-			this._RemoveSpaceBetweenChineseBox.Name = "_RemoveSpaceBetweenChineseBox";
-			this._RemoveSpaceBetweenChineseBox.Size = new System.Drawing.Size(120, 16);
-			this._RemoveSpaceBetweenChineseBox.TabIndex = 11;
-			this._RemoveSpaceBetweenChineseBox.Text = "Delete the space between Chinese characters";
-			this._RemoveSpaceBetweenChineseBox.UseVisualStyleBackColor = true;
-			//
-			// _SaveOcredImageBox
-			//
-			this._SaveOcredImageBox.AutoSize = true;
-			this._SaveOcredImageBox.Location = new System.Drawing.Point(202, 150);
-			this._SaveOcredImageBox.Name = "_SaveOcredImageBox";
-			this._SaveOcredImageBox.Size = new System.Drawing.Size(156, 16);
-			this._SaveOcredImageBox.TabIndex = 13;
-			this._SaveOcredImageBox.Text = "Save images of the identification engine";
-			this._SaveOcredImageBox.UseVisualStyleBackColor = true;
-			this._SaveOcredImageBox.Visible = false;
-			//
-			// _CompressWhiteSpaceBox
-			//
-			this._CompressWhiteSpaceBox.AutoSize = true;
-			this._CompressWhiteSpaceBox.Location = new System.Drawing.Point(6, 106);
-			this._CompressWhiteSpaceBox.Name = "_CompressWhiteSpaceBox";
-			this._CompressWhiteSpaceBox.Size = new System.Drawing.Size(132, 16);
-			this._CompressWhiteSpaceBox.TabIndex = 10;
-			this._CompressWhiteSpaceBox.Text = "Compression continuous space";
-			this._CompressWhiteSpaceBox.UseVisualStyleBackColor = true;
-			//
-			// _DetectContentPunctuationsBox
-			//
-			this._DetectContentPunctuationsBox.AutoSize = true;
-			this._DetectContentPunctuationsBox.Location = new System.Drawing.Point(202, 84);
-			this._DetectContentPunctuationsBox.Name = "_DetectContentPunctuationsBox";
-			this._DetectContentPunctuationsBox.Size = new System.Drawing.Size(192, 16);
-			this._DetectContentPunctuationsBox.TabIndex = 9;
-			this._DetectContentPunctuationsBox.Text = "Identify the point (...) separator of the directory page";
-			this._DetectContentPunctuationsBox.UseVisualStyleBackColor = true;
-			//
-			// _DetectColumnsBox
-			//
-			this._DetectColumnsBox.AutoSize = true;
-			this._DetectColumnsBox.Location = new System.Drawing.Point(6, 84);
-			this._DetectColumnsBox.Name = "_DetectColumnsBox";
-			this._DetectColumnsBox.Size = new System.Drawing.Size(96, 16);
-			this._DetectColumnsBox.TabIndex = 8;
-			this._DetectColumnsBox.Text = "Identification section";
-			this._DetectColumnsBox.UseVisualStyleBackColor = true;
-			//
-			// _StretchBox
-			//
-			this._StretchBox.AutoSize = true;
-			this._StretchBox.Location = new System.Drawing.Point(202, 62);
-			this._StretchBox.Name = "_StretchBox";
-			this._StretchBox.Size = new System.Drawing.Size(96, 16);
-			this._StretchBox.TabIndex = 7;
-			this._StretchBox.Text = "Correct tilt page";
-			this._StretchBox.UseVisualStyleBackColor = true;
-			//
-			// _OrientBox
-			//
-			this._OrientBox.AutoSize = true;
-			this._OrientBox.Location = new System.Drawing.Point(6, 62);
-			this._OrientBox.Name = "_OrientBox";
-			this._OrientBox.Size = new System.Drawing.Size(96, 16);
-			this._OrientBox.TabIndex = 6;
-			this._OrientBox.Text = "Detection page";
-			this._OrientBox.UseVisualStyleBackColor = true;
-			//
-			// _OcrLangBox
-			//
-			this._OcrLangBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this._OcrLangBox.FormattingEnabled = true;
-			this._OcrLangBox.Location = new System.Drawing.Point(295, 36);
-			this._OcrLangBox.Name = "_OcrLangBox";
-			this._OcrLangBox.Size = new System.Drawing.Size(76, 20);
-			this._OcrLangBox.TabIndex = 5;
-			//
-			// label13
-			//
-			this.label13.AutoSize = true;
-			this.label13.Location = new System.Drawing.Point(200, 39);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(89, 12);
-			this.label13.TabIndex = 4;
-			this.label13.Text = "Text recognition language:";
-			//
-			// label5
-			//
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(3, 39);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(89, 12);
-			this.label5.TabIndex = 2;
-			this.label5.Text = "Text Titting Direction:";
-			//
-			// _WritingDirectionBox
-			//
-			this._WritingDirectionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this._WritingDirectionBox.FormattingEnabled = true;
-			this._WritingDirectionBox.Items.AddRange(new object[] {
-       "Automatic Detection",
-             "Horizontal",
-             "Portrait"});
-			this._WritingDirectionBox.Location = new System.Drawing.Point(98, 36);
-			this._WritingDirectionBox.Name = "_WritingDirectionBox";
-			this._WritingDirectionBox.Size = new System.Drawing.Size(76, 20);
-			this._WritingDirectionBox.TabIndex = 3;
-			this._WritingDirectionBox.SelectedIndexChanged += new System.EventHandler(this.ControlEvent);
-			//
-			// label14
-			//
-			this.label14.AutoSize = true;
-			this.label14.Location = new System.Drawing.Point(20, 96);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(89, 12);
-			this.label14.TabIndex = 14;
-			this.label14.Text = "Size quantization factor:";
-			this.label14.Visible = false;
-			//
-			// _QuantitiveFactorBox
-			//
-			this._QuantitiveFactorBox.DecimalPlaces = 2;
-			this._QuantitiveFactorBox.Increment = new decimal(new int[] {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OcrControl));
+            this.label3 = new System.Windows.Forms.Label();
+            this._PageRangeBox = new System.Windows.Forms.TextBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this._PrintOcrResultBox = new System.Windows.Forms.CheckBox();
+            this._OutputOriginalOcrResultBox = new System.Windows.Forms.CheckBox();
+            this._ConvertToMonoColorBox = new System.Windows.Forms.CheckBox();
+            this._RemoveSpaceBetweenChineseBox = new System.Windows.Forms.CheckBox();
+            this._SaveOcredImageBox = new System.Windows.Forms.CheckBox();
+            this._CompressWhiteSpaceBox = new System.Windows.Forms.CheckBox();
+            this._DetectContentPunctuationsBox = new System.Windows.Forms.CheckBox();
+            this._DetectColumnsBox = new System.Windows.Forms.CheckBox();
+            this._StretchBox = new System.Windows.Forms.CheckBox();
+            this._OrientBox = new System.Windows.Forms.CheckBox();
+            this._OcrLangBox = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this._WritingDirectionBox = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this._QuantitiveFactorBox = new System.Windows.Forms.NumericUpDown();
+            this._SourceFileControl = new PDFPatcher.SourceFileControl();
+            this._BookmarkControl = new PDFPatcher.BookmarkControl();
+            this._TargetFileControl = new PDFPatcher.TargetFileControl();
+            this._ExportBookmarkButton = new System.Windows.Forms.Button();
+            this._ImportOcrResultButton = new EnhancedGlassButton.GlassButton();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._QuantitiveFactorBox)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // _PageRangeBox
+            // 
+            resources.ApplyResources(this._PageRangeBox, "_PageRangeBox");
+            this._PageRangeBox.Name = "_PageRangeBox";
+            // 
+            // tabControl1
+            // 
+            resources.ApplyResources(this.tabControl1, "tabControl1");
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this._PrintOcrResultBox);
+            this.tabPage1.Controls.Add(this._OutputOriginalOcrResultBox);
+            this.tabPage1.Controls.Add(this._ConvertToMonoColorBox);
+            this.tabPage1.Controls.Add(this._RemoveSpaceBetweenChineseBox);
+            this.tabPage1.Controls.Add(this._SaveOcredImageBox);
+            this.tabPage1.Controls.Add(this._CompressWhiteSpaceBox);
+            this.tabPage1.Controls.Add(this._DetectContentPunctuationsBox);
+            this.tabPage1.Controls.Add(this._DetectColumnsBox);
+            this.tabPage1.Controls.Add(this._StretchBox);
+            this.tabPage1.Controls.Add(this._OrientBox);
+            this.tabPage1.Controls.Add(this._OcrLangBox);
+            this.tabPage1.Controls.Add(this.label13);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this._WritingDirectionBox);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this._PageRangeBox);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // _PrintOcrResultBox
+            // 
+            resources.ApplyResources(this._PrintOcrResultBox, "_PrintOcrResultBox");
+            this._PrintOcrResultBox.Name = "_PrintOcrResultBox";
+            this._PrintOcrResultBox.UseVisualStyleBackColor = true;
+            // 
+            // _OutputOriginalOcrResultBox
+            // 
+            resources.ApplyResources(this._OutputOriginalOcrResultBox, "_OutputOriginalOcrResultBox");
+            this._OutputOriginalOcrResultBox.Name = "_OutputOriginalOcrResultBox";
+            this._OutputOriginalOcrResultBox.UseVisualStyleBackColor = true;
+            this._OutputOriginalOcrResultBox.CheckedChanged += new System.EventHandler(this.ControlEvent);
+            // 
+            // _ConvertToMonoColorBox
+            // 
+            resources.ApplyResources(this._ConvertToMonoColorBox, "_ConvertToMonoColorBox");
+            this._ConvertToMonoColorBox.Name = "_ConvertToMonoColorBox";
+            this._ConvertToMonoColorBox.UseVisualStyleBackColor = true;
+            // 
+            // _RemoveSpaceBetweenChineseBox
+            // 
+            resources.ApplyResources(this._RemoveSpaceBetweenChineseBox, "_RemoveSpaceBetweenChineseBox");
+            this._RemoveSpaceBetweenChineseBox.Name = "_RemoveSpaceBetweenChineseBox";
+            this._RemoveSpaceBetweenChineseBox.UseVisualStyleBackColor = true;
+            // 
+            // _SaveOcredImageBox
+            // 
+            resources.ApplyResources(this._SaveOcredImageBox, "_SaveOcredImageBox");
+            this._SaveOcredImageBox.Name = "_SaveOcredImageBox";
+            this._SaveOcredImageBox.UseVisualStyleBackColor = true;
+            // 
+            // _CompressWhiteSpaceBox
+            // 
+            resources.ApplyResources(this._CompressWhiteSpaceBox, "_CompressWhiteSpaceBox");
+            this._CompressWhiteSpaceBox.Name = "_CompressWhiteSpaceBox";
+            this._CompressWhiteSpaceBox.UseVisualStyleBackColor = true;
+            // 
+            // _DetectContentPunctuationsBox
+            // 
+            resources.ApplyResources(this._DetectContentPunctuationsBox, "_DetectContentPunctuationsBox");
+            this._DetectContentPunctuationsBox.Name = "_DetectContentPunctuationsBox";
+            this._DetectContentPunctuationsBox.UseVisualStyleBackColor = true;
+            // 
+            // _DetectColumnsBox
+            // 
+            resources.ApplyResources(this._DetectColumnsBox, "_DetectColumnsBox");
+            this._DetectColumnsBox.Name = "_DetectColumnsBox";
+            this._DetectColumnsBox.UseVisualStyleBackColor = true;
+            // 
+            // _StretchBox
+            // 
+            resources.ApplyResources(this._StretchBox, "_StretchBox");
+            this._StretchBox.Name = "_StretchBox";
+            this._StretchBox.UseVisualStyleBackColor = true;
+            // 
+            // _OrientBox
+            // 
+            resources.ApplyResources(this._OrientBox, "_OrientBox");
+            this._OrientBox.Name = "_OrientBox";
+            this._OrientBox.UseVisualStyleBackColor = true;
+            // 
+            // _OcrLangBox
+            // 
+            this._OcrLangBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._OcrLangBox.FormattingEnabled = true;
+            resources.ApplyResources(this._OcrLangBox, "_OcrLangBox");
+            this._OcrLangBox.Name = "_OcrLangBox";
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Name = "label13";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // _WritingDirectionBox
+            // 
+            this._WritingDirectionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._WritingDirectionBox.FormattingEnabled = true;
+            this._WritingDirectionBox.Items.AddRange(new object[] {
+            resources.GetString("_WritingDirectionBox.Items"),
+            resources.GetString("_WritingDirectionBox.Items1"),
+            resources.GetString("_WritingDirectionBox.Items2")});
+            resources.ApplyResources(this._WritingDirectionBox, "_WritingDirectionBox");
+            this._WritingDirectionBox.Name = "_WritingDirectionBox";
+            this._WritingDirectionBox.SelectedIndexChanged += new System.EventHandler(this.ControlEvent);
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            // 
+            // _QuantitiveFactorBox
+            // 
+            this._QuantitiveFactorBox.DecimalPlaces = 2;
+            this._QuantitiveFactorBox.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-			this._QuantitiveFactorBox.Location = new System.Drawing.Point(102, 94);
-			this._QuantitiveFactorBox.Maximum = new decimal(new int[] {
+            resources.ApplyResources(this._QuantitiveFactorBox, "_QuantitiveFactorBox");
+            this._QuantitiveFactorBox.Maximum = new decimal(new int[] {
             2,
             0,
             0,
             0});
-			this._QuantitiveFactorBox.Name = "_QuantitiveFactorBox";
-			this._QuantitiveFactorBox.Size = new System.Drawing.Size(53, 21);
-			this._QuantitiveFactorBox.TabIndex = 15;
-			this._QuantitiveFactorBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this._QuantitiveFactorBox.Visible = false;
-			//
-			// _SourceFileControl
-			//
-			this._SourceFileControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this._SourceFileControl.Location = new System.Drawing.Point(9, 3);
-			this._SourceFileControl.Name = "_SourceFileControl";
-			this._SourceFileControl.Size = new System.Drawing.Size(454, 24);
-			this._SourceFileControl.TabIndex = 1;
-			//
-			// _BookmarkControl
-			//
-			this._BookmarkControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this._BookmarkControl.LabelText = "Identification result file:";
-			this._BookmarkControl.Location = new System.Drawing.Point(9, 33);
-			this._BookmarkControl.Name = "_BookmarkControl";
-			this._BookmarkControl.Size = new System.Drawing.Size(454, 25);
-			this._BookmarkControl.TabIndex = 2;
-			this._BookmarkControl.UseForBookmarkExport = true;
-			//
-			// _TargetFileControl
-			//
-			this._TargetFileControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this._TargetFileControl.Location = new System.Drawing.Point(9, 64);
-			this._TargetFileControl.Name = "_TargetFileControl";
-			this._TargetFileControl.Size = new System.Drawing.Size(454, 25);
-			this._TargetFileControl.TabIndex = 16;
-			//
-			// _ExportBookmarkButton
-			//
-			this._ExportBookmarkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this._ExportBookmarkButton.Image = global::PDFPatcher.Properties.Resources.Ocr;
-			this._ExportBookmarkButton.Location = new System.Drawing.Point(211, 96);
-			this._ExportBookmarkButton.Name = "_ExportBookmarkButton";
-			this._ExportBookmarkButton.Size = new System.Drawing.Size(120, 23);
-			this._ExportBookmarkButton.TabIndex = 3;
-			this._ExportBookmarkButton.Text = "Identify image text (&S)";
-			this._ExportBookmarkButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this._ExportBookmarkButton.UseVisualStyleBackColor = true;
-			this._ExportBookmarkButton.Click += new System.EventHandler(this.Button_Click);
-			//
-			// _ImportOcrResultButton
-			//
-			this._ImportOcrResultButton.AlternativeFocusBorderColor = System.Drawing.SystemColors.Highlight;
-			this._ImportOcrResultButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this._ImportOcrResultButton.AnimateGlow = true;
-			this._ImportOcrResultButton.BackColor = System.Drawing.SystemColors.Highlight;
-			this._ImportOcrResultButton.CornerRadius = 3;
-			this._ImportOcrResultButton.ForeColor = System.Drawing.SystemColors.ControlText;
-			this._ImportOcrResultButton.GlowColor = System.Drawing.Color.White;
-			this._ImportOcrResultButton.Image = global::PDFPatcher.Properties.Resources.Save;
-			this._ImportOcrResultButton.InnerBorderColor = System.Drawing.SystemColors.ControlDarkDark;
-			this._ImportOcrResultButton.Location = new System.Drawing.Point(337, 95);
-			this._ImportOcrResultButton.Name = "_ImportOcrResultButton";
-			this._ImportOcrResultButton.OuterBorderColor = System.Drawing.SystemColors.ControlLightLight;
-			this._ImportOcrResultButton.ShowFocusBorder = true;
-			this._ImportOcrResultButton.Size = new System.Drawing.Size(123, 29);
-			this._ImportOcrResultButton.TabIndex = 17;
-			this._ImportOcrResultButton.Text = "Write a PDF document (&X)";
-			this._ImportOcrResultButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this._ImportOcrResultButton.Click += new System.EventHandler(this.Button_Click);
-			//
-			// _PrintOcrResultBox
-			//
-			this._PrintOcrResultBox.AutoSize = true;
-			this._PrintOcrResultBox.Location = new System.Drawing.Point(6, 150);
-			this._PrintOcrResultBox.Name = "_PrintOcrResultBox";
-			this._PrintOcrResultBox.Size = new System.Drawing.Size(180, 16);
-			this._PrintOcrResultBox.TabIndex = 17;
-			this._PrintOcrResultBox.Text = "Log window output identified text";
-			this._PrintOcrResultBox.UseVisualStyleBackColor = true;
-			//
-			// OcrControl
-			//
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this._TargetFileControl);
-			this.Controls.Add(this._ExportBookmarkButton);
-			this.Controls.Add(this.tabControl1);
-			this.Controls.Add(this._SourceFileControl);
-			this.Controls.Add(this.label14);
-			this.Controls.Add(this._BookmarkControl);
-			this.Controls.Add(this._QuantitiveFactorBox);
-			this.Controls.Add(this._ImportOcrResultButton);
-			this.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-			this.Name = "OcrControl";
-			this.Size = new System.Drawing.Size(475, 333);
-			this.tabControl1.ResumeLayout(false);
-			this.tabPage1.ResumeLayout(false);
-			this.tabPage1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this._QuantitiveFactorBox)).EndInit();
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this._QuantitiveFactorBox.Name = "_QuantitiveFactorBox";
+            // 
+            // _SourceFileControl
+            // 
+            resources.ApplyResources(this._SourceFileControl, "_SourceFileControl");
+            this._SourceFileControl.Name = "_SourceFileControl";
+            // 
+            // _BookmarkControl
+            // 
+            resources.ApplyResources(this._BookmarkControl, "_BookmarkControl");
+            this._BookmarkControl.LabelText = "Identification result file:";
+            this._BookmarkControl.Name = "_BookmarkControl";
+            this._BookmarkControl.UseForBookmarkExport = true;
+            // 
+            // _TargetFileControl
+            // 
+            resources.ApplyResources(this._TargetFileControl, "_TargetFileControl");
+            this._TargetFileControl.Name = "_TargetFileControl";
+            // 
+            // _ExportBookmarkButton
+            // 
+            resources.ApplyResources(this._ExportBookmarkButton, "_ExportBookmarkButton");
+            this._ExportBookmarkButton.Image = global::PDFPatcher.Properties.Resources.Ocr;
+            this._ExportBookmarkButton.Name = "_ExportBookmarkButton";
+            this._ExportBookmarkButton.UseVisualStyleBackColor = true;
+            this._ExportBookmarkButton.Click += new System.EventHandler(this.Button_Click);
+            // 
+            // _ImportOcrResultButton
+            // 
+            this._ImportOcrResultButton.AlternativeFocusBorderColor = System.Drawing.SystemColors.Highlight;
+            resources.ApplyResources(this._ImportOcrResultButton, "_ImportOcrResultButton");
+            this._ImportOcrResultButton.AnimateGlow = true;
+            this._ImportOcrResultButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this._ImportOcrResultButton.CornerRadius = 3;
+            this._ImportOcrResultButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._ImportOcrResultButton.GlowColor = System.Drawing.Color.White;
+            this._ImportOcrResultButton.Image = global::PDFPatcher.Properties.Resources.Save;
+            this._ImportOcrResultButton.InnerBorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this._ImportOcrResultButton.Name = "_ImportOcrResultButton";
+            this._ImportOcrResultButton.OuterBorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this._ImportOcrResultButton.ShowFocusBorder = true;
+            this._ImportOcrResultButton.Click += new System.EventHandler(this.Button_Click);
+            // 
+            // OcrControl
+            // 
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this._TargetFileControl);
+            this.Controls.Add(this._ExportBookmarkButton);
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this._SourceFileControl);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this._BookmarkControl);
+            this.Controls.Add(this._QuantitiveFactorBox);
+            this.Controls.Add(this._ImportOcrResultButton);
+            this.Name = "OcrControl";
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._QuantitiveFactorBox)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

@@ -84,120 +84,78 @@
             // 
             // _OkButton
             // 
-            this._OkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this._OkButton.Location = new System.Drawing.Point(454, 377);
+            resources.ApplyResources(this._OkButton, "_OkButton");
             this._OkButton.Name = "_OkButton";
-            this._OkButton.Size = new System.Drawing.Size(75, 25);
-            this._OkButton.TabIndex = 0;
-            this._OkButton.Text = "&OK";
             this._OkButton.UseVisualStyleBackColor = true;
             this._OkButton.Click += new System.EventHandler(this._OkButton_Click);
             // 
             // _CancelButton
             // 
-            this._CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._CancelButton, "_CancelButton");
             this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this._CancelButton.Location = new System.Drawing.Point(535, 377);
             this._CancelButton.Name = "_CancelButton";
-            this._CancelButton.Size = new System.Drawing.Size(75, 25);
-            this._CancelButton.TabIndex = 1;
-            this._CancelButton.Text = "&Cancel";
             this._CancelButton.UseVisualStyleBackColor = true;
             this._CancelButton.Click += new System.EventHandler(this._CancelButton_Click);
             // 
             // _DestinationPanel
             // 
-            this._DestinationPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._DestinationPanel, "_DestinationPanel");
             this._DestinationPanel.Controls.Add(this._PathPanel);
             this._DestinationPanel.Controls.Add(this._NamedBox);
             this._DestinationPanel.Controls.Add(this._GotoNamedDestBox);
             this._DestinationPanel.Controls.Add(this._GotoLocationBox);
             this._DestinationPanel.Controls.Add(this._LocationPanel);
-            this._DestinationPanel.Location = new System.Drawing.Point(6, 66);
             this._DestinationPanel.Name = "_DestinationPanel";
-            this._DestinationPanel.Size = new System.Drawing.Size(578, 258);
-            this._DestinationPanel.TabIndex = 7;
             this._DestinationPanel.TabStop = false;
-            this._DestinationPanel.Text = "Destination";
             // 
             // _PathPanel
             // 
-            this._PathPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._PathPanel, "_PathPanel");
             this._PathPanel.Controls.Add(this._PathBox);
             this._PathPanel.Controls.Add(this.label4);
             this._PathPanel.Controls.Add(this._NewWindowBox);
-            this._PathPanel.Enabled = false;
-            this._PathPanel.Location = new System.Drawing.Point(5, 201);
             this._PathPanel.Name = "_PathPanel";
-            this._PathPanel.Size = new System.Drawing.Size(567, 51);
-            this._PathPanel.TabIndex = 15;
             // 
             // _PathBox
             // 
-            this._PathBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._PathBox.Location = new System.Drawing.Point(141, 3);
+            resources.ApplyResources(this._PathBox, "_PathBox");
             this._PathBox.Name = "_PathBox";
-            this._PathBox.Size = new System.Drawing.Size(423, 20);
-            this._PathBox.TabIndex = 3;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 6);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "External document path:";
             // 
             // _NewWindowBox
             // 
-            this._NewWindowBox.AutoSize = true;
-            this._NewWindowBox.Location = new System.Drawing.Point(105, 32);
+            resources.ApplyResources(this._NewWindowBox, "_NewWindowBox");
             this._NewWindowBox.Name = "_NewWindowBox";
-            this._NewWindowBox.Size = new System.Drawing.Size(134, 17);
-            this._NewWindowBox.TabIndex = 4;
-            this._NewWindowBox.Text = "Open in a new window";
             this._NewWindowBox.UseVisualStyleBackColor = true;
             // 
             // _NamedBox
             // 
-            this._NamedBox.Enabled = false;
-            this._NamedBox.Location = new System.Drawing.Point(152, 169);
+            resources.ApplyResources(this._NamedBox, "_NamedBox");
             this._NamedBox.Name = "_NamedBox";
-            this._NamedBox.Size = new System.Drawing.Size(215, 20);
-            this._NamedBox.TabIndex = 14;
             // 
             // _GotoNamedDestBox
             // 
-            this._GotoNamedDestBox.AutoSize = true;
-            this._GotoNamedDestBox.Location = new System.Drawing.Point(9, 172);
+            resources.ApplyResources(this._GotoNamedDestBox, "_GotoNamedDestBox");
             this._GotoNamedDestBox.Name = "_GotoNamedDestBox";
-            this._GotoNamedDestBox.Size = new System.Drawing.Size(137, 17);
-            this._GotoNamedDestBox.TabIndex = 13;
             this._GotoNamedDestBox.TabStop = true;
-            this._GotoNamedDestBox.Text = "Go to a naming location";
             this._GotoNamedDestBox.UseVisualStyleBackColor = true;
             this._GotoNamedDestBox.CheckedChanged += new System.EventHandler(this.Control_ValueChanged);
             // 
             // _GotoLocationBox
             // 
-            this._GotoLocationBox.AutoSize = true;
-            this._GotoLocationBox.Location = new System.Drawing.Point(6, 22);
+            resources.ApplyResources(this._GotoLocationBox, "_GotoLocationBox");
             this._GotoLocationBox.Name = "_GotoLocationBox";
-            this._GotoLocationBox.Size = new System.Drawing.Size(154, 17);
-            this._GotoLocationBox.TabIndex = 12;
             this._GotoLocationBox.TabStop = true;
-            this._GotoLocationBox.Text = "Go to the specified location";
             this._GotoLocationBox.UseVisualStyleBackColor = true;
             this._GotoLocationBox.CheckedChanged += new System.EventHandler(this.Control_ValueChanged);
             // 
             // _LocationPanel
             // 
-            this._LocationPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._LocationPanel, "_LocationPanel");
             this._LocationPanel.Controls.Add(this.label10);
             this._LocationPanel.Controls.Add(this.label3);
             this._LocationPanel.Controls.Add(this._KeepYBox);
@@ -210,44 +168,28 @@
             this._LocationPanel.Controls.Add(this._TopBox);
             this._LocationPanel.Controls.Add(this.label6);
             this._LocationPanel.Controls.Add(this._RectanglePanel);
-            this._LocationPanel.Enabled = false;
-            this._LocationPanel.Location = new System.Drawing.Point(39, 46);
             this._LocationPanel.Name = "_LocationPanel";
-            this._LocationPanel.Size = new System.Drawing.Size(533, 119);
-            this._LocationPanel.TabIndex = 11;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(173, 93);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 13);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "(0: Unchanged)";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(0, 6);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Target page:";
             // 
             // _KeepYBox
             // 
-            this._KeepYBox.AutoSize = true;
-            this._KeepYBox.Location = new System.Drawing.Point(145, 62);
+            resources.ApplyResources(this._KeepYBox, "_KeepYBox");
             this._KeepYBox.Name = "_KeepYBox";
-            this._KeepYBox.Size = new System.Drawing.Size(60, 17);
-            this._KeepYBox.TabIndex = 7;
-            this._KeepYBox.Text = "Default";
             this._KeepYBox.UseVisualStyleBackColor = true;
             this._KeepYBox.CheckedChanged += new System.EventHandler(this.Control_ValueChanged);
             // 
             // _PageBox
             // 
-            this._PageBox.Location = new System.Drawing.Point(71, 3);
+            resources.ApplyResources(this._PageBox, "_PageBox");
             this._PageBox.Maximum = new decimal(new int[] {
             9999999,
             0,
@@ -259,8 +201,6 @@
             0,
             0});
             this._PageBox.Name = "_PageBox";
-            this._PageBox.Size = new System.Drawing.Size(68, 20);
-            this._PageBox.TabIndex = 1;
             this._PageBox.Value = new decimal(new int[] {
             1,
             0,
@@ -269,37 +209,27 @@
             // 
             // _KeepXBox
             // 
-            this._KeepXBox.AutoSize = true;
-            this._KeepXBox.Location = new System.Drawing.Point(145, 32);
+            resources.ApplyResources(this._KeepXBox, "_KeepXBox");
             this._KeepXBox.Name = "_KeepXBox";
-            this._KeepXBox.Size = new System.Drawing.Size(60, 17);
-            this._KeepXBox.TabIndex = 4;
-            this._KeepXBox.Text = "Default";
             this._KeepXBox.UseVisualStyleBackColor = true;
             this._KeepXBox.CheckedChanged += new System.EventHandler(this.Control_ValueChanged);
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 33);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "X-axis";
             // 
             // _ZoomRateBox
             // 
             this._ZoomRateBox.FormattingEnabled = true;
-            this._ZoomRateBox.Location = new System.Drawing.Point(71, 90);
+            resources.ApplyResources(this._ZoomRateBox, "_ZoomRateBox");
             this._ZoomRateBox.Name = "_ZoomRateBox";
-            this._ZoomRateBox.Size = new System.Drawing.Size(96, 21);
-            this._ZoomRateBox.TabIndex = 10;
             this._ZoomRateBox.SelectedIndexChanged += new System.EventHandler(this.Control_ValueChanged);
             // 
             // _LeftBox
             // 
             this._LeftBox.DecimalPlaces = 2;
-            this._LeftBox.Location = new System.Drawing.Point(71, 32);
+            resources.ApplyResources(this._LeftBox, "_LeftBox");
             this._LeftBox.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -311,22 +241,16 @@
             0,
             -2147483648});
             this._LeftBox.Name = "_LeftBox";
-            this._LeftBox.Size = new System.Drawing.Size(68, 20);
-            this._LeftBox.TabIndex = 3;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(2, 93);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 13);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Zoom ratio:";
             // 
             // _TopBox
             // 
             this._TopBox.DecimalPlaces = 2;
-            this._TopBox.Location = new System.Drawing.Point(71, 61);
+            resources.ApplyResources(this._TopBox, "_TopBox");
             this._TopBox.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -338,17 +262,11 @@
             0,
             -2147483648});
             this._TopBox.Name = "_TopBox";
-            this._TopBox.Size = new System.Drawing.Size(68, 20);
-            this._TopBox.TabIndex = 6;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 63);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Y-axis: ";
             // 
             // _RectanglePanel
             // 
@@ -356,102 +274,71 @@
             this._RectanglePanel.Controls.Add(this._WidthBox);
             this._RectanglePanel.Controls.Add(this.label9);
             this._RectanglePanel.Controls.Add(this._HeightBox);
-            this._RectanglePanel.Enabled = false;
-            this._RectanglePanel.Location = new System.Drawing.Point(229, 29);
+            resources.ApplyResources(this._RectanglePanel, "_RectanglePanel");
             this._RectanglePanel.Name = "_RectanglePanel";
-            this._RectanglePanel.Size = new System.Drawing.Size(128, 61);
-            this._RectanglePanel.TabIndex = 8;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 4);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Width:";
             // 
             // _WidthBox
             // 
             this._WidthBox.DecimalPlaces = 2;
-            this._WidthBox.Location = new System.Drawing.Point(54, 2);
+            resources.ApplyResources(this._WidthBox, "_WidthBox");
             this._WidthBox.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this._WidthBox.Name = "_WidthBox";
-            this._WidthBox.Size = new System.Drawing.Size(68, 20);
-            this._WidthBox.TabIndex = 1;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 33);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 13);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Height:";
             // 
             // _HeightBox
             // 
             this._HeightBox.DecimalPlaces = 2;
-            this._HeightBox.Location = new System.Drawing.Point(54, 32);
+            resources.ApplyResources(this._HeightBox, "_HeightBox");
             this._HeightBox.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this._HeightBox.Name = "_HeightBox";
-            this._HeightBox.Size = new System.Drawing.Size(68, 20);
-            this._HeightBox.TabIndex = 3;
             // 
             // _ActionBox
             // 
             this._ActionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._ActionBox.FormattingEnabled = true;
-            this._ActionBox.Location = new System.Drawing.Point(49, 38);
+            resources.ApplyResources(this._ActionBox, "_ActionBox");
             this._ActionBox.Name = "_ActionBox";
-            this._ActionBox.Size = new System.Drawing.Size(156, 21);
-            this._ActionBox.TabIndex = 6;
             this._ActionBox.SelectedIndexChanged += new System.EventHandler(this.Control_ValueChanged);
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 41);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Action:";
             // 
             // _TitleBox
             // 
-            this._TitleBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._TitleBox.Location = new System.Drawing.Point(49, 11);
+            resources.ApplyResources(this._TitleBox, "_TitleBox");
             this._TitleBox.Name = "_TitleBox";
-            this._TitleBox.Size = new System.Drawing.Size(535, 20);
-            this._TitleBox.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 14);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name:";
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 13);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(598, 358);
-            this.tabControl1.TabIndex = 8;
             // 
             // tabPage1
             // 
@@ -462,58 +349,33 @@
             this.tabPage1.Controls.Add(this._ActionBox);
             this.tabPage1.Controls.Add(this._DestinationPanel);
             this.tabPage1.Controls.Add(this._ScriptBox);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage1.Size = new System.Drawing.Size(590, 332);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "General";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // _DefaultOpenBox
             // 
-            this._DefaultOpenBox.AutoSize = true;
-            this._DefaultOpenBox.Location = new System.Drawing.Point(211, 40);
+            resources.ApplyResources(this._DefaultOpenBox, "_DefaultOpenBox");
             this._DefaultOpenBox.Name = "_DefaultOpenBox";
-            this._DefaultOpenBox.Size = new System.Drawing.Size(151, 17);
-            this._DefaultOpenBox.TabIndex = 9;
-            this._DefaultOpenBox.Text = "Open bookmark by default";
             this._DefaultOpenBox.UseVisualStyleBackColor = true;
             // 
             // _ScriptBox
             // 
-            this._ScriptBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._ScriptBox, "_ScriptBox");
             this._ScriptBox.Controls.Add(this._ScriptContentBox);
-            this._ScriptBox.Location = new System.Drawing.Point(368, 40);
             this._ScriptBox.Name = "_ScriptBox";
-            this._ScriptBox.Size = new System.Drawing.Size(222, 34);
-            this._ScriptBox.TabIndex = 8;
             this._ScriptBox.TabStop = false;
-            this._ScriptBox.Text = "Scripting content";
-            this._ScriptBox.Visible = false;
             // 
             // _ScriptContentBox
             // 
-            this._ScriptContentBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._ScriptContentBox.Location = new System.Drawing.Point(6, 22);
-            this._ScriptContentBox.Multiline = true;
+            resources.ApplyResources(this._ScriptContentBox, "_ScriptContentBox");
             this._ScriptContentBox.Name = "_ScriptContentBox";
-            this._ScriptContentBox.Size = new System.Drawing.Size(210, 5);
-            this._ScriptContentBox.TabIndex = 16;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this._AttributesBox);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage2.Size = new System.Drawing.Size(429, 332);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Attributes";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // _AttributesBox
@@ -527,40 +389,35 @@
             this._AttributesBox.Cursor = System.Windows.Forms.Cursors.Default;
             this._AttributesBox.GridLines = true;
             this._AttributesBox.HideSelection = false;
-            this._AttributesBox.Location = new System.Drawing.Point(6, 6);
+            resources.ApplyResources(this._AttributesBox, "_AttributesBox");
             this._AttributesBox.Name = "_AttributesBox";
             this._AttributesBox.ShowGroups = false;
-            this._AttributesBox.Size = new System.Drawing.Size(417, 317);
-            this._AttributesBox.TabIndex = 0;
             this._AttributesBox.UseCompatibleStateImageBehavior = false;
             this._AttributesBox.View = System.Windows.Forms.View.Details;
             // 
             // _AttrNameColumn
             // 
-            this._AttrNameColumn.Text = "Attribute name";
+            resources.ApplyResources(this._AttrNameColumn, "_AttrNameColumn");
             // 
             // _AttrValueColumn
             // 
             this._AttrValueColumn.FillsFreeSpace = true;
-            this._AttrValueColumn.Text = "Attribute value";
+            resources.ApplyResources(this._AttrValueColumn, "_AttrValueColumn");
             // 
             // ActionEditorForm
             // 
             this.AcceptButton = this._OkButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this._CancelButton;
-            this.ClientSize = new System.Drawing.Size(622, 415);
             this.Controls.Add(this._CancelButton);
             this.Controls.Add(this._OkButton);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ActionEditorForm";
             this.ShowInTaskbar = false;
-            this.Text = "Link Property Editor";
             this._DestinationPanel.ResumeLayout(false);
             this._DestinationPanel.PerformLayout();
             this._PathPanel.ResumeLayout(false);

@@ -25,6 +25,7 @@
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent () {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutoBookmarkForm));
             this.label1 = new System.Windows.Forms.Label();
             this._BookmarkConditionBox = new BrightIdeasSoftware.ObjectListView();
             this._ConditionColumn = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
@@ -41,12 +42,8 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bookmark identification condition list:";
             // 
             // _BookmarkConditionBox
             // 
@@ -56,9 +53,7 @@
             this._BookmarkConditionBox.AllColumns.Add(this._ItalicColumn);
             this._BookmarkConditionBox.AllColumns.Add(this._ColorColumn);
             this._BookmarkConditionBox.AllColumns.Add(this._OpenColumn);
-            this._BookmarkConditionBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._BookmarkConditionBox, "_BookmarkConditionBox");
             this._BookmarkConditionBox.CellEditActivation = BrightIdeasSoftware.ObjectListView.CellEditActivateMode.SingleClick;
             this._BookmarkConditionBox.CellEditUseWholeCell = false;
             this._BookmarkConditionBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -71,114 +66,82 @@
             this._BookmarkConditionBox.Cursor = System.Windows.Forms.Cursors.Default;
             this._BookmarkConditionBox.GridLines = true;
             this._BookmarkConditionBox.HideSelection = false;
-            this._BookmarkConditionBox.Location = new System.Drawing.Point(14, 37);
-            this._BookmarkConditionBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._BookmarkConditionBox.Name = "_BookmarkConditionBox";
             this._BookmarkConditionBox.ShowGroups = false;
-            this._BookmarkConditionBox.Size = new System.Drawing.Size(436, 179);
-            this._BookmarkConditionBox.TabIndex = 1;
             this._BookmarkConditionBox.UseCompatibleStateImageBehavior = false;
             this._BookmarkConditionBox.View = System.Windows.Forms.View.Details;
             // 
             // _ConditionColumn
             // 
             this._ConditionColumn.IsEditable = false;
-            this._ConditionColumn.Text = "Recognition Condition";
-            this._ConditionColumn.Width = 244;
+            resources.ApplyResources(this._ConditionColumn, "_ConditionColumn");
             // 
             // _LevelColumn
             // 
             this._LevelColumn.MinimumWidth = 80;
-            this._LevelColumn.Text = "Bookmark Level";
-            this._LevelColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this._LevelColumn.Width = 80;
+            resources.ApplyResources(this._LevelColumn, "_LevelColumn");
             // 
             // _BoldColumn
             // 
             this._BoldColumn.CheckBoxes = true;
-            this._BoldColumn.Text = "Bold";
-            this._BoldColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            resources.ApplyResources(this._BoldColumn, "_BoldColumn");
             // 
             // _ItalicColumn
             // 
             this._ItalicColumn.CheckBoxes = true;
-            this._ItalicColumn.Text = "Italic";
-            this._ItalicColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            resources.ApplyResources(this._ItalicColumn, "_ItalicColumn");
             // 
             // _ColorColumn
             // 
             this._ColorColumn.IsEditable = false;
-            this._ColorColumn.Text = "Color";
+            resources.ApplyResources(this._ColorColumn, "_ColorColumn");
             // 
             // _OpenColumn
             // 
             this._OpenColumn.CheckBoxes = true;
-            this._OpenColumn.Text = "Default Expand";
-            this._OpenColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._OpenColumn.Width = 73;
+            resources.ApplyResources(this._OpenColumn, "_OpenColumn");
             // 
             // _RemoveButton
             // 
-            this._RemoveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._RemoveButton, "_RemoveButton");
             this._RemoveButton.Image = global::PDFPatcher.Properties.Resources.Delete;
-            this._RemoveButton.Location = new System.Drawing.Point(253, 4);
-            this._RemoveButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._RemoveButton.Name = "_RemoveButton";
-            this._RemoveButton.Size = new System.Drawing.Size(75, 25);
-            this._RemoveButton.TabIndex = 2;
-            this._RemoveButton.Text = "&Remove";
-            this._RemoveButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this._RemoveButton.UseVisualStyleBackColor = true;
             this._RemoveButton.Click += new System.EventHandler(this._RemoveButton_Click);
             // 
             // _AutoBookmarkButton
             // 
-            this._AutoBookmarkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._AutoBookmarkButton, "_AutoBookmarkButton");
             this._AutoBookmarkButton.Image = global::PDFPatcher.Properties.Resources.AutoBookmark;
-            this._AutoBookmarkButton.Location = new System.Drawing.Point(334, 4);
-            this._AutoBookmarkButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._AutoBookmarkButton.Name = "_AutoBookmarkButton";
-            this._AutoBookmarkButton.Size = new System.Drawing.Size(116, 25);
-            this._AutoBookmarkButton.TabIndex = 4;
-            this._AutoBookmarkButton.Text = "&Create Bookmark";
-            this._AutoBookmarkButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this._AutoBookmarkButton.UseVisualStyleBackColor = true;
             this._AutoBookmarkButton.Click += new System.EventHandler(this._AutoBookmarkButton_Click);
             // 
             // _MergeAdjacentTitleBox
             // 
-            this._MergeAdjacentTitleBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this._MergeAdjacentTitleBox.AutoSize = true;
+            resources.ApplyResources(this._MergeAdjacentTitleBox, "_MergeAdjacentTitleBox");
             this._MergeAdjacentTitleBox.Checked = true;
             this._MergeAdjacentTitleBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this._MergeAdjacentTitleBox.Location = new System.Drawing.Point(14, 223);
-            this._MergeAdjacentTitleBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this._MergeAdjacentTitleBox.Name = "_MergeAdjacentTitleBox";
-            this._MergeAdjacentTitleBox.Size = new System.Drawing.Size(224, 17);
-            this._MergeAdjacentTitleBox.TabIndex = 5;
-            this._MergeAdjacentTitleBox.Text = "Merge adjacent titles of the same font size";
             this._MergeAdjacentTitleBox.UseVisualStyleBackColor = true;
             // 
             // AutoBookmarkForm
             // 
             this.AcceptButton = this._AutoBookmarkButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 244);
             this.Controls.Add(this._MergeAdjacentTitleBox);
             this.Controls.Add(this._AutoBookmarkButton);
             this.Controls.Add(this._RemoveButton);
             this.Controls.Add(this._BookmarkConditionBox);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AutoBookmarkForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.Text = "Automatically generate bookmarks";
             this.Load += new System.EventHandler(this.AutoBookmarkForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this._BookmarkConditionBox)).EndInit();
             this.ResumeLayout(false);

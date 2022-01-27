@@ -25,89 +25,73 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
-			System.Windows.Forms.ToolStripButton _Save;
-			System.Windows.Forms.ToolStripButton _ZoomReset;
-			this._MainToolbar = new System.Windows.Forms.ToolStrip ();
-			this._FitWindow = new System.Windows.Forms.ToolStripButton ();
-			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator ();
-			this._ImageBox = new Cyotek.Windows.Forms.ImageBox ();
-			_Save = new System.Windows.Forms.ToolStripButton ();
-			_ZoomReset = new System.Windows.Forms.ToolStripButton ();
-			this._MainToolbar.SuspendLayout ();
-			this.SuspendLayout ();
-			//
-			// _MainToolbar
-			//
-			this._MainToolbar.Items.AddRange (new System.Windows.Forms.ToolStripItem[] {
+            System.Windows.Forms.ToolStripButton _Save;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImageViewerForm));
+            System.Windows.Forms.ToolStripButton _ZoomReset;
+            this._MainToolbar = new System.Windows.Forms.ToolStrip();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this._FitWindow = new System.Windows.Forms.ToolStripButton();
+            this._ImageBox = new Cyotek.Windows.Forms.ImageBox();
+            _Save = new System.Windows.Forms.ToolStripButton();
+            _ZoomReset = new System.Windows.Forms.ToolStripButton();
+            this._MainToolbar.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // _Save
+            // 
+            _Save.Image = global::PDFPatcher.Properties.Resources.Save;
+            resources.ApplyResources(_Save, "_Save");
+            _Save.Name = "_Save";
+            // 
+            // _ZoomReset
+            // 
+            _ZoomReset.Image = global::PDFPatcher.Properties.Resources.Zoom;
+            resources.ApplyResources(_ZoomReset, "_ZoomReset");
+            _ZoomReset.Name = "_ZoomReset";
+            // 
+            // _MainToolbar
+            // 
+            this._MainToolbar.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this._MainToolbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _Save,
             this.toolStripSeparator1,
             _ZoomReset,
             this._FitWindow});
-			this._MainToolbar.Location = new System.Drawing.Point (0, 0);
-			this._MainToolbar.Name = "_MainToolbar";
-			this._MainToolbar.Size = new System.Drawing.Size (539, 25);
-			this._MainToolbar.TabIndex = 1;
-			this._MainToolbar.Text = "toolStrip1";
-			this._MainToolbar.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler (this._MainToolbar_ItemClicked);
-			//
-			// _Save
-			//
-			_Save.Image = global::PDFPatcher.Properties.Resources.Save;
-			_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
-			_Save.Name = "_Save";
-			_Save.Size = new System.Drawing.Size (90, 22);
-			_Save.Text = "&Save Image";
-			_Save.ToolTipText = "Save the displayed image as a file";
-			//
-			// _ZoomReset
-			//
-			_ZoomReset.Image = global::PDFPatcher.Properties.Resources.Zoom;
-			_ZoomReset.ImageTransparentColor = System.Drawing.Color.Magenta;
-			_ZoomReset.Name = "_ZoomReset";
-			_ZoomReset.Size = new System.Drawing.Size (75, 22);
-			_ZoomReset.Text = "Zoom Scale";
-			//
-			// _FitWindow
-			//
-			this._FitWindow.Image = global::PDFPatcher.Properties.Resources.Image;
-			this._FitWindow.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this._FitWindow.Name = "_FitWindow";
-			this._FitWindow.Size = new System.Drawing.Size (75, 22);
-			this._FitWindow.Text = "Fit to Window";
-			//
-			// toolStripSeparator1
-			//
-			this.toolStripSeparator1.Name = "toolStripSeparator1";
-			this.toolStripSeparator1.Size = new System.Drawing.Size (6, 25);
-			//
-			// _ImageBox
-			//
-			this._ImageBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this._ImageBox.ForeColor = System.Drawing.SystemColors.ControlText;
-			this._ImageBox.Location = new System.Drawing.Point (12, 28);
-			this._ImageBox.MinimumSize = new System.Drawing.Size (454, 145);
-			this._ImageBox.Name = "_ImageBox";
-			this._ImageBox.Size = new System.Drawing.Size (515, 380);
-			this._ImageBox.TabIndex = 0;
-			this._ImageBox.TabStop = false;
-			//
-			// ImageViewerForm
-			//
-			this.AutoScaleDimensions = new System.Drawing.SizeF (6F, 12F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size (539, 420);
-			this.Controls.Add (this._MainToolbar);
-			this.Controls.Add (this._ImageBox);
-			this.Name = "ImageViewerForm";
-			this.ShowIcon = false;
-			this.ShowInTaskbar = false;
-			this.Text = "View image";
-			this._MainToolbar.ResumeLayout (false);
-			this._MainToolbar.PerformLayout ();
-			this.ResumeLayout (false);
-			this.PerformLayout ();
+            resources.ApplyResources(this._MainToolbar, "_MainToolbar");
+            this._MainToolbar.Name = "_MainToolbar";
+            this._MainToolbar.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            // 
+            // _FitWindow
+            // 
+            this._FitWindow.Image = global::PDFPatcher.Properties.Resources.Image;
+            resources.ApplyResources(this._FitWindow, "_FitWindow");
+            this._FitWindow.Name = "_FitWindow";
+            // 
+            // _ImageBox
+            // 
+            resources.ApplyResources(this._ImageBox, "_ImageBox");
+            this._ImageBox.ForeColor = System.Drawing.SystemColors.ControlText;
+            this._ImageBox.Name = "_ImageBox";
+            this._ImageBox.TabStop = false;
+            // 
+            // ImageViewerForm
+            // 
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this._MainToolbar);
+            this.Controls.Add(this._ImageBox);
+            this.Name = "ImageViewerForm";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this._MainToolbar.ResumeLayout(false);
+            this._MainToolbar.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

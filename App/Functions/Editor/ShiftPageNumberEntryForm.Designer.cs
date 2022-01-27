@@ -25,6 +25,7 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShiftPageNumberEntryForm));
             this._OkButton = new System.Windows.Forms.Button();
             this._CancelButton = new System.Windows.Forms.Button();
             this._MessageLabel = new System.Windows.Forms.Label();
@@ -34,40 +35,27 @@
             // 
             // _OkButton
             // 
-            this._OkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this._OkButton.Location = new System.Drawing.Point(200, 78);
+            resources.ApplyResources(this._OkButton, "_OkButton");
             this._OkButton.Name = "_OkButton";
-            this._OkButton.Size = new System.Drawing.Size(75, 25);
-            this._OkButton.TabIndex = 0;
-            this._OkButton.Text = "&OK";
             this._OkButton.UseVisualStyleBackColor = true;
             this._OkButton.Click += new System.EventHandler(this._OkButton_Click);
             // 
             // _CancelButton
             // 
-            this._CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._CancelButton, "_CancelButton");
             this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this._CancelButton.Location = new System.Drawing.Point(281, 78);
             this._CancelButton.Name = "_CancelButton";
-            this._CancelButton.Size = new System.Drawing.Size(75, 25);
-            this._CancelButton.TabIndex = 1;
-            this._CancelButton.Text = "&Cancel";
             this._CancelButton.UseVisualStyleBackColor = true;
             this._CancelButton.Click += new System.EventHandler(this._CancelButton_Click);
             // 
             // _MessageLabel
             // 
-            this._MessageLabel.AutoSize = true;
-            this._MessageLabel.Location = new System.Drawing.Point(12, 29);
+            resources.ApplyResources(this._MessageLabel, "_MessageLabel");
             this._MessageLabel.Name = "_MessageLabel";
-            this._MessageLabel.Size = new System.Drawing.Size(270, 39);
-            this._MessageLabel.TabIndex = 2;
-            this._MessageLabel.Text = "Enter the number of pages to increase or decrease here\r\n (positive numbers increa" +
-    "se page numbers, \r\nnegative numbers decrease page numbers):";
             // 
             // _ShiftNumberBox
             // 
-            this._ShiftNumberBox.Location = new System.Drawing.Point(288, 39);
+            resources.ApplyResources(this._ShiftNumberBox, "_ShiftNumberBox");
             this._ShiftNumberBox.Maximum = new decimal(new int[] {
             999,
             0,
@@ -79,17 +67,13 @@
             0,
             -2147483648});
             this._ShiftNumberBox.Name = "_ShiftNumberBox";
-            this._ShiftNumberBox.Size = new System.Drawing.Size(68, 20);
-            this._ShiftNumberBox.TabIndex = 3;
-            this._ShiftNumberBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ShiftPageNumberEntryForm
             // 
             this.AcceptButton = this._OkButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this._CancelButton;
-            this.ClientSize = new System.Drawing.Size(379, 115);
             this.Controls.Add(this._ShiftNumberBox);
             this.Controls.Add(this._MessageLabel);
             this.Controls.Add(this._CancelButton);
@@ -98,8 +82,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ShiftPageNumberEntryForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Increase or reduce page number";
             this.Load += new System.EventHandler(this.ShiftPageNumberEntryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this._ShiftNumberBox)).EndInit();
             this.ResumeLayout(false);

@@ -680,9 +680,15 @@
     <Compile Include="Processor\Worker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChineseCharMap.en.resx">
+      <DependentUpon>ChineseCharMap.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChineseCharMap.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ChineseCharMap.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration.en.resx">
+      <DependentUpon>Configuration.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Configuration.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -851,8 +857,11 @@
       <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.en.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -950,6 +959,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\PDFStructInfo.xml" />
+    <AdditionalFiles Include="PDFPatcher_ml.xml" />
     <Content Include="pdf_icon.ico" />
     <None Include="Resources\096.png" />
     <None Include="Resources\107.png" />

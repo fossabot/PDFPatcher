@@ -117,7 +117,217 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="_SequenceColumn.Text" xml:space="preserve">
+    <value>Sequence Number</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_SequenceColumn.Width" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="_PageNumColumn.Text" xml:space="preserve">
+    <value>Document Page Number</value>
+  </data>
+  <data name="_PageNumColumn.Width" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="_LabelStyleColumn.Text" xml:space="preserve">
+    <value>Page Number Style</value>
+  </data>
+  <data name="_LabelStyleColumn.Width" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="_LabelPrefixColumn.Text" xml:space="preserve">
+    <value>Prefix Text</value>
+  </data>
+  <data name="_LabelPrefixColumn.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="_StartNumColumn.Text" xml:space="preserve">
+    <value>Start Number</value>
+  </data>
+  <data name="_StartNumColumn.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_PageLabelBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_PageLabelBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 43</value>
+  </data>
+  <data name="_PageLabelBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_PageLabelBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>575, 324</value>
+  </data>
+  <data name="_PageLabelBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_PageLabelBox.Name" xml:space="preserve">
+    <value>_PageLabelBox</value>
+  </data>
+  <data name="&gt;&gt;_PageLabelBox.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.ObjectListView, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_PageLabelBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_PageLabelBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_RemovePageLabelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_RemovePageLabelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>495, 4</value>
+  </data>
+  <data name="_RemovePageLabelButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_RemovePageLabelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 31</value>
+  </data>
+  <data name="_RemovePageLabelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_RemovePageLabelButton.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="_RemovePageLabelButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageLabelButton.Name" xml:space="preserve">
+    <value>_RemovePageLabelButton</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageLabelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageLabelButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_RemovePageLabelButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_AddPageLabelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_AddPageLabelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 4</value>
+  </data>
+  <data name="_AddPageLabelButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_AddPageLabelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 31</value>
+  </data>
+  <data name="_AddPageLabelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_AddPageLabelButton.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="_AddPageLabelButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;_AddPageLabelButton.Name" xml:space="preserve">
+    <value>_AddPageLabelButton</value>
+  </data>
+  <data name="&gt;&gt;_AddPageLabelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AddPageLabelButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;_AddPageLabelButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="_LabelStyleMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="_LabelStyleMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 4</value>
+  </data>
+  <data name="&gt;&gt;_LabelStyleMenu.Name" xml:space="preserve">
+    <value>_LabelStyleMenu</value>
+  </data>
+  <data name="&gt;&gt;_LabelStyleMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>584, 372</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>584, 372</value>
+  </data>
+  <data name="&gt;&gt;_SequenceColumn.Name" xml:space="preserve">
+    <value>_SequenceColumn</value>
+  </data>
+  <data name="&gt;&gt;_SequenceColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_PageNumColumn.Name" xml:space="preserve">
+    <value>_PageNumColumn</value>
+  </data>
+  <data name="&gt;&gt;_PageNumColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_LabelStyleColumn.Name" xml:space="preserve">
+    <value>_LabelStyleColumn</value>
+  </data>
+  <data name="&gt;&gt;_LabelStyleColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_LabelPrefixColumn.Name" xml:space="preserve">
+    <value>_LabelPrefixColumn</value>
+  </data>
+  <data name="&gt;&gt;_LabelPrefixColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_StartNumColumn.Name" xml:space="preserve">
+    <value>_StartNumColumn</value>
+  </data>
+  <data name="&gt;&gt;_StartNumColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PageLabelEditor</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

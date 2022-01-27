@@ -81,108 +81,68 @@
             // 
             // _ExtractPageRangeBox
             // 
-            this._ExtractPageRangeBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._ExtractPageRangeBox.Location = new System.Drawing.Point(93, 6);
+            resources.ApplyResources(this._ExtractPageRangeBox, "_ExtractPageRangeBox");
             this._ExtractPageRangeBox.Name = "_ExtractPageRangeBox";
-            this._ExtractPageRangeBox.Size = new System.Drawing.Size(641, 21);
-            this._ExtractPageRangeBox.TabIndex = 1;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 9);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 12);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Page size range:";
             // 
             // _SaveImageBox
             // 
-            this._SaveImageBox.Description = "Please select a folder that saves the image";
+            resources.ApplyResources(this._SaveImageBox, "_SaveImageBox");
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 39);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 12);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Output image location:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 9);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 12);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "File name mask:";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 30);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 12);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "File name example:";
             // 
             // _FileMaskPreviewBox
             // 
-            this._FileMaskPreviewBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._FileMaskPreviewBox.Location = new System.Drawing.Point(93, 30);
+            resources.ApplyResources(this._FileMaskPreviewBox, "_FileMaskPreviewBox");
             this._FileMaskPreviewBox.Name = "_FileMaskPreviewBox";
-            this._FileMaskPreviewBox.Size = new System.Drawing.Size(493, 31);
-            this._FileMaskPreviewBox.TabIndex = 3;
             // 
             // _FileNameMaskBox
             // 
-            this._FileNameMaskBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._FileNameMaskBox, "_FileNameMaskBox");
             this._FileNameMaskBox.FormattingEnabled = true;
             this._FileNameMaskBox.Items.AddRange(new object[] {
-            "0000",
-            "000",
-            "0",
-            "Image 0000"});
-            this._FileNameMaskBox.Location = new System.Drawing.Point(107, 6);
+            resources.GetString("_FileNameMaskBox.Items"),
+            resources.GetString("_FileNameMaskBox.Items1"),
+            resources.GetString("_FileNameMaskBox.Items2"),
+            resources.GetString("_FileNameMaskBox.Items3")});
             this._FileNameMaskBox.Name = "_FileNameMaskBox";
-            this._FileNameMaskBox.Size = new System.Drawing.Size(407, 20);
-            this._FileNameMaskBox.TabIndex = 1;
             this._FileNameMaskBox.TextChanged += new System.EventHandler(this._FileNameMaskBox_TextChanged);
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(46, 30);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(522, 38);
-            this.label6.TabIndex = 2;
-            this.label6.Text = resources.GetString("label6.Text");
             // 
             // _InvertColorBox
             // 
-            this._InvertColorBox.AutoSize = true;
-            this._InvertColorBox.Location = new System.Drawing.Point(10, 48);
+            resources.ApplyResources(this._InvertColorBox, "_InvertColorBox");
             this._InvertColorBox.Name = "_InvertColorBox";
-            this._InvertColorBox.Size = new System.Drawing.Size(198, 16);
-            this._InvertColorBox.TabIndex = 3;
-            this._InvertColorBox.Text = "Invert the color of the image";
             this._InvertColorBox.UseVisualStyleBackColor = true;
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 92);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(748, 229);
-            this.tabControl1.TabIndex = 7;
             // 
             // tabPage1
             // 
@@ -196,12 +156,8 @@
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this._ExtractPageRangeBox);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(740, 203);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Option";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox3
@@ -211,64 +167,43 @@
             this.groupBox3.Controls.Add(this._HorizontalFlipImageBox);
             this.groupBox3.Controls.Add(this._HideAnnotationsBox);
             this.groupBox3.Controls.Add(this._VerticalFlipImageBox);
-            this.groupBox3.Location = new System.Drawing.Point(499, 100);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(235, 100);
-            this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Other";
             // 
             // _RotationBox
             // 
             this._RotationBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._RotationBox.FormattingEnabled = true;
             this._RotationBox.Items.AddRange(new object[] {
-            "Do not rotate",
-            "Clockwise 90 degrees",
-            "180 degree",
-            "Counterclockwise 90 degrees"});
-            this._RotationBox.Location = new System.Drawing.Point(101, 19);
+            resources.GetString("_RotationBox.Items"),
+            resources.GetString("_RotationBox.Items1"),
+            resources.GetString("_RotationBox.Items2"),
+            resources.GetString("_RotationBox.Items3")});
+            resources.ApplyResources(this._RotationBox, "_RotationBox");
             this._RotationBox.Name = "_RotationBox";
-            this._RotationBox.Size = new System.Drawing.Size(86, 20);
-            this._RotationBox.TabIndex = 1;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(5, 24);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(95, 12);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Rotation angle:";
             // 
             // _HorizontalFlipImageBox
             // 
-            this._HorizontalFlipImageBox.AutoSize = true;
-            this._HorizontalFlipImageBox.Location = new System.Drawing.Point(7, 48);
+            resources.ApplyResources(this._HorizontalFlipImageBox, "_HorizontalFlipImageBox");
             this._HorizontalFlipImageBox.Name = "_HorizontalFlipImageBox";
-            this._HorizontalFlipImageBox.Size = new System.Drawing.Size(114, 16);
-            this._HorizontalFlipImageBox.TabIndex = 2;
-            this._HorizontalFlipImageBox.Text = "horizontal flip";
             this._HorizontalFlipImageBox.UseVisualStyleBackColor = true;
             // 
             // _HideAnnotationsBox
             // 
-            this._HideAnnotationsBox.AutoSize = true;
-            this._HideAnnotationsBox.Location = new System.Drawing.Point(7, 70);
+            resources.ApplyResources(this._HideAnnotationsBox, "_HideAnnotationsBox");
             this._HideAnnotationsBox.Name = "_HideAnnotationsBox";
-            this._HideAnnotationsBox.Size = new System.Drawing.Size(156, 16);
-            this._HideAnnotationsBox.TabIndex = 4;
-            this._HideAnnotationsBox.Text = "Hidden comment content";
             this._HideAnnotationsBox.UseVisualStyleBackColor = true;
             // 
             // _VerticalFlipImageBox
             // 
-            this._VerticalFlipImageBox.AutoSize = true;
-            this._VerticalFlipImageBox.Location = new System.Drawing.Point(85, 48);
+            resources.ApplyResources(this._VerticalFlipImageBox, "_VerticalFlipImageBox");
             this._VerticalFlipImageBox.Name = "_VerticalFlipImageBox";
-            this._VerticalFlipImageBox.Size = new System.Drawing.Size(102, 16);
-            this._VerticalFlipImageBox.TabIndex = 3;
-            this._VerticalFlipImageBox.Text = "Vertical flip";
             this._VerticalFlipImageBox.UseVisualStyleBackColor = true;
             // 
             // groupBox2
@@ -282,49 +217,36 @@
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this._SpecificRatioBox);
             this.groupBox2.Controls.Add(this._SpecificWidthBox);
-            this.groupBox2.Location = new System.Drawing.Point(227, 97);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(271, 100);
-            this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Output image size";
             // 
             // _ResolutionBox
             // 
             this._ResolutionBox.FormattingEnabled = true;
             this._ResolutionBox.Items.AddRange(new object[] {
-            "72",
-            "96",
-            "100",
-            "150",
-            "200",
-            "300",
-            "400",
-            "600",
-            "1200",
-            "2400"});
-            this._ResolutionBox.Location = new System.Drawing.Point(86, 74);
+            resources.GetString("_ResolutionBox.Items"),
+            resources.GetString("_ResolutionBox.Items1"),
+            resources.GetString("_ResolutionBox.Items2"),
+            resources.GetString("_ResolutionBox.Items3"),
+            resources.GetString("_ResolutionBox.Items4"),
+            resources.GetString("_ResolutionBox.Items5"),
+            resources.GetString("_ResolutionBox.Items6"),
+            resources.GetString("_ResolutionBox.Items7"),
+            resources.GetString("_ResolutionBox.Items8"),
+            resources.GetString("_ResolutionBox.Items9")});
+            resources.ApplyResources(this._ResolutionBox, "_ResolutionBox");
             this._ResolutionBox.Name = "_ResolutionBox";
-            this._ResolutionBox.Size = new System.Drawing.Size(55, 20);
-            this._ResolutionBox.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 77);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 12);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Resolution:";
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(189, 24);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(89, 12);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "Multiplication";
             // 
             // _ExtractPageImageWidthBox
             // 
@@ -333,15 +255,13 @@
             0,
             0,
             0});
-            this._ExtractPageImageWidthBox.Location = new System.Drawing.Point(114, 46);
+            resources.ApplyResources(this._ExtractPageImageWidthBox, "_ExtractPageImageWidthBox");
             this._ExtractPageImageWidthBox.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this._ExtractPageImageWidthBox.Name = "_ExtractPageImageWidthBox";
-            this._ExtractPageImageWidthBox.Size = new System.Drawing.Size(55, 21);
-            this._ExtractPageImageWidthBox.TabIndex = 1;
             // 
             // _ExtractPageRatioBox
             // 
@@ -351,7 +271,7 @@
             0,
             0,
             65536});
-            this._ExtractPageRatioBox.Location = new System.Drawing.Point(128, 20);
+            resources.ApplyResources(this._ExtractPageRatioBox, "_ExtractPageRatioBox");
             this._ExtractPageRatioBox.Maximum = new decimal(new int[] {
             20,
             0,
@@ -363,8 +283,6 @@
             0,
             65536});
             this._ExtractPageRatioBox.Name = "_ExtractPageRatioBox";
-            this._ExtractPageRatioBox.Size = new System.Drawing.Size(55, 21);
-            this._ExtractPageRatioBox.TabIndex = 4;
             this._ExtractPageRatioBox.Value = new decimal(new int[] {
             1,
             0,
@@ -373,42 +291,26 @@
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(147, 77);
+            resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(23, 12);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "DPI";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(176, 50);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(35, 12);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Pixel";
             // 
             // _SpecificRatioBox
             // 
-            this._SpecificRatioBox.AutoSize = true;
-            this._SpecificRatioBox.Location = new System.Drawing.Point(9, 21);
+            resources.ApplyResources(this._SpecificRatioBox, "_SpecificRatioBox");
             this._SpecificRatioBox.Name = "_SpecificRatioBox";
-            this._SpecificRatioBox.Size = new System.Drawing.Size(113, 16);
-            this._SpecificRatioBox.TabIndex = 3;
             this._SpecificRatioBox.TabStop = true;
-            this._SpecificRatioBox.Text = "Specified ratio";
             this._SpecificRatioBox.UseVisualStyleBackColor = true;
             // 
             // _SpecificWidthBox
             // 
-            this._SpecificWidthBox.AutoSize = true;
-            this._SpecificWidthBox.Location = new System.Drawing.Point(9, 49);
+            resources.ApplyResources(this._SpecificWidthBox, "_SpecificWidthBox");
             this._SpecificWidthBox.Name = "_SpecificWidthBox";
-            this._SpecificWidthBox.Size = new System.Drawing.Size(101, 16);
-            this._SpecificWidthBox.TabIndex = 0;
             this._SpecificWidthBox.TabStop = true;
-            this._SpecificWidthBox.Text = "Specify width";
             this._SpecificWidthBox.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -418,98 +320,67 @@
             this.groupBox1.Controls.Add(this._QuantizeBox);
             this.groupBox1.Controls.Add(this._ColorSpaceGrayBox);
             this.groupBox1.Controls.Add(this._InvertColorBox);
-            this.groupBox1.Location = new System.Drawing.Point(8, 97);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(213, 100);
-            this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "color";
             // 
             // _ColorSpaceRgbBox
             // 
-            this._ColorSpaceRgbBox.AutoSize = true;
-            this._ColorSpaceRgbBox.Location = new System.Drawing.Point(55, 22);
+            resources.ApplyResources(this._ColorSpaceRgbBox, "_ColorSpaceRgbBox");
             this._ColorSpaceRgbBox.Name = "_ColorSpaceRgbBox";
-            this._ColorSpaceRgbBox.Size = new System.Drawing.Size(53, 16);
-            this._ColorSpaceRgbBox.TabIndex = 1;
             this._ColorSpaceRgbBox.TabStop = true;
-            this._ColorSpaceRgbBox.Text = "color";
             this._ColorSpaceRgbBox.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(8, 23);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 12);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "color:";
             // 
             // _QuantizeBox
             // 
-            this._QuantizeBox.AutoSize = true;
-            this._QuantizeBox.Location = new System.Drawing.Point(10, 70);
+            resources.ApplyResources(this._QuantizeBox, "_QuantizeBox");
             this._QuantizeBox.Name = "_QuantizeBox";
-            this._QuantizeBox.Size = new System.Drawing.Size(198, 16);
-            this._QuantizeBox.TabIndex = 4;
-            this._QuantizeBox.Text = "Reduce the color of the image";
             this._QuantizeBox.UseVisualStyleBackColor = true;
             // 
             // _ColorSpaceGrayBox
             // 
-            this._ColorSpaceGrayBox.AutoSize = true;
-            this._ColorSpaceGrayBox.Location = new System.Drawing.Point(108, 22);
+            resources.ApplyResources(this._ColorSpaceGrayBox, "_ColorSpaceGrayBox");
             this._ColorSpaceGrayBox.Name = "_ColorSpaceGrayBox";
-            this._ColorSpaceGrayBox.Size = new System.Drawing.Size(77, 16);
-            this._ColorSpaceGrayBox.TabIndex = 2;
             this._ColorSpaceGrayBox.TabStop = true;
-            this._ColorSpaceGrayBox.Text = "Grayscale";
             this._ColorSpaceGrayBox.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(212, 74);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(119, 12);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "JPEG image quality:";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 74);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(125, 12);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Output image format:";
             // 
             // _JpegQualityBox
             // 
             this._JpegQualityBox.FormattingEnabled = true;
             this._JpegQualityBox.Items.AddRange(new object[] {
-            "95",
-            "85",
-            "75",
-            "50",
-            "30"});
-            this._JpegQualityBox.Location = new System.Drawing.Point(331, 71);
+            resources.GetString("_JpegQualityBox.Items"),
+            resources.GetString("_JpegQualityBox.Items1"),
+            resources.GetString("_JpegQualityBox.Items2"),
+            resources.GetString("_JpegQualityBox.Items3"),
+            resources.GetString("_JpegQualityBox.Items4")});
+            resources.ApplyResources(this._JpegQualityBox, "_JpegQualityBox");
             this._JpegQualityBox.Name = "_JpegQualityBox";
-            this._JpegQualityBox.Size = new System.Drawing.Size(86, 20);
-            this._JpegQualityBox.TabIndex = 6;
             // 
             // _ImageFormatBox
             // 
             this._ImageFormatBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._ImageFormatBox.FormattingEnabled = true;
             this._ImageFormatBox.Items.AddRange(new object[] {
-            "PNG",
-            "JPEG",
-            "Black and white TIFF"});
-            this._ImageFormatBox.Location = new System.Drawing.Point(128, 71);
+            resources.GetString("_ImageFormatBox.Items"),
+            resources.GetString("_ImageFormatBox.Items1"),
+            resources.GetString("_ImageFormatBox.Items2")});
+            resources.ApplyResources(this._ImageFormatBox, "_ImageFormatBox");
             this._ImageFormatBox.Name = "_ImageFormatBox";
-            this._ImageFormatBox.Size = new System.Drawing.Size(78, 20);
-            this._ImageFormatBox.TabIndex = 4;
             // 
             // tabPage2
             // 
@@ -517,62 +388,41 @@
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this._FileMaskPreviewBox);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(740, 203);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Document name";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // _AutoOutputDirBox
             // 
-            this._AutoOutputDirBox.AutoSize = true;
-            this._AutoOutputDirBox.Location = new System.Drawing.Point(19, 67);
+            resources.ApplyResources(this._AutoOutputDirBox, "_AutoOutputDirBox");
             this._AutoOutputDirBox.Name = "_AutoOutputDirBox";
-            this._AutoOutputDirBox.Size = new System.Drawing.Size(348, 16);
-            this._AutoOutputDirBox.TabIndex = 5;
-            this._AutoOutputDirBox.Text = "Automatically specify the location of the output image";
             this._AutoOutputDirBox.UseVisualStyleBackColor = true;
             // 
             // _BrowseTargetPdfButton
             // 
-            this._BrowseTargetPdfButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._BrowseTargetPdfButton, "_BrowseTargetPdfButton");
             this._BrowseTargetPdfButton.Image = global::PDFPatcher.Properties.Resources.ImageFolder;
-            this._BrowseTargetPdfButton.Location = new System.Drawing.Point(685, 34);
             this._BrowseTargetPdfButton.Name = "_BrowseTargetPdfButton";
-            this._BrowseTargetPdfButton.Size = new System.Drawing.Size(75, 23);
-            this._BrowseTargetPdfButton.TabIndex = 4;
-            this._BrowseTargetPdfButton.Text = "Browse...";
-            this._BrowseTargetPdfButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this._BrowseTargetPdfButton.UseVisualStyleBackColor = true;
             this._BrowseTargetPdfButton.Click += new System.EventHandler(this._BrowseTargetPdfButton_Click);
             // 
             // _TargetBox
             // 
-            this._TargetBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._TargetBox, "_TargetBox");
             this._TargetBox.Contents = null;
             this._TargetBox.FormattingEnabled = true;
-            this._TargetBox.Location = new System.Drawing.Point(112, 36);
             this._TargetBox.MaxItemCount = 16;
             this._TargetBox.Name = "_TargetBox";
-            this._TargetBox.Size = new System.Drawing.Size(567, 20);
-            this._TargetBox.TabIndex = 3;
             // 
             // _SourceFileControl
             // 
-            this._SourceFileControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._SourceFileControl.Location = new System.Drawing.Point(12, 3);
+            resources.ApplyResources(this._SourceFileControl, "_SourceFileControl");
             this._SourceFileControl.Name = "_SourceFileControl";
-            this._SourceFileControl.Size = new System.Drawing.Size(751, 29);
-            this._SourceFileControl.TabIndex = 1;
             // 
             // _ExtractButton
             // 
             this._ExtractButton.AlternativeFocusBorderColor = System.Drawing.SystemColors.Highlight;
-            this._ExtractButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._ExtractButton, "_ExtractButton");
             this._ExtractButton.AnimateGlow = true;
             this._ExtractButton.BackColor = System.Drawing.SystemColors.Highlight;
             this._ExtractButton.CornerRadius = 3;
@@ -580,19 +430,14 @@
             this._ExtractButton.GlowColor = System.Drawing.Color.White;
             this._ExtractButton.Image = global::PDFPatcher.Properties.Resources.Save;
             this._ExtractButton.InnerBorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this._ExtractButton.Location = new System.Drawing.Point(637, 63);
             this._ExtractButton.Name = "_ExtractButton";
             this._ExtractButton.OuterBorderColor = System.Drawing.SystemColors.ControlLightLight;
             this._ExtractButton.ShowFocusBorder = true;
-            this._ExtractButton.Size = new System.Drawing.Size(123, 29);
-            this._ExtractButton.TabIndex = 14;
-            this._ExtractButton.Text = "&Extract Image";
-            this._ExtractButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this._ExtractButton.Click += new System.EventHandler(this._ExtractButton_Click);
             // 
             // RenderImageControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this._ExtractButton);
             this.Controls.Add(this._AutoOutputDirBox);
@@ -601,9 +446,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this._SourceFileControl);
             this.Controls.Add(this._BrowseTargetPdfButton);
-            this.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Name = "RenderImageControl";
-            this.Size = new System.Drawing.Size(775, 333);
             this.Load += new System.EventHandler(this.Control_Show);
             this.VisibleChanged += new System.EventHandler(this.Control_Show);
             this.tabControl1.ResumeLayout(false);

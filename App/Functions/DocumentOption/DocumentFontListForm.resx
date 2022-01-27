@@ -117,7 +117,340 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 65</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 16</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Page range:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="_PageRangeBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_PageRangeBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 59</value>
+  </data>
+  <data name="_PageRangeBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_PageRangeBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>470, 22</value>
+  </data>
+  <data name="_PageRangeBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_PageRangeBox.Name" xml:space="preserve">
+    <value>_PageRangeBox</value>
+  </data>
+  <data name="&gt;&gt;_PageRangeBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_PageRangeBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_PageRangeBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_NameColumn.Text" xml:space="preserve">
+    <value>Font Name</value>
+  </data>
+  <data name="_NameColumn.Width" type="System.Int32, mscorlib">
+    <value>273</value>
+  </data>
+  <data name="_EmbeddedColumn.Text" xml:space="preserve">
+    <value>Embedded</value>
+  </data>
+  <data name="_EmbeddedColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="_FirstPageColumn.Text" xml:space="preserve">
+    <value>First page number</value>
+  </data>
+  <data name="_FirstPageColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="_FirstPageColumn.Width" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="_ReferenceColumn.Text" xml:space="preserve">
+    <value>Number of pages</value>
+  </data>
+  <data name="_ReferenceColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="_FontListBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="_FontListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 137</value>
+  </data>
+  <data name="_FontListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_FontListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>699, 329</value>
+  </data>
+  <data name="_FontListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;_FontListBox.Name" xml:space="preserve">
+    <value>_FontListBox</value>
+  </data>
+  <data name="&gt;&gt;_FontListBox.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.FastObjectListView, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_FontListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_FontListBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <metadata name="_Worker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="_ProgressBar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="_ProgressBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 476</value>
+  </data>
+  <data name="_ProgressBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_ProgressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>700, 31</value>
+  </data>
+  <data name="_ProgressBar.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;_ProgressBar.Name" xml:space="preserve">
+    <value>_ProgressBar</value>
+  </data>
+  <data name="&gt;&gt;_ProgressBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ProgressBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_ProgressBar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_AddSelectedFontsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_AddSelectedFontsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>516, 97</value>
+  </data>
+  <data name="_AddSelectedFontsButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_AddSelectedFontsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 31</value>
+  </data>
+  <data name="_AddSelectedFontsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_AddSelectedFontsButton.Text" xml:space="preserve">
+    <value>Add to replacement list</value>
+  </data>
+  <data name="&gt;&gt;_AddSelectedFontsButton.Name" xml:space="preserve">
+    <value>_AddSelectedFontsButton</value>
+  </data>
+  <data name="&gt;&gt;_AddSelectedFontsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AddSelectedFontsButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_AddSelectedFontsButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_SelectAllButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_SelectAllButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 97</value>
+  </data>
+  <data name="_SelectAllButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_SelectAllButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 31</value>
+  </data>
+  <data name="_SelectAllButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_SelectAllButton.Text" xml:space="preserve">
+    <value>&amp;Select All</value>
+  </data>
+  <data name="&gt;&gt;_SelectAllButton.Name" xml:space="preserve">
+    <value>_SelectAllButton</value>
+  </data>
+  <data name="&gt;&gt;_SelectAllButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_SelectAllButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_SelectAllButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_ListFontsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_ListFontsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 59</value>
+  </data>
+  <data name="_ListFontsButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="_ListFontsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 31</value>
+  </data>
+  <data name="_ListFontsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_ListFontsButton.Text" xml:space="preserve">
+    <value>List fonts</value>
+  </data>
+  <data name="&gt;&gt;_ListFontsButton.Name" xml:space="preserve">
+    <value>_ListFontsButton</value>
+  </data>
+  <data name="&gt;&gt;_ListFontsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_ListFontsButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_ListFontsButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_SourceFileBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="_SourceFileBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="_SourceFileBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="_SourceFileBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>712, 34</value>
+  </data>
+  <data name="_SourceFileBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_SourceFileBox.Name" xml:space="preserve">
+    <value>_SourceFileBox</value>
+  </data>
+  <data name="&gt;&gt;_SourceFileBox.Type" xml:space="preserve">
+    <value>PDFPatcher.SourceFileControl, PDFPatcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_SourceFileBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_SourceFileBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_AppConfigButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 97</value>
+  </data>
+  <data name="_AppConfigButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 31</value>
+  </data>
+  <data name="_AppConfigButton.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="_AppConfigButton.Text" xml:space="preserve">
+    <value>Configuration...</value>
+  </data>
+  <data name="&gt;&gt;_AppConfigButton.Name" xml:space="preserve">
+    <value>_AppConfigButton</value>
+  </data>
+  <data name="&gt;&gt;_AppConfigButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_AppConfigButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_AppConfigButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>744, 523</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>List of fonts used by the PDF document</value>
+  </data>
+  <data name="&gt;&gt;_NameColumn.Name" xml:space="preserve">
+    <value>_NameColumn</value>
+  </data>
+  <data name="&gt;&gt;_NameColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_EmbeddedColumn.Name" xml:space="preserve">
+    <value>_EmbeddedColumn</value>
+  </data>
+  <data name="&gt;&gt;_EmbeddedColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_FirstPageColumn.Name" xml:space="preserve">
+    <value>_FirstPageColumn</value>
+  </data>
+  <data name="&gt;&gt;_FirstPageColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_ReferenceColumn.Name" xml:space="preserve">
+    <value>_ReferenceColumn</value>
+  </data>
+  <data name="&gt;&gt;_ReferenceColumn.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.OLVColumn, ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4</value>
+  </data>
+  <data name="&gt;&gt;_Worker.Name" xml:space="preserve">
+    <value>_Worker</value>
+  </data>
+  <data name="&gt;&gt;_Worker.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DocumentFontListForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

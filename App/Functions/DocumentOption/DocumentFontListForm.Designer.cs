@@ -25,6 +25,7 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DocumentFontListForm));
             this.label1 = new System.Windows.Forms.Label();
             this._PageRangeBox = new System.Windows.Forms.TextBox();
             this._FontListBox = new BrightIdeasSoftware.FastObjectListView();
@@ -44,23 +45,13 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 65);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Page range:";
             // 
             // _PageRangeBox
             // 
-            this._PageRangeBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._PageRangeBox.Location = new System.Drawing.Point(146, 59);
-            this._PageRangeBox.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._PageRangeBox, "_PageRangeBox");
             this._PageRangeBox.Name = "_PageRangeBox";
-            this._PageRangeBox.Size = new System.Drawing.Size(470, 22);
-            this._PageRangeBox.TabIndex = 2;
             // 
             // _FontListBox
             // 
@@ -68,9 +59,7 @@
             this._FontListBox.AllColumns.Add(this._EmbeddedColumn);
             this._FontListBox.AllColumns.Add(this._FirstPageColumn);
             this._FontListBox.AllColumns.Add(this._ReferenceColumn);
-            this._FontListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._FontListBox, "_FontListBox");
             this._FontListBox.CellEditUseWholeCell = false;
             this._FontListBox.CheckBoxes = true;
             this._FontListBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -80,14 +69,10 @@
             this._ReferenceColumn});
             this._FontListBox.GridLines = true;
             this._FontListBox.HideSelection = false;
-            this._FontListBox.Location = new System.Drawing.Point(24, 137);
-            this._FontListBox.Margin = new System.Windows.Forms.Padding(4);
             this._FontListBox.MultiSelect = false;
             this._FontListBox.Name = "_FontListBox";
             this._FontListBox.ShowGroups = false;
             this._FontListBox.ShowImagesOnSubItems = true;
-            this._FontListBox.Size = new System.Drawing.Size(699, 329);
-            this._FontListBox.TabIndex = 8;
             this._FontListBox.UseCompatibleStateImageBehavior = false;
             this._FontListBox.View = System.Windows.Forms.View.Details;
             this._FontListBox.VirtualMode = true;
@@ -95,8 +80,7 @@
             // _NameColumn
             // 
             this._NameColumn.AspectName = "";
-            this._NameColumn.Text = "Font Name";
-            this._NameColumn.Width = 273;
+            resources.ApplyResources(this._NameColumn, "_NameColumn");
             // 
             // _EmbeddedColumn
             // 
@@ -104,23 +88,19 @@
             this._EmbeddedColumn.CheckBoxes = true;
             this._EmbeddedColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this._EmbeddedColumn.IsEditable = false;
-            this._EmbeddedColumn.Text = "Embedded";
-            this._EmbeddedColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            resources.ApplyResources(this._EmbeddedColumn, "_EmbeddedColumn");
             // 
             // _FirstPageColumn
             // 
             this._FirstPageColumn.AspectName = "";
             this._FirstPageColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this._FirstPageColumn.Text = "First page number";
-            this._FirstPageColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this._FirstPageColumn.Width = 96;
+            resources.ApplyResources(this._FirstPageColumn, "_FirstPageColumn");
             // 
             // _ReferenceColumn
             // 
             this._ReferenceColumn.AspectName = "";
             this._ReferenceColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this._ReferenceColumn.Text = "Number of pages";
-            this._ReferenceColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            resources.ApplyResources(this._ReferenceColumn, "_ReferenceColumn");
             // 
             // _Worker
             // 
@@ -129,76 +109,47 @@
             // 
             // _ProgressBar
             // 
-            this._ProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._ProgressBar.Location = new System.Drawing.Point(24, 476);
-            this._ProgressBar.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._ProgressBar, "_ProgressBar");
             this._ProgressBar.Name = "_ProgressBar";
-            this._ProgressBar.Size = new System.Drawing.Size(700, 31);
-            this._ProgressBar.TabIndex = 9;
             // 
             // _AddSelectedFontsButton
             // 
-            this._AddSelectedFontsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._AddSelectedFontsButton.Location = new System.Drawing.Point(516, 97);
-            this._AddSelectedFontsButton.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._AddSelectedFontsButton, "_AddSelectedFontsButton");
             this._AddSelectedFontsButton.Name = "_AddSelectedFontsButton";
-            this._AddSelectedFontsButton.Size = new System.Drawing.Size(208, 31);
-            this._AddSelectedFontsButton.TabIndex = 7;
-            this._AddSelectedFontsButton.Text = "Add to replacement list";
             this._AddSelectedFontsButton.UseVisualStyleBackColor = true;
             this._AddSelectedFontsButton.Click += new System.EventHandler(this._AddSelectedFontsButton_Click);
             // 
             // _SelectAllButton
             // 
-            this._SelectAllButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._SelectAllButton.Location = new System.Drawing.Point(381, 97);
-            this._SelectAllButton.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._SelectAllButton, "_SelectAllButton");
             this._SelectAllButton.Name = "_SelectAllButton";
-            this._SelectAllButton.Size = new System.Drawing.Size(127, 31);
-            this._SelectAllButton.TabIndex = 6;
-            this._SelectAllButton.Text = "&Select All";
             this._SelectAllButton.UseVisualStyleBackColor = true;
             this._SelectAllButton.Click += new System.EventHandler(this._SelectAllButton_Click);
             // 
             // _ListFontsButton
             // 
-            this._ListFontsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._ListFontsButton.Location = new System.Drawing.Point(624, 59);
-            this._ListFontsButton.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this._ListFontsButton, "_ListFontsButton");
             this._ListFontsButton.Name = "_ListFontsButton";
-            this._ListFontsButton.Size = new System.Drawing.Size(100, 31);
-            this._ListFontsButton.TabIndex = 3;
-            this._ListFontsButton.Text = "List fonts";
             this._ListFontsButton.UseVisualStyleBackColor = true;
             this._ListFontsButton.Click += new System.EventHandler(this._ListFontsButton_Click);
             // 
             // _SourceFileBox
             // 
-            this._SourceFileBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._SourceFileBox.Location = new System.Drawing.Point(16, 16);
-            this._SourceFileBox.Margin = new System.Windows.Forms.Padding(5);
+            resources.ApplyResources(this._SourceFileBox, "_SourceFileBox");
             this._SourceFileBox.Name = "_SourceFileBox";
-            this._SourceFileBox.Size = new System.Drawing.Size(712, 34);
-            this._SourceFileBox.TabIndex = 0;
             // 
             // _AppConfigButton
             // 
-            this._AppConfigButton.Location = new System.Drawing.Point(26, 97);
+            resources.ApplyResources(this._AppConfigButton, "_AppConfigButton");
             this._AppConfigButton.Name = "_AppConfigButton";
-            this._AppConfigButton.Size = new System.Drawing.Size(127, 31);
-            this._AppConfigButton.TabIndex = 10;
-            this._AppConfigButton.Text = "Configuration...";
             this._AppConfigButton.UseVisualStyleBackColor = true;
             this._AppConfigButton.Click += new System.EventHandler(this._AppConfigButton_Click);
             // 
             // DocumentFontListForm
             // 
             this.AcceptButton = this._ListFontsButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 523);
             this.Controls.Add(this._AppConfigButton);
             this.Controls.Add(this._SelectAllButton);
             this.Controls.Add(this._AddSelectedFontsButton);
@@ -208,13 +159,11 @@
             this.Controls.Add(this._PageRangeBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this._SourceFileBox);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DocumentFontListForm";
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.Text = "List of fonts used by the PDF document";
             ((System.ComponentModel.ISupportInitialize)(this._FontListBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

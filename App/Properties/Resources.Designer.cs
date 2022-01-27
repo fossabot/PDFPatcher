@@ -22,7 +22,7 @@ namespace PDFPatcher.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace PDFPatcher.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PDFPatcher.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace PDFPatcher.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap About {
+        public static System.Drawing.Bitmap About {
             get {
                 object obj = ResourceManager.GetObject("About", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -99,7 +99,7 @@ namespace PDFPatcher.Properties {
         ///            color: #6666cc;
         ///     [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string AboutPage {
+        public static string AboutPage {
             get {
                 return ResourceManager.GetString("AboutPage", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Actions {
+        public static System.Drawing.Bitmap Actions {
             get {
                 object obj = ResourceManager.GetObject("Actions", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -118,7 +118,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Add {
+        public static System.Drawing.Bitmap Add {
             get {
                 object obj = ResourceManager.GetObject("Add", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -128,7 +128,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AddChildNode {
+        public static System.Drawing.Bitmap AddChildNode {
             get {
                 object obj = ResourceManager.GetObject("AddChildNode", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -138,7 +138,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AlphabeticSort {
+        public static System.Drawing.Bitmap AlphabeticSort {
             get {
                 object obj = ResourceManager.GetObject("AlphabeticSort", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -148,7 +148,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AppOptions {
+        public static System.Drawing.Bitmap AppOptions {
             get {
                 object obj = ResourceManager.GetObject("AppOptions", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -158,7 +158,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AutoBookmark {
+        public static System.Drawing.Bitmap AutoBookmark {
             get {
                 object obj = ResourceManager.GetObject("AutoBookmark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -168,7 +168,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bold {
+        public static System.Drawing.Bitmap Bold {
             get {
                 object obj = ResourceManager.GetObject("Bold", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -178,7 +178,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BookmarkFile {
+        public static System.Drawing.Bitmap BookmarkFile {
             get {
                 object obj = ResourceManager.GetObject("BookmarkFile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -188,7 +188,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ChangeCase {
+        public static System.Drawing.Bitmap ChangeCase {
             get {
                 object obj = ResourceManager.GetObject("ChangeCase", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -198,7 +198,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CheckUpdate {
+        public static System.Drawing.Bitmap CheckUpdate {
             get {
                 object obj = ResourceManager.GetObject("CheckUpdate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -208,7 +208,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Close {
+        public static System.Drawing.Bitmap Close {
             get {
                 object obj = ResourceManager.GetObject("Close", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -218,7 +218,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Collapse {
+        public static System.Drawing.Bitmap Collapse {
             get {
                 object obj = ResourceManager.GetObject("Collapse", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -228,7 +228,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ColorDisplay {
+        public static System.Drawing.Bitmap ColorDisplay {
             get {
                 object obj = ResourceManager.GetObject("ColorDisplay", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -238,7 +238,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Convert {
+        public static System.Drawing.Bitmap Convert {
             get {
                 object obj = ResourceManager.GetObject("Convert", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -248,7 +248,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Copy {
+        public static System.Drawing.Bitmap Copy {
             get {
                 object obj = ResourceManager.GetObject("Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -258,7 +258,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CreateDocument {
+        public static System.Drawing.Bitmap CreateDocument {
             get {
                 object obj = ResourceManager.GetObject("CreateDocument", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -268,7 +268,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CursorMode {
+        public static System.Drawing.Bitmap CursorMode {
             get {
                 object obj = ResourceManager.GetObject("CursorMode", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -278,7 +278,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CustomizeToolbar {
+        public static System.Drawing.Bitmap CustomizeToolbar {
             get {
                 object obj = ResourceManager.GetObject("CustomizeToolbar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -288,7 +288,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DarkMode {
+        public static System.Drawing.Bitmap DarkMode {
             get {
                 object obj = ResourceManager.GetObject("DarkMode", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -298,7 +298,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Delete {
+        public static System.Drawing.Bitmap Delete {
             get {
                 object obj = ResourceManager.GetObject("Delete", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -308,7 +308,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DocumentInspector {
+        public static System.Drawing.Bitmap DocumentInspector {
             get {
                 object obj = ResourceManager.GetObject("DocumentInspector", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -318,7 +318,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DocumentProcessor {
+        public static System.Drawing.Bitmap DocumentProcessor {
             get {
                 object obj = ResourceManager.GetObject("DocumentProcessor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -328,7 +328,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Donation {
+        public static System.Drawing.Bitmap Donation {
             get {
                 object obj = ResourceManager.GetObject("Donation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -338,7 +338,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap EditItem {
+        public static System.Drawing.Bitmap EditItem {
             get {
                 object obj = ResourceManager.GetObject("EditItem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -348,7 +348,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Editor {
+        public static System.Drawing.Bitmap Editor {
             get {
                 object obj = ResourceManager.GetObject("Editor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -358,7 +358,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap EmptyPage {
+        public static System.Drawing.Bitmap EmptyPage {
             get {
                 object obj = ResourceManager.GetObject("EmptyPage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -368,7 +368,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap EvenPage {
+        public static System.Drawing.Bitmap EvenPage {
             get {
                 object obj = ResourceManager.GetObject("EvenPage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -378,7 +378,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Expand {
+        public static System.Drawing.Bitmap Expand {
             get {
                 object obj = ResourceManager.GetObject("Expand", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -388,7 +388,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ExportFile {
+        public static System.Drawing.Bitmap ExportFile {
             get {
                 object obj = ResourceManager.GetObject("ExportFile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -398,7 +398,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ExportInfoFile {
+        public static System.Drawing.Bitmap ExportInfoFile {
             get {
                 object obj = ResourceManager.GetObject("ExportInfoFile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -408,7 +408,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ExtractImage {
+        public static System.Drawing.Bitmap ExtractImage {
             get {
                 object obj = ResourceManager.GetObject("ExtractImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -418,7 +418,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ExtractPages {
+        public static System.Drawing.Bitmap ExtractPages {
             get {
                 object obj = ResourceManager.GetObject("ExtractPages", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -428,7 +428,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Fonts {
+        public static System.Drawing.Bitmap Fonts {
             get {
                 object obj = ResourceManager.GetObject("Fonts", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -464,7 +464,7 @@ namespace PDFPatcher.Properties {
         ///        h2 {
         ///            c [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string FrontPage {
+        public static string FrontPage {
             get {
                 return ResourceManager.GetString("FrontPage", resourceCulture);
             }
@@ -473,7 +473,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GrayScaleDisplay {
+        public static System.Drawing.Bitmap GrayScaleDisplay {
             get {
                 object obj = ResourceManager.GetObject("GrayScaleDisplay", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -483,7 +483,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GreenMode {
+        public static System.Drawing.Bitmap GreenMode {
             get {
                 object obj = ResourceManager.GetObject("GreenMode", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -493,7 +493,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HomePage {
+        public static System.Drawing.Bitmap HomePage {
             get {
                 object obj = ResourceManager.GetObject("HomePage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -503,7 +503,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Image {
+        public static System.Drawing.Bitmap Image {
             get {
                 object obj = ResourceManager.GetObject("Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -513,7 +513,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ImageFolder {
+        public static System.Drawing.Bitmap ImageFolder {
             get {
                 object obj = ResourceManager.GetObject("ImageFolder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -523,7 +523,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ImportFile {
+        public static System.Drawing.Bitmap ImportFile {
             get {
                 object obj = ResourceManager.GetObject("ImportFile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -533,7 +533,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ImportInfoFile {
+        public static System.Drawing.Bitmap ImportInfoFile {
             get {
                 object obj = ResourceManager.GetObject("ImportInfoFile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -543,7 +543,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ImportOcr {
+        public static System.Drawing.Bitmap ImportOcr {
             get {
                 object obj = ResourceManager.GetObject("ImportOcr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -553,7 +553,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap InfoFileOptions {
+        public static System.Drawing.Bitmap InfoFileOptions {
             get {
                 object obj = ResourceManager.GetObject("InfoFileOptions", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -563,7 +563,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap InsertMacro {
+        public static System.Drawing.Bitmap InsertMacro {
             get {
                 object obj = ResourceManager.GetObject("InsertMacro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -573,7 +573,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap InvertColor {
+        public static System.Drawing.Bitmap InvertColor {
             get {
                 object obj = ResourceManager.GetObject("InvertColor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -583,7 +583,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Italic {
+        public static System.Drawing.Bitmap Italic {
             get {
                 object obj = ResourceManager.GetObject("Italic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -593,7 +593,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Lanscape {
+        public static System.Drawing.Bitmap Lanscape {
             get {
                 object obj = ResourceManager.GetObject("Lanscape", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -603,7 +603,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Log {
+        public static System.Drawing.Bitmap Log {
             get {
                 object obj = ResourceManager.GetObject("Log", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -613,7 +613,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Logo {
+        public static System.Drawing.Bitmap Logo {
             get {
                 object obj = ResourceManager.GetObject("Logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -623,7 +623,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mark {
+        public static System.Drawing.Bitmap Mark {
             get {
                 object obj = ResourceManager.GetObject("Mark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -633,7 +633,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Merge {
+        public static System.Drawing.Bitmap Merge {
             get {
                 object obj = ResourceManager.GetObject("Merge", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -643,7 +643,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Merger {
+        public static System.Drawing.Bitmap Merger {
             get {
                 object obj = ResourceManager.GetObject("Merger", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -653,7 +653,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Move {
+        public static System.Drawing.Bitmap Move {
             get {
                 object obj = ResourceManager.GetObject("Move", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -663,7 +663,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MoveBottom {
+        public static System.Drawing.Bitmap MoveBottom {
             get {
                 object obj = ResourceManager.GetObject("MoveBottom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -673,7 +673,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MoveDown {
+        public static System.Drawing.Bitmap MoveDown {
             get {
                 object obj = ResourceManager.GetObject("MoveDown", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -683,7 +683,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MoveLeft {
+        public static System.Drawing.Bitmap MoveLeft {
             get {
                 object obj = ResourceManager.GetObject("MoveLeft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -693,7 +693,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MoveRight {
+        public static System.Drawing.Bitmap MoveRight {
             get {
                 object obj = ResourceManager.GetObject("MoveRight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -703,7 +703,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MoveTop {
+        public static System.Drawing.Bitmap MoveTop {
             get {
                 object obj = ResourceManager.GetObject("MoveTop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -713,7 +713,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MoveUp {
+        public static System.Drawing.Bitmap MoveUp {
             get {
                 object obj = ResourceManager.GetObject("MoveUp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -723,7 +723,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NaturalSort {
+        public static System.Drawing.Bitmap NaturalSort {
             get {
                 object obj = ResourceManager.GetObject("NaturalSort", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -733,7 +733,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NewPdfFile {
+        public static System.Drawing.Bitmap NewPdfFile {
             get {
                 object obj = ResourceManager.GetObject("NewPdfFile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -743,7 +743,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ocr {
+        public static System.Drawing.Bitmap Ocr {
             get {
                 object obj = ResourceManager.GetObject("Ocr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -753,7 +753,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap OddPage {
+        public static System.Drawing.Bitmap OddPage {
             get {
                 object obj = ResourceManager.GetObject("OddPage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -763,7 +763,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Open {
+        public static System.Drawing.Bitmap Open {
             get {
                 object obj = ResourceManager.GetObject("Open", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -773,7 +773,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap OpenFile {
+        public static System.Drawing.Bitmap OpenFile {
             get {
                 object obj = ResourceManager.GetObject("OpenFile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -783,7 +783,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap OriginalPdfFile {
+        public static System.Drawing.Bitmap OriginalPdfFile {
             get {
                 object obj = ResourceManager.GetObject("OriginalPdfFile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -793,7 +793,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PageProcessor {
+        public static System.Drawing.Bitmap PageProcessor {
             get {
                 object obj = ResourceManager.GetObject("PageProcessor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -803,7 +803,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PageRange {
+        public static System.Drawing.Bitmap PageRange {
             get {
                 object obj = ResourceManager.GetObject("PageRange", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -813,7 +813,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Palette {
+        public static System.Drawing.Bitmap Palette {
             get {
                 object obj = ResourceManager.GetObject("Palette", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -823,7 +823,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Paste {
+        public static System.Drawing.Bitmap Paste {
             get {
                 object obj = ResourceManager.GetObject("Paste", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -833,7 +833,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PdfOptions {
+        public static System.Drawing.Bitmap PdfOptions {
             get {
                 object obj = ResourceManager.GetObject("PdfOptions", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -843,7 +843,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PdfPageRange {
+        public static System.Drawing.Bitmap PdfPageRange {
             get {
                 object obj = ResourceManager.GetObject("PdfPageRange", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -853,7 +853,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Pin {
+        public static System.Drawing.Bitmap Pin {
             get {
                 object obj = ResourceManager.GetObject("Pin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -863,7 +863,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Portrait {
+        public static System.Drawing.Bitmap Portrait {
             get {
                 object obj = ResourceManager.GetObject("Portrait", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -873,7 +873,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Property {
+        public static System.Drawing.Bitmap Property {
             get {
                 object obj = ResourceManager.GetObject("Property", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -883,7 +883,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Refresh {
+        public static System.Drawing.Bitmap Refresh {
             get {
                 object obj = ResourceManager.GetObject("Refresh", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -893,7 +893,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rename {
+        public static System.Drawing.Bitmap Rename {
             get {
                 object obj = ResourceManager.GetObject("Rename", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -903,7 +903,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RenderDocument {
+        public static System.Drawing.Bitmap RenderDocument {
             get {
                 object obj = ResourceManager.GetObject("RenderDocument", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -913,7 +913,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RenderImage {
+        public static System.Drawing.Bitmap RenderImage {
             get {
                 object obj = ResourceManager.GetObject("RenderImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -923,7 +923,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Replace {
+        public static System.Drawing.Bitmap Replace {
             get {
                 object obj = ResourceManager.GetObject("Replace", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -933,7 +933,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Reset {
+        public static System.Drawing.Bitmap Reset {
             get {
                 object obj = ResourceManager.GetObject("Reset", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -943,7 +943,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Return {
+        public static System.Drawing.Bitmap Return {
             get {
                 object obj = ResourceManager.GetObject("Return", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -953,7 +953,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RotateLeft {
+        public static System.Drawing.Bitmap RotateLeft {
             get {
                 object obj = ResourceManager.GetObject("RotateLeft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -963,7 +963,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RotateRight {
+        public static System.Drawing.Bitmap RotateRight {
             get {
                 object obj = ResourceManager.GetObject("RotateRight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -973,7 +973,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Save {
+        public static System.Drawing.Bitmap Save {
             get {
                 object obj = ResourceManager.GetObject("Save", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -983,7 +983,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SaveAs {
+        public static System.Drawing.Bitmap SaveAs {
             get {
                 object obj = ResourceManager.GetObject("SaveAs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -993,7 +993,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ScrollHorizontal {
+        public static System.Drawing.Bitmap ScrollHorizontal {
             get {
                 object obj = ResourceManager.GetObject("ScrollHorizontal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1003,7 +1003,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ScrollPosition {
+        public static System.Drawing.Bitmap ScrollPosition {
             get {
                 object obj = ResourceManager.GetObject("ScrollPosition", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1013,7 +1013,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ScrollVertical {
+        public static System.Drawing.Bitmap ScrollVertical {
             get {
                 object obj = ResourceManager.GetObject("ScrollVertical", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1023,7 +1023,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SearchReplace {
+        public static System.Drawing.Bitmap SearchReplace {
             get {
                 object obj = ResourceManager.GetObject("SearchReplace", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1033,7 +1033,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SelectAll {
+        public static System.Drawing.Bitmap SelectAll {
             get {
                 object obj = ResourceManager.GetObject("SelectAll", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1043,7 +1043,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SelectItem {
+        public static System.Drawing.Bitmap SelectItem {
             get {
                 object obj = ResourceManager.GetObject("SelectItem", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1053,7 +1053,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SelectMarks {
+        public static System.Drawing.Bitmap SelectMarks {
             get {
                 object obj = ResourceManager.GetObject("SelectMarks", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1063,7 +1063,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ShortCut {
+        public static System.Drawing.Bitmap ShortCut {
             get {
                 object obj = ResourceManager.GetObject("ShortCut", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1073,7 +1073,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sort {
+        public static System.Drawing.Bitmap Sort {
             get {
                 object obj = ResourceManager.GetObject("Sort", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1083,7 +1083,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TextFile {
+        public static System.Drawing.Bitmap TextFile {
             get {
                 object obj = ResourceManager.GetObject("TextFile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1093,7 +1093,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Undo {
+        public static System.Drawing.Bitmap Undo {
             get {
                 object obj = ResourceManager.GetObject("Undo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1103,7 +1103,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Unmark {
+        public static System.Drawing.Bitmap Unmark {
             get {
                 object obj = ResourceManager.GetObject("Unmark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1113,7 +1113,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ViewContent {
+        public static System.Drawing.Bitmap ViewContent {
             get {
                 object obj = ResourceManager.GetObject("ViewContent", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1123,7 +1123,7 @@ namespace PDFPatcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Zoom {
+        public static System.Drawing.Bitmap Zoom {
             get {
                 object obj = ResourceManager.GetObject("Zoom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

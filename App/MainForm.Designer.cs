@@ -151,9 +151,9 @@
             this.statusStrip1.SuspendLayout();
             this._GeneralToolbar.SuspendLayout();
             this.SuspendLayout();
-            //
+            // 
             // _Select
-            //
+            // 
             _Select.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             _Select.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _Copy,
@@ -166,84 +166,63 @@
             _SelectAll,
             _InvertSelect,
             _SelectNone});
-            _Select.Image = ((System.Drawing.Image)(resources.GetObject("_Select.Image")));
-            _Select.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(_Select, "_Select");
             _Select.Name = "_Select";
-            _Select.Size = new System.Drawing.Size(70, 24);
-            _Select.Text = "&Select";
             _Select.DropDownOpening += new System.EventHandler(this.MenuOpening);
             _Select.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuCommand);
-            //
+            // 
             // _Copy
-            //
-            _Copy.Image = ((System.Drawing.Image)(resources.GetObject("_Copy.Image")));
+            // 
+            resources.ApplyResources(_Copy, "_Copy");
             _Copy.Name = "_Copy";
-            _Copy.ShortcutKeyDisplayString = "Ctrl+C";
-            _Copy.Size = new System.Drawing.Size(216, 26);
-            _Copy.Text = "Copy Selected Item";
-            //
+            // 
             // _Delete
-            //
-            _Delete.Image = ((System.Drawing.Image)(resources.GetObject("_Delete.Image")));
-            _Delete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            // 
+            resources.ApplyResources(_Delete, "_Delete");
             _Delete.Name = "_Delete";
-            _Delete.ShortcutKeyDisplayString = "Delete";
-            _Delete.Size = new System.Drawing.Size(216, 26);
-            _Delete.Text = "Delete Selected Item";
-            //
+            // 
             // toolStripSeparator3
-            //
+            // 
             toolStripSeparator3.Name = "toolStripSeparator3";
-            toolStripSeparator3.Size = new System.Drawing.Size(213, 6);
-            //
+            resources.ApplyResources(toolStripSeparator3, "toolStripSeparator3");
+            // 
             // _SelectAllPdfFiles
-            //
-            _SelectAllPdfFiles.Image = ((System.Drawing.Image)(resources.GetObject("_SelectAllPdfFiles.Image")));
+            // 
+            resources.ApplyResources(_SelectAllPdfFiles, "_SelectAllPdfFiles");
             _SelectAllPdfFiles.Name = "_SelectAllPdfFiles";
-            _SelectAllPdfFiles.Size = new System.Drawing.Size(216, 26);
-            _SelectAllPdfFiles.Text = "Check all PDF files";
-            //
+            // 
             // _SelectAllImages
-            //
-            _SelectAllImages.Image = ((System.Drawing.Image)(resources.GetObject("_SelectAllImages.Image")));
+            // 
+            resources.ApplyResources(_SelectAllImages, "_SelectAllImages");
             _SelectAllImages.Name = "_SelectAllImages";
-            _SelectAllImages.Size = new System.Drawing.Size(216, 26);
-            _SelectAllImages.Text = "Select All Images";
-            //
+            // 
             // _SelectAllFolders
-            //
-            _SelectAllFolders.Image = ((System.Drawing.Image)(resources.GetObject("_SelectAllFolders.Image")));
+            // 
+            resources.ApplyResources(_SelectAllFolders, "_SelectAllFolders");
             _SelectAllFolders.Name = "_SelectAllFolders";
-            _SelectAllFolders.Size = new System.Drawing.Size(216, 26);
-            _SelectAllFolders.Text = "Select All Folders";
-            //
+            // 
             // _ItemTypeSeparator
-            //
+            // 
             _ItemTypeSeparator.Name = "_ItemTypeSeparator";
-            _ItemTypeSeparator.Size = new System.Drawing.Size(213, 6);
-            //
+            resources.ApplyResources(_ItemTypeSeparator, "_ItemTypeSeparator");
+            // 
             // _SelectAll
-            //
-            _SelectAll.Image = ((System.Drawing.Image)(resources.GetObject("_SelectAll.Image")));
+            // 
+            resources.ApplyResources(_SelectAll, "_SelectAll");
             _SelectAll.Name = "_SelectAll";
-            _SelectAll.ShortcutKeyDisplayString = "Ctrl+A";
-            _SelectAll.Size = new System.Drawing.Size(216, 26);
-            _SelectAll.Text = "Select All";
-            //
+            // 
             // _InvertSelect
-            //
+            // 
             _InvertSelect.Name = "_InvertSelect";
-            _InvertSelect.Size = new System.Drawing.Size(216, 26);
-            _InvertSelect.Text = "Invert Selection";
-            //
+            resources.ApplyResources(_InvertSelect, "_InvertSelect");
+            // 
             // _SelectNone
-            //
+            // 
             _SelectNone.Name = "_SelectNone";
-            _SelectNone.Size = new System.Drawing.Size(216, 26);
-            _SelectNone.Text = "Cancel Selection";
-            //
+            resources.ApplyResources(_SelectNone, "_SelectNone");
+            // 
             // _ToolBox
-            //
+            // 
             _ToolBox.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             _ToolBox.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             toolStripMenuItem23,
@@ -254,16 +233,13 @@
             _ShowGeneralToolbar,
             _CustomizeToolbarCommand,
             _LogWindow});
-            _ToolBox.Image = ((System.Drawing.Image)(resources.GetObject("_ToolBox.Image")));
-            _ToolBox.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(_ToolBox, "_ToolBox");
             _ToolBox.Name = "_ToolBox";
-            _ToolBox.Size = new System.Drawing.Size(87, 24);
-            _ToolBox.Text = "&Tools";
             _ToolBox.DropDownOpening += new System.EventHandler(this.MenuOpening);
             _ToolBox.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuCommand);
-            //
+            // 
             // toolStripMenuItem23
-            //
+            // 
             toolStripMenuItem23.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _Patcher,
             _Merger,
@@ -272,139 +248,110 @@
             _GenerateBookmark,
             _InfoExchanger});
             toolStripMenuItem23.Name = "toolStripMenuItem23";
-            toolStripMenuItem23.Size = new System.Drawing.Size(237, 26);
-            toolStripMenuItem23.Text = "&Process PDF Files";
+            resources.ApplyResources(toolStripMenuItem23, "toolStripMenuItem23");
             toolStripMenuItem23.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuCommand);
-            //
+            // 
             // _Patcher
-            //
-            _Patcher.Image = ((System.Drawing.Image)(resources.GetObject("_Patcher.Image")));
+            // 
+            resources.ApplyResources(_Patcher, "_Patcher");
             _Patcher.Name = "_Patcher";
-            _Patcher.Size = new System.Drawing.Size(281, 26);
             _Patcher.Tag = "Patcher";
-            _Patcher.Text = "Modify PDF Files in Batch...";
-            //
+            // 
             // _Merger
-            //
-            _Merger.Image = ((System.Drawing.Image)(resources.GetObject("_Merger.Image")));
+            // 
+            resources.ApplyResources(_Merger, "_Merger");
             _Merger.Name = "_Merger";
-            _Merger.Size = new System.Drawing.Size(281, 26);
             _Merger.Tag = "Merger";
-            _Merger.Text = "Merge P&DF and Image Files...";
-            //
+            // 
             // _Rename
-            //
-            _Rename.Image = ((System.Drawing.Image)(resources.GetObject("_Rename.Image")));
+            // 
+            resources.ApplyResources(_Rename, "_Rename");
             _Rename.Name = "_Rename";
-            _Rename.Size = new System.Drawing.Size(281, 26);
             _Rename.Tag = "Rename";
-            _Rename.Text = "&Rename PDF Files in Batch...";
-            _Rename.ToolTipText = "Rename the PDF file according to the properties of the PDF document";
-            //
+            // 
             // _OcrImages
-            //
-            _OcrImages.Image = ((System.Drawing.Image)(resources.GetObject("_OcrImages.Image")));
+            // 
+            resources.ApplyResources(_OcrImages, "_OcrImages");
             _OcrImages.Name = "_OcrImages";
-            _OcrImages.Size = new System.Drawing.Size(281, 26);
             _OcrImages.Tag = "Ocr";
-            _OcrImages.Text = "&Identify Image Text...";
-            //
+            // 
             // _GenerateBookmark
-            //
+            // 
             _GenerateBookmark.Image = global::PDFPatcher.Properties.Resources.AutoBookmark;
             _GenerateBookmark.Name = "_GenerateBookmark";
-            _GenerateBookmark.Size = new System.Drawing.Size(281, 26);
+            resources.ApplyResources(_GenerateBookmark, "_GenerateBookmark");
             _GenerateBookmark.Tag = "BookmarkGenerator";
-            _GenerateBookmark.Text = "&Automatically Generate Bookmarks...";
-            //
+            // 
             // _InfoExchanger
-            //
-            _InfoExchanger.Image = ((System.Drawing.Image)(resources.GetObject("_InfoExchanger.Image")));
+            // 
+            resources.ApplyResources(_InfoExchanger, "_InfoExchanger");
             _InfoExchanger.Name = "_InfoExchanger";
-            _InfoExchanger.Size = new System.Drawing.Size(281, 26);
             _InfoExchanger.Tag = "InfoExchanger";
-            _InfoExchanger.Text = "Batch export or import information file (&X)...";
-            _InfoExchanger.Visible = false;
-            //
+            // 
             // _Imaging
-            //
+            // 
             _Imaging.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _Extract,
             _ExtractImages,
             _RenderPages});
             _Imaging.Name = "_Imaging";
-            _Imaging.Size = new System.Drawing.Size(237, 26);
-            _Imaging.Text = "&Extract Document";
+            resources.ApplyResources(_Imaging, "_Imaging");
             _Imaging.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuCommand);
-            //
+            // 
             // _Extract
-            //
-            _Extract.Image = ((System.Drawing.Image)(resources.GetObject("_Extract.Image")));
+            // 
+            resources.ApplyResources(_Extract, "_Extract");
             _Extract.Name = "_Extract";
-            _Extract.Size = new System.Drawing.Size(250, 26);
             _Extract.Tag = "ExtractPages";
-            _Extract.Text = "Extract &Page or Split Document...";
-            //
+            // 
             // _ExtractImages
-            //
-            _ExtractImages.Image = ((System.Drawing.Image)(resources.GetObject("_ExtractImages.Image")));
+            // 
+            resources.ApplyResources(_ExtractImages, "_ExtractImages");
             _ExtractImages.Name = "_ExtractImages";
-            _ExtractImages.Size = new System.Drawing.Size(250, 26);
             _ExtractImages.Tag = "ExtractImages";
-            _ExtractImages.Text = "Extract &Images...";
-            //
+            // 
             // _RenderPages
-            //
+            // 
             _RenderPages.Image = global::PDFPatcher.Properties.Resources.RenderDocument;
             _RenderPages.Name = "_RenderPages";
-            _RenderPages.Size = new System.Drawing.Size(250, 26);
+            resources.ApplyResources(_RenderPages, "_RenderPages");
             _RenderPages.Tag = "RenderPages";
-            _RenderPages.Text = "&Convert Page to Image...";
-            //
+            // 
             // _Explorer
-            //
-            _Explorer.Image = ((System.Drawing.Image)(resources.GetObject("_Explorer.Image")));
+            // 
+            resources.ApplyResources(_Explorer, "_Explorer");
             _Explorer.Name = "_Explorer";
-            _Explorer.Size = new System.Drawing.Size(237, 26);
             _Explorer.Tag = "Inspector";
-            _Explorer.Text = "Document &Structure Profiler...";
-            //
+            // 
             // _ExportInfoFile
-            //
-            _ExportInfoFile.Image = ((System.Drawing.Image)(resources.GetObject("_ExportInfoFile.Image")));
+            // 
+            resources.ApplyResources(_ExportInfoFile, "_ExportInfoFile");
             _ExportInfoFile.Name = "_ExportInfoFile";
-            _ExportInfoFile.Size = new System.Drawing.Size(237, 26);
             _ExportInfoFile.Tag = "InfoExchanger";
-            _ExportInfoFile.Text = "Export/Import &Info File...";
-            //
+            // 
             // toolStripSeparator5
-            //
+            // 
             toolStripSeparator5.Name = "toolStripSeparator5";
-            toolStripSeparator5.Size = new System.Drawing.Size(234, 6);
-            //
+            resources.ApplyResources(toolStripSeparator5, "toolStripSeparator5");
+            // 
             // _ShowGeneralToolbar
-            //
+            // 
             _ShowGeneralToolbar.Name = "_ShowGeneralToolbar";
-            _ShowGeneralToolbar.Size = new System.Drawing.Size(237, 26);
-            _ShowGeneralToolbar.Text = "&View Toolbar";
-            //
+            resources.ApplyResources(_ShowGeneralToolbar, "_ShowGeneralToolbar");
+            // 
             // _CustomizeToolbarCommand
-            //
-            _CustomizeToolbarCommand.Image = ((System.Drawing.Image)(resources.GetObject("_CustomizeToolbarCommand.Image")));
+            // 
+            resources.ApplyResources(_CustomizeToolbarCommand, "_CustomizeToolbarCommand");
             _CustomizeToolbarCommand.Name = "_CustomizeToolbarCommand";
-            _CustomizeToolbarCommand.Size = new System.Drawing.Size(237, 26);
-            _CustomizeToolbarCommand.Text = "&Customize Toolbar...";
-            //
+            // 
             // _LogWindow
-            //
-            _LogWindow.Image = ((System.Drawing.Image)(resources.GetObject("_LogWindow.Image")));
+            // 
+            resources.ApplyResources(_LogWindow, "_LogWindow");
             _LogWindow.Name = "_LogWindow";
-            _LogWindow.Size = new System.Drawing.Size(237, 26);
             _LogWindow.Tag = "";
-            _LogWindow.Text = "Program &Output Info...";
-            //
+            // 
             // _Help
-            //
+            // 
             _Help.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _CreateShortcut,
             this.toolStripSeparator14,
@@ -412,205 +359,160 @@
             _VisitHomePage,
             _About});
             _Help.Name = "_Help";
-            _Help.Size = new System.Drawing.Size(70, 24);
-            _Help.Text = "&Help";
+            resources.ApplyResources(_Help, "_Help");
             _Help.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuCommand);
-            //
+            // 
             // _CreateShortcut
-            //
-            _CreateShortcut.Image = ((System.Drawing.Image)(resources.GetObject("_CreateShortcut.Image")));
+            // 
+            resources.ApplyResources(_CreateShortcut, "_CreateShortcut");
             _CreateShortcut.Name = "_CreateShortcut";
-            _CreateShortcut.Size = new System.Drawing.Size(237, 26);
-            _CreateShortcut.Text = "Create Desktop &Shortcut";
-            //
+            // 
             // toolStripSeparator14
-            //
+            // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(234, 6);
-            //
+            resources.ApplyResources(this.toolStripSeparator14, "toolStripSeparator14");
+            // 
             // _CheckUpdate
-            //
-            _CheckUpdate.Image = ((System.Drawing.Image)(resources.GetObject("_CheckUpdate.Image")));
+            // 
+            resources.ApplyResources(_CheckUpdate, "_CheckUpdate");
             _CheckUpdate.Name = "_CheckUpdate";
-            _CheckUpdate.Size = new System.Drawing.Size(237, 26);
-            _CheckUpdate.Text = "Check for &Updates...";
-            //
+            // 
             // _VisitHomePage
-            //
-            _VisitHomePage.Image = ((System.Drawing.Image)(resources.GetObject("_VisitHomePage.Image")));
+            // 
+            resources.ApplyResources(_VisitHomePage, "_VisitHomePage");
             _VisitHomePage.Name = "_VisitHomePage";
-            _VisitHomePage.Size = new System.Drawing.Size(237, 26);
-            _VisitHomePage.Text = "Visit &Homepage...";
-            //
+            // 
             // _About
-            //
-            _About.Image = ((System.Drawing.Image)(resources.GetObject("_About.Image")));
+            // 
+            resources.ApplyResources(_About, "_About");
             _About.Name = "_About";
-            _About.Size = new System.Drawing.Size(237, 26);
             _About.Tag = "About";
-            _About.Text = "About...";
-            //
+            // 
             // _Open
-            //
-            _Open.Image = ((System.Drawing.Image)(resources.GetObject("_Open.Image")));
+            // 
+            resources.ApplyResources(_Open, "_Open");
             _Open.Name = "_Open";
-            _Open.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-            _Open.Size = new System.Drawing.Size(267, 26);
-            _Open.Text = "Open";
-            //
+            // 
             // dummyToolStripMenuItem
-            //
-            dummyToolStripMenuItem.Enabled = false;
+            // 
+            resources.ApplyResources(dummyToolStripMenuItem, "dummyToolStripMenuItem");
             dummyToolStripMenuItem.Name = "dummyToolStripMenuItem";
-            dummyToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
-            dummyToolStripMenuItem.Text = "Open &Recent File";
-            //
+            // 
             // _ImportBookmark
-            //
-            _ImportBookmark.Image = ((System.Drawing.Image)(resources.GetObject("_ImportBookmark.Image")));
+            // 
+            resources.ApplyResources(_ImportBookmark, "_ImportBookmark");
             _ImportBookmark.Name = "_ImportBookmark";
-            _ImportBookmark.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            _ImportBookmark.Size = new System.Drawing.Size(267, 26);
-            _ImportBookmark.Text = "&Import Bookmark...";
-            _ImportBookmark.ToolTipText = "Import bookmarks from other files to the current document";
-            //
+            // 
             // toolStripSeparator2
-            //
+            // 
             toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new System.Drawing.Size(264, 6);
-            //
+            resources.ApplyResources(toolStripSeparator2, "toolStripSeparator2");
+            // 
             // _Action
-            //
+            // 
             _Action.Image = global::PDFPatcher.Properties.Resources.Save;
             _Action.Name = "_Action";
-            _Action.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            _Action.Size = new System.Drawing.Size(267, 26);
-            _Action.Text = "Save &PDF File...";
-            //
+            resources.ApplyResources(_Action, "_Action");
+            // 
             // _SaveBookmark
-            //
+            // 
             _SaveBookmark.Image = global::PDFPatcher.Properties.Resources.ExportInfoFile;
             _SaveBookmark.Name = "_SaveBookmark";
-            _SaveBookmark.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            _SaveBookmark.Size = new System.Drawing.Size(267, 26);
-            _SaveBookmark.Text = "Save &Bookmark File";
-            _SaveBookmark.ToolTipText = "Save the bookmark as an information file in XML format, available for migration bookmarks";
-            //
+            resources.ApplyResources(_SaveBookmark, "_SaveBookmark");
+            // 
             // _SaveAsInfoFile
-            //
-            _SaveAsInfoFile.Image = ((System.Drawing.Image)(resources.GetObject("_SaveAsInfoFile.Image")));
+            // 
+            resources.ApplyResources(_SaveAsInfoFile, "_SaveAsInfoFile");
             _SaveAsInfoFile.Name = "_SaveAsInfoFile";
-            _SaveAsInfoFile.Size = new System.Drawing.Size(267, 26);
-            _SaveAsInfoFile.Text = "Save Bookmark File &As...";
-            //
+            // 
             // _configSeparator
-            //
+            // 
             _configSeparator.Name = "_configSeparator";
-            _configSeparator.Size = new System.Drawing.Size(264, 6);
-            //
+            resources.ApplyResources(_configSeparator, "_configSeparator");
+            // 
             // _AppOptions
-            //
-            _AppOptions.Image = ((System.Drawing.Image)(resources.GetObject("_AppOptions.Image")));
+            // 
+            resources.ApplyResources(_AppOptions, "_AppOptions");
             _AppOptions.Name = "_AppOptions";
-            _AppOptions.Size = new System.Drawing.Size(267, 26);
             _AppOptions.Tag = "Options";
-            _AppOptions.Text = "&Configuration...";
-            //
+            // 
             // _RestoreOptions
-            //
+            // 
             _RestoreOptions.Name = "_RestoreOptions";
-            _RestoreOptions.Size = new System.Drawing.Size(267, 26);
-            _RestoreOptions.Text = "&Load Configuration...";
-            //
+            resources.ApplyResources(_RestoreOptions, "_RestoreOptions");
+            // 
             // _SaveOptions
-            //
+            // 
             _SaveOptions.Name = "_SaveOptions";
-            _SaveOptions.Size = new System.Drawing.Size(267, 26);
-            _SaveOptions.Text = "&Save Configuration...";
-            //
+            resources.ApplyResources(_SaveOptions, "_SaveOptions");
+            // 
             // toolStripSeparator11
-            //
+            // 
             toolStripSeparator11.Name = "toolStripSeparator11";
-            toolStripSeparator11.Size = new System.Drawing.Size(264, 6);
-            //
+            resources.ApplyResources(toolStripSeparator11, "toolStripSeparator11");
+            // 
             // _Exit
-            //
+            // 
             _Exit.Name = "_Exit";
-            _Exit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            _Exit.Size = new System.Drawing.Size(267, 26);
-            _Exit.Text = "&Exit";
-            //
+            resources.ApplyResources(_Exit, "_Exit");
+            // 
             // _Close
-            //
+            // 
             _Close.Image = global::PDFPatcher.Properties.Resources.Close;
             _Close.Name = "_Close";
-            _Close.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F4)));
-            _Close.Size = new System.Drawing.Size(267, 26);
-            _Close.Text = "&Close Current Function";
-            //
+            resources.ApplyResources(_Close, "_Close");
+            // 
             // toolStripSeparator1
-            //
+            // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new System.Drawing.Size(264, 6);
-            //
+            resources.ApplyResources(toolStripSeparator1, "toolStripSeparator1");
+            // 
             // _Options
-            //
-            _Options.Image = ((System.Drawing.Image)(resources.GetObject("_Options.Image")));
+            // 
+            resources.ApplyResources(_Options, "_Options");
             _Options.Name = "_Options";
-            _Options.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
-            _Options.Size = new System.Drawing.Size(267, 26);
             _Options.Tag = "PatcherOptions";
-            _Options.Text = "Function &Setting...";
-            //
+            // 
             // _CustomizeToolbar
-            //
+            // 
             _CustomizeToolbar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            _CustomizeToolbar.Image = ((System.Drawing.Image)(resources.GetObject("_CustomizeToolbar.Image")));
-            _CustomizeToolbar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(_CustomizeToolbar, "_CustomizeToolbar");
             _CustomizeToolbar.Name = "_CustomizeToolbar";
-            _CustomizeToolbar.Size = new System.Drawing.Size(24, 24);
-            _CustomizeToolbar.Text = "Modify the common toolbar button";
-            //
+            // 
             // _Properties
-            //
+            // 
             _Properties.Image = global::PDFPatcher.Properties.Resources.Property;
             _Properties.Name = "_Properties";
-            _Properties.Size = new System.Drawing.Size(267, 26);
-            _Properties.Text = "Document property (&X)...";
-            _Properties.ToolTipText = "View and edit the metadata properties of the current document";
-            //
+            resources.ApplyResources(_Properties, "_Properties");
+            // 
             // _ToolTip
-            //
+            // 
             this._ToolTip.IsBalloon = true;
             this._ToolTip.ShowAlways = true;
-            //
+            // 
             // _SaveConfigDialog
-            //
+            // 
             this._SaveConfigDialog.DefaultExt = "json";
-            this._SaveConfigDialog.Title = "Save application configuration information";
-            //
+            resources.ApplyResources(this._SaveConfigDialog, "_SaveConfigDialog");
+            // 
             // _OpenConfigDialog
-            //
+            // 
             this._OpenConfigDialog.DefaultExt = "json";
-            this._OpenConfigDialog.Title = "Open the application configuration file";
-            //
+            resources.ApplyResources(this._OpenConfigDialog, "_OpenConfigDialog");
+            // 
             // _MainMenu
-            //
-            this._MainMenu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            // 
             this._MainMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._MainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._File,
             _ToolBox,
             _Select,
             _Help});
-            this._MainMenu.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this._MainMenu, "_MainMenu");
             this._MainMenu.Name = "_MainMenu";
-            this._MainMenu.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
-            this._MainMenu.Size = new System.Drawing.Size(805, 24);
-            this._MainMenu.TabIndex = 4;
-            //
+            // 
             // _File
-            //
+            // 
             this._File.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this._File.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _Open,
@@ -631,69 +533,57 @@
             _SaveOptions,
             toolStripSeparator11,
             _Exit});
-            this._File.Image = ((System.Drawing.Image)(resources.GetObject("_File.Image")));
-            this._File.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(this._File, "_File");
             this._File.Name = "_File";
-            this._File.Size = new System.Drawing.Size(76, 24);
-            this._File.Text = "&File";
             this._File.DropDownOpening += new System.EventHandler(this.MenuOpening);
             this._File.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuCommand);
-            //
+            // 
             // _RecentFiles
-            //
+            // 
             this._RecentFiles.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             dummyToolStripMenuItem});
             this._RecentFiles.Name = "_RecentFiles";
-            this._RecentFiles.Size = new System.Drawing.Size(267, 26);
-            this._RecentFiles.Text = "Open &Recent File";
+            resources.ApplyResources(this._RecentFiles, "_RecentFiles");
             this._RecentFiles.DropDownOpening += new System.EventHandler(this.RecentFileMenuOpening);
             this._RecentFiles.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuCommand);
-            //
+            // 
             // _ResetOptions
-            //
-            this._ResetOptions.Image = ((System.Drawing.Image)(resources.GetObject("_ResetOptions.Image")));
+            // 
+            resources.ApplyResources(this._ResetOptions, "_ResetOptions");
             this._ResetOptions.Name = "_ResetOptions";
-            this._ResetOptions.Size = new System.Drawing.Size(267, 26);
-            this._ResetOptions.Text = "Reset Current Function (&Z)...";
-            //
+            // 
             // _OpenPdfDialog
-            //
-            this._OpenPdfDialog.Title = "Please select the PDF document you want to open.";
-            //
+            // 
+            resources.ApplyResources(this._OpenPdfDialog, "_OpenPdfDialog");
+            // 
             // statusStrip1
-            //
+            // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._MainStatusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 572);
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(805, 22);
-            this.statusStrip1.TabIndex = 4;
-            //
+            // 
             // _MainStatusLabel
-            //
+            // 
             this._MainStatusLabel.Name = "_MainStatusLabel";
-            this._MainStatusLabel.Size = new System.Drawing.Size(0, 0);
-            //
+            resources.ApplyResources(this._MainStatusLabel, "_MainStatusLabel");
+            // 
             // _GeneralToolbar
-            //
+            // 
             this._GeneralToolbar.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._GeneralToolbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _CustomizeToolbar});
-            this._GeneralToolbar.Location = new System.Drawing.Point(0, 24);
+            resources.ApplyResources(this._GeneralToolbar, "_GeneralToolbar");
             this._GeneralToolbar.Name = "_GeneralToolbar";
-            this._GeneralToolbar.Padding = new System.Windows.Forms.Padding(0);
             this._GeneralToolbar.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this._GeneralToolbar.Size = new System.Drawing.Size(805, 27);
-            this._GeneralToolbar.TabIndex = 5;
-            //
+            // 
             // _FunctionContainer
-            //
+            // 
             this._FunctionContainer.DisplayStyle = TradeWright.UI.Forms.TabStyle.IE8;
-            //
-            //
-            //
+            // 
+            // 
+            // 
             this._FunctionContainer.DisplayStyleProvider.BlendStyle = TradeWright.UI.Forms.BlendStyle.Normal;
             this._FunctionContainer.DisplayStyleProvider.BorderColorDisabled = System.Drawing.SystemColors.ControlLight;
             this._FunctionContainer.DisplayStyleProvider.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(185)))));
@@ -751,31 +641,23 @@
             this._FunctionContainer.DisplayStyleProvider.TextColorHighlighted = System.Drawing.SystemColors.ControlText;
             this._FunctionContainer.DisplayStyleProvider.TextColorSelected = System.Drawing.SystemColors.ControlText;
             this._FunctionContainer.DisplayStyleProvider.TextColorUnselected = System.Drawing.SystemColors.ControlText;
-            this._FunctionContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this._FunctionContainer, "_FunctionContainer");
             this._FunctionContainer.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this._FunctionContainer.HotTrack = true;
-            this._FunctionContainer.Location = new System.Drawing.Point(0, 51);
-            this._FunctionContainer.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this._FunctionContainer.Name = "_FunctionContainer";
             this._FunctionContainer.SelectedIndex = 0;
-            this._FunctionContainer.Size = new System.Drawing.Size(805, 521);
             this._FunctionContainer.TabCloserButtonSize = 18;
-            this._FunctionContainer.TabIndex = 6;
-            //
+            // 
             // MainForm
-            //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            // 
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 594);
             this.Controls.Add(this._FunctionContainer);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this._GeneralToolbar);
             this.Controls.Add(this._MainMenu);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this._MainMenu;
-            this.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.Name = "MainForm";
-            this.Text = "PDFPatcher";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this._MainMenu.ResumeLayout(false);
             this._MainMenu.PerformLayout();

@@ -27,6 +27,7 @@
 		private void InitializeComponent () {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageSettingsEditor));
             System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
             this._RotateZeroMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this._PageSettingsBox = new BrightIdeasSoftware.ObjectListView();
@@ -59,18 +60,17 @@
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new System.Drawing.Size(161, 6);
+            resources.ApplyResources(toolStripSeparator1, "toolStripSeparator1");
             // 
             // toolStripSeparator2
             // 
             toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new System.Drawing.Size(161, 6);
+            resources.ApplyResources(toolStripSeparator2, "toolStripSeparator2");
             // 
             // _RotateZeroMenuItem
             // 
             this._RotateZeroMenuItem.Name = "_RotateZeroMenuItem";
-            this._RotateZeroMenuItem.Size = new System.Drawing.Size(195, 22);
-            this._RotateZeroMenuItem.Text = "constant(&B)";
+            resources.ApplyResources(this._RotateZeroMenuItem, "_RotateZeroMenuItem");
             // 
             // _PageSettingsBox
             // 
@@ -78,9 +78,7 @@
             this._PageSettingsBox.AllColumns.Add(this._PageRangeColumn);
             this._PageSettingsBox.AllColumns.Add(this._PageFilterColumn);
             this._PageSettingsBox.AllColumns.Add(this._SettingsColumn);
-            this._PageSettingsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._PageSettingsBox, "_PageSettingsBox");
             this._PageSettingsBox.CellEditActivation = BrightIdeasSoftware.ObjectListView.CellEditActivateMode.SingleClick;
             this._PageSettingsBox.CellEditUseWholeCell = false;
             this._PageSettingsBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -95,41 +93,35 @@
             this._PageSettingsBox.IsSimpleDragSource = true;
             this._PageSettingsBox.IsSimpleDropSink = true;
             this._PageSettingsBox.LabelEdit = true;
-            this._PageSettingsBox.Location = new System.Drawing.Point(3, 35);
             this._PageSettingsBox.Name = "_PageSettingsBox";
             this._PageSettingsBox.ShowGroups = false;
-            this._PageSettingsBox.Size = new System.Drawing.Size(432, 264);
-            this._PageSettingsBox.TabIndex = 3;
             this._PageSettingsBox.UseCompatibleStateImageBehavior = false;
             this._PageSettingsBox.View = System.Windows.Forms.View.Details;
             // 
             // _SequenceColumn
             // 
             this._SequenceColumn.IsEditable = false;
-            this._SequenceColumn.Text = "Sequence Number";
-            this._SequenceColumn.Width = 40;
+            resources.ApplyResources(this._SequenceColumn, "_SequenceColumn");
             // 
             // _PageRangeColumn
             // 
             this._PageRangeColumn.AspectName = "";
-            this._PageRangeColumn.Text = "Page Range";
-            this._PageRangeColumn.Width = 82;
+            resources.ApplyResources(this._PageRangeColumn, "_PageRangeColumn");
             // 
             // _PageFilterColumn
             // 
             this._PageFilterColumn.AspectName = "";
             this._PageFilterColumn.IsEditable = false;
-            this._PageFilterColumn.Text = "Filter page";
-            this._PageFilterColumn.Width = 61;
+            resources.ApplyResources(this._PageFilterColumn, "_PageFilterColumn");
             // 
             // _SettingsColumn
             // 
             this._SettingsColumn.IsEditable = false;
-            this._SettingsColumn.Text = "Processing";
-            this._SettingsColumn.Width = 214;
+            resources.ApplyResources(this._SettingsColumn, "_SettingsColumn");
             // 
             // _PageRangeFilterTypeMenu
             // 
+            this._PageRangeFilterTypeMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._PageRangeFilterTypeMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._AllPagesMenu,
             toolStripSeparator1,
@@ -139,49 +131,45 @@
             this._PortraitPagesMenu,
             this._LandscapePagesMenu});
             this._PageRangeFilterTypeMenu.Name = "_PageRangeFilterTypeMenu";
-            this._PageRangeFilterTypeMenu.Size = new System.Drawing.Size(165, 126);
+            resources.ApplyResources(this._PageRangeFilterTypeMenu, "_PageRangeFilterTypeMenu");
             // 
             // _AllPagesMenu
             // 
             this._AllPagesMenu.Image = global::PDFPatcher.Properties.Resources.Copy;
             this._AllPagesMenu.Name = "_AllPagesMenu";
-            this._AllPagesMenu.Size = new System.Drawing.Size(164, 22);
-            this._AllPagesMenu.Text = "&All Pages";
+            resources.ApplyResources(this._AllPagesMenu, "_AllPagesMenu");
             // 
             // _OddPagesMenu
             // 
             this._OddPagesMenu.Image = global::PDFPatcher.Properties.Resources.OddPage;
             this._OddPagesMenu.Name = "_OddPagesMenu";
-            this._OddPagesMenu.Size = new System.Drawing.Size(164, 22);
-            this._OddPagesMenu.Text = "&Oddpages";
+            resources.ApplyResources(this._OddPagesMenu, "_OddPagesMenu");
             // 
             // _EvenPagesMenu
             // 
             this._EvenPagesMenu.Image = global::PDFPatcher.Properties.Resources.EvenPage;
             this._EvenPagesMenu.Name = "_EvenPagesMenu";
-            this._EvenPagesMenu.Size = new System.Drawing.Size(164, 22);
-            this._EvenPagesMenu.Text = "&EvenPages";
+            resources.ApplyResources(this._EvenPagesMenu, "_EvenPagesMenu");
             // 
             // _PortraitPagesMenu
             // 
             this._PortraitPagesMenu.Image = global::PDFPatcher.Properties.Resources.Portrait;
             this._PortraitPagesMenu.Name = "_PortraitPagesMenu";
-            this._PortraitPagesMenu.Size = new System.Drawing.Size(164, 22);
-            this._PortraitPagesMenu.Text = "&Portrait page";
+            resources.ApplyResources(this._PortraitPagesMenu, "_PortraitPagesMenu");
             // 
             // _LandscapePagesMenu
             // 
             this._LandscapePagesMenu.Image = global::PDFPatcher.Properties.Resources.Lanscape;
             this._LandscapePagesMenu.Name = "_LandscapePagesMenu";
-            this._LandscapePagesMenu.Size = new System.Drawing.Size(164, 22);
-            this._LandscapePagesMenu.Text = "&Landscape Pages";
+            resources.ApplyResources(this._LandscapePagesMenu, "_LandscapePagesMenu");
             // 
             // _PageSettingsMenu
             // 
+            this._PageSettingsMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._PageSettingsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._RotateMenu});
             this._PageSettingsMenu.Name = "_PageSettingsMenu";
-            this._PageSettingsMenu.Size = new System.Drawing.Size(158, 26);
+            resources.ApplyResources(this._PageSettingsMenu, "_PageSettingsMenu");
             // 
             // _RotateMenu
             // 
@@ -191,53 +179,39 @@
             this._RotateRightMenuItem,
             this._Rotate180MenuItem});
             this._RotateMenu.Name = "_RotateMenu";
-            this._RotateMenu.Size = new System.Drawing.Size(157, 22);
-            this._RotateMenu.Text = "&Rotate the page";
+            resources.ApplyResources(this._RotateMenu, "_RotateMenu");
             // 
             // _RotateLeftMenuItem
             // 
             this._RotateLeftMenuItem.Image = global::PDFPatcher.Properties.Resources.RotateLeft;
             this._RotateLeftMenuItem.Name = "_RotateLeftMenuItem";
-            this._RotateLeftMenuItem.Size = new System.Drawing.Size(195, 22);
-            this._RotateLeftMenuItem.Text = "Rotate &left 90 degrees";
+            resources.ApplyResources(this._RotateLeftMenuItem, "_RotateLeftMenuItem");
             // 
             // _RotateRightMenuItem
             // 
             this._RotateRightMenuItem.Image = global::PDFPatcher.Properties.Resources.RotateRight;
             this._RotateRightMenuItem.Name = "_RotateRightMenuItem";
-            this._RotateRightMenuItem.Size = new System.Drawing.Size(195, 22);
-            this._RotateRightMenuItem.Text = "Rotate &right 90 degrees";
+            resources.ApplyResources(this._RotateRightMenuItem, "_RotateRightMenuItem");
             // 
             // _Rotate180MenuItem
             // 
             this._Rotate180MenuItem.Image = global::PDFPatcher.Properties.Resources.Refresh;
             this._Rotate180MenuItem.Name = "_Rotate180MenuItem";
-            this._Rotate180MenuItem.Size = new System.Drawing.Size(195, 22);
-            this._Rotate180MenuItem.Text = "Rotate 180 degrees";
+            resources.ApplyResources(this._Rotate180MenuItem, "_Rotate180MenuItem");
             // 
             // _RemoveButton
             // 
-            this._RemoveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._RemoveButton, "_RemoveButton");
             this._RemoveButton.Image = global::PDFPatcher.Properties.Resources.Delete;
-            this._RemoveButton.Location = new System.Drawing.Point(364, 3);
             this._RemoveButton.Name = "_RemoveButton";
-            this._RemoveButton.Size = new System.Drawing.Size(71, 25);
-            this._RemoveButton.TabIndex = 5;
-            this._RemoveButton.Text = "Remove";
-            this._RemoveButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this._RemoveButton.UseVisualStyleBackColor = true;
             this._RemoveButton.Click += new System.EventHandler(this._RemovePageSettingsButton_Click);
             // 
             // _AddButton
             // 
-            this._AddButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._AddButton, "_AddButton");
             this._AddButton.Image = global::PDFPatcher.Properties.Resources.Add;
-            this._AddButton.Location = new System.Drawing.Point(305, 3);
             this._AddButton.Name = "_AddButton";
-            this._AddButton.Size = new System.Drawing.Size(53, 25);
-            this._AddButton.TabIndex = 4;
-            this._AddButton.Text = "Add";
-            this._AddButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this._AddButton.UseVisualStyleBackColor = true;
             this._AddButton.Click += new System.EventHandler(this._AddPageSettingsButton_Click);
             // 
@@ -246,19 +220,15 @@
             this.panel1.Controls.Add(this._PageSettingsBox);
             this.panel1.Controls.Add(this._AddButton);
             this.panel1.Controls.Add(this._RemoveButton);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(438, 302);
-            this.panel1.TabIndex = 6;
             // 
             // PageSettingsEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Name = "PageSettingsEditor";
-            this.Size = new System.Drawing.Size(438, 302);
             ((System.ComponentModel.ISupportInitialize)(this._PageSettingsBox)).EndInit();
             this._PageRangeFilterTypeMenu.ResumeLayout(false);
             this._PageSettingsMenu.ResumeLayout(false);

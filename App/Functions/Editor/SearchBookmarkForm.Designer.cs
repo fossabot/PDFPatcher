@@ -25,6 +25,7 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchBookmarkForm));
             this._SearchButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this._MatchCaseBox = new System.Windows.Forms.CheckBox();
@@ -51,149 +52,93 @@
             // 
             // _SearchButton
             // 
-            this._SearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._SearchButton.Location = new System.Drawing.Point(444, 11);
+            resources.ApplyResources(this._SearchButton, "_SearchButton");
             this._SearchButton.Name = "_SearchButton";
-            this._SearchButton.Size = new System.Drawing.Size(99, 25);
-            this._SearchButton.TabIndex = 2;
-            this._SearchButton.Text = "&Find All";
             this._SearchButton.UseVisualStyleBackColor = true;
             this._SearchButton.Click += new System.EventHandler(this._SearchButton_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 16);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Find text:";
             // 
             // _MatchCaseBox
             // 
-            this._MatchCaseBox.AutoSize = true;
-            this._MatchCaseBox.Location = new System.Drawing.Point(83, 41);
+            resources.ApplyResources(this._MatchCaseBox, "_MatchCaseBox");
             this._MatchCaseBox.Name = "_MatchCaseBox";
-            this._MatchCaseBox.Size = new System.Drawing.Size(93, 17);
-            this._MatchCaseBox.TabIndex = 6;
-            this._MatchCaseBox.Text = "case sensitive";
             this._MatchCaseBox.UseVisualStyleBackColor = true;
             // 
             // _FullMatchBox
             // 
-            this._FullMatchBox.AutoSize = true;
-            this._FullMatchBox.Location = new System.Drawing.Point(183, 41);
+            resources.ApplyResources(this._FullMatchBox, "_FullMatchBox");
             this._FullMatchBox.Name = "_FullMatchBox";
-            this._FullMatchBox.Size = new System.Drawing.Size(203, 17);
-            this._FullMatchBox.TabIndex = 8;
-            this._FullMatchBox.Text = "Match the text of the entire bookmark";
             this._FullMatchBox.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 92);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Replace text:";
             // 
             // _ReplaceButton
             // 
-            this._ReplaceButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._ReplaceButton, "_ReplaceButton");
             this._ReplaceButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this._ReplaceButton.Location = new System.Drawing.Point(444, 87);
             this._ReplaceButton.Name = "_ReplaceButton";
-            this._ReplaceButton.Size = new System.Drawing.Size(99, 25);
-            this._ReplaceButton.TabIndex = 5;
-            this._ReplaceButton.Text = "&Replace";
             this._ReplaceButton.UseVisualStyleBackColor = true;
             this._ReplaceButton.Click += new System.EventHandler(this._ReplaceButton_Click);
             // 
             // _ResultLabel
             // 
-            this._ResultLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._ResultLabel.Location = new System.Drawing.Point(12, 137);
+            resources.ApplyResources(this._ResultLabel, "_ResultLabel");
             this._ResultLabel.Name = "_ResultLabel";
-            this._ResultLabel.Size = new System.Drawing.Size(530, 36);
-            this._ResultLabel.TabIndex = 10;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 66);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Find mode:";
             // 
             // _NormalSearchBox
             // 
-            this._NormalSearchBox.AutoSize = true;
-            this._NormalSearchBox.Location = new System.Drawing.Point(8, 0);
+            resources.ApplyResources(this._NormalSearchBox, "_NormalSearchBox");
             this._NormalSearchBox.Name = "_NormalSearchBox";
-            this._NormalSearchBox.Size = new System.Drawing.Size(58, 17);
-            this._NormalSearchBox.TabIndex = 14;
             this._NormalSearchBox.TabStop = true;
-            this._NormalSearchBox.Text = "Normal";
             this._NormalSearchBox.UseVisualStyleBackColor = true;
             this._NormalSearchBox.CheckedChanged += new System.EventHandler(this.MatchModeChanged);
             // 
             // _RegexSearchBox
             // 
-            this._RegexSearchBox.AutoSize = true;
-            this._RegexSearchBox.Location = new System.Drawing.Point(72, 0);
+            resources.ApplyResources(this._RegexSearchBox, "_RegexSearchBox");
             this._RegexSearchBox.Name = "_RegexSearchBox";
-            this._RegexSearchBox.Size = new System.Drawing.Size(115, 17);
-            this._RegexSearchBox.TabIndex = 15;
             this._RegexSearchBox.TabStop = true;
-            this._RegexSearchBox.Text = "Regular expression";
             this._RegexSearchBox.UseVisualStyleBackColor = true;
             this._RegexSearchBox.CheckedChanged += new System.EventHandler(this.MatchModeChanged);
             // 
             // _XPathSearchBox
             // 
-            this._XPathSearchBox.AutoSize = true;
-            this._XPathSearchBox.Location = new System.Drawing.Point(193, 1);
+            resources.ApplyResources(this._XPathSearchBox, "_XPathSearchBox");
             this._XPathSearchBox.Name = "_XPathSearchBox";
-            this._XPathSearchBox.Size = new System.Drawing.Size(54, 17);
-            this._XPathSearchBox.TabIndex = 16;
             this._XPathSearchBox.TabStop = true;
-            this._XPathSearchBox.Text = "XPath";
             this._XPathSearchBox.UseVisualStyleBackColor = true;
             this._XPathSearchBox.CheckedChanged += new System.EventHandler(this.MatchModeChanged);
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 119);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 13);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Replacement range:";
             // 
             // _ReplaceInSelectionBox
             // 
-            this._ReplaceInSelectionBox.AutoSize = true;
-            this._ReplaceInSelectionBox.Location = new System.Drawing.Point(38, -1);
+            resources.ApplyResources(this._ReplaceInSelectionBox, "_ReplaceInSelectionBox");
             this._ReplaceInSelectionBox.Name = "_ReplaceInSelectionBox";
-            this._ReplaceInSelectionBox.Size = new System.Drawing.Size(105, 17);
-            this._ReplaceInSelectionBox.TabIndex = 18;
             this._ReplaceInSelectionBox.TabStop = true;
-            this._ReplaceInSelectionBox.Text = "Select bookmark";
             this._ReplaceInSelectionBox.UseVisualStyleBackColor = true;
             this._ReplaceInSelectionBox.CheckedChanged += new System.EventHandler(this.ReplaceModeChanged);
             // 
             // _ReplaceInAllBox
             // 
-            this._ReplaceInAllBox.AutoSize = true;
-            this._ReplaceInAllBox.Location = new System.Drawing.Point(149, 1);
+            resources.ApplyResources(this._ReplaceInAllBox, "_ReplaceInAllBox");
             this._ReplaceInAllBox.Name = "_ReplaceInAllBox";
-            this._ReplaceInAllBox.Size = new System.Drawing.Size(91, 17);
-            this._ReplaceInAllBox.TabIndex = 19;
             this._ReplaceInAllBox.TabStop = true;
-            this._ReplaceInAllBox.Text = "All bookmarks";
             this._ReplaceInAllBox.UseVisualStyleBackColor = true;
             this._ReplaceInAllBox.CheckedChanged += new System.EventHandler(this.ReplaceModeChanged);
             // 
@@ -201,75 +146,54 @@
             // 
             this.panel1.Controls.Add(this._ReplaceInAllBox);
             this.panel1.Controls.Add(this._ReplaceInSelectionBox);
-            this.panel1.Location = new System.Drawing.Point(83, 117);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(268, 17);
-            this.panel1.TabIndex = 20;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this._NormalSearchBox);
             this.panel2.Controls.Add(this._XPathSearchBox);
             this.panel2.Controls.Add(this._RegexSearchBox);
-            this.panel2.Location = new System.Drawing.Point(83, 65);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(268, 17);
-            this.panel2.TabIndex = 21;
             // 
             // _SearchNextButton
             // 
-            this._SearchNextButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._SearchNextButton.Location = new System.Drawing.Point(444, 42);
+            resources.ApplyResources(this._SearchNextButton, "_SearchNextButton");
             this._SearchNextButton.Name = "_SearchNextButton";
-            this._SearchNextButton.Size = new System.Drawing.Size(99, 25);
-            this._SearchNextButton.TabIndex = 2;
-            this._SearchNextButton.Text = "Find &Next";
             this._SearchNextButton.UseVisualStyleBackColor = true;
             this._SearchNextButton.Click += new System.EventHandler(this._SearchButton_Click);
             // 
             // _ReplaceTextBox
             // 
-            this._ReplaceTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._ReplaceTextBox, "_ReplaceTextBox");
             this._ReplaceTextBox.Contents = null;
             this._ReplaceTextBox.FormattingEnabled = true;
-            this._ReplaceTextBox.Location = new System.Drawing.Point(83, 89);
             this._ReplaceTextBox.MaxItemCount = 16;
             this._ReplaceTextBox.Name = "_ReplaceTextBox";
-            this._ReplaceTextBox.Size = new System.Drawing.Size(355, 21);
-            this._ReplaceTextBox.TabIndex = 12;
             // 
             // _SearchTextBox
             // 
-            this._SearchTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._SearchTextBox, "_SearchTextBox");
             this._SearchTextBox.Contents = null;
             this._SearchTextBox.FormattingEnabled = true;
-            this._SearchTextBox.Location = new System.Drawing.Point(83, 13);
             this._SearchTextBox.MaxItemCount = 16;
             this._SearchTextBox.Name = "_SearchTextBox";
-            this._SearchTextBox.Size = new System.Drawing.Size(355, 21);
-            this._SearchTextBox.TabIndex = 11;
             // 
             // _CloseButton
             // 
-            this._CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._CloseButton, "_CloseButton");
             this._CloseButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this._CloseButton.Location = new System.Drawing.Point(444, 114);
             this._CloseButton.Name = "_CloseButton";
-            this._CloseButton.Size = new System.Drawing.Size(99, 25);
-            this._CloseButton.TabIndex = 5;
-            this._CloseButton.Text = "Cancel";
             this._CloseButton.UseVisualStyleBackColor = true;
             this._CloseButton.Click += new System.EventHandler(this._CloseButton_Click);
             // 
             // SearchBookmarkForm
             // 
             this.AcceptButton = this._SearchButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this._CloseButton;
-            this.ClientSize = new System.Drawing.Size(554, 166);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this._ReplaceTextBox);
@@ -286,13 +210,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(998, 211);
             this.MinimizeBox = false;
             this.Name = "SearchBookmarkForm";
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Find, replace bookmark item";
             this.Load += new System.EventHandler(this.SearchBookmarkForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

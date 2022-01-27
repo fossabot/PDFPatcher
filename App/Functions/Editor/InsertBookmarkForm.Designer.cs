@@ -25,6 +25,7 @@
 		/// use a code editor to modify the content of this method.
 		/// </summary>
 		private void InitializeComponent () {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InsertBookmarkForm));
             this.label1 = new System.Windows.Forms.Label();
             this._TitleBox = new System.Windows.Forms.TextBox();
             this._OkButton = new System.Windows.Forms.Button();
@@ -45,63 +46,42 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 16);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bookmark text:";
             // 
             // _TitleBox
             // 
-            this._TitleBox.Location = new System.Drawing.Point(96, 13);
+            resources.ApplyResources(this._TitleBox, "_TitleBox");
             this._TitleBox.Name = "_TitleBox";
-            this._TitleBox.Size = new System.Drawing.Size(308, 20);
-            this._TitleBox.TabIndex = 1;
             // 
             // _OkButton
             // 
             this._OkButton.Image = global::PDFPatcher.Properties.Resources.ImportInfoFile;
-            this._OkButton.Location = new System.Drawing.Point(329, 70);
+            resources.ApplyResources(this._OkButton, "_OkButton");
             this._OkButton.Name = "_OkButton";
-            this._OkButton.Size = new System.Drawing.Size(75, 25);
-            this._OkButton.TabIndex = 12;
-            this._OkButton.Text = "Insert (&C)";
-            this._OkButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this._OkButton.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 58);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Insert to the current bookmark:";
             // 
             // _CancelButton
             // 
             this._CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this._CancelButton.Location = new System.Drawing.Point(329, 101);
+            resources.ApplyResources(this._CancelButton, "_CancelButton");
             this._CancelButton.Name = "_CancelButton";
-            this._CancelButton.Size = new System.Drawing.Size(75, 25);
-            this._CancelButton.TabIndex = 13;
-            this._CancelButton.Text = "Cancel (&X)";
             this._CancelButton.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 153);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Target location:";
             // 
             // _PositionBox
             // 
             this._PositionBox.DecimalPlaces = 2;
-            this._PositionBox.Location = new System.Drawing.Point(212, 150);
+            resources.ApplyResources(this._PositionBox, "_PositionBox");
             this._PositionBox.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -113,95 +93,62 @@
             0,
             -2147483648});
             this._PositionBox.Name = "_PositionBox";
-            this._PositionBox.Size = new System.Drawing.Size(68, 20);
-            this._PositionBox.TabIndex = 11;
             // 
             // _PageLabel
             // 
-            this._PageLabel.AutoSize = true;
-            this._PageLabel.Location = new System.Drawing.Point(99, 153);
+            resources.ApplyResources(this._PageLabel, "_PageLabel");
             this._PageLabel.Name = "_PageLabel";
-            this._PageLabel.Size = new System.Drawing.Size(51, 13);
-            this._PageLabel.TabIndex = 9;
-            this._PageLabel.Text = "Nth page";
             // 
             // _DirectionBox
             // 
-            this._DirectionBox.AutoSize = true;
-            this._DirectionBox.Location = new System.Drawing.Point(165, 153);
+            resources.ApplyResources(this._DirectionBox, "_DirectionBox");
             this._DirectionBox.Name = "_DirectionBox";
-            this._DirectionBox.Size = new System.Drawing.Size(46, 13);
-            this._DirectionBox.TabIndex = 10;
-            this._DirectionBox.Text = "position:";
             // 
             // _CommentBox
             // 
             this._CommentBox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this._CommentBox.Location = new System.Drawing.Point(83, 39);
+            resources.ApplyResources(this._CommentBox, "_CommentBox");
             this._CommentBox.Name = "_CommentBox";
-            this._CommentBox.Size = new System.Drawing.Size(275, 13);
-            this._CommentBox.TabIndex = 14;
             // 
             // _AfterParentBox
             // 
-            this._AfterParentBox.AutoSize = true;
-            this._AfterParentBox.Location = new System.Drawing.Point(154, 98);
+            resources.ApplyResources(this._AfterParentBox, "_AfterParentBox");
             this._AfterParentBox.Name = "_AfterParentBox";
-            this._AfterParentBox.Size = new System.Drawing.Size(155, 17);
-            this._AfterParentBox.TabIndex = 6;
-            this._AfterParentBox.Text = "&After the superior bookmark";
             this._AfterParentBox.UseVisualStyleBackColor = true;
             // 
             // _BeforeCurrentBox
             // 
-            this._BeforeCurrentBox.AutoSize = true;
-            this._BeforeCurrentBox.Location = new System.Drawing.Point(34, 74);
+            resources.ApplyResources(this._BeforeCurrentBox, "_BeforeCurrentBox");
             this._BeforeCurrentBox.Name = "_BeforeCurrentBox";
-            this._BeforeCurrentBox.Size = new System.Drawing.Size(49, 17);
-            this._BeforeCurrentBox.TabIndex = 3;
-            this._BeforeCurrentBox.Text = "&Front";
             this._BeforeCurrentBox.UseVisualStyleBackColor = true;
             // 
             // _AsChildBox
             // 
-            this._AsChildBox.AutoSize = true;
-            this._AsChildBox.Location = new System.Drawing.Point(34, 98);
+            resources.ApplyResources(this._AsChildBox, "_AsChildBox");
             this._AsChildBox.Name = "_AsChildBox";
-            this._AsChildBox.Size = new System.Drawing.Size(98, 17);
-            this._AsChildBox.TabIndex = 5;
-            this._AsChildBox.Text = "&Child bookmark";
             this._AsChildBox.UseVisualStyleBackColor = true;
             // 
             // _AfterCurrentBox
             // 
-            this._AfterCurrentBox.AutoSize = true;
+            resources.ApplyResources(this._AfterCurrentBox, "_AfterCurrentBox");
             this._AfterCurrentBox.Checked = true;
-            this._AfterCurrentBox.Location = new System.Drawing.Point(119, 74);
             this._AfterCurrentBox.Name = "_AfterCurrentBox";
-            this._AfterCurrentBox.Size = new System.Drawing.Size(50, 17);
-            this._AfterCurrentBox.TabIndex = 4;
             this._AfterCurrentBox.TabStop = true;
-            this._AfterCurrentBox.Text = "&Back";
             this._AfterCurrentBox.UseVisualStyleBackColor = true;
             // 
             // _ReplaceBookmarkBox
             // 
-            this._ReplaceBookmarkBox.AutoSize = true;
-            this._ReplaceBookmarkBox.Location = new System.Drawing.Point(14, 121);
+            resources.ApplyResources(this._ReplaceBookmarkBox, "_ReplaceBookmarkBox");
             this._ReplaceBookmarkBox.Name = "_ReplaceBookmarkBox";
-            this._ReplaceBookmarkBox.Size = new System.Drawing.Size(169, 17);
-            this._ReplaceBookmarkBox.TabIndex = 7;
             this._ReplaceBookmarkBox.TabStop = true;
-            this._ReplaceBookmarkBox.Text = "&Replace the current bookmark";
             this._ReplaceBookmarkBox.UseVisualStyleBackColor = true;
             // 
             // InsertBookmarkForm
             // 
             this.AcceptButton = this._OkButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this._CancelButton;
-            this.ClientSize = new System.Drawing.Size(421, 185);
             this.Controls.Add(this._ReplaceBookmarkBox);
             this.Controls.Add(this._CommentBox);
             this.Controls.Add(this._DirectionBox);
@@ -220,8 +167,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "InsertBookmarkForm";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Insert bookmark";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this._PositionBox)).EndInit();
             this.ResumeLayout(false);

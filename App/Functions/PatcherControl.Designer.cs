@@ -27,6 +27,7 @@
 		private void InitializeComponent () {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.ToolStrip _MainToolbar;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatcherControl));
             System.Windows.Forms.ToolStripDropDownButton _Sort;
             System.Windows.Forms.ToolStripButton _Delete;
             System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
@@ -86,142 +87,127 @@
             // 
             // _MainToolbar
             // 
-            _MainToolbar.AutoSize = false;
-            _MainToolbar.Dock = System.Windows.Forms.DockStyle.None;
+            resources.ApplyResources(_MainToolbar, "_MainToolbar");
             _MainToolbar.GripMargin = new System.Windows.Forms.Padding(0);
+            _MainToolbar.ImageScalingSize = new System.Drawing.Size(20, 20);
             _MainToolbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._AddFilesButton,
             _Sort,
             _Delete,
             toolStripSeparator2,
             this._RefreshInfoButton});
-            _MainToolbar.Location = new System.Drawing.Point(0, 0);
             _MainToolbar.Name = "_MainToolbar";
-            _MainToolbar.Size = new System.Drawing.Size(378, 25);
-            _MainToolbar.TabIndex = 0;
             _MainToolbar.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
             // 
             // _AddFilesButton
             // 
             this._AddFilesButton.DropDown = this._RecentFileMenu;
             this._AddFilesButton.Image = global::PDFPatcher.Properties.Resources.Add;
-            this._AddFilesButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(this._AddFilesButton, "_AddFilesButton");
             this._AddFilesButton.Name = "_AddFilesButton";
-            this._AddFilesButton.Size = new System.Drawing.Size(102, 22);
-            this._AddFilesButton.Text = "Add files (&T)";
-            this._AddFilesButton.ToolTipText = "Add files that need merge to process lists";
             // 
             // _RecentFileMenu
             // 
+            this._RecentFileMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._RecentFileMenu.Name = "_RecentFileMenu";
             this._RecentFileMenu.OwnerItem = this._AddFilesButton;
             this._RecentFileMenu.ShowImageMargin = false;
-            this._RecentFileMenu.Size = new System.Drawing.Size(36, 4);
+            resources.ApplyResources(this._RecentFileMenu, "_RecentFileMenu");
             // 
             // _Sort
             // 
             _Sort.DropDown = this._SortMenu;
             _Sort.Image = global::PDFPatcher.Properties.Resources.Sort;
-            _Sort.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(_Sort, "_Sort");
             _Sort.Name = "_Sort";
-            _Sort.Size = new System.Drawing.Size(57, 22);
-            _Sort.Text = "Sort";
             _Sort.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._SortMenu_ItemClicked);
             // 
             // _SortMenu
             // 
+            this._SortMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._SortMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._SortByNaturalNumberItem,
             this._SortByAlphaItem});
             this._SortMenu.Name = "_SortMenu";
             this._SortMenu.OwnerItem = _Sort;
-            this._SortMenu.Size = new System.Drawing.Size(286, 48);
+            resources.ApplyResources(this._SortMenu, "_SortMenu");
             this._SortMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._SortMenu_ItemClicked);
             // 
             // _SortByNaturalNumberItem
             // 
             this._SortByNaturalNumberItem.Image = global::PDFPatcher.Properties.Resources.NaturalSort;
             this._SortByNaturalNumberItem.Name = "_SortByNaturalNumberItem";
-            this._SortByNaturalNumberItem.Size = new System.Drawing.Size(285, 22);
-            this._SortByNaturalNumberItem.Text = "Sort by value and alphabetical order (&M)";
+            resources.ApplyResources(this._SortByNaturalNumberItem, "_SortByNaturalNumberItem");
             // 
             // _SortByAlphaItem
             // 
             this._SortByAlphaItem.Image = global::PDFPatcher.Properties.Resources.AlphabeticSort;
             this._SortByAlphaItem.Name = "_SortByAlphaItem";
-            this._SortByAlphaItem.Size = new System.Drawing.Size(285, 22);
-            this._SortByAlphaItem.Text = "Sort by alphabetical order (&Z)";
+            resources.ApplyResources(this._SortByAlphaItem, "_SortByAlphaItem");
             // 
             // _Delete
             // 
             _Delete.Image = global::PDFPatcher.Properties.Resources.Delete;
-            _Delete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(_Delete, "_Delete");
             _Delete.Name = "_Delete";
-            _Delete.Size = new System.Drawing.Size(86, 22);
-            _Delete.Text = "Delete Files";
             // 
             // toolStripSeparator2
             // 
             toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            resources.ApplyResources(toolStripSeparator2, "toolStripSeparator2");
             // 
             // _RefreshInfoButton
             // 
             this._RefreshInfoButton.Image = global::PDFPatcher.Properties.Resources.Refresh;
-            this._RefreshInfoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(this._RefreshInfoButton, "_RefreshInfoButton");
             this._RefreshInfoButton.Name = "_RefreshInfoButton";
-            this._RefreshInfoButton.Size = new System.Drawing.Size(209, 20);
-            this._RefreshInfoButton.Text = "Refreshing document properties";
             // 
             // _SelectAll
             // 
             _SelectAll.Image = global::PDFPatcher.Properties.Resources.SelectAll;
             _SelectAll.Name = "_SelectAll";
-            _SelectAll.Size = new System.Drawing.Size(158, 22);
-            _SelectAll.Text = "All selected";
+            resources.ApplyResources(_SelectAll, "_SelectAll");
             // 
             // _InvertSelect
             // 
             _InvertSelect.Name = "_InvertSelect";
-            _InvertSelect.Size = new System.Drawing.Size(158, 22);
-            _InvertSelect.Text = "Inverse option";
+            resources.ApplyResources(_InvertSelect, "_InvertSelect");
             // 
             // _SelectNone
             // 
             _SelectNone.Name = "_SelectNone";
-            _SelectNone.Size = new System.Drawing.Size(158, 22);
-            _SelectNone.Text = "cancel selection";
+            resources.ApplyResources(_SelectNone, "_SelectNone");
             // 
             // _Copy
             // 
             _Copy.Image = global::PDFPatcher.Properties.Resources.Copy;
             _Copy.Name = "_Copy";
-            _Copy.Size = new System.Drawing.Size(244, 22);
-            _Copy.Text = "Copy list content";
+            resources.ApplyResources(_Copy, "_Copy");
             // 
             // _RefreshInfo
             // 
             _RefreshInfo.DropDown = this._RefreshInfoMenu;
             _RefreshInfo.Image = global::PDFPatcher.Properties.Resources.Refresh;
             _RefreshInfo.Name = "_RefreshInfo";
-            _RefreshInfo.Size = new System.Drawing.Size(244, 22);
-            _RefreshInfo.Text = "Refreshing document properties";
+            resources.ApplyResources(_RefreshInfo, "_RefreshInfo");
             // 
             // _RefreshInfoMenu
             // 
+            this._RefreshInfoMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._RefreshInfoMenu.Name = "_RefreshInfoMenu";
             this._RefreshInfoMenu.OwnerItem = _RefreshInfo;
-            this._RefreshInfoMenu.Size = new System.Drawing.Size(61, 4);
+            resources.ApplyResources(this._RefreshInfoMenu, "_RefreshInfoMenu");
             // 
             // _SelectionMenu
             // 
+            this._SelectionMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._SelectionMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _SelectAll,
             _InvertSelect,
             _SelectNone});
             this._SelectionMenu.Name = "_SelectionMenu";
             this._SelectionMenu.OwnerItem = this._SelectionMenuItem;
-            this._SelectionMenu.Size = new System.Drawing.Size(159, 70);
+            resources.ApplyResources(this._SelectionMenu, "_SelectionMenu");
             this._SelectionMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
             // 
             // _SelectionMenuItem
@@ -229,8 +215,7 @@
             this._SelectionMenuItem.DropDown = this._SelectionMenu;
             this._SelectionMenuItem.Image = global::PDFPatcher.Properties.Resources.SelectItem;
             this._SelectionMenuItem.Name = "_SelectionMenuItem";
-            this._SelectionMenuItem.Size = new System.Drawing.Size(244, 22);
-            this._SelectionMenuItem.Text = "Select the file";
+            resources.ApplyResources(this._SelectionMenuItem, "_SelectionMenuItem");
             // 
             // _ItemList
             // 
@@ -242,9 +227,7 @@
             this._ItemList.AllColumns.Add(this._KeywordsColumn);
             this._ItemList.AllColumns.Add(this._FolderColumn);
             this._ItemList.AllowDrop = true;
-            this._ItemList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._ItemList, "_ItemList");
             this._ItemList.CellEditActivation = BrightIdeasSoftware.ObjectListView.CellEditActivateMode.SingleClick;
             this._ItemList.CellEditUseWholeCell = false;
             this._ItemList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -259,85 +242,73 @@
             this._ItemList.Cursor = System.Windows.Forms.Cursors.Default;
             this._ItemList.GridLines = true;
             this._ItemList.HideSelection = false;
-            this._ItemList.Location = new System.Drawing.Point(3, 3);
             this._ItemList.Name = "_ItemList";
             this._ItemList.ShowGroups = false;
-            this._ItemList.Size = new System.Drawing.Size(639, 225);
             this._ItemList.SmallImageList = this._FileTypeList;
-            this._ItemList.TabIndex = 0;
             this._ItemList.UseCompatibleStateImageBehavior = false;
             this._ItemList.View = System.Windows.Forms.View.Details;
             this._ItemList.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this._ImageList_ColumnClick);
             // 
             // _NameColumn
             // 
-            this._NameColumn.Text = "Source file name";
-            this._NameColumn.Width = 149;
+            resources.ApplyResources(this._NameColumn, "_NameColumn");
             // 
             // _PageCountColumn
             // 
             this._PageCountColumn.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this._PageCountColumn.IsEditable = false;
-            this._PageCountColumn.Text = "Number of pages";
-            this._PageCountColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this._PageCountColumn.Width = 50;
+            resources.ApplyResources(this._PageCountColumn, "_PageCountColumn");
             // 
             // _TitleColumn
             // 
-            this._TitleColumn.Text = "title";
+            resources.ApplyResources(this._TitleColumn, "_TitleColumn");
             // 
             // _AuthorColumn
             // 
-            this._AuthorColumn.Text = "author";
+            resources.ApplyResources(this._AuthorColumn, "_AuthorColumn");
             // 
             // _SubjectColumn
             // 
-            this._SubjectColumn.Text = "theme";
+            resources.ApplyResources(this._SubjectColumn, "_SubjectColumn");
             // 
             // _KeywordsColumn
             // 
-            this._KeywordsColumn.Text = "Key words";
+            resources.ApplyResources(this._KeywordsColumn, "_KeywordsColumn");
             // 
             // _FolderColumn
             // 
             this._FolderColumn.IsEditable = false;
-            this._FolderColumn.Text = "folder";
-            this._FolderColumn.Width = 96;
+            resources.ApplyResources(this._FolderColumn, "_FolderColumn");
             // 
             // _ItemListMenu
             // 
+            this._ItemListMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._ItemListMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             _Copy,
             _RefreshInfo,
             this._SelectionMenuItem});
             this._ItemListMenu.Name = "_ItemListMenu";
-            this._ItemListMenu.Size = new System.Drawing.Size(245, 70);
+            resources.ApplyResources(this._ItemListMenu, "_ItemListMenu");
             this._ItemListMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._MainToolbar_ItemClicked);
             // 
             // _FileTypeList
             // 
             this._FileTypeList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this._FileTypeList.ImageSize = new System.Drawing.Size(16, 16);
+            resources.ApplyResources(this._FileTypeList, "_FileTypeList");
             this._FileTypeList.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // _OpenPdfBox
             // 
             this._OpenPdfBox.DefaultExt = "pdf";
-            this._OpenPdfBox.Filter = "PDF document (*.pdf) |*.pdf";
+            resources.ApplyResources(this._OpenPdfBox, "_OpenPdfBox");
             this._OpenPdfBox.Multiselect = true;
-            this._OpenPdfBox.Title = "Select the PDF file that needs to be processed";
             // 
             // _AutoClearListBox
             // 
-            this._AutoClearListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._AutoClearListBox.AutoSize = true;
+            resources.ApplyResources(this._AutoClearListBox, "_AutoClearListBox");
             this._AutoClearListBox.Checked = true;
             this._AutoClearListBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this._AutoClearListBox.Location = new System.Drawing.Point(403, 9);
             this._AutoClearListBox.Name = "_AutoClearListBox";
-            this._AutoClearListBox.Size = new System.Drawing.Size(258, 16);
-            this._AutoClearListBox.TabIndex = 4;
-            this._AutoClearListBox.Text = "Calculate the list before adding a file";
             this._AutoClearListBox.UseVisualStyleBackColor = true;
             // 
             // _AddDocumentWorker
@@ -349,19 +320,13 @@
             // 
             // _TargetPdfFile
             // 
-            this._TargetPdfFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._TargetPdfFile.Location = new System.Drawing.Point(13, 265);
+            resources.ApplyResources(this._TargetPdfFile, "_TargetPdfFile");
             this._TargetPdfFile.Name = "_TargetPdfFile";
-            this._TargetPdfFile.Size = new System.Drawing.Size(648, 26);
-            this._TargetPdfFile.TabIndex = 7;
             // 
             // _ActionsBox
             // 
             this._ActionsBox.AllColumns.Add(this._ActionNameColumn);
-            this._ActionsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._ActionsBox, "_ActionsBox");
             this._ActionsBox.CellEditUseWholeCell = false;
             this._ActionsBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this._ActionNameColumn});
@@ -370,27 +335,20 @@
             this._ActionsBox.GridLines = true;
             this._ActionsBox.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this._ActionsBox.HideSelection = false;
-            this._ActionsBox.Location = new System.Drawing.Point(5, 3);
             this._ActionsBox.Name = "_ActionsBox";
             this._ActionsBox.RowHeight = 18;
             this._ActionsBox.ShowGroups = false;
-            this._ActionsBox.Size = new System.Drawing.Size(126, 176);
-            this._ActionsBox.TabIndex = 18;
             this._ActionsBox.UseCompatibleStateImageBehavior = false;
             this._ActionsBox.View = System.Windows.Forms.View.Details;
             // 
             // _ActionNameColumn
             // 
-            this._ActionNameColumn.Text = "Patch operation";
-            this._ActionNameColumn.Width = 120;
+            resources.ApplyResources(this._ActionNameColumn, "_ActionNameColumn");
             // 
             // _ItemActionsContainerBox
             // 
-            this._ItemActionsContainerBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._ItemActionsContainerBox, "_ItemActionsContainerBox");
             this._ItemActionsContainerBox.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
-            this._ItemActionsContainerBox.Location = new System.Drawing.Point(13, 28);
             this._ItemActionsContainerBox.Name = "_ItemActionsContainerBox";
             // 
             // _ItemActionsContainerBox.Panel1
@@ -401,26 +359,18 @@
             // 
             this._ItemActionsContainerBox.Panel2.Controls.Add(this._ActionsBox);
             this._ItemActionsContainerBox.Panel2Collapsed = true;
-            this._ItemActionsContainerBox.Size = new System.Drawing.Size(645, 231);
-            this._ItemActionsContainerBox.SplitterDistance = 412;
-            this._ItemActionsContainerBox.TabIndex = 5;
             // 
             // _ConfigButton
             // 
-            this._ConfigButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._ConfigButton, "_ConfigButton");
             this._ConfigButton.Image = global::PDFPatcher.Properties.Resources.PdfOptions;
-            this._ConfigButton.Location = new System.Drawing.Point(250, 297);
             this._ConfigButton.Name = "_ConfigButton";
-            this._ConfigButton.Size = new System.Drawing.Size(253, 23);
-            this._ConfigButton.TabIndex = 11;
-            this._ConfigButton.Text = "Set modification method of P&DF file";
-            this._ConfigButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this._ConfigButton.UseVisualStyleBackColor = true;
             // 
             // _ImportButton
             // 
             this._ImportButton.AlternativeFocusBorderColor = System.Drawing.SystemColors.Highlight;
-            this._ImportButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this._ImportButton, "_ImportButton");
             this._ImportButton.AnimateGlow = true;
             this._ImportButton.BackColor = System.Drawing.SystemColors.Highlight;
             this._ImportButton.CornerRadius = 3;
@@ -428,19 +378,14 @@
             this._ImportButton.GlowColor = System.Drawing.Color.White;
             this._ImportButton.Image = global::PDFPatcher.Properties.Resources.Save;
             this._ImportButton.InnerBorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this._ImportButton.Location = new System.Drawing.Point(509, 297);
             this._ImportButton.Name = "_ImportButton";
             this._ImportButton.OuterBorderColor = System.Drawing.SystemColors.ControlLightLight;
             this._ImportButton.ShowFocusBorder = true;
-            this._ImportButton.Size = new System.Drawing.Size(149, 29);
-            this._ImportButton.TabIndex = 12;
-            this._ImportButton.Text = "&Generate object file";
-            this._ImportButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this._ImportButton.Click += new System.EventHandler(this._ImportButton_Click);
             // 
             // PatcherControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this._ImportButton);
             this.Controls.Add(this._ConfigButton);
@@ -448,9 +393,7 @@
             this.Controls.Add(this._TargetPdfFile);
             this.Controls.Add(this._ItemActionsContainerBox);
             this.Controls.Add(this._AutoClearListBox);
-            this.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Name = "PatcherControl";
-            this.Size = new System.Drawing.Size(670, 342);
             this.Load += new System.EventHandler(this.PatcherControl_OnLoad);
             _MainToolbar.ResumeLayout(false);
             _MainToolbar.PerformLayout();
