@@ -38,7 +38,7 @@ internal static class Constants
     /// <summary>
     ///     Information file root elements.
     /// </summary>
-    internal const string PdfInfo = "PDF information";
+    internal const string PdfInfo = "PdfInformation";
 
     internal const string InfoDocVersion = "0.3.3";
     internal const string ContentPrefix = "pdf";
@@ -89,7 +89,7 @@ internal static class Constants
     {
         internal static readonly string[] Names =
         {
-            "dictionary", "name", "Numerical value", "text", "Array", "Boolean", "Quote"
+            "dictionary", "name", "Value", "text", "Array", "Boolean", "Quote"
         };
 
         internal static readonly int[] IDs =
@@ -105,9 +105,9 @@ internal static class Constants
 
     internal static class FileNameMacros
     {
-        internal const string FileName = "<Source file name>";
-        internal const string FolderName = "<Source directory>";
-        internal const string PathName = "<Source directory path>";
+        internal const string FileName = "<FileName>";
+        internal const string FolderName = "<FolderName>";
+        internal const string PathName = "<PathName>";
         internal const string TitleProperty = "<" + Info.Title + ">";
         internal const string AuthorProperty = "<" + Info.Author + ">";
         internal const string SubjectProperty = "<" + Info.Subject + ">";
@@ -120,7 +120,7 @@ internal static class Constants
 
     internal static class Units
     {
-        internal const string ThisName = "Unit of measure";
+        internal const string ThisName = "UnitOfMeasure";
         internal const string Unit = "unit";
         internal const string Point = "point";
         internal const string CM = "cm";
@@ -166,7 +166,7 @@ internal static class Constants
 
     internal static class Encoding
     {
-        internal const string SystemDefault = "System Default";
+        internal const string SystemDefault = "SystemDefault";
         internal const string Automatic = "Automatic";
 
         internal static readonly string[] EncodingNames =
@@ -188,8 +188,8 @@ internal static class Constants
     {
         internal const string Page = "Page";
         internal const string PageNumber = "PageNumber";
-        internal const string ResourceID = "Resource ID";
-        internal const string RefType = "Reference Type";
+        internal const string ResourceID = "ResourceID";
+        internal const string RefType = "RefType";
         internal const string Texts = "Texts";
         internal const string Operators = "Operators";
         internal const string Operands = "Operands";
@@ -203,12 +203,12 @@ internal static class Constants
 
         internal static class PageSettings
         {
-            internal const string ThisName = "Page Settings";
-            internal const string MediaBox = "Media Box";
-            internal const string CropBox = "Crop Box";
-            internal const string TrimBox = "Trim Box";
-            internal const string ArtBox = "Art Box";
-            internal const string BleedBox = "Bleed Box";
+            internal const string ThisName = "PageSettings";
+            internal const string MediaBox = "MediaBox";
+            internal const string CropBox = "CropBox";
+            internal const string TrimBox = "TrimBox";
+            internal const string ArtBox = "ArtBox";
+            internal const string BleedBox = "BleedBox";
             internal const string Rotation = "Rotation";
         }
 
@@ -281,7 +281,7 @@ internal static class Constants
 
         internal static string[] LangNames =
         {
-            "Simplified Chinese", "Traditional Chinese", "English", "Japanese", "Korean", "Danish", "Dutch",
+            "SimplifiedChinese", "TraditionalChinese", "English", "Japanese", "Korean", "Danish", "Dutch",
             "Finnish", "French", "German", "Italian", "Norwegian", "Portuguese", "Spanish", "Swedish", "Czech",
             "Polish", "Hungarian", "Greek", "Russian", "Turkish"
         };
@@ -318,7 +318,7 @@ internal static class Constants
         internal const string Group = "Group";
         internal const string Name = "Name";
         internal const string Description = "Description";
-        internal const string IsInclusive = "Positive filtering";
+        internal const string IsInclusive = "PositiveFiltering";
     }
 
     #region function name
@@ -329,41 +329,41 @@ internal static class Constants
 
     internal static class Info
     {
-        internal const string ThisName = "Documentation";
+        internal const string ThisName = "DocumentationInfo";
 
-        internal const string ProductName = "Product Name";
-        internal const string ProductVersion = "Product Version";
-        internal const string ExportDate = "Export Date";
-        internal const string DocumentPath = "PDF Document Path";
-        internal const string PageNumber = "Page Number";
+        internal const string ProductName = "ProductName";
+        internal const string ProductVersion = "ProductVersion";
+        internal const string ExportDate = "ExportDate";
+        internal const string DocumentPath = "DocumentPath";
+        internal const string PageNumber = "PageNumber";
         internal const string Title = "Title";
         internal const string Author = "Author";
         internal const string Subject = "Subject";
         internal const string Keywords = "Keywords";
         internal const string Creator = "Creator";
         internal const string Producer = "Producer";
-        internal const string CreationDate = "Creation Date";
-        internal const string ModDate = "Recently Modified Date";
-        internal const string MetaData = "XML Meta Data";
+        internal const string CreationDate = "CreationDate";
+        internal const string ModDate = "ModDate";
+        internal const string MetaData = "MetaData";
     }
 
-    internal const string Version = "PDF version";
-    internal const string Catalog = "Document catalog";
-    internal const string Body = "Text content";
-    internal const string DocumentBookmark = "Document bookmark";
+    internal const string Version = "PdfVersion";
+    internal const string Catalog = "Catalog";
+    internal const string Body = "Body";
+    internal const string DocumentBookmark = "DocumentBookmark";
 
     #endregion
 
     #region Reader setting
 
-    internal const string PageLayout = "Page Layout";
+    internal const string PageLayout = "PageLayout";
 
     internal static class PageLayoutType
     {
         internal static readonly string[] Names =
         {
-            "constant", "Single page continuous", "Double page continuous", "Double page continuous home",
-            "Single page", "P-page", "Double page home page"
+            "Constant", "SinglePageContinuous", "DoublePageContinuous", "DoublePageContinuousHome",
+            "SinglePage", "DoublePage", "DoublePageHomePage"
         };
 
         internal static readonly PdfName[] PdfNames =
@@ -373,14 +373,14 @@ internal static class Constants
         };
     }
 
-    internal const string PageMode = "Initial mode";
+    internal const string PageMode = "PageMode";
 
     internal static class PageModes
     {
         internal static readonly string[] Names =
         {
-            "leave unchanged", "do not show sidebar", "show document bookmarks", "show page thumbnails",
-            "show full screen", "show optional content groups", "show attachments bar"
+            "Unchanged", "DoNotShowSidebar", "ShowDocumentBookmarks", "ShowPageThumbnails",
+            "ShowFullScreen", "ShowOptionalContentGroups", "ShowAttachmentsBar"
         };
 
         internal static readonly PdfName[] PdfNames =
@@ -390,16 +390,16 @@ internal static class Constants
         };
     }
 
-    internal const string ViewerPreferences = "Reader setting";
+    internal const string ViewerPreferences = "ViewerPreferences";
 
     internal static class ViewerPreferencesType
     {
-        internal const string Direction = "Reading direction";
+        internal const string Direction = "Direction";
 
         internal static readonly string[] Names =
         {
-            "Hide menu", "Hide toolbar", "Show document content only",
-            "Fit the window to the first page of the document", "Center the window", "Show document title"
+            "HideMenu", "HideToolbar", "ShowDocumentContentOnly",
+            "FitTheWindowToTheFirstPageOfTheDocument", "CenterTheWindow", "ShowDocumentTitle"
         };
 
         internal static readonly PdfName[] PdfNames =
@@ -410,7 +410,7 @@ internal static class Constants
 
         internal static class DirectionType
         {
-            internal static readonly string[] Names = { "Keep", "Left to Right", "Right to Left" };
+            internal static readonly string[] Names = { "Keep", "LeftToRight", "RightToLeft" };
             internal static readonly PdfName[] PdfNames = { PdfName.NONE, PdfName.L2R, PdfName.R2L };
         }
     }
@@ -419,14 +419,14 @@ internal static class Constants
 
     #region Page code style
 
-    internal const string PageLabels = "Page number style";
+    internal const string PageLabels = "PageNumberStyle";
 
     internal static class PageLabelStyles
     {
         internal static readonly string[] Names =
         {
-            "number", "Uppercase roman numeral", "Lowercase roman numeral", "Uppercase English letter",
-            "Lowercase English letter"
+            "Number", "UppercaseRomanNumeral", "LowercaseRomanNumeral", "UppercaseEnglishLetter",
+            "LowercaseEnglishLetter"
         };
 
         internal static readonly char[] PdfValues = { 'D', 'R', 'r', 'A', 'a' };
@@ -441,23 +441,23 @@ internal static class Constants
 
     internal static class PageLabelsAttributes
     {
-        internal const string PageNumber = "Actual page number";
-        internal const string StartPage = "Start page";
-        internal const string Prefix = "Page prefix";
-        internal const string Style = "style";
+        internal const string PageNumber = "PageNumber";
+        internal const string StartPage = "StartPage";
+        internal const string Prefix = "Prefix";
+        internal const string Style = "Style";
     }
 
     #endregion
 
     #region Page size range
 
-    internal const string PageRange = "Page range";
+    internal const string PageRange = "PageRange";
 
     internal static class PageFilterTypes
     {
-        internal const string ThisName = "Page filter";
-        internal const string AllPages = "All pages";
-        internal static readonly string[] Names = { AllPages, "Singular pages", "Even pages" };
+        internal const string ThisName = "PageFilter";
+        internal const string AllPages = "AllPages";
+        internal static readonly string[] Names = { AllPages, "SingularPages", "EvenPages" };
         internal static readonly int[] Values = { -1, 1, 0 };
     }
 
@@ -465,31 +465,31 @@ internal static class Constants
 
     #region Destination
 
-    internal const string NamedDestination = "Name location";
+    internal const string NamedDestination = "NamedDestination";
 
     internal static class DestinationAttributes
     {
-        internal const string Page = "Page Number";
-        internal const string FirstPageNumber = "First Page Number";
-        internal const string Action = "action";
-        internal const string NewWindow = "New Window";
+        internal const string Page = "Page";
+        internal const string FirstPageNumber = "FirstPageNumber";
+        internal const string Action = "Action";
+        internal const string NewWindow = "NewWindow";
         internal const string Path = "Path";
         internal const string Name = "Name";
-        internal const string Named = "Named Location";
-        internal const string NamedN = "PDF Name";
-        internal const string View = "Display Mode";
-        internal const string ScriptContent = "Script Content";
+        internal const string Named = "Named";
+        internal const string NamedN = "NamedN";
+        internal const string View = "View";
+        internal const string ScriptContent = "ScriptContent";
 
         internal static class ViewType
         {
-            internal const string XYZ = "Coordinate scaling";
-            internal const string Fit = "Fit to Page";
-            internal const string FitH = "Fit to page width";
-            internal const string FitV = "Fit to page height";
-            internal const string FitB = "Fit to Window";
-            internal const string FitBH = "Fit to window width";
-            internal const string FitBV = "Fit to window height";
-            internal const string FitR = "Fit Region";
+            internal const string XYZ = "XYZ";
+            internal const string Fit = "Fit";
+            internal const string FitH = "FitH";
+            internal const string FitV = "FitV";
+            internal const string FitB = "FitB";
+            internal const string FitBH = "FitBH";
+            internal const string FitBV = "FitBV";
+            internal const string FitR = "FitR";
             internal static readonly string[] Names = { XYZ, Fit, FitH, FitV, FitB, FitBH, FitBV, FitR };
 
             internal static readonly PdfName[] PdfNames =
@@ -502,11 +502,11 @@ internal static class Constants
 
     internal static class ActionType
     {
-        internal const string Goto = "Go to page";
-        internal const string GotoR = "Open external PDF document";
-        internal const string Launch = "Launch Program";
-        internal const string Uri = "Open URL";
-        internal const string Javascript = "Execute Script";
+        internal const string Goto = "Goto";
+        internal const string GotoR = "GotoR";
+        internal const string Launch = "Launch";
+        internal const string Uri = "Uri";
+        internal const string Javascript = "Javascript";
         internal static readonly string[] Names = { Goto, GotoR, Launch, Uri, Javascript };
     }
 
@@ -519,7 +519,7 @@ internal static class Constants
     internal static class BookmarkAttributes
     {
         internal const string Title = "Text";
-        internal const string Open = "Open by default";
+        internal const string Open = "OpenByDefault";
         internal const string Style = "Style";
 
         internal static class StyleType
@@ -539,35 +539,35 @@ internal static class Constants
         internal const string Red = "Red";
         internal const string Green = "green";
         internal const string Blue = "Blue";
-        internal const string Gray = "Grayscale";
+        internal const string Gray = "Gray";
         internal const string Transparent = "Transparent";
         internal const string Cyan = "cyan";
-        internal const string Magenta = "Purple";
+        internal const string Magenta = "Magenta";
         internal const string Yellow = "Yellow";
         internal const string Black = "Black";
     }
 
     internal static class Boolean
     {
-        internal const string True = "Yes";
-        internal const string False = "No";
+        internal const string True = "True";
+        internal const string False = "False";
     }
 
     #endregion
 
     #region Page link
 
-    internal const string PageLink = "Page Link";
+    internal const string PageLink = "PageLink";
 
     internal static class PageLinkAttributes
     {
         internal const string Link = "Link";
-        internal const string LinkAction = "Link Action";
+        internal const string LinkAction = "LinkAction";
         internal const string PageNumber = "PageNumber";
         internal const string Border = "Border";
-        internal const string Style = "Click Effect";
-        internal const string QuadPoints = "Quad coordinates";
-        internal const string Contents = "text";
+        internal const string Style = "Style";
+        internal const string QuadPoints = "QuadPoints";
+        internal const string Contents = "Contents";
     }
 
     #endregion
@@ -576,18 +576,18 @@ internal static class Constants
 
     internal static class Font
     {
-        internal const string ThisName = "font";
-        internal const string DocumentFont = "Document Font";
-        internal const string ID = "Number";
+        internal const string ThisName = "Font";
+        internal const string DocumentFont = "DocumentFont";
+        internal const string ID = "ID";
         internal const string Name = "Name";
-        internal const string Size = "Text Size";
+        internal const string Size = "Size";
     }
 
     internal static class FontOccurance
     {
-        internal const string Count = "Number of occurrences";
-        internal const string FirstText = "First Text";
-        internal const string FirstPage = "First page number";
+        internal const string Count = "Count";
+        internal const string FirstText = "FirstText";
+        internal const string FirstPage = "FirstPage";
     }
 
     #endregion

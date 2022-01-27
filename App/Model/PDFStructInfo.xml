@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="GB2312"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <PDF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PDFStructInfo.xsd">
   <Global>
@@ -16,7 +16,7 @@
           Description="Images, fonts and other binary resources used in pages, annotations, etc.">
       <Info Token="XObject" Name="External Object"
             Description="Represents objects used in rendering page directives.&#13;&#10;Because these objects are defined outside of page directives, they are called "
-            External Objects".&#13;& #10;In page directives, use the " Do" operator to display external objects.">
+            External="" Objects=""".&#13;& #10;In page directives, use the " Do" operator to display external objects.">
         <Info Token="Image" Name="Image">
           <Info Token="Subtype" Name="External object type" Description="Image means image" />
           <Info Token="Height" Name="Original height of the image" Description="Unit: Pixel" Required="true" />
@@ -86,28 +86,29 @@
         <Info Token="CIDSystemInfo" Name="Character identification system information" />
         <Info Token="DW" Name="default character width" Description="default is 1000" />
         <Info Token="W" Name="glyph width list"
-              Description="The array representing the character width of the CID font (the value of each character divided by 1000 is the unit width)&#xD;&#xA;The default width value is specified by the DW value&#xD;&#xA;The character width of the array has Two formats: &#xD;&#xA;①Single character width;&#xD;&#xA;②Starting and ending character width&#xD;&#xA;The single character width format is: character index followed by an array, For example, "120 [400 325 500]" means that the widths of character numbers 120 to 122 are 400, 325 and 500 units respectively; &#xD;&#xA;The format of the starting and ending character widths is: start character index, end character index, Width, such as "7080 8080 1000", means the width of character numbers 7080 to 8080 is 1000 units" />
-        <Info Token="DW2" Name="default character width and height" Description="default is [880 -1000]" />
-        <Info Token="W2" Name="Character width and height" />
-        <Info Token="CIDToGIDMap" Name="Character ID to font character ID mapping table"
-              Description="By default, the character ID is the position of the character in the font" />
+              Description="The array representing the character width of the CID font (the value of each character divided by 1000 is the unit width)&#xD;&#xA;The default width value is specified by the DW value&#xD;&#xA;The character width of the array has Two formats: &#xD;&#xA;①Single character width;&#xD;&#xA;②Starting and ending character width&#xD;&#xA;The single character width format is: character index followed by an array, For example, "120="" [400="" 325="" 500=""]" means that the widths of character numbers 120 to 122 are 400, 325 and 500 units respectively;
+          &#xD;&#xA;The format of the starting and ending character widths is: start character index, end character index, Width, such as "7080 8080 1000", means the width of character numbers 7080 to 8080 is 1000 units" />
+          <Info Token="DW2" Name="default character width and height" Description="default is [880 -1000]" />
+          <Info Token="W2" Name="Character width and height" />
+          <Info Token="CIDToGIDMap" Name="Character ID to font character ID mapping table"
+                Description="By default, the character ID is the position of the character in the font" />
+        </Info>
+        <RefInfo Token="ProcSet" />
+        <RefInfo Token="ColorSpace" />
       </Info>
-      <RefInfo Token="ProcSet" />
-      <RefInfo Token="ColorSpace" />
-    </Info>
-    <Info Token="AP" Name="Appearance Style" />
-    <Info Token="BS" Name="Border Style" />
-    <Info Token="C" Name="Color" />
-    <Info Token="D" Name="Go to specific location action" />
-    <Info Token="Dests" Name="Jump Destination" />
-    <Info Token="Dest" Name="Jump Destination" />
-    <Info Token="A" Name="Action" />
-    <Info Token="Matrix" Name="Transposed matrix for plotting" />
-    <Info Token="Rect" Name="Rectangular Area" />
-    <Info Token="Type" Name="dictionary type" />
-    <Info Token="SubType" Name="SubType" />
-    <Info Token="StructParent" Name="The parent node of the document structure" />
-  </Global>
+      <Info Token="AP" Name="Appearance Style" />
+      <Info Token="BS" Name="Border Style" />
+      <Info Token="C" Name="Color" />
+      <Info Token="D" Name="Go to specific location action" />
+      <Info Token="Dests" Name="Jump Destination" />
+      <Info Token="Dest" Name="Jump Destination" />
+      <Info Token="A" Name="Action" />
+      <Info Token="Matrix" Name="Transposed matrix for plotting" />
+      <Info Token="Rect" Name="Rectangular Area" />
+      <Info Token="Type" Name="dictionary type" />
+      <Info Token="SubType" Name="SubType" />
+      <Info Token="StructParent" Name="The parent node of the document structure" />
+    </Global>
   <Info Token="Trailer" Name="document root node">
     <Info Token="Root" Name="Documentation" ImageKey="Trailer" Required="true">
       <Info Token="Pages" Name="Document Pages Collection" Description="All Pages of Document" ImageKey="Pages"
@@ -166,7 +167,7 @@
   <Info Token="Pages" Name="Document Pages Collection" Description="All Pages of Document">
     <Info Token="Page" Name="Documentation Page" Required="true">
       <Info Token="Contents" Name="Page content" Description="Instructions to draw the page. For details, see the "
-            Command" node." Required="true" />
+            Command=""" node." Required="true" />
       <Info Token="ArtBox" Name="Content border"
             Description="Consists of four coordinate values ​​of left, bottom, right and top" />
       <Info Token="BleedBox" Name="Bleeding Border"
@@ -264,33 +265,33 @@
         <Info Token="Line" Description="Draw a line from the previous vector point to the specified point" />
         <Info Token="curve"
               Description="Draw the Cubic Bézier curve from the previous vector point to the specified point (x3, y3). There are 6 parameters in total, which are the head and tail control points (x1, y1), (x2, y2) and the end point (x3, y3)" />
-          <Info Token="Control tail curve"
-                Description="Draw a Cubic Bézier curve from the previous vector point to the specified point (x3, y3). There are 4 parameters, which are the line tail control point (x2, y2) and the end point (x3, y3). )" />
-          <Info Token="Control head curve"
-                Description="Draw a Cubic Bézier curve from the previous vector point to the specified point (x3, y3). There are 4 parameters, which are the line head control point (x1, y1) and the end point (x3, y3) " />
-          <Info Token="Rectangle" Description="Draw rectangle with specified width and height at given (x,y) point" />
-          <Info Token="Stroking"
-                Description="Draw a line with the previously specified stroking color, line head, line tail, connecting line style, dotted line, etc." />
-          <Info Token="Draw a closed line"
-                Description="Set the current point as the end point and draw a line with the Stroking color" />
-          <Info Token="Nonzero filling" Description="Fills closed curves with a nonzero (Nonzero winding number) rule" />
-          <Info Token="Odd-odd filling" Description="Use even-odd rules to fill closed curves" />
-          <Info Token="Nonzero winding number"
-                Description="Draw a line and fill the closed curve with a non-zero (Nonzero winding number) rule" />
-          <Info Token="Odd-odd line filling" Description="Draw lines and fill closed curves with even-odd rules" />
-          <Info Token="Closed non-zero winding number"
-                Description="Close the curve, draw a line, and fill the closed curve with a non-zero (Nonzero winding number) rule" />
-          <Info Token="Closed odd-odd line drawing and filling"
-                Description="Close the curve, draw a line, and fill the closed curve with the Even-odd rule" />
-          <Info Token="Closed path without filling"
-                Description="Closed vector path, without filling, without drawing lines, generally used to complete the clipping path" />
-          <Info Token="Nonzero clipping"
-                Description="Use a nonzero (Nonzero winding number) rule to clip the content to a vector graphic composed of closed curves" />
-          <Info Token="Odd-odd cropping"
-                Description="Use the Even-odd rule to crop the content with a vector graphic composed of closed curves" />
-          <Info Token="Embedded Image"
-                Description="The image embedded in the content stream&#xD;&#xA; is actually three instructions: BI (image start), ID (image binary data) and EI (end of image)" />
-        </Info>
+        <Info Token="Control tail curve"
+              Description="Draw a Cubic Bézier curve from the previous vector point to the specified point (x3, y3). There are 4 parameters, which are the line tail control point (x2, y2) and the end point (x3, y3). )" />
+        <Info Token="Control head curve"
+              Description="Draw a Cubic Bézier curve from the previous vector point to the specified point (x3, y3). There are 4 parameters, which are the line head control point (x1, y1) and the end point (x3, y3) " />
+        <Info Token="Rectangle" Description="Draw rectangle with specified width and height at given (x,y) point" />
+        <Info Token="Stroking"
+              Description="Draw a line with the previously specified stroking color, line head, line tail, connecting line style, dotted line, etc." />
+        <Info Token="Draw a closed line"
+              Description="Set the current point as the end point and draw a line with the Stroking color" />
+        <Info Token="Nonzero filling" Description="Fills closed curves with a nonzero (Nonzero winding number) rule" />
+        <Info Token="Odd-odd filling" Description="Use even-odd rules to fill closed curves" />
+        <Info Token="Nonzero winding number"
+              Description="Draw a line and fill the closed curve with a non-zero (Nonzero winding number) rule" />
+        <Info Token="Odd-odd line filling" Description="Draw lines and fill closed curves with even-odd rules" />
+        <Info Token="Closed non-zero winding number"
+              Description="Close the curve, draw a line, and fill the closed curve with a non-zero (Nonzero winding number) rule" />
+        <Info Token="Closed odd-odd line drawing and filling"
+              Description="Close the curve, draw a line, and fill the closed curve with the Even-odd rule" />
+        <Info Token="Closed path without filling"
+              Description="Closed vector path, without filling, without drawing lines, generally used to complete the clipping path" />
+        <Info Token="Nonzero clipping"
+              Description="Use a nonzero (Nonzero winding number) rule to clip the content to a vector graphic composed of closed curves" />
+        <Info Token="Odd-odd cropping"
+              Description="Use the Even-odd rule to crop the content with a vector graphic composed of closed curves" />
+        <Info Token="Embedded Image"
+              Description="The image embedded in the content stream&#xD;&#xA; is actually three instructions: BI (image start), ID (image binary data) and EI (end of image)" />
       </Info>
     </Info>
+  </Info>
 </PDF>
