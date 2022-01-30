@@ -1,8 +1,10 @@
-﻿# PDFPatcher
+# PDFPatcher
 
 Thank you for your attention to the PDFPatcher. Please read this description and license agreement before using the software or source code. This software and source code adopts AGPL + "**Conscience Authorization**" agreement - **If users benefit from this software each time, they should do a good deed; if they use the source code to develop new software and obtain benefits, and should donate not less than one-thousandth of the proceeds to disadvantaged groups in society**.
 
 ## Function introduction
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcalcitem%2FPDFPatcher.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcalcitem%2FPDFPatcher?ref=badge_shield)
+
 
 PDFPatcher is a PDF processing tool. It has the following functions:
 
@@ -46,6 +48,9 @@ Related definitions:
 4. Termination: When you do not agree with or violate this agreement, the agreement will be automatically terminated, and you must delete this software product immediately.
 5. Copyright: The software and source code are protected by copyright laws, international treaty provisions, and other intellectual property laws and treaties.
 6. Disclaimer: This software and the copyright owner are not responsible for any loss caused by installing, copying, and using this software.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcalcitem%2FPDFPatcher.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcalcitem%2FPDFPatcher?ref=badge_large)
 
 ## Introduction to commonly used PDF open-source components
 
